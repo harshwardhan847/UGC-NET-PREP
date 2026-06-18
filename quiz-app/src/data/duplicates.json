@@ -1,0 +1,716 @@
+[
+  {
+    "group_id": 6,
+    "unit": 9,
+    "unit_name": "Data Communication and Computer Networks",
+    "questions": [
+      {
+        "id": "dec2022_q63",
+        "year": "December 2022",
+        "q_num": 63,
+        "question": "Consider two hosts P and Q are connected\nthrough a router (R). The maximum transfer unit\n(MTU) value of the link between (P) and (R) is\n1500 bytes and between (R) and (Q) is 820\nbytes. A TCP segment of size 1400 bytes is\ntransferred from P to Q through R with IP\nidentification value of 0\u00d71234. Assume that IP\nheader size is 20 bytes. Further, the packet is\nallowed to be fragmented, meaning the Don't\nFragment (DF) flag in the IP Header is not set by\nP.\nWhich of the following statements is/are not\ntrue?\nA. Two fragments are created at (R) and IP\ndatagram size carrying the second fragment is\n620 bytes\nB. If the second fragment is lost then (R) resend\nthe fragment with IP Identification value of\n0\u00d71234\nC. If the second fragment is lost then P is\nrequired to resend the entire TCP segment\nD. TCP destination port can be determined by\nanalyzing the second fragment only\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A and B Only",
+          "B": "A and C Only",
+          "C": "C and D Only",
+          "D": "B and D Only"
+        },
+        "answer": "B",
+        "solution": "MTU Values:\nThe maximum transfer unit (MTU) between P and\nR is 1500 bytes.\nThe MTU between R and Q is 820 bytes.\nPacket:\nA TCP segment of 1400 bytes is sent from P to Q.\nThe IP header size is 20 bytes, so the total size of\nthe IP datagram sent by P is: 1400 (TCP\nsegment)+20 (IP header)=1420 bytes\nFragmentation:\nSince the MTU between R and Q is 820 bytes,\nthe 1420-byte packet will be fragmented at R.\nThe 820 bytes include the IP header, so the\nmaximum payload per fragment is: 820\u221220=800\nbytes\nFragment Details:\nFirst Fragment:\nPayload: 800 bytes\nIP header: 20 bytes\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\n\n\nUGC\tNET\nTotal size: 820 bytes\nOffset: 0\nSecond Fragment:\nRemaining payload: 1400\u2212800=600 bytes\nIP header: 20 bytes\nTotal size: 620 bytes\nOffset: 800 bytes\nStatement A: \"Two fragments are created at R\nand IP datagram size carrying the second\nfragment is 620 bytes.\"\nTrue: Based on the calculation, two fragments are\nindeed created at R:\nThe first fragment is 820 bytes (800 bytes\npayload + 20 bytes header).\nThe second fragment is 620 bytes (600 bytes\npayload + 20 bytes header).\nStatement B: \"If the second fragment is lost,\nthen R will resend the fragment with IP\nIdentification value of 0x1234.\"\nFalse: IP does not handle automatic\nretransmission of lost fragments. If a fragment is\nlost, the entire datagram (all fragments) must be\nresent by the original sender P. R does not resend\nfragments on its own.\nStatement C: \"If the second fragment is lost,\nthen P is required to resend the entire TCP\nsegment.\"\nTrue: Since IP does not provide for individual\nfragment retransmission, the entire TCP segment\nmust be resent by P if any fragment is lost.\nStatement D: \"TCP destination port can be\ndetermined by analyzing the second fragment\nonly.\"\nFalse: The TCP header, which contains the\ndestination port, is located in the first fragment.\nThe second fragment does not contain this\ninformation, so analyzing only the second\nfragment will not reveal the TCP destination port.\nOption B is correct."
+      },
+      {
+        "id": "dec2022_shiftii_q61",
+        "year": "December 2022 (Shift II)",
+        "q_num": 61,
+        "question": "Consider two hosts P and Q are connected\nthrough a router R. The maximum transfer unit\n(MTU) value of the link between P and R is 1500\nbytes and between R and Q is 820 bytes. A TCP\nsegment of size of 1400 bytes is transferred from\nP to Q through R with IP identification value of\n0x1234. Assume that IP header size is 20 bytes.\nFurther, the packet is allowed to be fragmented\nthat is Don't Fragment (DF) flag in the IP Header\nis not set by P. Which of the following statements\nis/are true\nI. Two fragments are created at R and IP\ndatagram size carrying the second fragment is\n620 bytes\nII. If the second fragment is lost then R resends\nthe fragment with IP Identification value of\n0x1234\nIII. If the second fragment is lost then P is\nrequired to resend the entire TCP segment\nIV. TCP destination port can be determined by\nanalyzing the second fragment only\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "I, II, and III only",
+          "B": "I and III only",
+          "C": "III and IV only",
+          "D": "II and IV only"
+        },
+        "answer": "B",
+        "solution": "TCP Segment Size =1400\nPacket size = segment size + IP Header Size\n=1400+20=1420\nAt R Packet will be Fragmented\nMTU =800+20 (Header)\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\n\u03b5L=L\u03b5=L\n\u2208\n\u2208\n\u2208\n\u2208 \u2208\n\u2208\u2205 \u2205\u2205\n\u2205\n\u2205 \u2205\n\u2205\n\u2205 \u2205\n\u2205\n\u2205 \u2205\u2205\n\n\n\nUGC\tNET\nHence Packet's Data (1400) will be divided into\ntwo packets =(800+600)\nFirst Fragment =(800+20) / / Data + Header\nSecond Fragment =(600+20)\n\u00a0I: Two fragments are created at R and the IP\ndatagram size carrying the second fragment is\n620 bytes.\nThis statement is correct. Two fragments are\ncreated at R and the IP datagram size carrying\nthe second fragment is 620 bytes and the first\nfragment 820.\nII. If the second fragment is lost then R resends\nthe fragment with an IP Identification value of\n0x1234. This statement is false since if any of the\nfragments are lost then the entire packet has to\nbe retransmitted.\nIII. If the second fragment is lost then P is\nrequired to resend the entire TCP segment.\nThis statement is true. If any of the Fragments is\nlost then the entire packet/TCP segment has to\nbe retransmitted.\nIV. TCP destination port can be determined by\nanalyzing the second fragment only.\u00a0\nThis statement is false. TCP destination port can\nbe determined by analyzing both the fragments\nnot only the second fragment.\u00a0\u00a0\nSo option B is the correct answer."
+      },
+      {
+        "id": "june2023_q55",
+        "year": "June 2023",
+        "q_num": 55,
+        "question": "Consider two hosts P and Q that are connected\nthrough a router R. The maximum transfer unit\n(MTU) value of the link between P and R is 1500\nbytes and between R and Q is 820 bytes. A TCP\nsegment of size 1400 bytes is transferred from P\nto Q through R with IP identification value of\n. Assume that IP header size is 20\nbytes. Further the pcaket is allowed to be\nfragmented that is Don't fragment (DF) flag in\nthe IP Header is not set by P. Which of the\nfollowing statement/s is/are true?\nA. Two fragments are created at R and IP\ndatagram size carrying the second fragment is\n620 bytes\nB. If the second fragment is lost, then R resends\nthe fragment with IP identification value of\nC. If the second fragment lost, then P requires to\nresend the entire TCP segment.\nD. TCP destination port can be determined by\nanalyzing the second fragment only.\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A, B and C only",
+          "B": "A and C only",
+          "C": "C and D only",
+          "D": "B and D only"
+        },
+        "answer": "B",
+        "solution": "Option- B ( A and C only )\nExplanation-\u00a0 Given,\nGiven, TCP Segment size= 1400\nPacket Size= 1400+20 ( Segment Size + IP Header\nSize ) = 1420 , The packet will be fragmented at\nR.\u00a0\nThus, MTU= 800+20 (Header size) , TCP segment\nsize will be divided in two parts- 800 and 600\nFirst Fragment = (800+20)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Second\nFragment = (600 + 20)\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\nR(A,B,C,D,F)\nC\u2192F,E\u2192A,EC\u2192D,A\u2192B\n\n\n\nUGC\tNET\nStatement\u00a0 A: \u00a0Two fragments are created at R\nand the IP datagram size carrying the second\nfragment is 620 bytes. This is the correct option.\n\u00a0Statement B: If the second fragment is lost, then\nR resends the fragment with IP identification\nvalue of 0x1234\nThis is an incorrect option because if any one of\nthe fragments is lost then the complete TCP\nsegment has to be retransmitted.\nStatement C: \u00a0If the second fragment lost, then P\nrequires to resend the entire TCP segment.\nThis is the correct option because if any one of\nthe fragments is lost, then the entire TCP has to\nbe re-transmitted.\nStatement D: The TCP destination port can be\ndetermined by analyzing the second fragment\nonly.\nThis is an incorrect option as the destination port\nnumber can be determined by looking at any\npacket or fragment and not just the second\nframe only."
+      }
+    ]
+  },
+  {
+    "group_id": 1,
+    "unit": 1,
+    "unit_name": "Discrete Structures and Optimization",
+    "questions": [
+      {
+        "id": "dec2018_q98",
+        "year": "December 2018",
+        "q_num": 98,
+        "question": "Consider a vocabulary with only four\npropositions A, B, C, and D. How many models\nare there for the following sentence?",
+        "options": {
+          "A": "7",
+          "B": "8",
+          "C": "15",
+          "D": "16"
+        },
+        "answer": "C",
+        "solution": "Explanation:\nStep 1: \u00acA \u2228  \u00acB \u2228  \u00acC \u2228  \u00acD is a disjunction where at\nleast one negated proposition must be true for\nthe sentence to be true.\nStep 2: with 4 prepositions(A, B, C, D) where 2\npossible equals 16 Possible truth assignments.\nStep 3: The sentence is true if at least one of the\noriginal propositions (A, B, C, or D) is false\n(because its negation would then be true)\nStep 4: The sentence is false only when all\npropositions (A, B, C, D) are true, making the\nnegations false.\ni.e. as A \u2228  B \u2228  C \u2228  D= (T \u2228  T \u2228  T \u2228  T\u2192 T)\u00a0 and\u00a0 \u00acA \u2228\n\u00acB \u2228  \u00acC \u2228  \u00acD = (F \u2228  F \u2228  F\u00a0 \u2228  F \u2192\u00a0F)\nOut of the 16 models, only 1 model makes the\nsentence false, so 15 models make it true.\u00a0\nThe Final Answer is: 15"
+      },
+      {
+        "id": "july2018_q75",
+        "year": "July 2018",
+        "q_num": 75,
+        "question": "Consider a vocabulary with only four\npropositions A, B, C and D. How many models are\nthere for the following sentence?\nB\u00a0  C",
+        "options": {
+          "A": "10",
+          "B": "12",
+          "C": "15",
+          "D": "16"
+        },
+        "answer": "B",
+        "solution": "Sentence: B v C\nTruth Table:\nABCD\nB\nC\nTTTTT\nTTTFT\nTTFTT\nTTFFT\nTFTTT\nTFTFT\nTFFTF\nTFFFF\nFTTTT\nFTTFT\nFTFTT\nFTFFT\nFFTTT\nFFTFT\nFFFTF\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\n1 2 m\n1 m\n\u2228\n\n\n\nUGC\tNET\nABCD\nB\nC\nFFFFF\n12 models are there for given Sentence.\nTips and Tricks:\nNumber of variables = 4\nStatement possible = 2 =16\nSince (B v C) OR operation between two\nvariables \u2234  of total cases will be true.\nTherefore, number of modes =\u00a0 x 16 = 12"
+      }
+    ]
+  },
+  {
+    "group_id": 2,
+    "unit": 7,
+    "unit_name": "Data Structures and Algorithms",
+    "questions": [
+      {
+        "id": "dec2019_q60",
+        "year": "December 2019",
+        "q_num": 60,
+        "question": "Consider the game tree given below\nHere\u00a0 and\u00a0  represent MIN and MAX nodes\nrespectively. The value of the root node of the\ngame tree is:",
+        "options": {
+          "A": "14",
+          "B": "17",
+          "C": "111",
+          "D": "112"
+        },
+        "answer": "B",
+        "solution": "Option- B(17)\nExplanation:\u00a0To solve the min-max tree question\nalways start from the bottom.\nAt level 1\u00a0we have to find the minimum of given\nelements.\u00a0\nFrom left sub-tree:\n1. min \u00a0\n2. min\n3. min\nSimilarly from the right sub-tree:\n1. min\n2. min\nAt level, 2 we have to find the maximum of the\ngiven element present .\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\nTotal\u00a0entries=10\u00a0(same\u00a0region)\n+8\u00a0(other\u00a0regions)+7\u00a0(other\u00a0clusters)\n=25\n10\u2009Mbps\n12,000\u2009frames/minute\n10,000\u2009bits/frame\nFrames\u00a0per\u00a0second=Frames\u00a0per\u00a0minute\n60\n= =200\u2009frames/second12,000\n60\nThroughput=200\u00d710,000=2,000,\n000\u2009bps\u00a0(bits\u00a0per\u00a0second).\n\u00ac\n\u00ac\n\u00ac \u00ac\n\u00ac\n1 2\n1\n2\n(17,19)=17\n(16)=16\n(111,112)=111\n(15)=15\n(14)=14\n1\n\n\n\nUGC\tNET\nFrom left sub-tree:\n1. max\n2. max\nSimilarly from the right sub-tree:\n1. max\nAt level, 3\u00a0we have to find the minimum element\npresent at level 2.\nFrom left sub-tree:\n1. min\nFrom the right sub-tree:\n1. min\nNow at level, 4\u00a0we have to find the maximum of\nthe elements present at level 2.\nmax(17,15)= 17"
+      },
+      {
+        "id": "june2019_q91",
+        "year": "June 2019",
+        "q_num": 91,
+        "question": "Consider the game tree given below :\nHere\u00a0 \n  and \u00a0\n represents MIN and\nMAX nodes respectively. The value of the root\nnode of the game tree is",
+        "options": {
+          "A": "4",
+          "B": "7",
+          "C": "11",
+          "D": "12"
+        },
+        "answer": "B",
+        "solution": "Explanation:\n\u00a0\nThe Final Answer is: 7"
+      }
+    ]
+  },
+  {
+    "group_id": 3,
+    "unit": 10,
+    "unit_name": "Artificial Intelligence (AI)",
+    "questions": [
+      {
+        "id": "dec2019_q62",
+        "year": "December 2019",
+        "q_num": 62,
+        "question": "A fuzzy conjunction operators, , and a\nfuzzy disjunction operator, , form a pair if\nthey satisfy:\nIf  then\u00a0  is given by",
+        "options": {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": ""
+        },
+        "answer": "B",
+        "solution": "The correct option is B.\nt(x,y) = 1- s(1-x, 1-y)\nt(x,y) =\u00a0\ns(x,y) = 1-\u00a0\ns(x,y) = 1-\ns(x,y) =\ns(x,y) ="
+      },
+      {
+        "id": "june2019_q94",
+        "year": "June 2019",
+        "q_num": 94,
+        "question": "A fuzzy conjunction operator denoted as t(x,y)\nand a fuzzy disjunction operator denoted as\ns(x,y) form a dual pair if they satisfy the condition\n:",
+        "options": {
+          "A": "t(x,y)= 1-s(x,y)",
+          "B": "t(x,y)= s( 1-x, 1-y)",
+          "C": "t(x,y)= 1-s(1-x, 1-y)",
+          "D": "t(x,y)= s( 1+x, 1+y)"
+        },
+        "answer": "C",
+        "solution": "Explanation:\nThe duality condition ensures that t(x,y) using\n(fuzzy AND) and s(x,y) using (Fuzzy OR) are\nopposites under complemented inputs.\u00a0\nt(x,y)= 1- s(1-x, 1-y)\nThe Final Answer is: Option C"
+      }
+    ]
+  },
+  {
+    "group_id": 4,
+    "unit": 1,
+    "unit_name": "Discrete Structures and Optimization",
+    "questions": [
+      {
+        "id": "dec2022_q34",
+        "year": "December 2022",
+        "q_num": 34,
+        "question": "In CRC coding if the data word is 111111 , divisor is\n1010 and the remainder is 110 . Which of the\nfollowing code is true?",
+        "options": {
+          "A": "011111101",
+          "B": "001010110",
+          "C": "111111110",
+          "D": "110111111"
+        },
+        "answer": "C",
+        "solution": "Data word: 111111\nRemainder: 110\nCodeword (Data word + Remainder): 111111110\nOption C is correct."
+      },
+      {
+        "id": "dec2022_shiftii_q36",
+        "year": "December 2022 (Shift II)",
+        "q_num": 36,
+        "question": "In CRC coding if the data word is 111111 , divisor is\n1010 and the remainder is 110 . Which of the\nfollowing code is true?",
+        "options": {
+          "A": "011111101",
+          "B": "001010110",
+          "C": "111111110",
+          "D": "110111111"
+        },
+        "answer": "C",
+        "solution": "Cyclic Redundancy Check (CRC) coding involves\ndividing a data word by a fixed divisor to\ngenerate a remainder, which is then appended to\nthe original data word to form the transmitted\nmessage.\nIn this case, the given data word is 111111, the\ndivisor is 1010, and the remainder is 110.\nTo find the transmitted message, you append the\nremainder to the original data word. So, the\ntransmitted message is 111111110.\nTherefore, option C is the correct answer."
+      }
+    ]
+  },
+  {
+    "group_id": 5,
+    "unit": 2,
+    "unit_name": "Computer System Architecture",
+    "questions": [
+      {
+        "id": "dec2022_q45",
+        "year": "December 2022",
+        "q_num": 45,
+        "question": "Which of the following statement is/are True?\nA. The processor has direct access to both\nprimary and secondary memory\nB. Primary memory stores the active instructions\nand data for the program being executed on the\nprocess\nC. Secondary memory is used as a backup\nmemory\nD. Memory system is implemented on a single\nlevel memory\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A and B only",
+          "B": "B and C only",
+          "C": "A, B and C only",
+          "D": "A and D Only"
+        },
+        "answer": "B",
+        "solution": "Statement A: \"The processor has direct access\nto both primary and secondary memory.\"\nFalse. The processor has direct access to primary\nmemory (RAM), where active instructions and\ndata are stored for quick access during\nexecution. However, it does not have direct\naccess to secondary memory (such as hard\ndrives or SSDs).\nStatement B: \"Primary memory stores the\nactive instructions and data for the program\nbeing executed on the processor.\"\nTrue. Primary memory (RAM) holds the active\ndata and instructions that the processor needs to\nexecute programs. This is the main purpose of\nprimary memory, providing fast access to the\nprocessor.\nStatement C: \"Secondary memory is used as a\nbackup memory.\"\nTrue. Secondary memory, such as hard drives,\nSSDs, or external storage, is used for long-term\nstorage and acts as a backup to primary memory.\nIt retains data even when the system is powered\noff.\nStatement D: \"Memory system is implemented\non a single level memory.\"\nFalse. Modern computer systems use a multi-\nlevel memory system, which includes primary\nmemory (RAM), secondary memory (hard drives,\nSSDs), and often cache memory. This multi-level\napproach helps optimize speed and storage\ncapacity.\nOption B is correct answer."
+      },
+      {
+        "id": "dec2022_shiftii_q45",
+        "year": "December 2022 (Shift II)",
+        "q_num": 45,
+        "question": "Which of the following statement is/are false?\n1. The processor has direct access to both\nprimary and secondary memory\n2. Primary memory stores the active instructions\nand data for the program being executed on the\nprocess\n3. Secondary memory is used as a backup\nmemory\n4. Memory system is implemented on a single-\nlevel memory\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3 only",
+          "D": "1 and 4 only"
+        },
+        "answer": "D",
+        "solution": "1. The processor has direct access to both\nprimary and secondary memory:\nThis statement is false. The processor typically\nhas direct access only to primary memory (RAM),\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\nn\n\u2227 \u2228\n\n\n\nUGC\tNET\nwhere actively used instructions and data are\nstored. Secondary memory (such as hard drives\nor solid-state drives) is accessed through\ninput/output operations, which are slower than\ndirect memory access.\n2. Primary memory stores the active instructions\nand data for the program being executed on the\nprocess:\nThis statement is true. Primary memory (RAM) is\nused to store actively used instructions and data\nfor the program currently being executed by the\nprocessor. This allows for fast access to the\ninstructions and data needed for computation.\n3. Secondary memory is used as a backup\nmemory\nThis statement is true. Secondary memory can\nindeed be used for backup purposes. Secondary\nmemory, such as hard disk drives or solid-state\ndrives, primarily serves as long-term storage for\ndata and programs that are not actively used.\nThis storage is persistent, meaning that the data\nremains even when the computer is powered off.\nBackup memory refers to a separate storage\nmedium or system used to create copies\n(backups) of data for protection against data loss\ndue to hardware failures, disasters, or other\nunforeseen events. These backups can be stored\non secondary memory devices.\n4. The memory system is implemented on a\nsingle-level memory\nThis statement is false. In modern computer\nsystems, memory hierarchy is typically\nimplemented using multiple levels of memory,\nsuch as registers, cache memory, primary\nmemory (RAM), and secondary memory. Each\nlevel of memory has different characteristics in\nterms of speed, capacity, and cost, with the goal\nof maximizing performance and efficiency.\nSo option D is the correct answer."
+      }
+    ]
+  },
+  {
+    "group_id": 7,
+    "unit": 10,
+    "unit_name": "Artificial Intelligence (AI)",
+    "questions": [
+      {
+        "id": "dec2022_q64",
+        "year": "December 2022",
+        "q_num": 64,
+        "question": "Consider the following features of Neural\nnetworks.\nA. It is essentially a machine learning algorithm.\nB. It is useful when solving the problems for\nwhich the data set is very large.\nC. They are able to extract features without input\nfrom the programmer.\nD. These are systems modeled on the human\nbrain and nervous system.\nChoose the most appropriate answer from the\noptions given below:",
+        "options": {
+          "A": "A Only",
+          "B": "A & B Only",
+          "C": "A, B & C Only",
+          "D": "A, B, C & D"
+        },
+        "answer": "D",
+        "solution": "Statement A: \"It is essentially a machine\nlearning algorithm.\"\nCorrect. Neural networks are a type of machine\nlearning algorithm inspired by the structure and\nfunction of the human brain. They are widely\nused in supervised, unsupervised, and\nreinforcement learning tasks.\nStatement B: \"It is useful when solving the\nproblems for which the data set is very large.\"\nCorrect. Neural networks, especially deep neural\nnetworks, excel in processing large datasets and\nare particularly effective in applications such as\nimage recognition, natural language processing,\nand other areas that require large volumes of\ndata.\nStatement C: \"They are able to extract features\nwithout input from the programmer.\"\nCorrect. Neural networks, especially in deep\nlearning, can automatically learn features from\ndata during the training process. This is known as\nfeature extraction, where the network identifies\npatterns and hierarchies in the data without\nexplicit programming.\nStatement D: \"These are systems modeled on\nthe human brain and nervous system.\"\nCorrect. Neural networks are inspired by the\nstructure of the human brain, with layers of\nneurons (nodes) that simulate the brain\u2019s ability\nto recognize patterns and make decisions.\nThe correct option is D."
+      },
+      {
+        "id": "dec2022_shiftii_q85",
+        "year": "December 2022 (Shift II)",
+        "q_num": 85,
+        "question": "Choose the correct option describing the\nfeatures of Artificial neural network\nI. It is essentially machine learning algorithm.\nII. It is useful when solving the problems for\nwhich the data set is very large.\nIII. They are able to extract features without input\nfrom the programmer.\nIv. These are systems modeled on the human\nbrain and nervous system\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "All the statements are correct.",
+          "B": "Only II & III are correct.",
+          "C": "Only I & IV are correct.",
+          "D": "All the statements are not correct."
+        },
+        "answer": "A",
+        "solution": "I. It is essentially machine learning algorithm.\nExplanation: This statement is true. An Artificial\nNeural Network (ANN) is a machine-learning\nmodel inspired by the human brain's neural\nstructure. It comprises interconnected nodes\n(neurons) organized into layers. Data flows\nthrough these nodes, adjusting the weights of\nconnections to learn patterns and make\npredictions.\nII. It is useful when solving problems for which\nthe data set is very large.\nExplanation: This statement is true. Neural\nnetworks can provide robust solutions to\nproblems in a wide range of disciplines,\nparticularly areas involving classification,\nprediction, filtering, optimization, pattern\nrecognition, and function approximation where\nthe data set is very large.\nIII. They are able to extract features without input\nfrom the programmer.\nExplanation: This statement is true. One of its key\nadvantages is the capacity to automatically find\nthe representations required for feature\ndetection or classification from raw data so they\nare able to automatically extract features without\nfeeding the input by the programmer.\nIV. These are systems modeled on the human\nbrain and nervous system\nExplanation: This statement is true. The\nstructures and operations of human neurons\nserve as the basis for artificial neural networks. It\nis also known as neural networks or neural nets.\nThe input layer of an artificial neural network is\nthe first layer, and it receives input from external\nsources and releases it to the hidden layer, which\nis the second layer. In the hidden layer, each\nneuron receives input from the previous layer\nneurons, computes the weighted sum, and sends\nit to the neurons in the next layer. These\nconnections are weighted means effects of the\ninputs from the previous layer are optimized\nmore or less by assigning different-different\nweights to each input and it is adjusted during\nthe training process by optimizing these weights\nfor improved model performance.\u00a0\nSo option A is the correct answer."
+      }
+    ]
+  },
+  {
+    "group_id": 8,
+    "unit": 9,
+    "unit_name": "Data Communication and Computer Networks",
+    "questions": [
+      {
+        "id": "dec2022_q74",
+        "year": "December 2022",
+        "q_num": 74,
+        "question": "Match List I with List II\nList l List ll\nA. Physical\nLayer\nl. Transforming the raw bits in the\nform of a frame for transmission\nB. Data\nLink Layerll. Control and monitoring of subnet\nC.\nNetwork\nLayer\nlll. Transmission of raw bits over a\ncommunication channel\nD.\nTransport\nLayer\nlV. Datagrams transmit data through\nconnection-oriented or connection-\nless using datagrams.\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A-III, B-II, C-I, D-IV",
+          "B": "A-II, B-III, C-I, D-IV",
+          "C": "A-III, B-I, C-II, D-IV",
+          "D": "A-II, B-IV , C-I , D-III"
+        },
+        "answer": "C",
+        "solution": "The correct answer is option C ( A-III, B-I, C-II,\nD-IV ).\nPhysical Layer (A): The Physical Layer is\nresponsible for the transmission of raw bits over\na communication channel. This includes defining\nthe electrical and physical specifications of the\ndata connection.\nData Link Layer (B): The Data Link Layer is\nresponsible for transforming raw bits into frames\nfor transmission. It provides node-to-node data\ntransfer and handles error correction from the\nPhysical Layer.\nNetwork Layer (C):\u00a0The Network Layer is\nresponsible for controlling and monitoring\nsubnet traffic and routing packets across\ndifferent networks. It manages addressing and\nrouting through datagrams.\nTransport Layer (D):\u00a0The Transport Layer is\nresponsible for ensuring complete data transfer\nthrough either connection-oriented or\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\n\n\nUGC\tNET\nconnection-less services using segments or\ndatagrams."
+      },
+      {
+        "id": "june2023_q22",
+        "year": "June 2023",
+        "q_num": 22,
+        "question": "Match List I with List II\nList I\u00a0 List II\nA. Physical layer\nI.Transforming the raw\nbits in the form of a\nframe for transmission\nB. Data Link Layer II. Control and\nmonitoring of subnet\nC. Network Layer\nIII. Transmission of raw\nbits over\ncommunication channel\nD. Transport Layer\nIV. Datagrams\ntransmission data\nthrough connection-\noriented or\nconnectionless using\ndatagram\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A-III B-II C-I D-IV",
+          "B": "A-II B-III C-I D-IV",
+          "C": "A-III B-I C-II D-IV",
+          "D": "A-II B-IV C-I D-III"
+        },
+        "answer": "C",
+        "solution": "Option - C (A-III B-I C-II D-IV)\nExplanation:\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 List - I \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0List - II\nA.Physical\nLayer III.\nTransmission of raw bits\nover communication\nchannel\nB. Datalink\nlayer I.\nTransforming the raw bits\nin the form of frame for\ntransmission\nC. Network\nLayer II. Control and monitoring of\nsubnet\nD. Transport\nLayer IV.\nDatagram transmission\ndata through connection-\noriented or connectionless\nusing datagram\n1. Physical Layer: Handles wires, switches, and\nelectrical impulses that are used to physically\nconnect devices.\n2. Data Link Layer: Controls error detection and\ncorrection, framing, and dependable\ncommunication between devices that are directly\nconnected.\n3. Network Layer: Chooses the optimal path for\ndata packet forwarding and routing between\ndevices on various networks.\n4. Transport Layer: Oversees end-to-end\ncommunication, guarantees full data transfer,\nand offers flow control and error recovery."
+      }
+    ]
+  },
+  {
+    "group_id": 9,
+    "unit": 5,
+    "unit_name": "System Software and Operating System",
+    "questions": [
+      {
+        "id": "dec2022_shiftii_q35",
+        "year": "December 2022 (Shift II)",
+        "q_num": 35,
+        "question": "In the standard Ethernet with transmission rate of\n10 Mbps, assume that the length of the medium\nis 2500 m and size of a frame is 512 bytes. The\npropagation speed of a signal in a cable is\nnormally 2 *10 m /s. Calculate Transmission\ndelay and propagation delay.",
+        "options": {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": ""
+        },
+        "answer": "B",
+        "solution": "The delay in Ethernet transmission, which is\nmeasured by the duration required to send a\nsingle frame over the physical medium, is\ndetermined by dividing the frame size by the\nspeed of transmission. In this case, the\ntransmission delay is:\n\u00a0Transmission delay = Frame size / Transmission\nrate\n=512 / 10 Mbps=51.2\u00a0 microseconds\u00a0\nIn Ethernet, the propagation delay denotes the\ntime duration for a single bit to traverse from\nsource to destination over the physical network\nmedium. It's assessed by dividing the medium's\nlength by the transmission speed of the signal. In\nthis case, the propagation delay is:\nPropagation delay = Length of medium/\nPropagation speed\n\u00a0=2500 m / 2 *10 m / s= 12.5 microseconds\u00a0\nSo option B is the correct answer."
+      },
+      {
+        "id": "june2023_q81",
+        "year": "June 2023",
+        "q_num": 81,
+        "question": "In the standard Ethernet with transmission rate of\n10 Mbps , asssume that the length of the medium\nis 2500 m and size of a frame is 512 bytes. The\npropagation speed of a signal in a cable is\nnormally . The transmission delay\nand propogation delay are",
+        "options": {
+          "A": "and",
+          "B": "and",
+          "C": "and",
+          "D": "and"
+        },
+        "answer": "B",
+        "solution": "Transmission Delay\u00a0 = Frame Size / Transmission\nRate\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0= 512 bytes / 10 Mbps = 51.2 \u03bcs\nPropagation Delay = Length of medium /\nPropagation Delay\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 = 2500 m / 2 * 10 m/s\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 = 12.5 \u03bcs\nFinal Conclusion:\nOption B is correct."
+      }
+    ]
+  },
+  {
+    "group_id": 10,
+    "unit": 7,
+    "unit_name": "Data Structures and Algorithms",
+    "questions": [
+      {
+        "id": "dec2022_shiftii_q74",
+        "year": "December 2022 (Shift II)",
+        "q_num": 74,
+        "question": "Match List I with List II\nList-I List-II\na.CDMA\nI. It provides mobile\ninternet connection\nwith faster data transfer\nrates\nb.GSM\nII.\u00a0 It allows users to\nconnect to a network or\nto other devices over\nwireless channel\nc.UMTS\nIII. Accessing\nmechanism for multiple\ntransmitters over a\nsingle channel\nd. WiFi\nIV. It is cellular\ntechnology employs\nhybrid of FDMA and\nTDMA\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "a-III, b-IV, c-II, d-I",
+          "B": "a-III, b-IV, c-I, d-II",
+          "C": "a-II, b-III, c-IV, d-I",
+          "D": "a-II, b-I, c-IV, d-III"
+        },
+        "answer": "B",
+        "solution": "a.CDMA- Code-division multiple access (CDMA) is\na channel access method used by various radio\ncommunication technologies. CDMA is an\nexample of multiple access, where several\ntransmitters can send information simultaneously\nover a single communication channel. This allows\nseveral users to share a band of frequencies\u00a0\nb.GSM- GSM is a cellular technology that uses\ncombined TDMA and FDMA with a frequency-\ndivision duplex for access. Carriers are spaced at\n200 KHz and support eight TDMA time slots\neach. For the up-link, the frequency band 890\u2013\n915 MHz is allocated, while the down-link uses\nthe band 935\u2013960 MHz.\u00a0\nc.UMTS-UMTS is based on the Global System for\nMobile Communications (GSM) \u00a0standards and\nwas developed by the 3rd Generation\nPartnership Project. As a third-generation (3G)\nbroadband, packet-based transmission of text,\ndigitized voice, video, and multimedia at data\nrates up to two megabits per second (Mbps),\nUMTS offered a vast improvement over its\npredecessor, 2G mobile technology.\u00a0\nd. WiFi -A wireless network is a computer\nnetwork that uses wireless data connections\nbetween network nodes. Wireless networking\nallows homes, telecommunications networks, and\nbusiness installations to avoid the costly process\nof introducing cables into a building, or as a\nconnection between various equipment\nlocations.\nSo option B is the correct answer."
+      },
+      {
+        "id": "june2023_q39",
+        "year": "June 2023",
+        "q_num": 39,
+        "question": "Match List I with List II\nList-I List-II\nA. CDMA\u00a0\nI. It provides mobile\ninternet connection with\nfaster data transfer rates\nB. GSM\u00a0\nII. It allows users to\nconnect to a network or\nto other devices over\nwireless channel\nC. UMTS\nIII. Accessing mechanism\nfor multiple transmitters\nover a single channel\nD. WiFi\u00a0\nIV. It is cellular\ntechnology employs\nhybrid of FDMA and\nTDMA\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A-III B-IV C-II D-I",
+          "B": "A-III B-IV C-I D-II",
+          "C": "A-II B-III C-IV D-I",
+          "D": "A-II B-I C-IV D-III"
+        },
+        "answer": "B",
+        "solution": "The correct answer is option B ( A - III, B - IV, C -\nI, D - II ).\nSolution :\u00a0\nList I List |\u00a0\u00a0\u00a0\n1 2\n\n\n\nUGC\tNET\nA.\nCDMA\u00a0\nIII. Accessing mechanism for multiple\ntransmitters over a single channel\nB. GSM\u00a0IV. It is cellular technology employs\nhybrid of FDMA and TDMA\nC.\nUMTS\nI. It provides mobile internet connection\nwith faster data transfer rates\nD. WiFi\u00a0\nII. It allows users to connect to a\nnetwork or to other devices over\nwireless channel\n\u00a0\nCDMA (Code Division Multiple Access) is\ncellular technology uses a spread spectrum\ntechnique, enabling multiple users to share a\nsingle frequency channel. Its primary purpose\nis to provide mobile voice and data services.\nGSM (Global System for Mobile\nCommunications) is a digital cellular\ntechnology that helps devices connect to the\ninternet.\nUMTS (Universal Mobile Telecommunications\nSystem) is a 3G cellular technology providing\nfaster data transfer rates than GSM.\nWi-Fi (Wireless Fidelity) is a wireless\nnetworking technology that permits devices\nto connect to the internet or to each other\nover a short distance."
+      }
+    ]
+  },
+  {
+    "group_id": 11,
+    "unit": 1,
+    "unit_name": "Discrete Structures and Optimization",
+    "questions": [
+      {
+        "id": "dec2023_q1",
+        "year": "December 2023",
+        "q_num": 1,
+        "question": "What is the probability that a positive integer\nselected at random from the set of positive\nintegers not exceeding 100 is divisible by either\n2 or 5?",
+        "options": {
+          "A": "10 / 5",
+          "B": "3 / 5",
+          "C": "2 / 5",
+          "D": "1 / 5"
+        },
+        "answer": "B",
+        "solution": "Let E1 be the event that the integer is divisible by\n2 and E2 be the event that it is divisible 5. Then\nthe event that the integer is divisible by 2 or 5 is\nE1 \u222a  E2 and E1 \u2229  E2 is the event that it is divisible\nby 2 and 5. It follows that:\np(E1 \u222a  E2) = p(E1) + p(E2) \u2212 p(E1 \u2229  E2) ---------- (1)\nHere, a positive integer not exceeding 100, so\nthe total number of outcomes will be 100\nFrom 1 to 100, there are a total of 50 numbers\nthat are divisible by 2, so favorable number of\noutcomes E1 = 50\nFrom 1 to 100, there are a total of 20 numbers\nthat are divisible by 5, so favorable number of\noutcomes E2 = 20\nFrom 1 to 100, there are a total of 10 numbers\nthat are divisible by 2 and 5, so favorable number\nof outcomes E1 \u2229  E2 = 10\nSo from equation (1)\np(E1 \u222a  E2)= 50/100 + 20/100 \u2212 10/100 = 3/5.\nTherefore option B is the correct answer."
+      },
+      {
+        "id": "june2025_q27",
+        "year": "June 2025",
+        "q_num": 27,
+        "question": "A positive integer selected at random from the\nset of positive integers not exceeding 200.\nWhich of the followings is the probability that the\nselected number is divisible by either 2 or 5 ?",
+        "options": {
+          "A": "2 / 5",
+          "B": "3 / 5",
+          "C": "4 / 5",
+          "D": "1 / 5"
+        },
+        "answer": "B",
+        "solution": "Inclusion-Exclusion Principle:\nCount of numbers divisible by 2:\nCount of numbers divisible by 5:\nCount of numbers divisible by both 2 and 5\n(i.e., by 10):\nNow apply Inclusion-Exclusion:\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\n\u00a0Bandwidth\u00a0=1Mbps=1\u00d7 bits106\n/sec\u00a0Round-trip time\u00a0=30\u00a0ms=30\n\u00d7 sec10\u22123\nBDP=1\u00d7 \u00d730\u00d7 =30,106 10\u22123\n000\u00a0bits\u00a0\nP(A\u222aB)=P(A)+P(B)\u2212P(A\u2229B)\n\u230a \u230b=100200\n2\n\u230a \u230b=40200\n5\n\u230a \u230b=20200\n10\nCount\u00a0divisible\u00a0by\u00a02\u00a0or\u00a05=100+40\u221220=120\n\n\n\nUGC\tNET\nCorrect Answer: Option B) 3 / 5"
+      }
+    ]
+  },
+  {
+    "group_id": 12,
+    "unit": 7,
+    "unit_name": "Data Structures and Algorithms",
+    "questions": [
+      {
+        "id": "dec2023_q73",
+        "year": "December 2023",
+        "q_num": 73,
+        "question": "Match List - I with List - II.\nList-I List-II\na. Greedy Best first\nsearch\nI. The space complexity\nas O(d) where d = depth\nof the deepest optimal\nsolution\nb. A* II. Incomplete even if\nthe search space is\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\nP\u2227(P\u2192Q) \u00a0PVQ\u00a0\n\u00ac(P\u2228Q)\n\u2192(P\u2227Q) (P\u2227\u00acP)\u2228(P\u2227Q)\nP\u2192Q (\u00acP)\u2228Q\nP\u2228(Q\u2227R)\n(P\u2227P)\u2228(P\u2227Q)\n\u2228(P\u2227R)\n\u2228(Q\u2227R)\nfinite\nc. Recursive best-first\nsearch\nIII. Optimal if optimal\nsolution is reachable\notherwise return the\nbest reachable optimal\nsolution\nd. SMA*\nIV. Computation and\nspace complexity is two\nlight\u00a0\nChoose the correct answer from the options\ngiven below :",
+        "options": {
+          "A": "(a)-(II), (b)-(IV), (c)-(I), (d)-(III)",
+          "B": "(a)-(II), (b)-(III), (c)-(I), (d)-(IV)",
+          "C": "(a)-(III), (b)-(II), (c)-(IV), (d)-(I)",
+          "D": "(a)-(III), (b)-(IV), (c)-(II), (d)-(I)"
+        },
+        "answer": "A",
+        "solution": "a) Greedy Best First Search- \u00a0Greedy Best-First\nSearch is not a complete algorithm, meaning it\nmay not always find a solution if one exists. This\ncan happen if the algorithm gets stuck in a cycle\nor if the search space is too complex. It\ncorresponds to \"Incomplete even if the search\nspace is finite\".\nb) A* algorithm can be computationally\nexpensive in certain scenarios when the search\nspace is extensive and the number of possible\npaths is large. The algorithm may consume\nsignificant memory and processing resources. Its\nspace complexity is (O(b) where d is the depth\nof the solution (the shortest path) and b is the\nbranching factor (the average number of\nsuccessors per state), as it stores all generated\nnodes in memory. So it corresponds to \"\nComputation and space complexity is two light \".\nc) Recursive best-first search- \u00a0When all nodes\nare explored, the best node is explored but the\nsecond best is preserved in memory. If the best\nnode is explored and all children are found to be\nworse, the search process backtracks to the\nsecond-best node (which is now best in the list\nincluding all the children as well as it). At the\nsame point of time, the best child is kept as\nsecond best node now. At any given point in\ntime, this search method only explores one node\nand remembers one more. So the space\ncomplexity is O(d) where d = depth of the\ndeepest optimal solution.\nd) SMA* or Simplified Memory Bounded A* is a\nshortest path algorithm based on the A*\nalgorithm. The main advantage of SMA* is that it\nuses a bounded memory. It is complete if the\nallowed memory is high enough to store the\nshallowest solution.It is optimal if the allowed\nmemory is high enough to store the shallowest\noptimal solution, otherwise, it will return the best\nsolution that fits in the allowed memory. It avoids\nrepeated states as long as the memory bound\nallows it. So it corresponds to III.\nTherefore Option A is the correct answer."
+      },
+      {
+        "id": "nov2020_q73",
+        "year": "November 2020",
+        "q_num": 73,
+        "question": "Match List I with List II\nList I List II\n(A) Greedy Best-First\nSearch\u00a0\n(I) Space complexity is\nO(d) where d=depth of\nthe deepest optimal\nsolution.\n(B)\u00a0 \u00a0 \u00a0 \u00a0A*\u00a0\n(II) Incomplete even if\nthe search space is\nfinite.\n(C) Recursive Best-First\nSearch\u00a0\n(III) Optimal if the\noptimal solution is\nreachable; otherwise,\nreturns the best\nreachable optimal\nsolution.\n(D)\u00a0 \u00a0 \u00a0SMA*\n(IV) Computation and\nspace complexity are\ntoo high.\u00a0\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A-II, B-IV, C-I, D-III",
+          "B": "A-II, B-III, C-I, D-IV",
+          "C": "A-III, B-II, C-IV, D-I",
+          "D": "A-III, B-IV, C-II, D-I"
+        },
+        "answer": "A",
+        "solution": "Correct option is A.\nGreedy best-first search algorithm always selects\nthe path which appears best at that moment. It is\nthe combination of depth first search and bredth\nfirst search algorithms.\nTime complexity - The worst case time\ncomplexity of the greedy best first search is O(\n).\nSpace\u00a0 complexity - The worst case space\ncomplexity of the greedy best first search is O(\n). Where m is the maximum depth of the\nsearch space.\nComplete - Greedy best first search is also\nincomplete, even if the state space is finite.\nOptimal - Greedy best first search algorithm is\nnot optimal.\n-> A*\u00a0 is optimal and complete but time\ncomplexity and space complexity too high. It\nrequires more computation.\n-> Recursive Best first Search retents more\nmemory knowledge but uses only O(bd)\nmemory.\n-> Memory Simplified Bound A* such as A*\nOptimal if you can get optimal solution\notherwise as it is memory bound."
+      }
+    ]
+  },
+  {
+    "group_id": 13,
+    "unit": 2,
+    "unit_name": "Computer System Architecture",
+    "questions": [
+      {
+        "id": "dec2023_q77",
+        "year": "December 2023",
+        "q_num": 77,
+        "question": "In most general case, the computer needs to\nprocess each instruction with the following\nsequence of steps:\n(A) Calculate the effective address\n(B) Execute the instruction\n(C) Fetch the instruction from memory\n(D) Fetch the operand from memory\n(E) Decode the instruction\nChoose the correct answer from the options\ngiven below :\n(A)\u00a0(C),(E),(D),(A),(B)\n(B)\u00a0(C),(E),(A),(D),(B)\n(C)\u00a0(A),(B),(C),(E),(D)\n(D)",
+        "options": {
+          "A": ",",
+          "B": ",",
+          "C": ",",
+          "D": ",(E)"
+        },
+        "answer": "B",
+        "solution": "Explanation:\nIn computer organization, an instruction cycle,\nalso known as a fetch-decode-execute cycle, is\nthe basic operation performed by a central\nprocessing unit (CPU) to execute an instruction.\nThe instruction cycle consists of several steps,\neach of which performs a specific function in the\nexecution of the instruction.\nFetch: In the fetch cycle, the CPU retrieves the\ninstruction from memory. The instruction is\ntypically stored at the address specified by the\nprogram counter (PC). The PC is then\nincremented to point to the next instruction in\nmemory.\nDecode: In the decode cycle, the CPU interprets\nthe instruction and determines what operation\nneeds to be performed. This involves identifying\nthe opcode and any operands that are needed to\nexecute the instruction.\nCalculate the effective address. If the\ninstruction has an operand, it's not usually the\nactual data but rather its address that is\nspecified. During this phase, the address for the\noperands is computed. The calculated effective\naddress will be used to fetch the operand in the\nnext step.\nFetch operands: In some CPUs, the operands\nneeded for an instruction are fetched during a\nseparate cycle before the execute cycle. This is\ncalled the fetch operands cycle.\nExecute: In the execute cycle, the CPU performs\nthe operation specified by the instruction. This\nmay involve reading or writing data from or to\nmemory, performing arithmetic or logic\noperations on data, or manipulating the control\nflow of the program.\nSo option B is the correct answer."
+      },
+      {
+        "id": "june2025_q73",
+        "year": "June 2025",
+        "q_num": 73,
+        "question": "The computer needs to process each instruction\nwith the following sequence of steps:\nA. Calculate the effective address\nB. Fetch the Instruction from memory\nC. Decode the instruction\nD. Fetch the operands from the memory\nE. Execute the Instruction\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A, B, C, D, E",
+          "B": "B, A, D, A, E",
+          "C": "B, C, A, D, E",
+          "D": "C, B, A, D, E"
+        },
+        "answer": "C",
+        "solution": "B. Fetch the instruction from memory:\u00a0CPU\nreads the instruction from memory using the\nProgram Counter (PC).\nC. Decode the instruction: The fetched\ninstruction is decoded by the instruction decoder\nto determine the operation and operand types.\nA. Calculate the effective address: If the\ninstruction involves memory addressing (like\nindirect, indexed), compute the effective\naddress.\nD. Fetch the operands from memory: Retrieve\ndata (operands) needed for the instruction.\nE. Execute the instruction: Perform the\noperation (add, move, branch, etc.).\nCorrect Answer: Option C \u2013 B, C, A, D, E"
+      }
+    ]
+  },
+  {
+    "group_id": 14,
+    "unit": 2,
+    "unit_name": "Computer System Architecture",
+    "questions": [
+      {
+        "id": "dec2023_q80",
+        "year": "December 2023",
+        "q_num": 80,
+        "question": "Arrange the following levels of interrupt\nprotection within the Linux Kernel, in the order of\nincreasing priority.\n(a) user mode programs\n(b) bottom half interrupt handlers\n(c) kernel system service routines\n(d) top half interrupt handlers\nChoose the correct answer from the options\ngiven below :",
+        "options": {
+          "A": "(a),(b),(d),(c)",
+          "B": "(a),(c),(b),(d)",
+          "C": "(a),(c),(d),(b)",
+          "D": "(d), (a), (c), (b)"
+        },
+        "answer": "B",
+        "solution": "Interrupt: An interrupt is an event that alters the\nsequence of instructions executed by a\nprocessor in corresponding to the electrical\nsignal generated by the HW circuit both inside &\noutside the CPU.\nFollowing are the uses and priority of the\ninterrupts in Linux kernel-\n(a) user mode programs- These are applications\nthat are currently running on our computer. They\nhave the lowest degree of system privileges and\ndon't communicate directly with other programs\nor the system hardware. They ask the kernel for\nsystem services and resources.\n(b)\u00a0kernel system service routines- These\nprocedures provide system services, which help\nthe user mode programs. Since they deal directly\nwith hardware and system structures, they\nfunction at a higher privilege level than user\nprograms, but they are not as prioritized as\ninterrupt handlers.\n(c) bottom half interrupt handlers - \u00a0The Job of\nthe Bottom half is used to run leftover (deferred)\nwork by the top halves. When this piece of code\nis being executed interrupt is Enabled and\nScheduler is Disabled. The bottom half then\nperforms whatever other work is required, such\nas awakening processes, starting up another I/O\noperation, and so on. This setup permits the top\nhalf to service a new interrupt while the bottom\nhalf is still working. Every serious interrupt\nhandler is split this way.\n(d) top half interrupt handlers- Top halves\nexecute as soon as the CPU receives the\ninterrupt. In the Top Halves, Context Interrupt\nand Scheduler are disabled. This part of the code\nonly contains Critical Code. The execution time of\nthis code should be as short as possible because\nat this time Interrupt is disabled. When a top-half\nhandler is called, it will handle the hardware\noperations and then add the bottom-half\nhandler(s) to the interrupt queue because it is\nthe highest priority.\nSo the correct answer is option B."
+      },
+      {
+        "id": "june2025_q30",
+        "year": "June 2025",
+        "q_num": 30,
+        "question": "Consider the following interrupt protection levels\nin Linux, and arrange them in the increasing\norder of their priorities.\nA. User-Mode Programs (Preemptible)\nB. Bottom Half Interrupt Handlers\nC. Top Half Interrupt Handlers\nD. Kernel System Service Routines (Preemptible)\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": ""
+        },
+        "answer": "D",
+        "solution": "In Linux interrupt handling, there is a clear\nhierarchy of priority levels:\n1. User Mode Programs (A) \u2013 Have the lowest\npriority, can be preempted at any time by\nkernel or interrupts.\n2. Kernel System Service Routines (D) \u2013 Run in\nkernel mode, but are still preemptible by\ninterrupt handlers.\n3. Bottom Half Interrupt Handlers (B) \u2013 These\nare deferred interrupt handlers (e.g., softirqs,\ntasklets); they run after the top half\ncompletes.\n4. Top Half Interrupt Handlers (C) \u2013 Highest\npriority. Executed immediately when an\ninterrupt occurs. Cannot be preempted by\nanything except another (higher) interrupt.\nCorrect Answer: Option D) A \u2192 D \u2192 B \u2192 C"
+      }
+    ]
+  },
+  {
+    "group_id": 15,
+    "unit": 2,
+    "unit_name": "Computer System Architecture",
+    "questions": [
+      {
+        "id": "dec2024_q60",
+        "year": "December 2024",
+        "q_num": 60,
+        "question": "Which of the following is the correct sequence\nwith regard to service routine?\nA. Save contents of processor registers\nB. Turn the interrupt facility on\nC. Service the device whose flag is set\nD. Check which flag is set\nE. Restore contents of processor registers\nChoose the correct answer from the options\ngiven below:",
+        "options": {
+          "A": "A, B, C, D, E",
+          "B": "D, B, C, A, E",
+          "C": "D, C, B, E, A",
+          "D": "A, D, C, E, B"
+        },
+        "answer": "D",
+        "solution": "A service routine (or Interrupt Service Routine -\nISR) is executed when an interrupt occurs. The\ncorrect sequence ensures proper handling of the\ninterrupt while preserving the CPU state.\nStep-by-Step Execution of Service Routine:\n(A) Save contents of processor registers: Before\nhandling the interrupt, the CPU registers are\nsaved to prevent data loss.\n(D) Check which flag is set: Identify the\ninterrupt source by checking the status flags.\n(C) Service the device whose flag is set:\u00a0Execute\nthe necessary operation to handle the interrupt\n(e.g., read input, write output).\n(E) Restore contents of processor registers:\nRestore previously saved register values to\nresume execution correctly.\n(B) Turn the interrupt facility on: Re-enable\ninterrupts to allow new interrupts after the\ncurrent one is serviced.\nThus, the correct order is A \u2192 D \u2192 C \u2192 E \u2192 B."
+      },
+      {
+        "id": "june2024_cancelled_q70",
+        "year": "June 2024 (Cancelled)",
+        "q_num": 70,
+        "question": "Regarding the subroutines, see the following\nsequence of tasks to be performed :\nA. Turn on the interrupt facility on.\nB. Service the device whose flag is set.\nC. Save the contents of processor registers.\nD. Check which flag is set.\nE. Restore the contents of processor registers.\nChoose the correct answer from the options\ngiven below :",
+        "options": {
+          "A": "A, D, C, B, E",
+          "B": "D, A, B, C, E",
+          "C": "C, D, B, E, A",
+          "D": "B, D, A, C, E"
+        },
+        "answer": "C",
+        "solution": "C. Save the contents of processor registers:\nBefore executing any critical operation like\nhandling interrupts or subroutines, it's essential\nto save the current state of the processor's\nregisters. This ensures that the processor's\ncurrent state is preserved and can be restored\nlater.\nD. Check which flag is set: This step involves\nchecking which interrupt flag is set or which\nsubroutine needs to be executed. This check\ndetermines the specific task that requires\nattention.\nB. Service the device whose flag is set: Once it's\ndetermined which device or subroutine needs\nattention (based on the flag checked in step D),\nthe corresponding device is serviced or the\nsubroutine is executed.\nE. Restore the contents of processor registers:\nAfter completing the interrupt handling or\nsubroutine execution, the saved processor\nregister contents (from step C) are restored. This\nstep ensures that the processor returns to its\noriginal state before the interrupt or subroutine\nwas handled.\nA. Turn on the interrupt facility: This step involves\nenabling the interrupt mechanism again after the\ntask (interrupt handling or subroutine execution)\nhas been completed. This prepares the system to\nhandle future interrupts.\nSo option C is the correct answer."
+      }
+    ]
+  },
+  {
+    "group_id": 16,
+    "unit": 1,
+    "unit_name": "Discrete Structures and Optimization",
+    "questions": [
+      {
+        "id": "july2018_q23",
+        "year": "July 2018",
+        "q_num": 23,
+        "question": "A hash function h defined h(key)=key mod 7, with\nlinear probing, is used to insert the keys 44, 45,\n79, 55, 91, 18, 63 into a table indexed from 0 to 6.\nWhat will be the location of key 18 ?",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "5",
+          "D": "6"
+        },
+        "answer": "C",
+        "solution": "Option C is Correct\nWe are given:\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\nT(m)\u00a0=\u00a0T( )\u00a0+13m4\nmb\n43\np\u00a0=\u00a0 (a)\u00a0=\u00a0 (1)\u00a0=\u00a00logb log43\n(1)\u00a0=\u00a00logx p\np 0\np\np\np \n2\n\n\n\nUGC\tNET\nHash Function: h(key)=keymod\u20097\nCollision Resolution: Linear Probing\nKeys to Insert: 44,45,79,55,91,18,63\nTable Index Range: 0 to 6\nWe need to determine the location of key 18\nafter inserting all the keys.\n1. Insert key 44\nh(44) = 44 mod\u2009\u20097=2\nKey 44 is inserted at index 2.\n2. Insert key 45\nh(45) = 45 mod\u2009\u20097=3\nKey 45 is inserted at index 3.\n3. Insert key 79\nh(79) = 79 mod\u2009\u20097=2\nIndex 2 is already occupied (by key 44). Using\nlinear probing, the next available index is 4. Key\n79 is inserted at index 4.\n4. Insert key 55\nh(55) = 55 mod\u2009\u20097 = 6\nKey 55 is inserted at index 6.\n5. Insert key 91\nh(91) = 91 mod\u2009\u20097=0\nKey 91 is inserted at index 0.\n6. Insert key 18\nh(18) = 18 mod\u2009\u20097 = 4\nIndex 4 is already occupied (by key 79). Using\nlinear probing, check the next available indices\nand since, Index 5 is free.\nKey 18 is inserted at index 5.\n7. Insert key 63\nh(63) = 63 mod\u2009\u20097=0\nIndex 0 is occupied (by key 91). Using linear\nprobing, check the next available indices, and\nsince Index 1 is free.\nKey 63 is inserted at index 1.\nFinal Table After All Insertions:\nIndexKey\n0 91\nIndexKey\n1 63\n2 44\n3 45\n4 79\n5 18\n6 55"
+      },
+      {
+        "id": "nov2021_q49",
+        "year": "November 2021",
+        "q_num": 49,
+        "question": "A hash function\u00a0 defined as\n, with linear probing, is\nused to insert the keys\u00a0\n into a table\nindexed from\u00a0 to . What will be the location of\nkey ?",
+        "options": {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": ""
+        },
+        "answer": "C",
+        "solution": "The correct answer is option C.\nTo determine the location of key 18 using the\nhash function ( h(key) = key mod 7 ) with linear\nprobing, Here are the following steps:\n1. Calculate the hash for each key.\n2. Insert the keys into the table using linear\nprobing if there are collisions.\nNow calculate the hash values for each key:\nKey 44: ( h(44) = 44 mod 7 = 2 ) Place 44 at index\n2.\nKey 45: ( h(45) = 45 mod 7 = 3 ) Place 45 at index\n3.\nKey 79: ( h(79) = 79 mod 7 = 2 )\u00a0Index 2 is\noccupied (by 44), so we probe to the next index\n(3 is also occupied by 45). Index 4 is free, so\nplace 79 at index 4.\nKey 55: ( h(55) = 55 mod 7 = 6 ) Place 55 at index\n6.\nKey 91: ( h(91) = 91 mod 7 = 0 ) Place 91 at index 0.\nKey 18: ( h(18) = 18 mod 7 = 4 ) Index 4 is\noccupied (by 79), so we probe to the next index\n(5 is free).\nPlace 18 at index 5.\nKey 63: ( h(63) = 63 mod 7 = 0 ) Index 0 is\noccupied (by 91), so we probe to the next indices\n(1 is free). Place 63 at index 1.\nNow, the final positions in the table:\nIndex 0: 91\nIndex 1: 63\nIndex 2: 44\nIndex 3: 45\nIndex 4: 79\nIndex 5: 18\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\nn\nn\n3/2\n3/2\nlog n\nlog n\nlog n 3/2\n\u2a7d\n\n\n\nUGC\tNET\nIndex 6: 55\nThus, the location of key 18 is 5."
+      }
+    ]
+  },
+  {
+    "group_id": 17,
+    "unit": 5,
+    "unit_name": "System Software and Operating System",
+    "questions": [
+      {
+        "id": "july2018_q51",
+        "year": "July 2018",
+        "q_num": 51,
+        "question": "At a particular time of computation, the value of\na counting semaphore is 10. Then 12 P operations\nand \u201cx\u201d V operations were performed on this\nsemaphore. If the final value of semaphore is 7, x\nwill be :",
+        "options": {
+          "A": "8",
+          "B": "9",
+          "C": "10",
+          "D": "11"
+        },
+        "answer": "B",
+        "solution": "Explanation:\nStep 1: The initial value of the semaphore equals\n10.\nStep 2: After 12 P operations \u2192 ( Each P\noperation decreases the semaphore value by 1)\nAfter 12 P operations, the semaphore value is 10\u2212\n12 equals \u22122.\nStep 3: After 'x' V operations \u2192(Each V operation\nincreases the semaphore value by 1)\nAfter 'x' V operations, the semaphore value is \u22122\n+ x.\nStep 4: Final value of semaphore is 7 equals \u22122 +\nx\n\u00a07= \u22122 + x \u00a0\n\u00a0x = 9\nThe Final Answer is: 9"
+      },
+      {
+        "id": "june2023_q58",
+        "year": "June 2023",
+        "q_num": 58,
+        "question": "At a particular time of computation, the value of\na counting semaphore is 7. Then 20 p operations\nand ' x ' V operations were completed on this\nsemaphore. If the final value of semaphore is \nwill be",
+        "options": {
+          "A": "15",
+          "B": "22",
+          "C": "18",
+          "D": "13"
+        },
+        "answer": "C",
+        "solution": "Given:\n\u00a0 \u00a0 \u00a0Initial value of semaphore =7\n\u00a0 \u00a0 \u00a0Number of p(wait) operations = 20\n\u00a0 \u00a0 \u00a0Final value of semaphore = 5\nEach P operation decreases the semaphore by\n1 .\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 7 - 20 =-13 \u00a0\n\u00a0 \u00a0 \u00a0Each V operation increases the semaphore by\n1\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 -13 + x = 5\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0x =18\nSo the final answer is option C"
+      }
+    ]
+  },
+  {
+    "group_id": 18,
+    "unit": 7,
+    "unit_name": "Data Structures and Algorithms",
+    "questions": [
+      {
+        "id": "july2018_q70",
+        "year": "July 2018",
+        "q_num": 70,
+        "question": "Consider a hash table of size seven, with starting\nindex zero, and a hash function (7x+3) mod 4.\nAssuming the hash table is initially empty, which\nof the following is the contents of the table when\nthe sequence 1, 3, 8, 10 is inserted into the table\nusing closed hashing ? Here \u201c__\u201d denotes an\nempty location in the table.",
+        "options": {
+          "A": "3, 10, 1, 8, __ , __ , __",
+          "B": "1, 3, 8, 10, __ , __ , __",
+          "C": "1, __ , 3, __ , 8, __ , 10",
+          "D": "3, 10, __ , __ , 8, __ , __"
+        },
+        "answer": "A",
+        "solution": "For 1:\nHash function: (7 * 1 + 3) mod 4\nResult: (7 + 3) mod 4 = 10 mod 4 = 2\nSo, 1 will go into index 2 of the table.\nFor 3:\nHash function: (7 * 3 + 3) mod 4\nResult: (21 + 3) mod 4 = 24 mod 4 = 0\nSo, 3 will go into index 0 of the table.\nFor 8:\nHash function: (7 * 8 + 3) mod 4\nResult: (56 + 3) mod 4 = 59 mod 4 = 3\nSo, 8 will go into index 3 of the table.\nFor 10:\nHash function: (7 * 10 + 3) mod 4\nResult: (70 + 3) mod 4 = 73 mod 4 = 1\nSo, 10 will go into index 1 of the table.\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\n1 2 2\n1\n1\n2\n1\n2\n2\n1\n1 1\n2\n2 1\n1 2\n1\n2\n\n\n\nUGC\tNET\nAfter inserting the sequence 1, 3, 8, 10 into the\nhash table, the content of the table will be:\n\u00a0Index Value\n0 3\n1 10\n2 1\n3 8\n4 __\n5 __\n6 __"
+      },
+      {
+        "id": "june2023_q44",
+        "year": "June 2023",
+        "q_num": 44,
+        "question": "Consider a hash table of size seven with starting\nindex zero and a hash function .\nAssuming the hash table is initially empty. Which\nof the following is the content of the table when\nthe sequence , is inserted into the\ntable using closed hashing? Here \"__ \" denotes\nan empty location in the table.",
+        "options": {
+          "A": "1,3,8,10,5_,_",
+          "B": "3,8,1,_,10_,5",
+          "C": "_3,8,1,_,10,5",
+          "D": "_1,3,8,10,5_"
+        },
+        "answer": "D",
+        "solution": "Option 4: _1,3,8,10,5_\nCONCEPT\nHashing: The process of dividing a big volume of\ndata into manageable tables using an algorithm\nis known as hashing.\u00a0\nClosed Hashing or Open Addressing:\nAll keys are stored solely within the hash table.\nThe hash table's size cannot be exceeded by\nthe amount of keys that must be kept inside\nthe hash table.\nLinear Probing: If a collision happens during the\nallocation of a location to a key value in linear\nprobing, we proceed to linearly probe towards\nthe next empty location and assign it to that key.\nEXPLANATION: In order to insert the given\nsequence to the hash table with the help of\nclosed hashing, we make use of the given hash\nfunction h(x) = (6x + 3) mod 4.\nNow, going through each element one by one as\ngiven in the question.\u00a0\nTable size is seven and it starts from index 0.\nInitially, table looks like:\n0 \u00a01 \u00a0 \u00a0 \u00a02 3 4 5 6\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\n\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0|\u00a0\u00a0\u00a0\n\u00a0So, the average waiting time = ( 3ms + 0ms + 8ms)\u00a0 / 3 =\n3.67ms\n=> 3.76 ms is the average waiting time for the three\nprocesses.\n\n\n\nUGC\tNET\nStep 1: Insert 1:\nHash Value= (6 * 1 + 3) mod 4 = 9 mod 4 = 1\u00a0\n1 will go to index 1. Table will look like:\n0 \u00a01 2 3 4 5 6\n\u00a0 1 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\nStep 2: Insert 3:\nHash Value= (6 * 3 +3) mod 4 = 21 mod 4 = 1\u00a0\n1 will go to index 2. Table will look like:\nCollision occurs. Following linear probing, the\ntable becomes:\n0 1 2 3 4 5 6\n\u00a0 \u00a01 \u00a03 \u00a0 \u00a0 \u00a0 \u00a0\nStep 3: Insert 8:\nHash Value= (6 * 8 +3) mod 4 = 51 mod 4 = 3\n8 will go to index 3. Table will look like:\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\n0 1 2 3 4 5 6\n\u00a0 1 \u00a03 \u00a08 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\nStep 4: Insert 10:\nHash Value= (6 * 10 +3) mod 4 = 63 mod 4 = 3\n10 will go to index 4 due to linear probing. Table\nwill look like:\n0 1 2 3 4 5 6\n\u00a0 1 3 \u00a08 10 \u00a0 \u00a0\nStep 5: Insert 5:\nHash Value= (6 * 5 + 3) mod 4 = 33 mod 4 = 1\n5 will go to index 5 due to linear probing. Table\nwill look like: \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00a0\n0 1 2 3 4 5 6\n\u00a0 1 3 \u00a0\u00a0 8 \u00a0 \u00a0 10 \u00a0\u00a0 5"
+      }
+    ]
+  },
+  {
+    "group_id": 19,
+    "unit": 1,
+    "unit_name": "Discrete Structures and Optimization",
+    "questions": [
+      {
+        "id": "june2019_q52",
+        "year": "June 2019",
+        "q_num": 52,
+        "question": "The M components in MVC are responsible for",
+        "options": {
+          "A": "user interface",
+          "B": "security of the system",
+          "C": "business logic and domain objects",
+          "D": "translating between user interface\nactions/events and operations on the domain\nobjects"
+        },
+        "answer": "C",
+        "solution": "Model (M):\nThe Model is responsible for managing the\napplication's business logic and domain objects.\nIt handles the data, logic, and rules of the\napplication.\u00a0\nView (V):\nThe View is responsible for presenting data to\nthe user. It handles the user interface (UI) and\ndisplays the output generated by the application.\nController (C):\nThe Controller acts as an intermediary between\nthe Model and the View.\nOption C (business logic and domain objects):\nCorrect. The Model is designed to handle\nbusiness logic and manage the domain objects."
+      },
+      {
+        "id": "nov2021_q12",
+        "year": "November 2021",
+        "q_num": 12,
+        "question": "The V components in MVC are responsible for:",
+        "options": {
+          "A": "User interface.",
+          "B": "Security of the system.",
+          "C": "Business logic and domain objects.",
+          "D": "Translating between user interface\nactions/events and operations on the domain\nobjects."
+        },
+        "answer": "A",
+        "solution": "Option A is correct.\nMVC( Model View Controller) is an architecture\npattern that separates the app structure into\nthree different layers - the Model, the View, and\nthe Controller.\nThe View : This component is used to work on\nthe UI (user interface) logic of the application."
+      }
+    ]
+  },
+  {
+    "group_id": 20,
+    "unit": 4,
+    "unit_name": "Database Management Systems (DBMS)",
+    "questions": [
+      {
+        "id": "june2024_reexam_q8",
+        "year": "June 2024 (Re-Exam)",
+        "q_num": 8,
+        "question": "Consider a relation schema R=(U, V, W, X, Y, Z), on\nwhich the following functional dependencies\nhold\n{U\u2192V, VW\u2192X, Y\u2192W; X\u2192U}\nThe candidate keys of R are :",
+        "options": {
+          "A": "UY, VY",
+          "B": "UY, VY, XY",
+          "C": "UYZ, VYZ, VWZ",
+          "D": "UYZ, VYZ, XYZ"
+        },
+        "answer": "D",
+        "solution": "Step 1: Identify which attributes are dependent\non others.\nU\u2192V means if we know U, we can determine V.\nVW\u2192X means knowing V and W, we can\ndetermine X.\nY\u2192W means knowing Y, we can determine W.\nX\u2192U means knowing X, we can determine U.\nStep 2: Find the closure of attribute\ncombinations to determine candidate keys.\nClosure of UY:\nU\u2192V, so UY determines V.\nY\u2192W, so UY determines W.\nVW\u2192X, so UY determines X.\nX\u2192U, so UY already determines U (nothing new).\nThus, UY+={U,V,W,X,Y}, covering all attributes\nexcept Z.\nClosure of VY:\nY\u2192W, so VY determines W.\nVW\u2192X, so VY determines X.\nX\u2192U, so VY determines U. Thus, VY+={U,V,W,X,Y},\ncovering all attributes except Z.\nClosure of XY:\nX\u2192U, so XY determines U.\nU\u2192V, so XY determines V.\nY\u2192W, so XY determines W. Thus, XY+={U,V,W,X,Y},\ncovering all attributes except Z.\nStep 3: Evaluate the candidate key options.\nTo cover all attributes, including Z, we need to\nextend the combinations:\nUY, VY, and XY determine all attributes except Z.\nTherefore, adding Z to these combinations will\ncover all attributes.\nThus, the correct candidate keys are UYZ, VYZ,\nand XYZ.\nThe correct option is D: UYZ,VYZ,XYZ."
+      },
+      {
+        "id": "nov2020_q14",
+        "year": "November 2020",
+        "q_num": 14,
+        "question": "Consider a relational schema\u00a0\n on which the\nfollowing functional dependencies hold:\nWhich are the candidate keys among following\noptions?",
+        "options": {
+          "A": "UY, VY",
+          "B": "UY, VY, XY",
+          "C": "UYZ, VYZ, VWZ",
+          "D": "UYZ, VYZ, XYZ"
+        },
+        "answer": "D",
+        "solution": "The correct answer is option D.\nA candidate key is a set of one or more\nattributes in a database table that can uniquely\nidentify each record in the table.\n(UYZ)+ = (U,V,W,X,Y,Z)\n(VYZ)+ = (U,V,W,X,Y,Z)\n(XYZ)+ = (U,V,W,X,Y,Z)"
+      }
+    ]
+  }
+]

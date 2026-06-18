@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback, useRef } from "react"
-import rawQuestions from "@/data/ugc_net_cs_pyqs.json"
 
 const UNITS: { [key: number]: string } = {
   1: "Discrete Structures and Optimization",
@@ -55,7 +54,8 @@ export interface UnitMastery {
 }
 
 export const useQuizState = () => {
-  const [questions] = useState<Question[]>(rawQuestions as Question[])
+  const [questions, setQuestions] = useState<Question[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
   
   // Dashboard & Navigation state
   const [activeTab, setActiveTab] = useState<"dashboard" | "quiz">("dashboard")
@@ -91,53 +91,41 @@ export const useQuizState = () => {
   const [history, setHistory] = useState<QuizSession[]>([])
   const [unitMastery, setUnitMastery] = useState<UnitMastery>({})
 
-  // Load history & mastery on mount
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const storedHistory = localStorage.getItem("ugc_net_quiz_history")
-      if (storedHistory) {
-        try {
-          const parsed = JSON.parse(storedHistory)
-          setHistory(parsed)
-          recalculateMastery(parsed)
-        } catch (e) {
-          console.error("Failed to parse history", e)
-        }
+  // Load questions, history & mastery from SQLite DB
+  const refreshData = useCallback(async () => {
+    setLoading(true)
+    try {
+      // Fetch questions
+      const qRes = await fetch("/api/questions")
+      if (qRes.ok) {
+        const qData = await qRes.json()
+        setQuestions(qData)
       }
+      
+      // Fetch stats & history
+      const sRes = await fetch("/api/stats")
+      if (sRes.ok) {
+        const sData = await sRes.json()
+        setHistory(sData.history)
+        
+        // Map unit mastery stats
+        const mastery: UnitMastery = {}
+        for (let u = 1; u <= 11; u++) {
+          const m = sData.unitMastery[u] || { correct: 0, attempts: 0, total: 0 }
+          mastery[u] = { correct: m.correct, attempts: m.attempts }
+        }
+        setUnitMastery(mastery)
+      }
+    } catch (err) {
+      console.error("Failed to load data from SQLite database", err)
+    } finally {
+      setLoading(false)
     }
   }, [])
 
-  // Recalculate Unit-wise Mastery based on history
-  const recalculateMastery = (sessions: QuizSession[]) => {
-    const mastery: UnitMastery = {}
-    
-    // Initialize units
-    for (let u = 1; u <= 11; u++) {
-      mastery[u] = { correct: 0, attempts: 0 }
-    }
-    
-    // Process each session
-    sessions.forEach(session => {
-      // In practice mode, we can attribute all attempts to the selected unit
-      if (session.mode === "practice" && session.unit) {
-        if (mastery[session.unit]) {
-          mastery[session.unit].attempts += session.total
-          mastery[session.unit].correct += session.score
-        }
-      } else {
-        // For mock/custom, we don't have per-question mapping saved in history directly,
-        // so we will also map historical per-question correctness if needed.
-        // For simplicity, we calculate based on practice sessions or we can trace back.
-        // Let's increment based on session info:
-        if (session.unit && mastery[session.unit]) {
-          mastery[session.unit].attempts += session.total
-          mastery[session.unit].correct += session.score
-        }
-      }
-    });
-    
-    setUnitMastery(mastery)
-  }
+  useEffect(() => {
+    refreshData()
+  }, [refreshData])
 
   // Update mastery manually when a question is submitted
   const recordQuestionAttempt = useCallback((unitId: number, isCorrect: boolean) => {
@@ -222,8 +210,8 @@ export const useQuizState = () => {
     setSelectedAnswers(prev => ({ ...prev, [qId]: option }))
   }
 
-  // Submit Answer
-  const submitAnswer = (qId: string) => {
+  // Submit Answer to database and update local state
+  const submitAnswer = async (qId: string) => {
     if (submittedAnswers[qId] || isQuizFinished) return
     const userAns = selectedAnswers[qId]
     if (!userAns) return
@@ -236,6 +224,29 @@ export const useQuizState = () => {
     setSubmittedAnswers(prev => ({ ...prev, [qId]: true }))
     recordQuestionAttempt(question.unit, isCorrect)
     
+    // Log single attempt to SQLite database
+    try {
+      await fetch("/api/attempts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          questionId: qId,
+          userAnswer: userAns,
+          isCorrect
+        })
+      })
+    } catch (err) {
+      console.error("Failed to submit attempt to DB", err)
+    }
+    
+    // Update local question list state
+    setQuestions(prev => prev.map(q => {
+      if (q.id === qId) {
+        return { ...q, isAnswered: true, isCorrect, userAnswer: userAns }
+      }
+      return q
+    }))
+
     // Remove from skipped list if submitted
     setSkippedQuestions(prev => {
       const updated = { ...prev }
@@ -256,8 +267,8 @@ export const useQuizState = () => {
     setCurrentIndex(prev => Math.min(activeQuestions.length - 1, prev + 1))
   }
 
-  // Finish Quiz
-  const finishQuiz = () => {
+  // Finish Quiz, submit session and attempts, and reload stats
+  const finishQuiz = async () => {
     setIsQuizActive(false)
     setIsQuizFinished(true)
     
@@ -265,42 +276,41 @@ export const useQuizState = () => {
     
     // Calculate final score
     let correctCount = 0
-    const incorrectIds: string[] = []
+    const attemptsToSubmit: { questionId: string; userAnswer: string; isCorrect: boolean }[] = []
     
     activeQuestions.forEach(q => {
-      const userAns = selectedAnswers[q.id]
-      if (userAns === q.answer) {
+      const userAns = selectedAnswers[q.id] || ""
+      const isCorrect = userAns === q.answer
+      if (isCorrect) {
         correctCount++
-      } else {
-        incorrectIds.push(q.id)
       }
+      attemptsToSubmit.push({
+        questionId: q.id,
+        userAnswer: userAns,
+        isCorrect
+      })
     })
     
-    // Create new session record
-    const newSession: QuizSession = {
-      id: Math.random().toString(36).substring(2, 9),
-      date: new Date().toLocaleDateString("en-IN", {
-        day: "numeric",
-        month: "short",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit"
-      }),
-      mode: quizMode || "practice",
-      score: correctCount,
-      total: activeQuestions.length,
-      incorrectIds
+    // Submit session to SQLite
+    try {
+      await fetch("/api/sessions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          mode: quizMode || "practice",
+          unit: quizMode === "practice" ? selectedUnit : null,
+          unitName: quizMode === "practice" && selectedUnit !== null ? UNITS[selectedUnit] : null,
+          score: correctCount,
+          total: activeQuestions.length,
+          attempts: attemptsToSubmit
+        })
+      })
+      
+      // Refresh global state from DB
+      await refreshData()
+    } catch (err) {
+      console.error("Failed to save quiz session", err)
     }
-    
-    if (quizMode === "practice" && selectedUnit !== null) {
-      newSession.unit = selectedUnit
-      newSession.unitName = UNITS[selectedUnit]
-    }
-    
-    const updatedHistory = [newSession, ...history]
-    setHistory(updatedHistory)
-    localStorage.setItem("ugc_net_quiz_history", JSON.stringify(updatedHistory))
-    recalculateMastery(updatedHistory)
   }
 
   // Reset/Quit Quiz
@@ -363,6 +373,8 @@ export const useQuizState = () => {
     // Stats & History
     history,
     unitMastery,
-    recordQuestionAttempt
+    recordQuestionAttempt,
+    refreshData,
+    loading
   }
 }

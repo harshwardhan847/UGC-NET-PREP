@@ -8,6 +8,8 @@ import Dashboard from "@/components/Dashboard"
 import QuizArena from "@/components/QuizArena"
 import ChatSidebar from "@/components/ChatSidebar"
 import ReinforcementPanel from "@/components/ReinforcementPanel"
+import SyllabusWeightage from "@/components/SyllabusWeightage"
+import RepeatedQuestions from "@/components/RepeatedQuestions"
 
 export default function Home() {
   const quiz = useQuizState()
@@ -15,6 +17,7 @@ export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("dark")
   const [sidebarWidth, setSidebarWidth] = useState<number>(380)
   const [isResizing, setIsResizing] = useState<boolean>(false)
+  const [activeView, setActiveView] = useState<"practice" | "weightage" | "repeated">("practice")
 
   // Apply default dark mode on mount and handle laptop screen resizing
   useEffect(() => {
@@ -85,6 +88,42 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Navigation Tabs in Header */}
+        {quiz.activeTab !== "quiz" && (
+          <div className="flex items-center bg-neutral-100 dark:bg-neutral-800 rounded-xl p-1 shrink-0">
+            <button
+              onClick={() => setActiveView("practice")}
+              className={`px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                activeView === "practice" 
+                  ? "bg-white dark:bg-neutral-900 text-indigo-600 dark:text-indigo-400 shadow-xs" 
+                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
+              }`}
+            >
+              Practice Portal
+            </button>
+            <button
+              onClick={() => setActiveView("weightage")}
+              className={`px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                activeView === "weightage" 
+                  ? "bg-white dark:bg-neutral-900 text-indigo-600 dark:text-indigo-400 shadow-xs" 
+                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
+              }`}
+            >
+              Syllabus Weightage
+            </button>
+            <button
+              onClick={() => setActiveView("repeated")}
+              className={`px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                activeView === "repeated" 
+                  ? "bg-white dark:bg-neutral-900 text-indigo-600 dark:text-indigo-400 shadow-xs" 
+                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
+              }`}
+            >
+              Repeated Questions
+            </button>
+          </div>
+        )}
+
         <div className="flex items-center gap-3">
           {quiz.activeTab === "quiz" && (
             <button
@@ -109,34 +148,7 @@ export default function Home() {
       {/* Main Body */}
       <main className="flex-1 flex overflow-hidden">
         <AnimatePresence mode="wait">
-          {quiz.activeTab === "dashboard" ? (
-            <motion.div 
-              key="dashboard"
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.98 }}
-              transition={{ duration: 0.2 }}
-              className="flex-1 overflow-y-auto"
-            >
-              <Dashboard
-                questions={quiz.questions}
-                setQuizMode={quiz.setQuizMode}
-                selectedUnit={quiz.selectedUnit}
-                setSelectedUnit={quiz.setSelectedUnit}
-                selectedPaper={quiz.selectedPaper}
-                setSelectedPaper={quiz.setSelectedPaper}
-                customNumQuestions={quiz.customNumQuestions}
-                setCustomNumQuestions={quiz.setCustomNumQuestions}
-                customTimeLimit={quiz.customTimeLimit}
-                setCustomTimeLimit={quiz.setCustomTimeLimit}
-                customSelectedUnits={quiz.customSelectedUnits}
-                setCustomSelectedUnits={quiz.setCustomSelectedUnits}
-                startQuiz={quiz.startQuiz}
-                history={quiz.history}
-                unitMastery={quiz.unitMastery}
-              />
-            </motion.div>
-          ) : (
+          {quiz.activeTab === "quiz" ? (
             <motion.div 
               key="quiz"
               initial={{ opacity: 0 }}
@@ -201,6 +213,62 @@ export default function Home() {
                   </div>
                 )}
               </AnimatePresence>
+            </motion.div>
+          ) : activeView === "practice" ? (
+            <motion.div 
+              key="dashboard"
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+              className="flex-1 overflow-y-auto"
+            >
+              {quiz.loading ? (
+                <div className="flex flex-col items-center justify-center h-96 text-neutral-450 gap-3">
+                  <div className="w-8 h-8 rounded-full border-2 border-indigo-500 border-t-transparent animate-spin" />
+                  <span className="text-xs">Syncing SQLite Database...</span>
+                </div>
+              ) : (
+                <Dashboard
+                  questions={quiz.questions}
+                  setQuizMode={quiz.setQuizMode}
+                  selectedUnit={quiz.selectedUnit}
+                  setSelectedUnit={quiz.setSelectedUnit}
+                  selectedPaper={quiz.selectedPaper}
+                  setSelectedPaper={quiz.setSelectedPaper}
+                  customNumQuestions={quiz.customNumQuestions}
+                  setCustomNumQuestions={quiz.setCustomNumQuestions}
+                  customTimeLimit={quiz.customTimeLimit}
+                  setCustomTimeLimit={quiz.setCustomTimeLimit}
+                  customSelectedUnits={quiz.customSelectedUnits}
+                  setCustomSelectedUnits={quiz.setCustomSelectedUnits}
+                  startQuiz={quiz.startQuiz}
+                  history={quiz.history}
+                  unitMastery={quiz.unitMastery}
+                />
+              )}
+            </motion.div>
+          ) : activeView === "weightage" ? (
+            <motion.div 
+              key="weightage"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.2 }}
+              className="flex-1 overflow-y-auto h-full"
+            >
+              <SyllabusWeightage onAttemptLogged={quiz.refreshData} />
+            </motion.div>
+          ) : (
+            <motion.div 
+              key="repeated"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.2 }}
+              className="flex-1 overflow-y-auto h-full"
+            >
+              <RepeatedQuestions onAttemptLogged={quiz.refreshData} />
             </motion.div>
           )}
         </AnimatePresence>
