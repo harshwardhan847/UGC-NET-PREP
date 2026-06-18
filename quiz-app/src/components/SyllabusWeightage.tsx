@@ -202,11 +202,11 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
 
   const getBadgeClass = (importance: string) => {
     if (importance === "Must-Do / Critical") {
-      return "bg-red-500/10 text-red-400 border border-red-500/20"
+      return "bg-red-500/10 text-red-700 dark:text-red-400 border border-red-500/20"
     } else if (importance === "Frequently Repeated") {
-      return "bg-purple-500/10 text-purple-400 border border-purple-500/20"
+      return "bg-purple-500/10 text-purple-700 dark:text-purple-400 border border-purple-500/20"
     }
-    return "bg-indigo-500/10 text-indigo-400 border border-indigo-500/20"
+    return "bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border border-indigo-500/20"
   }
 
   return (
@@ -217,7 +217,7 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
           <BookOpen className="w-5 h-5 text-indigo-500" />
           Syllabus Units
         </h2>
-        <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-2 flex flex-col gap-1">
+        <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-2 flex flex-col gap-1">
           {UNITS.map(unit => {
             const stats = unitMastery[unit.id] || { correct: 0, attempts: 0, total: 0 }
             const completionPct = stats.total > 0 
@@ -230,8 +230,8 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                 onClick={() => setActiveUnitId(unit.id)}
                 className={`w-full text-left p-3 rounded-lg flex flex-col gap-1 transition-all cursor-pointer ${
                   activeUnitId === unit.id 
-                    ? "bg-indigo-600/10 border-l-3 border-indigo-500 text-indigo-400 font-semibold"
-                    : "hover:bg-neutral-850/50 text-neutral-400 hover:text-neutral-200"
+                    ? "bg-indigo-50 dark:bg-indigo-600/10 border-l-3 border-indigo-500 text-indigo-600 dark:text-indigo-400 font-semibold"
+                    : "hover:bg-neutral-100 dark:hover:bg-neutral-850/50 text-neutral-500 dark:text-neutral-400 hover:text-neutral-850 dark:hover:text-neutral-200"
                 }`}
               >
                 <div className="flex justify-between items-center text-xs">
@@ -240,7 +240,7 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                 </div>
                 {/* Progress bar */}
                 {stats.total > 0 && (
-                  <div className="w-full bg-neutral-800 h-1.5 rounded-full overflow-hidden mt-1">
+                  <div className="w-full bg-neutral-150 dark:bg-neutral-800 h-1.5 rounded-full overflow-hidden mt-1">
                     <div 
                       className={`h-full ${completionPct === 100 ? "bg-emerald-500" : "bg-indigo-500"}`}
                       style={{ width: `${completionPct}%` }}
@@ -256,7 +256,7 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
       {/* Right Concepts & Questions Panel */}
       <div className="lg:col-span-8 flex flex-col gap-6">
         {/* Active Unit Header */}
-        <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-5 shadow-xs">
+        <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-5 shadow-xs">
           <h1 className="text-xl font-bold tracking-tight">
             Unit {activeUnitId}: {UNITS.find(u => u.id === activeUnitId)?.name}
           </h1>
@@ -266,22 +266,22 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
           
           {/* Unit mastery banner */}
           {unitMastery[activeUnitId] && (
-            <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-neutral-800 text-center text-xs">
+            <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-neutral-200 dark:border-neutral-800 text-center text-xs">
               <div>
                 <span className="text-neutral-500">Solved / Total</span>
-                <p className="text-sm font-bold mt-1 text-neutral-200">
+                <p className="text-sm font-bold mt-1 text-neutral-800 dark:text-neutral-200">
                   {unitMastery[activeUnitId].attempts} / {unitMastery[activeUnitId].total}
                 </p>
               </div>
               <div>
                 <span className="text-neutral-500">Correct answers</span>
-                <p className="text-sm font-bold mt-1 text-emerald-400">
+                <p className="text-sm font-bold mt-1 text-emerald-600 dark:text-emerald-400">
                   {unitMastery[activeUnitId].correct}
                 </p>
               </div>
               <div>
                 <span className="text-neutral-500">Mastery Level</span>
-                <p className="text-sm font-bold mt-1 text-indigo-400">
+                <p className="text-sm font-bold mt-1 text-indigo-600 dark:text-indigo-400">
                   {unitMastery[activeUnitId].attempts > 0 
                     ? `${Math.round((unitMastery[activeUnitId].correct / unitMastery[activeUnitId].attempts) * 100)}%`
                     : "0%"
@@ -313,18 +313,18 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
               return (
                 <div 
                   key={concept.name}
-                  className="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden shadow-xs"
+                  className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden shadow-xs"
                 >
                   {/* Concept Header */}
                   <div 
                     onClick={() => setExpandedConcept(isOpen ? null : concept.name)}
-                    className="p-4 flex items-center justify-between cursor-pointer select-none hover:bg-neutral-850 transition-colors"
+                    className="p-4 flex items-center justify-between cursor-pointer select-none hover:bg-neutral-50 dark:hover:bg-neutral-850 transition-colors"
                   >
                     <div className="flex flex-col gap-1">
-                      <div className="text-sm font-semibold text-neutral-200 flex items-center gap-2">
+                      <div className="text-sm font-semibold text-neutral-800 dark:text-neutral-200 flex items-center gap-2">
                         {concept.name}
                         {answeredInConcept > 0 && (
-                          <span className="text-[10px] bg-neutral-800 px-2 py-0.5 rounded-full text-neutral-400 font-normal">
+                          <span className="text-[10px] bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-full text-neutral-600 dark:text-neutral-400 font-normal font-semibold">
                             {answeredInConcept}/{concept.questions.length} Solved
                           </span>
                         )}
@@ -349,7 +349,7 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        className="border-t border-neutral-800 bg-neutral-950/40 p-4 flex flex-col gap-4 overflow-hidden"
+                        className="border-t border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-950/40 p-4 flex flex-col gap-4 overflow-hidden"
                       >
                         <h3 className="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider flex items-center gap-1">
                           <GraduationCap className="w-3.5 h-3.5 text-indigo-500" />
@@ -367,15 +367,15 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                           const showSol = revealedSolutions[q.id]
 
                           return (
-                            <div key={q.id} className="bg-neutral-900 border border-neutral-800/80 rounded-lg p-4 flex flex-col gap-3">
+                            <div key={q.id} className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800/80 rounded-lg p-4 flex flex-col gap-3">
                               {/* Question header */}
-                              <div className="flex justify-between items-center text-[10px] text-neutral-500 border-b border-neutral-850 pb-2">
+                              <div className="flex justify-between items-center text-[10px] text-neutral-500 dark:text-neutral-400 border-b border-neutral-200 dark:border-neutral-850 pb-2">
                                 <span className="font-semibold">Q.{q.q_num} ({q.year})</span>
-                                <span className="text-neutral-400 font-medium bg-neutral-800 px-2 py-0.5 rounded">{q.paper.replace(".pdf", "")}</span>
+                                <span className="text-neutral-600 dark:text-neutral-400 font-medium bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded">{q.paper.replace(".pdf", "")}</span>
                               </div>
                               
                               {/* Question body */}
-                              <p className="text-xs text-neutral-200 whitespace-pre-line leading-relaxed">{q.question}</p>
+                              <p className="text-xs text-neutral-800 dark:text-neutral-200 whitespace-pre-line leading-relaxed">{q.question}</p>
 
                               {/* Question Options */}
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-1">
@@ -391,16 +391,16 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                                   const isCorrectChoice = opt.label === q.answer
                                   const wasUserAnswer = attempt?.userAnswer === opt.label
                                   
-                                  let optionStyle = "border-neutral-800 bg-neutral-900/50 hover:bg-neutral-850 text-neutral-400 cursor-pointer"
+                                  let optionStyle = "border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-neutral-100 dark:hover:bg-neutral-850 text-neutral-600 dark:text-neutral-400 cursor-pointer"
                                   if (isSelected && !hasSubmitted) {
-                                    optionStyle = "border-indigo-500 bg-indigo-500/10 text-indigo-300 cursor-pointer"
+                                    optionStyle = "border-indigo-500 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 cursor-pointer"
                                   } else if (hasSubmitted) {
                                     if (isCorrectChoice) {
-                                      optionStyle = "border-emerald-500/50 bg-emerald-500/10 text-emerald-400"
+                                      optionStyle = "border-emerald-500/50 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
                                     } else if (wasUserAnswer && !isCorrect) {
-                                      optionStyle = "border-red-500/50 bg-red-500/10 text-red-400"
+                                      optionStyle = "border-red-500/50 bg-red-50 dark:bg-red-500/10 text-red-650 dark:text-red-400"
                                     } else {
-                                      optionStyle = "border-neutral-850 bg-neutral-900/10 text-neutral-500 opacity-60"
+                                      optionStyle = "border-neutral-200 dark:border-neutral-850 bg-neutral-50/10 dark:bg-neutral-900/10 text-neutral-400 dark:text-neutral-500 opacity-60"
                                     }
                                   }
 
@@ -418,7 +418,7 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                                             ? "bg-emerald-500 text-white" 
                                             : hasSubmitted && wasUserAnswer && !isCorrect 
                                               ? "bg-red-500 text-white" 
-                                              : "bg-neutral-800 text-neutral-300"
+                                              : "bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300"
                                       }`}>
                                         {opt.label}
                                       </span>
@@ -429,7 +429,7 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                               </div>
 
                               {/* Action Buttons */}
-                              <div className="flex gap-3 justify-between items-center mt-2 border-t border-neutral-850 pt-3">
+                              <div className="flex gap-3 justify-between items-center mt-2 border-t border-neutral-200 dark:border-neutral-850 pt-3">
                                 {!hasSubmitted ? (
                                   <button
                                     onClick={() => handleAnswerSubmit(q.id)}
@@ -441,11 +441,11 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                                 ) : (
                                   <div className="flex items-center gap-1.5 text-xs">
                                     {isCorrect ? (
-                                      <span className="flex items-center gap-1 text-emerald-400 font-bold">
+                                      <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
                                         <CheckCircle2 className="w-4 h-4" /> Correct
                                       </span>
                                     ) : (
-                                      <span className="flex items-center gap-1 text-red-400 font-bold">
+                                      <span className="flex items-center gap-1 text-red-500 dark:text-red-400 font-bold">
                                         <XCircle className="w-4 h-4" /> Incorrect
                                       </span>
                                     )}
@@ -455,7 +455,7 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                                 {hasSubmitted && (
                                   <button
                                     onClick={() => setRevealedSolutions(prev => ({ ...prev, [q.id]: !showSol }))}
-                                    className="text-xs text-neutral-400 hover:text-neutral-200 underline cursor-pointer"
+                                    className="text-xs text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 underline cursor-pointer"
                                   >
                                     {showSol ? "Hide Solution" : "View Explanation"}
                                   </button>
@@ -469,12 +469,12 @@ export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightage
                                     initial={{ height: 0, opacity: 0 }}
                                     animate={{ height: "auto", opacity: 1 }}
                                     exit={{ height: 0, opacity: 0 }}
-                                    className="bg-neutral-950 p-4 border border-neutral-850 rounded-lg text-xs text-neutral-400 flex flex-col gap-2 mt-2 leading-relaxed overflow-hidden"
+                                    className="bg-neutral-50 dark:bg-neutral-950 p-4 border border-neutral-200 dark:border-neutral-855 rounded-lg text-xs text-neutral-600 dark:text-neutral-400 flex flex-col gap-2 mt-2 leading-relaxed overflow-hidden"
                                   >
-                                    <div className="text-[11px] font-bold text-emerald-400 flex items-center gap-1">
+                                    <div className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
                                       Correct Option: {q.answer}
                                     </div>
-                                    <p className="whitespace-pre-line text-neutral-300 font-medium">{q.solution || "No explanation provided."}</p>
+                                    <p className="whitespace-pre-line text-neutral-700 dark:text-neutral-300 font-medium">{q.solution || "No explanation provided."}</p>
                                   </motion.div>
                                 )}
                               </AnimatePresence>

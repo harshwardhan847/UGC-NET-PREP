@@ -139,11 +139,11 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
         </h2>
         
         {loading ? (
-          <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 text-center text-neutral-500 text-xs">
+          <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-6 text-center text-neutral-500 text-xs">
             Loading groups...
           </div>
         ) : (
-          <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-2 flex flex-col gap-1 max-h-[70vh] overflow-y-auto">
+          <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-2 flex flex-col gap-1 max-h-[70vh] overflow-y-auto">
             {duplicateGroups.map(group => {
               // Summarize repeating concepts
               const firstQ = group.questions[0]?.question || ""
@@ -158,13 +158,13 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                   onClick={() => setActiveGroupId(group.group_id)}
                   className={`w-full text-left p-3 rounded-lg flex flex-col gap-1.5 transition-all cursor-pointer ${
                     activeGroupId === group.group_id 
-                      ? "bg-indigo-600/10 border-l-3 border-indigo-500 text-indigo-400 font-semibold"
-                      : "hover:bg-neutral-850/50 text-neutral-400 hover:text-neutral-200"
+                      ? "bg-indigo-50 dark:bg-indigo-600/10 border-l-3 border-indigo-500 text-indigo-600 dark:text-indigo-400 font-semibold"
+                      : "hover:bg-neutral-100 dark:hover:bg-neutral-850/50 text-neutral-500 dark:text-neutral-400 hover:text-neutral-850 dark:hover:text-neutral-200"
                   }`}
                 >
                   <div className="flex justify-between items-center text-xs">
                     <span className="truncate max-w-[170px]">Cluster #{group.group_id}</span>
-                    <span className="text-[9px] bg-neutral-850 text-neutral-400 px-1.5 py-0.5 rounded font-normal">
+                    <span className="text-[9px] bg-neutral-100 dark:bg-neutral-850 text-neutral-600 dark:text-neutral-400 px-1.5 py-0.5 rounded font-normal">
                       {group.questions.length} cycles
                     </span>
                   </div>
@@ -192,11 +192,11 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
         {activeGroup ? (
           <div className="flex flex-col gap-6">
             {/* Group Header */}
-            <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-5 shadow-xs">
-              <h1 className="text-lg font-bold tracking-tight text-neutral-200">
+            <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-5 shadow-xs">
+              <h1 className="text-lg font-bold tracking-tight text-neutral-800 dark:text-neutral-200">
                 Repeated Question Cluster #{activeGroup.group_id}
               </h1>
-              <p className="text-xs text-neutral-400 mt-1 flex items-center gap-1.5">
+              <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 flex items-center gap-1.5">
                 <Info className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
                 These questions share the exact same conceptual formula/structure across papers, often with changed variables.
               </p>
@@ -216,10 +216,10 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                 return (
                   <div 
                     key={q.id}
-                    className="bg-neutral-900 border border-neutral-800 rounded-xl p-5 shadow-sm flex flex-col gap-4 relative"
+                    className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-5 shadow-sm flex flex-col gap-4 relative"
                   >
                     {/* Header */}
-                    <div className="flex justify-between items-center text-[10px] border-b border-neutral-850 pb-2">
+                    <div className="flex justify-between items-center text-[10px] border-b border-neutral-200 dark:border-neutral-850 pb-2">
                       <span className="bg-purple-500/10 text-purple-400 border border-purple-500/10 px-2 py-0.5 rounded font-bold">
                         {q.year} (Q.{q.q_num})
                       </span>
@@ -227,7 +227,7 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                     </div>
 
                     {/* Question text */}
-                    <p className="text-xs text-neutral-200 whitespace-pre-line leading-relaxed flex-1">
+                    <p className="text-xs text-neutral-800 dark:text-neutral-200 whitespace-pre-line leading-relaxed flex-1">
                       {q.question}
                     </p>
 
@@ -245,16 +245,16 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                         const isCorrectChoice = opt.label === q.answer
                         const wasUserAnswer = attempt?.userAnswer === opt.label
 
-                        let optionStyle = "border-neutral-800 bg-neutral-900/50 hover:bg-neutral-850 text-neutral-400 cursor-pointer"
+                        let optionStyle = "border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-neutral-100 dark:hover:bg-neutral-850 text-neutral-600 dark:text-neutral-400 cursor-pointer"
                         if (isSelected && !hasSubmitted) {
-                          optionStyle = "border-indigo-500 bg-indigo-500/10 text-indigo-300 cursor-pointer"
+                          optionStyle = "border-indigo-500 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 cursor-pointer"
                         } else if (hasSubmitted) {
                           if (isCorrectChoice) {
-                            optionStyle = "border-emerald-500/50 bg-emerald-500/10 text-emerald-400"
+                            optionStyle = "border-emerald-500/50 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
                           } else if (wasUserAnswer && !isCorrect) {
-                            optionStyle = "border-red-500/50 bg-red-500/10 text-red-400"
+                            optionStyle = "border-red-500/50 bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400"
                           } else {
-                            optionStyle = "border-neutral-850 bg-neutral-900/10 text-neutral-500 opacity-60"
+                            optionStyle = "border-neutral-200 dark:border-neutral-850 bg-neutral-50/10 dark:bg-neutral-900/10 text-neutral-400 dark:text-neutral-500 opacity-60"
                           }
                         }
 
@@ -272,7 +272,7 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                                   ? "bg-emerald-500 text-white" 
                                   : hasSubmitted && wasUserAnswer && !isCorrect 
                                     ? "bg-red-500 text-white" 
-                                    : "bg-neutral-850 text-neutral-400"
+                                    : "bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400"
                             }`}>
                               {opt.label}
                             </span>
@@ -283,7 +283,7 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                     </div>
 
                     {/* Actions and toggle */}
-                    <div className="flex justify-between items-center mt-3 pt-3 border-t border-neutral-850">
+                    <div className="flex justify-between items-center mt-3 pt-3 border-t border-neutral-200 dark:border-neutral-855">
                       {!hasSubmitted ? (
                         <button
                           onClick={() => handleAnswerSubmit(q.id)}
@@ -295,11 +295,11 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                       ) : (
                         <div className="flex items-center gap-1.5 text-[11px]">
                           {isCorrect ? (
-                            <span className="flex items-center gap-1 text-emerald-400 font-bold">
+                            <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
                               <CheckCircle2 className="w-3.5 h-3.5" /> Correct
                             </span>
                           ) : (
-                            <span className="flex items-center gap-1 text-red-400 font-bold">
+                            <span className="flex items-center gap-1 text-red-500 dark:text-red-400 font-bold">
                               <XCircle className="w-3.5 h-3.5" /> Incorrect
                             </span>
                           )}
@@ -309,7 +309,7 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                       {hasSubmitted && (
                         <button
                           onClick={() => setRevealedSolutions(prev => ({ ...prev, [q.id]: !showSol }))}
-                          className="text-[10px] text-neutral-400 hover:text-neutral-200 underline cursor-pointer"
+                          className="text-[10px] text-neutral-500 hover:text-neutral-700 dark:text-neutral-450 dark:hover:text-neutral-200 underline cursor-pointer"
                         >
                           {showSol ? "Hide Solution" : "View Explanation"}
                         </button>
@@ -323,12 +323,12 @@ export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestions
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
-                          className="bg-neutral-950 p-3.5 border border-neutral-850 rounded-lg text-[11px] text-neutral-400 flex flex-col gap-1.5 mt-2 leading-relaxed overflow-hidden"
+                          className="bg-neutral-50 dark:bg-neutral-950 p-3.5 border border-neutral-200 dark:border-neutral-850 rounded-lg text-[11px] text-neutral-600 dark:text-neutral-400 flex flex-col gap-1.5 mt-2 leading-relaxed overflow-hidden"
                         >
-                          <div className="text-[10px] font-bold text-emerald-400">
+                          <div className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
                             Correct Option: {q.answer}
                           </div>
-                          <p className="whitespace-pre-line text-neutral-350">{q.solution || "No explanation provided."}</p>
+                          <p className="whitespace-pre-line text-neutral-700 dark:text-neutral-300 font-medium">{q.solution || "No explanation provided."}</p>
                         </motion.div>
                       )}
                     </AnimatePresence>

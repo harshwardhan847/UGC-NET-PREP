@@ -120,7 +120,7 @@ How can I help you? You can ask me to:
           >
             <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 border text-[10px] font-bold ${
               msg.role === "user" 
-                ? "bg-neutral-100 border-neutral-200 text-neutral-800" 
+                ? "bg-neutral-100 dark:bg-neutral-850 border-neutral-200 dark:border-neutral-700 text-neutral-800 dark:text-neutral-200" 
                 : "bg-indigo-600 border-indigo-600 text-white"
             }`}>
               {msg.role === "user" ? <User className="w-3.5 h-3.5" /> : <Bot className="w-3.5 h-3.5" />}

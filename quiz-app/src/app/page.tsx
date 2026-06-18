@@ -10,6 +10,7 @@ import ChatSidebar from "@/components/ChatSidebar"
 import ReinforcementPanel from "@/components/ReinforcementPanel"
 import SyllabusWeightage from "@/components/SyllabusWeightage"
 import RepeatedQuestions from "@/components/RepeatedQuestions"
+import SwipeQuiz from "@/components/SwipeQuiz"
 
 export default function Home() {
   const quiz = useQuizState()
@@ -17,7 +18,7 @@ export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("dark")
   const [sidebarWidth, setSidebarWidth] = useState<number>(380)
   const [isResizing, setIsResizing] = useState<boolean>(false)
-  const [activeView, setActiveView] = useState<"practice" | "weightage" | "repeated">("practice")
+  const [activeView, setActiveView] = useState<"practice" | "weightage" | "repeated" | "swipe">("practice")
 
   // Apply default dark mode on mount and handle laptop screen resizing
   useEffect(() => {
@@ -77,8 +78,8 @@ export default function Home() {
     <div className={`h-screen max-h-screen overflow-hidden flex flex-col ${theme === "dark" ? "dark bg-neutral-950 text-neutral-100" : "bg-neutral-50 text-neutral-800"}`}>
       
       {/* Global Navbar */}
-      <header className="bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-6 py-4 flex items-center justify-between shrink-0 shadow-xs">
-        <div className="flex items-center gap-2">
+      <header className="bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-4 md:px-6 py-3 md:py-4 flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0 shadow-xs">
+        <div className="flex items-center gap-2 self-start sm:self-auto">
           <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white shrink-0">
             <GraduationCap className="w-5 h-5" />
           </div>
@@ -90,36 +91,46 @@ export default function Home() {
 
         {/* Navigation Tabs in Header */}
         {quiz.activeTab !== "quiz" && (
-          <div className="flex items-center bg-neutral-100 dark:bg-neutral-800 rounded-xl p-1 shrink-0">
+          <div className="flex items-center bg-neutral-100 dark:bg-neutral-800 rounded-xl p-1 shrink-0 max-w-full overflow-x-auto">
             <button
               onClick={() => setActiveView("practice")}
-              className={`px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+              className={`px-3 sm:px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
                 activeView === "practice" 
                   ? "bg-white dark:bg-neutral-900 text-indigo-600 dark:text-indigo-400 shadow-xs" 
                   : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
               }`}
             >
-              Practice Portal
+              Practice
             </button>
             <button
               onClick={() => setActiveView("weightage")}
-              className={`px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+              className={`px-3 sm:px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
                 activeView === "weightage" 
                   ? "bg-white dark:bg-neutral-900 text-indigo-600 dark:text-indigo-400 shadow-xs" 
                   : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
               }`}
             >
-              Syllabus Weightage
+              Weightage
             </button>
             <button
               onClick={() => setActiveView("repeated")}
-              className={`px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+              className={`px-3 sm:px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
                 activeView === "repeated" 
                   ? "bg-white dark:bg-neutral-900 text-indigo-600 dark:text-indigo-400 shadow-xs" 
                   : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
               }`}
             >
-              Repeated Questions
+              Repeats
+            </button>
+            <button
+              onClick={() => setActiveView("swipe")}
+              className={`px-3 sm:px-4 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-all ${
+                activeView === "swipe" 
+                  ? "bg-white dark:bg-neutral-900 text-indigo-600 dark:text-indigo-400 shadow-xs" 
+                  : "text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
+              }`}
+            >
+              Swipe Quiz
             </button>
           </div>
         )}
@@ -259,7 +270,7 @@ export default function Home() {
             >
               <SyllabusWeightage onAttemptLogged={quiz.refreshData} />
             </motion.div>
-          ) : (
+          ) : activeView === "repeated" ? (
             <motion.div 
               key="repeated"
               initial={{ opacity: 0, y: 10 }}
@@ -269,6 +280,17 @@ export default function Home() {
               className="flex-1 overflow-y-auto h-full"
             >
               <RepeatedQuestions onAttemptLogged={quiz.refreshData} />
+            </motion.div>
+          ) : (
+            <motion.div 
+              key="swipe"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.2 }}
+              className="flex-1 overflow-y-auto h-full"
+            >
+              <SwipeQuiz />
             </motion.div>
           )}
         </AnimatePresence>

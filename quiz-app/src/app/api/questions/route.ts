@@ -8,8 +8,17 @@ export async function GET(req: NextRequest) {
     const paperParam = searchParams.get('paper')
     const conceptParam = searchParams.get('concept')
     const queryParam = searchParams.get('q')
+    const unsolvedParam = searchParams.get('unsolved')
 
     const where: any = {}
+
+    if (unsolvedParam === 'true') {
+      where.attempts = {
+        none: {
+          isCorrect: true
+        }
+      }
+    }
 
     if (unitParam) {
       where.unit = parseInt(unitParam)
