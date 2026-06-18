@@ -11,8 +11,10 @@ interface QuizArenaProps {
   setCurrentIndex: (index: number) => void
   selectedAnswers: { [qId: string]: string }
   submittedAnswers: { [qId: string]: boolean }
+  skippedQuestions: { [qId: string]: boolean }
   selectAnswer: (qId: string, option: string) => void
   submitAnswer: (qId: string) => void
+  skipQuestion: (qId: string) => void
   isQuizFinished: boolean
   timeLeft: number
   finishQuiz: () => void
@@ -28,8 +30,10 @@ export default function QuizArena({
   setCurrentIndex,
   selectedAnswers,
   submittedAnswers,
+  skippedQuestions,
   selectAnswer,
   submitAnswer,
+  skipQuestion,
   isQuizFinished,
   timeLeft,
   finishQuiz,
@@ -124,7 +128,14 @@ export default function QuizArena({
             className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-6 shadow-sm space-y-4"
           >
             <div className="flex justify-between items-center text-xs font-bold text-neutral-400 border-b border-neutral-100 dark:border-neutral-800 pb-3">
-              <span>QUESTION {currentIndex + 1} OF {questions.length}</span>
+              <div className="flex items-center gap-2">
+                <span>QUESTION {currentIndex + 1} OF {questions.length}</span>
+                {skippedQuestions[currentQ.id] && (
+                  <span className="px-2 py-0.5 bg-amber-100 dark:bg-amber-950/40 text-amber-700 dark:text-amber-450 text-[10px] font-bold rounded-md">
+                    Skipped
+                  </span>
+                )}
+              </div>
               <span className="text-indigo-600 dark:text-indigo-400">UNIT {currentQ.unit}</span>
             </div>
 
@@ -220,13 +231,21 @@ export default function QuizArena({
               </div>
 
               {!isSubmitted && (
-                <button
-                  onClick={() => submitAnswer(currentQ.id)}
-                  disabled={!userSelection}
-                  className="px-5 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-xl hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-                >
-                  Submit Answer
-                </button>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => skipQuestion(currentQ.id)}
+                    className="px-4 py-2 border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-850 text-neutral-600 dark:text-neutral-300 text-sm font-semibold rounded-xl transition-colors cursor-pointer"
+                  >
+                    Skip Question
+                  </button>
+                  <button
+                    onClick={() => submitAnswer(currentQ.id)}
+                    disabled={!userSelection}
+                    className="px-5 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-xl hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                  >
+                    Submit Answer
+                  </button>
+                </div>
               )}
             </div>
           </motion.div>

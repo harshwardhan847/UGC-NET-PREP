@@ -19,7 +19,12 @@ export async function POST(req: NextRequest) {
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" })
 
     // Build system instructions with the question context
-    let systemInstruction = `You are an expert Computer Science professor tutoring a student preparing for the UGC NET Computer Science exam.
+    const isGeneralPaper = questionContext?.unit === 11 || questionContext?.unit_name === "General Paper 1"
+    const tutorRole = isGeneralPaper ? "General Paper 1 professor" : "Computer Science professor"
+    const examName = isGeneralPaper ? "General Paper 1" : "Computer Science"
+    const subjectTerm = isGeneralPaper ? "General Paper 1 syllabus" : "computer science"
+
+    let systemInstruction = `You are an expert ${tutorRole} tutoring a student preparing for the UGC NET ${examName} exam.
 Your responses should be encouraging, clear, and focused on helping the student understand the concepts.
 
 `
@@ -43,7 +48,7 @@ ${questionContext.solution}
 GUIDELINES:
 1. Use the context of the active question to guide your explanations.
 2. If the student asks about this question, explain why option ${questionContext.answer} is correct and why other choices are incorrect.
-3. If they ask a general computer science question, explain it conceptually.
+3. If they ask a general question about the ${subjectTerm}, explain it conceptually.
 4. Do not give the direct answer immediately if they ask a question that requires them to solve it; guide them step-by-step instead.
 5. Use clean formatting and render math formulas clearly using standard text/markdown notation.
 `

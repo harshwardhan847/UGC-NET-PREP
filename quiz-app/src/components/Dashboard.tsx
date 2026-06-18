@@ -58,6 +58,9 @@ export default function Dashboard({
   // Extract unique papers for Mock Test
   const uniquePapers = Array.from(new Set(questions.map(q => q.paper))).sort();
   const getPaperFriendlyName = (fileName: string) => {
+    if (fileName.includes("General Paper")) {
+      return fileName.replace(".pdf", "")
+    }
     return fileName
       .replace("UGC_Comp_", "")
       .replace(".pdf", "")
@@ -239,23 +242,27 @@ export default function Dashboard({
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[360px] overflow-y-auto pr-1">
-                    {uniquePapers.map(paper => (
-                      <button
-                        key={paper}
-                        onClick={() => { setQuizMode("mock"); setSelectedPaper(paper); }}
-                        className={`flex items-center gap-3 text-left p-4 rounded-xl border transition-all ${
-                          selectedPaper === paper
-                            ? "border-indigo-600 bg-indigo-50/30 dark:bg-indigo-950/20"
-                            : "border-neutral-200 dark:border-neutral-800 hover:border-indigo-400 hover:bg-neutral-50/50 dark:hover:bg-neutral-900/50"
-                        }`}
-                      >
-                        <Clock className="w-5 h-5 text-neutral-400 shrink-0" />
-                        <div>
-                          <h4 className="text-sm font-semibold">{getPaperFriendlyName(paper)}</h4>
-                          <p className="text-xs text-neutral-500">100 questions • 180 Mins</p>
-                        </div>
-                      </button>
-                    ))}
+                    {uniquePapers.map(paper => {
+                      const qCount = questions.filter(q => q.paper === paper).length
+                      const timeLimit = qCount === 50 ? 60 : 180
+                      return (
+                        <button
+                          key={paper}
+                          onClick={() => { setQuizMode("mock"); setSelectedPaper(paper); }}
+                          className={`flex items-center gap-3 text-left p-4 rounded-xl border transition-all ${
+                            selectedPaper === paper
+                              ? "border-indigo-600 bg-indigo-50/30 dark:bg-indigo-950/20"
+                              : "border-neutral-200 dark:border-neutral-800 hover:border-indigo-400 hover:bg-neutral-50/50 dark:hover:bg-neutral-900/50"
+                          }`}
+                        >
+                          <Clock className="w-5 h-5 text-neutral-400 shrink-0" />
+                          <div>
+                            <h4 className="text-sm font-semibold">{getPaperFriendlyName(paper)}</h4>
+                            <p className="text-xs text-neutral-500">{qCount} questions • {timeLimit} Mins</p>
+                          </div>
+                        </button>
+                      )
+                    })}
                   </div>
                 </div>
               )}

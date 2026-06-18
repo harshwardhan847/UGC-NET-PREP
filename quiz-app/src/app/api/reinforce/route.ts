@@ -17,7 +17,11 @@ export async function POST(req: NextRequest) {
 
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" })
 
-    const prompt = `You are a supportive AI computer science tutor. A student has answered a UGC NET exam question incorrectly.
+    const isGeneralPaper = questionContext?.unit === 11 || questionContext?.unit_name === "General Paper 1"
+    const tutorRole = isGeneralPaper ? "supportive AI tutor" : "supportive AI computer science tutor"
+    const examName = isGeneralPaper ? "General Paper 1" : "Computer Science"
+
+    const prompt = `You are a ${tutorRole}. A student has answered a UGC NET ${examName} exam question incorrectly.
 Your goal is to guide them through the specific concept they got wrong by explaining it simply and asking them a simpler follow-up question.
 
 INCORRECT QUESTION CONTEXT:

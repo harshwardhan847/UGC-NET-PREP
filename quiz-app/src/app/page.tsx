@@ -153,8 +153,10 @@ export default function Home() {
                   setCurrentIndex={quiz.setCurrentIndex}
                   selectedAnswers={quiz.selectedAnswers}
                   submittedAnswers={quiz.submittedAnswers}
+                  skippedQuestions={quiz.skippedQuestions}
                   selectAnswer={quiz.selectAnswer}
                   submitAnswer={quiz.submitAnswer}
+                  skipQuestion={quiz.skipQuestion}
                   isQuizFinished={quiz.isQuizFinished}
                   timeLeft={quiz.timeLeft}
                   finishQuiz={quiz.finishQuiz}

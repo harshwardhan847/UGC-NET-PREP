@@ -11,7 +11,8 @@ const UNITS: { [key: number]: string } = {
   7: "Data Structures and Algorithms",
   8: "Theory of Computation and Compilers",
   9: "Data Communication and Computer Networks",
-  10: "Artificial Intelligence (AI)"
+  10: "Artificial Intelligence (AI)",
+  11: "General Paper 1"
 }
 
 // Type definitions
@@ -73,6 +74,7 @@ export const useQuizState = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0)
   const [selectedAnswers, setSelectedAnswers] = useState<{ [qId: string]: string }>({})
   const [submittedAnswers, setSubmittedAnswers] = useState<{ [qId: string]: boolean }>({})
+  const [skippedQuestions, setSkippedQuestions] = useState<{ [qId: string]: boolean }>({})
   const [isQuizActive, setIsQuizActive] = useState<boolean>(false)
   const [isQuizFinished, setIsQuizFinished] = useState<boolean>(false)
   
@@ -110,7 +112,7 @@ export const useQuizState = () => {
     const mastery: UnitMastery = {}
     
     // Initialize units
-    for (let u = 1; u <= 10; u++) {
+    for (let u = 1; u <= 11; u++) {
       mastery[u] = { correct: 0, attempts: 0 }
     }
     
@@ -118,14 +120,16 @@ export const useQuizState = () => {
     sessions.forEach(session => {
       // In practice mode, we can attribute all attempts to the selected unit
       if (session.mode === "practice" && session.unit) {
-        mastery[session.unit].attempts += session.total
-        mastery[session.unit].correct += session.score
+        if (mastery[session.unit]) {
+          mastery[session.unit].attempts += session.total
+          mastery[session.unit].correct += session.score
+        }
       } else {
         // For mock/custom, we don't have per-question mapping saved in history directly,
         // so we will also map historical per-question correctness if needed.
         // For simplicity, we calculate based on practice sessions or we can trace back.
         // Let's increment based on session info:
-        if (session.unit) {
+        if (session.unit && mastery[session.unit]) {
           mastery[session.unit].attempts += session.total
           mastery[session.unit].correct += session.score
         }
@@ -182,7 +186,7 @@ export const useQuizState = () => {
       selectedQs = questions.filter(q => q.paper === selectedPaper)
       // Sort by question number to preserve paper flow
       selectedQs = [...selectedQs].sort((a, b) => a.q_num - b.q_num)
-      duration = 180 * 60 // 3 hours (180 mins) for a full mock test
+      duration = selectedQs.length === 50 ? 60 * 60 : 180 * 60 // 1 hour for Paper 1, 3 hours for CS
     } 
     else if (quizMode === "custom") {
       // Custom filtering
@@ -203,6 +207,7 @@ export const useQuizState = () => {
     setCurrentIndex(0)
     setSelectedAnswers({})
     setSubmittedAnswers({})
+    setSkippedQuestions({})
     setTimeLeft(duration)
     setIsQuizActive(true)
     setIsQuizFinished(false)
@@ -231,11 +236,24 @@ export const useQuizState = () => {
     setSubmittedAnswers(prev => ({ ...prev, [qId]: true }))
     recordQuestionAttempt(question.unit, isCorrect)
     
+    // Remove from skipped list if submitted
+    setSkippedQuestions(prev => {
+      const updated = { ...prev }
+      delete updated[qId]
+      return updated
+    })
+    
     // If incorrect, trigger reinforcement mode
     if (!isCorrect) {
       setCurrentIncorrectQ(question)
       setIsReinforcing(true)
     }
+  }
+
+  // Skip Question
+  const skipQuestion = (qId: string) => {
+    setSkippedQuestions(prev => ({ ...prev, [qId]: true }))
+    setCurrentIndex(prev => Math.min(activeQuestions.length - 1, prev + 1))
   }
 
   // Finish Quiz
@@ -292,6 +310,7 @@ export const useQuizState = () => {
     setActiveQuestions([])
     setSelectedAnswers({})
     setSubmittedAnswers({})
+    setSkippedQuestions({})
     setCurrentIndex(0)
     setIsReinforcing(false)
     setCurrentIncorrectQ(null)
@@ -325,8 +344,10 @@ export const useQuizState = () => {
     setCurrentIndex,
     selectedAnswers,
     submittedAnswers,
+    skippedQuestions,
     selectAnswer,
     submitAnswer,
+    skipQuestion,
     isQuizActive,
     isQuizFinished,
     timeLeft,

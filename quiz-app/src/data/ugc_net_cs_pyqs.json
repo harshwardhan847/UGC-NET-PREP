@@ -25498,5 +25498,2555 @@
     "solution": "The correct answer is option A.\n(Correct) Statement I: It describes a 20-bit\nmicroinstruction code format with specified bit\nallocations for different fields (F1, F2, F3, CD, BR,\nAD). The bits are given as 3 bits for each of F1, F2,\nand F3, 2 bits for CD, 2 bits for BR, and 7 bits for\nAD. This format appears to be suitable for a\nmicroinstruction code, and the allocation seems\nreasonable for controlling various operations and\naddressing. It accurately describes a\nmicroinstruction code format.\n(Correct) Statement II: It claims that the\ninstruction represented in the above format can\nperform a branch in 4 conditions. Given that the\nCD field is 2 bits, it can represent (2 = 4)\ndifferent conditions (00, 01, 10, 11). This aligns\nwith the statement about branching in 4\nconditions.\n      |       |   \n2",
     "unit": 2,
     "unit_name": "Computer System Architecture"
+  },
+  {
+    "id": "gp2023_q1",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 1,
+    "question": "What is the total number of male employees taking all the\nColleges together?",
+    "options": {
+      "A": "8120",
+      "B": "8240",
+      "C": "8360",
+      "D": "8560"
+    },
+    "answer": "B",
+    "solution": "Number of male employees in college A 133040 208019= ×=\nIn college 43360 19207B= ×=\nIn college 92920 131420C = ×=\nIn college 102760 120023D= ×=\nIn college 132840 184620E = ×=\nTotal number of mole employees in all college in \n= 2080 + 1920 + 1314 + 1200 + 1846 = 8360",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q2",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 2,
+    "question": "What is the average number \nof female employees taking all the\ncolleges together ?",
+    "options": {
+      "A": "1312",
+      "B": "1372",
+      "C": "1336",
+      "D": "1292"
+    },
+    "answer": "A",
+    "solution": "Number of female employees in college A\n63040 96019= ×=\nIn college 33360 14407B= ×=\nIn college 112920 160620C = ×=\nIn college 132760 156023D= ×=\nIn college 72840 99420E = ×=\nAverage number of female employees in all college\n960 1606 1440 1560 994\n5\n++++= 6560 13125= =",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q3",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 3,
+    "question": "The number of male employees \nworking in Colleges A and C\ntogether is approximately ________% more than the number of \nfemale employees working in colleges B and D together.",
+    "options": {
+      "A": "9",
+      "B": "15",
+      "C": "11",
+      "D": "13"
+    },
+    "answer": "D",
+    "solution": "Number of male employees working in college A and C\n13 93040 292019 20= ×+ ×\n= 2080 + 1314 = 3394\nNumber of female employees working in college B and D\n3 133360 27607 23= ×+ ×\n=1440 + 1560 = 3000\n∴Required increase % 3394 – 3000 100 13.13 13%3000= ×= ≈",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q4",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 4,
+    "question": "What is the ratio of female employees working in College D to\nthat in College E ?",
+    "options": {
+      "A": "7 : 4",
+      "B": "780  : 497",
+      "C": "390 : 491",
+      "D": "9 : 5"
+    },
+    "answer": "B",
+    "solution": "Required ratio \n132760 23\n72840 20\n×\n=\n×\n1560 780 : 497994= =",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q5",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 5,
+    "question": "The number of employees working in College \nC is\napproximately   ________% more than that in College D.",
+    "options": {
+      "A": "8",
+      "B": "6",
+      "C": "4",
+      "D": "10"
+    },
+    "answer": "B",
+    "solution": "Required increase% 2920 2760 1002760\n−= ×  = 5.79 ≈ 6%",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q6",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 6,
+    "question": "An economics teacher wants to \ncreate an infographics to\nexplain supply and demand to her students.\nWhich of the following tools would be most suitable?",
+    "options": {
+      "A": "Edpuzzle",
+      "B": "Canva",
+      "C": "Quizlet",
+      "D": "Mindmeister"
+    },
+    "answer": "B",
+    "solution": "Canva is a powerful design \ntool specifically designed for\ncreating visual content such as infographics, posters, and \npresentations. It provides a wide range of templates and design \nelements that are perfect for illustrating concepts like supply \nand demand.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q7",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 7,
+    "question": "Given below are two statements :\n Statement I : Norm referencing is used \nto interpret a score of\nan individual by comparing it with those of other individuals.\nStatement II : Criterion referencing \nis used to interpret a person's\nperformance by comparing it to some specified behavioural\ndomain.\nIn the light of the \nabove statements, choose the most appropriate\nanswer from the options given below :",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "answer": "A",
+    "solution": "Statement I is correct: Norm \nreferencing is used to interpret \na score of an individual by comparing it with those of other \nindividuals.\nStatement II is also correc\nt: Criterion referencing is used to \ninterpret a person’s performance by comparing it to some \nspecified behavioral domain.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q8",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 8,
+    "question": "Which of the following are \nthe elements of observational learning ?\nA. Production B. Attention\nC. Identification D. Retention\nE. Motivation\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(B), (C) and (D) Only",
+      "B": "(A) and (E) Only",
+      "C": "(A), (B), (D) and (E) Only",
+      "D": "(C) Only"
+    },
+    "answer": "C",
+    "solution": "The elements of observatio\nnal learning are (A), (B), (D) and\n(E) Only.\nA.  Attentio\nn: The learner must pay attention to the model’s \nbehavior.\nB.   Retention:  The learner must be able to remember the \nbehavior that was observed.\nD.   Production: The \nlearner must be able reproducing the \nobserved behavior\nE.   Motivation: The learner \nmust have a reason or motivation \nto adopt the behavior.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q9",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 9,
+    "question": "In 'V ARK' model of learning styles, 'A' stands for _______.",
+    "options": {
+      "A": "Auspicious",
+      "B": "Augmentary",
+      "C": "Authentic",
+      "D": "Aural"
+    },
+    "answer": "D",
+    "solution": "In the ‘V ARK’ \nmodel of learning styles, ‘A’ stands for Aural,\nmeaning a preference for learning through listening.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q10",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 10,
+    "question": "When a very bright light \nis incident on our eyes, we immediately\nclose our eyelids.\nThis is an example of _________.",
+    "options": {
+      "A": "Biological instincts",
+      "B": "Reflex actions",
+      "C": "Desired instincts",
+      "D": "Intrapersonal instincts"
+    },
+    "answer": "B",
+    "solution": "When a very bright light \nis incident on our eyes, we\nimmediately close our eyelids. This is an example of Reflex \nactions\nReflex actions are automatic and \nrapid responses to stimuli that \ndo not involve conscious thought, such as closing our eyelids \nin response to bright light.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q11",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 11,
+    "question": "Ident\nify the disadvantages of open ended questions in survey\nresearch.\nA. The quest\nions do not suggest certain kinds of answer to\nrespondents.\nB. They are time consuming for interviewers to administer.\nC. They require greater effort from respondents.\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(B) and (C) Only",
+      "C": "(A) and (C) Only",
+      "D": "(A), (B) and (C)"
+    },
+    "answer": "B",
+    "solution": "The d\nisadvantages of open-ended questions in survey research\ninclude:\nB. They are time-consuming for interviewers \nto administer \nbecause the responses need to be recorded verbatim and \nthen coded and analyzed.\nC. They re\nquire greater effort from respondents because \nrespondents must think about their answers and articulate \nthem in their own words, which can be more demanding \nthan selecting from predefined options.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q12",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 12,
+    "question": "In a reference written in \nAPA style, arrange the information\npertaining to the reference in correct order.\nA. DOI number B. V olume number\nC. Name of author D. Title of the article\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A), (B), (C), (D)",
+      "B": "(B), (A), (C), (D)",
+      "C": "(D), (C), (B), (A)",
+      "D": "(C), (D), (B), (A)"
+    },
+    "answer": "D",
+    "solution": "In APA\n style, the reference for a journal article is typically\nformatted as follows:\nC. Name of the author\nD. Title of the article\nB. V olume number (and issue number, if applicable)\nA. DOI number (if available)",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q13",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 13,
+    "question": "A research study is said to have heuristic value if :",
+    "options": {
+      "A": "It leads to no further research",
+      "B": "It generates more research",
+      "C": "Its results lack consistency",
+      "D": "Its results lack validity"
+    },
+    "answer": "B",
+    "solution": "A research study is \nsaid to have heuristic value if it stimulates\nfurther investigation and research. Heuristic value refers to the \nability of a study to inspire new questions, hypotheses, and \nsubsequent studies.\n\n\n7",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q14",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 14,
+    "question": "An entrance examination with objective \ntype questions is\nconducted. For each correct answer, 1 mark is awarded and for\neach incorrect answer 0.25 marks are deducted. The number of\nmarks scored by candidates who appeared in the examination,\nis an example of :",
+    "options": {
+      "A": "nominal variable",
+      "B": "discrete variable",
+      "C": "ordinal variable",
+      "D": "continuous variable"
+    },
+    "answer": "B",
+    "solution": "The number of marks scored in an examination is an example\nof a discrete variable because it involves countable values (e.g., \n1, 2, 3, etc.). The marks are not measured on a continuous scale \nbut rather as distinct, separate values.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q15",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 15,
+    "question": "Given below are two statements :\n Statement I: Medical research usually \ninvolves pain or distress\nin animals.\nStatement II: Psychological research is \nusually benign and may\ninvolve little, if any, discomfort for the animals.\nIn the light of the \nabove statements, choose the most appropriate\nanswer from the options given below :",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "answer": "A",
+    "solution": "Statement I: Medical research often \ninvolves procedures\nthat can cause pain or distress in animals, such as surgical \ninterventions, drug testing, or disease modeling.\nStatement II: Psychological research typically involves less \ninvasive \nprocedures, such as behavioural observations or \ncognitive tests, which usually result in minimal discomfort \nfor the animals involved.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q16",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 16,
+    "question": "A photograph constitutes a/an :",
+    "options": {
+      "A": "Protective text",
+      "B": "Refined text",
+      "C": "Closed text",
+      "D": "Open text"
+    },
+    "answer": "D",
+    "solution": "A photograph is considered an \n“open text” because its\ninterpretation is open to various meanings. Unlike closed texts, \nwhich have a fixed, singular meaning, open texts allow viewers \nto derive multiple interpretations based on their perspectives, \nexperiences, and contexts. The visual elements in a photograph \ncan evoke different emotions and thoughts, making it an open \nmedium for interpretation.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q17",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 17,
+    "question": "The Buddhist concept of communication is marked by :",
+    "options": {
+      "A": "Mono-causality",
+      "B": "Dyadic causality",
+      "C": "Multi-causality",
+      "D": "Skewed causality"
+    },
+    "answer": "C",
+    "solution": "The Buddhist concept of communication is \nmarked by\n“multi-causality.” This aligns with the principle of dependent \norigination (Pratītyasamutpāda), which suggests that all events \nand phenomena arise from multiple causes and conditions. In \nthis view, communication is not linear or singular but results \nfrom a complex interplay of various factors and influences.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q18",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 18,
+    "question": "At present, cyber communication is a :",
+    "options": {
+      "A": "Fictitious reality",
+      "B": "Palpable reality",
+      "C": "Futuristic reality",
+      "D": "Conventional reality"
+    },
+    "answer": "B",
+    "solution": "Cyber \ncommunication is considered a “palpable reality” at\npresent. It is an integral part of everyday life, facilitating \nreal-time interactions, social connections, and business \ntransactions globally. Unlike fictitious or futuristic realities, \ncyber communication is tangible and widely experienced, \nmaking it a conventional and significant aspect of modern life.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q19",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 19,
+    "question": "The main objectives of public \npolicy sphere communication is\nto involve citizens in :\nA. Idea generation\nB. Policy critique\nC. Innovative policy practices\nD. Ignoring oppositional views\nE. Promotion of stereotypes\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(B), (C) and (D) Only",
+      "C": "(C), (D) and (E) Only",
+      "D": "(A), (D) and (E) Only"
+    },
+    "answer": "A",
+    "solution": "The primary objectives of public policy \nsphere communication\ninclude involving citizens in idea generation, policy critique, \nand innovative policy practices. These activities promote \nactive public engagement, ensuring that diverse viewpoints and \ninnovative solutions contribute to the policymaking process. \nIgnoring oppositional views and promoting stereotypes, as \nmentioned in options (D) and (E), are counterproductive \nto the goals of inclusive and democratic communication \nin the public policy sphere. Therefore, option (1) correctly \nidentifies the objectives that align with effective public policy \ncommunication.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q20",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 20,
+    "question": "Given below are two statements :\n Statement I: W\nestern communication models examined the\nrelationship among communicative elements on an individual\nbasis.\nStatement II: The \nBuddhist concept of communication\nemphasises the contextualisation of each of the communicative\nelements.\nIn the light of the \nabove statements, choose the most appropriate\nanswer from the options given below :",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "answer": "A",
+    "solution": "Western communication models often focus \non analyzing the\nrelationship between communicative elements individually, \nconsidering each element’s specific role and impact. On \nthe other hand, the Buddhist concept of communication \nemphasizes the importance of context and the interdependence \nof communicative elements, viewing them as part of a \nholistic system. Both statements accurately describe these \ndiffering approaches to communication analysis, making both \nstatements true.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q21",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 21,
+    "question": "A man, a woman \nand a boy can do a piece of work in 6, 9 and\n18 days, respectively. How many boys should assist one man\nand one woman to do the work in one day?",
+    "options": {
+      "A": "13",
+      "B": "15",
+      "C": "11",
+      "D": "10"
+    },
+    "answer": "A",
+    "solution": "Man's one day work = 1/6\nWoman's one day work = 1/9\nBoy's one day work = 1/18\nLet 'B' no. of boys needed \n32 1 118 18 18 B⇒++ =   (LCM of 6, 9, 18 = 18)\n13 1318 18\nB B⇒ = ∴=\nHence, to complete work in one day 13 boys are required.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q22",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 22,
+    "question": "A family consists of \n6 members namely  A, B, C, D, E and F.\nB is the brother-in-law of  C's mother. C is the father of F. D is\nthe father of A and F is the grandson of D. There are two female\nmembers in the family. Which of the following pairs represent\nthe female members in the family?",
+    "options": {
+      "A": "A and D",
+      "B": "D and E",
+      "C": "A and E",
+      "D": "B and C"
+    },
+    "answer": "C",
+    "solution": "(i) B is the brother in-law of C's mother.\n  Hence, B is a male.\n(ii) C is the father of F.\nHence, C is a male.\n(iii) D is the father of \nA and F is the grandson of D. \nHence, D and F are male.\nSo, the remaining two members A and E are female.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q23",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 23,
+    "question": "Find the number that can \nreplace question mark (?) in the series\ngiven below.\n1.5, 5, 10.5, 18, 27.5, 39, ?, ...",
+    "options": {
+      "A": "48.5",
+      "B": "52.5",
+      "C": "62.5",
+      "D": "72.5"
+    },
+    "answer": "B",
+    "solution": "1.5  ,   5    ,    10.5 , 18    ,    27.5  ,  39   ,?\n+3.5 \n+2 +2 +2 +2 +2\n+5.5 +7.5 +9.5 +11.5 +13.5\n? = 39 + 13.5 \n? = 52.5",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q24",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 24,
+    "question": "A child is looking \nfor his father. He goes 100 meter towards east\nand then turns to his right and goes 30 meters. From there the\nchild again turns to his right and goes for 40 meters. Where he\nfinds his father at his uncle's place. How far is his uncle's place\nfrom the starting point of the child?",
+    "options": {
+      "A": "30 5  meter",
+      "B": "40 meter",
+      "C": "40 5  meter",
+      "D": "30 10  meter"
+    },
+    "answer": "A",
+    "solution": "30 m\n40 m\n100 mA\n(Uncle's place)\n(Start Point)\nB\nP\nShortest distance between starting point and uncle's place\n= [(60)2 + (30)2]1/2\n= [3600 + 900]1/2\n30 5 m=",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q25",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 25,
+    "question": "In a certain coding language :\n(a) 1000 i.e. 103 is coded as 1331\n(b) 125 i.e. 53 is coded as 216\nHow 729 will be coded in that language ?",
+    "options": {
+      "A": "1000",
+      "B": "1728",
+      "C": "1331",
+      "D": "2197"
+    },
+    "answer": "A",
+    "solution": "Logic:- Succeeding number's cube of the cube root of first\nnumber\nAs, 1000 i.e., 103 → (Succeeding number's cube)\n   →  1 13 = 1331\nand, 125 i.e., 53 → 63 = 216\nSimilarly, \n725 i.e, 9\n3 → 103 = 1000\nHence, the correct answer is 1000.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q26",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 26,
+    "question": "Which of the following statements \nare contradictory to each\nother?\nA. All plants are fungi B. No plants are fungi\nC. Some plants are not fungi D. Some plants are fungi\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(B) and (D) Only",
+      "B": "(A) and (B) Only",
+      "C": "(C) and (D) Only",
+      "D": "(A) and (D) Only"
+    },
+    "answer": "A",
+    "solution": "Statements B and D are contradictory to each other.\nStatement B:- No plants are fungi.\nThis statements indicates that there \nis no relation between \nplant and fungi.\nStatement D:- Some plants are fungi.\nThis statement states that there is at least one plant is a fungus.\nSo, the statement B and D both are not possible at a time.\n\n\n8",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q27",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 27,
+    "question": "If the statement - \"All trucks are polluting vehicles\" is given as\nfalse, then w\nhich of the following statements can be immediately\ninferred to be true?",
+    "options": {
+      "A": "Some trucks are polluting vehicles.",
+      "B": "Some trucks are not polluting vehicles.",
+      "C": "No trucks are polluting vehicles.",
+      "D": "No polluting vehicles are trucks."
+    },
+    "answer": "B",
+    "solution": "According to the given statement \"All trucks are polluting\nvehicles\" is declared false. This directly tells that not all trucks \nfit into the category of polluting vehicles.\nTherefore, \"Some trucks are not polluting vehicles\" is correct.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q28",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 28,
+    "question": "Which of the following statements \nis equivalent to the statement\n- \"Some philosophers are not idealists.\"?",
+    "options": {
+      "A": "Some philosophers are not non-idealists.",
+      "B": "No idealists are philosophers.",
+      "C": "Some non-idealists are not philosophers.",
+      "D": "Some non-idealists are not non-philosophers."
+    },
+    "answer": "D",
+    "solution": "The original statement, \"Some philosophers \nare not idealists,\"\nimplies that within the set of philosophers, some individuals \ndo not belong to the set of idealists. To find the equivalent \nstatement, we need to reformulate it while maintaining the \nsame logical structure.\nStatement  (1): \"Some \nphilosophers are not non-idealists\" \ncontradicts the original statement. If some philosophers are \nnot non-idealists, it implies they are idealists, which is the \nopposite of the original meaning.\nStatement (2): \"No \nidealists are philosophers\" implies that \nnone of the idealists are philosophers, which is stronger than \nthe original statement and not equivalent.\nStatement  (3): \"Some \nnon-idealists are not philosophers\" \nintroduces non-idealists and claims some of them are not \nphilosophers. This changes the subject of the statement and \nis not equivalent.\nStatement  (4): \"Some\n non-idealists are not non-philosophers\" \nis equivalent to saying that some non-idealists are philosophers, \nwhich aligns with the original statement: \"Some philosophers \nare not idealists.\"",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q29",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 29,
+    "question": "Which fallacy is involved in \nthe following statement \"Indian\npharmaceutical companies are profitable, therefore, average\nIndian pharmaceutical company is profitable\"?",
+    "options": {
+      "A": "Fallacy of Division",
+      "B": "Hasty Generalisation",
+      "C": "Slippery Slope",
+      "D": "Fallacy of Accident"
+    },
+    "answer": "D",
+    "solution": "The Fallacy of Division occurs when one assumes \nthat what\nis true for the group as a whole must also be true for each part. \nIn this case, just because Indian pharmaceutical companies as \na whole are profitable does not necessarily mean that every \nindividual pharmaceutical company in India is profitable.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q30",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 30,
+    "question": "Given below are two statements :\n Statement I: The Aristotelian \nsyllogism is only inductive and\nformal.\nStatement II: Nyāya syllogism is \ndeductive - inductive and\nformal-material.\nIn the light of the \nabove statements, choose the most appropriate\nanswer from the options given below :",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "answer": "D",
+    "solution": "Statement I is false because the \nAristotelian syllogism is\nprimarily deductive, not inductive, and focuses on formal logic.\nStatement II is true because \nthe Nyāya syllogism combines \nboth deductive and inductive reasoning and includes both \nformal (structure) and material (content) aspects.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q31",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 31,
+    "question": "An advantage to a business \nthat uses Intranet capabilities is that\nit allows employees to share the business's information with",
+    "options": {
+      "A": "Customers",
+      "B": "Each other.",
+      "C": "Competitors",
+      "D": "Former employees"
+    },
+    "answer": "B",
+    "solution": "An Intranet is a private \nnetwork used within an organization to\nshare company information and resources among employees. \nIt enhances internal communication, collaboration, and \nefficiency by allowing employees to easily access and share \nimportant information. Unlike the Internet, which is accessible \nto the public, an Intranet is restricted to authorized personnel \nwithin the organization, ensuring that sensitive information is \nkept secure and is not shared with customers, competitors, or \nformer employees.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q32",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 32,
+    "question": "Consider the following MS-EXCEL \nscreenshot that shows the\nproduct code, name of the state which produced the product and\nQuality of the product :\nA B C D\n1 Product Code State Quality\n2 A1 HP A\n3 A2 MP A\n4 A3 UP A\n5 A4 UP B\n6 A5 UP B\n7\nWhich of the following EXCEL\n formulae can be typed in Cell \nD1 to answer the question : How many different product codes \nform UP are of Grade \"A\" quality?\nA. = COUNTIFS (B2:B6, \"=UP\", C2:C6,\" = A\")\nB. = COUNTIFS (C2:C6, \"=A', B2:B6,\" = UP\")\nC. = COUNTIFS (B2:B6, \"UP\", C2:C6, \"A\")\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(A) and (C) Only",
+      "C": "(B) and (C) Only",
+      "D": "(A), (B) and (C)"
+    },
+    "answer": "D",
+    "solution": "All th\nree formulas (A), (B), and (C) correctly use the\nCOUNTIFS function to count the number of product codes \nfrom UP that are of Grade “A” quality. The slight variations in \nthe formatting and ordering of arguments in the formulas do \nnot affect their correctness, as COUNTIFS can handle criteria \nin any order as long as they are correctly paired with their \ncorresponding ranges. Therefore, all three options are correct.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q33",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 33,
+    "question": "Given below are two statements :\n Statement I: ‘Disk defragmentation’ makes files that are\ncontiguous in a disk as fragmented.\nStatement II: A device controller \nthat controls a device will\ndeal with the operating system through device driver.\nIn the light of the \nabove statements, choose the most appropriate\nanswer from the options given below :",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "answer": "D",
+    "solution": "Statement I is false. Disk defragmentation is \na process that\nreduces fragmentation by reorganizing scattered pieces of data \nso that files are stored contiguously, not fragmented.\nStatement II is true. A device controller \ncommunicates with the \noperating system through a device driver, which is a software \ncomponent that allows the OS to interact with the hardware device.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q34",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 34,
+    "question": "Which of the following statements \nregarding Artificial\nIntelligence (AI) is/are correct ?\nA. AI systems can be used in email spam filters.\nB. AI systems are capable of \nanalyzing uncertain information.\nC. An AI system is a \nsystem for capturing, storing, processing\nand displaying data related to positions on earth's surface.\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A) Only",
+      "B": "(A) and (B) Only",
+      "C": "(A) and (C) Only",
+      "D": "(B) and (C) Only"
+    },
+    "answer": "B",
+    "solution": "Statement (A): This is correct because AI algorithms, such as\nmachine learning models, are employed to detect and filter out \nspam emails by analyzing patterns and content in email messages.\nStatement (B): AI \nsystems are capable of analyzing uncertain \ninformation. This is correct as AI systems use techniques such \nas fuzzy logic, probabilistic models, and machine learning to \nhandle and analyze data that may be incomplete or uncertain.\nStatement (C): This is incorrect. The \ndescription given in \nStatement (C) refers  to a Geographic Information System \n(GIS), which is used for geospatial data management, not \nspecifically to AI. AI can be integrated with GIS for enhanced \nanalysis, but AI itself is not defined by this function.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q35",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 35,
+    "question": "Which of the following features \nare available in word processing\nsoftware such as MS-WORD ?\nA. Spell checker and Thesaurus\nB. Page Orientation\nC. Mail Merge\nD. Slide Transitions\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A), (B) and (D) Only",
+      "B": "(A) and (C) Only",
+      "C": "(B) and (C) Only",
+      "D": "(A), (B) and (C) Only"
+    },
+    "answer": "D",
+    "solution": "Statement (A): Spell checker and Thesaurus \nare available\nfeatures in MS-WORD. The spell checker helps in correcting \nspelling errors, while the thesaurus provides synonyms and \nantonyms for words.\nStatement (B): Page Orientation is an \navailable feature in \nMS-WORD. It allows users to set the page layout to either \nportrait or landscape orientation.\nStatement (C): Mail Merge \nis an available feature in MS-\nWORD. It is used to create multiple documents, such as letters \nor labels, by combining a standard template with a data source.\nStatement (D): Slide \nTransitions are not a feature of MS-\nWORD. Slide transitions are specific to presentation software \nlike MS PowerPoint, where they are used to create visual \neffects when moving from one slide to another.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q36",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 36,
+    "question": "Which one of the following is not caused by polluted water ?",
+    "options": {
+      "A": "Cholera",
+      "B": "Dysentery",
+      "C": "Typhoid",
+      "D": "Tuberculosis"
+    },
+    "answer": "D",
+    "solution": "Tuberculosis is a bacterial \ninfection caused by Mycobacterium\ntuberculosis, primarily affecting the lungs and is spread \nthrough airborne particles, not through polluted water. \nDiseases caused by polluted water include:\nCholera: Caused by V\nibrio cholerae bacteria, spread through \ncontaminated water.\nDysentery: Caused by bacteria \nor amoeba in contaminated water.\nTyphoid: Caused by Salmonella typhi \nbacteria, spread through \ncontaminated water and food.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q37",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 37,
+    "question": "Given below are two statements :\n Statement I: Toxic chemica\nls often injure human organs and\norgan systems.\nStatement II: Toxicants \nthat damage kidneys are called as\nHepatotoxic.\nIn the light of the \nabove statements, choose the most appropriate\nanswer from the options given below :",
+    "options": {
+      "A": "Both Statement I and Statement II are correct",
+      "B": "Both Statement I and Statement II are incorrect",
+      "C": "Statement I is correct but Statement II is incorrect",
+      "D": "Statement I is incorrect but Statement II is correct"
+    },
+    "answer": "C",
+    "solution": "Statement I: Toxic chemi\ncals do often injure human organs\nand organ systems. This statement is correct.\nStatement II: Toxicants that \ndamage kidneys are called \nnephrotoxic, not hepatotoxic. “Hepatotoxic” refers to toxicants \nthat damage the liver. This statement is incorrect.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q38",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 38,
+    "question": "Which of the following are related to 'source reduction' in\nintegrated solid waste management?\nA. Reduced Toxicity B. Composting\nC. Less Packaging D. Landfill\nE. More durable products\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(A), (C) and (E) Only",
+      "C": "(B), (C) and (D) Only",
+      "D": "(C), (D) and (E) Only"
+    },
+    "answer": "B",
+    "solution": "Source reduction in integrated solid \nwaste management refers\nto practices that reduce the amount and toxicity of waste \ngenerated. This can include:\nA. Reduced Toxicity: Decreasing the hazardous nature \nof \nwaste produced.\nC. Less Packaging: Minimizing packaging materials \nto \nreduce waste.\nE. More durable products: Designing \nand using products \nthat last longer and thus generate less waste over time.\nComposting (B) and landfilling (D) \nare methods of managing \nwaste after it has been generated, not practices that reduce the \namount or toxicity of waste at the source.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q39",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 39,
+    "question": "Depletion of stratospheric ozone results into\nA. Increase in the ultraviolet radiation\nB. Increase in infra-red radiation\nC. Increase in skin cancer\nD. Significant impact on terrestrial flora and fauna\nE. Decrease in cataract cases\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A), (B), (C) and (D) Only",
+      "B": "(A), (C) and (D) Only",
+      "C": "(B), (C), (D) and (E) Only",
+      "D": "(A), (B) and (C) Only"
+    },
+    "answer": "B",
+    "solution": "Depletion of stratospheric ozone results \nin the following\nconsequences:\n\n\n9\n\nA. Increase in the ultraviolet radiation: The ozone layer \nabsorbs and blocks most of the sun’s harmful ultraviolet \n(UV) radiation. Depletion of the ozone layer leads to \nan increase in the amount of UV radiation reaching the \nEarth’s surface.\nC. Increase\n in skin cancer: Increased exposure to UV \nradiation is a major risk factor for skin cancer.\nD. Significant impac\nt on terrestrial flora and fauna: \nHigher levels of UV radiation can harm plants and \nanimals, affecting their health and ecosystems.\nInfra-red radi\nation (B) is not directly related to the depletion of \nthe ozone layer, and a decrease in cataract cases (E) is incorrect \nbecause increased UV radiation actually leads to more cataract \ncases, not fewer.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q40",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 40,
+    "question": "Nitrous Oxide (N2O).\nA. causes acid rain B. is laughing gas\nC. is carcinogenic D. is a green house gas\nE. is a criterion air pollutant\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A), (D) and (E) Only",
+      "B": "(C), (D) and (E) Only",
+      "C": "(B) and (D) Only",
+      "D": "(A) and (E) Only"
+    },
+    "answer": "C",
+    "solution": "Nitrous Oxide (N2O):\n  (B) is laughing gas: Nitrous oxide \nis commonly known as \nlaughing gas and is used as an anesthetic in dentistry and \nsurgery.\n(D) is a greenhous\ne gas: Nitrous oxide is a potent greenhouse \ngas with significant global warming potential.\nIt is not \ndirectly responsible for causing acid rain (A), it is \nnot classified as carcinogenic (C), and it is not one of the six \ncriteria air pollutants identified by the EPA (E).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q41",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 41,
+    "question": "The Michael Sadler \ncommission was constituted to study the\nproblems of :",
+    "options": {
+      "A": "Bombay University",
+      "B": "Madras University",
+      "C": "Poona University",
+      "D": "Calcutta University"
+    },
+    "answer": "D",
+    "solution": "The Michael Sadler Commission, also \nknown as the Calcutta\nUniversity Commission, was constituted in 1917 to study \nand address the problems and make recommendations for the \nimprovement of Calcutta University.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q42",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 42,
+    "question": "The National Education Policy, \n1986 recommended the\nestablishment of _________ in the country.",
+    "options": {
+      "A": "Community colleges",
+      "B": "Open universities",
+      "C": "National universities of eminence",
+      "D": "Discipline-wise universities"
+    },
+    "answer": "B",
+    "solution": "The National Education Policy (NEP) \nof 1986 recommended\nthe establishment of open universities in the country to \npromote distance education and provide opportunities for \nhigher education to a larger population, particularly those who \nare unable to attend traditional universities.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q43",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 43,
+    "question": "Given below are two statements:\n Statement I: Curzon's university reforms \nreflected the official\nattitude towards the spread of higher education in India.\n Statement II: \nThere was no resistance to the Indian universities\nBill piloted by Curzon from any section of Indians.\nIn the light of the \nabove statements, choose the most appropriate\nanswer from the options given below :",
+    "options": {
+      "A": "Both Statement I and Statement II are true",
+      "B": "Both Statement I and Statement II are false",
+      "C": "Statement I is true but Statement II is false",
+      "D": "Statement I is false but Statement II is true"
+    },
+    "answer": "C",
+    "solution": "Statement I: Curzon’s university reforms \ndid reflect the\nofficial attitude towards the spread of higher education in \nIndia. His reforms aimed to improve the quality of higher \neducation and ensure better control over universities.\nStatement II: There was significant resistance to \nthe Indian \nUniversities Bill piloted by Curzon from various sections of \nIndians, including students, teachers, and nationalist leaders \nwho saw the reforms as an attempt to control and limit the \nspread of higher education.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q44",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 44,
+    "question": "Match List-I with List-II.\nList-I (Ancient \nthinkers)\nList-II (Area of study)\n(A) Panini (I) Astronomy\n(B) Jivaka (II) Grammar\n(C) Bhaskara (III) Medicine\n(D) Kanada (IV) Physics\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+      "B": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+      "C": "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+      "D": "(A)-(II), (B)-(IV), (C)-(I), (D)-(III)"
+    },
+    "answer": "C",
+    "solution": "(A) Panini - (II) Grammar: Panini was an ancient \nIndian\nscholar who is most famous for his work on Sanskrit grammar, \nparticularly his treatise called Ashtadhyayi.\n(B) Jivaka - (III) Medicine: Jivaka was \na renowned physician \nin ancient India, often associated with traditional medicine \nand the healing practices during the time of Buddha.\n(C) Bhaskara - (I) Astronomy: Bhaskara \nI was an ancient \nIndian mathematician and astronomer known for his \ncontributions to the understanding of planetary movements \nand celestial bodies.\n(D) Kanada - (IV) Physics: Kanada was an ancient \nIndian \nphilosopher who founded the Vaisheshika school of \nphilosophy and is credited with pioneering ideas related to \natomism and physics.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q45",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 45,
+    "question": "Match List-I with List-II.\nList-I\n(Name of University)\nList-II \n(Year of Establishment)\n(A) Bombay University (I) 1916\n(B) Delhi University (II) 1943\n(C) Utkal University (III) 1922\n(D) S.N.D.T. Women \nUniversity\n(IV) 1857\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+      "B": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+      "C": "(A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+      "D": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)\nRead the passage and answer the questions that follow :\nScience and the techniques \nto which it has given rise have changed \nhuman life during the last hundred and fifty years more than it had \nbeen changed since men took to agriculture, and the changes that are \nbeing wrought by science continue at an increasing speed. There is \nno sign of any new stability to be attained on some scientific plateau. \nOn the contrary, there is every reason to think that the revolutionary \npossibilities of science extend immeasurably beyond what has so far \nbeen realised. Can the human race adjust itself quickly enough to these \nvertiginous transformations, or will it, as innumerable former species \nhave done, perish from lack of adaptability? The dinosaurs were, in \ntheir day, the lords of creation, and if there had been philosophers \namong them, not one would have foreseen that the whole race \nmight perish. But they became extinct because they could not adapt \nthemselves to a world without swamps. In the case of man and science \nthere is a wholly new factor, namely that man himself is creating the \nchanges of environment to which he will have to adjust himself with \nunprecedented rapidity. But, although man through his scientific skill \nis the cause of the changes of environment, most of these changes are \nnot willed by human beings. Although they come about through human \nagencies, they have, or at any rate have had so far, something of the \ninexorable inevitability of natural forces. Whether Nature dried up the \nswamps or men deliberately drained them, makes little difference as \nregards the ultimate result. Whether men will be able to survive the \nchanges of environment that their own skill has brought about is an \nopen question. If the answer is in the affirmative, it will be known some \nday; if not, not. If the answer is to be in the affirmative, men will have \nto apply scientific ways of thinking to themselves and their institutions."
+    },
+    "answer": "A",
+    "solution": "(A) Bombay University - (IV) 1857: The University of\nMumbai, formerly \nknown as Bombay University, was \nestablished in 1857, making it one of the oldest universities \nin India.\n(B) Delhi University - (III) 1922: The University of Delhi, \none \nof the premier universities in India, was established in \n1922.\n(C) Utkal University - (II) 1943: Utkal University\n, located \nin Odisha, was established in 1943 and is one of the oldest \nuniversities in the state.\n(D) S.N.D.T. Women University - (I) 1916: The \nShreemati \nNathibai Damodar Thackersey (S.N.D.T.) Women’s \nUniversity, established in 1916, is the first women’s university \nin India.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q46",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 46,
+    "question": "Dinosaurs became extinct because of :",
+    "options": {
+      "A": "A massive earthquake",
+      "B": "Incessant rainfall",
+      "C": "Extreme cold",
+      "D": "Lack of adaptability"
+    },
+    "answer": "D",
+    "solution": "The passage mentions that \ndinosaurs became extinct because\nthey could not adapt themselves to a world without swamps, \nindicating a lack of adaptability.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q47",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 47,
+    "question": "In the scientific age who \nis responsible for the changing\nenvironment?",
+    "options": {
+      "A": "Nature",
+      "B": "Man",
+      "C": "Natural Disasters",
+      "D": "Wars"
+    },
+    "answer": "B",
+    "solution": "The passage states that man \nhimself is creating the changes\nin the environment to which he will have to adjust, implying \nthat in the scientific age, man is responsible for the changing \nenvironment.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q48",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 48,
+    "question": "The main focus of the passage is on :",
+    "options": {
+      "A": "Extinction of Species",
+      "B": "Extinction of Dinosaurs",
+      "C": "Science and Human life",
+      "D": "Destruction of Forests"
+    },
+    "answer": "C",
+    "solution": "The passage discusses how science \nhas changed human life\nand the environment, and the need for humans to adapt to \nthese changes.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q49",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 49,
+    "question": "\"If the answer is in \nthe affirmative \" ________ refers to the question\nrelated to:",
+    "options": {
+      "A": "Changes in environment",
+      "B": "Human survival",
+      "C": "Human extinction",
+      "D": "Changes in scientific approach"
+    },
+    "answer": "B",
+    "solution": "The passage is questioning \nwhether humans will be able to\nsurvive the changes in the environment that their own skill \nhas brought about, which relates to human survival.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2023_q50",
+    "year": "General Paper 2023",
+    "paper": "NTA UGC General Paper 2023.pdf",
+    "q_num": 50,
+    "question": "According to the passage the following are true :\nA. Science is bringing about rapid changes.\nB. There\n is every likelihood that a scientific plateau will be\nreached.\nC. Man will definitely perish like the Dinosaurs.\nD. There are chances that mankind \nmay become extinct due to\nlack of adaptability.\nE. Changes in the environment made \nthrough human agencies\nhave so far shown almost the same inexorable inevitability \nas that of natural forces in the past.\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A), (D) and (E) Only",
+      "B": "(A), (B) and (E) Only",
+      "C": "(A) and (E) Only",
+      "D": "(B), (C) and (E) Only"
+    },
+    "answer": "A",
+    "solution": "The passage states that science \nis bringing about rapid\nchanges (A), and there are chances that mankind may become \nextinct due to lack of adaptability (D). It also mentions that \nchanges in the environment made through human agencies \nhave shown almost the same inevitability as natural forces \nin the past (E). However, it does not suggest that a scientific \nplateau will be reached (B) or that man will definitely perish \nlike the dinosaurs (C).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q1",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 1,
+    "question": "If the monthly income of A and D are ₹ 80000 and ₹ 72000,\nrespectively, then the amount of money spent by A on Rent\nis _________% more than the amount spent by D on clothes.",
+    "options": {
+      "A": "32.62",
+      "B": "38.89",
+      "C": "36.54",
+      "D": "34.24"
+    },
+    "answer": "B",
+    "solution": "Amount spent by A on rent per annum = 15% of (12 × 80000) \n= ₹ (15 × 12 × 800)\nAmount spent by D on clothes per annum = 12% of (12 ×72000) \n= ₹ (12 × 12 × 720)\nRequired percentage ( )15 12 800 12 12 720 10012 12 720\n×× −××= ×××\n( )15 10 12 9 100 38.89%12 9\n×−×= ×=×",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q2",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 2,
+    "question": "If the annual income of each \nof the six persons is ₹ 3 lakh, then\nthe amount of money spent on clothes is more than ₹ 41800 by\nexactly ________ persons.",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "A",
+    "solution": "41800 100 13.93%300000×=\nFrom the given table we can see that only B and E hare spent \nmore than 13.93% of their in come on clothes.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q3",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 3,
+    "question": "If the annual incomes of B and \nC are ₹ 432000 and ₹ 528000,\nrespectively, then what is the difference between the amount\nspent by them on Transport?",
+    "options": {
+      "A": "₹ 18496",
+      "B": "₹ 18828",
+      "C": "₹ 19216",
+      "D": "₹ 19488"
+    },
+    "answer": "D",
+    "solution": "Amount spent by B on transport 22.6 432000 97632100= ×= `\nAmount spent by C on transport 14.8 528000 78144100= ×= `\nRequired difference = 97632 – 78144 = ₹ 19488",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q4",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 4,
+    "question": "If the annual income of each of \nC and D is ₹ 840000, then what\nis the sum of the amount spent by C on Rent and that by D on\nMiscellaneous items?",
+    "options": {
+      "A": "₹ 288820",
+      "B": "₹ 290520",
+      "C": "₹ 293160",
+      "D": "₹ 295700"
+    },
+    "answer": "C",
+    "solution": "Required sum = (16.3% + 18.6%) of 840000\n= 34.9% of 840000 = 349 × 840 = ₹ 293160",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q5",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 5,
+    "question": "If the amount of money spent on \nfood by C and D is ₹ 144000\nand ₹ 172800, respectively, then the annual income of C is\n________% of the annual income of D.",
+    "options": {
+      "A": "47.5",
+      "B": "60",
+      "C": "62.5",
+      "D": "120"
+    },
+    "answer": "C",
+    "solution": "Annual income of C 100144000 60000024= ×= `\nAnnual income of D 100172800 96000018= ×= `\nRequired percentage 600000 100 62.5%960000= ×=",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q6",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 6,
+    "question": "Which of the following are arranged in the order of increasing\nconnotation?",
+    "options": {
+      "A": "Vertebrates, mammals, canine, labradors",
+      "B": "Mammals, vertebrates, canine, labradors",
+      "C": "Canine, labradors, mammals, vertebrates",
+      "D": "Labradors, canine, mammals, vertebrates"
+    },
+    "answer": "D",
+    "solution": "Connotation refers to the implied or associated meaning of a \nword or category, and in this case, it is based on the level \nof \ngenerality or specificity. Starting with the most specific term \nand moving to the most general term is the correct way to show \nincreasing connotation.\n• Labradors: This is the most specific term, referring to a\nparticular breed of dog.\n• Canine: This is a broader term than Labradors, referring\nto all members of the dog family, which includes many\nbreeds like Labradors, Golden Retrievers, etc.\n• Mammals: This term is broader than canines, referring\nto all animals that nurse their young with milk, including\ndogs, cats, whales, humans, etc.\n• Vertebrates: This is the broadest term, including all\nanimals with a backbone, such as fish, birds, reptiles,\namphibians, and mammals.\nThus, the correct sequence in the order of increasing connotation \nis (4) Labradors, canine, mammals, vertebrates.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q7",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 7,
+    "question": "Two researchers obtain similar results while \ninvestigating a\nproblem following different methodologies. Their measurements \nshow:",
+    "options": {
+      "A": "Interrater validity",
+      "B": "Convergent validity",
+      "C": "Construct validity",
+      "D": "Test-Retest validity"
+    },
+    "answer": "B",
+    "solution": "In this c\nase, the two researchers using different methodologies\nbut obtaining similar results indicates convergent validity.   \nIt occurs when two different methods or approaches to studying \nthe same concept yield similar results. This suggests that the \ntwo methods are measuring the same underlying construct or \nphenomenon effectively.\n• Interrater validity relates to the consistency between\ndifferent individuals (raters) when they are observing or\nassessing the same thing.\n• Construct validity refers to how well a test or experiment \nmeasures the concept it is intended to measure.\n• Test-retest validity involves checking the consistency of\nresults when the same test is repeated at different times.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q8",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 8,
+    "question": "Amount of destruction caused by an earthquake is measured by:",
+    "options": {
+      "A": "Richter Scale",
+      "B": "Intensity Scale",
+      "C": "Magnitude Scale",
+      "D": "Mercalli Scale"
+    },
+    "answer": "D",
+    "solution": "The Mercalli Scale measures the intensity of an earthquake\nbased on its observed \neffects and the amount of destruction it \ncauses to buildings, structures, and landscapes. It is a subjective \nscale that considers human perception and structural damage.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q9",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 9,
+    "question": "The contents of swayamprabha channel - \n15 with the theme of\n‘Capacity Building and Teacher Education’ is provided by:",
+    "options": {
+      "A": "CEC, New Delhi",
+      "B": "IIT Delhi",
+      "C": "IGNOU, New Delhi",
+      "D": "IIT Kanpur"
+    },
+    "answer": "C",
+    "solution": "The content for Swayamprabha Channel 15, which focuses\non “Capacity Bu\nilding and Teacher Education”, is provided \nby IGNOU (Indira Gandhi National Open University), New \nDelhi. IGNOU is a leading institution in providing distance \neducation and has a strong focus on teacher education and \ncapacity-building programs.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q10",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 10,
+    "question": "Which of the following statements are logically equivalent?\n(A) Some non-dogs are non-friendly animals\n(B) Some dogs are friendly animals\n(C) Some friendly animals are dogs\n(D) All dogs are friendly animals\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(B) and (C) Only",
+      "B": "(B) and (D) Only",
+      "C": "(A), (B) and (C) Only",
+      "D": "(A) and (D) Only"
+    },
+    "answer": "A",
+    "solution": "(A) Some non-dogs are non-friendly animals\nThis statement says that there are \nsome animals, other than \ndogs, that are not friendly. It doesn’t specifically contradict any \nother statement but doesn’t directly relate to the friendliness \nof dogs either.\n(B) Some dogs are friendly animals\nThis statement says that there are some dogs that are friendly, \nwhich means not all dogs are necessarily \nfriendly. It partially \noverlaps with (D) but is weaker because it states “some” dogs, \nnot “all.”\n(C) Some friendly animals are dogs\nThis statement suggests that there are friendly \nanimals, and \nsome of those friendly animals happen to be dogs. This \noverlaps with (B) because if some dogs are friendly (B), then \nsome friendly animals are dogs (C).\n(D) All dogs are friendly animals\nThis is a strong statement that asserts that every single dog is \nfriendly. It is stronger than (B), which only says that “some” \ndogs \nare friendly. (D) directly contradicts the possibility of \nunfriendly dogs implied by (B).\n  ∴ (B) and (C) are logically equivalen\nt because they both imply \nthat some dogs are friendly.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q11",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 11,
+    "question": "Which of the following are advantages of e-commerce for\nconsumers?\n(A) They save time by visiting websites instead of stores.\n(B) They have lit\ntle risk of having their credit card number\nintercepted.\n(C) They can choose goods from any vendor in the world.\n(D) They can shop no matter their location, time, or conditions.\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "(A) and (D) Only",
+      "B": "(B) and (C) Only",
+      "C": "(A), (C) and (D) Only",
+      "D": "(A), (B), (C) and (D)"
+    },
+    "answer": "C",
+    "solution": "Advantages of e-commerce for consumers are:\n(A)  They save time by visiting websites instead of stores: \nCorrect. E-commerce allows consumers \nto shop from the \nconvenience of their own homes, saving time compared \nto physically going to stores.\n\n\n6\n\n(C)  They can choose goods from any vendor in the world: \nCorrect. E\n-commerce allows consumers to buy products \nfrom international vendors, expanding their purchasing \noptions beyond geographical limitations.\n(D)  They can shop no matter their location, time, or \nconditions: Correct. E-commerce enables consumers to \nshop online 24/7, regardless of their physical location or\n \nexternal conditions like weather or time of day.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q12",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 12,
+    "question": "Identify the parametric tests used for statistical analysis.\n(A) t-test (B) H-test\n(C) F-test (D) U-test\n\n1\nSET\nDirections (1-5): The following table represents the percentage \nexpenditure of the annual income of six persons A-F on six different \nitems, namely, Food, Rent, Transport, Clothes, Entertainment and \nMiscellaneous. Based on the data in the table, answer the questions \nthat follow.\nPerson-wise Expenditure Details\nPerson \nPercentage (%) Expenditure from Annual Income on\nFood Rent Transport Clothes Entertainment Miscellaneous\nA 21.80% 15.0% 18.4% 12.5% 13.3% 19.0%\nB 17.20% 18.0% 22.6% 15.0% 11.4% 15.8%\nC 24.0% 16.3% 14.8% 11.2% 7.8% 25.9%\nD 18.0% 19.5% 15.5% 12.0% 16.4% 18.6%\nE 20.20% 16.4% 17.5% 14.0% 8.6% 23.3%\nF 23.60% 18.5% 16.0% 13.8% 11.0% 17.1%\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(B) and (C) Only",
+      "C": "(C) and (D) Only",
+      "D": "(A) and (C) Only"
+    },
+    "answer": "D",
+    "solution": "The  parametric tests are  t-test and  F-test,\n• t-test: A parametric test used to compare the means of\ntwo groups. It assumes that the data follows a normal\ndistribution.\n• F-test: A parametric test used to compare the variances\nof two or more groups, often used in ANOV A (Analysis\nof Variance).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q13",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 13,
+    "question": "The etic approach to communication is ________ in character.",
+    "options": {
+      "A": "Restrictive",
+      "B": "Mechanical",
+      "C": "Universal",
+      "D": "Non-cultural"
+    },
+    "answer": "C",
+    "solution": "The etic approach in communication or anthropology refers\nto the study of human behavior from an external, objective, \nand \nuniversal perspective. It focuses on the similarities across \ncultures and looks for universal principles that can be applied \nto all human societies, regardless of cultural differences.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q14",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 14,
+    "question": "Match List-I with List–II.\nList-I (Authors) List-II (Concepts)\nA. Roland Barthes I. Doxa\nB. Pierre Bourdieu II. Hegemony\nC. Antonio Gramsci III. Simulation\nD. Jean Baudrillard I V. Myth\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+      "B": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+      "C": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+      "D": "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+    },
+    "answer": "D",
+    "solution": "The correct Match  is (4) (A)-(IV), (B)-(I), (C)-(II), (D)-(III).\nRoland Barthes – Myth:\n Barthes’ book “Mythologies ” \nexamines how myths are created and perpetuated in society \nthrough language, symbols, and narratives, making this a \ncorrect match.\nPierre Bourdieu – Doxa: Bourdieu’s \nconcept of “doxa” refers \nto the set of fundamental, unquestioned beliefs that exist in \nany given society, aligning well with this match.\nAntonio Gramsci – H\negemony: Gramsci introduced the \nconcept of “hegemony”, which explains how a dominant group \ncan control society ideologically without the use of force, \nensuring the match here is correct.\nJean Baudrillar\nd – Simulation: Baudrillard’s concept of \n“simulation” refers to the process where reality is replaced \nby representations of reality (simulacra), which fits well with \nthis match.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q15",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 15,
+    "question": "Because of Biochemical Oxygen Demand (BOD), Dissolved\nOxygen (DO) of a water body:",
+    "options": {
+      "A": "Increases",
+      "B": "Decreases",
+      "C": "Remains unchanged",
+      "D": "Initially increases and then decreases"
+    },
+    "answer": "B",
+    "solution": "Biochemical Oxygen Demand (BOD) refers to the amount\nof dissolved oxygen needed by aerobic organisms to break \ndown or\nganic material present in a water body.When the \nBOD is high, it indicates a high level of organic pollution. As \nmicroorganisms work to decompose this organic material, \nthey consume more dissolved oxygen (DO) from the water.\nAs a result, the Dissolved Oxygen (DO) in the water body \ndecreases.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q16",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 16,
+    "question": "If the selling price of ₹ 276 results \nin a discount of 8% on the\nmarked price of an item, at what price should the item be sold \nto offer a discount of 13%?",
+    "options": {
+      "A": "₹ 265",
+      "B": "₹ 251",
+      "C": "₹ 257",
+      "D": "₹ 261"
+    },
+    "answer": "D",
+    "solution": "(100 – 8)% of M.P. = ₹276\n⇒ M.P. 100276 30092=×= `\nRequired S.P. = (100 – 13)% of 300 = 87% of 300 \n= 87 × 3 = ₹261",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q17",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 17,
+    "question": "Who among the following ancient scholars was a proponent of\ngrammarian tradition?",
+    "options": {
+      "A": "Ishwarkrishna",
+      "B": "Bhaṛtrhari",
+      "C": "Gautama",
+      "D": "Kanada"
+    },
+    "answer": "B",
+    "solution": "Bharthar\ni was a renowned ancient Indian philosopher and\ngrammarian. He is best known for his work in the field of \nlanguage and grammar, particularly his contribution to the \nVākyapadīya, a major work on Sanskrit grammar and the \nphilosophy of language.\nThe other scholars mentioned:\n• Ishwar krishna: Associated with the Sankhya philosophy.\n• Gautama: Founder of Nyaya philosophy.\n• Kanada: Founder of the Vaisheshika school of philosophy.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q18",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 18,
+    "question": "If (L)M represents a number L in base-M number system, then\nidentify the correct ascending order of the following numbers \nA-D when converted to decimal number system.\n(A) (102)4\n(B) (10001)2\n(C) (103)6\n(D) (201)3\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(B), (A), (C), (D)",
+      "B": "(A), (C), (D), (B)",
+      "C": "(A), (B), (D), (C)",
+      "D": "(B), (A), (D), (C)"
+    },
+    "answer": "D",
+    "solution": "(A) (102)4 in base 4:\n1024 = 1 × 42 + 0 × 41 + 2 × 40 = 1 × 16 + 0 + 2 =18\n(B) (10001)2 in base 2:\n100012 = 1 × 24 + 0 × 23 + 0 × 22 + 0 × 21 + 1 × 20 = 16 + 1 = 17\n(C) (103)6 in base 6:\n1036 = 1 × 62 + 0 × 61 + 3 × 60 = 36 + 0 + 3 = 39\n(D) (201)3 in base 3:\n2013 = 2 × 32 + 0 × 31 + 1 × 30 = 18 + 0 + 1 = 19\nThe correct ascending order is (B), (A), (D), (C).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q19",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 19,
+    "question": "The Indian Institute of management, Indore, was set up during:",
+    "options": {
+      "A": "Eighth five year plan",
+      "B": "Ninth five year plan",
+      "C": "Tenth five year plan",
+      "D": "Eleventh five year plan"
+    },
+    "answer": "B",
+    "solution": "The Indian Institute of Management (IIM) Indore was\nestab\nlished in 1996 during the Ninth Five-Year Plan \n(1997–2002). It was set up as part of the Indian government’s \ninitiative to expand the IIM system for providing high-quality \nmanagement education in India.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q20",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 20,
+    "question": "An Internet standard that allows for adding media attachments\nto an email is called:",
+    "options": {
+      "A": "MIME",
+      "B": "DHCP",
+      "C": "HDMI",
+      "D": "FTP"
+    },
+    "answer": "A",
+    "solution": "MIME is an Internet standard that extends the \nformat of email \nto support text in character sets other than ASCII, as well as \nattachments such as audio, video, images, and application \nprograms. It allows email clients to send and receive media \nattachments like photos, videos, or documents.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q21",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 21,
+    "question": "According to Marshal McLuhan, examples of high definition\nmedia are:\n(A) Speech\n(B) Photograph\n(C) Radio\n(D) Cinema\n(E) Cartoon\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(B), (C) and (D) Only",
+      "C": "(C), (D) and (E) Only",
+      "D": "(A), (D) and (E) Only"
+    },
+    "answer": "B",
+    "solution": "According to Marshall McLuhan’s classification \nof media into\nlow-definition and high-definition types:\n1.  Photograph (B): High-definition media because it delivers\ndetailed, clear, and specific information without needing\nmuch interpretation.\n2.  Radio (C): High-definition media as it provides\nclear auditory information that requires less audience\nengagement to understand.\n3.  Cinema (D): High-definition media because it is rich in\nvisual and auditory detail, offering a clear and immersive\nexperience.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q22",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 22,
+    "question": "Which of the following are consequences of Global Warming?\n(A) Change in Hydrological Cycle\n(B) Species Migration\n(C) Change in Ocean Circulation\n(D) Ocean Acidification\n(E) Sea level rise\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (B) and (E) Only",
+      "B": "(A), (C) and (D) Only",
+      "C": "(B), (C) and (D) Only",
+      "D": "(A), (B), (C), (D) and (E)"
+    },
+    "answer": "D",
+    "solution": "All the given options are valid consequences of global\nwarming:\n1.  Change in Hydrological Cycle (A): G\nlobal warming alters\nthe water cycle, influencing rainfall patterns, river flows,\nand evaporation rates.\n2.  Species Migration (B): Many species are shifting their\nhabitats due to changing climate conditions in search of\nfavorable environments.\n3.  Change in Ocean Circulation (C): W\narming can disrupt \nocean currents, which influence global climate and marine \necosystems.\n4.  Ocean Acidification (D): Increased CO₂ \nabsorption by\nthe oceans leads to acidification, which harms marine life.\n5.  Sea Leve\nl Rise (E): Melting ice caps and the thermal\nexpansion of water due to higher temperatures contribute\nto rising sea levels, threatening coastal areas.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q23",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 23,
+    "question": "Ferdinand de Saussure’s approach to the study of signs is\ndescribed as:",
+    "options": {
+      "A": "Semiology",
+      "B": "Semantics",
+      "C": "Signification",
+      "D": "Signifying system"
+    },
+    "answer": "A",
+    "solution": "Ferdinand de Saussure, a Swiss linguist, is often considered\nthe father of modern \nlinguistics and semiotics. His approach \nto the study of signs is called semiology (from the Greek word \n“semeion,” meaning “sign”). Semiology is the study of signs \nand symbols as elements of communicative behavior, exploring \nhow meaning is constructed through language.\n\n\n7",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q24",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 24,
+    "question": "7 pumps, working 10 hours a day, can empty a tank in 20 days.\nHow many hours a day must 5 pumps operate to empty the tank \nin 14 days?",
+    "options": {
+      "A": "20 hours",
+      "B": "18 hours",
+      "C": "16 hours",
+      "D": "14 hours"
+    },
+    "answer": "A",
+    "solution": "Let the required number of hour per day be x.\nUsing, M1 × D1 × H1 = M2 × D2 × H2 \n7 × 10 × 20 = 5 × 14 × x \n⇒ x = 20",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q25",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 25,
+    "question": "Mobile games were the first to popularize _______ which uses\nan image\n of an actual place or thing and adds digital information \nto it.",
+    "options": {
+      "A": "Virtual Reality",
+      "B": "Augmented Reality",
+      "C": "Mixed Reality",
+      "D": "Computer-Aided Design (CAD)"
+    },
+    "answer": "B",
+    "solution": "Augment\ned Reality (AR) is a technology that overlays\ndigital information on top of the real-world environment. \nMobile games, such as “Pokémon GO,” were among the \nfirst to popularize AR, where players interact with real-world \nenvironments and see digital elements superimposed onto them.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q26",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 26,
+    "question": "An English teache\nr asks students to create a multimedia\npresentation analysing a novel’s themes, characters, and literacy \ndevices. Which assessment method is most suitable to check the \nreal time progress of students?",
+    "options": {
+      "A": "Authentic Assessment",
+      "B": "Summative Assessment",
+      "C": "Norm-referenced Assessment",
+      "D": "Ipsative Assessment"
+    },
+    "answer": "A",
+    "solution": "Authentic assessment refers to evaluating students through\ntasks that represent real-world challenges and require the \nappli\ncation of skills and knowledge in practical contexts. \nA multimedia presentation that analyzes a novel’s themes, \ncharacters, and literary devices would be an example of an \nauthentic assessment because it involves creativity, analysis, \nand synthesis of information, similar to real-world tasks.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q27",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 27,
+    "question": "What is the mission of International Solar Alliance?",
+    "options": {
+      "A": "Every home no matter how far will have electricity",
+      "B": "Every home will harvest solar energy",
+      "C": "Every home no matter how far away will have light at home",
+      "D": "Every home has to be carbon neutral"
+    },
+    "answer": "C",
+    "solution": "The mission of t\nhe International Solar Alliance (ISA) is:\nEvery home no matter how far away will have light at \nhome. This reflects the ISA’s mission to facilitate energy access \nto remote areas through solar power, promoting solar energy \nuse in order to ensure energy sustainability.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q28",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 28,
+    "question": "Match List-I with List-II.\nList-I \n(Malware)\nList-II \n(Definition)\nA. Ransomware I. Software that monitors and/or \nrecords the actions of targeted users.\nB. Spyware II. A small piece of code that misleads \nusers of its true intent by disguising \nitself as a legitimate program and \ninfects your computer when you \nrun it.\nC. Worm III. Software that locks data files and \ndemands a monetary payment in \nexchange for unlocking.\nD. Trojan Horses I V. A piece of code that replicates \nitself to other devices without user \ninteraction\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+      "B": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+      "C": "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+      "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+    },
+    "answer": "D",
+    "solution": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q29",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 29,
+    "question": "The union government of India had in 2011 decided to establish \na National Institute of Design in the states of:\n(A) Andhra Pradesh\n(B) Kerala\n(C) Assam\n(D) Goa\n(E) Haryana\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(B), (C) and (D) Only",
+      "C": "(A), (C) and (E) Only",
+      "D": "(D) and (E) Only"
+    },
+    "answer": "C",
+    "solution": "The union governme\nnt of India had decided to establish\nNational Institutes of Design (NID) in the states of Andhra \nPradesh, Assam, and Haryana.\nThis decision was made to expand design education and \ninnovation, further promoting creativity and design-thinking \nacross different regions of the country\n.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q30",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 30,
+    "question": "In a certain coding language, the word ‘TRAIN’ is coded as\n‘VPCGP’, then the word ‘PROUD’ will be coded as:",
+    "options": {
+      "A": "QSPVE",
+      "B": "RPQSF",
+      "C": "RQPTF",
+      "D": "RQQSE"
+    },
+    "answer": "B",
+    "solution": "As, T  R  A  I  N\nV  P  C  G  P\n+2 +2 –2 –2 +2\nSimilarly, P  R  O  U  D\nR  P  Q  S  F\n+2 +2 –2 –2 +2\n∴ ‘P R O U D’ is coded as ‘R P Q S F’",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q31",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 31,
+    "question": "Which of the following arguments is fallacious because of the\nmiddle term being too narrow?",
+    "options": {
+      "A": "All things are non-eternal because they are knowable",
+      "B": "Sound is eternal, because it is audible",
+      "C": "Fire is cold because it is substance",
+      "D": "Wherever there is fire, there is smoke"
+    },
+    "answer": "B",
+    "solution": "The sound is eternal because it is audible - This argument \nis\nfallacious because the middle term, “audible,” is too narrow \nto establish the eternality of sound. Just because something \nis audible doesn’t make it eternal, which is a logical flaw in \nreasoning.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q32",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 32,
+    "question": "A marketing instructor wants to engage students by conducting\nlive polls during an online lecture \nto gather instant feedback on \nmarketing strategies. Which of the following tools should the \ninstructor use for creating and displaying polls?\n(A) Adobe Illustrator\n(B) Slido\n(C) Straw Poll\n(D) Camtasia\n(E) Flipgrid\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (B) and (E) Only",
+      "B": "(A) and (D) Only",
+      "C": "(B) and (C) Only",
+      "D": "(C), (D) and (E) Only"
+    },
+    "answer": "C",
+    "solution": "Slido (B) and Straw Poll (C) are well-known platforms used\nfor crea\nting and displaying live polls during online interactions, \nincluding marketing lectures or other educational sessions.\nAdobe Illustrator (A)\n, Camtasia (D), and Flipgrid (E), while \nvaluable for other purposes like design, video creation, or \nvideo-based discussions, are not typically used for live polling.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q33",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 33,
+    "question": "Find out the correct chronological order of the following:\n(A) First binary computer by Britishers\n(B) Printing press\n(C) Plan for mechanical computer\n(D) Single-screen motion picture exhibition\n(E) First public broadcast of television\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (C), (E), (D), (B)",
+      "B": "(B), (C), (D), (E), (A)",
+      "C": "(C), (E), (A), (B), (D)",
+      "D": "(D), (A), (B), (C), (E)"
+    },
+    "answer": "B",
+    "solution": "The correct chronological order of the given events is as\nfollows:\n(B) Printing press (15th century)\n(C) Plan for mechanical computer (Charles Babbage in 1822)\n(E) First public broadcast of television (1926)\n(A)  First binary computer by Britishers (1943 - Colossus \nComputer)\n(D)  Single-screen motion picture exhibition (late 19th c\nentury)",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q34",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 34,
+    "question": "Which of the following statements are true \nregarding contrary\npropositions?\n(A) They cannot both be true\n(B) They cannot both be false\n(C) They can both be false\n(D) If one is true the other must be false\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(B) and (C) Only",
+      "B": "(A), (B) and (C) Only",
+      "C": "(A), (C) and (D) Only",
+      "D": "(D) Only"
+    },
+    "answer": "C",
+    "solution": "Contrary propositions are two propositions that cannot both\nbe true but can both be false. \n(A) They cannot both be true\nTrue: This is the defining characteristic of contrary \npropositions. They cannot both be true simultaneously.\n(B) They cannot both be false\nFalse: Contrary propositions can both be false.\n(C) They can both be false\nTrue: As mentioned, contrary propositions can both be false.\n(D) If one is true, the other must be false\nTrue: If one contrary proposition is true, the other must be \nfalse because they cannot both be true.\nThe correct statements are (A), (C), and (D).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q35",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 35,
+    "question": "Which of the following is not a disease caused due to exposure\nof Ultra Violet (UV)-rays, one of the Environmental hazards due \nto ozone layer depletion?",
+    "options": {
+      "A": "Melanoma",
+      "B": "Erythema",
+      "C": "Teratoma",
+      "D": "Carcinoma"
+    },
+    "answer": "C",
+    "solution": "Teratoma, however, is a type of tumor that originates from\ngerm cells and is not \nassociated with UV radiation or ozone \nlayer depletion. It is typically a congenital tumor that contains \nvarious types of tissues like hair, muscle, and bone, and is \nunrelated to UV exposure.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q36",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 36,
+    "question": "Which fallacy is committed in the following argument-\n“Ambassador cars have a\nlmost disappeared. This is an \nambassador car. Therefore, this car has almost disappeared”:",
+    "options": {
+      "A": "Equivocation",
+      "B": "Fallacy of Division",
+      "C": "Hasty Generalization",
+      "D": "Slippery Slope"
+    },
+    "answer": "B",
+    "solution": "“Ambassad\nor cars have almost disappeared. This is an\nambassador car. Therefore, this car has almost disappeared.” : \nThis argument takes a general statement about all ambassador \ncars (that they have almost disappeared) and applies it to one \nspecific car. The reasoning assumes that because the group \n(ambassador cars) is almost gone, the specific car in question \nhas almost disappeared as well.\nThis type of reasoning fa\nlls under the Fallacy of Division, \nwhere a general statement about a group is incorrectly applied \nto an individual member of that group.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q37",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 37,
+    "question": "Identify the main preoccupations of qualitative researchers.\n(A) Emphasis on process\n(B) Emphasis on generalization\n(C) Emphasis on context\n(D) Emphasis on description\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(B), (C) and (D) Only",
+      "C": "(A), (B) and (D) Only",
+      "D": "(A), (C) and (D) Only"
+    },
+    "answer": "D",
+    "solution": "Qualitative rese\narchers are typically focused on processes,\ncontext, and description. These are key preoccupations in \nqualitative research as it aims to understand the depth and \ncomplexity of human experiences, rather than generalizing \nfindings (which is more characteristic of quantitative research).\n(A)  Emphasis on process: important in understanding how \nthings unfold in qualitative research.\n(C)  Emphasis on context: essential for considering the \nenvironment or situation where the phenomenon occurs.\n(D)  Emphasis on description: critical for deeply describing \nthe observations made during research.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q38",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 38,
+    "question": "Find out the wrong term from the given series:\n125, 126, 124, 127, 123, 129",
+    "options": {
+      "A": "126",
+      "B": "124",
+      "C": "123",
+      "D": "129"
+    },
+    "answer": "D",
+    "solution": "The pattern of the series is:\n125 126\n+1 –2 +3 –4 +5\n124 127 123\n129\n128\nSo, the wrong term is 129.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q39",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 39,
+    "question": "An IT giant company has its Global Education Centre at:",
+    "options": {
+      "A": "Medak",
+      "B": "Ratnagiri",
+      "C": "Mysore",
+      "D": "Agartala"
+    },
+    "answer": "C",
+    "solution": "The Global Education Centre (GEC) of Infosys, a major IT\ncompany, is \nlocated in Mysore, Karnataka. It is one of the \nlargest corporate education centres in the world and provides \nextensive training to employees.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q40",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 40,
+    "question": "Match List-I with List-II.\nList-I \n(Abbreviations)\nList-II \n(Meaning)\nA. ante., I. here and there\nB. cf. II. and others\nC. et.al., III. compare\nD. passim: I V. before\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+      "B": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+      "C": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+      "D": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)"
+    },
+    "answer": "A",
+    "solution": "(A) - (IV) (B) - (III), (C) - (II) (D) - (I)\n\n\n8",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q41",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 41,
+    "question": "A relationship in which a less-experienced learner acquires\nknowledge and skills under \nthe guidance of an expert is known \nas:",
+    "options": {
+      "A": "Cloud computing",
+      "B": "Cognitive load",
+      "C": "Cognitive apprenticeship",
+      "D": "Collective monologue"
+    },
+    "answer": "C",
+    "solution": "Cognitive apprenticeship refers to the relationship where a\nlearner, typically less experienced, learns by working under the \nguidance of an expert. The expert models the task and supports \nthe lea\nrner as they gradually take on more responsibility, \ndeveloping their knowledge and skills over time. This is similar \nto traditional apprenticeships but focuses more on cognitive \nskills and thought processes.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q42",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 42,
+    "question": "The New Education Policy of 2020, suggested degree courses\nin:\n(A) Development Communication\n(B) Logic\n(C) Art and Museum Administration\n(D) Graphic Design\n(E) Web Design\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (B) and (C) Only",
+      "B": "(B), (C) and (D) Only",
+      "C": "(C), (D) and (E) Only",
+      "D": "(B), (D) and (E) Only"
+    },
+    "answer": "C",
+    "solution": "The New Education Policy of 2020 suggests degree courses\nin emer\nging fields such as Graphic Design, Web Design, and \nArt and Museum Administration. These fields are directly \naligned with the objectives of modern education and skills \ndevelopment.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q43",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 43,
+    "question": "Identify the non-probability sampling techniques:\n(A) Systematic sampling\n(B) Simple random sampling\n(C) Snowball sampling\n(D) Purposive sampling\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A) and (B) Only",
+      "B": "(C) and (D) Only",
+      "C": "(A), (C) and (D) Only",
+      "D": "(A), (B) and (C) Only"
+    },
+    "answer": "B",
+    "solution": "Snowball sampling and Purposive sampling \nare non-\nprobability sampling techniques.\nSnowball sampling is used when the subjects are difficult to \nlocate, and it relies on referrals from initial subjects to generate \nadditional participants.\nPurposive sampling involves selecting specific individuals \nwho are expected to offer the most relevant data.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q44",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 44,
+    "question": "Which of the following are the sub-types of long \nterm memory?\n(A) Episodic memory\n(B) Semantic memory\n(C) Procedural memory\n(D) Priming\n(E) Class conditioning effects\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A), (B), (C), (D) and (E)",
+      "B": "(B), (D) and (E) Only",
+      "C": "(A), (B) and (C) Only",
+      "D": "(C), (D) and (E) Only"
+    },
+    "answer": "A",
+    "solution": "The sub-types of long-term memory are: (A), (B), (C), (D),\nand (E).\n• Episodic memory (A): This is a type of long-term memory \nthat involves the recollection of personal experiences or\nevents.\n• Semantic memory (B): This involves general world\nknowledge, such as facts and concepts.\n• Procedural memory (C): This is memory for how to\nperform tasks or skills (e.g., riding a bike).\n• Priming (D): Priming refers to an implicit memory effect \nin which exposure to one stimulus influences a response\nto another.\n• Class conditioning effects (E): Though not commonly\ncategorized with other memory types, class conditioning\n(often related to Pavlovian conditioning) involves forming \nassociations between stimuli, which is also a form of\nlearned memory.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q45",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 45,
+    "question": "A sum of money is equally divided among a number of children.\nHad there been \n 10 children less, each would have received ₹ 5\nmore, and had there been 10 children more each would have\nreceived ₹ 3 less. What is the sum of money that is distributed?",
+    "options": {
+      "A": "300",
+      "B": "600",
+      "C": "750",
+      "D": "900\nRead the following passage and answer the questions.\nFolk traditions provide and create a public space where some broader \nsocial values could be generated and observed. The \nvarious folk genres \nthrough the creation of public space help in bringing and observed. The \nvarious folk genres through the creation of public space help in bringing \ninto focus ideas, values and contentions into public discourse, a kind \nof unshackling of inhibitions in a stress-free manner. The changes that \nmodernity brings in its wake become more socially acceptable and \nthe conflicts that are created find a medium through which they can \nbe resolved. This public space or sphere has many constructive and \npleasurable uses. Politics and religion are notable instances in which \nthe creation and sustenance of public space or sphere is very important \nto achieve some agenda(s). The dynamism ingrained in public space \nor sphere shows complex nuances and many trends especially when \nthe nature of transformation is being analysed. There seems to be a \nshift from a simple pleasure orientation to cater to multi-level interests \nof the performers and patrons. Transformations are influenced by \neconomics, politics and voices of dissent that find various mechanisms \nof appropriation of public space for their own objectives. They widen \nthe base of debate and discussion transcending the involved units."
+    },
+    "answer": "B",
+    "solution": "Let the sum of money be x and the number of children be y.\nAccording to question\n510\nxx\nyy = +−\n … (i)\n310\nxx\nyy = −+\n … (ii)\nFrom (i), 510\nxx\nyy −=−\n1 15\n10\n10 5\n( 10)\n( 10)\n2\ny yx\nyy x\nyyx\n⇒ −=−\n⇒= −\n−⇒=\nPutting value of x in (ii), we get\n( 10) ( 10) 32( 10) 2\nyy yy\nyy\n−− = −+\n⇒ y2 – 10y = y2 – 100 – 6y – 60\n⇒ 4y = 160 ⇒ \ny = 40\nSo, 40 (40 10) 6002x ×−= =",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q46",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 46,
+    "question": "What is the influence of modernity on folk traditions and public \nspace according to the text?",
+    "options": {
+      "A": "Folk traditions are disappearing.",
+      "B": "It has no effect on ancient tradition.",
+      "C": "It only leads to conflicts without resolution.",
+      "D": "It makes social changes more acceptable."
+    },
+    "answer": "D",
+    "solution": "The passage mentions that the changes brought by modernity\nbecome more socially acceptable and conflicts find a medium \nfor resolution through folk traditions and public space. \nModernity influences the acceptance of new social values.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q47",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 47,
+    "question": "What influences the transformations that can be observed in\npublic sphere?",
+    "options": {
+      "A": "Multi-level interests of performers and patrons",
+      "B": "A static set of rules",
+      "C": "The absence of economic and philosophical ideas",
+      "D": "Simple pleasure orientation"
+    },
+    "answer": "A",
+    "solution": "The passa\nge explains that there is a shift from a simple pleasure\norientation to cater to the multilevel interests of performers \nand patrons, influenced by factors such as economics, politics, \nand dissenting voices.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q48",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 48,
+    "question": "What does folklore contribute to public discourse?",
+    "options": {
+      "A": "It creates a public space for stress-free interaction",
+      "B": "It restricts the expression of ideas and values",
+      "C": "It promotes only traditional values",
+      "D": "It eliminates modern influences"
+    },
+    "answer": "A",
+    "solution": "The passage describes how folk genres \ncreate public spaces\nthat allow stress-free interaction and bring ideas, values, and \ncontentions into public discourse.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q49",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 49,
+    "question": "Public space:",
+    "options": {
+      "A": "Widens the base of debate and discussion",
+      "B": "Ignores traditional knowledge system",
+      "C": "Insists more on individual growth",
+      "D": "Leads to suppression of human values"
+    },
+    "answer": "A",
+    "solution": "The passage highlights that public space helps to widen the\nbase of debate and discussion, transcending individual units \nand providing a platform for diverse ideas and perspectives.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2024_q50",
+    "year": "General Paper 2024",
+    "paper": "NTA UGC General Paper 2024.pdf",
+    "q_num": 50,
+    "question": "Role of folklore in the society is:",
+    "options": {
+      "A": "To provide entertainment only",
+      "B": "To generate and observe broader social value",
+      "C": "To restrict public discourse",
+      "D": "To resist social change"
+    },
+    "answer": "B",
+    "solution": "The passage states that folk traditions provide and create a\npublic space where broader social values can be generated and \nobserved, contributing to societal discourse and social values \nbeyond just entertainment.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q1",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 1,
+    "question": "Number of students enrolled in College A in year 2020 and\n2021 together is _________% more than the number of students \nenrolled in College C in the year 2022 and 2023 together.",
+    "options": {
+      "A": "12.5",
+      "B": "8.5",
+      "C": "10",
+      "D": "15"
+    },
+    "answer": "D",
+    "solution": "Total student enrolled in college A in year 2020 and 2021\n= 1200 + 1100 = 2300\nTotal student enrolled in college C in year 2022 and 2023\n= 1200 + 800 = 2000\nThus, required % 2300 – 2000 300100 100 15%2000 2000= ´= ´=",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q2",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 2,
+    "question": "If the ratio between number of girls and boys in College B in\n2021 is 3 : 5 and the ratio between the number of girls and boys \nin College C in 2022 is 7 : 5, then what is the ratio between the\nnumber of girls in College B in 2021 to the number of boys of\nCollege C in 2022?",
+    "options": {
+      "A": "2 : 5",
+      "B": "3 : 5",
+      "C": "1 : 3",
+      "D": "2 : 3"
+    },
+    "answer": "B",
+    "solution": "Required ratio 35 800 : 1200 3 : 58 12=´ ´ =",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q3",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 3,
+    "question": "Taking all the Colleges together, the total number of students\nenrolled in the year 2020 is _______ more than the total number \nof students enrolled in the year 2023.",
+    "options": {
+      "A": "500",
+      "B": "900",
+      "C": "300",
+      "D": "700"
+    },
+    "answer": "D",
+    "solution": "The total number of students enrolled in\nYear 2020 = 1200 + 900 + 1000 + 700 = 3,800 \nYear 2023 = 600 + 700 + 800 + 1000 = 3,100 \nRequired number = 3800 – 3100 = 700",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q4",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 4,
+    "question": "What is the average number of students enrolled in College B\nover all the four years?",
+    "options": {
+      "A": "850",
+      "B": "750",
+      "C": "840",
+      "D": "720"
+    },
+    "answer": "A",
+    "solution": "Average number of students enrolled in College B over all 4\nyears = 900 800 1000 700\n4\n++ +\n            3400 8504==",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q5",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 5,
+    "question": "For College B in the year 2021, if 20% of students were\nenrolled in B.Sc\n; 30% of students were enrolled in B.Com. and\nthe remaining students were enrolled in BCA, then what is the\ndifference between the number of students enrolled in BCA and \nB.Sc?",
+    "options": {
+      "A": "260",
+      "B": "220",
+      "C": "230",
+      "D": "240"
+    },
+    "answer": "D",
+    "solution": "For college B, percentage of students enrolled in BCA in 2021\n= 100% – (20% + 30%) = 50% \nRequired difference = (50% – 20%) of 800 \n30 800 240100=´=",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q6",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 6,
+    "question": "Identify the advantages of video conferencing.\n(A) Increased productivity\n(B) Going green\n(C) Lack of personal contact\n(D) Clarity of audio and video always\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B and D Only",
+      "B": "A and C only",
+      "C": "A, B and C Only",
+      "D": "A and B Only"
+    },
+    "answer": "D",
+    "solution": "Video conferencing enhances productivity by enabling real-\ntime collaboration and decision-making. It also promotes \neco-friendly practices by reducing travel, lowering carbon \nemissions, and saving resources.\nLack of Personal Contact is a disadvantage,  not an \nadvantage, as virtual meetings cannot fully replicate face-\nto-face interactions.\nClarity \tof\tAudio \t and\tVideo\tAlways\t\nis incorrect because technical issues like poor internet \nconnectivity can affect quality.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q7",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 7,
+    "question": "A sum of Rs 3800 is divided among three persons A, B, and C\nin the ratio 1/2 : 1/3 : 3/4 what is the share of the person C?",
+    "options": {
+      "A": "Rs. 3360",
+      "B": "Rs. 2240",
+      "C": "Rs. 2150",
+      "D": "Rs. 1800"
+    },
+    "answer": "D",
+    "solution": "113 1 1 3: : 12 : 12 : 12234 2 3 4=´ ´ ´\n= 6 : 4 : 9\nShare of C = 9 3800 Rs.180019 ´=",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q8",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 8,
+    "question": "Which of the following soil tpye supports earth worm activity?\n(A) Loam soil\n(B) Gleyed soil\n(C) Rendzina\n(D) Podzol\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B and C Only",
+      "B": "B, C and D only",
+      "C": "A, C and D Only",
+      "D": "A, B and D Only"
+    },
+    "answer": "A",
+    "solution": "Loam soil is ideal for earthworm activity because it has\na good balance of sand, silt, and clay, providing optimal \nmoisture and organic matter. Although waterlogged, gleyed \nsoil can still support earthworms in certain conditions due to \nthe presence of organic material.  Rendzina soil type is rich \nin calcium carbonate and organic matter, making it favorable \nfor earthworm activity.\nPodzol soils are acidic, nutrient-poor, and low in organic \nmatter, making them unsuitable for earthworm activity.Thus, \nthe correct answer is A, B, and C Only.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q9",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 9,
+    "question": "Arrange the following OSI layers in correct sequence:\n(A) Data link layer\n(B) Physical layer\n(C) Network layer\n(D) Presentation layer\n(E) Application layer\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "E, D, B, A, C",
+      "B": "E, D, A, C, B",
+      "C": "B, A, C, E, D",
+      "D": "B, A, C, D, E"
+    },
+    "answer": "D",
+    "solution": "The OSI model follows a layered structure, starting from the\nPhysical Layer (B) and moving up to the Application Layer (E):\nSolutionS\n\n\nvi\n\nMainfram e systems are designed to support multiple users \nsimultaneously, often handling numerous transactions \nconcurrently in a time-sharing manner.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q10",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 10,
+    "question": "Match the List-I with List-II.\nList-I\n(Proponents)\nList-II\n(Theory)\nA. George Gerbner I. Cognitive Dissonance Theory\nB. L.A. Festinger II. Cultivation Theory\nC. MeCombs and \nDonald L. Shaw\nIII. Uses and Gratification Theory\nD. Katz and Blumer I V. Agenda Setting Theory\n\n1\nSET\nComprehension: The following table shows the number of students \nenrolled in four different Colleges (A-D) during the four years from \n2020 to 2023. Based on the data in the table, answer the questions that \nfollow.\nYear-wise Enrolment of Students in Colleges\nYear Number of Students Enrolled in College\nA B C D\n2020 1200 900 1000 700\n2021 1100 800 1300 900\n2022 1400 1000 1200 1100\n2023 600 700 800 1000\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+      "B": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)",
+      "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+      "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+    },
+    "answer": "C",
+    "solution": "The correct match is:\n(A)\tGeorge\tGerbner\t→\t(II)\tCultivation\tTheory\t\nCultivation Theory suggests that prolonged exposure to media, \nespecially television, shapes perceptions of reality.\n(B) L.A.\tFestinger\t→\t(I)\tCognitive\tDissonance\tTheory\t\nThis theory explains how individuals experience discomfort \nwhen their beliefs and behaviors are inconsistent, leading them \nto change their attitudes.\n(C)\tMcCombs\tand\tDonald\tL.\tShaw\t→\t(IV)\tAgenda\tSetting\t\nTheory \nThis theory states that the media influences what issues the \npublic considers important by controlling what is prominently \ncovered in the news.\n(D)\tKatz\tand\tBlumer\t→\t(III)\tUses\tand\tGratification\tTheory\t\nThis theory focuses on how individuals actively use media \nto satisfy their needs, such as entertainment, information, or \nsocial interaction.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q11",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 11,
+    "question": "Match the List-I with List-II.\nList-I\n(Institutions)\nList-II\n(Propounders)\nA. Milind College I. B.R. Ambedkar\nB. Rajghat Besant School II. Sri Aurobindo\nC. Banasthali Vidyapeeth III. Hiralal Shastri\nD. Auroville I V. Jiddu Krishnamurti\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+      "B": "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+      "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+      "D": "(A)-(I), (B)-(IV), (C)-(III), (D)-(II)"
+    },
+    "answer": "D",
+    "solution": "The correct match is :\n(A-I, B-IV , C-III, D-II)\n(A)\tMilind\tCollege\t→\t(I)\tB.R.\tAmbedkar\t\nMilind College was established by Dr. B.R. Ambedkar to \npromote education among marginalized communities.\n(B)\tRajghat\tBesant\tSchool\t→\t(IV)\tJiddu\tKrishnamurti\t\nRajghat Besant School was founded by Jiddu Krishnamurti, \nemphasizing holistic education.\n(C)\tBanasthali\tVidyapeeth\t→\t(III)\tHiralal\tShastri\t\nBanasthali Vidyapeeth was established by Hiralal Shastri as a \npremier women’s university in India.\n(D)\tAuroville\t→\t(II)\tSri\tAurobindo\t\nAuroville, an e xperimental township, was inspired by Sri \nAurobindo and The Mother, focusing on spiritual and \ncommunal living.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q12",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 12,
+    "question": "Which of the following statements are correct in the context of\noperating system?\n(A) Utility pro gram is the first program loaded into the computer \nduring booting\n(B) Multiprogram ming was introduced for interleaved execution \nof multiple jobs by the same CPU\n(C) DOS is an example of single user operating system.\n(D) Mainframe computer uses multiuser operating system.\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B and C Only",
+      "B": "A, B and D Only",
+      "C": "B, C and D Only",
+      "D": "A, C and D Only"
+    },
+    "answer": "C",
+    "solution": "Among all the  given options the correct statements are : B,\nC, and D,because:\n• Multiprogramming allows multiple programs to reside in\nmemory simultaneously, with the CPU switching between\nthem, improving CPU utilization.\n• DOS (Disk Operating System) is a single-user, single-\ntasking operating system, primarily used in early personal\ncomputers.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q13",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 13,
+    "question": "Which of the following statements could be considered as a valid\nscientific hypothesis?",
+    "options": {
+      "A": "Adults should drink more water.",
+      "B": "Eating 20 almonds a day decreases the risk of contracting \nheart disease",
+      "C": "Cows should be given green fodder",
+      "D": "Children should eat cereals"
+    },
+    "answer": "B",
+    "solution": "A scientific hypothesis  must be testable, measurable, and\nfalsifiable through experimentation or observation.\nStatement (2) is a valid scientific hypothesis because it can \nbe tested through controlled studies, measuring the impact of \nalmond consumption on heart disease risk.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q14",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 14,
+    "question": "The infamous minutes of 1834 can be associated with",
+    "options": {
+      "A": "Charles Wood",
+      "B": "William Bentuick",
+      "C": "Thomas Babington Macaulay",
+      "D": "Charles Grant"
+    },
+    "answer": "C",
+    "solution": "The infamous minutes of 1834 refer to Macaulay’s Minute on \nIndian Education, which played a crucial role in introducing \nEnglish as the medium of instruction in India. This document \npromoted Western education and led to the decline of \ntraditional Indian learning systems.\nCharles Wood is   Associated with the Wood’s Despatch of \n1854, which emphasized higher education in English.William \nBentinck a governor General who implemented Macaulay’s \nrecommendations but did not draft the minutes.Charles Grant  \nadvocated for English education but was not linked to the 1834 \nminutes.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q15",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 15,
+    "question": "Individual and group accountability is one of the elements of\n___________.",
+    "options": {
+      "A": "Inductive learning",
+      "B": "Cooperative learning",
+      "C": "Deductive learning",
+      "D": "Active learning"
+    },
+    "answer": "B",
+    "solution": "Cooperative learning is an instructional approach where\nstudents work together in small groups to achieve a common \ngoal. Individual and group accountability is a key element, \nensuring that each member contributes and learns while being \nresponsible for both their own and the group’s progress.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q16",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 16,
+    "question": "Which of the following statements is true for Episodic Buffer?",
+    "options": {
+      "A": "Integrates information from phonological loop only.",
+      "B": "Integrates information from visuospatial sketch pad only.",
+      "C": "Integrates information from the phonological loop and\nvisuospatial sketchpad.",
+      "D": "Integrates information from the phonological loop,\nvisuospatial sketchpad and long-term Memory."
+    },
+    "answer": "D",
+    "solution": "The Episodic Buffer, proposed by Baddeley (2000), is a\ncomponent of working memory that integrates information \nfrom multiple sources. It acts as a temporary storage system \nthat links information from:\n• Phonological Loop (verbal and auditory information)\n• Visuospatial Sketchpad (visual and spatial data)\n• Long-Term Memory (previously stored knowledge)",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q17",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 17,
+    "question": "Which school among the following upholds perception as an\nunerring knowledge of the unique particular?",
+    "options": {
+      "A": "Nyaya",
+      "B": "Buddhism",
+      "C": "Vaisesika",
+      "D": "Jaina"
+    },
+    "answer": "B",
+    "solution": "The Buddhist epistemological tradition,  particularly from\nthe Sautrantika and Yogacara schools, upholds perception \n(pratyakṣa) \t as\t an\t unerring \t knowledge \t of\t the\t unique \t\nparticular\t(svalakṣaṇa). According to Buddhism, perception \nis direct, non-conceptual, and corresponds precisely to reality \nwithout any distortion.\nBuddhists classify objects into:\nSvalakṣaṇa \t (Unique \t Particul ars) – Directly perceived, \nmomentary, and real.\nSāmānyalakṣaṇa\t(Universal s\tor\tGenerali ties) – Conceptually \nconstructed and not directly real.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q18",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 18,
+    "question": "Which of the following is represented by Noise Index L90?",
+    "options": {
+      "A": "Background noise level",
+      "B": "Average noise level",
+      "C": "Peak noise level",
+      "D": "Threshold noise level"
+    },
+    "answer": "A",
+    "solution": "The Noise Index L₉₀ represents the noise level exceeded for\n90% of the measurement period, commonly used to determine \nbackground noise levels in an environment. It helps assess the \nlowest consistent noise level in an area.Whereas",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q19",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 19,
+    "question": "Arrange the following chronologically:\n(A) Secondary Education Commission\n(B) Kothari Education Commission\n(C) Establishment of UGC\n(D) Chattopadhyay Commission\n(E) University Education Commission\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, E, B, D, C",
+      "B": "A, D, C, B, E",
+      "C": "E, A, C, B, D",
+      "D": "E, B, D, C, A"
+    },
+    "answer": "C",
+    "solution": "The correct chronological order is:\nUniversity\tEducation\tCommission\t(E)\t-\t1948-49\n•  Led by Dr. S. Radhakrishnan, focused on higher education \nreforms.\nSecondary Education Commission (A) - 1952-53\n• Also known as the Mudaliar Commission, focused on\nsecondary education structure.\nEstablishment\tof\tUGC\t(C)\t-\t1956\n• University Grants Commission was set up to regulate and\nfund higher education institutions.\nKothari Education Commission (B) - 1964-66\n• Introduced the 10 + 2 + 3 education system and emphasized\nnational education policies.\nChattopadhyay Commission (D) - 1983\n• UGC Review Committee under Prof. D.P. Chattopadhyay,\nreviewed UGC's functioning.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q20",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 20,
+    "question": "What among the following can be said about the fallacy of\nSavyabhicara (irregular middle)?",
+    "options": {
+      "A": "It leads to single conclusion",
+      "B": "The hetu in it, is uniformly constant with the major term",
+      "C": "The hetu in it, is only related to the non-existence of the \nmajor term",
+      "D": "It leads to different opposite conclusions"
+    },
+    "answer": "D",
+    "solution": "The fallacy of Savyabhicāra (Irregular Middle) occurs when\nthe middle term (hetu) is inconsistent in its relation to the \nmajor term (sādhya). This inconsistency leads to multiple or \ncontradictory conclusions, making the inference unreliable.\nFor example, if the middle term (hetu) is present in both cases \nwhere the major term is present and absent, it fails to establish \na consistent relationship, leading to opposite or conflicting \nconclusions.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q21",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 21,
+    "question": "Which of the following would apply to Qualitative research\nmethodology?\n(A) Empiricism\n(B) Emphasis on description of variables\n(C) Rationalism\n(D) Structured rigid methodology\n(E) Explores experiences, meanings, perceptions and feelings\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, C and D Only",
+      "B": "C, D and E Only",
+      "C": "A and E Only",
+      "D": "A, B and E Only"
+    },
+    "answer": "D",
+    "solution": "Qualitative research methodology focuses on understanding\nhuman experiences, meanings, and perceptions rather than \nnumerical data. It emphasizes empiricism (A) by relying on \nreal-world observations, describes variables in detail (B) rather \nthan measuring them quantitatively, and explores subjective \nexperiences (E) to interpret human behavior.\nRationalism (C) is incorrect because qualitative research \ndoes not rely on logical reasoning alone but on interpretive \nanalysis. Structured and rigid methodology (D) is associated \nwith quantitative research, whereas qualitative methods are \nflexible and adaptive.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q22",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 22,
+    "question": "Difficulty in accessing a memory because of the presence of\nother information is known as ___________.",
+    "options": {
+      "A": "Decay",
+      "B": "Interference",
+      "C": "Retroactive",
+      "D": "Proactive"
+    },
+    "answer": "B",
+    "solution": "Interference occurs when the presence of other information\ndisrupts memory retrieval. It happens in two forms: proactive \ninterference, where old information hinders new memory \nrecall, and retroactive interference, where new learning affects \nthe recall of old information.\nDecay (Option 1) is incorrect as it refers to memory loss over \ntime due to disuse rather than interference. Retroactive (Option \n3) and Proactive (Option 4) are types of interference, but the\ngeneral term covering both is simply “interference.”",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q23",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 23,
+    "question": "Which of the following depicts Semantic Memory?",
+    "options": {
+      "A": "It is dependent on the person’s identity with the past.",
+      "B": "It is a student’s general knowledge about the world.",
+      "C": "It is the retention of information about the where and when\nof life’s happenings",
+      "D": "It is the knowledge in the form of skills and cognitive\noperations."
+    },
+    "answer": "B",
+    "solution": "Semantic memory refers to general world knowledge, including \nfacts, concepts, and meanings that are not tied to personal \nexperiences (e.g., knowing that Paris is the capital of France).\nWhile the other Options Are Incorrect because Statement (1) \nDescribes episodic memory (personal experiences).Statement  \n( 2) also refers to episodic memory and statement ( 3) Describes \nprocedural memory (e.g., riding a bike).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q24",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 24,
+    "question": "Identify the fallacy in the following:\n\"Only man has an immortal soul\". No woman is a man. Therefore,\nno woman has an immortal soul\".",
+    "options": {
+      "A": "Strawman",
+      "B": "Equivocation",
+      "C": "Red Herring",
+      "D": "Bandwagon argument"
+    },
+    "answer": "B",
+    "solution": "The fallacy in the given argument is Equivocation, which\noccurs when a word is used in two different senses within the \nsame argument, leading to a false conclusion.\nIn this case, the term \"man\" is used ambiguously:\n• In the first statement, \"Only man has an immortal soul\",\n\"man\" could mean humankind (all humans).\n• In the second statement, \"No woman is a man\", \"man\" is\ninterpreted as male (as opposed to female).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q25",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 25,
+    "question": "Which amongst the following is not a Buddhist monastic\nUniversity?",
+    "options": {
+      "A": "Nalanda",
+      "B": "Takshashila",
+      "C": "Vikramshila",
+      "D": "Odantpuri"
+    },
+    "answer": "B",
+    "solution": "Takshashila (Taxila) was an ancient center of learning but\nnot a Buddhist monastic university. It was a prominent \neducational hub in ancient India, attracting scholars from \nvarious disciplines, including Vedic studies, law, medicine, \nand military science.\nNalanda (Option 1), Vikramshila (Option 3), and Odantpuri \n(Option 4) were all well-known Buddhist monastic universities, \nestablished to promote Buddhist learning and philosophy.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q26",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 26,
+    "question": "Match the List-I with List-II.\nList-I\n(Environmental Treaty/\nConvention)\nList-II\n(Focus Area)\nA. Bonn Convention I. Migratory Species \nConservation\nB. CITES II. Convention on \nBiological Diversity\nC. Earth Summit III. Trades in Endangered \nSpecies\nD. Nagoya Protocol I V. Sustainable Development\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+      "B": "(A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+      "C": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+      "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+    },
+    "answer": "B",
+    "solution": "The correct match is:\nBonn\tConvention\t→\t(I)\tMigratory\tSpecies\tConservation\t\nFocuses on the protection of migratory wildlife across borders.\nCITES\t→\t(III)\tTrades\tin\tEndangered\tSpecies\t\nRegulates international trade to prevent species extinction.\n\n\nvii\n\nEarth\tSummit\t→\t(IV)\tSustainable\tDevelopment\t\n1992 Rio Summit addressed environmental and developmental \nchallenges.\nNagoya\tProtocol\t→\t(II) Convention on Biological Diversity \nAims at fair and equitable sharing of genetic resources.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q27",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 27,
+    "question": "Match the List-I with List-II.\nList-I\n(Device)\nList-II\n(Function)\nA. CPU I. stores data temporarily\nB. Monitor II. stores data permanently\nC. RAM III. Processes Instructions\nD. Hard disk I V. Displays visual output\nChoose the correct answer from the options given below",
+    "options": {
+      "A": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+      "B": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+      "C": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+      "D": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)"
+    },
+    "answer": "B",
+    "solution": "The correct match is :  A-III,\tB-IV ,\tC-I,\tD-II\nThe Central \t Processing \t Unit \t (CPU)  is the brain of the \ncomputer, responsible for executing instructions and \nprocessing data.\nThe Monitor is an output device that visually displays \ninformation processed by the computer.\nRandom Access Memory (RAM) is a volatile memory that \ntemporarily stores data and instructions for quick access by \nthe CPU.\nThe Hard\tDisk\t(HDD/SSD) is a non-volatile storage device \nthat permanently stores data, applications, and the operating \nsystem.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q28",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 28,
+    "question": "Total gain in Biomass by an animal is known as",
+    "options": {
+      "A": "Gross Primary Productivity",
+      "B": "Gross Secondary Productivity",
+      "C": "Net Primary Productivity",
+      "D": "Net Secondary Productivity"
+    },
+    "answer": "B",
+    "solution": "Gross Secondary Productivity (GSP) refers to the total gain\nin biomass by an animal through consumption of food, before \naccounting for losses due to respiration and excretion. It \nrepresents the total energy assimilated by heterotrophs in an \necosystem.\nGross Primary Productivity (Option 1) applies to plants and \nmeasures the total energy captured via photosynthesis. Net \nPrimary Productivity (Option 3) is the energy left in plants after \nrespiration. Net Secondary Productivity (Option 4) refers to the \nenergy available for growth and reproduction after subtracting \nenergy lost through respiration.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q29",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 29,
+    "question": "The form of computing utilized by an email service is",
+    "options": {
+      "A": "Distributed",
+      "B": "Grid",
+      "C": "P2P",
+      "D": "Cloud"
+    },
+    "answer": "D",
+    "solution": "Email services operate on cloud computing platforms, enabling\nusers to send, receive, and store emails remotely. Cloud-based \nemail services provide scalability, accessibility, and data \nredundancy, ensuring efficient communication.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q30",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 30,
+    "question": "A shopkeeper purchased 10 kg of Basmati rice at the rate of\nRs. 50 per kg and 15 kg of ordinary rice at the \nrate of Rs. 20 per \nkg. He mixed the two varieties of the rice and sold it for a gain\nof 25%. What was his sale price (Rs/kg)?",
+    "options": {
+      "A": "Rs 10 per kg",
+      "B": "Rs 20 per kg",
+      "C": "Rs 30 per kg",
+      "D": "Rs 40 per kg"
+    },
+    "answer": "D",
+    "solution": "Cost of 10 kg basmati rice = 10 × 50 = Rs.500\nCost of 15 kg ordinary rice = 15 × 20 = Rs.300\nTotal cost = Rs. 800\nTotal rice = 10 + 15 = 25 kg\nCost per kg = 800 Rs. 32 / kg25 =\nThus, S.P = 2532 1 32 1.25 Rs. 40 per kg100\næö´+ = ´ =ç÷èø",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q31",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 31,
+    "question": "Which of the following are most suitable tools for creating\ninteractive teaching and learning material?\n(A) Genially\n(B) Learningapps. org\n(C) Interacty\n(D) H5P\n(E) Educaplay\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, C and E Only",
+      "B": "B and D Only",
+      "C": "A, B, D and E Only",
+      "D": "A, B, C, D and E"
+    },
+    "answer": "D",
+    "solution": "All listed tools are widely used for creating interactive teaching\nand learning materials, offering features like quizzes, games, \npresentations, and multimedia content.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q32",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 32,
+    "question": "What are the three stages of Interpersonal Communication?\n(A) The Phatic Stage\n(B) The Plato Stage\n(C) The Personal Stage\n(D) The proxemics Stage\n(E) The Intimate Stage\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B and C Only",
+      "B": "A, C and E Only",
+      "C": "C, D and E Only",
+      "D": "B, C and D Only"
+    },
+    "answer": "B",
+    "solution": "The three stages of interpersonal communication are Phatic\nStage, Personal Stage, and Intimate Stage. The Phatic Stage \ninvolves small talk and casual greetings to establish social \ninteraction. The Personal Stage allows deeper conversations, \nfostering connections. The Intimate Stage includes close, \nemotionally connected communication.\nThe Plato Stage (Option B) is not a recognized stage \nin interpersonal communication. The Proxemics Stage \n(Option D) refers to the study of personal space rather than a \ncommunication stage.Thus, the correct answer is A, C, and \nE Only.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q33",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 33,
+    "question": "Identify the correct claims in the context of MOOD-AII in IInd\nfigure.\n(A) The middle term appears as predicate in both the premises\n(B) It commits fallacy of undistributed middle term\n(C) Middle term is distributed in the major premise\n(D) Draws negative Conclusion from affirmative premise\n(E) Conclusion distributes neither of its terms\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C and D Only",
+      "B": "A, B and E Only",
+      "C": "B and C Only",
+      "D": "B, C and D Only"
+    },
+    "answer": "B",
+    "solution": "Mood A I I means:\nI. Major premise is an A‐proposition (“All … are …”).\nII. Minor premise is an I‐proposition (“Some … are …”).\nIII. Conclusion is an I‐proposition (“Some … are …”).\nFigure 2 means the middle term M is the predicate in both \npremises.\nA typical layout, then, is:\nAll P are M    (A)\nSome S are M (I)\n————————\n⸫ Some S are P (I)\n(A) “The middle term appears as predicate in both premises.” \n- True. By definition of Figure 2, MM is indeed the predicate \nterm in both premises.\n(B) “It commits fallacy of undistributed middle term.” - True. \nIn the premise “All P are M,” P (the subject) is distributed, \nbut M (the predicate) is not. In “Some S are M,” neither S nor \nM is distributed. Hence M is undistributed in both premises, \nviolating the requirement that the middle term be distributed \nat least once.\n(C) “Middle term is distributed in the major premise.” - False. \nAs noted, in an A‐proposition (All P are M), the subject P is \ndistributed, not the predicate M. So M is not distributed here.\n(D) “Draws negative conclusion from affirmative premise.” \n- False. The conclusion in A  I I is “Some S are P” (an I‐\nproposition, which is affirmative), so there is no negative \nconclusion at all.\n(E) “Conclusion distributes neither of its terms.” - True. An \nI‐proposition (“Some S are P”) distributes neither subject nor \npredicate.\nHence the correct set of claims is A, B, and E.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q34",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 34,
+    "question": "Artificial Wetland is located in",
+    "options": {
+      "A": "Keoladeo National Park",
+      "B": "Rajaji National Park",
+      "C": "Kanha National Park",
+      "D": "Manas National Park"
+    },
+    "answer": "A",
+    "solution": "Keoladeo National Park in Rajasthan is known for its artificially \nmanaged wetland that serves as a crucial habitat for migratory \nbirds. The wetland was created by human intervention, \nprimarily for waterfowl conservation and birdwatching.\nRajaji National Park (Option 2) is primarily a forested area \nknown for elephants. Kanha National Park (Option 3) is famous \nfor its tiger reserve and dense forests. Manas National Park \n(Option 4) is a UNESCO-listed biosphere reserve with natural \nwetlands, but they are not artificial.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q35",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 35,
+    "question": "If ‘PEAK’ is coded as ‘KVZP’ and ‘FOUR’ is coded as ‘ULFI’, \nthe code of ‘THIS’ will be:",
+    "options": {
+      "A": "GRSH",
+      "B": "GSRH",
+      "C": "SHGR",
+      "D": "HGRS"
+    },
+    "answer": "B",
+    "solution": "As,\nP  E  A  K\nK  V  Z  P\nOpposite \nletters\nAnd,\nF    O    U  R\nU  L  F    I\nOpposite \nletters\nSimilarly,\nT    H    I S\nG  S  R  H\nOpposite \nletters",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q36",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 36,
+    "question": "What is Grapevine communication?",
+    "options": {
+      "A": "Corporate Communication",
+      "B": "Agri base Communication",
+      "C": "Formal Communication",
+      "D": "Informal Communication"
+    },
+    "answer": "D",
+    "solution": "Grapevine communication refers to an informal mode of\ncommunication  within an organization, often spreading \ninformation, rumors, or gossip through personal conversations \n\n\nviii\n\nand social interactions. It is spontaneous, unstructured, and not \nofficially recognized but plays a crucial role in information \nflow.\nCorporate communication (Option 1) refers to structured \ncommunication within a business. Agri-based communication \n(Option 2) relates to communication in the agricultural \nsector. Formal communication (Option 3) follows an official, \nstructured format within an organization.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q37",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 37,
+    "question": "Which among the following is used for judging the significance \nof several statistical measures, particularly the mean?",
+    "options": {
+      "A": "χ2-test",
+      "B": "Z-test",
+      "C": "Kruskal-Wallis test",
+      "D": "F-test"
+    },
+    "answer": "B",
+    "solution": "The Z-test is used to determine whether there is a significant\ndifference between the means of two large sample sizes when \nthe population variance is known. It is particularly useful for \ntesting hypotheses about population means and proportions. \nSince the question asks about judging the significance of \nseveral statistical measures, particularly the mean, the Z-test \nis the most appropriate choice.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q38",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 38,
+    "question": "Arrange the following events related to mass media in the correct\nchronological sequence.\n(A) Publication of early news papers.\n(B) Development of Television Broadcasting.\n(C) Introduction of email.\n(D) Launch of online news websites.\n(E) Invention of Radio.\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, E, B, D, C",
+      "B": "A, E, B, C, D",
+      "C": "E, A, C, D, B",
+      "D": "A, C, B, E, D"
+    },
+    "answer": "B",
+    "solution": "The chronological sequence of mass media developments is\nas follows:\nA - Publication of early newspapers (17th century) :  Newspapers \nwere one of the earliest forms of mass communication, widely \ncirculated since the 1600s.\nE - Invention of Radio (Late 19th to early 20th century) : Radio \nwas invented in the late 1800s and became a major medium \nof mass communication in the early 20th century.\nB -  Development of Television Broadcasting (Mid-20th \ncentury) : Television broadcasting started in the 1920s and \nbecame widespread by the 1950s.\nC - Introduction of Email (1970s) : Email was first developed \nin the early 1970s as part of ARPANET, the precursor to the \ninternet.\nD - Launch of Online News Websites (1990s)  : Online news \nplatforms emerged in the late 1990s with the rise of the internet.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q39",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 39,
+    "question": "Choose the next term of the series 6, 18, 108, 1296, _______.",
+    "options": {
+      "A": "31104",
+      "B": "15552",
+      "C": "30104",
+      "D": "23328"
+    },
+    "answer": "A",
+    "solution": "6, 18,\n×3\n×2\n108,\n×6\n×2\n1296,\n×12\n×2\n×24\n31104",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q40",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 40,
+    "question": "A train travels at a certain average speed for a distance of 63\nkm and then travels a distance of 72 km at an average speed of\n6 km/h more than its original speed. If it takes 3 hours to complete \ntotal journey, what is the original speed?",
+    "options": {
+      "A": "48 km/h",
+      "B": "40 km/h",
+      "C": "42 km/h",
+      "D": "32 km/h"
+    },
+    "answer": "C",
+    "solution": "Let the orignal speed of train = x km/hr\nTime taken for 63 km = 63 hrx\nTime taken for 72 km = 72 hr6x +\nAccording  to question,\n⇒ 63 72 36xx += +\n⇒ 63 378 72 3( 6)\nxx\nxx\n++ =+\n⇒ 135x + 378 = 3x2 + 18x\n⇒ 3x2 – 117x – 378 = 0\n⇒ 3x2 – 126x + 9x – 378 = 0\n⇒ 3x (x – 42) + 9 (x – 42) = 0\n⇒ (3x + 9) (x – 42) = 0\nSo, x = 42 (possible value).",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q41",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 41,
+    "question": "Which of the following is not a security risk?",
+    "options": {
+      "A": "Hacking",
+      "B": "Firewall",
+      "C": "Phishing",
+      "D": "Pharming"
+    },
+    "answer": "B",
+    "solution": "A firewall is a security mechanism that protects networks by\ncontrolling incoming and outgoing traffic based on security \nrules. It is not a security risk but rather a protective measure \nagainst cyber threats.\nHacking is an unauthorized attempt to exploit a system, making \nit a security risk. Phishing involves fraudulent attempts to \nobtain sensitive information, posing a major security threat. \nPharming redirects users to fake websites to steal credentials, \nwhich is also a security risk.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q42",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 42,
+    "question": "Pick the correct statements pertaining to NEP 2020.\n(A) It promotes multiple entry-multiple exit\n(B) It promotes English education\n(C) It promotes multi and inter-disciplinarity\n(D) It promotes privat ization-philanthropic participation in\nEducation \nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, C and D Only",
+      "B": "B and D Only",
+      "C": "B, C and D Only",
+      "D": "A and B Only"
+    },
+    "answer": "A",
+    "solution": "The National Education Policy (NEP) 2020 supports a multiple \nentry-multiple exit system, allowing students flexibility in \ntheir education pathways. It also promotes multi and inter-\ndisciplinarity, ensuring holistic learning. Additionally, NEP \n2020 encourages privatization and philanthropic participation \nin education to enhance accessibility and quality.\nNEP 2020 does not emphasize English as the sole medium of \ninstruction but rather supports multilingualism and regional \nlanguages, making option B incorrect.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q43",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 43,
+    "question": "Which among following definition states that the term to be defined\nis correctly applied to a given case, if and only if. the performance \nof specified operations in that case yields a specified result.",
+    "options": {
+      "A": "Synonymous definition",
+      "B": "Operational definition",
+      "C": "Ostensive definition",
+      "D": "Quasi-ostensive definition"
+    },
+    "answer": "B",
+    "solution": "An operational definition specifies the exact procedures or\noperations needed to measure or identify a concept. It ensures \nthat a term is correctly applied only if a particular process \nleads to a specified result, making it essential in scientific and \nempirical research.\nA synonymous definition explains a term using words with the \nsame meaning. An ostensive definition defines by pointing to \nexamples, and a quasi-ostensive definition expands ostensive \ndefinitions with additional context, making them incorrect \nchoices.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q44",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 44,
+    "question": "Which of the following is a variant of the Harvard style of\nreferencing?",
+    "options": {
+      "A": "APA",
+      "B": "Chicago",
+      "C": "IEEE",
+      "D": "MLA"
+    },
+    "answer": "A",
+    "solution": "The APA (American Psychological Association) referencing\nstyle is considered a variant of the Harvard style as it follows \nan author-date citation system similar to Harvard. It is widely \nused in social sciences and education.\nThe Chicago style  allows both author-date and footnote \nreferencing, making it different. The IEEE style is numerical \nand used in technical fields, while MLA (Modern Language \nAssociation)  is primarily for humanities, relying on \nparenthetical citations, distinguishing them from Harvard.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q45",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 45,
+    "question": "If a researcher decides to have a control group in a ‘placebo’\ndesign, he/she should have how many groups?",
+    "options": {
+      "A": "One group",
+      "B": "Two groups",
+      "C": "Three groups",
+      "D": "Four groups\nComprehension: Read the passage given below and answer the \nquestions that follow:\nThe most important literary event in the nineteenth century was the \nemergence of literary prose in all the modern Indian languages. It is not \nthat prose was an invention of this period. Both Sanskrit and Persian \nhad a vast body of prose. Persian prose in the main treated “serious and \nlearned topics”; the purpose of the authors was “to inform and to uplift \nrather than to amuse”, despite the fact that the fantastic adventure of the \nArabian Nights cycle gave scope to the creative imagination. Sanskrit \nwhich developed a simple and dignified prose-style from the time of \nthe composition of the Upanisads, several centuries before Christ, \nemployed prose in various spheres of intellectual and imaginative \nactivities. Following the same tradition. Pali and a few Prakrit \nlanguages also developed a rich and vast body of tales and romances."
+    },
+    "answer": "B",
+    "solution": "A placebo-controlled design requires at least two groups:\nExperimental group – Receives the actual treatment.\nControl group – Receives a placebo (inactive substance) to \ncompare effects. The official answer is three group but the \ncorrect answer is two groups .",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q46",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 46,
+    "question": "What among the following allowed scope for creative\nimagination?",
+    "options": {
+      "A": "The Ramayana",
+      "B": "The Arabian Nights",
+      "C": "The Mahabharata",
+      "D": "The Panchatantra"
+    },
+    "answer": "B",
+    "solution": "The passage states that The Arabian Nights allowed scope for \ncreative imagination. It highlights the fantastic adventures in \nThe Arabian Nights as an example of imaginative prose.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q47",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 47,
+    "question": "How is Sanskrit prose described in the passage?",
+    "options": {
+      "A": "Simple and dignified",
+      "B": "Complex and humorous",
+      "C": "Solely poetic and lyrical",
+      "D": "Limited to religious themes"
+    },
+    "answer": "A",
+    "solution": "The passage states that Sanskrit developed a simple and\ndignified prose style from the time of the composition of the \nUpanishads.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q48",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 48,
+    "question": "The most significant literary event in the nineteenth century\naccording to the passage was:",
+    "options": {
+      "A": "The invention of poetic forms",
+      "B": "The development of drama",
+      "C": "The emergence of literary prose in modern Indian languages",
+      "D": "The translation of foreign literature"
+    },
+    "answer": "C",
+    "solution": "The passage states that the most important literary event in the \nnineteenth century was the emergence of literary prose in all \nthe modern Indian languages.",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q49",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 49,
+    "question": "What was the purpose of authors writing in Persian prose, as\ndescribed in the passage?",
+    "options": {
+      "A": "To entertain the audience",
+      "B": "To inform and uplift the readers",
+      "C": "To promote religious doctrines",
+      "D": "To provide translations of Sanskrit texts"
+    },
+    "answer": "B",
+    "solution": "The passage states that Persian prose mainly dealt with “serious\nand learned topics” and that the purpose of the authors was “to \ninform and to uplift rather than to amuse.”",
+    "unit": 11,
+    "unit_name": "General Paper 1"
+  },
+  {
+    "id": "gp2025_q50",
+    "year": "General Paper 2025",
+    "paper": "NTA UGC General Paper 2025.pdf",
+    "q_num": 50,
+    "question": "According to the passage, Persian prose deals with",
+    "options": {
+      "A": "Serious and learned topics",
+      "B": "Entertainment to the readers",
+      "C": "Comedy only",
+      "D": "Religious practices only"
+    },
+    "answer": "A",
+    "solution": "The passage explicitly states that Persian prose in the main\ntreated “serious and learned topics.”",
+    "unit": 11,
+    "unit_name": "General Paper 1"
   }
 ]
