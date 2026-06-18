@@ -4,8 +4,9 @@ import React, { useState, useEffect } from "react"
 import { motion, useMotionValue, useTransform, useAnimation } from "framer-motion"
 import { 
   X, Check, ArrowRight, RefreshCw, AlertTriangle, 
-  Sparkles 
+  Sparkles, Eye, EyeOff 
 } from "lucide-react"
+import Markdown from "./Markdown"
 
 interface Question {
   id: string
@@ -55,6 +56,7 @@ export default function SwipeQuiz() {
   const [fetchingReinforce, setFetchingReinforce] = useState<boolean>(false)
   const [gapAnalysis, setGapAnalysis] = useState<string | null>(null)
   const [lesson, setLesson] = useState<string | null>(null)
+  const [isFocusMode, setIsFocusMode] = useState<boolean>(false)
   
   // Framer Motion controls & values
   const x = useMotionValue(0)
@@ -140,9 +142,8 @@ export default function SwipeQuiz() {
       await controls.start({ x: 400, opacity: 0, rotate: 15, transition: { duration: 0.2 } })
       nextQuestion()
     } else {
-      // Incorrect answer: Snap back and show AI lesson & reinforcement content
+      // Incorrect answer: Snap back and let user manually request AI lesson
       controls.start({ x: 0, y: 0, transition: { type: "spring", stiffness: 200, damping: 18 } })
-      fetchReinforceContent()
     }
   }
 
@@ -207,27 +208,50 @@ export default function SwipeQuiz() {
   }
 
   return (
-    <div className="flex flex-col h-full bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 p-4 md:p-6 overflow-hidden">
+    <div className="flex flex-col h-full bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 p-2 sm:p-4 md:p-6 overflow-hidden">
       
-      {/* Top filter select */}
-      <div className="max-w-md mx-auto w-full mb-6 shrink-0">
-        <label className="block text-[11px] font-bold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider mb-2 text-center md:text-left">
-          Select Syllabus Focus Area
-        </label>
-        <select
-          value={selectedUnit}
-          onChange={(e) => setSelectedUnit(e.target.value === "all" ? "all" : Number(e.target.value))}
-          className="w-full px-3 py-2.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl text-xs font-semibold focus:outline-hidden focus:ring-1 focus:ring-indigo-500 cursor-pointer shadow-2xs text-neutral-800 dark:text-neutral-200"
-        >
-          <option value="all">All Units (Mixed Pile)</option>
-          {UNITS.map(unit => (
-            <option key={unit.id} value={unit.id}>Unit {unit.id}: {unit.name}</option>
-          ))}
-        </select>
-      </div>
+      {/* Top filter select & Header controls */}
+      {!isFocusMode ? (
+        <div className="max-w-md mx-auto w-full mb-3 sm:mb-6 shrink-0 flex items-center justify-between gap-3">
+          <div className="flex-1">
+            <label className="block text-[10px] font-bold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider mb-1.5">
+              Select Syllabus Focus Area
+            </label>
+            <select
+              value={selectedUnit}
+              onChange={(e) => setSelectedUnit(e.target.value === "all" ? "all" : Number(e.target.value))}
+              className="w-full px-3 py-2 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl text-xs font-semibold focus:outline-hidden focus:ring-1 focus:ring-indigo-500 cursor-pointer shadow-2xs text-neutral-800 dark:text-neutral-200"
+            >
+              <option value="all">All Units (Mixed Pile)</option>
+              {UNITS.map(unit => (
+                <option key={unit.id} value={unit.id}>Unit {unit.id}: {unit.name}</option>
+              ))}
+            </select>
+          </div>
+          <button
+            onClick={() => setIsFocusMode(true)}
+            className="mt-5 px-3 py-2 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-xs font-semibold flex items-center gap-1.5 cursor-pointer shadow-2xs text-neutral-600 dark:text-neutral-350 transition-colors"
+            title="Enable Focus Mode"
+          >
+            <Eye className="w-4 h-4 text-indigo-500" />
+            <span className="hidden sm:inline">Focus Mode</span>
+          </button>
+        </div>
+      ) : (
+        <div className="w-full max-w-sm mx-auto flex justify-end mb-2 shrink-0">
+          <button
+            onClick={() => setIsFocusMode(false)}
+            className="px-3 py-1.5 border border-neutral-200 dark:border-neutral-800 rounded-lg bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 cursor-pointer shadow-2xs text-indigo-600 dark:text-indigo-400 transition-colors"
+            title="Exit Focus Mode"
+          >
+            <EyeOff className="w-3.5 h-3.5" />
+            Exit Focus
+          </button>
+        </div>
+      )}
 
       {/* Main card deck frame */}
-      <div className="flex-1 flex flex-col items-center justify-center relative min-h-[380px] max-h-[620px] w-full">
+      <div className="flex-1 flex flex-col items-center justify-center relative min-h-[360px] max-h-[640px] w-full">
         {loading ? (
           <div className="flex flex-col items-center gap-3 text-neutral-400 dark:text-neutral-500">
             <RefreshCw className="w-8 h-8 text-indigo-500 animate-spin" />
@@ -260,7 +284,11 @@ export default function SwipeQuiz() {
             {/* Background pile card */}
             {currentIndex + 1 < questions.length && (
               <div 
-                className="absolute inset-0 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-6 shadow-md opacity-40 scale-95 translate-y-6 select-none pointer-events-none z-0"
+                className={`absolute inset-0 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-6 shadow-md opacity-40 scale-95 translate-y-3 sm:translate-y-6 select-none pointer-events-none z-0 ${
+                  isFocusMode 
+                    ? "h-[calc(100vh-160px)] sm:h-[480px] md:h-[520px]" 
+                    : "h-[calc(100vh-270px)] sm:h-[460px] md:h-[500px]"
+                }`}
               >
                 <div className="w-12 h-3 bg-neutral-200 dark:bg-neutral-850 rounded mb-4" />
                 <div className="space-y-2">
@@ -278,7 +306,11 @@ export default function SwipeQuiz() {
               style={{ x, rotate, opacity }}
               animate={controls}
               onDragEnd={handleDragEnd}
-              className={`absolute inset-0 bg-white dark:bg-neutral-900 border rounded-2xl shadow-xl flex flex-col justify-between overflow-hidden z-10 transition-colors duration-200 h-[460px] md:h-[500px] ${
+              className={`absolute inset-0 bg-white dark:bg-neutral-900 border rounded-2xl shadow-xl flex flex-col justify-between overflow-hidden z-10 transition-colors duration-200 ${
+                isFocusMode 
+                  ? "h-[calc(100vh-160px)] sm:h-[480px] md:h-[520px]" 
+                  : "h-[calc(100vh-270px)] sm:h-[460px] md:h-[500px]"
+              } ${
                 !isAnswered 
                   ? "border-neutral-200 dark:border-neutral-800 cursor-grab active:cursor-grabbing" 
                   : isCorrect
@@ -288,7 +320,7 @@ export default function SwipeQuiz() {
             >
               
               {/* Card Header */}
-              <div className="px-5 py-3.5 border-b border-neutral-150 dark:border-neutral-850 flex justify-between items-center bg-neutral-50 dark:bg-neutral-950 shrink-0">
+              <div className="px-4 py-2.5 sm:px-5 sm:py-3.5 border-b border-neutral-150 dark:border-neutral-850 flex justify-between items-center bg-neutral-50 dark:bg-neutral-950 shrink-0">
                 <span className="text-[10px] font-bold text-neutral-400 dark:text-neutral-550 tracking-wider">
                   {currentQ.year} • Q{currentQ.q_num}
                 </span>
@@ -298,17 +330,17 @@ export default function SwipeQuiz() {
               </div>
 
               {/* Card Content (Scrollable) */}
-              <div className="flex-1 overflow-y-auto p-5 space-y-4 select-text">
-                <p className="text-[10px] font-bold text-neutral-500 dark:text-neutral-400 block tracking-wider uppercase mb-1">
+              <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3 sm:space-y-4 select-text">
+                <p className="text-[9px] sm:text-[10px] font-bold text-neutral-500 dark:text-neutral-400 block tracking-wider uppercase mb-0.5">
                   {currentQ.unit_name}
                 </p>
-                <div className="text-xs md:text-sm leading-relaxed font-semibold text-neutral-800 dark:text-neutral-100 whitespace-pre-wrap">
-                  {currentQ.question}
+                <div className="text-xs sm:text-[13px] leading-relaxed font-semibold text-neutral-800 dark:text-neutral-100">
+                  <Markdown content={currentQ.question} />
                 </div>
 
                 {/* Options */}
                 {!isAnswered ? (
-                  <div className="space-y-2 pt-2">
+                  <div className="space-y-2 pt-1.5 sm:pt-2">
                     {(Object.keys(currentQ.options) as Array<"A" | "B" | "C" | "D">).map(optKey => {
                       const optText = currentQ.options[optKey]
                       if (!optText) return null
@@ -318,14 +350,14 @@ export default function SwipeQuiz() {
                         <button
                           key={optKey}
                           onClick={() => handleOptionSelect(optKey)}
-                          className={`w-full flex items-start gap-3 p-3 rounded-xl border text-left text-xs transition-all cursor-pointer ${
+                          className={`w-full flex items-start gap-2.5 sm:gap-3 p-2.5 sm:p-3 rounded-xl border text-left text-[11px] sm:text-xs transition-all cursor-pointer ${
                             isSelected
                               ? "border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/20 text-indigo-700 dark:text-indigo-300 font-bold"
-                              : "border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-neutral-700 dark:text-neutral-350 font-medium"
+                              : "border-neutral-250 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-neutral-700 dark:text-neutral-350 font-medium"
                           }`}
                         >
-                          <span className={`w-5 h-5 rounded-full border flex items-center justify-center font-bold text-[10px] shrink-0 ${
-                            isSelected ? "bg-indigo-600 border-indigo-600 text-white" : "border-neutral-300 dark:border-neutral-700"
+                          <span className={`w-4.5 h-4.5 sm:w-5 sm:h-5 rounded-full border flex items-center justify-center font-bold text-[9px] sm:text-[10px] shrink-0 ${
+                            isSelected ? "bg-indigo-600 border-indigo-600 text-white" : "border-neutral-350 dark:border-neutral-700"
                           }`}>
                             {optKey}
                           </span>
@@ -336,37 +368,47 @@ export default function SwipeQuiz() {
                   </div>
                 ) : (
                   // Solution & AI lesson block on wrong answer
-                  <div className="space-y-4 pt-2 border-t border-neutral-150 dark:border-neutral-850">
-                    <div className="flex items-center gap-1.5 text-rose-600 dark:text-rose-450 font-bold text-xs">
+                  <div className="space-y-3 sm:space-y-4 pt-2 border-t border-neutral-150 dark:border-neutral-850">
+                    <div className="flex items-center gap-1.5 text-rose-650 dark:text-rose-450 font-bold text-xs">
                       <AlertTriangle className="w-4 h-4 shrink-0" /> Incorrect Selection.
                     </div>
-                    <div className="text-xs bg-neutral-100 dark:bg-neutral-950 p-3.5 rounded-xl border border-neutral-200 dark:border-neutral-850">
-                      <div className="font-bold text-emerald-600 dark:text-emerald-400 mb-1.5">
+                    <div className="text-[11px] sm:text-xs bg-neutral-100 dark:bg-neutral-950 p-3 sm:p-3.5 rounded-xl border border-neutral-200 dark:border-neutral-850">
+                      <div className="font-bold text-emerald-600 dark:text-emerald-400 mb-1">
                         Correct Answer is Option {currentQ.answer}:
                       </div>
-                      <p className="text-[11px] text-neutral-700 dark:text-neutral-300 leading-relaxed font-semibold">
+                      <p className="text-[10.5px] sm:text-[11px] text-neutral-700 dark:text-neutral-300 leading-relaxed font-semibold">
                         {currentQ.options[currentQ.answer as keyof typeof currentQ.options]}
                       </p>
                     </div>
 
-                    {fetchingReinforce ? (
-                      <div className="flex items-center justify-center py-4 gap-2 text-xs text-neutral-400 font-semibold">
+                    {!fetchingReinforce && !gapAnalysis && !lesson ? (
+                      <button
+                        onClick={fetchReinforceContent}
+                        className="w-full py-2 sm:py-2.5 bg-indigo-600 hover:bg-indigo-750 text-white rounded-xl text-[11px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs"
+                      >
+                        <Sparkles className="w-3.5 h-3.5 text-indigo-200" />
+                        Explain Concept Gap with AI
+                      </button>
+                    ) : fetchingReinforce ? (
+                      <div className="flex items-center justify-center py-4 gap-2 text-xs text-neutral-400 font-semibold bg-neutral-50 dark:bg-neutral-950 rounded-xl border border-neutral-200 dark:border-neutral-850 animate-pulse">
                         <RefreshCw className="w-3.5 h-3.5 animate-spin text-indigo-500" />
-                        Tutor gap analysis...
+                        AI Tutor is analyzing your conceptual gap...
                       </div>
                     ) : (
                       (gapAnalysis || lesson) && (
-                        <div className="space-y-3">
+                        <div className="space-y-2.5 sm:space-y-3">
                           {gapAnalysis && (
-                            <div className="bg-amber-500/5 border border-amber-500/15 rounded-xl p-3.5">
-                              <span className="text-[10px] font-bold text-amber-600 dark:text-amber-500 uppercase tracking-wider block mb-1">Conceptual Gap</span>
-                              <p className="text-[11px] text-neutral-600 dark:text-neutral-350 leading-relaxed italic font-semibold">"{gapAnalysis}"</p>
+                            <div className="bg-amber-500/5 border border-amber-500/15 rounded-xl p-3 sm:p-3.5">
+                              <span className="text-[9px] sm:text-[10px] font-bold text-amber-600 dark:text-amber-500 uppercase tracking-wider block mb-0.5">Conceptual Gap</span>
+                              <p className="text-[10.5px] sm:text-[11px] text-neutral-600 dark:text-neutral-350 leading-relaxed italic font-semibold font-semibold">"{gapAnalysis}"</p>
                             </div>
                           )}
                           {lesson && (
-                            <div className="bg-indigo-500/5 border border-indigo-500/15 rounded-xl p-3.5">
-                              <span className="text-[10px] font-bold text-indigo-650 dark:text-indigo-400 uppercase tracking-wider block mb-1">Study Guide</span>
-                              <p className="text-[11px] text-neutral-700 dark:text-neutral-300 leading-relaxed font-medium whitespace-pre-line">{lesson}</p>
+                            <div className="bg-indigo-500/5 border border-indigo-500/15 rounded-xl p-3 sm:p-3.5">
+                              <span className="text-[9px] sm:text-[10px] font-bold text-indigo-650 dark:text-indigo-400 uppercase tracking-wider block mb-0.5">Study Guide</span>
+                              <div className="text-[10.5px] sm:text-[11px] leading-relaxed">
+                                <Markdown content={lesson} />
+                              </div>
                             </div>
                           )}
                         </div>
@@ -377,12 +419,12 @@ export default function SwipeQuiz() {
               </div>
 
               {/* Action buttons footer */}
-              <div className="px-5 py-3.5 bg-neutral-50 dark:bg-neutral-950 border-t border-neutral-150 dark:border-neutral-850 flex items-center justify-between shrink-0">
+              <div className="px-4 py-2.5 sm:px-5 sm:py-3.5 bg-neutral-50 dark:bg-neutral-950 border-t border-neutral-150 dark:border-neutral-850 flex items-center justify-between shrink-0">
                 {!isAnswered ? (
                   <>
                     <button
                       onClick={swipeLeft}
-                      className="px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-850 text-neutral-600 dark:text-neutral-300 text-xs font-semibold transition-all flex items-center gap-1 cursor-pointer"
+                      className="px-3 py-2 border border-neutral-350 dark:border-neutral-700 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-850 text-neutral-600 dark:text-neutral-350 text-[11px] sm:text-xs font-semibold transition-all flex items-center gap-1 cursor-pointer"
                       title="Skip question"
                     >
                       <X className="w-3.5 h-3.5 text-rose-500" />
@@ -391,7 +433,7 @@ export default function SwipeQuiz() {
                     <button
                       onClick={swipeRight}
                       disabled={!selectedOption}
-                      className="px-5 py-2 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 disabled:hover:bg-indigo-600 text-white rounded-xl text-xs font-semibold transition-all flex items-center gap-1 cursor-pointer shadow-2xs"
+                      className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 disabled:hover:bg-indigo-600 text-white rounded-xl text-[11px] sm:text-xs font-semibold transition-all flex items-center gap-1 cursor-pointer shadow-2xs"
                     >
                       Verify
                       <Check className="w-3.5 h-3.5" />
@@ -400,7 +442,7 @@ export default function SwipeQuiz() {
                 ) : (
                   <button
                     onClick={nextQuestion}
-                    className="w-full py-2.5 bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-850 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 cursor-pointer"
+                    className="w-full py-2.5 bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-850 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 rounded-xl text-[11px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1 cursor-pointer"
                   >
                     Next Question
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -413,9 +455,9 @@ export default function SwipeQuiz() {
       </div>
 
       {/* Swipe Tips */}
-      {!loading && currentIndex < questions.length && (
-        <div className="text-center text-[10px] text-neutral-400 dark:text-neutral-500 font-bold uppercase tracking-wider mt-4 shrink-0 flex items-center justify-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
+      {!isFocusMode && !loading && currentIndex < questions.length && (
+        <div className="text-center text-[9px] sm:text-[10px] text-neutral-400 dark:text-neutral-500 font-bold uppercase tracking-wider mt-3 sm:mt-4 shrink-0 flex items-center justify-center gap-1.5">
+          <Sparkles className="w-3 h-3 text-indigo-500" />
           <span>Swipe Left to Skip • Select option & Swipe Right/Verify to submit</span>
         </div>
       )}
