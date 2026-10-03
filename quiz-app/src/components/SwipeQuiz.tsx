@@ -1,49 +1,26 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef, useCallback } from "react"
 import { motion, useMotionValue, useTransform, useAnimation } from "framer-motion"
 import { 
   X, Check, ArrowRight, RefreshCw, AlertTriangle, 
   Sparkles, Eye, EyeOff 
 } from "lucide-react"
 import Markdown from "./Markdown"
-
-interface Question {
-  id: string
-  year: string
-  paper: string
-  q_num: number
-  question: string
-  options: {
-    A: string
-    B: string
-    C: string
-    D: string
-  }
-  answer: string
-  solution: string
-  unit: number
-  unit_name: string
-  conceptName: string
-}
-
-const UNITS = [
-  { id: 1, name: "Discrete Structures and Optimization" },
-  { id: 2, name: "Computer System Architecture" },
-  { id: 3, name: "Programming Languages & Computer Graphics" },
-  { id: 4, name: "Database Management Systems (DBMS)" },
-  { id: 5, name: "System Software and Operating System" },
-  { id: 6, name: "Software Engineering" },
-  { id: 7, name: "Data Structures and Algorithms" },
-  { id: 8, name: "Theory of Computation and Compilers" },
-  { id: 9, name: "Data Communication and Computer Networks" },
-  { id: 10, name: "Artificial Intelligence (AI)" },
-  { id: 11, name: "General Paper 1" }
-]
+import { BookmarkButton } from "./QuestionCard"
+import { useStudyData } from "@/hooks/useStudyData"
+import { useSettings } from "@/lib/settings"
+import { UNITS } from "@/lib/constants"
+import { secondsSince, shuffle } from "@/lib/analytics"
+import { OPTION_KEYS, type Question } from "@/lib/types"
 
 export default function SwipeQuiz() {
+  const { questions: allQuestions, loading: storeLoading, logAttempt } = useStudyData()
+  const { settings } = useSettings()
   const [selectedUnit, setSelectedUnit] = useState<number | "all">("all")
   const [questions, setQuestions] = useState<Question[]>([])
+  const [sessionStats, setSessionStats] = useState({ correct: 0, wrong: 0, skipped: 0 })
+  const cardShownAt = useRef(0)
   const [currentIndex, setCurrentIndex] = useState<number>(0)
   const [loading, setLoading] = useState<boolean>(true)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
@@ -64,35 +41,10 @@ export default function SwipeQuiz() {
   const opacity = useTransform(x, [-200, -150, 0, 150, 200], [0.6, 1, 1, 1, 0.6])
   const controls = useAnimation()
 
+  // The live question when available, so bookmark state stays current
   const currentQ = questions[currentIndex]
-
-  // Load unsolved questions
-  const loadQuestions = async () => {
-    setLoading(true)
-    try {
-      let url = "/api/questions?unsolved=true"
-      if (selectedUnit !== "all") {
-        url += `&unit=${selectedUnit}`
-      }
-      const res = await fetch(url)
-      if (res.ok) {
-        const data = await res.json()
-        // Shuffle the loaded cards
-        const shuffled = data.sort(() => 0.5 - Math.random())
-        setQuestions(shuffled)
-        setCurrentIndex(0)
-        resetCardState()
-      }
-    } catch (err) {
-      console.error("Failed to load cards", err)
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    loadQuestions()
-  }, [selectedUnit])
+    ? allQuestions.find(q => q.id === questions[currentIndex].id) ?? questions[currentIndex]
+    : undefined
 
   const resetCardState = () => {
     setSelectedOption(null)
@@ -104,8 +56,31 @@ export default function SwipeQuiz() {
     controls.set({ x: 0, y: 0, opacity: 1, scale: 1 })
   }
 
+  // Build a shuffled pile of questions not yet answered correctly. The pile is a snapshot,
+  // so cards don't disappear from under you as you answer them.
+  const allRef = useRef(allQuestions)
+  useEffect(() => {
+    allRef.current = allQuestions
+  }, [allQuestions])
+
+  const loadQuestions = useCallback(() => {
+    const pile = allRef.current.filter(q => !(q.isAnswered && q.isCorrect) && (selectedUnit === "all" || q.unit === selectedUnit))
+    setQuestions(shuffle(pile))
+    setCurrentIndex(0)
+    setSessionStats({ correct: 0, wrong: 0, skipped: 0 })
+    resetCardState()
+    cardShownAt.current = Date.now()
+    setLoading(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- resetCardState only touches stable motion values
+  }, [selectedUnit])
+
+  useEffect(() => {
+    if (!storeLoading) loadQuestions()
+  }, [loadQuestions, storeLoading])
+
   // Handle Swipe Left (Skip)
   const swipeLeft = async () => {
+    setSessionStats(s => ({ ...s, skipped: s.skipped + 1 }))
     await controls.start({ x: -400, opacity: 0, rotate: -15, transition: { duration: 0.2 } })
     nextQuestion()
   }
@@ -122,20 +97,8 @@ export default function SwipeQuiz() {
     setIsCorrect(correct)
     setIsAnswered(true)
 
-    // Post attempt to SQLite
-    try {
-      await fetch("/api/attempts", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          questionId: currentQ.id,
-          userAnswer: selectedOption,
-          isCorrect: correct
-        })
-      })
-    } catch (err) {
-      console.error("Failed to post attempt", err)
-    }
+    setSessionStats(s => (correct ? { ...s, correct: s.correct + 1 } : { ...s, wrong: s.wrong + 1 }))
+    logAttempt(currentQ, selectedOption, { source: "swipe", timeSpent: secondsSince(cardShownAt.current) })
 
     if (correct) {
       // Correct answer: Fly off to the right!
@@ -172,6 +135,7 @@ export default function SwipeQuiz() {
   }
 
   const nextQuestion = () => {
+    cardShownAt.current = Date.now()
     setCurrentIndex(prev => prev + 1)
     setSelectedOption(null)
     setIsAnswered(false)
@@ -207,6 +171,29 @@ export default function SwipeQuiz() {
     setSelectedOption(opt)
   }
 
+  // Keyboard: 1-4 pick, Enter / right arrow verify, left arrow skip
+  useEffect(() => {
+    if (!settings.keyboardShortcuts || !currentQ || loading) return
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement).closest("input, textarea, select")) return
+      if (e.metaKey || e.ctrlKey || e.altKey) return
+      const idx = ["1", "2", "3", "4"].indexOf(e.key)
+      if (idx >= 0 && !isAnswered) {
+        const opt = OPTION_KEYS[idx]
+        if (currentQ.options[opt]) handleOptionSelect(opt)
+      } else if ((e.key === "Enter" || e.key === "ArrowRight") && !isAnswered) {
+        swipeRight()
+      } else if ((e.key === "Enter" || e.key === "ArrowRight") && isAnswered) {
+        nextQuestion()
+      } else if (e.key === "ArrowLeft" && !isAnswered) {
+        swipeLeft()
+      } else return
+      e.preventDefault()
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  })
+
   return (
     <div className="flex flex-col h-full bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 p-2 sm:p-4 md:p-6 overflow-hidden">
       
@@ -220,7 +207,7 @@ export default function SwipeQuiz() {
             <select
               value={selectedUnit}
               onChange={(e) => setSelectedUnit(e.target.value === "all" ? "all" : Number(e.target.value))}
-              className="w-full px-3 py-2 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl text-xs font-semibold focus:outline-hidden focus:ring-1 focus:ring-indigo-500 cursor-pointer shadow-2xs text-neutral-800 dark:text-neutral-200"
+              className="w-full px-3 py-2 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl text-xs font-semibold focus:outline-hidden focus:ring-1 focus:ring-brand-500 cursor-pointer shadow-2xs text-neutral-800 dark:text-neutral-200"
             >
               <option value="all">All Units (Mixed Pile)</option>
               {UNITS.map(unit => (
@@ -233,7 +220,7 @@ export default function SwipeQuiz() {
             className="mt-5 px-3 py-2 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-xs font-semibold flex items-center gap-1.5 cursor-pointer shadow-2xs text-neutral-600 dark:text-neutral-350 transition-colors"
             title="Enable Focus Mode"
           >
-            <Eye className="w-4 h-4 text-indigo-500" />
+            <Eye className="w-4 h-4 text-brand-500" />
             <span className="hidden sm:inline">Focus Mode</span>
           </button>
         </div>
@@ -241,7 +228,7 @@ export default function SwipeQuiz() {
         <div className="w-full max-w-sm mx-auto flex justify-end mb-2 shrink-0">
           <button
             onClick={() => setIsFocusMode(false)}
-            className="px-3 py-1.5 border border-neutral-200 dark:border-neutral-800 rounded-lg bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 cursor-pointer shadow-2xs text-indigo-600 dark:text-indigo-400 transition-colors"
+            className="px-3 py-1.5 border border-neutral-200 dark:border-neutral-800 rounded-lg bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 cursor-pointer shadow-2xs text-brand-600 dark:text-brand-400 transition-colors"
             title="Exit Focus Mode"
           >
             <EyeOff className="w-3.5 h-3.5" />
@@ -254,10 +241,10 @@ export default function SwipeQuiz() {
       <div className="flex-1 flex flex-col items-center justify-center relative min-h-[360px] max-h-[640px] w-full">
         {loading ? (
           <div className="flex flex-col items-center gap-3 text-neutral-400 dark:text-neutral-500">
-            <RefreshCw className="w-8 h-8 text-indigo-500 animate-spin" />
+            <RefreshCw className="w-8 h-8 text-brand-500 animate-spin" />
             <span className="text-xs font-semibold">Preparing card stack...</span>
           </div>
-        ) : currentIndex >= questions.length ? (
+        ) : !currentQ ? (
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -268,11 +255,11 @@ export default function SwipeQuiz() {
             </div>
             <h3 className="text-lg font-bold">Stack Completed!</h3>
             <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed font-semibold">
-              You've swiped through all available unsolved questions in this category. Correctly answered questions have been recorded and removed from this pile.
+              You&apos;ve swiped through all available unsolved questions in this category. Correctly answered questions have been recorded and removed from this pile.
             </p>
             <button
               onClick={loadQuestions}
-              className="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full py-2.5 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
               <RefreshCw className="w-3.5 h-3.5" />
               Reset & Reload Pile
@@ -324,8 +311,11 @@ export default function SwipeQuiz() {
                 <span className="text-[10px] font-bold text-neutral-400 dark:text-neutral-550 tracking-wider">
                   {currentQ.year} • Q{currentQ.q_num}
                 </span>
-                <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-500/10 px-2 py-0.5 rounded">
-                  Unit {currentQ.unit}
+                <span className="flex items-center gap-1">
+                  <span className="text-[10px] font-bold text-brand-600 dark:text-brand-400 uppercase bg-brand-500/10 px-2 py-0.5 rounded">
+                    Unit {currentQ.unit}
+                  </span>
+                  <BookmarkButton question={currentQ} />
                 </span>
               </div>
 
@@ -352,12 +342,12 @@ export default function SwipeQuiz() {
                           onClick={() => handleOptionSelect(optKey)}
                           className={`w-full flex items-start gap-2.5 sm:gap-3 p-2.5 sm:p-3 rounded-xl border text-left text-[11px] sm:text-xs transition-all cursor-pointer ${
                             isSelected
-                              ? "border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/20 text-indigo-700 dark:text-indigo-300 font-bold"
+                              ? "border-brand-600 bg-brand-50/50 dark:bg-brand-950/20 text-brand-700 dark:text-brand-300 font-bold"
                               : "border-neutral-250 dark:border-neutral-800 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 text-neutral-700 dark:text-neutral-350 font-medium"
                           }`}
                         >
                           <span className={`w-4.5 h-4.5 sm:w-5 sm:h-5 rounded-full border flex items-center justify-center font-bold text-[9px] sm:text-[10px] shrink-0 ${
-                            isSelected ? "bg-indigo-600 border-indigo-600 text-white" : "border-neutral-350 dark:border-neutral-700"
+                            isSelected ? "bg-brand-600 border-brand-600 text-white" : "border-neutral-350 dark:border-neutral-700"
                           }`}>
                             {optKey}
                           </span>
@@ -384,14 +374,14 @@ export default function SwipeQuiz() {
                     {!fetchingReinforce && !gapAnalysis && !lesson ? (
                       <button
                         onClick={fetchReinforceContent}
-                        className="w-full py-2 sm:py-2.5 bg-indigo-600 hover:bg-indigo-750 text-white rounded-xl text-[11px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs"
+                        className="w-full py-2 sm:py-2.5 bg-brand-600 hover:bg-brand-750 text-white rounded-xl text-[11px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs"
                       >
-                        <Sparkles className="w-3.5 h-3.5 text-indigo-200" />
+                        <Sparkles className="w-3.5 h-3.5 text-brand-200" />
                         Explain Concept Gap with AI
                       </button>
                     ) : fetchingReinforce ? (
                       <div className="flex items-center justify-center py-4 gap-2 text-xs text-neutral-400 font-semibold bg-neutral-50 dark:bg-neutral-950 rounded-xl border border-neutral-200 dark:border-neutral-850 animate-pulse">
-                        <RefreshCw className="w-3.5 h-3.5 animate-spin text-indigo-500" />
+                        <RefreshCw className="w-3.5 h-3.5 animate-spin text-brand-500" />
                         AI Tutor is analyzing your conceptual gap...
                       </div>
                     ) : (
@@ -400,12 +390,12 @@ export default function SwipeQuiz() {
                           {gapAnalysis && (
                             <div className="bg-amber-500/5 border border-amber-500/15 rounded-xl p-3 sm:p-3.5">
                               <span className="text-[9px] sm:text-[10px] font-bold text-amber-600 dark:text-amber-500 uppercase tracking-wider block mb-0.5">Conceptual Gap</span>
-                              <p className="text-[10.5px] sm:text-[11px] text-neutral-600 dark:text-neutral-350 leading-relaxed italic font-semibold font-semibold">"{gapAnalysis}"</p>
+                              <p className="text-[10.5px] sm:text-[11px] text-neutral-600 dark:text-neutral-350 leading-relaxed italic font-semibold">&ldquo;{gapAnalysis}&rdquo;</p>
                             </div>
                           )}
                           {lesson && (
-                            <div className="bg-indigo-500/5 border border-indigo-500/15 rounded-xl p-3 sm:p-3.5">
-                              <span className="text-[9px] sm:text-[10px] font-bold text-indigo-650 dark:text-indigo-400 uppercase tracking-wider block mb-0.5">Study Guide</span>
+                            <div className="bg-brand-500/5 border border-brand-500/15 rounded-xl p-3 sm:p-3.5">
+                              <span className="text-[9px] sm:text-[10px] font-bold text-brand-650 dark:text-brand-400 uppercase tracking-wider block mb-0.5">Study Guide</span>
                               <div className="text-[10.5px] sm:text-[11px] leading-relaxed">
                                 <Markdown content={lesson} />
                               </div>
@@ -433,7 +423,7 @@ export default function SwipeQuiz() {
                     <button
                       onClick={swipeRight}
                       disabled={!selectedOption}
-                      className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 disabled:hover:bg-indigo-600 text-white rounded-xl text-[11px] sm:text-xs font-semibold transition-all flex items-center gap-1 cursor-pointer shadow-2xs"
+                      className="px-4 py-2 bg-brand-600 hover:bg-brand-700 disabled:opacity-40 disabled:hover:bg-brand-600 text-white rounded-xl text-[11px] sm:text-xs font-semibold transition-all flex items-center gap-1 cursor-pointer shadow-2xs"
                     >
                       Verify
                       <Check className="w-3.5 h-3.5" />
@@ -454,11 +444,19 @@ export default function SwipeQuiz() {
         )}
       </div>
 
-      {/* Swipe Tips */}
+      {/* Session tally & tips */}
       {!isFocusMode && !loading && currentIndex < questions.length && (
-        <div className="text-center text-[9px] sm:text-[10px] text-neutral-400 dark:text-neutral-500 font-bold uppercase tracking-wider mt-3 sm:mt-4 shrink-0 flex items-center justify-center gap-1.5">
-          <Sparkles className="w-3 h-3 text-indigo-500" />
-          <span>Swipe Left to Skip • Select option & Swipe Right/Verify to submit</span>
+        <div className="text-center text-xs text-neutral-500 dark:text-neutral-400 mt-3 sm:mt-4 shrink-0 space-y-1">
+          <div className="tabular-nums">
+            Card {currentIndex + 1} of {questions.length}
+            <span className="mx-2 text-neutral-300 dark:text-neutral-700">|</span>
+            <span className="text-emerald-700 dark:text-emerald-400">{sessionStats.correct} right</span>,{" "}
+            <span className="text-rose-700 dark:text-rose-400">{sessionStats.wrong} wrong</span>, {sessionStats.skipped} skipped
+          </div>
+          <div className="hidden sm:block">
+            Swipe left to skip. Pick an option, then swipe right to check.
+            {settings.keyboardShortcuts && " Keys: 1–4 to pick, → to check, ← to skip."}
+          </div>
         </div>
       )}
     </div>

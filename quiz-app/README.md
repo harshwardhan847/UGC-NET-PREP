@@ -14,9 +14,9 @@ To run this application locally, set up your environment variables, and manage t
    ```env
    GEMINI_API_KEY=your_gemini_api_key_here
    ```
-3. Initialize the SQLite database:
+3. Initialize the SQLite database (also run this after pulling schema changes):
    ```bash
-   npx prisma db push
+   npx prisma migrate dev
    ```
 4. Seed the database:
    ```bash

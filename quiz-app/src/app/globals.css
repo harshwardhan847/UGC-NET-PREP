@@ -2,32 +2,162 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Accent palettes. The active one is chosen by <html data-accent="..."> (see Settings). */
+:root, :root[data-accent="indigo"] {
+  --brand-50: oklch(96.2% 0.018 272.314);
+  --brand-100: oklch(93% 0.034 272.788);
+  --brand-200: oklch(87% 0.065 274.039);
+  --brand-300: oklch(78.5% 0.115 274.713);
+  --brand-400: oklch(67.3% 0.182 276.935);
+  --brand-500: oklch(58.5% 0.233 277.117);
+  --brand-600: oklch(51.1% 0.262 276.966);
+  --brand-700: oklch(45.7% 0.24 277.023);
+  --brand-800: oklch(39.8% 0.195 277.366);
+  --brand-900: oklch(35.9% 0.144 278.697);
+  --brand-950: oklch(25.7% 0.09 281.288);
+}
+
+:root[data-accent="blue"] {
+  --brand-50: oklch(97% 0.014 254.604);
+  --brand-100: oklch(93.2% 0.032 255.585);
+  --brand-200: oklch(88.2% 0.059 254.128);
+  --brand-300: oklch(80.9% 0.105 251.813);
+  --brand-400: oklch(70.7% 0.165 254.624);
+  --brand-500: oklch(62.3% 0.214 259.815);
+  --brand-600: oklch(54.6% 0.245 262.881);
+  --brand-700: oklch(48.8% 0.243 264.376);
+  --brand-800: oklch(42.4% 0.199 265.638);
+  --brand-900: oklch(37.9% 0.146 265.522);
+  --brand-950: oklch(28.2% 0.091 267.935);
+}
+
+:root[data-accent="teal"] {
+  --brand-50: oklch(98.4% 0.014 180.72);
+  --brand-100: oklch(95.3% 0.051 180.801);
+  --brand-200: oklch(91% 0.096 180.426);
+  --brand-300: oklch(85.5% 0.138 181.071);
+  --brand-400: oklch(77.7% 0.152 181.912);
+  --brand-500: oklch(70.4% 0.14 182.503);
+  --brand-600: oklch(60% 0.118 184.704);
+  --brand-700: oklch(51.1% 0.096 186.391);
+  --brand-800: oklch(43.7% 0.078 188.216);
+  --brand-900: oklch(38.6% 0.063 188.416);
+  --brand-950: oklch(27.7% 0.046 192.524);
+}
+
+:root[data-accent="violet"] {
+  --brand-50: oklch(96.9% 0.016 293.756);
+  --brand-100: oklch(94.3% 0.029 294.588);
+  --brand-200: oklch(89.4% 0.057 293.283);
+  --brand-300: oklch(81.1% 0.111 293.571);
+  --brand-400: oklch(70.2% 0.183 293.541);
+  --brand-500: oklch(60.6% 0.25 292.717);
+  --brand-600: oklch(54.1% 0.281 293.009);
+  --brand-700: oklch(49.1% 0.27 292.581);
+  --brand-800: oklch(43.2% 0.232 292.759);
+  --brand-900: oklch(38% 0.189 293.745);
+  --brand-950: oklch(28.3% 0.141 291.089);
+}
+
+:root[data-accent="rose"] {
+  --brand-50: oklch(96.9% 0.015 12.422);
+  --brand-100: oklch(94.1% 0.03 12.58);
+  --brand-200: oklch(89.2% 0.058 10.001);
+  --brand-300: oklch(81% 0.117 11.638);
+  --brand-400: oklch(71.2% 0.194 13.428);
+  --brand-500: oklch(64.5% 0.246 16.439);
+  --brand-600: oklch(58.6% 0.253 17.585);
+  --brand-700: oklch(51.4% 0.222 16.935);
+  --brand-800: oklch(45.5% 0.188 13.697);
+  --brand-900: oklch(41% 0.159 10.272);
+  --brand-950: oklch(27.1% 0.105 12.094);
+}
+
+:root[data-accent="orange"] {
+  --brand-50: oklch(98% 0.016 73.684);
+  --brand-100: oklch(95.4% 0.038 75.164);
+  --brand-200: oklch(90.1% 0.076 70.697);
+  --brand-300: oklch(83.7% 0.128 66.29);
+  --brand-400: oklch(75% 0.183 55.934);
+  --brand-500: oklch(70.5% 0.213 47.604);
+  --brand-600: oklch(64.6% 0.222 41.116);
+  --brand-700: oklch(55.3% 0.195 38.402);
+  --brand-800: oklch(47% 0.157 37.304);
+  --brand-900: oklch(40.8% 0.123 38.172);
+  --brand-950: oklch(26.6% 0.079 36.259);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f7f5;
+  --foreground: #1c1c1a;
+  --q-font: var(--font-serif);
+  --q-size: 16px;
 }
 
 :root.dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #121211;
+  --foreground: #ececea;
 }
+
+:root[data-qfont="sans"] { --q-font: var(--font-sans); }
+:root[data-qfont="serif"] { --q-font: var(--font-serif); }
+:root[data-qfont="mono"] { --q-font: var(--font-mono); }
+:root[data-qsize="sm"] { --q-size: 14px; }
+:root[data-qsize="md"] { --q-size: 16px; }
+:root[data-qsize="lg"] { --q-size: 18px; }
+:root[data-qsize="xl"] { --q-size: 20px; }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-ui);
+  --font-serif: var(--font-reading);
+  --font-mono: var(--font-code);
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-brand-950: var(--brand-950);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Question and option text use the reader's chosen typeface and size. */
+@layer components {
+  .q-text {
+    font-family: var(--q-font), serif;
+    font-size: var(--q-size);
+    line-height: 1.65;
+  }
+  .q-option {
+    font-family: var(--q-font), serif;
+    font-size: calc(var(--q-size) - 1px);
+    line-height: 1.55;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-500);
+  outline-offset: 2px;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

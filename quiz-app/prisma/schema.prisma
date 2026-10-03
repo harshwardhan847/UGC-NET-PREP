@@ -23,6 +23,7 @@ model Question {
   unitName    String
   conceptName String
   attempts    Attempt[]
+  bookmark    Bookmark?
 }
 
 model Attempt {
@@ -34,15 +35,31 @@ model Attempt {
   createdAt   DateTime     @default(now())
   sessionId   String?
   session     QuizSession? @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  timeSpent   Int?         // seconds spent on the question before answering
+  source      String?      // "quiz", "swipe", "weightage", "repeats", "bank"
+
+  @@index([questionId, createdAt])
+  @@index([createdAt])
 }
 
 model QuizSession {
   id          String    @id @default(uuid())
   date        DateTime  @default(now())
-  mode        String    // "practice", "mock", "custom"
+  mode        String    // "practice", "mock", "custom", "smart", "review"
+  title       String?
   unit        Int?
   unitName    String?
+  paper       String?
   score       Int
   total       Int
+  duration    Int?      // seconds
   attempts    Attempt[]
+}
+
+model Bookmark {
+  questionId  String   @id
+  question    Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  note        String   @default("")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }

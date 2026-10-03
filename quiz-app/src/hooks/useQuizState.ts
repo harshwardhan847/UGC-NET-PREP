@@ -1,380 +1,266 @@
-import { useState, useEffect, useCallback, useRef } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
+import { useStudyData } from "./useStudyData"
+import { useSettings, type FeedbackMode } from "@/lib/settings"
+import type { OptionKey, Question, QuizMode } from "@/lib/types"
 
-const UNITS: { [key: number]: string } = {
-  1: "Discrete Structures and Optimization",
-  2: "Computer System Architecture",
-  3: "Programming Languages & Computer Graphics",
-  4: "Database Management Systems (DBMS)",
-  5: "System Software and Operating System",
-  6: "Software Engineering",
-  7: "Data Structures and Algorithms",
-  8: "Theory of Computation and Compilers",
-  9: "Data Communication and Computer Networks",
-  10: "Artificial Intelligence (AI)",
-  11: "General Paper 1"
+export interface QuizConfig {
+  mode: QuizMode
+  title: string
+  questions: Question[]
+  timeLimit: number // seconds; 0 = untimed
+  feedback: FeedbackMode
+  unit?: number | null
+  unitName?: string | null
+  paper?: string | null
 }
 
-// Type definitions
-export interface Question {
-  id: string
-  year: string
-  paper: string
-  q_num: number
-  question: string
-  options: {
-    A: string
-    B: string
-    C: string
-    D: string
-  }
-  answer: string
-  solution: string
-  unit: number
-  unit_name: string
+export type QuizPhase = "idle" | "running" | "results" | "review"
+
+export interface CheckedAnswer {
+  isCorrect: boolean
+  attemptId: string | null
 }
 
-export interface QuizSession {
-  id: string
-  date: string
-  mode: "practice" | "mock" | "custom"
-  unit?: number
-  unitName?: string
-  score: number
-  total: number
-  incorrectIds: string[]
+export interface ReinforceTarget {
+  question: Question
+  userChoice: string
 }
 
-export interface MasteryRecord {
-  correct: number
-  attempts: number
-}
-
-export interface UnitMastery {
-  [unitId: number]: MasteryRecord
-}
+type Flags = Record<string, true>
 
 export const useQuizState = () => {
-  const [questions, setQuestions] = useState<Question[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
-  
-  // Dashboard & Navigation state
-  const [activeTab, setActiveTab] = useState<"dashboard" | "quiz">("dashboard")
-  
-  // Quiz Configuration state
-  const [quizMode, setQuizMode] = useState<"practice" | "mock" | "custom" | null>(null)
-  const [selectedUnit, setSelectedUnit] = useState<number | null>(null)
-  const [selectedPaper, setSelectedPaper] = useState<string | null>(null)
-  
-  const [customNumQuestions, setCustomNumQuestions] = useState<number>(20)
-  const [customTimeLimit, setCustomTimeLimit] = useState<number>(30) // in minutes
-  const [customSelectedUnits, setCustomSelectedUnits] = useState<number[]>([])
-  
-  // Running Quiz state
-  const [activeQuestions, setActiveQuestions] = useState<Question[]>([])
-  const [currentIndex, setCurrentIndex] = useState<number>(0)
-  const [selectedAnswers, setSelectedAnswers] = useState<{ [qId: string]: string }>({})
-  const [submittedAnswers, setSubmittedAnswers] = useState<{ [qId: string]: boolean }>({})
-  const [skippedQuestions, setSkippedQuestions] = useState<{ [qId: string]: boolean }>({})
-  const [isQuizActive, setIsQuizActive] = useState<boolean>(false)
-  const [isQuizFinished, setIsQuizFinished] = useState<boolean>(false)
-  
-  // Reinforcement Mode state
-  // Indicates if the reinforcement learning sub-session is active for the current question
-  const [isReinforcing, setIsReinforcing] = useState<boolean>(false)
-  const [currentIncorrectQ, setCurrentIncorrectQ] = useState<Question | null>(null)
-  
-  // Timer state
-  const [timeLeft, setTimeLeft] = useState<number>(0) // in seconds
-  const timerRef = useRef<NodeJS.Timeout | null>(null)
-  
-  // Statistics and History
-  const [history, setHistory] = useState<QuizSession[]>([])
-  const [unitMastery, setUnitMastery] = useState<UnitMastery>({})
+  const { logAttempt, applyAttemptsLocally, refreshStats } = useStudyData()
+  const { settings } = useSettings()
 
-  // Load questions, history & mastery from SQLite DB
-  const refreshData = useCallback(async () => {
-    setLoading(true)
-    try {
-      // Fetch questions
-      const qRes = await fetch("/api/questions")
-      if (qRes.ok) {
-        const qData = await qRes.json()
-        setQuestions(qData)
-      }
-      
-      // Fetch stats & history
-      const sRes = await fetch("/api/stats")
-      if (sRes.ok) {
-        const sData = await sRes.json()
-        setHistory(sData.history)
-        
-        // Map unit mastery stats
-        const mastery: UnitMastery = {}
-        for (let u = 1; u <= 11; u++) {
-          const m = sData.unitMastery[u] || { correct: 0, attempts: 0, total: 0 }
-          mastery[u] = { correct: m.correct, attempts: m.attempts }
-        }
-        setUnitMastery(mastery)
-      }
-    } catch (err) {
-      console.error("Failed to load data from SQLite database", err)
-    } finally {
-      setLoading(false)
-    }
+  const [config, setConfig] = useState<QuizConfig | null>(null)
+  const [phase, setPhase] = useState<QuizPhase>("idle")
+  const [currentIndex, setCurrentIndexRaw] = useState(0)
+  const [answers, setAnswers] = useState<Record<string, OptionKey>>({})
+  const [checked, setChecked] = useState<Record<string, CheckedAnswer>>({})
+  const [skipped, setSkipped] = useState<Flags>({})
+  const [marked, setMarked] = useState<Flags>({})
+  const [visited, setVisited] = useState<Flags>({})
+  const [timeSpent, setTimeSpent] = useState<Record<string, number>>({})
+  const [elapsed, setElapsed] = useState(0)
+  const [paused, setPaused] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [reinforce, setReinforce] = useState<ReinforceTarget | null>(null)
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const questions = useMemo(() => config?.questions ?? [], [config])
+  const currentQ = questions[currentIndex] as Question | undefined
+  const isInstant = config?.feedback === "instant"
+  const isFinished = phase === "results" || phase === "review"
+  const timeLeft = config && config.timeLimit > 0 ? Math.max(0, config.timeLimit - elapsed) : null
+
+  // Record that the question at `index` has been opened (for the palette's "seen" state)
+  const markVisited = useCallback((list: Question[], index: number) => {
+    const q = list[index]
+    if (q) setVisited(prev => (prev[q.id] ? prev : { ...prev, [q.id]: true }))
   }, [])
 
-  useEffect(() => {
-    refreshData()
-  }, [refreshData])
+  const setCurrentIndex = useCallback((index: number) => {
+    if (advanceTimer.current) clearTimeout(advanceTimer.current)
+    const next = Math.max(0, Math.min(index, questions.length - 1))
+    setCurrentIndexRaw(next)
+    markVisited(questions, next)
+  }, [questions, markVisited])
 
-  // Update mastery manually when a question is submitted
-  const recordQuestionAttempt = useCallback((unitId: number, isCorrect: boolean) => {
-    setUnitMastery(prev => {
-      const current = prev[unitId] || { correct: 0, attempts: 0 }
-      const updated = {
-        ...prev,
-        [unitId]: {
-          attempts: current.attempts + 1,
-          correct: current.correct + (isCorrect ? 1 : 0)
-        }
+  // One-second clock: overall elapsed time plus time on the current question
+  useEffect(() => {
+    if (phase !== "running" || paused || !currentQ) return
+    const qId = currentQ.id
+    const id = setInterval(() => {
+      setElapsed(e => e + 1)
+      setTimeSpent(prev => ({ ...prev, [qId]: (prev[qId] || 0) + 1 }))
+    }, 1000)
+    return () => clearInterval(id)
+  }, [phase, paused, currentQ])
+
+  const startQuiz = useCallback((next: QuizConfig) => {
+    if (next.questions.length === 0) return false
+    if (advanceTimer.current) clearTimeout(advanceTimer.current)
+    setConfig(next)
+    setCurrentIndexRaw(0)
+    setAnswers({})
+    setChecked({})
+    setSkipped({})
+    setMarked({})
+    setVisited(next.questions[0] ? { [next.questions[0].id]: true } : {})
+    setTimeSpent({})
+    setElapsed(0)
+    setPaused(false)
+    setReinforce(null)
+    setPhase("running")
+    return true
+  }, [])
+
+  const selectAnswer = useCallback((qId: string, option: OptionKey) => {
+    if (phase !== "running" || checked[qId]) return
+    setAnswers(prev => ({ ...prev, [qId]: option }))
+    setSkipped(prev => {
+      if (!prev[qId]) return prev
+      const rest = { ...prev }
+      delete rest[qId]
+      return rest
+    })
+  }, [phase, checked])
+
+  const clearAnswer = useCallback((qId: string) => {
+    if (phase !== "running" || checked[qId]) return
+    setAnswers(prev => {
+      const rest = { ...prev }
+      delete rest[qId]
+      return rest
+    })
+  }, [phase, checked])
+
+  const goNext = useCallback(() => setCurrentIndex(currentIndex + 1), [currentIndex, setCurrentIndex])
+  const goPrev = useCallback(() => setCurrentIndex(currentIndex - 1), [currentIndex, setCurrentIndex])
+
+  // Instant-feedback check of one answer: logs it immediately
+  const submitAnswer = useCallback(async (qId: string) => {
+    if (phase !== "running" || checked[qId]) return
+    const question = questions.find(q => q.id === qId)
+    const choice = answers[qId]
+    if (!question || !choice) return
+
+    const isCorrect = choice === question.answer
+    setChecked(prev => ({ ...prev, [qId]: { isCorrect, attemptId: null } }))
+
+    if (!isCorrect && settings.aiReinforcement) {
+      setReinforce({ question, userChoice: choice })
+    }
+    if (isCorrect && settings.autoAdvance && currentIndex < questions.length - 1) {
+      advanceTimer.current = setTimeout(() => setCurrentIndex(currentIndex + 1), 900)
+    }
+
+    const { attemptId } = await logAttempt(question, choice, { source: "quiz", timeSpent: timeSpent[qId] })
+    setChecked(prev => ({ ...prev, [qId]: { isCorrect, attemptId } }))
+  }, [phase, checked, questions, answers, settings.aiReinforcement, settings.autoAdvance, currentIndex, setCurrentIndex, logAttempt, timeSpent])
+
+  const skipQuestion = useCallback((qId: string) => {
+    if (!answers[qId] && !checked[qId]) setSkipped(prev => ({ ...prev, [qId]: true }))
+    goNext()
+  }, [answers, checked, goNext])
+
+  const toggleMarked = useCallback((qId: string) => {
+    setMarked(prev => {
+      if (prev[qId]) {
+        const rest = { ...prev }
+        delete rest[qId]
+        return rest
       }
-      return updated
+      return { ...prev, [qId]: true }
     })
   }, [])
 
-  // Timer loop
-  useEffect(() => {
-    if (isQuizActive && timeLeft > 0 && !isQuizFinished) {
-      timerRef.current = setTimeout(() => {
-        setTimeLeft(prev => prev - 1)
-      }, 1000)
-    } else if (timeLeft === 0 && isQuizActive && !isQuizFinished) {
-      finishQuiz()
-    }
-    
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current)
-    }
-  }, [isQuizActive, timeLeft, isQuizFinished])
+  const finishQuiz = useCallback(async () => {
+    if (!config || phase !== "running") return
+    if (advanceTimer.current) clearTimeout(advanceTimer.current)
+    setPhase("results")
+    setPaused(false)
+    setSaving(true)
 
-  // Start Quiz based on configuration
-  const startQuiz = () => {
-    let selectedQs: Question[] = []
-    let duration = 0 // in seconds
-    
-    if (quizMode === "practice" && selectedUnit !== null) {
-      // Get all questions in the selected unit
-      selectedQs = questions.filter(q => q.unit === selectedUnit)
-      // Shuffle them
-      selectedQs = [...selectedQs].sort(() => 0.5 - Math.random()).slice(0, 20) // Default 20 for practice
-      duration = 20 * 90 // 90 seconds per question
-    } 
-    else if (quizMode === "mock" && selectedPaper !== null) {
-      // Filter by paper filename
-      selectedQs = questions.filter(q => q.paper === selectedPaper)
-      // Sort by question number to preserve paper flow
-      selectedQs = [...selectedQs].sort((a, b) => a.q_num - b.q_num)
-      duration = selectedQs.length === 50 ? 60 * 60 : 180 * 60 // 1 hour for Paper 1, 3 hours for CS
-    } 
-    else if (quizMode === "custom") {
-      // Custom filtering
-      const targetUnits = customSelectedUnits.length > 0 ? customSelectedUnits : Array.from({ length: 10 }, (_, i) => i + 1)
-      
-      selectedQs = questions.filter(q => targetUnits.includes(q.unit))
-      // Shuffle and slice
-      selectedQs = [...selectedQs].sort(() => 0.5 - Math.random()).slice(0, customNumQuestions)
-      duration = customTimeLimit * 60
-    }
-    
-    if (selectedQs.length === 0) {
-      alert("No questions found matching criteria.")
-      return
-    }
-    
-    setActiveQuestions(selectedQs)
-    setCurrentIndex(0)
-    setSelectedAnswers({})
-    setSubmittedAnswers({})
-    setSkippedQuestions({})
-    setTimeLeft(duration)
-    setIsQuizActive(true)
-    setIsQuizFinished(false)
-    setIsReinforcing(false)
-    setCurrentIncorrectQ(null)
-    setActiveTab("quiz")
-  }
+    let score = 0
+    const newAttempts: { questionId: string; userAnswer: string; isCorrect: boolean; timeSpent?: number }[] = []
+    const linkAttemptIds: string[] = []
 
-  // Answer Selection
-  const selectAnswer = (qId: string, option: string) => {
-    if (submittedAnswers[qId] || isQuizFinished) return
-    setSelectedAnswers(prev => ({ ...prev, [qId]: option }))
-  }
-
-  // Submit Answer to database and update local state
-  const submitAnswer = async (qId: string) => {
-    if (submittedAnswers[qId] || isQuizFinished) return
-    const userAns = selectedAnswers[qId]
-    if (!userAns) return
-    
-    const question = activeQuestions.find(q => q.id === qId)
-    if (!question) return
-    
-    const isCorrect = userAns === question.answer
-    
-    setSubmittedAnswers(prev => ({ ...prev, [qId]: true }))
-    recordQuestionAttempt(question.unit, isCorrect)
-    
-    // Log single attempt to SQLite database
-    try {
-      await fetch("/api/attempts", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          questionId: qId,
-          userAnswer: userAns,
-          isCorrect
-        })
-      })
-    } catch (err) {
-      console.error("Failed to submit attempt to DB", err)
-    }
-    
-    // Update local question list state
-    setQuestions(prev => prev.map(q => {
-      if (q.id === qId) {
-        return { ...q, isAnswered: true, isCorrect, userAnswer: userAns }
+    questions.forEach(q => {
+      const choice = answers[q.id]
+      if (!choice) return // Unanswered questions are not logged as attempts
+      const isCorrect = choice === q.answer
+      if (isCorrect) score += 1
+      const prior = checked[q.id]
+      if (prior) {
+        if (prior.attemptId) linkAttemptIds.push(prior.attemptId)
+      } else {
+        newAttempts.push({ questionId: q.id, userAnswer: choice, isCorrect, timeSpent: timeSpent[q.id] })
       }
-      return q
-    }))
-
-    // Remove from skipped list if submitted
-    setSkippedQuestions(prev => {
-      const updated = { ...prev }
-      delete updated[qId]
-      return updated
     })
-    
-    // If incorrect, trigger reinforcement mode
-    if (!isCorrect) {
-      setCurrentIncorrectQ(question)
-      setIsReinforcing(true)
-    }
-  }
 
-  // Skip Question
-  const skipQuestion = (qId: string) => {
-    setSkippedQuestions(prev => ({ ...prev, [qId]: true }))
-    setCurrentIndex(prev => Math.min(activeQuestions.length - 1, prev + 1))
-  }
-
-  // Finish Quiz, submit session and attempts, and reload stats
-  const finishQuiz = async () => {
-    setIsQuizActive(false)
-    setIsQuizFinished(true)
-    
-    if (timerRef.current) clearTimeout(timerRef.current)
-    
-    // Calculate final score
-    let correctCount = 0
-    const attemptsToSubmit: { questionId: string; userAnswer: string; isCorrect: boolean }[] = []
-    
-    activeQuestions.forEach(q => {
-      const userAns = selectedAnswers[q.id] || ""
-      const isCorrect = userAns === q.answer
-      if (isCorrect) {
-        correctCount++
-      }
-      attemptsToSubmit.push({
-        questionId: q.id,
-        userAnswer: userAns,
-        isCorrect
-      })
-    })
-    
-    // Submit session to SQLite
     try {
       await fetch("/api/sessions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          mode: quizMode || "practice",
-          unit: quizMode === "practice" ? selectedUnit : null,
-          unitName: quizMode === "practice" && selectedUnit !== null ? UNITS[selectedUnit] : null,
-          score: correctCount,
-          total: activeQuestions.length,
-          attempts: attemptsToSubmit
+          mode: config.mode,
+          title: config.title,
+          unit: config.unit ?? null,
+          unitName: config.unitName ?? null,
+          paper: config.paper ?? null,
+          score,
+          total: questions.length,
+          duration: elapsed,
+          attempts: newAttempts,
+          linkAttemptIds
         })
       })
-      
-      // Refresh global state from DB
-      await refreshData()
+      if (newAttempts.length > 0) applyAttemptsLocally(newAttempts)
+      else await refreshStats()
     } catch (err) {
       console.error("Failed to save quiz session", err)
+    } finally {
+      setSaving(false)
     }
-  }
+  }, [config, phase, questions, answers, checked, timeSpent, elapsed, applyAttemptsLocally, refreshStats])
 
-  // Reset/Quit Quiz
-  const quitQuiz = () => {
-    setIsQuizActive(false)
-    setIsQuizFinished(false)
-    setActiveQuestions([])
-    setSelectedAnswers({})
-    setSubmittedAnswers({})
-    setSkippedQuestions({})
-    setCurrentIndex(0)
-    setIsReinforcing(false)
-    setCurrentIncorrectQ(null)
-    setActiveTab("dashboard")
-    setQuizMode(null)
-  }
+  // Auto-submit when time runs out
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reacting to the clock reaching zero
+    if (phase === "running" && timeLeft === 0) finishQuiz()
+  }, [phase, timeLeft, finishQuiz])
+
+  const reviewAnswers = useCallback((index = 0) => {
+    setCurrentIndex(index)
+    setPhase("review")
+  }, [setCurrentIndex])
+
+  const showResults = useCallback(() => setPhase("results"), [])
+
+  const quitQuiz = useCallback(() => {
+    if (advanceTimer.current) clearTimeout(advanceTimer.current)
+    setConfig(null)
+    setPhase("idle")
+    setReinforce(null)
+    setPaused(false)
+  }, [])
 
   return {
+    config,
+    phase,
     questions,
-    activeTab,
-    setActiveTab,
-    
-    // Config states & handlers
-    quizMode,
-    setQuizMode,
-    selectedUnit,
-    setSelectedUnit,
-    selectedPaper,
-    setSelectedPaper,
-    customNumQuestions,
-    setCustomNumQuestions,
-    customTimeLimit,
-    setCustomTimeLimit,
-    customSelectedUnits,
-    setCustomSelectedUnits,
-    startQuiz,
-    
-    // Quiz runtime state
-    activeQuestions,
+    currentQ,
     currentIndex,
     setCurrentIndex,
-    selectedAnswers,
-    submittedAnswers,
-    skippedQuestions,
+    goNext,
+    goPrev,
+    answers,
+    checked,
+    skipped,
+    marked,
+    visited,
+    timeSpent,
+    elapsed,
+    timeLeft,
+    paused,
+    setPaused,
+    saving,
+    isInstant,
+    isFinished,
+    startQuiz,
     selectAnswer,
+    clearAnswer,
     submitAnswer,
     skipQuestion,
-    isQuizActive,
-    isQuizFinished,
-    timeLeft,
+    toggleMarked,
     finishQuiz,
+    reviewAnswers,
+    showResults,
     quitQuiz,
-    
-    // Reinforcement state
-    isReinforcing,
-    setIsReinforcing,
-    currentIncorrectQ,
-    setCurrentIncorrectQ,
-    
-    // Stats & History
-    history,
-    unitMastery,
-    recordQuestionAttempt,
-    refreshData,
-    loading
+    reinforce,
+    setReinforce
   }
 }
+
+export type QuizState = ReturnType<typeof useQuizState>

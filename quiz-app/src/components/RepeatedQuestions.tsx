@@ -1,347 +1,159 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { 
-  GitCompare, CheckCircle2, XCircle, ChevronDown, 
-  ChevronRight, Award, HelpCircle, Info
-} from "lucide-react"
+import React, { useEffect, useMemo, useState } from "react"
+import { CheckCircle2, Info, Play } from "lucide-react"
+import { useStudyData } from "@/hooks/useStudyData"
+import { useSettings } from "@/lib/settings"
+import type { QuizConfig } from "@/hooks/useQuizState"
+import type { Question } from "@/lib/types"
+import { UNITS, unitById } from "@/lib/constants"
+import { buildListQuiz } from "@/lib/quizBuilders"
+import { cn } from "@/lib/utils"
+import { Button, Panel } from "./ui"
+import QuestionCard from "./QuestionCard"
 
-interface Question {
-  id: string
-  year: string
-  paper: string
-  q_num: number
-  question: string
-  options: {
-    A: string
-    B: string
-    C: string
-    D: string
-  }
-  answer: string
-  solution: string
-  unit?: number
-  unit_name?: string
-  isAnswered?: boolean
-  isCorrect?: boolean
-  userAnswer?: string | null
-}
-
-interface DuplicateGroup {
+interface DuplicateGroupRaw {
   group_id: number
   unit: number
   unit_name: string
+  questions: { id: string }[]
+}
+
+interface DuplicateGroup {
+  id: number
+  unit: number
   questions: Question[]
 }
 
-interface RepeatedQuestionsProps {
-  onAttemptLogged: () => void // Callback to refresh global stats
-}
-
-export default function RepeatedQuestions({ onAttemptLogged }: RepeatedQuestionsProps) {
-  const [duplicateGroups, setDuplicateGroups] = useState<DuplicateGroup[]>([])
-  const [activeGroupId, setActiveGroupId] = useState<number>(1)
-  const [loading, setLoading] = useState<boolean>(true)
-  
-  // Interactive testing state
-  const [selectedOptions, setSelectedOptions] = useState<{ [qId: string]: string }>({})
-  const [attemptedQs, setAttemptedQs] = useState<{ [qId: string]: { isAnswered: boolean; isCorrect: boolean; userAnswer: string } }>({})
-  const [revealedSolutions, setRevealedSolutions] = useState<{ [qId: string]: boolean }>({})
-
-  // Fetch enriched duplicate groups from database
-  const fetchDuplicates = async () => {
-    setLoading(true)
-    try {
-      const res = await fetch("/api/duplicates")
-      if (res.ok) {
-        const data = await res.json()
-        setDuplicateGroups(data)
-        
-        // Initialize attempts dictionary
-        const attemptsMap: typeof attemptedQs = {}
-        const optionsMap: typeof selectedOptions = {}
-        
-        data.forEach((group: DuplicateGroup) => {
-          group.questions.forEach((q: Question) => {
-            if (q.isAnswered) {
-              attemptsMap[q.id] = {
-                isAnswered: true,
-                isCorrect: q.isCorrect || false,
-                userAnswer: q.userAnswer || ""
-              }
-              optionsMap[q.id] = q.userAnswer || ""
-            }
-          })
-        })
-        setAttemptedQs(attemptsMap)
-        setSelectedOptions(optionsMap)
-      }
-    } catch (err) {
-      console.error("Failed to fetch duplicates", err)
-    } finally {
-      setLoading(false)
-    }
-  }
+export default function RepeatedQuestions({ onStartQuiz }: { onStartQuiz: (config: QuizConfig) => void }) {
+  const { questionMap } = useStudyData()
+  const { settings } = useSettings()
+  const [raw, setRaw] = useState<DuplicateGroupRaw[]>([])
+  const [loading, setLoading] = useState(true)
+  const [activeId, setActiveId] = useState<number | null>(null)
+  const [unitFilter, setUnitFilter] = useState<number | "all">("all")
 
   useEffect(() => {
-    fetchDuplicates()
+    fetch("/api/duplicates")
+      .then(res => (res.ok ? res.json() : []))
+      .then((data: DuplicateGroupRaw[]) => {
+        setRaw(data)
+        setActiveId(data[0]?.group_id ?? null)
+      })
+      .catch(err => console.error("Failed to fetch duplicates", err))
+      .finally(() => setLoading(false))
   }, [])
 
-  // Submit attempt to SQLite
-  const handleAnswerSubmit = async (qId: string) => {
-    const userChoice = selectedOptions[qId]
-    if (!userChoice) return
+  // Resolve each group's questions from the shared store so progress stays in sync
+  const groups = useMemo<DuplicateGroup[]>(
+    () =>
+      raw
+        .map(g => ({ id: g.group_id, unit: g.unit, questions: g.questions.map(q => questionMap.get(q.id)).filter((q): q is Question => Boolean(q)) }))
+        .filter(g => g.questions.length > 0),
+    [raw, questionMap]
+  )
 
-    // Find question
-    let question: Question | undefined
-    for (const group of duplicateGroups) {
-      question = group.questions.find(q => q.id === qId)
-      if (question) break
-    }
-    if (!question) return
-
-    const isCorrect = userChoice === question.answer
-
-    try {
-      const res = await fetch("/api/attempts", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          questionId: qId,
-          userAnswer: userChoice,
-          isCorrect
-        })
-      })
-
-      if (res.ok) {
-        setAttemptedQs(prev => ({
-          ...prev,
-          [qId]: { isAnswered: true, isCorrect, userAnswer: userChoice }
-        }))
-        setRevealedSolutions(prev => ({ ...prev, [qId]: true }))
-        onAttemptLogged()
-      }
-    } catch (err) {
-      console.error("Failed to submit attempt", err)
-    }
-  }
-
-  const activeGroup = duplicateGroups.find(g => g.group_id === activeGroupId)
+  const visibleGroups = groups.filter(g => unitFilter === "all" || g.unit === unitFilter)
+  const unitsWithGroups = UNITS.filter(u => groups.some(g => g.unit === u.id))
+  const active = groups.find(g => g.id === activeId)
+  const totalRepeatQs = groups.reduce((n, g) => n + g.questions.length, 0)
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl mx-auto px-4 py-8">
-      {/* Left Repeat list navigation */}
-      <div className="lg:col-span-4 flex flex-col gap-3">
-        <h2 className="text-lg font-bold tracking-tight px-2 flex items-center gap-2">
-          <GitCompare className="w-5 h-5 text-indigo-500" />
-          Repeating Clusters
-        </h2>
-        
-        {loading ? (
-          <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-6 text-center text-neutral-500 text-xs">
-            Loading groups...
-          </div>
-        ) : (
-          <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-2 flex flex-col gap-1 max-h-[70vh] overflow-y-auto">
-            {duplicateGroups.map(group => {
-              // Summarize repeating concepts
-              const firstQ = group.questions[0]?.question || ""
-              const summary = firstQ.substring(0, 40) + "..."
-              
-              // Count completed questions in this group
-              const solvedCount = group.questions.filter(q => attemptedQs[q.id]?.isAnswered).length
-
-              return (
-                <button
-                  key={group.group_id}
-                  onClick={() => setActiveGroupId(group.group_id)}
-                  className={`w-full text-left p-3 rounded-lg flex flex-col gap-1.5 transition-all cursor-pointer ${
-                    activeGroupId === group.group_id 
-                      ? "bg-indigo-50 dark:bg-indigo-600/10 border-l-3 border-indigo-500 text-indigo-600 dark:text-indigo-400 font-semibold"
-                      : "hover:bg-neutral-100 dark:hover:bg-neutral-850/50 text-neutral-500 dark:text-neutral-400 hover:text-neutral-850 dark:hover:text-neutral-200"
-                  }`}
-                >
-                  <div className="flex justify-between items-center text-xs">
-                    <span className="truncate max-w-[170px]">Cluster #{group.group_id}</span>
-                    <span className="text-[9px] bg-neutral-100 dark:bg-neutral-850 text-neutral-600 dark:text-neutral-400 px-1.5 py-0.5 rounded font-normal">
-                      {group.questions.length} cycles
-                    </span>
-                  </div>
-                  <div className="text-[10px] text-neutral-500 truncate leading-snug">
-                    {group.unit_name.split(" (")[0]}
-                  </div>
-                  <div className="text-[10px] text-neutral-600 italic truncate max-w-[240px]">
-                    "{summary}"
-                  </div>
-                  
-                  {solvedCount > 0 && (
-                    <div className="flex items-center gap-1 text-[9px] text-emerald-500/80 font-bold self-end mt-1">
-                      <CheckCircle2 className="w-3 h-3" /> {solvedCount}/{group.questions.length} solved
-                    </div>
-                  )}
-                </button>
-              )
-            })}
-          </div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-semibold tracking-tight">Repeated questions</h1>
+          <p className="text-neutral-600 dark:text-neutral-400 mt-1">
+            {groups.length > 0 ? `${groups.length} question patterns that came back across papers, ${totalRepeatQs} questions in all.` : "Question patterns that came back across papers."}
+          </p>
+        </div>
+        {groups.length > 0 && (
+          <Button
+            variant="secondary"
+            onClick={() => onStartQuiz(buildListQuiz("Repeated questions", visibleGroups.flatMap(g => g.questions), settings, { mode: "custom" }))}
+          >
+            <Play className="w-4 h-4" />
+            Practise repeats
+          </Button>
         )}
       </div>
 
-      {/* Right Comparison Panel */}
-      <div className="lg:col-span-8 flex flex-col gap-6">
-        {activeGroup ? (
-          <div className="flex flex-col gap-6">
-            {/* Group Header */}
-            <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-5 shadow-xs">
-              <h1 className="text-lg font-bold tracking-tight text-neutral-800 dark:text-neutral-200">
-                Repeated Question Cluster #{activeGroup.group_id}
-              </h1>
-              <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 flex items-center gap-1.5">
-                <Info className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
-                These questions share the exact same conceptual formula/structure across papers, often with changed variables.
-              </p>
-              <div className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider mt-3 bg-indigo-500/5 px-3 py-1.5 rounded-lg border border-indigo-500/10">
-                Syllabus Area: {activeGroup.unit_name}
-              </div>
-            </div>
-
-            {/* Side-by-side comparison Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {activeGroup.questions.map((q, idx) => {
-                const attempt = attemptedQs[q.id]
-                const hasSubmitted = attempt?.isAnswered
-                const isCorrect = attempt?.isCorrect
-                const showSol = revealedSolutions[q.id]
-
+      <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-6 items-start">
+        <div className="space-y-2 lg:sticky lg:top-4">
+          <select
+            value={unitFilter}
+            onChange={e => setUnitFilter(e.target.value === "all" ? "all" : Number(e.target.value))}
+            className="w-full h-9 px-3 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-sm"
+            aria-label="Filter by unit"
+          >
+            <option value="all">All units</option>
+            {unitsWithGroups.map(u => <option key={u.id} value={u.id}>{u.short}</option>)}
+          </select>
+          <Panel className="p-1.5 max-h-[45vh] lg:max-h-[calc(100vh-220px)] overflow-y-auto scrollbar-thin">
+            {loading ? (
+              <div className="p-6 text-center text-sm text-neutral-500">Loading clusters…</div>
+            ) : (
+              visibleGroups.map(g => {
+                const solved = g.questions.filter(q => q.isAnswered && q.isCorrect).length
                 return (
-                  <div 
-                    key={q.id}
-                    className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-5 shadow-sm flex flex-col gap-4 relative"
+                  <button
+                    key={g.id}
+                    onClick={() => setActiveId(g.id)}
+                    aria-current={activeId === g.id ? "true" : undefined}
+                    className={cn(
+                      "w-full text-left px-3 py-2.5 rounded-lg cursor-pointer transition-colors",
+                      activeId === g.id ? "bg-brand-50 dark:bg-brand-500/10" : "hover:bg-neutral-100 dark:hover:bg-neutral-800/60"
+                    )}
                   >
-                    {/* Header */}
-                    <div className="flex justify-between items-center text-[10px] border-b border-neutral-200 dark:border-neutral-850 pb-2">
-                      <span className="bg-purple-500/10 text-purple-400 border border-purple-500/10 px-2 py-0.5 rounded font-bold">
-                        {q.year} (Q.{q.q_num})
+                    <div className="flex items-center justify-between gap-2 text-xs">
+                      <span className="text-neutral-500">{unitById(g.unit)?.short}</span>
+                      <span className="text-neutral-500 tabular-nums">
+                        {solved === g.questions.length ? (
+                          <span className="inline-flex items-center gap-1 text-emerald-700 dark:text-emerald-400"><CheckCircle2 className="w-3.5 h-3.5" />Done</span>
+                        ) : (
+                          `${g.questions.length}× asked`
+                        )}
                       </span>
-                      <span className="text-neutral-500 font-semibold">{q.id}</span>
                     </div>
-
-                    {/* Question text */}
-                    <p className="text-xs text-neutral-800 dark:text-neutral-200 whitespace-pre-line leading-relaxed flex-1">
-                      {q.question}
-                    </p>
-
-                    {/* Options list */}
-                    <div className="flex flex-col gap-2.5 mt-2">
-                      {[
-                        { label: "A", text: q.options.A },
-                        { label: "B", text: q.options.B },
-                        { label: "C", text: q.options.C },
-                        { label: "D", text: q.options.D }
-                      ].map(opt => {
-                        if (!opt.text) return null
-                        
-                        const isSelected = selectedOptions[q.id] === opt.label
-                        const isCorrectChoice = opt.label === q.answer
-                        const wasUserAnswer = attempt?.userAnswer === opt.label
-
-                        let optionStyle = "border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-neutral-100 dark:hover:bg-neutral-850 text-neutral-600 dark:text-neutral-400 cursor-pointer"
-                        if (isSelected && !hasSubmitted) {
-                          optionStyle = "border-indigo-500 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 cursor-pointer"
-                        } else if (hasSubmitted) {
-                          if (isCorrectChoice) {
-                            optionStyle = "border-emerald-500/50 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
-                          } else if (wasUserAnswer && !isCorrect) {
-                            optionStyle = "border-red-500/50 bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400"
-                          } else {
-                            optionStyle = "border-neutral-200 dark:border-neutral-850 bg-neutral-50/10 dark:bg-neutral-900/10 text-neutral-400 dark:text-neutral-500 opacity-60"
-                          }
-                        }
-
-                        return (
-                          <button
-                            key={opt.label}
-                            disabled={hasSubmitted}
-                            onClick={() => setSelectedOptions(prev => ({ ...prev, [q.id]: opt.label }))}
-                            className={`w-full text-left p-2.5 rounded-lg border text-[11px] flex items-start gap-2.5 transition-all ${optionStyle}`}
-                          >
-                            <span className={`w-4 h-4 rounded-full flex items-center justify-center font-bold text-[9px] shrink-0 ${
-                              isSelected && !hasSubmitted 
-                                ? "bg-indigo-500 text-white" 
-                                : hasSubmitted && isCorrectChoice 
-                                  ? "bg-emerald-500 text-white" 
-                                  : hasSubmitted && wasUserAnswer && !isCorrect 
-                                    ? "bg-red-500 text-white" 
-                                    : "bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400"
-                            }`}>
-                              {opt.label}
-                            </span>
-                            <span className="leading-snug">{opt.text}</span>
-                          </button>
-                        )
-                      })}
+                    <div className={cn("text-sm mt-0.5 line-clamp-2", activeId === g.id ? "text-brand-900 dark:text-brand-100 font-medium" : "text-neutral-700 dark:text-neutral-300")}>
+                      {g.questions[0].question.replace(/\s+/g, " ")}
                     </div>
-
-                    {/* Actions and toggle */}
-                    <div className="flex justify-between items-center mt-3 pt-3 border-t border-neutral-200 dark:border-neutral-855">
-                      {!hasSubmitted ? (
-                        <button
-                          onClick={() => handleAnswerSubmit(q.id)}
-                          disabled={!selectedOptions[q.id]}
-                          className="px-3 py-1.5 rounded bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:hover:bg-indigo-600 text-[10px] font-semibold text-white transition-colors cursor-pointer"
-                        >
-                          Submit Answer
-                        </button>
-                      ) : (
-                        <div className="flex items-center gap-1.5 text-[11px]">
-                          {isCorrect ? (
-                            <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
-                              <CheckCircle2 className="w-3.5 h-3.5" /> Correct
-                            </span>
-                          ) : (
-                            <span className="flex items-center gap-1 text-red-500 dark:text-red-400 font-bold">
-                              <XCircle className="w-3.5 h-3.5" /> Incorrect
-                            </span>
-                          )}
-                        </div>
-                      )}
-
-                      {hasSubmitted && (
-                        <button
-                          onClick={() => setRevealedSolutions(prev => ({ ...prev, [q.id]: !showSol }))}
-                          className="text-[10px] text-neutral-500 hover:text-neutral-700 dark:text-neutral-450 dark:hover:text-neutral-200 underline cursor-pointer"
-                        >
-                          {showSol ? "Hide Solution" : "View Explanation"}
-                        </button>
-                      )}
-                    </div>
-
-                    {/* Solution panel */}
-                    <AnimatePresence>
-                      {showSol && hasSubmitted && (
-                        <motion.div 
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          className="bg-neutral-50 dark:bg-neutral-950 p-3.5 border border-neutral-200 dark:border-neutral-850 rounded-lg text-[11px] text-neutral-600 dark:text-neutral-400 flex flex-col gap-1.5 mt-2 leading-relaxed overflow-hidden"
-                        >
-                          <div className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
-                            Correct Option: {q.answer}
-                          </div>
-                          <p className="whitespace-pre-line text-neutral-700 dark:text-neutral-300 font-medium">{q.solution || "No explanation provided."}</p>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
+                  </button>
                 )
-              })}
-            </div>
-          </div>
-        ) : (
-          <div className="text-center py-12 text-neutral-500 text-sm">
-            Select a repeating question cluster from the left panel.
-          </div>
-        )}
+              })
+            )}
+          </Panel>
+        </div>
+
+        <div className="space-y-4 min-w-0">
+          {active ? (
+            <>
+              <Panel className="p-4 flex items-start gap-3">
+                <Info className="w-4 h-4 text-brand-500 shrink-0 mt-0.5" />
+                <div className="text-sm text-neutral-600 dark:text-neutral-400 flex-1">
+                  These {active.questions.length} questions test the same idea, often with different numbers.
+                  Asked in {active.questions.map(q => q.year).join(", ")}.
+                </div>
+                <Button size="sm" variant="primary" onClick={() => onStartQuiz(buildListQuiz("Repeat cluster", active.questions, settings, { mode: "custom" }))}>
+                  Practise
+                </Button>
+              </Panel>
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 items-start">
+                {active.questions.map(q => (
+                  <QuestionCard
+                    key={q.id}
+                    question={q}
+                    source="repeats"
+                    compact
+                    header={<span className="font-medium text-neutral-700 dark:text-neutral-300">{q.year}, Q{q.q_num}</span>}
+                  />
+                ))}
+              </div>
+            </>
+          ) : (
+            !loading && <div className="text-center py-12 text-neutral-500 text-sm">Choose a cluster on the left.</div>
+          )}
+        </div>
       </div>
     </div>
   )

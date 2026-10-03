@@ -1,90 +1,119 @@
 import { NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
+import type { ConceptStats, DailyActivity, Stats, UnitStats } from '@/lib/types'
+
+const localDateKey = (d: Date) => {
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${day}`
+}
 
 export async function GET() {
   try {
-    const totalQuestions = await prisma.question.count()
-    const totalSessions = await prisma.quizSession.count()
-    
-    // Total attempts
-    const totalAttempts = await prisma.attempt.count()
-    const correctAttempts = await prisma.attempt.count({
-      where: { isCorrect: true }
-    })
-    
-    const averageScore = totalAttempts > 0 
-      ? Math.round((correctAttempts / totalAttempts) * 100)
-      : 0
+    const [questions, attempts, sessions, sessionCount, bookmarkCount] = await Promise.all([
+      prisma.question.findMany({ select: { id: true, unit: true, conceptName: true } }),
+      prisma.attempt.findMany({
+        select: { questionId: true, isCorrect: true, createdAt: true, timeSpent: true },
+        orderBy: { createdAt: 'asc' }
+      }),
+      prisma.quizSession.findMany({ orderBy: { date: 'desc' }, take: 30 }),
+      prisma.quizSession.count(),
+      prisma.bookmark.count()
+    ])
 
-    // Unique questions attempted
-    const uniqueAttempted = await prisma.question.count({
-      where: {
-        attempts: {
-          some: {}
-        }
-      }
-    })
+    const questionInfo = new Map(questions.map(q => [q.id, q]))
 
-    // Calculate unit mastery
-    const questionsByUnit = await prisma.question.groupBy({
-      by: ['unit'],
-      _count: { id: true }
-    })
-
-    // Fetch attempts grouped by question's unit
-    const attempts = await prisma.attempt.findMany({
-      include: {
-        question: {
-          select: { unit: true }
-        }
-      }
-    })
-
-    const unitStats: { [unitId: number]: { correct: number; attempts: number; total: number } } = {}
-    
-    // Initialize units 1 to 11
+    const units: Record<number, UnitStats> = {}
     for (let u = 1; u <= 11; u++) {
-      unitStats[u] = { correct: 0, attempts: 0, total: 0 }
+      units[u] = { total: 0, attempted: 0, mastered: 0, attempts: 0, correct: 0 }
     }
+    const concepts = new Map<string, ConceptStats>()
+    const conceptKey = (unit: number, name: string) => `${unit}::${name}`
 
-    questionsByUnit.forEach(qGroup => {
-      if (unitStats[qGroup.unit]) {
-        unitStats[qGroup.unit].total = qGroup._count.id
-      }
+    questions.forEach(q => {
+      if (units[q.unit]) units[q.unit].total += 1
+      const key = conceptKey(q.unit, q.conceptName)
+      const c = concepts.get(key) || { unit: q.unit, name: q.conceptName, total: 0, attempts: 0, correct: 0 }
+      c.total += 1
+      concepts.set(key, c)
     })
 
+    const daily = new Map<string, DailyActivity>()
+    const latestByQuestion = new Map<string, boolean>()
+    let correct = 0
+    let time = 0
+
+    // Attempts are in ascending order, so the last write per question is its latest result
     attempts.forEach(att => {
-      const uId = att.question.unit
-      if (unitStats[uId]) {
-        unitStats[uId].attempts += 1
-        if (att.isCorrect) {
-          unitStats[uId].correct += 1
-        }
+      const q = questionInfo.get(att.questionId)
+      if (!q) return
+      if (att.isCorrect) correct += 1
+      time += att.timeSpent || 0
+      latestByQuestion.set(att.questionId, att.isCorrect)
+
+      if (units[q.unit]) {
+        units[q.unit].attempts += 1
+        if (att.isCorrect) units[q.unit].correct += 1
+      }
+      const c = concepts.get(conceptKey(q.unit, q.conceptName))
+      if (c) {
+        c.attempts += 1
+        if (att.isCorrect) c.correct += 1
+      }
+
+      const key = localDateKey(att.createdAt)
+      const day = daily.get(key) || { date: key, attempts: 0, correct: 0, time: 0 }
+      day.attempts += 1
+      if (att.isCorrect) day.correct += 1
+      day.time += att.timeSpent || 0
+      daily.set(key, day)
+    })
+
+    let mastered = 0
+    let mistakes = 0
+    latestByQuestion.forEach((isCorrect, qId) => {
+      const q = questionInfo.get(qId)
+      if (!q || !units[q.unit]) return
+      units[q.unit].attempted += 1
+      if (isCorrect) {
+        units[q.unit].mastered += 1
+        mastered += 1
+      } else {
+        mistakes += 1
       }
     })
 
-    // Get recent quiz sessions
-    const sessions = await prisma.quizSession.findMany({
-      orderBy: { date: 'desc' },
-      take: 15
-    })
-
-    return NextResponse.json({
-      totalQuestions,
-      totalAttempted: uniqueAttempted,
-      averageScore,
-      totalSessions,
-      unitMastery: unitStats,
+    const stats: Stats = {
+      totals: {
+        questions: questions.length,
+        attempted: latestByQuestion.size,
+        mastered,
+        mistakes,
+        attempts: attempts.length,
+        correct,
+        sessions: sessionCount,
+        time,
+        bookmarks: bookmarkCount
+      },
+      daily: Array.from(daily.values()),
+      units,
+      concepts: Array.from(concepts.values()),
       history: sessions.map(s => ({
         id: s.id,
         date: s.date.toISOString(),
-        mode: s.mode,
+        mode: s.mode as Stats['history'][number]['mode'],
+        title: s.title,
         unit: s.unit,
         unitName: s.unitName,
+        paper: s.paper,
         score: s.score,
-        total: s.total
+        total: s.total,
+        duration: s.duration
       }))
-    })
+    }
+
+    return NextResponse.json(stats)
   } catch (error: any) {
     console.error("Error fetching stats:", error)
     return NextResponse.json({ error: error.message }, { status: 500 })

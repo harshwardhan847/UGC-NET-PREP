@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Send, HelpCircle, BookOpen, Calculator, RefreshCw, Bot, User } from "lucide-react"
 import Markdown from "./Markdown"
-import { Question } from "@/hooks/useQuizState"
+import type { Question } from "@/lib/types"
 
 interface Message {
   id: string
@@ -16,7 +16,19 @@ interface ChatSidebarProps {
 }
 
 export default function ChatSidebar({ currentQ }: ChatSidebarProps) {
-  const [messages, setMessages] = useState<Message[]>([])
+  // The parent keys this component by question, so each question starts a fresh thread
+  const [messages, setMessages] = useState<Message[]>(() => [
+    {
+      id: "welcome",
+      role: "assistant",
+      content: `Hello! I'm your AI tutor. You're looking at **Question ${currentQ.q_num}** from **${currentQ.year}** (*${currentQ.unit_name}*).
+
+How can I help? You can ask me to:
+- Explain the concept behind this question.
+- Derive any formulas it uses.
+- Walk you through the solution step by step.`
+    }
+  ])
   const [input, setInput] = useState<string>("")
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
@@ -27,22 +39,6 @@ export default function ChatSidebar({ currentQ }: ChatSidebarProps) {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages])
 
-  // Reset chat thread and show a welcome message whenever the question changes
-  useEffect(() => {
-    setMessages([
-      {
-        id: "welcome",
-        role: "assistant",
-        content: `Hello! I am your AI Computer Science tutor. I see you are looking at **Question ${currentQ.q_num}** from **${currentQ.year}** (under *${currentQ.unit_name}*). 
-
-How can I help you? You can ask me to:
-- Explain this concept in detail.
-- Derivate any formulas used.
-- Guide you through the solution step-by-step.`
-      }
-    ])
-    setError(null)
-  }, [currentQ])
 
   const handleSend = async (textToSend?: string) => {
     const prompt = (textToSend || input).trim()
@@ -76,7 +72,8 @@ How can I help you? You can ask me to:
       })
 
       if (!response.ok) {
-        throw new Error("Tutor service is temporarily unavailable.")
+        const body = await response.json().catch(() => null)
+        throw new Error(body?.error || "The AI tutor is unavailable right now. Try again in a moment.")
       }
 
       const json = await response.json()
@@ -102,7 +99,7 @@ How can I help you? You can ask me to:
       
       {/* Header */}
       <div className="px-5 py-4 border-b border-neutral-200 dark:border-neutral-800 flex items-center gap-2 shrink-0 bg-neutral-50 dark:bg-neutral-950">
-        <Bot className="w-5 h-5 text-indigo-600 dark:text-indigo-400 shrink-0" />
+        <Bot className="w-5 h-5 text-brand-600 dark:text-brand-400 shrink-0" />
         <div>
           <h3 className="font-bold text-sm">AI Study Assistant</h3>
           <span className="text-[9px] text-neutral-400 font-semibold uppercase">Question Contextual Tutor</span>
@@ -121,14 +118,14 @@ How can I help you? You can ask me to:
             <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 border text-[10px] font-bold ${
               msg.role === "user" 
                 ? "bg-neutral-100 dark:bg-neutral-850 border-neutral-200 dark:border-neutral-700 text-neutral-800 dark:text-neutral-200" 
-                : "bg-indigo-600 border-indigo-600 text-white"
+                : "bg-brand-600 border-brand-600 text-white"
             }`}>
               {msg.role === "user" ? <User className="w-3.5 h-3.5" /> : <Bot className="w-3.5 h-3.5" />}
             </div>
             
             <div className={`rounded-2xl px-4 py-2.5 text-xs leading-relaxed font-medium shadow-2xs ${
               msg.role === "user"
-                ? "bg-indigo-600 text-white rounded-tr-none whitespace-pre-wrap"
+                ? "bg-brand-600 text-white rounded-tr-none whitespace-pre-wrap"
                 : "bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded-tl-none border border-neutral-200/50 dark:border-neutral-700/50"
             }`}>
               {msg.role === "user" ? (
@@ -141,11 +138,11 @@ How can I help you? You can ask me to:
         ))}
         {loading && (
           <div className="flex items-start gap-2.5 mr-auto max-w-[85%]">
-            <div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 bg-indigo-600 border border-indigo-600 text-white">
+            <div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 bg-brand-600 border border-brand-600 text-white">
               <Bot className="w-3.5 h-3.5" />
             </div>
             <div className="bg-neutral-100 dark:bg-neutral-800 border border-neutral-200/50 dark:border-neutral-700/50 rounded-2xl rounded-tl-none px-4 py-3 text-xs flex items-center gap-1.5 font-semibold text-neutral-400">
-              <RefreshCw className="w-3.5 h-3.5 animate-spin text-indigo-500" />
+              <RefreshCw className="w-3.5 h-3.5 animate-spin text-brand-500" />
               Tutor is typing...
             </div>
           </div>
@@ -165,23 +162,23 @@ How can I help you? You can ask me to:
           <div className="flex flex-col gap-1.5">
             <button
               onClick={() => handleSend("Explain this question and the correct answer.")}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg text-left text-[10px] font-bold text-neutral-600 dark:text-neutral-300 hover:border-indigo-500 hover:text-indigo-600 transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg text-left text-[10px] font-bold text-neutral-600 dark:text-neutral-300 hover:border-brand-500 hover:text-brand-600 transition-all cursor-pointer"
             >
-              <HelpCircle className="w-3 h-3 text-indigo-500" />
+              <HelpCircle className="w-3 h-3 text-brand-500" />
               Explain this question
             </button>
             <button
               onClick={() => handleSend("What are the key formulas or algorithms used here?")}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg text-left text-[10px] font-bold text-neutral-600 dark:text-neutral-300 hover:border-indigo-500 hover:text-indigo-600 transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg text-left text-[10px] font-bold text-neutral-600 dark:text-neutral-300 hover:border-brand-500 hover:text-brand-600 transition-all cursor-pointer"
             >
-              <Calculator className="w-3 h-3 text-indigo-500" />
+              <Calculator className="w-3 h-3 text-brand-500" />
               List key formulas
             </button>
             <button
               onClick={() => handleSend("Solve this question step-by-step.")}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg text-left text-[10px] font-bold text-neutral-600 dark:text-neutral-300 hover:border-indigo-500 hover:text-indigo-600 transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg text-left text-[10px] font-bold text-neutral-600 dark:text-neutral-300 hover:border-brand-500 hover:text-brand-600 transition-all cursor-pointer"
             >
-              <BookOpen className="w-3 h-3 text-indigo-500" />
+              <BookOpen className="w-3 h-3 text-brand-500" />
               Solve step-by-step
             </button>
           </div>
@@ -203,12 +200,12 @@ How can I help you? You can ask me to:
             onChange={(e) => setInput(e.target.value)}
             disabled={loading}
             placeholder="Ask AI tutor anything..."
-            className="flex-1 px-3 py-2 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 rounded-xl text-xs font-semibold focus:outline-hidden focus:ring-1 focus:ring-indigo-500 disabled:opacity-50"
+            className="flex-1 px-3 py-2 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 rounded-xl text-xs font-semibold focus:outline-hidden focus:ring-1 focus:ring-brand-500 disabled:opacity-50"
           />
           <button
             type="submit"
             disabled={loading || !input.trim()}
-            className="p-2.5 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:hover:bg-indigo-600 flex items-center justify-center shrink-0 cursor-pointer"
+            className="p-2.5 bg-brand-600 text-white rounded-xl hover:bg-brand-700 transition-colors disabled:opacity-50 disabled:hover:bg-brand-600 flex items-center justify-center shrink-0 cursor-pointer"
           >
             <Send className="w-4 h-4" />
           </button>

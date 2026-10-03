@@ -54,7 +54,7 @@ export default function Markdown({ content, className = "" }: MarkdownProps) {
           th: ({ node, ...props }) => <th className="p-2 font-bold" {...props} />,
           td: ({ node, ...props }) => <td className="p-2" {...props} />,
           blockquote: ({ node, ...props }) => (
-            <blockquote className="border-l-4 border-indigo-500 pl-3 italic my-2 text-neutral-500 dark:text-neutral-400" {...props} />
+            <blockquote className="border-l-4 border-brand-500 pl-3 italic my-2 text-neutral-500 dark:text-neutral-400" {...props} />
           )
         }}
       >

@@ -47,7 +47,9 @@ export async function GET(req: NextRequest) {
         attempts: {
           orderBy: { createdAt: 'desc' },
           take: 1
-        }
+        },
+        bookmark: true,
+        _count: { select: { attempts: true } }
       }
     })
 
@@ -73,7 +75,11 @@ export async function GET(req: NextRequest) {
         conceptName: q.conceptName,
         isAnswered: lastAttempt !== null,
         isCorrect: lastAttempt ? lastAttempt.isCorrect : false,
-        userAnswer: lastAttempt ? lastAttempt.userAnswer : null
+        userAnswer: lastAttempt ? lastAttempt.userAnswer : null,
+        lastAttemptAt: lastAttempt ? lastAttempt.createdAt.toISOString() : null,
+        attemptCount: q._count.attempts,
+        bookmarked: q.bookmark !== null,
+        note: q.bookmark?.note ?? ""
       }
     })
 

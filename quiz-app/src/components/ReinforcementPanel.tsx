@@ -1,8 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { Question } from "@/hooks/useQuizState"
+import type { Question } from "@/lib/types"
 import { HelpCircle, CheckCircle, AlertCircle, RefreshCw, GraduationCap, ArrowRight } from "lucide-react"
 import Markdown from "./Markdown"
 
@@ -59,7 +58,8 @@ export default function ReinforcementPanel({
         })
         
         if (!response.ok) {
-          throw new Error("Failed to load reinforcement data.")
+          const body = await response.json().catch(() => null)
+          throw new Error(body?.error || "The AI tutor couldn't prepare a follow-up question.")
         }
         
         const json = await response.json()
@@ -90,7 +90,7 @@ export default function ReinforcementPanel({
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center p-8 text-center space-y-3 h-full">
-        <RefreshCw className="w-8 h-8 text-indigo-600 animate-spin" />
+        <RefreshCw className="w-8 h-8 text-brand-600 animate-spin" />
         <h4 className="font-semibold text-sm">AI Tutor is analyzing your answer...</h4>
         <p className="text-xs text-neutral-400 max-w-[200px]">
           Identifying conceptual gaps and preparing a reinforcement sub-question.
@@ -121,11 +121,11 @@ export default function ReinforcementPanel({
     <div className="flex flex-col h-full bg-neutral-50 dark:bg-neutral-950">
       
       {/* Header */}
-      <div className="bg-indigo-600 text-white px-5 py-4 shrink-0 flex items-center gap-2 shadow-sm">
+      <div className="bg-brand-600 text-white px-5 py-4 shrink-0 flex items-center gap-2 shadow-sm">
         <GraduationCap className="w-6 h-6 shrink-0" />
         <div>
           <h3 className="font-bold text-sm">AI Reinforcement Tutor</h3>
-          <span className="text-[10px] text-indigo-100 uppercase tracking-wider font-semibold">Active Study Plan</span>
+          <span className="text-[10px] text-brand-100 uppercase tracking-wider font-semibold">Active Study Plan</span>
         </div>
       </div>
 
@@ -136,7 +136,7 @@ export default function ReinforcementPanel({
         <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-4 shadow-2xs space-y-2">
           <span className="text-[10px] font-bold text-amber-500 uppercase tracking-wider block">Concept Gap Identified</span>
           <p className="text-xs leading-relaxed font-semibold italic text-neutral-600 dark:text-neutral-300">
-            "{gapAnalysis}"
+            &ldquo;{gapAnalysis}&rdquo;
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function ReinforcementPanel({
         {/* Reinforcement Question */}
         <div className="space-y-3">
           <div className="flex items-center gap-1.5 text-[10px] font-bold text-neutral-400 uppercase tracking-wider">
-            <HelpCircle className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
+            <HelpCircle className="w-3.5 h-3.5 text-brand-500 shrink-0" />
             Reinforcement Question
           </div>
           
@@ -182,8 +182,8 @@ export default function ReinforcementPanel({
                     optBg = "opacity-50"
                   }
                 } else if (isSelected) {
-                  optBg = "bg-indigo-50 dark:bg-indigo-950/20 text-indigo-800 dark:text-indigo-300"
-                  optBorder = "border-indigo-600"
+                  optBg = "bg-brand-50 dark:bg-brand-950/20 text-brand-800 dark:text-brand-300"
+                  optBorder = "border-brand-600"
                 }
 
                 return (
@@ -194,7 +194,7 @@ export default function ReinforcementPanel({
                     className={`w-full flex items-start gap-3 p-3 rounded-lg border text-left text-xs transition-all ${optBg} ${optBorder}`}
                   >
                     <span className={`w-5 h-5 rounded-full border flex items-center justify-center shrink-0 font-bold text-[10px] ${
-                      isSelected ? "bg-indigo-600 border-indigo-600 text-white" : "border-neutral-300 dark:border-neutral-700"
+                      isSelected ? "bg-brand-600 border-brand-600 text-white" : "border-neutral-300 dark:border-neutral-700"
                     }`}>
                       {optKey}
                     </span>
@@ -238,7 +238,7 @@ export default function ReinforcementPanel({
         {isSubmitted && !isCorrect ? (
           <button
             onClick={handleRetry}
-            className="px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg hover:bg-indigo-700 transition-colors cursor-pointer"
+            className="px-4 py-2 bg-brand-600 text-white text-xs font-bold rounded-lg hover:bg-brand-700 transition-colors cursor-pointer"
           >
             Try Again
           </button>
@@ -254,7 +254,7 @@ export default function ReinforcementPanel({
           <button
             onClick={handleSubSubmit}
             disabled={!selectedSubAnswer}
-            className="px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            className="px-4 py-2 bg-brand-600 text-white text-xs font-bold rounded-lg hover:bg-brand-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
           >
             Verify Sub-Answer
           </button>

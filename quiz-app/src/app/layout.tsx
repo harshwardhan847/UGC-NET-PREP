@@ -1,20 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Instrument_Sans, Newsreader, JetBrains_Mono } from "next/font/google";
+import { SettingsProvider, THEME_BOOTSTRAP_SCRIPT } from "@/lib/settings";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const uiSans = Instrument_Sans({
+  variable: "--font-ui",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const readingSerif = Newsreader({
+  variable: "--font-reading",
+  subsets: ["latin"],
+});
+
+const codeMono = JetBrains_Mono({
+  variable: "--font-code",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "UGC NET CS Prep Portal & AI Tutor",
-  description: "Interactive study portal for UGC NET Computer Science with Previous Year Questions and AI-guided Reinforcement Learning.",
+  title: "UGC NET Study Hub",
+  description: "Practice UGC NET Computer Science and Paper 1 previous year questions, track your progress, and get AI explanations for mistakes.",
 };
 
 export default function RootLayout({
@@ -25,9 +31,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${uiSans.variable} ${readingSerif.variable} ${codeMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP_SCRIPT }} />
+      </head>
+      <body className="h-full">
+        <SettingsProvider>{children}</SettingsProvider>
+      </body>
     </html>
   );
 }

@@ -1,499 +1,195 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { 
-  BookOpen, Award, CheckCircle2, XCircle, ChevronDown, 
-  ChevronRight, Search, Trophy, Percent, HelpCircle, GraduationCap
-} from "lucide-react"
+import React, { useMemo, useState } from "react"
+import { AnimatePresence, motion } from "framer-motion"
+import { ChevronDown, Play } from "lucide-react"
+import { useStudyData } from "@/hooks/useStudyData"
+import { useSettings } from "@/lib/settings"
+import type { QuizConfig } from "@/hooks/useQuizState"
+import type { Question } from "@/lib/types"
+import { UNITS, unitById } from "@/lib/constants"
+import { pct } from "@/lib/analytics"
+import { buildConceptQuiz } from "@/lib/quizBuilders"
+import { cn } from "@/lib/utils"
+import { Button, Panel, ProgressBar } from "./ui"
+import QuestionCard from "./QuestionCard"
 
-interface Question {
-  id: string
-  year: string
-  paper: string
-  q_num: number
-  question: string
-  options: {
-    A: string
-    B: string
-    C: string
-    D: string
-  }
-  answer: string
-  solution: string
-  unit: number
-  unit_name: string
-  conceptName: string
-  isAnswered?: boolean
-  isCorrect?: boolean
-  userAnswer?: string | null
+type Importance = "critical" | "frequent" | "occasional"
+
+const IMPORTANCE: Record<Importance, { label: string; className: string }> = {
+  critical: { label: "Must do", className: "bg-rose-500/10 text-rose-700 dark:text-rose-300" },
+  frequent: { label: "Frequent", className: "bg-amber-500/10 text-amber-700 dark:text-amber-300" },
+  occasional: { label: "Occasional", className: "bg-neutral-500/10 text-neutral-600 dark:text-neutral-400" }
 }
 
-interface UnitStats {
-  correct: number
-  attempts: number
-  total: number
-}
+const CONCEPT_PAGE = 5
 
-interface SyllabusWeightageProps {
-  onAttemptLogged: () => void // Callback to refresh global stats
-}
-
-const UNITS = [
-  { id: 1, name: "Discrete Structures and Optimization", desc: "Sets, logic, graph theory, LPP" },
-  { id: 2, name: "Computer System Architecture", desc: "Digital logic, CPU design, cache" },
-  { id: 3, name: "Programming Languages & Graphics", desc: "C, C++, OOP, 2D/3D transformations" },
-  { id: 4, name: "Database Management Systems (DBMS)", desc: "Relational models, SQL, normalization" },
-  { id: 5, name: "System Software & Operating System", desc: "Scheduling, memory management, deadlocks" },
-  { id: 6, name: "Software Engineering", desc: "SDLC, software testing, estimations" },
-  { id: 7, name: "Data Structures and Algorithms", desc: "Complexity, trees, sorting, graph algorithms" },
-  { id: 8, name: "Theory of Computation & Compilers", desc: "Automata, CFG, Turing machine, parsing" },
-  { id: 9, name: "Data Communication & Networks", desc: "OSI, TCP/IP, IP routing, cryptography" },
-  { id: 10, name: "Artificial Intelligence (AI)", desc: "Neural networks, fuzzy logic, state search" },
-  { id: 11, name: "General Paper 1", desc: "Teaching, research, logic, reasoning" }
-]
-
-export default function SyllabusWeightage({ onAttemptLogged }: SyllabusWeightageProps) {
+export default function SyllabusWeightage({ onStartQuiz }: { onStartQuiz: (config: QuizConfig) => void }) {
+  const { questions, stats } = useStudyData()
+  const { settings } = useSettings()
   const [activeUnitId, setActiveUnitId] = useState<number>(1)
-  const [questions, setQuestions] = useState<Question[]>([])
-  const [unitMastery, setUnitMastery] = useState<{ [unitId: number]: UnitStats }>({})
-  const [loading, setLoading] = useState<boolean>(true)
-  const [expandedConcept, setExpandedConcept] = useState<string | null>(null)
-  
-  // Interactive testing state
-  const [selectedOptions, setSelectedOptions] = useState<{ [qId: string]: string }>({})
-  const [attemptedQs, setAttemptedQs] = useState<{ [qId: string]: { isAnswered: boolean; isCorrect: boolean; userAnswer: string } }>({})
-  const [revealedSolutions, setRevealedSolutions] = useState<{ [qId: string]: boolean }>({})
+  const [expanded, setExpanded] = useState<string | null>(null)
+  const [shown, setShown] = useState(CONCEPT_PAGE)
 
-  // Fetch unit-wise mastery stats
-  const fetchStats = async () => {
-    try {
-      const res = await fetch("/api/stats")
-      if (res.ok) {
-        const data = await res.json()
-        setUnitMastery(data.unitMastery)
-      }
-    } catch (err) {
-      console.error("Failed to fetch stats", err)
-    }
-  }
+  const unitQuestions = useMemo(() => questions.filter(q => q.unit === activeUnitId), [questions, activeUnitId])
 
-  // Fetch questions for active unit
-  const fetchQuestions = async (unitId: number) => {
-    setLoading(true)
-    try {
-      const res = await fetch(`/api/questions?unit=${unitId}`)
-      if (res.ok) {
-        const data = await res.json()
-        setQuestions(data)
-        
-        // Initialize attempts dictionary from database records
-        const attemptsMap: typeof attemptedQs = {}
-        const optionsMap: typeof selectedOptions = {}
-        data.forEach((q: Question) => {
-          if (q.isAnswered) {
-            attemptsMap[q.id] = {
-              isAnswered: true,
-              isCorrect: q.isCorrect || false,
-              userAnswer: q.userAnswer || ""
-            }
-            optionsMap[q.id] = q.userAnswer || ""
-          }
-        })
-        setAttemptedQs(attemptsMap)
-        setSelectedOptions(optionsMap)
-      }
-    } catch (err) {
-      console.error("Failed to fetch questions", err)
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    fetchStats()
-  }, [])
-
-  useEffect(() => {
-    fetchQuestions(activeUnitId)
-    setExpandedConcept(null)
-  }, [activeUnitId])
-
-  // Group questions by conceptName
-  const conceptsMap = React.useMemo(() => {
+  const concepts = useMemo(() => {
     const map = new Map<string, Question[]>()
-    questions.forEach(q => {
-      const list = map.get(q.conceptName) || []
-      list.push(q)
-      map.set(q.conceptName, list)
-    })
-    return map
-  }, [questions])
-
-  // Compute concepts list sorted by size/frequency
-  const sortedConcepts = React.useMemo(() => {
-    const list: { name: string; count: number; percentage: number; importance: string; questions: Question[] }[] = []
-    const totalQ = questions.length
-    
-    conceptsMap.forEach((qList, name) => {
-      const percentage = totalQ > 0 ? Math.round((qList.length / totalQ) * 100) : 0
-      
-      let importance = "Less Frequently Repeated"
-      if (percentage >= 20) {
-        importance = "Must-Do / Critical"
-      } else if (percentage >= 10) {
-        importance = "Frequently Repeated"
-      }
-
-      list.push({
-        name,
-        count: qList.length,
-        percentage,
-        importance,
-        questions: qList
+    unitQuestions.forEach(q => map.set(q.conceptName, [...(map.get(q.conceptName) || []), q]))
+    const total = unitQuestions.length
+    return Array.from(map.entries())
+      .map(([name, qs]) => {
+        const share = pct(qs.length, total)
+        const importance: Importance = share >= 20 ? "critical" : share >= 10 ? "frequent" : "occasional"
+        const years = new Set(qs.map(q => q.year)).size
+        return {
+          name,
+          questions: qs,
+          share,
+          years,
+          importance,
+          answered: qs.filter(q => q.isAnswered).length,
+          correct: qs.filter(q => q.isAnswered && q.isCorrect).length
+        }
       })
-    })
+      .sort((a, b) => b.questions.length - a.questions.length)
+  }, [unitQuestions])
 
-    // Sort: Must-Do first, then count descending
-    return list.sort((a, b) => {
-      const weight = { "Must-Do / Critical": 3, "Frequently Repeated": 2, "Less Frequently Repeated": 1 }
-      const diff = (weight[b.importance as keyof typeof weight] || 0) - (weight[a.importance as keyof typeof weight] || 0)
-      if (diff !== 0) return diff
-      return b.count - a.count
-    })
-  }, [conceptsMap, questions])
+  const maxCount = concepts[0]?.questions.length ?? 1
+  const unit = unitById(activeUnitId)
+  const unitStats = stats?.units[activeUnitId]
 
-  // Submit attempt to SQLite
-  const handleAnswerSubmit = async (qId: string) => {
-    const userChoice = selectedOptions[qId]
-    if (!userChoice) return
-
-    const question = questions.find(q => q.id === qId)
-    if (!question) return
-
-    const isCorrect = userChoice === question.answer
-
-    try {
-      const res = await fetch("/api/attempts", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          questionId: qId,
-          userAnswer: userChoice,
-          isCorrect
-        })
-      })
-
-      if (res.ok) {
-        setAttemptedQs(prev => ({
-          ...prev,
-          [qId]: { isAnswered: true, isCorrect, userAnswer: userChoice }
-        }))
-        setRevealedSolutions(prev => ({ ...prev, [qId]: true }))
-        
-        // Refresh statistics
-        fetchStats()
-        onAttemptLogged()
-      }
-    } catch (err) {
-      console.error("Failed to submit attempt", err)
-    }
-  }
-
-  const getBadgeClass = (importance: string) => {
-    if (importance === "Must-Do / Critical") {
-      return "bg-red-500/10 text-red-700 dark:text-red-400 border border-red-500/20"
-    } else if (importance === "Frequently Repeated") {
-      return "bg-purple-500/10 text-purple-700 dark:text-purple-400 border border-purple-500/20"
-    }
-    return "bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border border-indigo-500/20"
+  const selectUnit = (id: number) => {
+    setActiveUnitId(id)
+    setExpanded(null)
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl mx-auto px-4 py-8">
-      {/* Left Units Navigation */}
-      <div className="lg:col-span-4 flex flex-col gap-3">
-        <h2 className="text-lg font-bold tracking-tight px-2 flex items-center gap-2">
-          <BookOpen className="w-5 h-5 text-indigo-500" />
-          Syllabus Units
-        </h2>
-        <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-2 flex flex-col gap-1">
-          {UNITS.map(unit => {
-            const stats = unitMastery[unit.id] || { correct: 0, attempts: 0, total: 0 }
-            const completionPct = stats.total > 0 
-              ? Math.min(100, Math.round((stats.attempts / stats.total) * 100))
-              : 0
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+      <div>
+        <h1 className="text-2xl font-semibold tracking-tight">Topic weightage</h1>
+        <p className="text-neutral-600 dark:text-neutral-400 mt-1">How often each concept has appeared in past papers, so you know where to spend your time.</p>
+      </div>
 
+      {/* Unit picker on small screens */}
+      <select
+        value={activeUnitId}
+        onChange={e => selectUnit(Number(e.target.value))}
+        className="lg:hidden w-full h-10 px-3 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-sm"
+        aria-label="Unit"
+      >
+        {UNITS.map(u => <option key={u.id} value={u.id}>{u.id}. {u.name}</option>)}
+      </select>
+
+      <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-6 items-start">
+        <nav className="hidden lg:block space-y-0.5 sticky top-4" aria-label="Units">
+          {UNITS.map(u => {
+            const s = stats?.units[u.id]
             return (
               <button
-                key={unit.id}
-                onClick={() => setActiveUnitId(unit.id)}
-                className={`w-full text-left p-3 rounded-lg flex flex-col gap-1 transition-all cursor-pointer ${
-                  activeUnitId === unit.id 
-                    ? "bg-indigo-50 dark:bg-indigo-600/10 border-l-3 border-indigo-500 text-indigo-600 dark:text-indigo-400 font-semibold"
-                    : "hover:bg-neutral-100 dark:hover:bg-neutral-850/50 text-neutral-500 dark:text-neutral-400 hover:text-neutral-850 dark:hover:text-neutral-200"
-                }`}
-              >
-                <div className="flex justify-between items-center text-xs">
-                  <span className="truncate max-w-[200px]">Unit {unit.id}: {unit.name.split(" &")[0]}</span>
-                  <span className="text-[10px] text-neutral-500">{stats.total} Qs</span>
-                </div>
-                {/* Progress bar */}
-                {stats.total > 0 && (
-                  <div className="w-full bg-neutral-150 dark:bg-neutral-800 h-1.5 rounded-full overflow-hidden mt-1">
-                    <div 
-                      className={`h-full ${completionPct === 100 ? "bg-emerald-500" : "bg-indigo-500"}`}
-                      style={{ width: `${completionPct}%` }}
-                    />
-                  </div>
+                key={u.id}
+                onClick={() => selectUnit(u.id)}
+                aria-current={activeUnitId === u.id ? "true" : undefined}
+                className={cn(
+                  "w-full text-left px-3 py-2 rounded-lg cursor-pointer transition-colors",
+                  activeUnitId === u.id ? "bg-brand-50 dark:bg-brand-500/10 text-brand-800 dark:text-brand-200" : "hover:bg-neutral-100 dark:hover:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300"
                 )}
+              >
+                <div className="flex justify-between items-baseline gap-2 text-sm">
+                  <span className={cn("truncate", activeUnitId === u.id && "font-semibold")}>
+                    <span className="text-neutral-400 tabular-nums mr-1.5">{u.id}</span>{u.short}
+                  </span>
+                  <span className="text-[11px] text-neutral-500 tabular-nums shrink-0">{s?.total ?? 0}</span>
+                </div>
+                <ProgressBar value={pct(s?.attempted ?? 0, s?.total ?? 0)} className="mt-1.5 h-1" />
               </button>
             )
           })}
-        </div>
-      </div>
+        </nav>
 
-      {/* Right Concepts & Questions Panel */}
-      <div className="lg:col-span-8 flex flex-col gap-6">
-        {/* Active Unit Header */}
-        <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-5 shadow-xs">
-          <h1 className="text-xl font-bold tracking-tight">
-            Unit {activeUnitId}: {UNITS.find(u => u.id === activeUnitId)?.name}
-          </h1>
-          <p className="text-xs text-neutral-400 mt-1">
-            {UNITS.find(u => u.id === activeUnitId)?.desc}
-          </p>
-          
-          {/* Unit mastery banner */}
-          {unitMastery[activeUnitId] && (
-            <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-neutral-200 dark:border-neutral-800 text-center text-xs">
+        <div className="space-y-4 min-w-0">
+          <Panel className="p-5">
+            <h2 className="text-lg font-semibold">{unit?.name}</h2>
+            <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">{unit?.desc}</p>
+            <dl className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
               <div>
-                <span className="text-neutral-500">Solved / Total</span>
-                <p className="text-sm font-bold mt-1 text-neutral-800 dark:text-neutral-200">
-                  {unitMastery[activeUnitId].attempts} / {unitMastery[activeUnitId].total}
-                </p>
+                <dt className="text-xs text-neutral-500">Questions seen</dt>
+                <dd className="text-lg font-semibold tabular-nums">{unitStats?.attempted ?? 0}<span className="text-sm text-neutral-400 font-normal">/{unitStats?.total ?? unitQuestions.length}</span></dd>
               </div>
               <div>
-                <span className="text-neutral-500">Correct answers</span>
-                <p className="text-sm font-bold mt-1 text-emerald-600 dark:text-emerald-400">
-                  {unitMastery[activeUnitId].correct}
-                </p>
+                <dt className="text-xs text-neutral-500">Correct now</dt>
+                <dd className="text-lg font-semibold tabular-nums">{unitStats?.mastered ?? 0}</dd>
               </div>
               <div>
-                <span className="text-neutral-500">Mastery Level</span>
-                <p className="text-sm font-bold mt-1 text-indigo-600 dark:text-indigo-400">
-                  {unitMastery[activeUnitId].attempts > 0 
-                    ? `${Math.round((unitMastery[activeUnitId].correct / unitMastery[activeUnitId].attempts) * 100)}%`
-                    : "0%"
-                  }
-                </p>
+                <dt className="text-xs text-neutral-500">Accuracy</dt>
+                <dd className="text-lg font-semibold tabular-nums">{unitStats && unitStats.attempts > 0 ? `${pct(unitStats.correct, unitStats.attempts)}%` : "–"}</dd>
               </div>
-            </div>
-          )}
-        </div>
+            </dl>
+          </Panel>
 
-        {/* Concepts Card List */}
-        {loading ? (
-          <div className="text-center py-12 text-neutral-500 text-sm">
-            Loading concepts and weights...
-          </div>
-        ) : sortedConcepts.length === 0 ? (
-          <div className="text-center py-12 text-neutral-500 text-sm">
-            No concepts classified for this unit.
-          </div>
-        ) : (
-          <div className="flex flex-col gap-4">
-            {sortedConcepts.map((concept, idx) => {
-              const isOpen = expandedConcept === concept.name
-              
-              // Count answered questions in this concept
-              const answeredInConcept = concept.questions.filter(q => attemptedQs[q.id]?.isAnswered).length
-              const correctInConcept = concept.questions.filter(q => attemptedQs[q.id]?.isCorrect).length
-
+          <div className="space-y-2">
+            {concepts.map(c => {
+              const isOpen = expanded === c.name
               return (
-                <div 
-                  key={concept.name}
-                  className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden shadow-xs"
-                >
-                  {/* Concept Header */}
-                  <div 
-                    onClick={() => setExpandedConcept(isOpen ? null : concept.name)}
-                    className="p-4 flex items-center justify-between cursor-pointer select-none hover:bg-neutral-50 dark:hover:bg-neutral-850 transition-colors"
+                <Panel key={c.name} className="overflow-hidden">
+                  <button
+                    onClick={() => {
+                      setExpanded(isOpen ? null : c.name)
+                      setShown(CONCEPT_PAGE)
+                    }}
+                    aria-expanded={isOpen}
+                    className="w-full text-left px-4 py-3.5 flex items-center gap-4 hover:bg-neutral-50 dark:hover:bg-neutral-800/40 cursor-pointer"
                   >
-                    <div className="flex flex-col gap-1">
-                      <div className="text-sm font-semibold text-neutral-800 dark:text-neutral-200 flex items-center gap-2">
-                        {concept.name}
-                        {answeredInConcept > 0 && (
-                          <span className="text-[10px] bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded-full text-neutral-600 dark:text-neutral-400 font-normal font-semibold">
-                            {answeredInConcept}/{concept.questions.length} Solved
-                          </span>
-                        )}
+                    <div className="flex-1 min-w-0 space-y-1.5">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-sm font-semibold">{c.name}</span>
+                        <span className={cn("text-[11px] font-medium px-1.5 py-0.5 rounded", IMPORTANCE[c.importance].className)}>{IMPORTANCE[c.importance].label}</span>
                       </div>
-                      <div className="text-[11px] text-neutral-500 flex items-center gap-2">
-                        <span>Occurrence: <strong>{concept.count} Qs</strong> ({concept.percentage}%)</span>
+                      {/* Bar length = share of this unit's past questions */}
+                      <div className="flex items-center gap-3">
+                        <div className="flex-1 max-w-sm h-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 overflow-hidden">
+                          <div className="h-full rounded-full bg-brand-500" style={{ width: `${(c.questions.length / maxCount) * 100}%` }} />
+                        </div>
+                        <span className="text-xs text-neutral-500 tabular-nums whitespace-nowrap">
+                          {c.questions.length} Qs, {c.share}% of unit, in {c.years} papers
+                        </span>
                       </div>
                     </div>
-                    
-                    <div className="flex items-center gap-3">
-                      <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded ${getBadgeClass(concept.importance)}`}>
-                        {concept.importance.split(" ")[0]}
-                      </span>
-                      {isOpen ? <ChevronDown className="w-4 h-4 text-neutral-500" /> : <ChevronRight className="w-4 h-4 text-neutral-500" />}
+                    <div className="text-right shrink-0 hidden sm:block">
+                      <div className="text-sm tabular-nums">{c.answered}/{c.questions.length}</div>
+                      <div className="text-[11px] text-neutral-500">{c.answered > 0 ? `${pct(c.correct, c.answered)}% correct` : "not started"}</div>
                     </div>
-                  </div>
+                    <ChevronDown className={cn("w-4 h-4 text-neutral-400 transition-transform shrink-0", !isOpen && "-rotate-90")} />
+                  </button>
 
-                  {/* Concept Content (Collapsible Question List) */}
-                  <AnimatePresence>
+                  <AnimatePresence initial={false}>
                     {isOpen && (
-                      <motion.div 
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        className="border-t border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-950/40 p-4 flex flex-col gap-4 overflow-hidden"
-                      >
-                        <h3 className="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider flex items-center gap-1">
-                          <GraduationCap className="w-3.5 h-3.5 text-indigo-500" />
-                          Concept Practice Questions
-                        </h3>
-
-                        {concept.questions.slice(0, 5).map(q => {
-                          const attempt = attemptedQs[q.id]
-                          const hasSubmitted = attempt?.isAnswered
-                          const isCorrect = attempt?.isCorrect
-                          const optionA = q.options.A
-                          const optionB = q.options.B
-                          const optionC = q.options.C
-                          const optionD = q.options.D
-                          const showSol = revealedSolutions[q.id]
-
-                          return (
-                            <div key={q.id} className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800/80 rounded-lg p-4 flex flex-col gap-3">
-                              {/* Question header */}
-                              <div className="flex justify-between items-center text-[10px] text-neutral-500 dark:text-neutral-400 border-b border-neutral-200 dark:border-neutral-850 pb-2">
-                                <span className="font-semibold">Q.{q.q_num} ({q.year})</span>
-                                <span className="text-neutral-600 dark:text-neutral-400 font-medium bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded">{q.paper.replace(".pdf", "")}</span>
-                              </div>
-                              
-                              {/* Question body */}
-                              <p className="text-xs text-neutral-800 dark:text-neutral-200 whitespace-pre-line leading-relaxed">{q.question}</p>
-
-                              {/* Question Options */}
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-1">
-                                {[
-                                  { label: "A", text: optionA },
-                                  { label: "B", text: optionB },
-                                  { label: "C", text: optionC },
-                                  { label: "D", text: optionD }
-                                ].map(opt => {
-                                  if (!opt.text) return null
-                                  
-                                  const isSelected = selectedOptions[q.id] === opt.label
-                                  const isCorrectChoice = opt.label === q.answer
-                                  const wasUserAnswer = attempt?.userAnswer === opt.label
-                                  
-                                  let optionStyle = "border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/50 hover:bg-neutral-100 dark:hover:bg-neutral-850 text-neutral-600 dark:text-neutral-400 cursor-pointer"
-                                  if (isSelected && !hasSubmitted) {
-                                    optionStyle = "border-indigo-500 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 cursor-pointer"
-                                  } else if (hasSubmitted) {
-                                    if (isCorrectChoice) {
-                                      optionStyle = "border-emerald-500/50 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
-                                    } else if (wasUserAnswer && !isCorrect) {
-                                      optionStyle = "border-red-500/50 bg-red-50 dark:bg-red-500/10 text-red-650 dark:text-red-400"
-                                    } else {
-                                      optionStyle = "border-neutral-200 dark:border-neutral-850 bg-neutral-50/10 dark:bg-neutral-900/10 text-neutral-400 dark:text-neutral-500 opacity-60"
-                                    }
-                                  }
-
-                                  return (
-                                    <button
-                                      key={opt.label}
-                                      disabled={hasSubmitted}
-                                      onClick={() => setSelectedOptions(prev => ({ ...prev, [q.id]: opt.label }))}
-                                      className={`w-full text-left p-3 rounded-lg border text-xs flex items-start gap-2.5 transition-all ${optionStyle}`}
-                                    >
-                                      <span className={`w-5 h-5 rounded-full flex items-center justify-center font-bold text-[10px] shrink-0 ${
-                                        isSelected && !hasSubmitted 
-                                          ? "bg-indigo-500 text-white" 
-                                          : hasSubmitted && isCorrectChoice 
-                                            ? "bg-emerald-500 text-white" 
-                                            : hasSubmitted && wasUserAnswer && !isCorrect 
-                                              ? "bg-red-500 text-white" 
-                                              : "bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300"
-                                      }`}>
-                                        {opt.label}
-                                      </span>
-                                      <span className="leading-snug">{opt.text}</span>
-                                    </button>
-                                  )
-                                })}
-                              </div>
-
-                              {/* Action Buttons */}
-                              <div className="flex gap-3 justify-between items-center mt-2 border-t border-neutral-200 dark:border-neutral-850 pt-3">
-                                {!hasSubmitted ? (
-                                  <button
-                                    onClick={() => handleAnswerSubmit(q.id)}
-                                    disabled={!selectedOptions[q.id]}
-                                    className="px-4 py-1.5 rounded bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:hover:bg-indigo-600 text-xs font-semibold text-white transition-colors cursor-pointer"
-                                  >
-                                    Submit Answer
-                                  </button>
-                                ) : (
-                                  <div className="flex items-center gap-1.5 text-xs">
-                                    {isCorrect ? (
-                                      <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
-                                        <CheckCircle2 className="w-4 h-4" /> Correct
-                                      </span>
-                                    ) : (
-                                      <span className="flex items-center gap-1 text-red-500 dark:text-red-400 font-bold">
-                                        <XCircle className="w-4 h-4" /> Incorrect
-                                      </span>
-                                    )}
-                                  </div>
-                                )}
-
-                                {hasSubmitted && (
-                                  <button
-                                    onClick={() => setRevealedSolutions(prev => ({ ...prev, [q.id]: !showSol }))}
-                                    className="text-xs text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 underline cursor-pointer"
-                                  >
-                                    {showSol ? "Hide Solution" : "View Explanation"}
-                                  </button>
-                                )}
-                              </div>
-
-                              {/* Solution Panel */}
-                              <AnimatePresence>
-                                {showSol && hasSubmitted && (
-                                  <motion.div 
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    className="bg-neutral-50 dark:bg-neutral-950 p-4 border border-neutral-200 dark:border-neutral-855 rounded-lg text-xs text-neutral-600 dark:text-neutral-400 flex flex-col gap-2 mt-2 leading-relaxed overflow-hidden"
-                                  >
-                                    <div className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
-                                      Correct Option: {q.answer}
-                                    </div>
-                                    <p className="whitespace-pre-line text-neutral-700 dark:text-neutral-300 font-medium">{q.solution || "No explanation provided."}</p>
-                                  </motion.div>
-                                )}
-                              </AnimatePresence>
-                            </div>
-                          )
-                        })}
-                        {concept.questions.length > 5 && (
-                          <div className="text-[11px] text-neutral-500 text-center italic mt-1">
-                            Showing top 5 representative questions. Access full mock/practice exams to solve more.
+                      <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
+                        <div className="border-t border-neutral-100 dark:border-neutral-800 bg-neutral-50/60 dark:bg-neutral-950/30 p-4 space-y-3">
+                          <div className="flex items-center justify-between gap-3">
+                            <span className="text-xs text-neutral-500">Showing {Math.min(shown, c.questions.length)} of {c.questions.length}</span>
+                            <Button size="sm" variant="primary" onClick={() => onStartQuiz(buildConceptQuiz(questions, activeUnitId, c.name, settings))}>
+                              <Play className="w-3.5 h-3.5" />
+                              Practise concept
+                            </Button>
                           </div>
-                        )}
+                          {c.questions.slice(0, shown).map(q => (
+                            <QuestionCard key={q.id} question={q} source="weightage" compact />
+                          ))}
+                          {shown < c.questions.length && (
+                            <div className="flex justify-center">
+                              <Button size="sm" onClick={() => setShown(n => n + CONCEPT_PAGE)}>Show more</Button>
+                            </div>
+                          )}
+                        </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </div>
+                </Panel>
               )
             })}
           </div>
-        )}
+        </div>
       </div>
     </div>
   )

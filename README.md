@@ -40,10 +40,11 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ### Step 4: Initialize and Seed the Database
 The app uses **Prisma** with a local **SQLite** database to store questions, quiz sessions, and user attempt history.
-1. Push the database schema to your local SQLite file:
+1. Apply the database migrations to your local SQLite file:
    ```bash
-   npx prisma db push
+   npx prisma migrate dev
    ```
+   *(Already have the app set up? Run this again after pulling changes, then restart `npm run dev`, so new tables such as bookmarks exist and the Prisma client is regenerated.)*
 2. Seed the database with the pre-compiled questions:
    ```bash
    node prisma/seed.js
@@ -55,6 +56,17 @@ Run the local next.js development server:
 npm run dev
 ```
 Open your browser and navigate to **[http://localhost:3000](http://localhost:3000)** to start practicing!
+
+---
+
+## ✨ Features
+
+* **Overview dashboard**: daily goal ring, day streak, exam-date countdown, a practice-activity heatmap, the last 14 days of correct/incorrect answers, mastery per syllabus unit, and your weakest concepts with one-click practice.
+* **Practice modes**: smart practice (prioritises recent mistakes, unseen questions and weak units), by unit, full mock papers (adjustable time), and a custom builder (units, papers, unanswered / mistakes / bookmarked, length, timer).
+* **Exam-style quiz**: question palette, mark for review, feedback after each question or only at the end, pause, time tracking per question, keyboard shortcuts (press `?` in a quiz), and a results screen with marks, a per-unit breakdown and "redo incorrect".
+* **Question bank**: search every question, filter by status, unit, concept and paper, bookmark questions and keep notes on them.
+* **AI tutor** (Gemini): a chat about the current question, and an optional follow-up drill when you answer wrongly.
+* **Settings**: light/dark/system theme, accent colour, question typeface and size, quiz defaults, daily goal and exam date, plus progress export and reset. Settings are stored in the browser; progress lives in the SQLite database.
 
 ---
 
