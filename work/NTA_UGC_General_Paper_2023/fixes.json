@@ -1,0 +1,22 @@
+{
+ "32": {
+  "question": "Consider the following MS-EXCEL screenshot that shows the product code, name of the state which produced the product and Quality of the product :\n| Row | A | B | C | D |\n|---|---|---|---|---|\n| 1 | Product Code | State | Quality | |\n| 2 | A1 | HP | A | |\n| 3 | A2 | MP | A | |\n| 4 | A3 | UP | A | |\n| 5 | A4 | UP | B | |\n| 6 | A5 | UP | B | |\n| 7 | | | | |\nWhich of the following EXCEL formulae can be typed in Cell D1 to answer the question : How many different product codes form UP are of Grade \"A\" quality?\nA. = COUNTIFS (B2:B6, \"=UP\", C2:C6,\" = A\")\nB. = COUNTIFS (C2:C6, \"=A', B2:B6,\" = UP\")\nC. = COUNTIFS (B2:B6, \"UP\", C2:C6, \"A\")\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(A) and (C) Only",
+   "C": "(B) and (C) Only",
+   "D": "(A), (B) and (C)"
+  },
+  "note": "Excel table was garbled; reconstructed as table"
+ },
+ "45": {
+  "question": "Match List-I with List-II.\nList-I (Name of University) | List-II (Year of Establishment)\n(A) Bombay University (I) 1916\n(B) Delhi University (II) 1943\n(C) Utkal University (III) 1922\n(D) S.N.D.T. Women University (IV) 1857\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+   "B": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+   "C": "(A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+   "D": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)"
+  },
+  "note": "Passage text leaked into option D; list header cleaned"
+ }
+}

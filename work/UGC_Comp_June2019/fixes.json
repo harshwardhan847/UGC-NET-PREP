@@ -1,0 +1,402 @@
+{
+ "2": {
+  "question": "How many ways are there to place 8 indistinguishable balls into four distinguishable bins?",
+  "options": {
+   "A": "70",
+   "B": "165",
+   "C": "⁸C₄",
+   "D": "⁸P₄"
+  },
+  "note": "Options C, D were empty"
+ },
+ "5": {
+  "question": "For which values of m and n does the complete bipartite graph k_{m,n} have a Hamilton circuit?",
+  "options": {
+   "A": "m ≠ n, m,n ≥ 2",
+   "B": "m ≠ n, m,n ≥ 3",
+   "C": "m = n, m,n ≥ 2",
+   "D": "m = n, m,n ≥ 3"
+  },
+  "note": "Options were empty"
+ },
+ "6": {
+  "question": "Which of the following is principal conjunctive normal form for [(p ∨ q) ∧ ¬p → ¬q] ?",
+  "options": {
+   "A": "p ∨ ¬q",
+   "B": "p ∨ q",
+   "C": "¬p ∨ q",
+   "D": "¬p ∨ ¬q"
+  },
+  "note": "Options were empty"
+ },
+ "8": {
+  "question": "Match List-I with List-II :\nList-I | List-II\n(a) p → q | (i) ¬(q → ¬p)\n(b) p ∨ q | (ii) p ∧ ¬q\n(c) p ∧ q | (iii) ¬p → q\n(d) ¬(p → q) | (iv) ¬p ∨ q\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(ii); (b)-(iii); (c)-(i); (d)-(iv)",
+   "B": "(a)-(ii); (b)-(i); (c)-(iii); (d)-(iv)",
+   "C": "(a)-(iv); (b)-(i); (c)-(iii); (d)-(ii)",
+   "D": "(a)-(iv); (b)-(iii); (c)-(i); (d)-(ii)"
+  },
+  "note": "Symbols missing in match table"
+ },
+ "9": {
+  "question": "Find the zero-one matrix of the transitive closure of the relation given by the matrix A :\nA = [1 0 1; 0 1 0; 1 1 0]",
+  "options": {
+   "A": "[1 1 1; 0 1 0; 1 1 1]",
+   "B": "[1 0 1; 0 1 0; 1 1 0]",
+   "C": "[1 0 1; 0 1 0; 1 0 1]",
+   "D": "[1 1 1; 0 1 0; 1 0 1]"
+  },
+  "note": "Matrix options were empty"
+ },
+ "10": {
+  "question": "Consider an LPP given as\nMax Z = 2x₁ − x₂ + 2x₃\nsubject to the constraints\n2x₁ + x₂ ≤ 10\nx₁ + 2x₂ − 2x₃ ≤ 20\nx₁ + 2x₃ ≤ 5\nx₁, x₂, x₃ ≥ 0\nWhat shall be the solution of the LPP after applying first iteration of the Simplex Method?",
+  "options": {
+   "A": "x₁ = 5/2, x₂ = 0, x₃ = 0, Z = 5",
+   "B": "x₁ = 0, x₂ = 0, x₃ = 5/2, Z = 5",
+   "C": "x₁ = 0, x₂ = 5/2, x₃ = 0, Z = −5/2",
+   "D": "x₁ = 0, x₂ = 0, x₃ = 10, Z = 20"
+  },
+  "note": "Garbled question; options empty"
+ },
+ "13": {
+  "question": "How many different Boolean functions of degree n are there?",
+  "options": {
+   "A": "2^(3^n)",
+   "B": "2^(2^n)",
+   "C": "2^(2^n) − 1",
+   "D": "2^n"
+  },
+  "note": "Options were empty"
+ },
+ "17": {
+  "question": "The parallel bus arbitration technique uses an external priority encoder and a decoder. Suppose, a parallel arbiter has 5 bus arbiters. What will be the size of the priority encoder and decoder respectively?",
+  "options": {
+   "A": "4×2, 2×4",
+   "B": "2×4, 4×2",
+   "C": "3×8, 8×3",
+   "D": "8×3, 3×8"
+  },
+  "note": "Options were empty"
+ },
+ "19": {
+  "question": "How many address lines and data lines are required to provide a memory capacity of 16 K × 16 ?",
+  "options": {
+   "A": "10,4",
+   "B": "16,16",
+   "C": "14,16",
+   "D": "4,16"
+  },
+  "note": "Question missing 16 K × 16"
+ },
+ "20": {
+  "question": "Suppose that a computer program takes 100 seconds of execution time on a computer with multiplication operation responsible for 80 seconds of this time. How much do you have to improve the speed of multiplication operation if you are asked to execute this program four times faster?",
+  "options": {
+   "A": "14 times faster",
+   "B": "15 times faster",
+   "C": "16 times faster",
+   "D": "17 times faster"
+  },
+  "note": "Option C polluted with junk; D on next page"
+ },
+ "21": {
+  "question": "Consider the following pseudo-code fragment in which an invariant for the loop is \"m * x^k = p^n and k ≥ 0\" (here, p and n are integer variables that have been initialized) :\n/* Pre-conditions: p ≥ 1 ∧ n ≥ 0 */\n/* Assume that overflow never occurs */\nint x = p;\nint k = n;\nint m = 1;\nwhile (k != 0) {\n    if (k is odd) then m = m * x;\n    x = x * x;\n    k = floor(k / 2); /* equivalent to k = k / 2 */\n}\nWhich of the following must be true at the end of the while loop?",
+  "options": {
+   "A": "x = p^n",
+   "B": "m = p^n",
+   "C": "p = x^n",
+   "D": "p = m^n"
+  },
+  "note": "Invariant garbled; options empty"
+ },
+ "22": {
+  "question": "Consider the following C-code fragment running on a 32-bit x86 machine :\ntypedef struct {\n    union {\n        unsigned char a;\n        unsigned short b;\n    } U;\n    unsigned char c;\n} S;\nS B[10];\nS *p = &B[4];\nS *q = &B[5];\np->U.b = 0x1234; /* structure S takes 32-bits */\nIf M is the value of q - p and N is the value of ((int)&(p->c)) - ((int)p), then (M, N) is",
+  "options": {
+   "A": "(1,1)",
+   "B": "(3,2)",
+   "C": "(1,2)",
+   "D": "(4,4)"
+  },
+  "note": "Options empty; code and expression garbled"
+ },
+ "23": {
+  "question": "What is the output of the following JAVA program?\npublic class Good {\n    private int m;\n    public Good (int m) {this.m = m; }\n    public Boolean equals (Good n) { return n.m = m; }\n    public static void main (string args []){\n        Good m1 = new Good (22);\n        Good m2 = new Good (22);\n        Object s1 = new Good (22);\n        Object s2 = new Good (22);\n        System.out.println (m1.equals (m2)); //Line1\n        System.out.println (s1.equals (s2)); //Line2\n        System.out.println (m1.equals (s2)); //Line3\n        System.out.println (s1.equals (m2)); //Line4\n    }\n}",
+  "options": {
+   "A": "True, True, False, False",
+   "B": "True, False, True, False",
+   "C": "True, True, False, True",
+   "D": "True, False, False, False"
+  },
+  "note": "Code garbled; symbols dropped"
+ },
+ "24": {
+  "question": "Consider the following C++ function f( ) :\nunsigned int f (unsigned int n ){\n    unsigned int b = 0;\n    while (n) {\n        b += n&1;\n        n >>= 1;\n    }\n    return b;}\nThe function f( ) returns the int that represents the _P_ in the binary representation of positive integer n, where P is",
+  "options": {
+   "A": "number of 0 's",
+   "B": "number of bits",
+   "C": "number of consecutive 1's",
+   "D": "number of 1's"
+  },
+  "note": "Code garbled; junk appended"
+ },
+ "25": {
+  "question": "Which of the following statements is/are true?\nP : In a scripting language like JavaScript, types are typically associated with values, not variables.\nQ : It is not possible to show images on a web page without the <img> tag of HTML.\nSelect the correct answer from the options given below :",
+  "options": {
+   "A": "P only",
+   "B": "Q only",
+   "C": "Both P and Q",
+   "D": "Neither P nor Q"
+  },
+  "note": "Junk appended; Q statement misplaced"
+ },
+ "26": {
+  "question": "Which of the following statements is/are true?\nP : An XML document with correct syntax as specified by W3C is called \"Well Formed\".\nQ : An XML documented validated against a DTD is both \"Well formed\" and \"Valid\".\nR : <xml version=\"1.0\" encoding=\"UTF-8\"> is syntactly correct declaration for the version of an XML document.\nSelect the correct answer from the options given below :",
+  "options": {
+   "A": "P and Q only",
+   "B": "P and R only",
+   "C": "Q and R only",
+   "D": "All of P, Q and R"
+  },
+  "note": "Option letters missing; duplicates"
+ },
+ "33": {
+  "question": "With respect to relational algebra, which of the following operations are included for mathematical set theory?\n(a) Join\n(b) Intersection\n(c) Cartisian product\n(d) Project",
+  "options": {
+   "A": "(a) and (d)",
+   "B": "(b) and (c)",
+   "C": "(c) and (d)",
+   "D": "(b) and (d)"
+  },
+  "note": "Junk text inside question"
+ },
+ "39": {
+  "question": "The following table has two attributes Employee_id and Manager_id, where Employee_id is a primary key and manager_id is a foreign key referencing Employee_id with an on-delete cascade :\nEmployee_id | Manager_id\n20 | 40\n25 | 40\n30 | 35\n35 | 20\n40 | 45\n45 | 25\nOn deleting the table (20,40), the set of other tuples that must be deleted to maintain the referential integrity of the table is:",
+  "options": {
+   "A": "(30,35) only",
+   "B": "(30,35) and (35,20) only",
+   "C": "(35,20) only",
+   "D": "(40,45) and (25,40) only"
+  },
+  "note": "Tuples missing from options"
+ },
+ "40": {
+  "question": "K-mean clustering algorithm has clustered the given 8 observations into 3 clusters after 1st iteration as follows:\nC1 : {(3,3),(5,5),(7,7)}\nC2 : {(0,6),(6,0),(3,0)}\nC3 : {(8,8),(4,4)}\nWhat will be the Manhattan distance for observation (4,4) from cluster centroid C1 in second iteration?",
+  "options": {
+   "A": "2",
+   "B": "√2",
+   "C": "0",
+   "D": "18"
+  },
+  "note": "Clusters missing; option B empty"
+ },
+ "41": {
+  "question": "Consider a disk system with 100 cylinders. The requests to access the cylinders occur in the following sequence :\n4, 34, 10, 7, 19, 73, 2, 15, 6, 20\nAssuming that the head is currently at cylinder 50 , what is the time taken to satisfy all requests if it takes 1 ms to move from the cylinder to adjacent one and the shortest seek time first policy is used?",
+  "options": {
+   "A": "357 ms",
+   "B": "238 ms",
+   "C": "276 ms",
+   "D": "119 ms"
+  },
+  "note": "Options empty; sequence missing"
+ },
+ "50": {
+  "question": "Which of the following UNIX/Linux pipes will count the number of lines in all the files having .c and .h as their extension in the current working directory?",
+  "options": {
+   "A": "cat *.ch | wc -l",
+   "B": "cat *.[c-h] | wc -l",
+   "C": "cat *.[ch] | ls -l",
+   "D": "cat *.[ch] | wc -l"
+  },
+  "note": "Options truncated; duplicates"
+ },
+ "51": {
+  "question": "Which of the following statements is/are true?\nP : In software engineering, defects that are discovered earlier are more expensive to fix.\nQ : A software design is said to be a good design, if the components are strongly cohesive and weakly coupled.\nSelect the correct answer from the options given below :",
+  "options": {
+   "A": "P only",
+   "B": "Q only",
+   "C": "P and Q",
+   "D": "Neither P nor Q"
+  },
+  "note": "Junk text prepended to question"
+ },
+ "57": {
+  "question": "Match List-I with List-II :\nList-I (Software Process Models) | List-II (Software Systems)\n(a) Waterfall model | (i) e-business software that starts with only the basic functionalities and then moves on to advanced features\n(b) Incremental development | (ii) An inventory control system for a supermarket to be developed within three months\n(c) Prototyping | (iii) A virtual reality system for simulating vehicle navigation in a highway\n(d) RAD | (iv) Automate the manual system for student record maintenance in a school\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(ii); (b)-(iv); (c)-(i); (d)-(iii)",
+   "B": "(a)-(i); (b)-(iii); (c)-(iv); (d)-(ii)",
+   "C": "(a)-(iii); (b)-(ii); (c)-(iv); (d)-(i)",
+   "D": "(a)-(iv); (b)-(i); (c)-(iii); (d)-(ii)"
+  },
+  "note": "Table cells interleaved incorrectly"
+ },
+ "64": {
+  "question": "Which of the following is best running time to sort n integers in the range 0 to n² − 1 ?",
+  "options": {
+   "A": "O(lg n)",
+   "B": "O(n)",
+   "C": "O(n lg n)",
+   "D": "Θ(n²)"
+  },
+  "note": "Math lost; options empty"
+ },
+ "66": {
+  "question": "Consider double hashing of the form\nh(k,i) = (h₁(k) + i·h₂(k)) mod m\nwhere h₁(k) = k mod m\nh₂(k) = 1 + (k mod n)\nwhere n = m − 1 and m = 701\nFor k = 123456, what is the difference between first and second probes in terms of slots?",
+  "options": {
+   "A": "255",
+   "B": "256",
+   "C": "257",
+   "D": "258"
+  },
+  "note": "Formulas were jumbled"
+ },
+ "67": {
+  "question": "Consider the complexity class CO-NP as the set of languages L such that the complement of L is in NP, and the following two statements :\nS1 : P ⊆ CO-NP\nS2 : If NP ≠ CO-NP, then P ≠ NP\nWhich of the following is/are correct?",
+  "options": {
+   "A": "Only S1",
+   "B": "Only S2",
+   "C": "Both S1 and S2",
+   "D": "Neither S1 nor S2"
+  },
+  "note": "S1/S2 symbols and statements missing"
+ },
+ "68": {
+  "question": "Consider the following steps :\nS1 : Characterize the structure of an optimal solution\nS2 : Compute the value of an optimal solution in bottom-up fashion\nWhich of the step(s) is/are common to both dynamic programming and greedy algorithms?",
+  "options": {
+   "A": "Only S1",
+   "B": "Only S2",
+   "C": "Both S1 and S2",
+   "D": "Neither S1 nor S2"
+  },
+  "note": "Options lost S1/S2 labels"
+ },
+ "69": {
+  "question": "Consider the following properties with respect to a flow network G = (V, E) in which a flow is a real-valued function f : V × V → R :\nP1 : For all u,v ∈ V, f(u,v) = −f(v,u)\nP2 : Σ_{v∈V} f(u,v) = 0 for all u ∈ V\nWhich one of the following is/are correct?",
+  "options": {
+   "A": "Only P1",
+   "B": "Only P2",
+   "C": "Both P1 and P2",
+   "D": "Neither P1 nor P2"
+  },
+  "note": "Properties and option labels missing"
+ },
+ "70": {
+  "question": "Consider the following statements :\nS1 : For any integer n > 1, a^φ(n) ≡ 1 (mod n) for all a ∈ Z*_n, where φ(n) is Euler's phi function.\nS2 : If p is prime, then a^p ≡ 1 (mod p) for all a ∈ Z*_p.\nWhich one of the following is/are correct?",
+  "options": {
+   "A": "Only S1",
+   "B": "Only S2",
+   "C": "Both S1 and S2",
+   "D": "Neither S1 nor S2"
+  },
+  "note": "Math lost; options lost S1/S2 labels"
+ },
+ "73": {
+  "question": "Replacing the expression 4 * 2.14 by 8.56 is known as",
+  "options": {
+   "A": "constant folding",
+   "B": "induction variable",
+   "C": "strength reduction",
+   "D": "code reduction"
+  },
+  "note": "Expression lost digits/operator"
+ },
+ "76": {
+  "question": "Match List-I with List-II :\nwhere L1 : Regular language\nL2 : Context-free language\nL3 : Recursive language\nL4 : Recursively enumerable language\nList-I | List-II\n(a) complement(L3) ∪ L4 | (i) Context-free language\n(b) complement(L2) ∪ L3 | (ii) Recursively enumerable language\n(c) L1* ∩ L2 | (iii) Recursive language\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(ii); (b)-(i); (c)-(iii)",
+   "B": "(a)-(ii); (b)-(iii); (c)-(i)",
+   "C": "(a)-(iii); (b)-(i); (c)-(ii)",
+   "D": "(a)-(i); (b)-(ii); (c)-(iii)"
+  },
+  "note": "List-I expressions garbled/misplaced"
+ },
+ "79": {
+  "question": "Which of the following problems is/are decidable problem(s) (recursively enumerable) on turing machine M ?\n(a) G is a CFG with L(G) = ϕ\n(b) There exist two TMs M1 and M2 such that L(M) ⊆ {L(M1) ∪ L(M2)} = language of all TMs\n(c) M is a TM that accepts ω using at most 2^|ω| cells of tape",
+  "options": {
+   "A": "(a) and (b) only",
+   "B": "(a) only",
+   "C": "(a), (b) and (c)",
+   "D": "(c) only"
+  },
+  "note": "Math symbols garbled"
+ },
+ "81": {
+  "question": "A fully connected network topology is a topology in which there is a direct link between all pairs of nodes. Given a fully connected network with n nodes, the number of direct links as a function of n can be expressed as",
+  "options": {
+   "A": "n(n+1)/2",
+   "B": "(n+1)/2",
+   "C": "n/2",
+   "D": "n(n−1)/2"
+  },
+  "note": "Fraction options were empty"
+ },
+ "82": {
+  "question": "What is the name of the protocol that allows a client to send a broadcast message with its MAC address and receive an IP address in reply?",
+  "options": {
+   "A": "ARP",
+   "B": "DNS",
+   "C": "RARP",
+   "D": "ICMP"
+  },
+  "note": "Junk text in option B"
+ },
+ "83": {
+  "question": "You are designing a link layer protocol for a link with a bandwidth of 1 Gbps (10^9 bits/second) over a fiber link with a length of 800 km. Assume the speed of light in this medium is 200000 km/second. What is the propagation delay in this link?",
+  "options": {
+   "A": "1 millisecond",
+   "B": "2 milliseconds",
+   "C": "3 milliseconds",
+   "D": "4 milliseconds"
+  },
+  "note": "Exponent 9 missing"
+ },
+ "91": {
+  "question": "Consider the game tree given below :\n[Figure: complete binary game tree with 4 levels below the root: root = MAX, level 1 = MIN (2 nodes), level 2 = MAX (4 nodes), level 3 = MIN (8 nodes), 16 leaves. Leaf values left to right: 7, 9, 6, (unlabeled), 11, 12, (unlabeled), (unlabeled), 5, (unlabeled), 4, then 5 more unlabeled leaves; only labeled leaves are 7, 9, 6, 11, 12, 5, 4.]\nHere circle represents MIN nodes and square represents MAX nodes. The value of the root node of the game tree is",
+  "options": {
+   "A": "4",
+   "B": "7",
+   "C": "11",
+   "D": "12"
+  },
+  "note": "Figure description added"
+ },
+ "92": {
+  "question": "Match List-I with List-II :\nList I | List II\n(a) Greedy best-first | (i) Minimal cost(p) + h(p)\n(b) Lowest cost-first | (ii) Minimal h(p)\n(c) A* Algorithm | (iii) Minimal cost(p)\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(i); (b)-(ii); (c)-(iii)",
+   "B": "(a)-(iii); (b)-(ii); (c)-(i)",
+   "C": "(a)-(i); (b)-(iii); (c)-(ii)",
+   "D": "(a)-(ii); (b)-(iii); (c)-(i)"
+  },
+  "note": "Option B polluted; cost(p) lost"
+ },
+ "95": {
+  "question": "Let A_α0 denotes the α-cut of a fuzzy set A at α0. If α1 < α2, then",
+  "options": {
+   "A": "A_α1 ⊇ A_α2",
+   "B": "A_α1 ⊃ A_α2",
+   "C": "A_α1 ⊆ A_α2",
+   "D": "A_α1 ⊂ A_α2"
+  },
+  "note": "Options empty"
+ },
+ "99": {
+  "question": "The value of the derivative of the Sigmoid function given by f(x) = 1/(1+e^(−2x)) at x=0 is",
+  "options": {
+   "A": "0",
+   "B": "1/2",
+   "C": "1/4",
+   "D": "∞"
+  },
+  "note": "Function and options lost"
+ },
+ "100": {
+  "question": "Reinforcement learning can be formalized in terms of _____ in which the agent initially only knows the set of possible ____ and the set of possible actions.",
+  "options": {
+   "A": "Markov decision processes, objects",
+   "B": "Hidden states, objects",
+   "C": "Markov's decision process, states",
+   "D": "objects, states"
+  },
+  "note": "Option D polluted with junk"
+ }
+}

@@ -1,0 +1,432 @@
+{
+ "1": {
+  "question": "Which of the following is NOT logically equivalent to P → Q?",
+  "options": {
+   "A": "¬P ∨ Q",
+   "B": "¬Q → ¬P",
+   "C": "¬(P ∧ ¬Q)",
+   "D": "¬Q → P"
+  },
+  "note": "options and expression missing"
+ },
+ "3": {
+  "question": "The coefficients of x²y³z² in the expansion of (x+y+z)^7 is",
+  "options": {
+   "A": "C(7,3) * C(5,2)",
+   "B": "C(7,2) * C(5,3)",
+   "C": "C(7,3) * C(7,2)",
+   "D": "C(5,3) * C(5,2)"
+  },
+  "note": "math and options missing"
+ },
+ "6": {
+  "question": "Simplify the following using K-Map.\nF(A,B,C,D) = Σ(3,4,5,6,7,11,15)",
+  "options": {
+   "A": "AB + C'D",
+   "B": "A'B + CD",
+   "C": "AC + BD",
+   "D": "A'B + B'C"
+  },
+  "note": "function and options missing"
+ },
+ "7": {
+  "question": "Consider a 3-bit counter, designed using T flip flops as shown below:\n[Figure: three T flip-flops Tp, Tq, Tr with outputs P, Q, R (and complements P', Q', R'). Clk drives Tp; P' drives the clock of Tq; Q' drives the clock of Tr; the output R is fed back to the left toward the first stage.]\nAssume the initial state of the counter given by PQR as 000, what are the next three states?",
+  "options": {
+   "A": "011, 101, 000",
+   "B": "001, 010, 111",
+   "C": "011, 101, 111",
+   "D": "001, 010, 000"
+  },
+  "note": "options and figure missing"
+ },
+ "8": {
+  "question": "Let R1 and R2 be two 4-bit registers that store numbers in 2's complement form. For the operation R1+R2, which one of the following values of R1 and R2 gives an arithmetic overflow?",
+  "options": {
+   "A": "R1=1011 and R2=1110",
+   "B": "R1=1100 and R2=1010",
+   "C": "R1=0011 and R2=0100",
+   "D": "R1=1001 and R2=1111"
+  },
+  "note": "option values missing"
+ },
+ "10": {
+  "question": "Given\nint arr[3][4][2] = {{{2,4},{7,8},{3,4},{5,6}},\n{{7,6},{3,4},{5,3},{2,3}},\n{{8.9},{7,2},{3,4},{5,1}}};\nWhich one of the following can be used to refer to element 1 in the above 3-d array?",
+  "options": {
+   "A": "arr[3][4][2]",
+   "B": "*(*(*(arr+2)+3)+1)",
+   "C": "*(arr+2)+*(arr+3)+*(arr+1)",
+   "D": "arr[2][3][2]"
+  },
+  "note": "array and options garbled"
+ },
+ "11": {
+  "question": "Allowing different derived classes to be used interchangeably through the interface provided by a common base class is called ______",
+  "options": {
+   "A": "Derived polymorphism",
+   "B": "Compile time polymorphism",
+   "C": "Static polymorphism",
+   "D": "Run time polymorphism"
+  },
+  "note": "option B polluted with other text"
+ },
+ "14": {
+  "question": "Consider the relation R(P,Q,R,S,T,U,V,W,X,Y) and FDs:\n{P,Q,S} → T\nR → Y\n{P,Q} → V\n{R,X} → X\nQ → U\nV → {W,X}\nWhich of the following is a candidate key?",
+  "options": {
+   "A": "{P,Q,R,S}",
+   "B": "{R,Q,X}",
+   "C": "{V,X}",
+   "D": "None of the above"
+  },
+  "note": "relation, FDs and options missing"
+ },
+ "22": {
+  "question": "If P is the risk probability, L is the loss, then Risk exposure (RE) is computed as ______",
+  "options": {
+   "A": "RE=P / L",
+   "B": "RE=P+L",
+   "C": "RE=P * L",
+   "D": "RE=2+(P*L)"
+  },
+  "note": "option D polluted with other text"
+ },
+ "25": {
+  "question": "In a ______ the left and right subtrees for any given node, differ in height by more than one.",
+  "options": {
+   "A": "Balanced Binary Tree",
+   "B": "Weight balanced binary tree",
+   "C": "Height balanced tree",
+   "D": "Unbalanced Binary Tree"
+  },
+  "note": "missing word 'a'"
+ },
+ "28": {
+  "question": "Suppose we store n keys in a hash table of size m=n² using a hash function h randomly chosen from a universal class of hash functions. Then the probability is ______ that there are any collisions.",
+  "options": {
+   "A": "greater than 1/5",
+   "B": "greater than 1/2",
+   "C": "less than 1/2",
+   "D": "less than 1/5"
+  },
+  "note": "fractions missing from options"
+ },
+ "29": {
+  "question": "In Pumping Lemma for context-free languages, to say a language is satisfying pumping lemma, what is the minimum length of 'vx' together, if you consider the string as 'uvwxy'?",
+  "options": {
+   "A": "0",
+   "B": "1",
+   "C": "2",
+   "D": "n"
+  },
+  "note": "option D and 'vx' missing"
+ },
+ "32": {
+  "question": "What is the minimum and maximum number of initial, dead, unreachable and final states in a valid 'n' state finite automaton, where the language accepted is not 'φ'?",
+  "options": {
+   "A": "Minimum: 1,1,1,1; Maximum: 1, (n-1),(n-1),n",
+   "B": "Minimum: 1,0,0,0; Maximum: 1, (n-1),(n-1),n",
+   "C": "Minimum: 1,0,0,n; Maximum: 1,n,(n-1),(n-1)",
+   "D": "Minimum: 1,0,0,1; Maximum: 1,(n-1),(n-1),n"
+  },
+  "note": "option values missing"
+ },
+ "35": {
+  "question": "In Go-back-N protocol, the values of S_f (Send window, the first outstanding packet) = 3, S_n (Send window, the next packet to be send) =7, after receiving the packet with AckNo.6, the value of S_n is _____",
+  "options": {
+   "A": "6",
+   "B": "7",
+   "C": "5",
+   "D": "4"
+  },
+  "note": "subscripted symbols missing; junk text"
+ },
+ "36": {
+  "question": "What is the minimum Hamming Distance in a block code if we want to be able to detect up to (S) errors?",
+  "options": {
+   "A": "S",
+   "B": "S+1",
+   "C": "1",
+   "D": "0"
+  },
+  "note": "options A and B missing"
+ },
+ "37": {
+  "question": "Which search technique is complete and optimal, when h(n) is consistent?",
+  "options": {
+   "A": "Best First Search",
+   "B": "Depth First Search",
+   "C": "A* Search",
+   "D": "Breadth First Search"
+  },
+  "note": "h(n) and A* missing"
+ },
+ "40": {
+  "question": "The 4Ws problem canvas helps in identifying the key elements related to the problem. 4Ws problem canvas is a part of ____",
+  "options": {
+   "A": "Problem scoping",
+   "B": "Data acquisition",
+   "C": "Data modeling",
+   "D": "Problem Evaluation"
+  },
+  "note": "'4Ws' partly missing"
+ },
+ "41": {
+  "question": "Consider the following statements:\nA. A group can have zero elements.\nB. A group cannot have any element which is idempotent except the identity element.\nC. An isomorphism from a group <G,*> to <G,*> is called an automorphism.\nD. If every element in a group is its own inverse, then the group must be abelian.\nChoose the correct answer about the four statements given above.",
+  "options": {
+   "A": "B,C and D are correct",
+   "B": "Only A and C are correct",
+   "C": "Only B and C are correct",
+   "D": "All A, B, C and D are correct."
+  },
+  "note": "group symbols missing"
+ },
+ "42": {
+  "question": "Consider the following statements:\nA. The number of labelled binary trees possible with 'n' nodes is (2n) ! /(n+1)!\nB. The number of binary search trees possible with 'n' nodes is (2n)! /((n+1) ! n!))\nC. The number of unlabeled binary trees possible with ' n' nodes is C(2n,n) /(n+1)!\nD. The number of simple, undirected and labelled graphs possible with ' n' vertices is (2^(n(n-1)/2))\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A, B) and (C) are only correct",
+   "B": "(A, B) and (D) are only correct",
+   "C": "(B, C) and (D) are only correct",
+   "D": "(A, C) and (D) are only correct"
+  },
+  "note": "options C/D merged; exponent garbled"
+ },
+ "43": {
+  "question": "The relation R = {(1,3),(1,1),(3,1),(1,2),(3,3),(4,4)} defined in {1,2,3,4} is ____",
+  "options": {
+   "A": "Reflexive, Symmetric but not Transitive",
+   "B": "Symmetric, anti-symmetric and transitive",
+   "C": "Asymmetric, anti-symmetric and not transitive",
+   "D": "Not reflexive, not symmetric and not transitive"
+  },
+  "note": "relation set garbled"
+ },
+ "44": {
+  "question": "Consider the Boolean expression given by F=(X+Y+Z)(X'+Y)(Y'+Z).\nWhich of the following Boolean expressions is/are equivalent to F' (Complement of F)?\nA. (X'+Y'+Z')(X+Y')(Y+Z')\nB. (XY'+Z')\nC. (X+Z')(Y'+Z')\nD. (XY'+YZ'+X'Y'Z')\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B and C Only",
+   "B": "B, C and D Only",
+   "C": "A, C and D Only",
+   "D": "A, B and D Only"
+  },
+  "note": "expressions missing; option C/D polluted"
+ },
+ "49": {
+  "question": "Let T1 be a transaction that transfer Rs. 50 from account A to account B. This transaction can be defined as follows:\n| Step | Operation |\n|---|---|\n| 1 | Read(A) |\n| 2 | A:=A−50 |\n| 3 | Write(A) |\n| 4 | Read(B) |\n| 5 | B:=B+50 |\n| 6 | Write(B) |\nWhat will be the status of a database just after 3rd step but before 5th step of transaction execution?",
+  "options": {
+   "A": "Always consistent",
+   "B": "May be temporarily inconsistent",
+   "C": "Must be abort",
+   "D": "Always rollback"
+  },
+  "note": "step numbers missing; T1 subscript"
+ },
+ "50": {
+  "question": "Consider the relation\nStudent(stuid, dept, clsroll)\nThe following functional dependencies are given:\nFD1: stuid→dept\nFD2: dept→stuid\nFD3: stuid→clsroll\nFD4: clsroll→stuid\nFD5: dept→clsroll\nWhich functional dependencies should be removed to obtain the canonical cover of the set?\nA. FD2 and FD3\nB. FD1 and FD5\nC. FD5\nD. FD1\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B only",
+   "B": "A, C only",
+   "C": "B, C only",
+   "D": "A, B, C only"
+  },
+  "note": "junk characters in question"
+ },
+ "56": {
+  "question": "Which of the following rotations are correctly explained in the context of an AVL tree.\nA. LL rotation: The new node is inserted in the left sub-tree of the left sub-tree of the critical node.\nB. RR rotation: The new node is inserted in the right sub-tree of the right sub-tree of the critical node.\nC. LR rotation: The new node is inserted in the right sub-tree of the left sub-tree of the critical node.\nD. RL rotation: The new node is inserted in the left sub-tree of the right sub-tree of the critical node\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, D only",
+   "B": "A, C Only",
+   "C": "A, B, C and D",
+   "D": "B, C Only"
+  },
+  "note": "junk characters in question"
+ },
+ "57": {
+  "question": "In the context of a Hamiltonian problem, which of the following are correct?\nA. Hamiltonian cycle problem is NP-Complete\nB. If G is an undirected Bipartite graph with an odd number of vertices, then G is Hamiltonian.\nC. Hamiltonian path problem cannot be solved in polynomial time on directed acyclic graph\nD. If G is a connected undirected graph with at least three vertices and G³ is the graph obtained by connecting all pairs of vertices that are connected by a path in G of length at most 3.\nE. If any NP complete problem is polynomial time solvable the (P=NP).\nChoose the most appropriate answer from the options given below:",
+  "options": {
+   "A": "A, B, C only",
+   "B": "B, D, E only",
+   "C": "A, D, E only",
+   "D": "A, C, E only"
+  },
+  "note": "G and G³ symbols missing"
+ },
+ "58": {
+  "question": "For matrix multiplication, if we use divide and conquer algorithm, then _____\nA. the running time is T(n)=Θ(n³)\nB. the running time is T(n)=Θ(n² log n)\nC. The recurrence can be defined as T(n)=8T(n/2)+Θ(n²)\nD. the recurrence relation is T(n)=8T(2n)+Θ(n² log n)\nE. Masters theorem, one of the cases is applicable\nChoose the most appropriate answer from the options given below:",
+  "options": {
+   "A": "A, C, E only",
+   "B": "A, D, E only",
+   "C": "B, D, E only",
+   "D": "B, C, D only"
+  },
+  "note": "formulas garbled"
+ },
+ "59": {
+  "question": "Which of the following Finite Automata, recognizes the language L={a,b}* ?\nA. M=({q0},{a,b},δ,q0,{q0}) where δ is\n| | a | b |\n|---|---|---|\n| q0 | {q0} | {q0} |\nB. M=({q0,q1},{a,b},δ,q0,{q0,q1}) where δ is\n| | a | b |\n|---|---|---|\n| q0 | {q0,q1} | {q0,q1} |\n| q1 | {q1} | {q1} |\nC. M=({q0,q1},{a,b},δ,q0,{q0,q1}) where δ is\n| | a | b |\n|---|---|---|\n| q0 | {q0,q1} | {q0} |\n| q1 | - | {q1} |\nD. M=({q0,q1,q2},{a,b},δ,q0,{q0}) where δ is\n| | a | b |\n|---|---|---|\n| q0 | {q0} | {q0} |\n| q1 | {q2} | - |\n| q2 | {q0} | {q2} |",
+  "options": {
+   "A": "A and B",
+   "B": "A and D",
+   "C": "A, B and C",
+   "D": "A, B, C and D"
+  },
+  "note": "automata and tables garbled"
+ },
+ "61": {
+  "question": "Consider a computer network using the distance vector routing algorithm in its network layer. The Objective is to find the shortest cost path from router R to routers P and Q. Assume that R does not initially know the shortest routes to P and Q. Assume that R has three neighboring routers, namely: X, Y and Z. During one iteration R measures its distance as 3,2 , and 5 from its neighbors X, Y and Z, respectively. Router R getting routing vectors from its neighbors that indicates a distance of 7,6 and 5 from router X, Y and Z to router P, respectively. The routing vector also indicates that the distance to router Q from Routers X, Y and Z are 4, 6, 8 respectively. Which of the following statements is/are Ture with respect to the new routing table at router R after updation during this iteration.\nA. The distance from R to P will be stored as 10\nB. The distance from R to Q will be stored as 7\nC. The next hop router for a packet from R to P is Y\nD. The next hop router for a packet from R to Q is Z\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "B and C only",
+   "B": "A and C only",
+   "C": "C and D only",
+   "D": "B and D only"
+  },
+  "note": "router names missing; junk characters"
+ },
+ "65": {
+  "question": "Consider the following draw backs is/are of Rule based approach is/are:\nA. The learning is static.\nB. Any changes made to the original data will not be considered.\nC. Once trained the model cannot improve on the basis of feedback.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "All the above statements are correct",
+   "B": "The statements A & B only are not correct",
+   "C": "The statements B & C only are not correct",
+   "D": "All the above statements are not correct"
+  },
+  "note": "option A polluted with junk text"
+ },
+ "70": {
+  "question": "Match List I with List II\nList I | List II\nA. (reference bit=0, modify bit=0) | I. Must write out before replacement.\nB. (reference bit=0, modify bit=1) | II. Probably will be used again soon and need to write out.\nC. (reference bit=1, modify bit=0) | III. Best page to replace.\nD. (reference bit=1, modify bit=1) | IV. Probably will be used again soon.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-II, B-I, C-III, D-IV",
+   "B": "A-II, B-I, C-IV, D-III",
+   "C": "A-III, B-I, C-II, D-IV",
+   "D": "A-III, B-I, C-IV, D-II"
+  },
+  "note": "option B polluted with junk"
+ },
+ "76": {
+  "question": "Let ' G ' be a simple, undirected graph with n (n>10) vertices and k connected components. What is the minimum possible number of edges of G?",
+  "options": {
+   "A": "k(n−1)",
+   "B": "n(k−1)",
+   "C": "n+k−2",
+   "D": "n−k"
+  },
+  "note": "options missing or merged"
+ },
+ "79": {
+  "question": "Consider the following schedule S.\n| T1 | T2 | T3 | T4 | Timestamp |\n|---|---|---|---|---|\n| | R(X) | R(Y) | | t1 |\n| | W(X) | W(Y) | | t2 |\n| R(Y) | | | R(X) | t3 |\n| W(Y) | | | W(X) | t4 |\n| | | R(X) | | t5 |\n| | | W(X) | | t6 |\nR(X) denotes the read operation on data item X by transaction Ti.\nW(X) denotes write operation on data item X by transaction Ti.\nChoose the correct execution order for the above schedule S.",
+  "options": {
+   "A": "T3-T2-T1-T4",
+   "B": "T2-T3-T1-T4",
+   "C": "T2-T4-T3-T1",
+   "D": "T4-T2-T3-T1"
+  },
+  "note": "table columns misaligned"
+ },
+ "82": {
+  "question": "Consider the graph given below. What is the order in which the nodes mentioned in the options are to be traversed to find the shortest path from A to Z using best first search?\n[Figure: directed weighted graph with nodes A, B, C, D, E, F, Z. Edges: A→C (2), A→F (7), C→B (10), C→F (3), B→D (1), B→Z (15), F→D (1), F→E (6), D→E (2), D→Z (7), E→Z (4).]\nA. Node-A\nB. Node-B\nC. Node-C\nD. Node-D\nE. Node-E\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A→C→F→D→E",
+   "B": "A→C→E→B",
+   "C": "A→C→F→E→B",
+   "D": "A→C→D→F"
+  },
+  "note": "figure and options missing"
+ },
+ "83": {
+  "question": "The precedence of regular expression operators from lowest to highest precedence is:",
+  "options": {
+   "A": "Star, Concatenation, Union",
+   "B": "Union, Star, Concatenation",
+   "C": "Union, Concatenation, Star",
+   "D": "Star, Union, Concatenation"
+  },
+  "note": "option A polluted with other text"
+ },
+ "84": {
+  "question": "Arrange the following in the correct order which respect to key generation for RSA algorithm.\nA. Choose an integer e such that 1<e<λ(n)\nB. Compute Key length n=p*q\nC. Find d which is equal to 1/e\nD. Choose two large prime numbers p and q\nE. Compute λ(n)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-B-C-D-E",
+   "B": "D-C-B-E-A",
+   "C": "D-B-E-A-C",
+   "D": "A-B-D-E-C"
+  },
+  "note": "math in statements garbled"
+ },
+ "89": {
+  "question": "Consider the following statements:\n(A) For every regular language, we can design Turing Machine\n(B) For every context free language, we can design Turing Machine\nWhich of the following is correct?",
+  "options": {
+   "A": "Statement-A is false and Statement-B is true.",
+   "B": "Statement-A and Statement-B both are false.",
+   "C": "Statement-A is true and Statement-B is false.",
+   "D": "Statement-A and Statement-B both are true."
+  },
+  "note": "'B' symbol missing in option C"
+ },
+ "90": {
+  "question": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nA: Artificial Neural Networks are the backbone of deep learning algorithms.\nR. Back propagation is one of the techniques used to train an ANN.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+  "options": {
+   "A": "Both A and R are correct and R is the correct explanation of A.",
+   "B": "Both A and R are correct but R is NOT the correct explanation of A.",
+   "C": "A is correct but R is not correct.",
+   "D": "A is not correct but R is correct."
+  },
+  "note": "question split; option D polluted with passage"
+ },
+ "93": {
+  "question": "For a knapsack problem, P and W are profits and weights for a set of 7 items: P={9,5,2,7,6,16,9}, W={2,5,6,11,1,9,3}.\nIf new item (P=5, W=2) is added to the list, total items is 8 and capacity is 25 , then the best-case time of fractional knapsack for this case is _____",
+  "options": {
+   "A": "O(8)",
+   "B": "O(64)",
+   "C": "O(24)",
+   "D": "O(56)"
+  },
+  "note": "item and options missing; context added"
+ },
+ "95": {
+  "question": "Which of the following statements is correct for a knapsack?",
+  "options": {
+   "A": "0/1 knapsack can be applied for all kinds of problems but fractional knapsack can be applied only if the problem meets certain conditions.",
+   "B": "There is no difference between the two. They give the same solution for any problem.",
+   "C": "We use the greedy algorithm for 0 / 1 knapsack and dynamic programming for fractional knapsack.",
+   "D": "In 0/1 knapsack problem, items cannot be divided into smaller portions and in fractional knapsack we can divide the item into required proportions of weight."
+  },
+  "note": "option D polluted with next passage"
+ },
+ "96": {
+  "question": "Schema of the academic institution relational database: student (rollno, name, degree, year, sex, deptno, advisor); department (deptid, name, hod, phone); professor (empid, name, sex, startyear, deptno, phone); course (courseid, cname, credits, deptno); enrollment (rollno, courseid, sem, year, grade); teaching (empid, courseid, sem, year, classroom); prerequisite (precourseid, courseid). Foreign keys: deptno in student, professor and course refers to deptid of department; advisor in student refers to empid of professor; hod in department refers to empid of professor; rollno in enrollment refers to rollno of student; courseid in enrollment and teaching refers to courseid of course; empid in teaching refers to empid of professor; precourseid and courseid in prerequisite refer to courseid of course.\nWhich of the following queries would retrieve the roll number and names of students who have enrolled for all the prerequisite courses of the course number 324 ?",
+  "options": {
+   "A": "Select s.rollno, s.name From student s, enrollment e Where e.rollno = s.rollno and e.courseid = ANY (select precourseid from prerequisite p where p.courseid = \"324\")",
+   "B": "Select s.rollno, s.name From student s, enrollment e Where e.rollno =s.rollno and e.courseid = ALL (select precourseid from prerequisite p where p.courseid = \"324\")",
+   "C": "Select s.rollno, s.name From student s Where NOT EXISTS (select * prerequisite p where p.courseid = \" 324 \") and NOT EXISTS (select * from enrollment e where e.courseid = p.precourseid and e.rollno = s.rollno))",
+   "D": "Select s.rollno, s.name From student s Where EXISTS (select * prerequisite p where p.courseid = \"324\") and EXISTS (select * from enrollment e where e.courseid = p.precourseid and e.rollno = s.rollno))"
+  },
+  "note": "schema context added; options joined into lines"
+ },
+ "98": {
+  "question": "Schema of the academic institution relational database: student (rollno, name, degree, year, sex, deptno, advisor); department (deptid, name, hod, phone); professor (empid, name, sex, startyear, deptno, phone); course (courseid, cname, credits, deptno); enrollment (rollno, courseid, sem, year, grade); teaching (empid, courseid, sem, year, classroom); prerequisite (precourseid, courseid). Foreign keys: deptno in student, professor and course refers to deptid of department; advisor in student refers to empid of professor; hod in department refers to empid of professor; rollno in enrollment refers to rollno of student; courseid in enrollment and teaching refers to courseid of course; empid in teaching refers to empid of professor; precourseid and courseid in prerequisite refer to courseid of course.\nWhich of the following queries would compute, for each department, the total credits of all the courses offered by the department?",
+  "options": {
+   "A": "select deptid, name, sum(credits) as totalcredits from department, course\nwhere deptid=deptno\ngroup by deptid, name;",
+   "B": "select deptid, name, count(credits) as totalcredits\nfrom department, course\nwhere deptid=deptno",
+   "C": "group by deptid, name;\nselect deptid, name, sum(credits) as totalcredits from department, course",
+   "D": "select deptid, name, sum(credits) as totalcredits from department, course\ngroup by deptid, name\nhaving deptid=deptno;"
+  },
+  "note": "schema context added"
+ },
+ "99": {
+  "question": "Schema of the academic institution relational database: student (rollno, name, degree, year, sex, deptno, advisor); department (deptid, name, hod, phone); professor (empid, name, sex, startyear, deptno, phone); course (courseid, cname, credits, deptno); enrollment (rollno, courseid, sem, year, grade); teaching (empid, courseid, sem, year, classroom); prerequisite (precourseid, courseid). Foreign keys: deptno in student, professor and course refers to deptid of department; advisor in student refers to empid of professor; hod in department refers to empid of professor; rollno in enrollment refers to rollno of student; courseid in enrollment and teaching refers to courseid of course; empid in teaching refers to empid of professor; precourseid and courseid in prerequisite refer to courseid of course.\nWhich of the following queries would retrieve the dept id and name of all the departments that are such that the total of the credits of all the offered courses by the department is strictly greater than 40 ?",
+  "options": {
+   "A": "select deptid, name, sum(credits) as totalcredits from department, course\nwhere totalcredits >40\ngroup by deptid, name\nhaving deptid = deptno;",
+   "B": "select deptid, name, sum(credits) as totalcredits from department, course\nwhere deptid =\ndeptno and totalcredits >40\ngroup by deptid, name;",
+   "C": "select deptid, name, sum(credits) as totalcredits\nfrom department, course\ngroup by deptid, name\nhaving deptid = deptno and totalcredits >40",
+   "D": "select deptid, name, sum(credits) as totalcredits from department, course\nwhere deptid = deptno\ngroup by deptid, name\nhaving totalcredits >40"
+  },
+  "note": "option C polluted with junk; schema added"
+ },
+ "100": {
+  "question": "Schema of the academic institution relational database: student (rollno, name, degree, year, sex, deptno, advisor); department (deptid, name, hod, phone); professor (empid, name, sex, startyear, deptno, phone); course (courseid, cname, credits, deptno); enrollment (rollno, courseid, sem, year, grade); teaching (empid, courseid, sem, year, classroom); prerequisite (precourseid, courseid). Foreign keys: deptno in student, professor and course refers to deptid of department; advisor in student refers to empid of professor; hod in department refers to empid of professor; rollno in enrollment refers to rollno of student; courseid in enrollment and teaching refers to courseid of course; empid in teaching refers to empid of professor; precourseid and courseid in prerequisite refer to courseid of course.\nGiven query:\nselect s.rollno, s.name\nfrom student s\nwhere EXISTS (select c.courseid from course c Where c.deptno =5 and\nEXISTS (select e.* from enrollment e where e.courseid = c.courseid and\ne.rollno = s.rollno));\nWhich one of the following statements is correct with respect to the given query?",
+  "options": {
+   "A": "It retrieves the roll number and names of students who have not enrolled for all course offered by department number 5 .",
+   "B": "It retrieves the roll number and names of students who have enrolled for all course offered by department number 5 .",
+   "C": "It retrieves the roll number and names of students who have enrolled for at least one course offered by department number 5",
+   "D": "It retrieves the roll number and names of students who are such that there exists at least one course offered by department number 5 which is not enrolled by the student."
+  },
+  "note": "option D polluted with junk; schema added"
+ }
+}

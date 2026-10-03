@@ -1,0 +1,602 @@
+{
+ "2": {
+  "question": "What does the following function f() in ' C ' return?\nint f( unsigned int N ){\nunsigned int counter = 0;\nwhile (N > 0){\ncounter += N & 1;\nN = N ≫ 1; }\nreturn counter = 1; }",
+  "options": {
+   "A": "1 if N is odd, otherwise 0",
+   "B": "1 if N is a power of 2 , otherwise 0",
+   "C": "1 if the binary representation of N is all 1 s 's, otherwise 0",
+   "D": "1 if the binary representation of N has any 1 's, otherwise 0"
+  },
+  "note": "code symbols lost"
+ },
+ "3": {
+  "question": "Consider the following recursive function F() in Java that takes an integer value and returns a string value:\npublic static String F(int N){\n  if (N <= 0 ) return \" − \";\n  return F(N − 3) + N + F(N − 2) + N;\n}\nThe value of F(5) is:",
+  "options": {
+   "A": "−2−25−3−135",
+   "B": "−2−25−1−3−135",
+   "C": "−1−145−2−245",
+   "D": "−2−25−3−1−135"
+  },
+  "note": "options empty, code lost"
+ },
+ "6": {
+  "question": "Suppose you have eight 'black and white' images taken with a 1-megapixel camera and one '8-color' image taken by an 8-megapixel camera. How much hard disk space in total do you need to store these images on your computer?",
+  "options": {
+   "A": "1 GB",
+   "B": "4 MB",
+   "C": "3 MB",
+   "D": "3 GB"
+  },
+  "note": "junk in question, options empty"
+ },
+ "8": {
+  "question": "What is the transformation matrix M that transforms a square in the xy-plane defined by (1,1)ᵀ, (−1,1)ᵀ, (−1,−1)ᵀ and (1,−1)ᵀ to a parallelogram whose corresponding vertices are (2,1)ᵀ, (0,1)ᵀ, (−2,−1)ᵀ and (0,−1)ᵀ ?",
+  "options": {
+   "A": "M = [1 1 0; 0 1 0; 0 0 1]",
+   "B": "M = [1 0 0; 1 1 0; 0 0 1]",
+   "C": "M = [1 1 1; 0 1 0; 0 0 1]",
+   "D": "M = [1 1 0; 1 1 0; 0 0 1]"
+  },
+  "note": "matrices missing"
+ },
+ "9": {
+  "question": "Suppose a Bezier curve P(t) is defined by the following four control points in the xy-plane: P0 = (−2,0); P1 = (−2,4); P2 = (2,4); and P3 = (2,0). Then which of the following statements are correct?\nA. Bezier curve P(t) has degree 3.\nB. P(1/2) = (0,3).\nC. Bezier curve P(t) may extend outside the convex hull of its control points.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A and B only",
+   "B": "A and C only",
+   "C": "B and C only",
+   "D": "A, B, and C"
+  },
+  "note": "math/options lost in extraction"
+ },
+ "15": {
+  "question": "A system has 99.99% uptime and has a mean-time-between-failure of 1 day. How fast does the system has to repair itself in order to reach this availability goal?",
+  "options": {
+   "A": "~9 Seconds",
+   "B": "~10 Seconds",
+   "C": "~11 Seconds",
+   "D": "~12 Seconds"
+  },
+  "note": "numbers missing, options empty"
+ },
+ "20": {
+  "question": "Given below are two statements, one is labelled as Assertion A and the other is labelled as Reason R\nAssertion A : Software developers donot do exhaustive software testing in practice.\nReason R : Even for small inputs, exhaustive testing is too computationally intensive (e.g., takes too long) to run all the tests.\nIn light of the above statements, choose the correct answer from the options given below",
+  "options": {
+   "A": "Both A and R are true and R is the correct explanation of A",
+   "B": "Both A and R are true but R is NOT the correct explanation of A",
+   "C": "A is true but R is false",
+   "D": "A is false but R is true"
+  },
+  "note": "junk table text inside question"
+ },
+ "21": {
+  "question": "Which of the following are logically equivalent?\nA. ¬p → (q → r) and q → (p ∨ r)\nB. (p → q) → r and p → (q → r)\nC. (p → q) → (r → s) and (p → r) → (q → s)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A only",
+   "B": "A and B only",
+   "C": "B and C only",
+   "D": "A and C only"
+  },
+  "note": "formulas missing"
+ },
+ "22": {
+  "question": "Which of these statements about the floor and ceiling functions are correct?\nStatement I: ⌊2x⌋ = ⌊x⌋ + ⌊x + (1/2)⌋ for all real number x\nStatement II: ⌈x + y⌉ = ⌈x⌉ + ⌈y⌉ for all real mumbers x and y",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is true but Statement II is false",
+   "D": "Statement I is false but Statement II is true"
+  },
+  "note": "formulas missing"
+ },
+ "23": {
+  "question": "How many ways are there to assign 5 different jobs to 4 different employees if every employee is assigned at least 1 job",
+  "options": {
+   "A": "1024",
+   "B": "625",
+   "C": "240",
+   "D": "20"
+  },
+  "note": "numbers and options missing"
+ },
+ "24": {
+  "question": "A company stores products in a warehouse. Storage bins in this warehouse are specified by their aisle, location in the aisle, and self. There are 50 aisles, 85 horizontal locations in each aisle, and 5 shelves throughout the warehouse. What is the least number of products the company can have so that at least two products must be stored in the same bin?",
+  "options": {
+   "A": "251",
+   "B": "426",
+   "C": "4251",
+   "D": "21251"
+  },
+  "note": "numbers and options missing"
+ },
+ "25": {
+  "question": "Let us assume a person climbing the stairs can take one stair or two stairs at a time. How many ways can this person climb a flight of eight stairs?",
+  "options": {
+   "A": "21",
+   "B": "24",
+   "C": "31",
+   "D": "34"
+  },
+  "note": "options empty"
+ },
+ "26": {
+  "question": "For which value of n is Wheel graph Wn regular",
+  "options": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "5"
+  },
+  "note": "symbols and options missing"
+ },
+ "28": {
+  "question": "Match List I with List II\nList I (Identity) | List II (Name)\nA. x+x=x | I. Identity Law\nB. x+0=x | II. Absorption Law\nC. x+1=1 | III. Idempotent Law\nD. x+xy=x | IV. Domination Law",
+  "options": {
+   "A": "A - III, B - I , C - II, D - IV",
+   "B": "A - I, B - III , C - IV, D - II",
+   "C": "A - III, B - I , C - IV, D - II",
+   "D": "A - III, B - IV , C - I, D - II"
+  },
+  "note": "table scrambled with junk"
+ },
+ "29": {
+  "question": "Let (X, *) be a semigroup. Furthermore, for every a and b in X, if a ≠ b, then a*b ≠ b*a.\nBased on the defined seimigroup, choose the correct equalities from the options given below:\nA. For every a in X, a*a = a\nB. For every a, b in X, a*b*a = a\nC. For every a, b, c in X, a*b*c = a*c",
+  "options": {
+   "A": "A and B only",
+   "B": "A and C only",
+   "C": "B and C only",
+   "D": "A, B and C"
+  },
+  "note": "symbols missing"
+ },
+ "30": {
+  "question": "Consider the following linear optimization problem:\nMaximize Z = 6x + 5y\nSubject to 2x - 3y <= 5\nx + 3y <= 11\n4x + y <= 15\nand x >= 0, y >= 0.\nThe optimal solution of the problem is:",
+  "options": {
+   "A": "15",
+   "B": "25",
+   "C": "31.72",
+   "D": "41.44"
+  },
+  "note": "constraints and options missing"
+ },
+ "31": {
+  "question": "Which of the following languages are not regular?\nA. L = {(01)^n 0^k | n>k, k≥0}\nB. L = {c^n b^k a^(n+k) | n≥0, k≥0}\nC. L = {0^n 1^k | n ≠ k}\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A and B only",
+   "B": "A and C only",
+   "C": "B and C only",
+   "D": "A, B and C"
+  },
+  "note": "superscripts and language C missing"
+ },
+ "32": {
+  "question": "Any string of terminals that can be generated by the following context-free grammar (where S is start nonterminal symbol)\nS → XY\nX → 0X | 1X | 0\nY → Y0 | Y1 | 0",
+  "options": {
+   "A": "has at least one 1",
+   "B": "should end with 0",
+   "C": "has no consecutive 0's or 1's",
+   "D": "has at least two 0's"
+  },
+  "note": "arrows and options missing symbols"
+ },
+ "33": {
+  "question": "Let\nL1 = {0^n 1^n 0^m | n>=1, m>=1}\nL2 = {0^n 1^m 0^m | n>=1, m>=1}\nL3 = {0^n 1^n 0^n | n>=1}\nWhich of the following are correct statements?\nA. L3 = L1 ∩ L2\nB. L1 and L2 are context free languages but L3 is not a context free language\nC. L1 and L2 are not context free languages but L3 is a context free language\nD. L1 is a subset of L3\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A and B only",
+   "B": "A and C only",
+   "C": "A and D only",
+   "D": "A only"
+  },
+  "note": "language definitions missing"
+ },
+ "35": {
+  "question": "What is the minimum number of states required to the finite automaton equivalent to the transition diagram given below?\n[Figure: DFA with start state a and final state c; states a,b,c,d,e,f,g,h. Transitions (state, input -> next): a,0->b; a,1->f; b,0->g; b,1->c; c,0->a; c,1->c; d,0->c; d,1->g; e,0->h; e,1->f; f,0->c; f,1->g; g,0->g; g,1->e; h,0->g; h,1->c]",
+  "options": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "note": "figure and options missing"
+ },
+ "37": {
+  "question": "What language is accepted by the pushdown automaton M = ({q0, q1, q2}, {a, b}, {a, b, z}, δ, q0, z, {q2}) with\nδ(q0, a, a) = {(q0, aa)}; δ(q0, b, a) = {(q0, ba)}\nδ(q0, a, b) = {(q0, ab)}; δ(q0, b, b) = {(q0, bb)}\nδ(q0, a, z) = {(q0, az)}; δ(q0, b, z) = {(q0, bz)}\nδ(q0, λ, b) = {(q1, b)}; δ(q0, λ, a) = {(q1, a)}\nδ(q1, a, a) = {(q1, λ)}; δ(q1, b, b) = {(q1, λ)}\nδ(q1, λ, z) = {(q2, z)} ?",
+  "options": {
+   "A": "L = {w | na(w) = nb(w), w ∈ {a,b}+}",
+   "B": "L = {w | na(w) <= nb(w), w ∈ {a,b}+}",
+   "C": "L = {w | nb(w) <= na(w), w ∈ {a,b}+}",
+   "D": "L = {w w^R | w ∈ {a,b}+}"
+  },
+  "note": "options empty, PDA definition garbled"
+ },
+ "38": {
+  "question": "Match List I with List II\nList I (Production Rules) | List II (Grammar)\nA. S → XY; X → 0; Y → 1 | I. Greibach Normal Form\nB. S → aS | bSS | c | II. Context sensitive Grammar\nC. S → AB; A → 0A | 1A | 0; B → 0A | III. Chomsky Normal Form\nD. S → aAbc; Ab → bA; Ac → Bbcc; bB → Bb; aB → aa | aaA | IV. S. Grammar",
+  "options": {
+   "A": "A - III, B - I , C - IV, D - II",
+   "B": "A - III, B - II , C - I, D - IV",
+   "C": "A - III, B - IV, C - I, D - II",
+   "D": "A - IV, B - III , C - I, D - II"
+  },
+  "note": "arrows lost in table"
+ },
+ "40": {
+  "question": "Given below are two statements\nStatement I: LL(1) and LR are examples of Bottom-up parsers.\nStatement II: Recursive descent parser and SLR are examples of Top-down parsers\nIn light of the above statements, choose the correct answer from the options given below",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is true but Statement II is false",
+   "D": "Statement I is false but Statement II is true"
+  },
+  "note": "junk text inside question"
+ },
+ "41": {
+  "question": "The postfix form of the expression (A + B) * (C * D - E ) * F /G is _______",
+  "options": {
+   "A": "A B + C D * E − F G / * *",
+   "B": "A B + C D * E − F * * G /",
+   "C": "A B + C D * E − * F * G /",
+   "D": "A B + C D E * − * F * G /"
+  },
+  "note": "options empty"
+ },
+ "42": {
+  "question": "A double-ended queue (dequeue) supports adding and removing items from both the ends of the queue. The operations supported by dequeue are AddFront(adding item to front of the queue), AddRear(adding item to the rear of the queue), RemoveFront(removing item from the front of the queue), and RemoveRear(removing item from the rear of the queue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What's the time complexity of performing AddFront() and AddRear() assuming m is the size of the stack and n is the number of elements?",
+  "options": {
+   "A": "O(m) and O(n)",
+   "B": "O(1) and O(n)",
+   "C": "O(n) and O(1)",
+   "D": "O(n) and O(m)"
+  },
+  "note": "variable n missing in question"
+ },
+ "44": {
+  "question": "A data structure is required for storing a set of integers such that each of the following operations can be done in O(log n) time, where n is the number of elements in the set.\n• Deletion of the smallest element\n• Insertion of an element if it is not already present in the set\nWhich of the following data structures can be used for this purpose?",
+  "options": {
+   "A": "A heap can be used but not a balanced binary search tree.",
+   "B": "A balanced binary search tree can be used but not a heap.",
+   "C": "Both balanced binary search tree and heap can be used.",
+   "D": "Neither balanced binary search tree nor heap can be used."
+  },
+  "note": "O(log n) and bullets missing"
+ },
+ "45": {
+  "question": "Consider the following graph.\n[Figure: undirected graph on vertices a,b,e,f,g,h with edges a-b, a-e, a-f, b-e, b-f, b-h, h-f, h-g, g-e, g-f]\nAmong the following sequences\nI. a b e g h f\nII. a b f e h g\nIII. a b f h g e\nIV. a f g h b e\nWhich are depth first traversals of the above graph?",
+  "options": {
+   "A": "I, II, and IV only",
+   "B": "I and IV only",
+   "C": "II, III, and IV only",
+   "D": "I, III, and IV only"
+  },
+  "note": "graph figure missing"
+ },
+ "46": {
+  "question": "Given below are two statements\nStatement I: In an undirected graph, number of odd degree vertices is even.\nStatement II: In an undirected graph, sum of degrees of all vertices is even.\nIn light of the above statements, choose the correct answer from the options given below.",
+  "options": {
+   "A": "Both Statement I and Statement II are true.",
+   "B": "Both Statement I and Statement II are false.",
+   "C": "Statement I is true but Statement II is false.",
+   "D": "Statement I is false but Statement II is true."
+  },
+  "note": "junk text inside option A"
+ },
+ "47": {
+  "question": "Which of the given options provides the increasing order of asymptotic complexity of functions f1, f2, f3 and f4?\nA. f1(n) = 2^n\nB. f2(n) = n^(3/2)\nC. f3(n) = n log n\nD. f4(n) = n^(log n)\nChoose the correct answer from the options given below",
+  "options": {
+   "A": "C, B, D, A",
+   "B": "C, B, A, D",
+   "C": "B, C, A, D",
+   "D": "B, C, D, A"
+  },
+  "note": "function definitions missing"
+ },
+ "48": {
+  "question": "The order of a leaf node in a B+ tree is the maximum number of (value, data record pointer) pairs it can hold. Given that the block size is 1K bytes, data record pointer is 7 bytes long, the value field is 9 bytes long and a block pointer is 6 bytes long, what is the order of the leaf node?",
+  "options": {
+   "A": "63",
+   "B": "64",
+   "C": "67",
+   "D": "68"
+  },
+  "note": "numbers and options missing"
+ },
+ "49": {
+  "question": "A hash function h defined as h(key) = key mod 7, with linear probing, is used to insert the keys 44, 45, 79, 55, 91, 18, 63 into a table indexed from 0 to 6. What will be the location of key 18?",
+  "options": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "note": "formula, keys and options missing"
+ },
+ "53": {
+  "question": "Consider the given tree below. Calculate the value at the root of the tree using alpha-beta pruning algorithm.\n[Figure: game tree. Root A (Max); level 2: B, C (Min); level 3: D, E, F, G (Max). B has children D, E; C has children F, G. Leaf values left to right: D: 3, 5; E: 6, 9; F: 1, 2; G: 0, -1]",
+  "options": {
+   "A": "3",
+   "B": "5",
+   "C": "6",
+   "D": "9"
+  },
+  "note": "tree figure and options missing"
+ },
+ "54": {
+  "question": "Which among the following statement(s) is(are) FALSE?\nA. Greedy best-first search is not optimal but is often efficient.\nB. A* is complete and optimal provided h(n) is admissible or consistent.\nC. Recursive best-first search is efficient in terms of time complexity but poor in terms of space complexity.\nD. h(n) = 0 is an admissible heuristic for the 8-puzzle.",
+  "options": {
+   "A": "A only",
+   "B": "A and D only",
+   "C": "C only",
+   "D": "C and D only"
+  },
+  "note": "A* and h(n)=0 missing"
+ },
+ "55": {
+  "question": "Consider the sentence below.\nThere is a country that borders both India and Pakistan.\nWhich of the following logical expressions express the above sentence correctly when the predicate Country(x) represents that x is a country and Borders(x, y) represents that the countries x and y share the border?",
+  "options": {
+   "A": "∃c Country(c) ∧ Border(c, India) ∧ Border(c, Pakistan)",
+   "B": "∃c Country(c) ⇒ [Border(c, India) ∧ Border(c, Pakistan)]",
+   "C": "[∃c Country(c)] ⇒ [Border(c, India) ∧ Border(c, Pakistan)]",
+   "D": "∃c Border(Country(c), India ∧ Pakistan)"
+  },
+  "note": "logic options empty, passage merged into D"
+ },
+ "56": {
+  "question": "Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2×2×2 table as shown below.\n| | toothache, catch | toothache, ¬catch | ¬toothache, catch | ¬toothache, ¬catch |\n| cavity | 0.108 | 0.012 | 0.072 | 0.008 |\n| ¬cavity | 0.016 | 0.064 | 0.144 | 0.576 |\nThe marginal probability of cavity P(cavity) is __________.",
+  "options": {
+   "A": "0.200",
+   "B": "0.216",
+   "C": "0.120",
+   "D": "0.080"
+  },
+  "note": "options empty, passage/table missing"
+ },
+ "57": {
+  "question": "Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2×2×2 table as shown below.\n| | toothache, catch | toothache, ¬catch | ¬toothache, catch | ¬toothache, ¬catch |\n| cavity | 0.108 | 0.012 | 0.072 | 0.008 |\n| ¬cavity | 0.016 | 0.064 | 0.144 | 0.576 |\nThe probability of a cavity, given evidence of a toothache, P(cavity | toothache) is __________.",
+  "options": {
+   "A": "0.400",
+   "B": "0.600",
+   "C": "0.280",
+   "D": "0.216"
+  },
+  "note": "options empty, passage/table missing"
+ },
+ "58": {
+  "question": "Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2×2×2 table as shown below.\n| | toothache, catch | toothache, ¬catch | ¬toothache, catch | ¬toothache, ¬catch |\n| cavity | 0.108 | 0.012 | 0.072 | 0.008 |\n| ¬cavity | 0.016 | 0.064 | 0.144 | 0.576 |\nThe probability of a toothache, given evidence of a cavity, P(toothache | cavity) is __________.",
+  "options": {
+   "A": "0.400",
+   "B": "0.600",
+   "C": "0.280",
+   "D": "0.216"
+  },
+  "note": "options empty, passage/table missing"
+ },
+ "59": {
+  "question": "Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2×2×2 table as shown below.\n| | toothache, catch | toothache, ¬catch | ¬toothache, catch | ¬toothache, ¬catch |\n| cavity | 0.108 | 0.012 | 0.072 | 0.008 |\n| ¬cavity | 0.016 | 0.064 | 0.144 | 0.576 |\nP(cavity ∨ toothache) is __________.",
+  "options": {
+   "A": "0.200",
+   "B": "0.120",
+   "C": "0.280",
+   "D": "0.600"
+  },
+  "note": "options empty, passage/table missing"
+ },
+ "60": {
+  "question": "Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2×2×2 table as shown below.\n| | toothache, catch | toothache, ¬catch | ¬toothache, catch | ¬toothache, ¬catch |\n| cavity | 0.108 | 0.012 | 0.072 | 0.008 |\n| ¬cavity | 0.016 | 0.064 | 0.144 | 0.576 |\nThe probability for Cavity, given that either Toothache or Catch is true, P(Cavity | toothache ∨ catch) is _______.",
+  "options": {
+   "A": "0.6000",
+   "B": "0.5384",
+   "C": "0.8000",
+   "D": "0.4615"
+  },
+  "note": "options empty, passage/table missing"
+ },
+ "61": {
+  "question": "Which of the DBMS component ensures that concurrent execution of multiple operations on the database results into a consistent database state?",
+  "options": {
+   "A": "Logs",
+   "B": "Buffer manager",
+   "C": "File manager",
+   "D": "Transaction processing system"
+  },
+  "note": "junk appended to option D"
+ },
+ "63": {
+  "question": "Given a fixed-length record file that is ordered on the key field. The file needs B disk blocks to store R number of records. Find the average access time needed to access any record of the given file using binary search.",
+  "options": {
+   "A": "B/2",
+   "B": "B + R",
+   "C": "B",
+   "D": "log2 B"
+  },
+  "note": "symbols and options missing"
+ },
+ "64": {
+  "question": "Given the following STUDENT-COURSE scheme: STUDENT (Rollno, Name, courseno) COURSE (courseno, coursename, capacity), where Rollno is the primary key of relation STUDENT and courseno is the primary key of relation COURSE. Attribute coursename of COURSE takes unique values only. Which of the following query(ies) will find total number of students enrolled in each course, along with its coursename.\nA. SELECT coursename, count(*) 'total' from STUDENT natural join COURSE group by coursename;\nB. SELECT C.coursename, count(*) 'total' from STUDENT S, COURSE C where S.courseno=C.courseno group by coursename;\nC. SELECT coursename, count(*) 'total' from COURSE C where courseno in (SELECT courseno from STUDENT);",
+  "options": {
+   "A": "A and B only",
+   "B": "C only",
+   "C": "A only",
+   "D": "B only"
+  },
+  "note": "count(*) asterisks missing"
+ },
+ "65": {
+  "question": "Given the following STUDENT-COURSE scheme: STUDENT (Rollno, Name, Courseno) COURSE (Courseno, Coursename, Capacity), where Rollno is the primary key of relation STUDENT and Courseno is the primary key of relation COURSE. Attribute Coursename of COURSE takes unique values only. The number of records in COURSE and STUDENT tables are 3 and 5 respectively. Following relational algebra query is executed:\nR=STUDENT X COURSE\nMatch List I with List II in context to the above problem statement.\nList I | List II\nA. Degree of table R | I. 15\nB. Cardinality of table R | II. NIL\nC. Foreign key of relation STUDENT | III. 6\nD. Foreign key of relation COURSE | IV. Courseno\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A -III , B -I , C -IV , D - II",
+   "B": "A -I , B -III , C -IV , D - II",
+   "C": "A -I , B -III , C -IV , D - II",
+   "D": "A -I , B -III, C -II , D - IV"
+  },
+  "note": "numbers and table missing"
+ },
+ "66": {
+  "question": "Suppose a B tree is used for indexing a database file. Consider the following information:\nsize of the search key field = 10 bytes, block size = 1024 bytes, size of the record pointer = 9 bytes, size of the block pointer = 8 bytes.\nLet K be the order of internal node and L be the order of leaf node of B tree, then (K, L) = ______.",
+  "options": {
+   "A": "(57, 53)",
+   "B": "(50, 52)",
+   "C": "(60, 64)",
+   "D": "(34, 31)"
+  },
+  "note": "values and options missing"
+ },
+ "67": {
+  "question": "Given a relation scheme R(x,y,z,w) with functional dependencies set F={x→y, z→w}. All attributes take single and atomic values only.\nA. Relation R is in First Normal FORM\nB. Relation R is in Second Normal FORM\nC. Primary key of R is xz\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "C only",
+   "B": "B and C only",
+   "C": "A and C only",
+   "D": "B only"
+  },
+  "note": "relation, FDs and symbols missing"
+ },
+ "71": {
+  "question": "Given memory access time as p nanoseconds and additional q nanoseconds for handling the page fault. What is the effective memory access time if a page fault occurs once for every 100 instructions?",
+  "options": {
+   "A": "p + q/100",
+   "B": "(p+q)/100",
+   "C": "p + q",
+   "D": "p/100 + q"
+  },
+  "note": "variables and options missing"
+ },
+ "74": {
+  "question": "Match List I with List II\nList-I (System Calls) | List-II (Description)\nA. fork() | I. sends a signal from one process to particular process\nB. exec() | II. Indicates termination of current process\nC. kill() | III. Loads the specified program in memory.\nD. exit() | IV. Creates a child process.",
+  "options": {
+   "A": "A - II , B - III , C - IV , D - I",
+   "B": "A - IV , B - III , C - I , D - II",
+   "C": "A - IV , B - I , C - II , D - III",
+   "D": "A - IV , B - III , C - II, D - I"
+  },
+  "note": "junk text mixed into table"
+ },
+ "75": {
+  "question": "Consider the following 3 processes with the length of the CPU burst time given in milliseconds:\n| Process | Arrival Time | Burst Time |\n| P1 | 0 | 8 |\n| P2 | 1 | 4 |\n| P3 | 2 | 9 |\nWhat is the average waiting time for these processes if they are scheduled using preemptive shortest job first scheduling algorithm?",
+  "options": {
+   "A": "5.5",
+   "B": "2.66",
+   "C": "4.66",
+   "D": "6"
+  },
+  "note": "table missing, passage merged into D"
+ },
+ "77": {
+  "question": "Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.\nFind number of pages required for the given virtual address space",
+  "options": {
+   "A": "2^10",
+   "B": "2^20",
+   "C": "2^30",
+   "D": "2^12"
+  },
+  "note": "options empty"
+ },
+ "78": {
+  "question": "Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.\nWhat is the minimum number of bits needed for the physical address?",
+  "options": {
+   "A": "28",
+   "B": "34",
+   "C": "24",
+   "D": "12"
+  },
+  "note": "options empty"
+ },
+ "79": {
+  "question": "Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.\nWhat is the size of page table for handling the given virtual address space, given that each page table entry is of size 2 bytes?",
+  "options": {
+   "A": "2MB",
+   "B": "2KB",
+   "C": "32MB",
+   "D": "12KB"
+  },
+  "note": "options empty"
+ },
+ "80": {
+  "question": "Consider a machine with 16 GB main memory and 32-bits virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.\nIf a process of size 34KB is to be executed on this machine, then what will be the size of internal fragmentation for this process?",
+  "options": {
+   "A": "4KB",
+   "B": "Zero",
+   "C": "1KB",
+   "D": "2KB"
+  },
+  "note": "options empty"
+ },
+ "82": {
+  "question": "The Octal equivalent of hexadecimal (D.C)16 is:",
+  "options": {
+   "A": "(15.6)8",
+   "B": "(61.6)8",
+   "C": "(15.3)8",
+   "D": "(61.3)8"
+  },
+  "note": "numbers and options missing"
+ },
+ "83": {
+  "question": "A digital computer has a common bus system for 8 registers 16 bits each. How many multiplexers are required to implement common bus? What size of multiplexers is required?",
+  "options": {
+   "A": "16, 8×1",
+   "B": "8, 16×1",
+   "C": "8, 8×1",
+   "D": "16, 16×1"
+  },
+  "note": "numbers and options missing"
+ },
+ "85": {
+  "question": "The reverse Polish notation of the following infix expression\n[A*{B+C*(D+E)}]/{F*(G+H)}\nis__________.",
+  "options": {
+   "A": "ABCDE+*+*FGH+*/",
+   "B": "ABCDE*++*FGH+*/",
+   "C": "ABCDE+*+*FGH*+/",
+   "D": "ABCDE+**+FGH+*/"
+  },
+  "note": "options split across pages"
+ },
+ "91": {
+  "question": "Match List I with List II\nList I | List II\nA. Data Link Layer | I. True end-to-end layer\nB. Network Layer | II. Token Management\nC. Transport Layer | III. Produce billing information\nD. Session Layer | IV. Piggybacking\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A - IV, B - III, C - I, D - II",
+   "B": "A - IV, B - II, C - I, D - III",
+   "C": "A - II, B - III, C - I, D - IV",
+   "D": "A - IV, B - I, C - III, D - II"
+  },
+  "note": "table cells scrambled"
+ },
+ "92": {
+  "question": "Given below are two statements\nStatement I: Telnet, Ftp, Http are application layer protocol\nStatement II: The Iridium project was planned to launch 66 low orbit satellites.\nIn light of the above statements, choose the correct answer from the options given below",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is true but Statement II is false",
+   "D": "Statement I is false but Statement II is true"
+  },
+  "note": "junk text prefixed to question"
+ },
+ "95": {
+  "question": "The address of class B host is to be split into subnets with 6-bit subnet number. What is the maximum number of the subnets and the maximum number of hosts in each subnet?",
+  "options": {
+   "A": "62 subnets and 262142 hosts",
+   "B": "64 subnets and 1024 hosts",
+   "C": "64 subnets and hosts 262142",
+   "D": "62 subnets and 1022 hosts"
+  },
+  "note": "numbers missing in options"
+ },
+ "99": {
+  "question": "Which of the following statements are true?\nA. X.25 is connection-oriented network\nB. X.25 doesn't support switched virtual circuits.\nC. Frame relay service provides acknowledgements.\nD. Frame relay service provides detection of transmission errors.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A and D only",
+   "B": "B and D only",
+   "C": "C and D only",
+   "D": "B and C only"
+  },
+  "note": "X.25 missing"
+ },
+ "100": {
+  "question": "Let G(x) be the generator polynomial used for CRC checking. The condition that should be satisfied by the G(x) to catch all errors consisting of an odd number of inverted bits is:",
+  "options": {
+   "A": "(x+1) is factor of G(x)",
+   "B": "(x-1) is factor of G(x)",
+   "C": "(x²+1) is factor of G(x)",
+   "D": "(1-x²) is factor of G(x)"
+  },
+  "note": "polynomials missing, options split across pages"
+ }
+}

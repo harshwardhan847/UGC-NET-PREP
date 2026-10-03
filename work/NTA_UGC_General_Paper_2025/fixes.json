@@ -1,0 +1,72 @@
+{
+ "10": {
+  "question": "Match the List-I with List-II.\nList-I (Proponents)\nA. George Gerbner\nB. L.A. Festinger\nC. MeCombs and Donald L. Shaw\nD. Katz and Blumer\nList-II (Theory)\nI. Cognitive Dissonance Theory\nII. Cultivation Theory\nIII. Uses and Gratification Theory\nIV. Agenda Setting Theory\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+   "B": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)",
+   "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+   "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+  },
+  "note": "Removed unrelated comprehension table; fixed list-II layout"
+ },
+ "11": {
+  "question": "Match the List-I with List-II.\nList-I (Institutions)\nA. Milind College\nB. Rajghat Besant School\nC. Banasthali Vidyapeeth\nD. Auroville\nList-II (Propounders)\nI. B.R. Ambedkar\nII. Sri Aurobindo\nIII. Hiralal Shastri\nIV. Jiddu Krishnamurti\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+   "B": "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+   "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+   "D": "(A)-(I), (B)-(IV), (C)-(III), (D)-(II)"
+  },
+  "note": "Fixed 'I V' to IV in list-II"
+ },
+ "26": {
+  "question": "Match the List-I with List-II.\nList-I (Environmental Treaty/Convention)\nA. Bonn Convention\nB. CITES\nC. Earth Summit\nD. Nagoya Protocol\nList-II (Focus Area)\nI. Migratory Species Conservation\nII. Convention on Biological Diversity\nIII. Trades in Endangered Species\nIV. Sustainable Development\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+   "B": "(A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+   "C": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+   "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+  },
+  "note": "Fixed 'I V' to IV in list-II"
+ },
+ "27": {
+  "question": "Match the List-I with List-II.\nList-I (Device)\nA. CPU\nB. Monitor\nC. RAM\nD. Hard disk\nList-II (Function)\nI. stores data temporarily\nII. stores data permanently\nIII. Processes Instructions\nIV. Displays visual output\nChoose the correct answer from the options given below",
+  "options": {
+   "A": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+   "B": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+   "C": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+   "D": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)"
+  },
+  "note": "Fixed 'I V' to IV in list-II"
+ },
+ "12": {
+  "question": "Which of the following statements are correct in the context of operating system?\n(A) Utility program is the first program loaded into the computer during booting\n(B) Multiprogramming was introduced for interleaved execution of multiple jobs by the same CPU\n(C) DOS is an example of single user operating system.\n(D) Mainframe computer uses multiuser operating system.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B and C Only",
+   "B": "A, B and D Only",
+   "C": "B, C and D Only",
+   "D": "A, C and D Only"
+  },
+  "note": "Fixed split words (program, Multiprogramming)"
+ },
+ "42": {
+  "question": "Pick the correct statements pertaining to NEP 2020.\n(A) It promotes multiple entry-multiple exit\n(B) It promotes English education\n(C) It promotes multi and inter-disciplinarity\n(D) It promotes privatization-philanthropic participation in Education\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, C and D Only",
+   "B": "B and D Only",
+   "C": "B, C and D Only",
+   "D": "A and B Only"
+  },
+  "note": "Fixed split word privatization"
+ },
+ "45": {
+  "question": "If a researcher decides to have a control group in a ‘placebo’ design, he/she should have how many groups?",
+  "options": {
+   "A": "One group",
+   "B": "Two groups",
+   "C": "Three groups",
+   "D": "Four groups"
+  },
+  "note": "Removed comprehension passage merged into option D"
+ }
+}

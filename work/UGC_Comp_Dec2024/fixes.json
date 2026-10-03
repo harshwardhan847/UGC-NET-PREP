@@ -1,0 +1,322 @@
+{
+ "2": {
+  "question": "Consider following conditional statements if (m = 20 − 10 || n > 10). The order of execution of the following operations is\nA. ==\nB. -\nC. ||\nD. >\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "D, B, A, C",
+   "B": "B, D, C, A",
+   "C": "B, D, A, C",
+   "D": "A, B, D, C"
+  },
+  "note": "Lost expression and operators"
+ },
+ "7": {
+  "question": "Which one of the following is not a basic solution of system of linear equation\nx₁ + 2x₂ + x₃ = 4\n2x₁ + x₂ + 5x₃ = 5",
+  "options": {
+   "A": "x₁ = −1, x₂ = 2, x₃ = 1",
+   "B": "x₁ = 2, x₂ = 1",
+   "C": "x₁ = 5, x₃ = −1",
+   "D": "x₂ = 5/3, x₃ = 2/3"
+  },
+  "note": "Equations and options missing"
+ },
+ "13": {
+  "question": "Which one of the following is the correct estimation model based on software equation?",
+  "options": {
+   "A": "E = [LOC × B^(0.222/P)]^2 × (1/t^4)",
+   "B": "E = [LOC × B^0.333/P]^3 × (1/t^4)",
+   "C": "E = [LOC × B^0.444/P]^4 × (1/t^3)",
+   "D": "E = [LOC × B^0.111/P]^6 × (1/t^3)"
+  },
+  "note": "Options were empty"
+ },
+ "14": {
+  "question": "Match the LIST-I with LIST-II: Match the logical equivalence propositions\nLIST - I\nA. p → q\nB. ¬(p ∨ (¬p ∧ q))\nC. p ↔ q\nD. ¬(p ↔ q)\nLIST - II\nI. (p ∧ q) ∨ (¬p ∧ ¬q)\nII. ¬p ∨ q\nIII. ¬(p ∨ q)\nIV. ¬p ↔ q\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-I, B-III, C-II, D-IV",
+   "B": "A-I, B-II, C-III, D-IV",
+   "C": "A-II, B-III, C-I, D-IV",
+   "D": "A-II, B-III, C-IV, D-I"
+  },
+  "note": "Table formulas missing"
+ },
+ "15": {
+  "question": "Match the LIST-I with LIST-II\nLIST - I\nA. Decision Tree\nB. Supervised Learning\nC. Artificial Neural Network\nD. Instance Base Learning\nLIST - II\nI. Delta Learning Rule\nII. Self Organizing Map\nIII. C4.5 Algorithm\nIV. Non-linear Regression Algorithm\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-I, B-II, C-III, D-IV",
+   "B": "A-II, B-III, C-IV, D-I",
+   "C": "A-III, B-IV, C-I, D-II",
+   "D": "A-IV, B-I, C-II, D-III"
+  },
+  "note": "Question polluted with other questions' math"
+ },
+ "20": {
+  "question": "Which of the following is the simplified form of the given function.\nf(A,B,C) = Σm(0,1,3,7)",
+  "options": {
+   "A": "A'B'C' + A'B'C + A'BC + ABC",
+   "B": "A'B' + A'BC + ABC",
+   "C": "A'B' + BC",
+   "D": "A'B' + BC'"
+  },
+  "note": "Function and options missing"
+ },
+ "22": {
+  "question": "The probability that A hits a target is 1/4, and the probability that B hits the target is 2/5. Both shoot at the target, what is the probability that at least one of them hits the target, i.e., that A or B (or both) hit the target?",
+  "options": {
+   "A": "3/5",
+   "B": "11/9",
+   "C": "2/20",
+   "D": "11/20"
+  },
+  "note": "Fractions and options missing"
+ },
+ "23": {
+  "question": "Match the LIST-I with LIST-II\nLIST - I\nA. Internet message Access (IMAP)\nB. Address Resolution Protocol (ARP)\nC. Post Office Protocol (POP)\nD. TELNET\nLIST - II\nI. A protocol that allows email clients to retrieve emails from a mail server\nII. Used for remove login to another computer over a network\nIII. A protocol that maps IP addresses to MAC addresses on a local area network\nIV. A protocol that allows accessing email on the server without downloading them\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-II, B-I, C-III, D-IV",
+   "B": "A-III, B-IV, C-I, D-II",
+   "C": "A-IV, B-III, C-I, D-II",
+   "D": "A-IV, B-III, C-II, D-I"
+  },
+  "note": "Question polluted with other questions' math"
+ },
+ "30": {
+  "question": "[Figure: binary tree. Root A; A has left child B and right child C; C has left child D and right child E; E has right child F (no left child); F has left child G and right child H.]\nConsidering above binary tree, what will be the inorder traversal",
+  "options": {
+   "A": "BADCEGFH",
+   "B": "GHFEDCBA",
+   "C": "BACDEGFH",
+   "D": "GHFDEBCA"
+  },
+  "note": "Tree figure missing"
+ },
+ "37": {
+  "question": "Which of the following represents the output of the transition function (δ)\nδ(q0, a) = (q1, x, R)\nδ(q1, a) = (q1, a, R)\nδ(q1, y) = (q1, y, R)\nδ(q1, b) = (q2, y, L)\nδ(q2, y) = (q2, y, L)\nδ(q2, a) = (q2, a, L)\nδ(q2, x) = (q0, x, R)\nδ(q0, y) = (q3, y, R)\nδ(q3, y) = (q3, y, R)\nδ(q3, □) = (qf, □, R)",
+  "options": {
+   "A": "L = {a^n b^n | n ≥ 0}",
+   "B": "L = {a^n b^n | n ≥ 1}",
+   "C": "L = {a^n b^n | n > 0}",
+   "D": "L = {a^n b^n | n > 1}"
+  },
+  "note": "Transitions and options garbled"
+ },
+ "40": {
+  "question": "If x and y are elements in a group G and if x^5 = y^3 = e, where e is the identity of G, then the inverse of x²yx⁴y² must be",
+  "options": {
+   "A": "y²xy²x⁴",
+   "B": "yxy²x³",
+   "C": "yx⁶y⁶x³",
+   "D": "x⁴y²x²y"
+  },
+  "note": "Math and options missing"
+ },
+ "43": {
+  "question": "Match the LIST-I with LIST-II\nLIST - I\nA. Conflict Resolution\nB. Common Subsequence\nC. Quadruples\nD. L- Attributed definitions\nLIST - II\nI. Three-Address Code\nII. Precedence\nIII. Syntax Directed Translations\nIV. Direct Acyclic Graph (DAG)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-III, B-II, C-IV, D-I",
+   "B": "A-II, B-IV, C-I, D-III",
+   "C": "A-II, B-III, C-I, D-IV",
+   "D": "A-IV, B-I, C-II, D-III"
+  },
+  "note": "Option B polluted; list cleaned"
+ },
+ "45": {
+  "question": "The mathematical notation to describe logical entailment of a scentence \"α entails another sentence β\" is",
+  "options": {
+   "A": "α ⊨ β",
+   "B": "α ⊆ β",
+   "C": "β ⊨ α",
+   "D": "β ⊆ α"
+  },
+  "note": "Greek letters and options missing"
+ },
+ "52": {
+  "question": "The primary function of firewall in network security is",
+  "options": {
+   "A": "To monitor network traffic and detect anomalies.",
+   "B": "To create virtual private networks for secure communication.",
+   "C": "To filter incoming and outgoing network traffic based on security rules",
+   "D": "To encrypt data before Transmission."
+  },
+  "note": "Question polluted with other questions' text"
+ },
+ "56": {
+  "question": "Match the LIST-I with LIST-II\nLIST - I\nA. Type - 0 Grammar\nB. Type - 1 Grammar\nC. Type - 2 Grammar\nD. Type - 3 Grammar\nLIST - II\nI. Linear Grammar\nII. GNF\nIII. x → y, |x| < |y|; x, y ∈ {V ∪ T}*\nIV. Recursively Enumerable\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-I, B-II, C-III, D-IV",
+   "B": "A-II, B-I, C-III, D-IV",
+   "C": "A-III, B-II, C-IV, D-I",
+   "D": "A-IV, B-III, C-I, D-II"
+  },
+  "note": "List II item III missing"
+ },
+ "58": {
+  "question": "Arrange the following graph on the basis of number of edges in increasing order [for n > 3]\nA. K_n (Complete Graph)\nB. C_n (Cycle graph)\nC. W_n (Wheel graph)\nD. K_{n,n} (Complete Bipartite Graphs)\nE. Q_n (n-cubes graph)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B, C, D, E",
+   "B": "B, C, A, D, E",
+   "C": "A, B, C, E, D",
+   "D": "E, D, C, A, B"
+  },
+  "note": "Subscripts missing; stray text"
+ },
+ "59": {
+  "question": "Which of the following is the complement of the boolean function. A'B + CD' + A'B + CD'",
+  "options": {
+   "A": "A'B + CD'",
+   "B": "(A' + B)(C + D')",
+   "C": "(A + B')(C' + D)",
+   "D": "AB' + CD'"
+  },
+  "note": "Function and options missing"
+ },
+ "66": {
+  "question": "Which of the folowing CFG(s) is/are in chomsky Normal form (All capital letters are variables & lower case are terminals)\nA. S → ABC/AB\nA → a\nB → b\nC → d\nB. X → RT/TR\nT → t\nR → XT/r\nC. P → qP/sQ\nQ → r/s\nD. M → MN/MP\nN → nm/n\nP → p\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A & B only",
+   "B": "B only",
+   "C": "C only",
+   "D": "B & D only"
+  },
+  "note": "Grammars were scrambled"
+ },
+ "70": {
+  "question": "Choose the correct statements from the following\nA. In connection oriented service, the destination address is to be specified only during the setup.\nB. Packet sequencing is not guaranteed in connection oriented service\nC. Flooding is method in which every incoming packet is sent out on every outgoing line except the one by which it arrived.\nD. Presentation layer performs detection and recovery from errors in the transmitted data\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B & C only",
+   "B": "B, C & D only",
+   "C": "A & C only",
+   "D": "A, C & D only"
+  },
+  "note": "Option D polluted with grammar text"
+ },
+ "72": {
+  "question": "Which of the following is the solution of the following recurrence relation T(n) = T(2n/3) + 1 ?",
+  "options": {
+   "A": "θ(n²)",
+   "B": "θ(log n)",
+   "C": "θ(n log n)",
+   "D": "θ(n^(3/2))"
+  },
+  "note": "Recurrence and options missing"
+ },
+ "79": {
+  "question": "Match the LIST-I with LIST-II\nLIST - I (Boolean Algebra Law)\nA. Absorption Law\nB. Bounded Law\nC. Identity Law\nD. Distributive Law\nLIST - II (Axioms)\nI. a + 1 = 1\nII. a + 0 = a\nIII. a * (b + c) = (a * b) + (a * c)\nIV. a + (a * b) = a\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-IV, B-I, C-II, D-III",
+   "B": "A-IV, B-III, C-I, D-II",
+   "C": "A-III, B-IV, C-II, D-I",
+   "D": "A-II, B-III, C-IV, D-I"
+  },
+  "note": "List II items III, IV scrambled"
+ },
+ "82": {
+  "question": "Match the LIST-I with LIST-II\nLIST - I\nA. (100110011)₂\nB. Complements\nC. Parity Bits\nD. Variable length instruction\nLIST - II\nI. Error detection code\nII. CISC\nIII. Negative number\nIV. (133)₁₆\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-IV, B-I, C-III, D-II",
+   "B": "A-IV, B-III, C-I, D-II",
+   "C": "A-IV, B-II, C-III, D-I",
+   "D": "A-I, B-IV, C-II, D-III"
+  },
+  "note": "Number bases lost, 100110011 vs 133 hex"
+ },
+ "85": {
+  "question": "Which one of the following is not related to the feed forward networks on the Backpropagation Algorithm",
+  "options": {
+   "A": "Boolean function",
+   "B": "Continuous function",
+   "C": "Arbitrary function",
+   "D": "Greedy function"
+  },
+  "note": "Option B polluted with other math"
+ },
+ "86": {
+  "question": "Match the LIST-I with LIST-II\nLIST - I\nA. Insertion Sort\nB. Binary Search\nC. Quick Sort\nD. Selection Sort\nLIST - II\nI. O(log n)\nII. O(n²)\nIII. O(n)\nIV. O(n log n)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-III, B-I, C-IV, D-II",
+   "B": "A-II, B-III, C-I, D-IV",
+   "C": "A-I, B-II, C-IV, D-III",
+   "D": "A-II, B-III, C-IV, D-I"
+  },
+  "note": "Superscript lost: O(n²) shown as O(n)"
+ },
+ "90": {
+  "question": "The characteristics of modern programming are :\nA. Each module should do only one thing.\nB. Communication between modules is allowed only by a calling module.\nC. Communication can take place directly between modules that do not have calling - called relationship.\nD. All modules are designed as single-entry, single exit systems using control structure.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B & C only",
+   "B": "A, B & D only",
+   "C": "A, C & D only",
+   "D": "C & D only"
+  },
+  "note": "Option D polluted with next passage"
+ },
+ "91": {
+  "question": "Directions (91-95): A machine is represented by states Q, input alphabet Σ, transition function δ. Initial state q0 and final state F. The machine accepts all the strings over Σ = {a,b}, which start and ended with any combination of all alphabet and abb works/lies as substring in all the strings to be accepted.\nFor the above mentioned passage which of the following is correct?",
+  "options": {
+   "A": "[Figure: NFA, states 1-4, start 1, final 4. Self-loop on 1 labelled a,b. Edges: 1-a->2, 2-b->3, 3-b->4.]",
+   "B": "[Figure: states 1-4, start 1, final 4. Edges: 1-a->2, 2-b->3, 3-b->4. Self-loop on 4 labelled a,b.]",
+   "C": "[Figure: states 1-4, start 1, final 4. Self-loop on 1 labelled a,b; self-loop on 4 labelled a,b. Edges: 1-a->2, 2-b->3, 3-b->4.]",
+   "D": "[Figure: states 1-3, start 1, final 1 (double circle). Self-loop on 1 labelled a,b. Edges: 1-a->2, 2-b->3, 3-b->1.]"
+  },
+  "note": "Passage and figure options missing"
+ },
+ "92": {
+  "question": "Directions (91-95): A machine is represented by states Q, input alphabet Σ, transition function δ. Initial state q0 and final state F. The machine accepts all the strings over Σ = {a,b}, which start and ended with any combination of all alphabet and abb works/lies as substring in all the strings to be accepted.\nFor the above specified passage, which of the following represent the grammar for the language accepted the machine?",
+  "options": {
+   "A": "S → AabbB, A → aA|ε, B → bB|ε",
+   "B": "S → abbA, A → aA|ε|bA",
+   "C": "S → AabbA, A → aA|bA|ε",
+   "D": "S → Aabb, A → aA|bA|ε"
+  },
+  "note": "Passage and grammar options missing"
+ },
+ "93": {
+  "question": "Directions (91-95): A machine is represented by states Q, input alphabet Σ, transition function δ. Initial state q0 and final state F. The machine accepts all the strings over Σ = {a,b}, which start and ended with any combination of all alphabet and abb works/lies as substring in all the strings to be accepted.\nWhich of the following represented the minimum state DFA for the above specified passage?",
+  "options": {
+   "A": "[Figure: start 1; 1 has self-loop a; 1-a->2; 2 has self-loop a; 2-a->3; 3-b->2; 3-b->4; 4 (final) has self-loop a; 4-b->5; 5 (final) -a->4.]",
+   "B": "[Figure: start 1; 1 has self-loop b; 1-a->2; 2 has self-loop a; 2-a->3; 3-b->2; 3-b->4; 4 (final) has self-loop a,b.]",
+   "C": "[Figure: start 1; 1-a->2; 2 has self-loop a; 2-b->3; 3-a->2; 3-b->4; 4 (final) has self-loop b; 4-a->5; 5 (final) has self-loop a; 5-b->6; 6 (final) -a->5.]",
+   "D": "All are NFA"
+  },
+  "note": "Passage and figure options missing"
+ },
+ "94": {
+  "question": "Directions (91-95): A machine is represented by states Q, input alphabet Σ, transition function δ. Initial state q0 and final state F. The machine accepts all the strings over Σ = {a,b}, which start and ended with any combination of all alphabet and abb works/lies as substring in all the strings to be accepted.\nFor the above specified passage, which of the following is DFA for the language represented/accepeted by machine?",
+  "options": {
+   "A": "[Figure: start 1; 1 has self-loop a,b; 1-a->2; 2-b->3; 3-b->4; 4 (final) has self-loop a,b.]",
+   "B": "[Figure: start 1; 1 has self-loop b; 1-a->2; 2 has self-loop a; 2-b->3; 3-b->4; 4 (final) has self-loop a,b.]",
+   "C": "[Figure: start 1; 1 has self-loop b; 1-a->2; 2 has self-loop a; 2-b->3; 3-a->2; 3-b->4; 4 (final) has self-loop b; 4-a->5; 5 (final) has self-loop a; 5-b->6; 6 (final) -a->5; 6-b->4.]",
+   "D": "[Figure: start 1; 1 has self-loop a; 1-b->2; 2 has self-loop a; 2-b->3; 3-a->2; 3-b->4; 4 (final) has self-loop a; 4-b->5; 5 (final) has self-loop b; 5-a->6; 6 (final) -b->5.]"
+  },
+  "note": "Passage and figure options missing"
+ },
+ "95": {
+  "question": "Directions (91-95): A machine is represented by states Q, input alphabet Σ, transition function δ. Initial state q0 and final state F. The machine accepts all the strings over Σ = {a,b}, which start and ended with any combination of all alphabet and abb works/lies as substring in all the strings to be accepted.\nFor the above specified passage, which of the following represents the regular expression?",
+  "options": {
+   "A": "(a+b)*aab",
+   "B": "aba(a+b)*",
+   "C": "b(a+b)*b(a+b)*a(a+b)*",
+   "D": "(a+b)*abb(a+b)*"
+  },
+  "note": "Passage and options missing; D polluted"
+ },
+ "97": {
+  "question": "Directions (96-100): Consider the following set of processes with the arrival time and length of CPU Burst time given in milli-seconds (ms):\nProcess | Arrival Time | Burst Time\nP1 | 0 | 5\nP2 | 2 | 3\nP3 | 2 | 2\nP4 | 5 | 3\nP5 | 6 | 1\nFind the average weighted turnaround time for these process using Highest Response Ratio Next (HRN) Algorithm?",
+  "options": {
+   "A": "3.2 ms",
+   "B": "2.834 ms",
+   "C": "1.632 ms",
+   "D": "6.721 ms"
+  },
+  "note": "Process table missing; polluted with Q95 text"
+ },
+ "100": {
+  "question": "When we apply Shortest Job First (SJF) scheduling Policy/algorithm, Process (P2) faces partial starvation and waits for the longer time to execute. Which one of the following algorithms addresses this problem?",
+  "options": {
+   "A": "Round Robin",
+   "B": "Priority",
+   "C": "Highest Response ratio Next",
+   "D": "Least Completed next"
+  },
+  "note": "Option D polluted with passage text"
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "1": {
+  "question": "Directions (1-5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.\nPerson-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)\n| Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous |\n|---|---|---|---|---|---|---|\n| A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0% |\n| B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8% |\n| C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9% |\n| D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6% |\n| E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3% |\n| F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1% |\n\nIf the monthly income of A and D are ₹ 80000 and ₹ 72000, respectively, then the amount of money spent by A on Rent is _________% more than the amount spent by D on clothes.",
+  "options": {
+   "A": "32.62",
+   "B": "38.89",
+   "C": "36.54",
+   "D": "34.24"
+  },
+  "note": "Added shared data table context"
+ },
+ "2": {
+  "question": "Directions (1-5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.\nPerson-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)\n| Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous |\n|---|---|---|---|---|---|---|\n| A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0% |\n| B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8% |\n| C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9% |\n| D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6% |\n| E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3% |\n| F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1% |\n\nIf the annual income of each of the six persons is ₹ 3 lakh, then the amount of money spent on clothes is more than ₹ 41800 by exactly ________ persons.",
+  "options": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "5"
+  },
+  "note": "Added shared data table context"
+ },
+ "3": {
+  "question": "Directions (1-5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.\nPerson-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)\n| Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous |\n|---|---|---|---|---|---|---|\n| A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0% |\n| B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8% |\n| C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9% |\n| D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6% |\n| E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3% |\n| F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1% |\n\nIf the annual incomes of B and C are ₹ 432000 and ₹ 528000, respectively, then what is the difference between the amount spent by them on Transport?",
+  "options": {
+   "A": "₹ 18496",
+   "B": "₹ 18828",
+   "C": "₹ 19216",
+   "D": "₹ 19488"
+  },
+  "note": "Added shared data table context"
+ },
+ "4": {
+  "question": "Directions (1-5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.\nPerson-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)\n| Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous |\n|---|---|---|---|---|---|---|\n| A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0% |\n| B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8% |\n| C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9% |\n| D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6% |\n| E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3% |\n| F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1% |\n\nIf the annual income of each of C and D is ₹ 840000, then what is the sum of the amount spent by C on Rent and that by D on Miscellaneous items?",
+  "options": {
+   "A": "₹ 288820",
+   "B": "₹ 290520",
+   "C": "₹ 293160",
+   "D": "₹ 295700"
+  },
+  "note": "Added shared data table context"
+ },
+ "5": {
+  "question": "Directions (1-5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.\nPerson-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)\n| Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous |\n|---|---|---|---|---|---|---|\n| A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0% |\n| B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8% |\n| C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9% |\n| D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6% |\n| E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3% |\n| F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1% |\n\nIf the amount of money spent on food by C and D is ₹ 144000 and ₹ 172800, respectively, then the annual income of C is ________% of the annual income of D.",
+  "options": {
+   "A": "47.5",
+   "B": "60",
+   "C": "62.5",
+   "D": "120"
+  },
+  "note": "Added shared data table context"
+ },
+ "11": {
+  "question": "Which of the following are advantages of e-commerce for\nconsumers?\n(A) They save time by visiting websites instead of stores.\n(B) They have little risk of having their credit card number\nintercepted.\n(C) They can choose goods from any vendor in the world.\n(D) They can shop no matter their location, time, or conditions.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (D) Only",
+   "B": "(B) and (C) Only",
+   "C": "(A), (C) and (D) Only",
+   "D": "(A), (B), (C) and (D)"
+  },
+  "note": "Fixed broken word 'little'"
+ },
+ "12": {
+  "question": "Identify the parametric tests used for statistical analysis.\n(A) t-test\n(B) H-test\n(C) F-test\n(D) U-test\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(C) and (D) Only",
+   "D": "(A) and (C) Only"
+  },
+  "note": "Removed leaked next-page table text"
+ },
+ "14": {
+  "question": "Match List-I with List-II.\nList-I (Authors) | List-II (Concepts)\nA. Roland Barthes | I. Doxa\nB. Pierre Bourdieu | II. Hegemony\nC. Antonio Gramsci | III. Simulation\nD. Jean Baudrillard | IV. Myth\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+   "B": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+   "C": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+   "D": "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+  },
+  "note": "Fixed 'I V' to IV"
+ },
+ "18": {
+  "question": "If (L)_M represents a number L in base-M number system, then identify the correct ascending order of the following numbers A-D when converted to decimal number system.\n(A) (102)_4\n(B) (10001)_2\n(C) (103)_6\n(D) (201)_3\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(B), (A), (C), (D)",
+   "B": "(A), (C), (D), (B)",
+   "C": "(A), (B), (D), (C)",
+   "D": "(B), (A), (D), (C)"
+  },
+  "note": "Restored base subscripts"
+ },
+ "28": {
+  "question": "Match List-I with List-II.\nList-I (Malware) | List-II (Definition)\nA. Ransomware | I. Software that monitors and/or records the actions of targeted users.\nB. Spyware | II. A small piece of code that misleads users of its true intent by disguising itself as a legitimate program and infects your computer when you run it.\nC. Worm | III. Software that locks data files and demands a monetary payment in exchange for unlocking.\nD. Trojan Horses | IV. A piece of code that replicates itself to other devices without user interaction\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+   "B": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+   "C": "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+   "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+  },
+  "note": "Fixed 'I V' to IV, layout"
+ },
+ "40": {
+  "question": "Match List-I with List-II.\nList-I (Abbreviations) | List-II (Meaning)\nA. ante., | I. here and there\nB. cf. | II. and others\nC. et.al., | III. compare\nD. passim | IV. before\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+   "B": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+   "C": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+   "D": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)"
+  },
+  "note": "Fixed 'I V' to IV, layout"
+ },
+ "45": {
+  "question": "A sum of money is equally divided among a number of children. Had there been 10 children less, each would have received ₹ 5 more, and had there been 10 children more each would have received ₹ 3 less. What is the sum of money that is distributed?",
+  "options": {
+   "A": "300",
+   "B": "600",
+   "C": "750",
+   "D": "900"
+  },
+  "note": "Option D contaminated with passage text"
+ },
+ "49": {
+  "question": "Read the following passage and answer the questions.\nFolk traditions provide and create a public space where some broader social values could be generated and observed. The various folk genres through the creation of public space help in bringing into focus ideas, values and contentions into public discourse, a kind of unshackling of inhibitions in a stress-free manner. The changes that modernity brings in its wake become more socially acceptable and the conflicts that are created find a medium through which they can be resolved. This public space or sphere has many constructive and pleasurable uses. Politics and religion are notable instances in which the creation and sustenance of public space or sphere is very important to achieve some agenda(s). The dynamism ingrained in public space or sphere shows complex nuances and many trends especially when the nature of transformation is being analysed. There seems to be a shift from a simple pleasure orientation to cater to multi-level interests of the performers and patrons. Transformations are influenced by economics, politics and voices of dissent that find various mechanisms of appropriation of public space for their own objectives. They widen the base of debate and discussion transcending the involved units.\n\nPublic space:",
+  "options": {
+   "A": "Widens the base of debate and discussion",
+   "B": "Ignores traditional knowledge system",
+   "C": "Insists more on individual growth",
+   "D": "Leads to suppression of human values"
+  },
+  "note": "Added missing passage context"
+ }
+}

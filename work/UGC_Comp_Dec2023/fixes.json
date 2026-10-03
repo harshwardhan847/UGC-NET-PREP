@@ -1,0 +1,472 @@
+{
+ "11": {
+  "question": "What is the output of the following program?\n#include<stdio.h>\nint main()\n{ int i=3;\n while (i--)\n  { int i=10;\n       i--;\n    printf(\"%d\", i );\n        }\n    printf(\"%d\", i );\n        }",
+  "options": {
+   "A": "990",
+   "B": "9990",
+   "C": "999-1",
+   "D": "99-1"
+  },
+  "note": "Option D contained junk"
+ },
+ "18": {
+  "question": "Given as 4GB (~approx 4.3 x10^9 bytes) of virtual space and a typical page size of 4 KB and each page table entry is 5 bytes. How many virtual pages would this imply? What is the size of the whole page table?",
+  "options": {
+   "A": "1075000 and 5375 KB",
+   "B": "215000 and 40960 bytes",
+   "C": "10750 and 10240 bytes",
+   "D": "43000 and 1024 bytes"
+  },
+  "note": "Missing exponent 10^9"
+ },
+ "24": {
+  "question": "Consider a Grammar E→E+n | E x n | n for a sentence n+n x n the handles in the right-sentential form of the reduction are?",
+  "options": {
+   "A": "n, E+n and E+n x n",
+   "B": "n, E+n and E+E x n",
+   "C": "n, n+n and n+n x n",
+   "D": "n, E+n and E x n"
+  },
+  "note": "Arrow symbols lost, junk text"
+ },
+ "27": {
+  "question": "Consider the following functions :\nf(n)=3 n^√n\ng(n)=2^(√n log₂ n)\nh(n)=n!\nWhich of the following is true?",
+  "options": {
+   "A": "h(n) is O(f(n))",
+   "B": "h(n) is O(g(n))",
+   "C": "g(n) is not O(f(n))",
+   "D": "f(n) is O(g(n))"
+  },
+  "note": "Exponents lost in functions"
+ },
+ "38": {
+  "question": "A point of a fuzzy set A is a point x ∈ X at which μA(x)=0.5",
+  "options": {
+   "A": "Core",
+   "B": "Support",
+   "C": "Crossover",
+   "D": "α-cut"
+  },
+  "note": "Math symbols lost, junk in option D"
+ },
+ "41": {
+  "question": "If universe of disclosure are all real numbers,\nthen which of the following are true?\n(A) ∃x ∀y(x+y=y)\n(B) ∀x ∀y(((x≥0)∧(y<0))→(x-y>0))\n(C) ∃x ∃y(((x≤0)∧(y≤0))∧(x-y>0))\n(D) ∀x ∀y(((x≠0)∧(y≠0))↔(xy≠0))\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(A), (C) and (D) Only",
+   "C": "(A), (B) and (D) Only",
+   "D": "(A), (B), (C) and (D) Only"
+  },
+  "note": "Options split, symbols lost"
+ },
+ "42": {
+  "question": "If the universe of disclosure is a set of integers,\nthen which of the followings are TRUE ?\n(A) ∀n ∃m(n²<m)\n(B) ∃n ∀m(n<m²)\n(C) ∃n ∀m(nm=m)\n(D) ∃n ∃m(n²+m²=6)\n(E) ∃n ∃m(n+m=4∧n-m=1)\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(B) and (C) Only",
+   "C": "(C), (D) and (E) Only",
+   "D": "(C) and (E) Only"
+  },
+  "note": "Options split, symbols lost"
+ },
+ "43": {
+  "question": "If N²=N x N, N is set of natural numbers and R is relation on N², s.t. R⊂N² x N² i.e. <x,y> R <u,v> ⇔ xv=yu, then which of the following are TRUE?\n(A) Reflexive\n(B) Symmetric\n(C) Transitive\n(D) Asymmetric\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(A), (C) and (D) Only",
+   "D": "(A), (B) and (C) Only"
+  },
+  "note": "Options split, symbols lost"
+ },
+ "44": {
+  "question": "The interface(s) that provide(s) I/O transfer of data directly to and from the memory unit peripheral is/are termed as:\n(A) DMA (Direct Memory Access)\n(B) IOP (Input-Output Processor)\n(C) Serial Interface\n(D) Parallel Interface\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) Only",
+   "B": "(B) Only",
+   "C": "(A) and (B) Only",
+   "D": "(C) and (D) Only"
+  },
+  "note": "Options split"
+ },
+ "45": {
+  "question": "Which of the following(s) are main memory?\n(A) Virtual memory\n(B) Cache memory\n(C) RAM\n(D) SSD\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (C) Only",
+   "B": "(B) and (C) Only",
+   "C": "(C) and (D) Only",
+   "D": "(A), (B) and (C) Only"
+  },
+  "note": "Options split, junk"
+ },
+ "46": {
+  "question": "Which of the following are tautology?\n(A) (P→(P→Q))→(P→Q)\n(B) ((P→Q)→Q)→(P∨Q)\n(C) ((P∨¬P)→Q)→((P∨¬P)→R)\n(D) (Q→(P∧¬P))→(R→(P∧¬P))\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) Only",
+   "B": "(B) Only",
+   "C": "(A) and (B) Only",
+   "D": "(C) and (D) Only"
+  },
+  "note": "Symbols lost, options split"
+ },
+ "47": {
+  "question": "Consider the three points P1(1,2,0), P2(3,6,20) and P3(2,4,6) and a view point C(0,0,-10). Choose the correct options.\n(A) P1 obscure P2, if viewed from C.\n(B) P2 obscure P1, if viewed from C.\n(C) P3 does not obscure P1 if viewed from C.\n(D) P2 does not obscure P3 if viewed from C.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(A), (C) and (D) Only",
+   "C": "(B), (C) and (D) Only",
+   "D": "(A), (B) and (D) Only"
+  },
+  "note": "Options split"
+ },
+ "48": {
+  "question": "Which of the statements are CORRECT?\n(A) Constructors are invoked automatically when the objects are created.\n(B) Constructors do not have return types, not even void, and therefore they cannot return values.\n(C) Constructors cannot be inherited though a derived class can call the base class constructors.\n(D) Constructors can be declared as virtual.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (D) Only",
+   "B": "(A), (B) and (C) Only",
+   "C": "(B), (C) and (D) Only",
+   "D": "(A), (C) and (D) Only"
+  },
+  "note": "Options split"
+ },
+ "49": {
+  "question": "Which one of the following statements is CORRECT?\n(A) Granularity is the size of data items in a database.\n(B) Two operations in a schedule are said to be in conflict if they belong to the same transaction.\n(C) Two schedulers are said to be conflict equivalent if the order of any two conflicting operations is the same in both schedules.\n(D) Write operations that are performed without performing the write operation are known as Blind Writes.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(A), (B) and (C) Only",
+   "C": "(A), (B) and (D) Only",
+   "D": "(B) and (C) Only"
+  },
+  "note": "Options split"
+ },
+ "50": {
+  "question": "Which of the following is/are NOT CORRECT statements?\n(A) The first record in each block of the data file is known as the actor record.\n(B) Dense index has index entries for every search key value in the data file.\n(C) Searching is harder in the B+ tree than in the B - tree as all external nodes are linked to each other.\n(D) In extendible hashing the size of the directory is just an array of 2d-1, where d is global depth.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(A), (C) and (D) Only",
+   "C": "(A), (B) and (D) Only",
+   "D": "(A), (B), (C) and (D) Only"
+  },
+  "note": "Options split"
+ },
+ "51": {
+  "question": "Which of the following statements is/are NOT CORRECT about NUMA ?\n(A) LOAD and STORE instructions are used to access remote memory.\n(B) There is a single address space visible to all CPUs.\n(C) Access to local memory is slower than access to remote memory.\n(D) When the access time to remote memory is hidden, the system is called NC - NUMA.\n(E) In CC - NUMA, Coherent caches are present.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (C) Only",
+   "B": "(B) and (D) Only",
+   "C": "(A) and (E) Only",
+   "D": "(C) and (D) Only"
+  },
+  "note": "Options split, junk in question"
+ },
+ "52": {
+  "question": "Indexed/grouped allocation is useful as :\n(A) It supports both sequential and direct access.\n(B) Entire block is available for data.\n(C) It does not require lots of space for keeping pointers.\n(D) No external fragmentation.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) Only",
+   "B": "(B) and (C) Only",
+   "C": "(B) Only",
+   "D": "(A), (B) and (D) Only"
+  },
+  "note": "Options split"
+ },
+ "53": {
+  "question": "Which of the following statements are CORRECT ?\n(A) A process always check state of currently executing process to enter critical schema.\n(B) Spin locks use busy waiting.\n(C) Periodically testing a variable until some value appears is known as busy waiting.\n(D) Critical region is a part of the program, where shared memory is kept.\n(E) Printer daemon, continuously checks to see if there are any file to be printed.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(B) and (D) Only",
+   "D": "(B) and (E) Only"
+  },
+  "note": "Options split"
+ },
+ "54": {
+  "question": "Three address codes can be represented in special structures known as :\n(A) Quadruples\n(B) Triples\n(C) Patterns\n(D) Indirect Triples\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(A), (B) and (D) Only",
+   "C": "(B) and (C) Only",
+   "D": "(B), (C) and (D) Only"
+  },
+  "note": "Options split"
+ },
+ "55": {
+  "question": "Which of the statement is/are CORRECT ?\n(A) Moore and Mealy machines are finite state machines with output capabilities.\n(B) Any given Moore machine has an equivalent Mealy machine.\n(C) Any given Mealy machine has an equivalent Moore machine.\n(D) Moore machine is not a finite state machine.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(A), (B) and (C) Only",
+   "C": "(B) and (D) Only",
+   "D": "(A), (B) and (D) Only"
+  },
+  "note": "Options split"
+ },
+ "56": {
+  "question": "The statement P(x): \" x=x² \". If the universe of disclosure consists of integers, what are the following have truth values:\n(A) P(0)\n(B) P(1)\n(C) P(2)\n(D) ∃x P(x)\n(E) ∀x P(x)\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (E) Only",
+   "B": "(A), (B) and (C) Only",
+   "C": "(A), (B) and (D) Only",
+   "D": "(B), (C) and (D) Only"
+  },
+  "note": "Symbols lost, options split"
+ },
+ "57": {
+  "question": "Which of the following statements are truth statements if universe of disclosure is set of integers:\n(A) ∀n(n²≥0)\n(B) ∃n(n²=2)\n(C) ∀n(n²≥n)\n(D) ∃n(n²<0)\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(C) and (D) Only",
+   "D": "(A) and (C) Only"
+  },
+  "note": "Symbols lost, options split"
+ },
+ "58": {
+  "question": "Which of the following graphs are trees ?\n[Figure: four graphs on vertices a,b,c,d,e,f. (A) edges: a-c, c-b, c-d, c-f, e-f. (B) edges: a-c, a-f, b-e, e-f, d-f. (C) edges: a-b, a-c, a-d, c-f, b-e, d-e. (D) edges: a-f, b-e, b-d, c-e.]\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A), (B) and (D) only",
+   "C": "(A) and (D) only",
+   "D": "(A), (B), (C) and (D) only"
+  },
+  "note": "Question text missing; figure described"
+ },
+ "59": {
+  "question": "Which of the following are examples of CSMA channel sensing methods?\n(A) 1-persistent\n(B) 2-persistent\n(C) p-persistent\n(D) o-persistent\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (D) Only",
+   "B": "(A), (C) and (D) Only",
+   "C": "(B), (C) and (D) Only",
+   "D": "(A), (B) and (C) Only"
+  },
+  "note": "Options split"
+ },
+ "60": {
+  "question": "The selection of Spiral Model based on characteristics of requirements :\n(A) Are requirements easily understandable and defined?\n(B) Do we change requirements quite often?\n(C) Can we define requirements early in the cycle?\n(D) Requirements are indicating a complex to be built\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(C) Only",
+   "B": "(B) Only",
+   "C": "(B) and (D) Only",
+   "D": "(A) and (C) Only"
+  },
+  "note": "Options split"
+ },
+ "61": {
+  "question": "The work done by UDP is/are :\n(A) Congestion control\n(B) Flow control\n(C) Retransmission\n(D) Segment transmission\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (D) Only",
+   "B": "(C) Only",
+   "C": "(D) Only",
+   "D": "(B) and (C) Only"
+  },
+  "note": "Option A missing (A)"
+ },
+ "62": {
+  "question": "Which of the following statement/s is/are NOT CORRECT?\n(A) OSPF is based on distance-vector routing protocol.\n(B) Both link-state and distance-vector routing are based on the least cost goal.\n(C) BGP4 is based on the path-vector algorithm.\n(D) The three-node instability can be avoided using split horizon combined with poison reverse.\n(E) RIP is based on link state algorithm.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (D) and (E) Only",
+   "B": "(A) and (B) Only",
+   "C": "(B) and (C) Only",
+   "D": "(B), (C) and (E) Only"
+  },
+  "note": "Options split"
+ },
+ "63": {
+  "question": "Which of the following statement/s are CORRECT?\n(A) NRZ is a bipolar scheme in which the positive voltage defined bit is 0 (zero).\n(B) NRZ-L and NRZ-I both have an average signal rate of N / 2.\n(C) The idea of RZ and NRZ-L are combined into the Manchester scheme.\n(D) NRZ-L and NRZ-I both have DC component problems.\n(E) The minimum bandwidth of Manchester and differential Manchester is 3 times that of NRZ.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(A), (C), (D), and (E) Only",
+   "C": "(B), (C) and (D) Only",
+   "D": "(A), (B), (C), and (E) Only"
+  },
+  "note": "Options split"
+ },
+ "64": {
+  "question": "Which of the following are commonly used parsing techniques in NLP (Natural Language Processing) for syntactic analysis?\n(A) Top-down parsing\n(B) Bottom Up parsing\n(C) Dependency parsing\n(D) Statistical machine translation\n(E) Earley parsing\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (C), (D), (E) Only",
+   "B": "(B), (C), (D), (E) Only",
+   "C": "(A), (B), (C), (E) Only",
+   "D": "(A) and (B) Only"
+  },
+  "note": "Options split"
+ },
+ "65": {
+  "question": "In the content of Alpha Beta pruning in game trees which of the following statements are correct regarding cut off procedures?\n(A) Alpha Beta pruning can eliminate subtrees with certainty when the value of a node exceeds both the alpha and beta bonds.\n(B) The primarily purpose of Alpha-Beta proning is to save computation time by searching fewer nodes in the same tree.\n(C) Alpha Beta pruning guarantees the optimal solution in all cases by exploring the entire game tree.\n(D) Alpha and Beta bonds are initialized to negative and positive infinity respectively at the root note.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (C), (D) Only",
+   "B": "(B), (C), (D) Only",
+   "C": "(A), (B), (D) Only",
+   "D": "(C), (B) Only"
+  },
+  "note": "Options split"
+ },
+ "66": {
+  "question": "Match the List-I with List-II\n(A) ϕ∩{ϕ}=    (I) ϕ\n(B) {ϕ}∩{ϕ}=    (II) {ϕ}\n(C) {ϕ,{ϕ}}−ϕ=    (III) {{ϕ}}\n(D) ϕ∪{{ϕ}}=    (IV) {ϕ,{ϕ}}\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+   "B": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+   "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+   "D": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)"
+  },
+  "note": "Lists and options missing symbols"
+ },
+ "68": {
+  "question": "Match List - I with List - II.\n| List - I | List - II |\n|---|---|\n| a. Bresenham | (I) Hidden surface removal |\n| b. Cohen-Sutherland | (II) Line drawing algorithm |\n| c. Sutherland-Hodgeman | (III) Line clipping algorithm |\n| d. Z-Buffer | (IV) Polygon clipping algorithm |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(a)-(III), (b)-(II), (c)-(IV), (d)-(I)",
+   "B": "(a)-(II), (b)-(III), (c)-(I), (d)-(IV)",
+   "C": "(a)-(II), (b)-(III), (c)-(IV), (d)-(I)",
+   "D": "(a)-(II), (b)-(IV), (c)-(III), (d)-(I)"
+  },
+  "note": "Junk set expressions in question"
+ },
+ "72": {
+  "question": "Match List - I with List - II.\n| List-I | List-II |\n|---|---|\n| a. P∧(P→Q) | I. P∨Q |\n| b. ¬(P∨Q)→(P∧Q) | II. (P∧¬P)∨(P∧Q) |\n| c. P→Q | III. (¬P)∨Q |\n| d. P∨(Q∧R) | IV. (P∧P)∨(P∧Q)∨(P∧R)∨(Q∧R) |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(a)-(I), (b)-(II), (c)-(III), (d)-(IV)",
+   "B": "(a)-(II), (b)-(I), (c)-(III), (d)-(IV)",
+   "C": "(a)-(III), (b)-(I), (c)-(II), (d)-(IV)",
+   "D": "(a)-(IV), (b)-(III), (c)-(II), (d)-(I)"
+  },
+  "note": "Table symbols lost"
+ },
+ "73": {
+  "question": "Match List - I with List - II.\n| List-I | List-II |\n|---|---|\n| a. Greedy Best first search | I. The space complexity as O(d) where d = depth of the deepest optimal solution |\n| b. A* | II. Incomplete even if the search space is finite |\n| c. Recursive best-first search | III. Optimal if optimal solution is reachable otherwise return the best reachable optimal solution |\n| d. SMA* | IV. Computation and space complexity is two light |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(a)-(II), (b)-(IV), (c)-(I), (d)-(III)",
+   "B": "(a)-(II), (b)-(III), (c)-(I), (d)-(IV)",
+   "C": "(a)-(III), (b)-(II), (c)-(IV), (d)-(I)",
+   "D": "(a)-(III), (b)-(IV), (c)-(II), (d)-(I)"
+  },
+  "note": "Junk in question, table order wrong"
+ },
+ "75": {
+  "question": "Match List - I with List - II.\n| List - I | List - II |\n|---|---|\n| a. Hill climbing | I. O(b^d) |\n| b. Best first search | II. O(bd) |\n| c. A* Search | III. O(1) |\n| d. Depth first search | IV. O(b^m) |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(a)-(III), (b)-(I), (c)-(IV), (d)-(II)",
+   "B": "(a)-(II), (b)-(I), (c)-(IV), (d)-(III)",
+   "C": "(a)-(II), (b)-(IV), (c)-(I), (d)-(III)",
+   "D": "(a)-(I), (b)-(III), (c)-(II), (d)-(I)"
+  },
+  "note": "Superscripts lost in List-II"
+ },
+ "77": {
+  "question": "In most general case, the computer needs to process each instruction with the following sequence of steps:\n(A) Calculate the effective address\n(B) Execute the instruction\n(C) Fetch the instruction from memory\n(D) Fetch the operand from memory\n(E) Decode the instruction\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(C),(E),(D),(A),(B)",
+   "B": "(C),(E),(A),(D),(B)",
+   "C": "(A),(B),(C),(E),(D)",
+   "D": "(A),(B),(C),(D),(E)"
+  },
+  "note": "Options split on commas"
+ },
+ "78": {
+  "question": "Consider the following code segment :\nint arr []={0,1,2,3,4};\nint i=1, *ptr;\nptr =arr+2 ;\narrange the following printf statements in the\nincreasing order of their output.\n(a) printf (\"% d\", ptr [i]);\n(b) printf (\"%d\", ptr [i+1]);\n(c) printf (\"%d\", ptr[-i]);\n(d) printf (“%d\", ptr[-i+1]);\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "(c), (a), (b), (d)",
+   "B": "(c), (d), (a), (b)",
+   "C": "(d), (a), (b), (c)",
+   "D": "(a), (b), (d), (c)"
+  },
+  "note": "Junk in option D"
+ },
+ "79": {
+  "question": "The steps for analysis and design of object\noriented system.\n(a) Draw interaction diagrams\n(b) Draw state chart and object diagram\n(c) Draw use case and activity diagram\n(d) Draw component and deployment diagram\n(e) Draw class diagram\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "(e)→(b)→(a)→(c)→(d)",
+   "B": "(b)→(a)→(e)→(d)→(c)",
+   "C": "(e)→(c)→(b)→(d)→(a)",
+   "D": "(c)→(a)→(e)→(b)→(d)"
+  },
+  "note": "Options were empty"
+ },
+ "82": {
+  "question": "The prototyping model has the sequence :\n(a) Customer Evaluation\n(b) Quick design\n(c) Requirements\n(d) Implement\n(e) Design\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "(c)→(a)→(d)→(b)→(e)",
+   "B": "(b)→(c)→(a)→(d)→(e)",
+   "C": "(c)→(b)→(d)→(a)→(e)",
+   "D": "(e)→(b)→(c)→(d)→(a)"
+  },
+  "note": "Options were empty"
+ },
+ "85": {
+  "question": "Arrange the following steps in the correct sequence for applying an unsupervised learning technique such as K-means clustering to a data set:\n(a) Randomly initialize cluster centroids\n(b) Assign each data point to nearest cluster centroid\n(c) Update the cluster centroids based on the mean of data points assigned to each cluster\n(d) Specify the number of clusters (K) to partition the data into\n(e) Repeat steps B and C until convergence criteria are met\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(d),(a),(b),(c),(e)",
+   "B": "(a),(b),(c),(d),(e)",
+   "C": "(c),(b),(a),(d),(e)",
+   "D": "(d),(c),(a),(b),(e)"
+  },
+  "note": "Junk in question"
+ },
+ "86": {
+  "question": "Given below are two statements :\nStatement (I): If H is a nonempty finite subset of a group G and ab∈H ∀ a,b∈H then H is also a group\nStatement (II): There is no homomorphism existing from (Z,+) to (Q,+); where Z is a set of integers and Q is a set of rational numbers.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+  "options": {
+   "A": "Both Statement I and Statement II are correct",
+   "B": "Both Statement I and Statement II are incorrect",
+   "C": "Statement I is correct but Statement II is incorrect",
+   "D": "Statement I is incorrect but Statement II is correct"
+  },
+  "note": "Math symbols lost in Statement I"
+ },
+ "90": {
+  "question": "Given below are two statements:\nStatement (I) : In datagram networks - routers hold state information about connections\nStatement (II) : In a virtual circuit network- each virtual circuit requires router table space per connection\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+  "options": {
+   "A": "Both Statement I and Statement II are correct",
+   "B": "Both Statement I and Statement II are incorrect",
+   "C": "Statement I is correct but Statement II is incorrect",
+   "D": "Statement I is incorrect but Statement II is correct"
+  },
+  "note": "Option D contained next passage"
+ },
+ "93": {
+  "question": "Directions (91-95) Passage: Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively. Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.\nWhich of the following are quantities (in grams) of food X and Y respectively when the cost of food is minimum:",
+  "options": {
+   "A": "0 and 12½",
+   "B": "15 and 5/4",
+   "C": "120/7 and 0",
+   "D": "0 and 10"
+  },
+  "note": "Fractions lost, options empty; passage added"
+ },
+ "94": {
+  "question": "Directions (91-95) Passage: Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively. Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.\nThe dual of the formulated LPP is :",
+  "options": {
+   "A": "Max Z=100 u+120 v s.t. 6 u+7 v <=12 8 u+12 v <= 20 u, v >= 0",
+   "B": "Max Z=12 u+20 v s.t. 6 u+7 v <=100 8 u+12 v <= 120 u, v >= 0",
+   "C": "Max Z=100 u+120 v 6 u+7 u <=12 8 u+7 v <= 20 u, v are unrestricted",
+   "D": "Max Z=100 u+120 u s.t. 6 u+7 v >= 12 8 u+12 v >=20 u, v >= 0"
+  },
+  "note": "Passage context added"
+ },
+ "95": {
+  "question": "Directions (91-95) Passage: Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively. Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.\nThe minimum cost of food is:",
+  "options": {
+   "A": "205",
+   "B": "250",
+   "C": "330",
+   "D": "200"
+  },
+  "note": "Option D had next passage; context added"
+ },
+ "96": {
+  "question": "Directions (96-100) Consider the following relations X(S, Si, C) and Y(S, P, D).\nX:\n| S | Si | C |\n|---|---|---|\n| J | 1 | M |\n| B | 2 | N |\n| R | 3 | H |\n| T | 4 | G |\nY:\n| S | P | D |\n|---|---|---|\n| J | S1 | CA |\n| B | P1 | AB |\n| R | D1 | DC |\n| A | H1 | MD |\nFind the number of tuples by applying the operation\nX ⟕(x.s = y.s) Y [left outer join symbol]",
+  "options": {
+   "A": "1",
+   "B": "3",
+   "C": "4",
+   "D": "6"
+  },
+  "note": "Relations and operation were missing"
+ },
+ "100": {
+  "question": "Directions (96-100) Consider the following relations X(S, Si, C) and Y(S, P, D).\nX:\n| S | Si | C |\n|---|---|---|\n| J | 1 | M |\n| B | 2 | N |\n| R | 3 | H |\n| T | 4 | G |\nY:\n| S | P | D |\n|---|---|---|\n| J | S1 | CA |\n| B | P1 | AB |\n| R | D1 | DC |\n| A | H1 | MD |\nNumber of tuples obtained by applying cartesian product over X and Y are :",
+  "options": {
+   "A": "16",
+   "B": "12",
+   "C": "04",
+   "D": "32"
+  },
+  "note": "Relations added, junk in option D"
+ }
+}

@@ -1,0 +1,612 @@
+{
+ "1": {
+  "question": "Consider the grammar :\nS → A\nA → $B$ | id\nB → B, A | A\nIf I0 = CLOSURE({[S → .A]}) then, how many items will be in the set for GOTO(I0, $)",
+  "options": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "note": "Arrows, subscript and dollar symbols restored"
+ },
+ "3": {
+  "question": "Which of the following statements about pointers in C are TRUE.\n(A) Pointers can be used to access array elements\n(B) Pointers can store the address of another pointer\n(C) Pointers are automatically deferenced in expression\n(D) Pointers cannot be used to access structure members\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (C) Only",
+   "B": "(A) and (B) Only",
+   "C": "(B) and (C) Only",
+   "D": "(C) and (D) Only"
+  },
+  "note": "Options were split/merged"
+ },
+ "5": {
+  "question": "Which of the following statements are TRUE about mutual exclusion in concurrent programming ?\n(A) Mutual exclusion ensures that only one process can be in a critical section at any given time.\n(B) Mutual exclusion are designed to prevent conflicts and ensure that only one process can access shared resources at a time.\n(C) Mutual exclusion can use various algorithms to ensure that processes do not enter the critical section simultaneously.\n(D) Mutual exclusion allows multiple processes to access the critical section simultaneously to improve performance.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (C) Only",
+   "B": "(B), (C), (D) Only",
+   "C": "(B), (D), (A) Only",
+   "D": "(A), (C), (D) Only"
+  },
+  "note": "Options garbled"
+ },
+ "7": {
+  "question": "Consider the following relations on {1,2,3,4}. Which of the following relations are reflexive ?\n(A) R₁={(1,1),(1,2),(2,1),(2,2),(3,4),(4,1),(4,4)}\n(B) R₂={(1,1),(1,2),(2,1)}\n(C) R₃={(1,1),(1,2),(1,4),(2,1),(2,2),(3,3),(4,1),(4,4)}\n(D) R₄={(2,1),(3,1),(3,2),(4,1),(4,2),(4,3)}\n(E) R₅={(1,1),(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,3),(3,4),(4,4)}\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(A), (D) and (E) Only",
+   "C": "(D) and (E) Only",
+   "D": "(C) and (E) Only"
+  },
+  "note": "Subscripts, braces and options garbled"
+ },
+ "10": {
+  "question": "Arrange the following steps of Feature Drive Development (FDD) process in the correct sequence :\n(A) Develop an overall model\n(B) Build by feature\n(C) Plan by feature\n(D) Design by feature\n(E) Build a feature list\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (C), (B), (E), (D)",
+   "B": "(A), (E), (C), (D), (B)",
+   "C": "(B), (A), (D), (E), (C)",
+   "D": "(A), (B), (C), (E), (D)"
+  },
+  "note": "Options garbled/empty"
+ },
+ "11": {
+  "question": "Consider the given number (45)_y where y is the base of the number. Some of the possible values of y are given below.\n(A) 5\n(B) 6\n(C) 7\n(D) 8\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(B), (C) and (D) Only",
+   "C": "(A), (C) and (D) Only",
+   "D": "(A), (B), (C) and (D)"
+  },
+  "note": "Options empty; subscript y"
+ },
+ "13": {
+  "question": "Match List - I with List - II.\n| List - I | List - II |\n|---|---|\n| (A) The activation function | (I) is called the delta rule. |\n| (B) The learning method of perceptron | (II) is one of the key components of the perceptron as in the most common neural network architecture. |\n| (C) Areas of application of artificial neural network include | (III) is always boolean like a switch. |\n| (D) The output of the perceptron | (IV) system identification and control. |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+   "B": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+   "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+   "D": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)"
+  },
+  "note": "Table and options garbled"
+ },
+ "14": {
+  "question": "Match List - I with List - II.\n| List - I | List - II |\n|---|---|\n| (A) Representation of bits | (I) Transport layer |\n| (B) Physical Address | (II) Physical layer |\n| (C) Logical Address | (III) Network layer |\n| (D) Segmentation and reassembly | (IV) Data link layer |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+   "B": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+   "C": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)",
+   "D": "(A)-(I), (B)-(IV), (C)-(III), (D)-(II)"
+  },
+  "note": "Table and options garbled"
+ },
+ "15": {
+  "question": "Which of the following are Agile Process Models ?\n(A) Extreme Programming (XP)\n(B) Waterfall\n(C) Scrum\n(D) Spiral\n(E) Incremental\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (C) Only",
+   "B": "(B) and (C) Only",
+   "C": "(A) and (D) Only",
+   "D": "(B) and (E) Only"
+  },
+  "note": "Options merged"
+ },
+ "16": {
+  "question": "Which of the following statements are TRUE about Privileged Instructions ?\n(A) It can only be executed by the Operating System kernel and not by user applications.\n(B) It is designed to perform operations that can directly affect the hardware or system state such as I/O operations or changing memory management setting.\n(C) User applications can execute privileged instructions if they have to correct permissions, set by the Operating System.\n(D) It usually executed in user mode to ensure the safety and security of the system.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(A), (B) and (C) Only",
+   "C": "(B) and (C) Only",
+   "D": "(B), (C) and (D) Only"
+  },
+  "note": "Options merged"
+ },
+ "19": {
+  "question": "Host A (on TCP/IPv4 Networks) send an IP Datagram D to host B (also on TCP/IPv4 network). Assume that no error occured during transmission of D, when D reaches B. Which of following header field may differ from that of original datagram D ?\n(A) TTL\n(B) Checksum\n(C) Fragment offset\n(D) Source IP\n(E) Destination IP\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(A), (B) and (C) Only",
+   "C": "(A), (B), (C) and (D) Only",
+   "D": "(A), (B), (C) and (E) Only"
+  },
+  "note": "Options garbled"
+ },
+ "20": {
+  "question": "Which of the following properties correctly describe a Regular Grammar ?\n(A) All production rules are of the form A→xB or A→x, where A and B are non terminal symbols and x is a terminal symbol.\n(B) Regular grammars are more powerful than context-free grammars and can express any type of language.\n(C) There is a direct correspondence between regular grammar and finite automata.\n(D) Regular grammars can generate languages that are not recognised by any type of automata.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(C) and (D) Only",
+   "D": "(A) and (C) Only"
+  },
+  "note": "Options garbled"
+ },
+ "22": {
+  "question": "Arrange the following phases of the Agile process in the correct sequence :\n(A) Design\n(B) Release\n(C) Testing\n(D) Development\n(E) Planning\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (D), (E), (C)",
+   "B": "(A), (D), (E), (B), (C)",
+   "C": "(E), (A), (D), (C), (B)",
+   "D": "(E), (D), (A), (C), (B)"
+  },
+  "note": "Options garbled"
+ },
+ "23": {
+  "question": "Which of the following are TRUE about constructors in C++ ?\n(A) A constructor can be overloaded.\n(B) A constructor does not have a return type.\n(C) A constructor must be declared as a friend function.\n(D) A constructor is called when an object is destroyed.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(B), (C), (D) Only",
+   "B": "(B), (C) Only",
+   "C": "(A), (B), (C) Only",
+   "D": "(A), (B) Only"
+  },
+  "note": "Options garbled"
+ },
+ "26": {
+  "question": "Arrange the following steps in proper sequence involved in a Genetic Algorithm :\n(A) Selection\n(B) Initialization\n(C) Crossover\n(D) Mutation\n(E) Evaluation\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (C), (D), (E)",
+   "B": "(E), (A), (B), (D), (C)",
+   "C": "(B), (E), (A), (C), (D)",
+   "D": "(A), (C), (B), (D), (E)"
+  },
+  "note": "Options garbled"
+ },
+ "30": {
+  "question": "Arrange the following recurrence relations in increasing order of their time capacity:\n(A) T(n)=T(n/2)+1\n(B) T(n)=2T(n/2)+n\n(C) T(n)=3T(n/3)+n\n(D) T(n)=2T(n/2)+√n\n(E) T(n)=T(n−1)+1\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(E), (A), (B), (D), (C)",
+   "B": "(A), (E), (D), (B), (C)",
+   "C": "(E), (A), (D), (B), (C)",
+   "D": "(A), (B), (D), (E), (C)"
+  },
+  "note": "Square root lost; options garbled"
+ },
+ "32": {
+  "question": "Match List - I with List - II.\n| List - I (IP Address) | List - II (Class) |\n|---|---|\n| (A) 10.20.30.40 | (I) Class E |\n| (B) 210.20.30.3 | (II) Class B |\n| (C) 180.30.100.10 | (III) Class A |\n| (D) 252.5.15.11 | (IV) Class C |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+   "B": "(A)-(I), (B)-(IV), (C)-(II), (D)-(III)",
+   "C": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+   "D": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)"
+  },
+  "note": "Table and options garbled"
+ },
+ "33": {
+  "question": "Find the correct sequence of the storage devices in descending order based on their access time.\n(A) Registers\n(B) Magnetic Disk\n(C) Magnetic Tapes\n(D) Main memory\n(E) Optical Disk\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(B), (A), (D), (C), (E)",
+   "B": "(B), (A), (E), (D), (C)",
+   "C": "(C), (B), (A), (E), (D)",
+   "D": "(C), (E), (B), (D), (A)"
+  },
+  "note": "Options garbled"
+ },
+ "34": {
+  "question": "A graph G with number of vertices greater and equal than three i.e. (n ≥ 3) is a Hamiltonian graph, if the degree of each vertex is greater and equal to . . . .",
+  "options": {
+   "A": "Equal to number of vertices",
+   "B": "Double of number of vertices",
+   "C": "Half of number of vertices",
+   "D": "Four times of number of vertices"
+  },
+  "note": "Option D had junk text"
+ },
+ "36": {
+  "question": "Consider the transactions T₁, T₂, T₃, and the schedules S₁ and S₂ given below.\nT₁: r₁(x); r₁(z); w₁(z)\nT₂: r₂(y); r₂(z); w₂(z)\nT₃: r₃(y); r₃(x); w₃(y)\nS₁ : r₁(x); r₃(y); r₃(x); r₂(y); r₂(z); w₃(y); w₃(z); r₁(z); w₁(x); w₁(z)\nS₂ : r₁(x); r₃(y); r₂(y); r₃(x); r₁(z); r₂(z); w₃(y); w₁(x); w₂(z); w₁(z)\nWhich one of the following statements about the schedules is TRUE?",
+  "options": {
+   "A": "Only S₁ is conflict-serializable",
+   "B": "Only S₂ is conflict-serializable",
+   "C": "Both S₁ and S₂ are conflict-serializable",
+   "D": "Neither S₁ nor S₂ is conflict-serializable"
+  },
+  "note": "Subscripts missing on r/w operations in schedules"
+ },
+ "38": {
+  "question": "Match List - I with List - II.\n| List - I (computing systems) | List - II (working/output) |\n|---|---|\n| (A) Half Adder | (I) Has n input and 2^n output |\n| (B) Decoder | (II) CPU Storage Unit |\n| (C) Register | (III) Used to store program at runtime |\n| (D) Main memory | (IV) 2-bit addition circuit |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+   "B": "(A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+   "C": "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)",
+   "D": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)"
+  },
+  "note": "Table, superscript and options garbled"
+ },
+ "39": {
+  "question": "Arrange the following steps in a proper sequence for the process of training a neural network.\n(A) Weight initialization\n(B) Feed forward\n(C) Back Propagation\n(D) Loss Calculation\n(E) Weight Update\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (D), (C), (E)",
+   "B": "(D), (B), (A), (C), (E)",
+   "C": "(A), (C), (D), (B), (E)",
+   "D": "(E), (C), (B), (D), (A)"
+  },
+  "note": "Options garbled"
+ },
+ "40": {
+  "question": "Consider the following statements regarding combinational and sequential circuits.\n(A) Output of combinational circuits depends on the only current input.\n(B) Output of combinational circuit depends on the both current input and previous output.\n(C) Output of sequential circuit depends on the current input.\n(D) Output of sequential circuit depends on both current input and previous output.\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (C) Only",
+   "B": "(A) and (D) Only",
+   "C": "(B) and (D) Only",
+   "D": "(B) and (C) Only"
+  },
+  "note": "Option A split from question"
+ },
+ "41": {
+  "question": "Which of the following relations can not be decomposed in to BCNF with a lossless join and dependency-preserving decomposition?",
+  "options": {
+   "A": "R (V,W,X,Y,Z) {VW→X, WX→V, VX→W, W→Y, Y→Z}",
+   "B": "R (V,W,X,Y,Z) {VW→W, X→Y}",
+   "C": "R (V,W,X,Y,Z) {VW→X, X→VY}",
+   "D": "R (V,W,X,Y,Z) {VW→X, X→Y, Y→Z, Z→V}"
+  },
+  "note": "Junk text in option D"
+ },
+ "43": {
+  "question": "Which of the following are typical activities in the software process lifecycle?\n(A) Requirement Analysis\n(B) System Design\n(C) Code Refactoring\n(D) Deployment\n(E) Substructure\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (C) Only",
+   "B": "(B), (C), (D) Only",
+   "C": "(A), (B), (D) Only",
+   "D": "(A), (D), (E) Only"
+  },
+  "note": "Options garbled"
+ },
+ "45": {
+  "question": "A coin is tossed successively three times. Find the Probability (P), Event (E), Sample space (S) of getting exactly one head or two heads, where n is number of occurrence.\n(A) n(S) = 8 and n(E) = 4\n(B) n(E) = 6 and n(S) = 8\n(C) P(E) = 3/4\n(D) P(E) = 1/2\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (C) and (D)",
+   "B": "(B) and (C) Only",
+   "C": "(A) and (D) Only",
+   "D": "(C) and (D) Only"
+  },
+  "note": "Options garbled"
+ },
+ "46": {
+  "question": "Out of the following steps in the proper sequence for simplifying a Boolean function using a Karnaugh map (K-map).\n(A) Identify and group the largest possible cluster of 1's\n(B) Draw the K-map for the given Boolean function\n(C) Write the simplified Boolean expression from the grouped clusters\n(D) Transfer the truth table values to the K-map\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(B), (D), (A), (C)",
+   "B": "(D), (B), (A), (C)",
+   "C": "(B), (A), (D), (C)",
+   "D": "(A), (B), (C), (D)"
+  },
+  "note": "Option D empty"
+ },
+ "47": {
+  "question": "Consider the following if p and q are two statements.\n(A) ~(p∧q) ≡ ~p∨~q\n(B) ~(p∨q) ≡ ~p∧~q\n(C) p∧~p ≡ T\n(D) ~(p⇒q) ≡ p∧~q\n(E) p∨q ≡ ~p∨~q\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (D) only",
+   "B": "(A), (C) and (D) only",
+   "C": "(C), (D) and (E) only",
+   "D": "(A), (B) and (C) only"
+  },
+  "note": "Logic symbols lost; options garbled"
+ },
+ "48": {
+  "question": "What is the output of the code given below :\n#include<iostream.h>\nusing namespace std;\nclass Base {\npublic:\n  Base(){\n    cout<<\"Base Const\";\n  }\n  virtual ~Base() {\n    cout<<\"Base dest\";\n  }\n};\nclass Derived : public Base {\npublic:\n  Derived() {\n    cout<<\"Derived Const\";\n  }\n  ~Derived() {\n    cout<<\"Derived dest\";\n  }\n};\nint main() {\n  Base *b = new Derived();\n  delete b;\n  return 0;\n}",
+  "options": {
+   "A": "Base Const Derived Const Derived dest Base dest",
+   "B": "Base Const Derived Const Base dest Derived dest",
+   "C": "Derived Const Base Const Base dest Derived dest",
+   "D": "Base Const Derived Const Base dest"
+  },
+  "note": "Junk symbols in code; option line breaks"
+ },
+ "51": {
+  "question": "Which of the following tasks could be attained using syntax trees in compiler design ?\n(A) Type Checking\n(B) Code Generation\n(C) Code Optimization\n(D) Error Handling\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (C) Only",
+   "B": "(B), (C), (D) Only",
+   "C": "(A), (C), (D) Only",
+   "D": "(A), (B), (D) Only"
+  },
+  "note": "Options garbled"
+ },
+ "52": {
+  "question": "Match List - I with List - II.\n| List - I | List - II |\n|---|---|\n| (A) HTML | (I) Allow for dynamic and interactive web pages. |\n| (B) DHTML | (II) Defines the structure of web pages. |\n| (C) XML | (III) Object-oriented programming language for web applications. |\n| (D) JAVA | (IV) Used for data storage and transport. |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+   "B": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+   "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+   "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "53": {
+  "question": "Match List - I with List - II.\n| List - I (Counter) | List - II (uses/working) |\n|---|---|\n| (A) N-bit Ring Counter | (I) Uses universal clock |\n| (B) Synchronous Counter | (II) Counts exactly N states |\n| (C) Asynchronous Counter | (III) Counts 0 to 9 |\n| (D) Decimal Counter | (IV) Main clock is applied to first flip-flop only |\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+   "B": "(A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+   "C": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+   "D": "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "54": {
+  "question": "Arrange the following steps of file handling in C in the correct order :\n(A) Close the file\n(B) Read from or write to the file\n(C) Open the file\n(D) Check for error\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (C), (D), (B)",
+   "B": "(D), (B), (C), (A)",
+   "C": "(C), (D), (B), (A)",
+   "D": "(B), (D), (A), (C)"
+  },
+  "note": "Options garbled"
+ },
+ "55": {
+  "question": "Match List - I with List - II.\n| List - I (Algorithms) | List - II (Characteristics) |\n|---|---|\n| (A) First Come First Served (FCFS) | (I) Each process is assigned a priority. |\n| (B) Shortest Job First (SJF) | (II) Ensures fair allocation of CPU time by assigning time slice. |\n| (C) Round Robin (RR) | (III) Processes are executed in the order they arrive. |\n| (D) Priority Scheduling | (IV) Select the process for execution with smallest next Burst time. |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+   "B": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+   "C": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+   "D": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "56": {
+  "question": "Arrange the following steps in a proper sequence for the typical process of a DNS query :\n(A) Query authoritative DNS Server\n(B) Query local DNS Server\n(C) Local DNS Server Check Cache\n(D) Query root DNS Server\n(E) Query TLD DNS Server\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (C), (E), (B), (D)",
+   "B": "(E), (A), (C), (B), (D)",
+   "C": "(A), (B), (C), (D), (E)",
+   "D": "(B), (C), (D), (E), (A)"
+  },
+  "note": "Options garbled"
+ },
+ "57": {
+  "question": "Match List - I with List - II.\n| List - I (operating system concepts) | List - II (characteristics) |\n|---|---|\n| (A) Paging | (I) Evicts least recently used process |\n| (B) LRU (Least Recently Used) | (II) Extends physical memory |\n| (C) C-SCAN | (III) Logical to physical mapping |\n| (D) Virtual Memory | (IV) Circular disk access |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+   "B": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+   "C": "(A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+   "D": "(A)-(I), (B)-(IV), (C)-(III), (D)-(II)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "58": {
+  "question": "A class B network on the Internet has a subnet mask of 255.255.248.0, what is the maximum number of hosts per subnet?",
+  "options": {
+   "A": "1022",
+   "B": "1023",
+   "C": "2046",
+   "D": "2047"
+  },
+  "note": "Junk text in option B"
+ },
+ "59": {
+  "question": "Select the Sorting Algorithms that are stable.\n(A) Quick Sort\n(B) Bubble Sort\n(C) Insertion Sort\n(D) Merge Sort\n(E) Shell Sort\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (C) and (E) Only",
+   "B": "(A), (D) and (E) Only",
+   "C": "(B) and (C) Only",
+   "D": "(B), (C) and (D) Only"
+  },
+  "note": "Options garbled"
+ },
+ "63": {
+  "question": "Arrange the following stages of a Turing Machine (TM) operation in the correct order as they occur during computation.\n(A) Writing a symbol on the tape\n(B) Moving the tape head left to right\n(C) Reading a symbol from the tape\n(D) Transitioning to a new state based on the current state and symbol read\n(E) Halting and accepting or rejecting the input\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(C), (A), (B), (D), (E)",
+   "B": "(C), (B), (A), (D), (E)",
+   "C": "(C), (D), (A), (B), (E)",
+   "D": "(C), (D), (B), (A), (E)"
+  },
+  "note": "Options garbled"
+ },
+ "64": {
+  "question": "Match List - I with List - II.\n| List - I (software design principles) | List - II (Definition) |\n|---|---|\n| (A) Cohesion | (I) Degree to which one module relies on another module. |\n| (B) Coupling | (II) Dividing a software system into distinct modules. |\n| (C) Abstration | (III) Degree to which elements of a module belong together. |\n| (D) Modularity | (IV) Simplifying complex reality by modeling classes appropriate to the problem. |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+   "B": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+   "C": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+   "D": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "65": {
+  "question": "Which of the following languages can be recognized by Non-Deterministic Finite Automata(NFA) but cannot be recognized by Deterministic Finite Automata(DFA)?\n(A) L₁ = {w ∈ {0,1}* | the length of w is even}\n(B) L₂ = {w ∈ {0,1}* | the length of w is odd}\n(C) L₃ = {w ∈ {0,1}* | all 0's come before all 1's in w}\n(D) L₄ = {w ∈ {0,1}* | w contains an equal number of 0's and 1's}\n(E) L₅ = {w ∈ {0,1}* | all 1's come before all 0's in w}",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(C) and (D) Only",
+   "D": "None of the above"
+  },
+  "note": "Subscripts missing; options garbled"
+ },
+ "67": {
+  "question": "Arrange the following phases of database design in the correct order :\n(A) Physical Design\n(B) Conceptual Design\n(C) Logical Design\n(D) Requirement Analysis\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(B), (D), (A), (C)",
+   "B": "(C), (A), (B), (D)",
+   "C": "(D), (B), (C), (A)",
+   "D": "(A), (D), (C), (B)"
+  },
+  "note": "Options garbled"
+ },
+ "71": {
+  "question": "Arrange the following stages of parsing in the correct order as they typically occur in the compilation process.\n(A) Lexical Analysis\n(B) Sematic Analysis\n(C) Syntax Analysis\n(D) Intermediate Code Generation\n(E) Code Optimization\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B), (C), (D), (E)",
+   "B": "(A), (C), (B), (D), (E)",
+   "C": "(A), (D), (B), (C), (E)",
+   "D": "(A), (C), (D), (B), (E)"
+  },
+  "note": "Options garbled"
+ },
+ "72": {
+  "question": "Match List - I with List - II.\n| List - I (Queries) | List - II (Probability) |\n|---|---|\n| (A) A bag contains 6 white and 4 red balls. Two balls are drawn at random. What is the chance they will the same color? | (I) 3 / 68 |\n| (B) In a pack of 52 cards, one card is drawn at random, What is the probability that it is either a king or queen? | (II) 14/68 |\n| (C) A bag contains 6 red, 4 white and 8 blue balls. If three balls are drawn at random, find the probability of 1 red and 2 white balls ? | (III) 2/13 |\n| (D) A bag contains 6 red, 4 white and 8 blue balls. If three balls are drawn at random. Find the probability of 2 blue and 1 red balls ? | (IV) 7/15 |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+   "B": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+   "C": "(A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+   "D": "(A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "73": {
+  "question": "Match List - I with List - II.\n| List - I | List - II |\n|---|---|\n| (A) Natural language processing | (I) A method of training algorithm by rewarding desired behaviour and/or punishing undesired one. |\n| (B) Reinforcement learning | (II) System designed to emulate the decision making abilities of a human expert. |\n| (C) Support vector machine | (III) A branch of AI focused on understanding and generating human language. |\n| (D) Expert system | (IV) A machine learning technique that finds the hyper plane that best separates different class in a feature space. |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+   "B": "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+   "C": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+   "D": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "74": {
+  "question": "Match List - I with List - II.\n| List - I | List - II |\n|---|---|\n| (A) Dijkstra's Algorithms | (I) Find the shortest path between all pairs of vertices in a graph with positive or negative edge weights. |\n| (B) Floyd-Warshall Algorithms | (II) Finds the shortest path in a weighted graph with non-negative edge weights. |\n| (C) Bellman-Ford Algorithms | (III) Ford finds single-source shortest paths with possible negative weights |\n| (D) Prim's Algorithms | (IV) Prim’s algorithm finds the Minimum Spanning Tree (MST) |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+   "B": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+   "C": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+   "D": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "75": {
+  "question": "Which of the following statements are TRUE about Process Control Block (PCB) ?\n(A) The PCB contains information about the process state, such as whether it is running, waiting or terminated\n(B) The PCB includes the program code and data segments of the process\n(C) The PCB stores the process's memory management information, such as page tables and segment tables\n(D) The PCB is used to track process scheduling information and CPU registers for process execution\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(B), (C) and (D) Only",
+   "C": "(A), (C) and (D) Only",
+   "D": "(A) and (B) Only"
+  },
+  "note": "Options garbled"
+ },
+ "77": {
+  "question": "Arrange the following Language Classes in ascending order according to their expressive power, as defined by Chomsky hierarchy:\n(A) Context-free languages\n(B) Context-sensitive languages\n(C) Regular languages\n(D) Unrestricted Grammars\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(C), (A), (B), (D)",
+   "B": "(C), (A), (D), (B)",
+   "C": "(A), (C), (B), (D)",
+   "D": "(A), (D), (B), (C)"
+  },
+  "note": "Options garbled"
+ },
+ "78": {
+  "question": "Let G(V,E) be an undirected graph with l edges. Then the sum of degree of all vertices is equal to _________.",
+  "options": {
+   "A": "2l",
+   "B": "l/2",
+   "C": "l²",
+   "D": "√l"
+  },
+  "note": "Option D empty (square root); C superscript"
+ },
+ "80": {
+  "question": "(A) In IPv4 addressing, a block of address can be define as x.y.z.t/ n in which x.y.z.t define one of the address and / n define the mask\n(B) The first address in the block can be found by setting the rightmost 32-n bits to 0s\n(C) Address of class C is used for multicast communication\n(D) There are five classes in IPv4 address\n(E) Supernetting combine several networks into one large network\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A), (B) and (C) Only",
+   "B": "(A), (B), (D) and (E) Only",
+   "C": "(A), (C), (D) and (E) Only",
+   "D": "(C), (D) and (E) Only"
+  },
+  "note": "Options garbled"
+ },
+ "81": {
+  "question": "Match List - I with List - II.\n| List - I (Testing Type) | List - II (Description) |\n|---|---|\n| (A) Unit testing | (I) Testing individual components of the software. |\n| (B) Integrating testing | (II) Testing the interaction between integrated components. |\n| (C) System testing | (III) Testing to verify the system meets business needs. |\n| (D) Acceptance testing | (IV) Testing the complete system to ensure it meets requirements. |\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+   "B": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+   "C": "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+   "D": "(A)-(I), (B)-(IV), (C)-(II), (D)-(III)"
+  },
+  "note": "Table and option D garbled"
+ },
+ "82": {
+  "question": "Consider the following statement regarding special purpose registers.\n(A) Program Counter (PC) keeps the track of next instruction executed\n(B) Instruction register holds the address of first instruction to be executed\n(C) Accumulator holds the output of ALU\n(D) Program Counter ( PC ) keeps the track of only first instruction of the program\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (C) Only",
+   "B": "(A) and (D) Only",
+   "C": "(B) and (D) Only",
+   "D": "(A), (B) and (C) Only"
+  },
+  "note": "Option A split from question"
+ },
+ "83": {
+  "question": "Arrange the following steps in the correct order to solve the Knapsack problem using Dynamic Programming.\n(A) Define the base case when the capacity is zero (0) or no items are left to consider\n(B) Compute the maximum value that can be obtained using items up to the i-th item and a knapsack capacity of 0\n(C) Identify subproblems and their dependencies based on items weights and values\n(D) Initialize a table to store results of subproblems\n(E) Iterate through each item and each possible Capacity to fill the table\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(C), (D), (A), (E), (B)",
+   "B": "(D), (C), (A), (E), (B)",
+   "C": "(A), (C), (D), (E), (B)",
+   "D": "(D), (A), (C), (E), (B)"
+  },
+  "note": "Options garbled"
+ },
+ "85": {
+  "question": "Arrange the given steps required for a Direct Memory Access (DMA) transfer in the correct order.\n(A) Initiate DMA transfer request\n(B) Transfer data directly between peripheral and memory\n(C) Processor grants DMA control over the system bus\n(D) DMA controller completes data transfer and signals completion\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(C), (A), (B), (D)",
+   "B": "(A), (C), (B), (D)",
+   "C": "(A), (B), (C), (D)",
+   "D": "(C), (B), (A), (D)"
+  },
+  "note": "Options garbled/empty"
+ },
+ "86": {
+  "question": "Match List - I with List - II\n| List - I (Recurrence Relation) | List - II (Complexity) |\n|---|---|\n| (A) T(n) = 2T(n/2) + n | (I) T(n) = θ(n log n) {exact solution} |\n| (B) T(n) = T(n/2) + 1 | (II) O(n²) |\n| (C) T(n) = 2T(n/2) + 1 | (III) T(n) = θ(n) {exact solution} |\n| (D) T(n) = T(n-1) + n | (IV) O(n) |\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A)-(I), (B)-(IV), (C)-(III), (D)-(II)",
+   "B": "(A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+   "C": "(A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+   "D": "(A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+  },
+  "note": "Table with math lost; options garbled"
+ },
+ "87": {
+  "question": "Translate ∀x ∃y (x<y) in English. Consider domain as a real number for both the variables.",
+  "options": {
+   "A": "For all real numbers x, there exists a real number y such that x is less than y",
+   "B": "For every real numbers y, there exists a real number x such that x is less than y",
+   "C": "For some real numbers x, there exists a real number y such that x is less than y",
+   "D": "For each and every real numbers x and y, x is less than y"
+  },
+  "note": "Formula missing; junk in option C"
+ },
+ "90": {
+  "question": "Which of the following is context free language?\n(A). {wⁱ xʲ yᵏ zˡ | i + k = j + l, where i, j, k, l ≥ 0}\n(B). {wⁱ xʲ yᵏ zˡ | i = j, k = l, where i, j, k, l ≥ 0}\n(C). {wⁱ xʲ yᵏ zˡ | i = j = k and k ≠ l, where i, j, k, l ≥ 0}\n(D). {wⁱ xʲ yᵏ zˡ | i = j = k + l, where i, j, k, l ≥ 0}\n(E). {wⁱ xʲ yᵏ zˡ | i = j = l and k ≠ l where i, j, k, l ≥ 0}",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(C) and (D) Only",
+   "D": "(D) and (E) Only"
+  },
+  "note": "Superscripts lost; passage text leaked into option D"
+ },
+ "93": {
+  "question": "Which of the following is/are the application area(s) of ANN ?\n(A) Natural Language Processing\n(B) Image Processing\n(C) Pattern Recognition\n(D) Speech Recognition\nChoose the correct answer from the options given below :",
+  "options": {
+   "A": "(A) and (B) Only",
+   "B": "(B) and (C) Only",
+   "C": "(A), (B) and (C) Only",
+   "D": "(A), (B), (C) and (D)"
+  },
+  "note": "Option D empty"
+ },
+ "94": {
+  "question": "Artificial Neural Networks (ANNs) are inspired by :",
+  "options": {
+   "A": "Quantum mechanics",
+   "B": "Human brain's neural network",
+   "C": "Computer Hardware architecture",
+   "D": "Genetic algorithm"
+  },
+  "note": "Junk text in option D"
+ },
+ "95": {
+  "question": "Which of the following layers may be more than one in number ?",
+  "options": {
+   "A": "Input layer",
+   "B": "Hidden layer",
+   "C": "Output layer",
+   "D": "Physical layer"
+  },
+  "note": "Next passage leaked into option D"
+ },
+ "100": {
+  "question": "What information is used to determine if a resource request can be granted ?",
+  "options": {
+   "A": "Available resources and current allocation of each process",
+   "B": "CPU utilization of each process",
+   "C": "Number of processes waiting for resources",
+   "D": "Arrival time of each process"
+  },
+  "note": "Junk text in option D"
+ }
+}

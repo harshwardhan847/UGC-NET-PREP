@@ -1,0 +1,263 @@
+{
+ "pdf": "/Users/harshwardhan/Documents/my_projects/UGC-NET-PREP/UGC_Comp_July2018.pdf",
+ "key_page": 14,
+ "flagged": {
+  "2": {
+   "page": 1,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "4": {
+   "page": 1,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "5": {
+   "page": 1,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "11": {
+   "page": 2,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "12": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "15": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "16": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "27": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "29": {
+   "page": 5,
+   "flags": [
+    "junk_text"
+   ]
+  },
+  "35": {
+   "page": 5,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "36": {
+   "page": 5,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "38": {
+   "page": 6,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "40": {
+   "page": 6,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "42": {
+   "page": 6,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "43": {
+   "page": 6,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "45": {
+   "page": 6,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "46": {
+   "page": 6,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "49": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "53": {
+   "page": 7,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "55": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "59": {
+   "page": 8,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "62": {
+   "page": 8,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "65": {
+   "page": 8,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "67": {
+   "page": 9,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "69": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "72": {
+   "page": 9,
+   "flags": [
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "73": {
+   "page": 10,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "75": {
+   "page": 10,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "79": {
+   "page": 10,
+   "flags": [
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "81": {
+   "page": 11,
+   "flags": [
+    "empty_option",
+    "junk_text"
+   ]
+  },
+  "83": {
+   "page": 11,
+   "flags": [
+    "duplicate_options"
+   ]
+  },
+  "84": {
+   "page": 11,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "85": {
+   "page": 11,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "86": {
+   "page": 11,
+   "flags": [
+    "short_question"
+   ]
+  },
+  "89": {
+   "page": 11,
+   "flags": [
+    "empty_option",
+    "dirty_option",
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "90": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "93": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "95": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "96": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "97": {
+   "page": 12,
+   "flags": [
+    "dirty_option",
+    "garbled_math"
+   ]
+  },
+  "100": {
+   "page": 13,
+   "flags": [
+    "junk_text",
+    "garbled_math"
+   ]
+  }
+ }
+}

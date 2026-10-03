@@ -1,0 +1,432 @@
+{
+ "2": {
+  "question": "Match List I with List II and choose the correct answer from the code given below.\nList I | List II\n(a) Equivalence | (i) p ⇒ q\n(b) Contrapositive | (ii) p ⇒ q : q ⇒ p\n(c) Converse | (iii) p ⇒ q : ~p ⇒ ~q\n(d) Implication | (iv) p ⇔ q",
+  "options": {
+   "A": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+   "B": "(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)",
+   "C": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+   "D": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)"
+  },
+  "note": "Table symbols missing"
+ },
+ "3": {
+  "question": "A box contains six red balls and four green balls. Four balls are selected at random from the box. What is the probability that two of the selected balls will be red and two will be green?",
+  "options": {
+   "A": "1/14",
+   "B": "3/7",
+   "C": "1/35",
+   "D": "1/9"
+  },
+  "note": "Options were empty"
+ },
+ "7": {
+  "question": "The boolean expression A'·B + A·B' + A·B is equivalent to (primes denote overline/complement)",
+  "options": {
+   "A": "A'·B",
+   "B": "(A+B)'",
+   "C": "A.B",
+   "D": "A+B"
+  },
+  "note": "Options empty/garbled; overlines lost"
+ },
+ "9": {
+  "question": "Use Dual Simplex Method to solve the following problem :\nMaximize z = −2x₁ − 3x₂\nsubject to:\nx₁ + x₂ ≥ 2\n2x₁ + x₂ ≤ 10\nx₁ + x₂ ≤ 8\nx₁, x₂ ≥ 0",
+  "options": {
+   "A": "x₁ = 2, x₂ = 0, and z = −4",
+   "B": "x₁ = 2, x₂ = 6 and z = −22",
+   "C": "x₁ = 0, x₂ = 2 and z = −6",
+   "D": "x₁ = 6, x₂ = 2 and z = −18"
+  },
+  "note": "Problem statement and options missing"
+ },
+ "12": {
+  "question": "Consider the graph shown below :\n[Figure: octagon with vertices V1..V8 clockwise from the top, plus a centre vertex O joined to all eight. Outer edges: V1-V2=4, V2-V3=2, V3-V4=1, V4-V5=5, V5-V6=6, V6-V7=3, V7-V8=1, V8-V1=2. Spokes: O-V1=3, O-V2=1, O-V3=4, O-V4=5, O-V5=4, O-V6=4, O-V7=2, O-V8=2.]\nUse Kruskal's algorithm to find the minimum spanning tree of the graph. The weight of this minimum spanning tree is",
+  "options": {
+   "A": "17",
+   "B": "14",
+   "C": "16",
+   "D": "13"
+  },
+  "note": "Figure missing"
+ },
+ "14": {
+  "question": "A computer uses a memory unit with 256 K words of 32 bits each. A binary instruction code is stored in one word of memory. The instruction has four parts : an indirect bit, an operation code and a register code part to specify one of 64 registers and an address part. How many bits are there in the operation code, the register code part and the address part ?",
+  "options": {
+   "A": "7,6,18",
+   "B": "6,7,18",
+   "C": "7,7,18",
+   "D": "18,7,7"
+  },
+  "note": "Missing 256 K; option D polluted"
+ },
+ "15": {
+  "question": "Consider the following x86 - assembly language instructions :\nMOV AL, 153\nNEG AL\nThe contents of the destination register AL (in 8-bit binary notation), the status of Carry Flag (CF) and Sign Flag (SF) after the execution of above instructions, are",
+  "options": {
+   "A": "AL = 01100110; CF = 0; SF = 0",
+   "B": "AL = 01100111; CF = 0; SF = 1",
+   "C": "AL = 01100110; CF = 1; SF = 1",
+   "D": "AL = 01100111; CF = 1; SF = 0"
+  },
+  "note": "Options were empty"
+ },
+ "16": {
+  "question": "The decimal floating point number -40.1 represented using IEEE-754 32-bit representation and written in hexadecimal form is",
+  "options": {
+   "A": "0 x C2206666",
+   "B": "0 x C2206000",
+   "C": "0 x C2006666",
+   "D": "0 x C2006000"
+  },
+  "note": "Option D missing"
+ },
+ "17": {
+  "question": "Find the boolean expression for the logic circuit shown below :\n(1-NAND gate, 2-NOR gate, 3-NOR gate)\n[Figure: inputs A and B. Gate 1 (NAND) takes A and B. Gate 2 (NOR) takes NOT A and B. Gate 3 (NOR) takes the outputs of gates 1 and 2 and gives Y.]",
+  "options": {
+   "A": "A·B'",
+   "B": "(A)'·B",
+   "C": "A·B",
+   "D": "A'·B'"
+  },
+  "note": "Figure and options missing"
+ },
+ "19": {
+  "question": "Consider a system with 2 level cache. Access times of Level 1 cache, Level 2 cache and main memory are 0.5 ns, 5 ns and 100 ns respectively. The hit rates of Level 1 and Level 2 caches are 0.7 and 0.8 , respectively. What is the average access time of the system ignoring the search time within the cache?",
+  "options": {
+   "A": "35.20 ns",
+   "B": "7.55 ns",
+   "C": "20.75 ns",
+   "D": "24.35 ns"
+  },
+  "note": "Values and options missing"
+ },
+ "21": {
+  "question": "The solution of recurrence relation :\nT(n) = 2T(sqrt(n)) + lg(n) is",
+  "options": {
+   "A": "O(lg(n))",
+   "B": "O(n lg(n))",
+   "C": "O(lg(n) lg(n))",
+   "D": "O(lg(n) lg(lg(n)))"
+  },
+  "note": "Formula and options missing"
+ },
+ "24": {
+  "question": "Consider the following postfix expression with single-digit operands :\n6 2 3 * / 4 2 * + 6 8 * -\nThe top two elements of the stack after the second * is evaluated, are:",
+  "options": {
+   "A": "8,2",
+   "B": "8,1",
+   "C": "6,2",
+   "D": "6,3"
+  },
+  "note": "Expression missing; junk in text"
+ },
+ "27": {
+  "question": "Match List I with List II and choose the correct answer from the code given below.\nList I (Graph Algorithm): (a) Dijkstra's algorithm (b) Kruskal's algorithm (c) Floyd-Warshall algorithm (d) Topological sorting\nList II (Time Complexity): (i) O(E log E) (ii) O(V³) (iii) O(V²) (iv) O(V+E)\nWhere V and E are the number of vertices and edges in the graph respectively.",
+  "options": {
+   "A": "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+   "B": "(a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)",
+   "C": "(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)",
+   "D": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)"
+  },
+  "note": "Complexities lost"
+ },
+ "28": {
+  "question": "In K-coloring of an undirected graph G = (V, E) is a function c : V → {0, 1, …, K−1} such that c(u) ≠ c(v) for every edge (u, v) ∈ E.\nWhich of the following is not correct?",
+  "options": {
+   "A": "G is bipartite",
+   "B": "G is 2-colorable",
+   "C": "G has cycles of odd length",
+   "D": "G has no cycles of odd length"
+  },
+  "note": "Math symbols lost"
+ },
+ "29": {
+  "question": "Consider a singly linked list. What is the worst case time complexity of the best-known algorithm to delete the node a, pointer to this node is q, from the list?",
+  "options": {
+   "A": "O(n log n)",
+   "B": "O(n)",
+   "C": "O(log n)",
+   "D": "O(1)"
+  },
+  "note": "Options B, D missing"
+ },
+ "30": {
+  "question": "The second smallest of n elements can be found with ____________ comparisons in the worst case.",
+  "options": {
+   "A": "n − 1",
+   "B": "(log n)",
+   "C": "n + ceil(log n) − 2",
+   "D": "3n/1"
+  },
+  "note": "Option A missing"
+ },
+ "32": {
+  "question": "Consider the language L given by\nL = {2^(nk) | k > 0, and n is non-negative integer number}\nThe minimum number of states of finite automaton that accepts the language L is",
+  "options": {
+   "A": "n",
+   "B": "n + 1",
+   "C": "n(n+1)/2",
+   "D": "2^n"
+  },
+  "note": "Language and options missing"
+ },
+ "34": {
+  "question": "Consider the following two languages :\nL1 = {x | for some y with |y| = 2|x|, xy ∈ L and L is regular language}\nL2 = {x | for some y such that |x| = |y|, xy ∈ L and L is regular language}\nWhich one of the following is correct?",
+  "options": {
+   "A": "Only L1 is regular language",
+   "B": "Only L2 is regular language",
+   "C": "Both L1 and L2 are regular languages",
+   "D": "Both L1 and L2 are not regular languages"
+  },
+  "note": "Languages and options garbled"
+ },
+ "35": {
+  "question": "Consider the following languages :\nL1 = {a^(n+m) b^n a^m | n, m ≥ 0}\nL2 = {a^(n+m) b^(n+m) a^(n+m) | n, m ≥ 0}\nWhich one of the following is correct?",
+  "options": {
+   "A": "Only L1 is context free language",
+   "B": "Only L2 is context free language",
+   "C": "Both L1 and L2 are context free languages",
+   "D": "Both L1 and L2 are not context free languages"
+  },
+  "note": "Languages and options missing symbols"
+ },
+ "36": {
+  "question": "Consider R to be any regular language and L1, L2 be any two context-free languages.\nWhich one of the following is correct?",
+  "options": {
+   "A": "L1' (complement of L1) is context free",
+   "B": "((L1 ∪ L2)' − R) is context free (complement of L1 ∪ L2)",
+   "C": "L1 ∩ L2 is context free",
+   "D": "L1 − R is context free"
+  },
+  "note": "Options lost symbols"
+ },
+ "38": {
+  "question": "Which of the following problems is decidable for recursive languages (L)?",
+  "options": {
+   "A": "Is L = ∅ ?",
+   "B": "Is w ∈ L, where w is a string ?",
+   "C": "Is L = Σ* ?",
+   "D": "Is L = R, where R is a given regular set ?"
+  },
+  "note": "Option C empty; symbols lost"
+ },
+ "39": {
+  "question": "Consider the following grammar G :\nS → A | B\nA → a | c\nB → b | c\nwhere {S, A, B} is the set of non-terminals, {a, b, c} is the set of terminals.\nWhich of the following statement(s) is/are correct?\nS1 : LR(1) can parse all strings that are generated using grammar G.\nS2 : LL(1) can parse all strings that are generated using grammar G.\nChoose the correct answer from the code given below :",
+  "options": {
+   "A": "Only S1",
+   "B": "Only S2",
+   "C": "Both S1 and S2",
+   "D": "Neither S1 nor S2"
+  },
+  "note": "Grammar and S1/S2 missing"
+ },
+ "41": {
+  "question": "If the frame buffer has 10-bits per pixel and 8-bits are allocated for each of the R, G, and B components, then what would be the size of the color lookup table (LUT) ?",
+  "options": {
+   "A": "(2^8 + 2^9) bytes",
+   "B": "(2^10 + 2^8) bytes",
+   "C": "(2^10 + 2^24) bytes",
+   "D": "(2^10 + 2^11) bytes"
+  },
+  "note": "Options empty/lost exponents"
+ },
+ "42": {
+  "question": "Which homogeneous 2D matrix transforms the figure (a) on the left side to the figure (b) on the right ?\n[Figure (a): house shape with square (0,0)-(2,2) and roof apex at (1,3), dashed vertical line at x=1. Figure (b): apex at (0,2), joined to (2,3) and (2,1), followed by rectangle with corners (2,1), (6,1), (6,3), (2,3).]",
+  "options": {
+   "A": "[0 2 −6; 2 0 1; 0 0 1]",
+   "B": "[0 −2 6; 1 0 1; 0 0 1]",
+   "C": "[1 −2 6; 1 0 2; 0 0 1]",
+   "D": "[0 2 6; 1 0 1; 0 0 1]"
+  },
+  "note": "Figure and matrices missing"
+ },
+ "43": {
+  "question": "Consider the midpoint (or Bresenham) algorithm for rasterizing lines given below :\n(1) Input(x1, y1) and (x2, y2)\n(2) y = y1\n(3) d = f(x1 + 1, y1 + 1/2) // f is the implicit form of a line\n(4) for x = x1 to x2\n(5) do\n(6) plot(x, y)\n(7) if (d < 0)\n(8) then\n(9) y = y + 1\n(10) d = d + (y1 − y2) + (x2 − x1)\n(11) else\n(12) d = d + (y1 − y2)\n(13) end\n(14) end\nWhich statements are true?\nP : For a line with slope m > 1, we should change the outer loop in line (4) to be over y.\nQ: Lines (10) and (12) update the decision variable d through an incremental evaluation of the line equation f.\nR : The algorithm fails if d is ever 0 .\nChoose the correct answer from the code given below :",
+  "options": {
+   "A": "P only",
+   "B": "P and Q only",
+   "C": "Q and R only",
+   "D": "P , Q and R"
+  },
+  "note": "Pseudo-code math lost"
+ },
+ "46": {
+  "question": "Consider the following pseudo-code fragment, where m is a non-negative integer that has been initialized:\np = 0;\nk = 0;\nwhile (k < m)\n    p = p + 2^k;\n    k = k + 1;\nend while\nWhich of the following is a loop invariant for the while statement?\n(Note : a loop invariant for a while statement is an assertion that is true each time the guard is evaluated during the execution of the while statement).",
+  "options": {
+   "A": "p = 2^k − 1 and 0 ≤ k < m",
+   "B": "p = 2^(k+1) − 1 and 0 ≤ k < m",
+   "C": "p = 2^k − 1 and 0 ≤ k ≤ m",
+   "D": "p = 2^(k+1) − 1 and 0 ≤ k ≤ m"
+  },
+  "note": "Code and options garbled"
+ },
+ "49": {
+  "question": "What does the following Java function perform?\n(Assume int occupies four bytes of storage)\npublic static int f(int a)\n{ // Pre-conditions : a>0 and no overflow/underflow occurs\n    int b=0 ;\n    for (int i=0; i<32; i++)\n    {\n        b=b<<1 ;\n        b=b | (a & 1);\n        a=a>>>1; // This is a logical shift\n    }\n    return b;\n}",
+  "options": {
+   "A": "Returns the int that has the binary representation of integer a.",
+   "B": "Return the int that has the reversed binary representation of integer a.",
+   "C": "Return the int that represents the number of 1's in the binary representation of integer a.",
+   "D": "Return the int that represents the number of 0's in the binary representation of integer a."
+  },
+  "note": "Shift operator >>> garbled"
+ },
+ "51": {
+  "question": "Consider the C / C++ function f() given below :\nvoid f(char [w])\n{\n    int x=strlen(w); //length of a string\n    char c;\n    for (int i = 0; i<x; i++)\n    {\n        c = w[i];\n        w[i] = w[x−i−1];\n        w[x−i−1] = c;\n    }\n}\nWhich of the following is the purpose of f()?",
+  "options": {
+   "A": "It outputs the contents of the array in reverse order.",
+   "B": "It outputs the contents of the array in the original order.",
+   "C": "It outputs the contents of the array with the characters shifted over by one position.",
+   "D": "It outputs the contents of the array with the characters rearranged so they are no longer recognized as the words in the original phrase."
+  },
+  "note": "Junk text inside question"
+ },
+ "54": {
+  "question": "Match each UML diagram in List I to its appropriate description in List II.\nList I: (a) State Diagram (b) Use-Case Diagram (c) Class Diagram (d) Activity Diagram\nList II:\n(i) Describes how the external entities (people, devices) can interact with the system.\n(ii) Used to describe the static or structural view of a system.\n(iii) Used to show the flow of a business process, the steps of a use-case or the logic of an object's behaviour.\n(iv) Used to describe the dynamic behaviour of objects and could also be used to describe the entire system's behaviour.",
+  "options": {
+   "A": "(a)-(i), (b)-(iv), (c)-(ii), (d)-(iii)",
+   "B": "(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)",
+   "C": "(a)-(i), (b)-(iv), (c)-(iii), (d)-(ii)",
+   "D": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)"
+  },
+  "note": "Table rows mismatched"
+ },
+ "56": {
+  "question": "Consider the following method :\nint f (int m, int n, boolean x, boolean y )\n{\n    int res = 0;\n    if (m < 0){ res = n − m;\n    else if (x||y){\n        res = −1;\n        if (n == m){ res = 1;\n    }\n    else { res = n; }\n    return res;\n}/* end of f*/\nIf P is the minimum number of tests to achieve full statement coverage for f( ), and Q is the minimum number of tests to achieve full branch coverage for f(), then (P, Q) =",
+  "options": {
+   "A": "(3,4)",
+   "B": "(4,3)",
+   "C": "(2,3)",
+   "D": "(3,2)"
+  },
+  "note": "Code garbled"
+ },
+ "57": {
+  "question": "A legacy software system has 940 modules. The latest release required that 90 of these modules be changed. In addition, 40 new modules were added and 12 old modules were removed. Compute the software maturity index for the system.",
+  "options": {
+   "A": "0.849",
+   "B": "0.524",
+   "C": "0.725",
+   "D": "0.923"
+  },
+  "note": "Junk text in question"
+ },
+ "66": {
+  "question": "Which of the following statement/s is/are true?\n(i) Firewalls can screen traffic going into or out of an organization.\n(ii) Virtual private networks can simulate an old leased network to provide certain desirable properties.\nChoose the correct answer from the code given below :",
+  "options": {
+   "A": "(i) only",
+   "B": "(ii) only",
+   "C": "Both (i) and (ii)",
+   "D": "Neither (i) nor (ii)"
+  },
+  "note": "Junk text in question"
+ },
+ "75": {
+  "question": "A process residing in Main Memory and Ready and Waiting for execution is kept on?",
+  "options": {
+   "A": "Execution Queue",
+   "B": "Job Queue",
+   "C": "Ready Queue",
+   "D": "Wait Queue"
+  },
+  "note": "Junk in option B"
+ },
+ "82": {
+  "question": "Consider a relation schema R = (A, B, C, D, E, F) on which the following functional dependencies hold :\nA → B\nB, C → D\nE → C\nD → A\nWhat are the candidate keys of R?",
+  "options": {
+   "A": "AE and BE",
+   "B": "AE, BE, and DE",
+   "C": "AEF, BEF and BCF",
+   "D": "AEF, BEF and DEF"
+  },
+  "note": "Schema and FDs garbled"
+ },
+ "83": {
+  "question": "Consider the following sequence of two transactions on a bank account (A) with an initial balance of 20,000 that transfers 5,000 to another account (B) and then applies 10% interest.\n(i) T1 start\n(ii) T1 A old = 20,000 new 15,000\n(iii) T1 B old = 12,000 new = 17,000\n(iv) T1 commit\n(v) T2 start\n(vi) T2 A old = 15,000 new = 16,500\n(vii) T2 commit\nSuppose the database system crashes just before log record (vii) is written. When the system is restarted, which one statement is true of the recovery process?",
+  "options": {
+   "A": "We must redo log record (vi) to set A to 16,500 .",
+   "B": "We must undo log record (vi) to set A to 16,500 and then redo log records (ii) and (iii).",
+   "C": "We need not redo log records (ii) and (iii) because transaction T1 has committed.",
+   "D": "We can apply redo and undo operations in arbitrary order because they are idempotent."
+  },
+  "note": "Log records garbled"
+ },
+ "84": {
+  "question": "Consider the following tables (relations) :\nStudents\n| Roll-No | Name |\n| 18CS101 | Ramesh |\n| 18CS102 | Mukesh |\n| 18CS103 | Ramesh |\nPerformance\n| Roll-No | Course | Marks |\n| 18CS101 | DBMS | 60 |\n| 18CS101 | Compiler Design | 65 |\n| 18CS102 | DBMS | 80 |\n| 18CS103 | DBMS | 85 |\n| 18CS102 | Compiler Design | 75 |\n| 18CS103 | Operating System | 70 |\nPrimary keys in the tables are shown using underline. Now, consider the following query :\nSELECT S.Name, Sum (P.Marks)\nFROM Students S, Performance P\nWHERE S.Roll-No = P.Roll-No\nGROUP BY S.Name\nThe number of rows returned by the above query is",
+  "options": {
+   "A": "0",
+   "B": "1",
+   "C": "2",
+   "D": "3"
+  },
+  "note": "Tables garbled"
+ },
+ "90": {
+  "question": "Suppose that everyone in a group of N people wants to communicate secretly with the N–1 others using symmetric key cryptographic system. The communication between any two persons should not be decodable by the others in the group. The number of keys required in the system as a whole to satisfy the confidentiality requirement is",
+  "options": {
+   "A": "N(N−1)",
+   "B": "N(N−1)/2",
+   "C": "2N",
+   "D": "(N−1)^2"
+  },
+  "note": "Options were empty"
+ },
+ "92": {
+  "question": "Which of the following is true for semi-dynamic environment?",
+  "options": {
+   "A": "The environment may change while the agent is deliberating.",
+   "B": "The environment itself does not change with the passage of time but the agent's performance score does.",
+   "C": "Even if the environment changes with the passage of time while deliberating, the performance score does not change.",
+   "D": "Environment and performance score, both change simultaneously."
+  },
+  "note": "Junk in option A"
+ },
+ "93": {
+  "question": "Consider the following terminology and match List I with List II and choose the correct answer from the code given below.\nb= branching factor\nd= depth of the shallowest solution\nm= Maximum depth of the search tree\nl = Depth limit\nList I (Algorithm): (a) BFS search (b) DFS search (c) Depth-limited search (d) Iterative deepening search\nList II (Space Complexity): (i) O(bd) (ii) O(b^d) (iii) O(bm) (iv) O(bl)",
+  "options": {
+   "A": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)",
+   "B": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+   "C": "(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)",
+   "D": "(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)"
+  },
+  "note": "O(b^d) was misparsed as O(b)"
+ },
+ "94": {
+  "question": "Match List I with List II and choose the correct answer from the code given below.\nList I: (a) Greedy Best-First Search (b) A* Search (c) Recursive Best-First Search (d) Iterative-deepening A* Search\nList II:\n(i) Select a node for expansion if the optimal path to that node has been found.\n(ii) Avoids substantial overhead associated with keeping the sorted queue of nodes.\n(iii) Suffers from excessive node generation.\n(iv) Time complexity depends on the quality of the heuristic.",
+  "options": {
+   "A": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+   "B": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)",
+   "C": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+   "D": "(a)-(i), (b)-(iv), (c)-(iii), (d)-(ii)"
+  },
+  "note": "Table rows garbled"
+ },
+ "97": {
+  "question": "Consider the following minimax game tree search\n[Figure: root MAX node with three MIN children. Each MIN child has MAX children, whose leaf values are: MIN1: [4], [6,2,6], [3,9]; MIN2: [5,2], [7,3]; MIN3: [1], [7,2], [4,6,3].]\nWhat will be the value propagated at the root?",
+  "options": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "note": "Figure missing; junk in option B"
+ },
+ "99": {
+  "question": "Consider the sentence below.\n\"There is a country that borders both India and Nepal.\"\nWhich of the following represents the above sentence correctly?",
+  "options": {
+   "A": "∃ Country(c) ∧ Border(c, India) ∧ Border(c, Nepal)",
+   "B": "∃ Country(c) ⇒ [Border(c, India) ∧ Border(c, Nepal)]",
+   "C": "[∃ Country(c)] ⇒ [Border(c, India) ∧ Border(c, Nepal)]",
+   "D": "∃ Border(Country(c), India ∧ Nepal)"
+  },
+  "note": "Options were empty"
+ },
+ "100": {
+  "question": "A full joint distribution for the Toothache, Cavity, and Catch is given in the table below:\n| | Toothache | Toothache | ¬Toothache | ¬Toothache |\n| | Catch | ¬Catch | Catch | ¬Catch |\n| Cavity | 0.108 | 0.012 | 0.072 | 0.008 |\n| ¬Cavity | 0.016 | 0.064 | 0.144 | 0.576 |\nWhat is the probability of Cavity, given evidence of Toothache?",
+  "options": {
+   "A": "<0.2,0.8>",
+   "B": "<0.4,0.8>",
+   "C": "<0.6,0.8>",
+   "D": "<0.6,0.4>"
+  },
+  "note": "Junk in option D; table garbled"
+ }
+}

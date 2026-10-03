@@ -1,0 +1,292 @@
+{
+ "3": {
+  "question": "Consider universe positive integer X = {1 ≤ n ≤ 8}, proposition P = \"n is an even integers\", Q = \"(3 ≤ n ≤ 7) ∧ (n ≠ 6)\". The truth set of P ↔ Q is",
+  "options": {
+   "A": "{1, 4}",
+   "B": "{2, 6}",
+   "C": "{3, 4, 5}",
+   "D": "{1}"
+  },
+  "note": "Math and options were missing"
+ },
+ "8": {
+  "question": "A TCP server application is programmed to listen on port P on host S. A TCP client is connected to the TCP server over the network, Consider that while TCP connection is active the server is crashed and rebooted. Assume that the client does not use TCP keepalive timer. Which of the following behaviour/s is/are possible?\nStatement I: The TCP application server on S can listen on P after reboot.\nStatement II: If client sends a packet after the server reboot, it will receive the RST segment.\nIn the light of the above statements, choose the correct answer from the options given below.",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is true but Statement II is false",
+   "D": "Statement I is false but Statement II is true"
+  },
+  "note": "Junk math from other questions removed"
+ },
+ "14": {
+  "question": "The total cost of retrieving records in sorted order using an unclustered B+ tree is\n(P - Average number of records per data page\nN - Data pages\nF - Ratio of the size of a data entry to the size of a data record)",
+  "options": {
+   "A": "(F*N) + P",
+   "B": "(F+P) * N",
+   "C": "F*N*P",
+   "D": "F + P/N"
+  },
+  "note": "Options were empty"
+ },
+ "15": {
+  "question": "Match List I with List II\n| List I | List II |\n|---|---|\n| A. Scenario testing | I. To verify the I/O behavior of text object |\n| B. Regression testing | II. user acceptance methodology |\n| C. Component testing | III. No new bugs after changes in program |\n| D. Beta testing | IV. The documentation of a use case |\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-IV B-III C-II D-I",
+   "B": "A-II B-I C-III D-IV",
+   "C": "A-IV B-III C-I D-II",
+   "D": "A-III B-I C-IV D-II"
+  },
+  "note": "Table missing; junk text from other questions"
+ },
+ "21": {
+  "question": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: The AVL trees are more balanced as compared to Red Black trees, but they may cause more rotations during insertion and deletion\nReason R: A Red Black tree with n nodes has height that is greater than 2 log₂(n+1) and the AVL tree with n nodes has height less than log_Φ(√5(n+2)) − 2 (where Φ is golden ratio)\nIn the light of the above statements, choose the correct answer from the options given below.",
+  "options": {
+   "A": "Both A and R are correct and R is the correct explanation of A",
+   "B": "Both A and R are correct and R is NOT the correct explanation of A",
+   "C": "A is true but R is false",
+   "D": "A is false but R is true"
+  },
+  "note": "Math expressions missing in Reason R"
+ },
+ "25": {
+  "question": "Consider the following finite automata F1 that accepts a language L\n[Figure: DFA/NFA F1 with three states C, S, E. C is the start state; E is the final (double-circled) state. Transitions: C→S, S→E, C→E (upper arc); S→C, E→S, E→C (lower arcs, drawn right to left).]\nLet F2 be a finite automata which is obtained by reversal of F1. Then which of the following is correct?",
+  "options": {
+   "A": "L(F1) ≠ L(F2)",
+   "B": "L(F1) = L(F2)",
+   "C": "L(F1) ≤ L(F2)",
+   "D": "L(F1) ≥ L(F2)"
+  },
+  "note": "Figure and options were missing"
+ },
+ "26": {
+  "question": "Given below are two statements:\nWhich of the following statement/s is/are correct with respect to virtual memory\nStatement I: Address translation is performed for every logical address used during the execution of a program\nStatement II: A program can execute only when all of its components are loaded in the memory\nIn the light of the above statements, choose the most appropriate answer from the options given below.",
+  "options": {
+   "A": "Both Statement I and Statement II are correct",
+   "B": "Both Statement I and Statement II are incorrect",
+   "C": "Statement I is correct but Statement II is incorrect",
+   "D": "Statement I is incorrect but Statement II is correct"
+  },
+  "note": "Option D contained junk text"
+ },
+ "27": {
+  "question": "There are M points on one straight line AB and n points on another straight line AC none of them being A. How many triangles can be formed with these points as vertices?",
+  "options": {
+   "A": "mn(m+n−2)",
+   "B": "(1/2)mn(m+n−2)",
+   "C": "(1/2)mn(m+n−1)",
+   "D": "mn(m+n−1)"
+  },
+  "note": "Options were empty"
+ },
+ "33": {
+  "question": "Let N denote the set of all natural numbers and R be the relation on N×N defined by (a,b) R (c,d), if ad(b+c) = bc(a+d). Then R is",
+  "options": {
+   "A": "Symmetric only",
+   "B": "Reflexive only",
+   "C": "Transitive only",
+   "D": "An equivalence relation"
+  },
+  "note": "Math symbols missing in question"
+ },
+ "35": {
+  "question": "Let ⊕ denote XOR operation. Let 1 and 0 denote the binary constants and F is the Boolean expression over two variables P and Q (F(P,Q) = ((1⊕P)⊕(P⊕Q)) ⊕ ((P⊕Q)⊕(Q⊕0))\nWhich of the following is equivalent expression to F ?",
+  "options": {
+   "A": "P⊕Q",
+   "B": "P+Q",
+   "C": "(P+Q)'",
+   "D": "(P⊕Q)'"
+  },
+  "note": "Options empty, math missing"
+ },
+ "42": {
+  "question": "Consider the following table of arrival time and burst time for three processes P0, P1 P2:\n| Process | arrival time | Burst time |\n|---|---|---|\n| P0 | 0 ms | 7 |\n| P1 | 1 ms | 3 |\n| P2 | 2 ms | 7 |\nThe pre-emptive shortest job first scheduling algorithm is used. Scheduling is carried out only at arrival or completion of a process. What is the average waiting time for the three processes?",
+  "options": {
+   "A": "3 ms",
+   "B": "3.67 ms",
+   "C": "4.47 ms",
+   "D": "4 ms"
+  },
+  "note": "Table missing; junk text appended"
+ },
+ "45": {
+  "question": "A three dimensional array in C++ is declared as int A[a][b][c]. Consider that array elements are stored in row major order and indexing begin from 0. Here the address of an item at the location A[r][s][t] computed in terms of word length w of an integer is",
+  "options": {
+   "A": "&A[0][0][0]+w(b*c*s + c*r + t)",
+   "B": "&(A[0][0][0]+w(b*c*r + c*s + t)",
+   "C": "&A[0][0][0] + w (a*b*r*r* + c* + t)",
+   "D": "&A[0][0][0]+w(a*b*s + c*r + t)"
+  },
+  "note": "Options were garbled/duplicated"
+ },
+ "48": {
+  "question": "Consider following statements:\nA. A context free language is generated by LR(0) grammar if and only if it is accepted by a deterministic pushdown automata and has prefix property\nB. If M 1 is the single tape TM simulating multilape TMM, then time taken by M 1 to simulate n moves is (n³)\nC. Push down automata behaves like a Turning machine when it has one auxiliary memory.\nD. L = {aⁿbⁿcⁿ : n ≥ 1} is not context free but context sensitive.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B and C only",
+   "B": "A, B only",
+   "C": "D only",
+   "D": "B, C only"
+  },
+  "note": "Junk text and missing math"
+ },
+ "50": {
+  "question": "How many integral solutions are there to x+y+z+w = 29, where x ≥ 1, y ≥ 2, z ≥ 3 and w ≥ 0 ?",
+  "options": {
+   "A": "2400",
+   "B": "2600",
+   "C": "2800",
+   "D": "3000"
+  },
+  "note": "Math was garbled, junk text"
+ },
+ "56": {
+  "question": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: Dendral is an expert system\nReason R: The rationality of an agent is not related to its reaction to the environment.\nIn the light of the above statements, choose the correct answer from the options given below.",
+  "options": {
+   "A": "Both A and R are true and R is the correct explanation of A",
+   "B": "Both A and R are true but R is NOT the correct explanation of A",
+   "C": "A is true but R is false",
+   "D": "A is false but R is true"
+  },
+  "note": "Option C contained junk text"
+ },
+ "57": {
+  "question": "In a multiuser operating system, 20 requests are made to use a particular resource per hour, on an average. The probability that no request is made in 45 minutes is",
+  "options": {
+   "A": "e^(−15)",
+   "B": "e^(−5)",
+   "C": "1 − e^(−5)",
+   "D": "1 − e^(−10)"
+  },
+  "note": "Options were empty"
+ },
+ "66": {
+  "question": "A. The set of turning machine codes for TM's that accept all inputs that are palindromes (possible along with some other inputs) is decidable\nB. The language of codes for TM's M that when started with blank tape, eventually write a 1 somewhere on the tape is undecidable\nC. The language accepted by a TMM is L_M is always recursive\nD. Post's correspondence problem is undecidable\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B and C only",
+   "B": "B, C and D only",
+   "C": "A and C only",
+   "D": "B and D only"
+  },
+  "note": "Junk text inside question"
+ },
+ "72": {
+  "question": "The following table shows the time between failures for a software :\n| Error number | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| time since last failure (Hours) | 6 | 4 | 8 | 5 | 6 |\nThe reliability of the system for one hour operation assuming an exponential model is-",
+  "options": {
+   "A": "e^(−9/29)",
+   "B": "e^(−7/29)",
+   "C": "e^(−5/29)",
+   "D": "e^(−3/29)"
+  },
+  "note": "Table and options were missing"
+ },
+ "74": {
+  "question": "How will you free the memory allocated by the following program?\n# include <stdio.h>\n#include < stdlib. h>\n#define MAXROW 3\n#define MAXCOL 4\nint main ()\n{\nint ** p, i, j;\np= (int **) malloc (MAXROW * size of (int*));\nreturn 0;\n}",
+  "options": {
+   "A": "memfree (int p);",
+   "B": "dealloc (p);",
+   "C": "malloc ( p,0);",
+   "D": "free (p);"
+  },
+  "note": "Option B contained junk text"
+ },
+ "79": {
+  "question": "Consider the rectangle with vertices (0,0), (0,2), (3,0), (3,2). There is scaling of 2 towards x -axis and 3 towards y -axis. The new cordinates of the rectangle are",
+  "options": {
+   "A": "(0,0),(6,0),(0,4),(6,4)",
+   "B": "(0,0),(6,0),(0,4),(3,2)",
+   "C": "(0,0),(6,0),(0,6),(6,6)",
+   "D": "(0,0),(4,0),(0,6),(4,6)"
+  },
+  "note": "Options were empty"
+ },
+ "81": {
+  "question": "In the standard Ethernet with transmission rate of 10 Mbps, asssume that the length of the medium is 2500 m and size of a frame is 512 bytes. The propagation speed of a signal in a cable is normally 2×10^8 m/s. The transmission delay and propogation delay are",
+  "options": {
+   "A": "25.25μs and 51.2μs",
+   "B": "51.2μs and 12.5μs",
+   "C": "10.24μs and 50.12μs",
+   "D": "12.5μs and 51.2μs"
+  },
+  "note": "Options were missing values"
+ },
+ "83": {
+  "question": "What is the output of following code?\nmain ()\n{static float a[ ] = {13.24, 1.5,4.5,5.4,3.5}\nfloat *j, *k;\nj=a;\nk = a+4\nj =j*2;\nk =k/2\nprintf (\"% f% f\", *j, *k);\n}",
+  "options": {
+   "A": "13.25, 4.5",
+   "B": "1.5, 3.5",
+   "C": "13.24, 1.5, 4.5, 5.4, 3.5",
+   "D": "Illegal use of pointer in main function"
+  },
+  "note": "Options were empty, junk text"
+ },
+ "84": {
+  "question": "If A = {4n+2 | n is a natural number} and B = {3n | n is a natural number}. Which of the following is correct for A ∩ B ?",
+  "options": {
+   "A": "{12n²+6n | n is a natural number}",
+   "B": "{24n−12 | n is a natural number}",
+   "C": "{60n+30 | n is a natural number}",
+   "D": "{12n−6 | n is a natural number}"
+  },
+  "note": "Set expressions were missing"
+ },
+ "85": {
+  "question": "Match List I with List II\n| List I | List II |\n|---|---|\n| A. The running time of a straight forward recursive method to compute nth Fibonacci number Fn | I. O(n²) |\n| B. The running time to compute Fn using memoization. | II. O(log n) |\n| C. The running time to compute Fibonacci number Fn using only integer addition and multiplication. | III. O(n) |\n| D. The running time to determine an optimal bitonic tour. | IV. Θ(ϕⁿ) |\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-I B-III C-IV D-II",
+   "B": "A-IV B-III C-II D-I",
+   "C": "A-I B-II C-IV D-III",
+   "D": "A-IV B-II C-III D-I"
+  },
+  "note": "List II math was garbled"
+ },
+ "86": {
+  "question": "Given below are two statements:\nStatement I: If f and g are two functions and f = O(g) but g ≠ o(f), we say that the growth rate of g is smaller than that of f\nStatement II: The class of all decision problems decided by a TM in exponential time, that is O(2^k), k being a constant.\nIn the light of the above statements, choose the most appropriate answer from the options given below.",
+  "options": {
+   "A": "Both Statement I and Statement II are correct",
+   "B": "Both Statement I and Statement II are incorrect",
+   "C": "Statement I is correct but Statement II is incorrect",
+   "D": "Statement I is incorrect but Statement II is correct"
+  },
+  "note": "Math symbols were missing"
+ },
+ "89": {
+  "question": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: It is possible to create doubly linked list using only one pointer with every node.\nReason R: By storing the XOR of the addresses of the previous and next nodes.\nIn the light of the above statements, choose the most appropriate answer from the options given below.",
+  "options": {
+   "A": "Both A and R are true and R is the correct explanation of A",
+   "B": "Both A and R are true but R is NOT the correct explanation of A",
+   "C": "A is true but R is false",
+   "D": "A is false but R is true"
+  },
+  "note": "Junk text inside question"
+ },
+ "90": {
+  "question": "The compiler for high level language that runs on one machine and produces code for other machine is called-",
+  "options": {
+   "A": "Cross compiler",
+   "B": "Multipass compiler",
+   "C": "Optimizing Compiler",
+   "D": "More than one of the above"
+  },
+  "note": "Option D swallowed next passage; option E omitted"
+ },
+ "95": {
+  "question": "Consider the following program fragment that deals with a table T with 17 rows and 1024 columns, computing an average for each column and printing it to screen ( i is row index and j is column index):\nfor j= [ 0...1023] {\ntemp =0;\nfor i= [0...16]\ntemp = temp + T[i][j];\nprint (temp/17.0); }\nT [i] [i] and temp are 32 bit floating point values and memory is word addressable. The temporary variable temp is kept in a processor register so access to temp does not involve a memory reference. The main memory is page and holds 16 pages of size 1024 words, the page replacement policy is \"least recently used \". If T is stored in the virtual address space in row major format.\nWhat is the main memory hit ratio?",
+  "options": {
+   "A": "0",
+   "B": "1",
+   "C": "2",
+   "D": "3"
+  },
+  "note": "Passage context added; option D had next passage"
+ },
+ "100": {
+  "question": "IP datagram has arrived with following partial information in the header (in hexadecimal)\n45000054000300002006....\nWhat is the efficiency of this datagram?",
+  "options": {
+   "A": "76.19%",
+   "B": "80.50%",
+   "C": "82.24%",
+   "D": "85.45%"
+  },
+  "note": "Passage context added; option D had junk"
+ }
+}

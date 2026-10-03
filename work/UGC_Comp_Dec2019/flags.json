@@ -1,0 +1,379 @@
+{
+ "pdf": "/Users/harshwardhan/Documents/my_projects/UGC-NET-PREP/UGC_Comp_Dec2019.pdf",
+ "key_page": 15,
+ "flagged": {
+  "1": {
+   "page": 1,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "2": {
+   "page": 1,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "4": {
+   "page": 1,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "8": {
+   "page": 1,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "10": {
+   "page": 1,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "12": {
+   "page": 2,
+   "flags": [
+    "short_question"
+   ]
+  },
+  "13": {
+   "page": 2,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "14": {
+   "page": 2,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "17": {
+   "page": 2,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "19": {
+   "page": 2,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "21": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "27": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "28": {
+   "page": 3,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "35": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "36": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "37": {
+   "page": 4,
+   "flags": [
+    "dirty_option",
+    "long_option",
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "38": {
+   "page": 5,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "39": {
+   "page": 5,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "42": {
+   "page": 5,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "43": {
+   "page": 5,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "44": {
+   "page": 5,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "45": {
+   "page": 5,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "46": {
+   "page": 5,
+   "flags": [
+    "empty_option",
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "47": {
+   "page": 6,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "48": {
+   "page": 6,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "49": {
+   "page": 6,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "50": {
+   "page": 6,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "51": {
+   "page": 6,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "52": {
+   "page": 6,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "56": {
+   "page": 6,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "58": {
+   "page": 7,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "59": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "60": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "61": {
+   "page": 7,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "62": {
+   "page": 7,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "63": {
+   "page": 7,
+   "flags": [
+    "empty_option",
+    "dirty_option",
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "65": {
+   "page": 8,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "66": {
+   "page": 8,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "71": {
+   "page": 8,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "72": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "73": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "75": {
+   "page": 9,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "76": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "82": {
+   "page": 10,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "83": {
+   "page": 11,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "84": {
+   "page": 11,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "85": {
+   "page": 11,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "86": {
+   "page": 11,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "87": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "88": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "89": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "90": {
+   "page": 13,
+   "flags": [
+    "dirty_option",
+    "long_option"
+   ]
+  },
+  "95": {
+   "page": 13,
+   "flags": [
+    "long_option",
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "96": {
+   "page": 13,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "97": {
+   "page": 13,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "99": {
+   "page": 13,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "100": {
+   "page": 14,
+   "flags": [
+    "garbled_math"
+   ]
+  }
+ }
+}

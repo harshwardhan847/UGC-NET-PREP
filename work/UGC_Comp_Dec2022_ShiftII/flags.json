@@ -1,0 +1,208 @@
+{
+ "pdf": "/Users/harshwardhan/Documents/my_projects/UGC-NET-PREP/UGC_Comp_Dec2022_ShiftII.pdf",
+ "key_page": 14,
+ "flagged": {
+  "4": {
+   "page": 1,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "10": {
+   "page": 1,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "12": {
+   "page": 2,
+   "flags": [
+    "no_solution"
+   ]
+  },
+  "16": {
+   "page": 2,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "20": {
+   "page": 2,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "25": {
+   "page": 3,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "26": {
+   "page": 3,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "27": {
+   "page": 3,
+   "flags": [
+    "dirty_option"
+   ]
+  },
+  "29": {
+   "page": 3,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "31": {
+   "page": 3,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "32": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "33": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "35": {
+   "page": 4,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "36": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "43": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "50": {
+   "page": 5,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "55": {
+   "page": 6,
+   "flags": [
+    "junk_text"
+   ]
+  },
+  "57": {
+   "page": 6,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "58": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "60": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "62": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "68": {
+   "page": 8,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "70": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "72": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "73": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "74": {
+   "page": 10,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "80": {
+   "page": 10,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "86": {
+   "page": 11,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "89": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "90": {
+   "page": 12,
+   "flags": [
+    "long_option"
+   ]
+  },
+  "93": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "95": {
+   "page": 13,
+   "flags": [
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "100": {
+   "page": 13,
+   "flags": [
+    "garbled_math"
+   ]
+  }
+ }
+}

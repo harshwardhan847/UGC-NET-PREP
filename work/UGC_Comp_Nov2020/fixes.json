@@ -1,0 +1,552 @@
+{
+ "3": {
+  "question": "Which of the following pairs of propositions are not logically equivalent?",
+  "options": {
+   "A": "((p→r)∧(q→r)) and ((p∨q)→r)",
+   "B": "p↔q and (¬p↔¬q)",
+   "C": "((p∧q)∨(¬p∧¬q)) and p↔q",
+   "D": "((p∧q)→r) and ((p→r)∧(q→r))"
+  },
+  "note": "Options lost symbols, duplicated"
+ },
+ "5": {
+  "question": "Consider a machine with a byte addressable main memory of 2^16 bytes and block size of 8 bytes. Assume that a direct mapped cache consisting of 32 lines used with this machine. How many bits will be there in Tag, line and word field of format of main memory addresses?",
+  "options": {
+   "A": "8, 5, 3",
+   "B": "8, 6, 2",
+   "C": "7, 5, 4",
+   "D": "7, 6, 3"
+  },
+  "note": "Options empty; 2^16 missing"
+ },
+ "6": {
+  "question": "The following program is stored in memory unit of the basic computer. What is the content of the accumulator after the execution of program? (All location numbers listed below are in hexadecimal).\nLocation Instruction\n210 CLA\n211 ADD 217\n212 INC\n213 STA 217\n214 LDA 218\n215 CMA\n216 AND 217\n217 1234H\n218 9CE2H",
+  "options": {
+   "A": "1002H",
+   "B": "2011H",
+   "C": "2022H",
+   "D": "0215H"
+  },
+  "note": "Options empty"
+ },
+ "9": {
+  "question": "Consider the following pseudo-code fragment, where a and b are integer variables that have been initialized:\n/* Pre-conditions : (a>1 ∧ a<b) */\n/* Assume that overflow never occurs */\nint x=0; int p=1;\nwhile (p<b){\n  p=p*a;\n  x=x+1;\n}\nWhen the while loop terminates, what will be the value of x in terms of a and b ?",
+  "options": {
+   "A": "a^b",
+   "B": "b^a",
+   "C": "⌊log_a b⌋ /* ⌊ ⌋ means floor */",
+   "D": "⌈log_a b⌉ /* ⌈ ⌉ means ceil */"
+  },
+  "note": "Options missing/garbled; code symbols lost"
+ },
+ "12": {
+  "question": "Consider the following recursive Java function f that takes two long arguments and returns a float value:\n```\npublic static float f(long m, long n) {\n    float result = (float)m / (float)n;\n    if (m<0 || n<0) return 0.0f;\n    else result -= f(m*2, n*3);\n    return result;\n}\n```\nWhich of the following real values best approximates the value of f(1,3) ?",
+  "options": {
+   "A": "0.2",
+   "B": "0.4",
+   "C": "0.6",
+   "D": "0.8"
+  },
+  "note": "Code symbols lost"
+ },
+ "14": {
+  "question": "Consider a relational schema S=(U,V,W,X,Y,Z) on which the following functional dependencies hold:\n{U→V, VW→X, Y→W, X→U}\nWhich are the candidate keys among following options?",
+  "options": {
+   "A": "UY, VY",
+   "B": "UY, VY, XY",
+   "C": "UYZ, VYZ, VWZ",
+   "D": "UYZ, VYZ, XYZ"
+  },
+  "note": "Schema and FDs lost in extraction"
+ },
+ "15": {
+  "question": "Consider a hypothetical machine with 3 pages of physical memory, 5 pages of virtual memory, and ⟨A,B,C,D,A,B,E,A,B,C,D,E,B,A,B⟩ as the stream of page references by an application. If P and Q are the number of page faults that the application would incur with FIFO and LRU page replacement algorithms respectively, then (P,Q) = _____. (Assuming enough space for storing 3 page frames)",
+  "options": {
+   "A": "(11,10)",
+   "B": "(12,11)",
+   "C": "(10,11)",
+   "D": "(11,12)"
+  },
+  "note": "Options empty"
+ },
+ "17": {
+  "question": "Suppose you have a Linux file system where the block size is 2K bytes, a disk address is 32 bits, and an i-node contains the disk addresses of the first 12 direct blocks of file, a single indirect block, and a double indirect block. Approximately, what is the largest file that can be represented by an i-node?",
+  "options": {
+   "A": "513 Kbytes",
+   "B": "513 MBytes",
+   "C": "537 Mbytes",
+   "D": "537 KBytes"
+  },
+  "note": "2K lost; page header junk"
+ },
+ "24": {
+  "question": "In a binary max heap containing n numbers, the smallest element can be found in ____ time.",
+  "options": {
+   "A": "O(n)",
+   "B": "O(log2 n)",
+   "C": "O(1)",
+   "D": "O(log2 log2 n)"
+  },
+  "note": "Options empty"
+ },
+ "25": {
+  "question": "If algorithm A and another algorithm B take log2(n) and √n microseconds, respectively, to solve a problem, then the largest size n of a problem these algorithms can solve, respectively, in one second are ___ and _____",
+  "options": {
+   "A": "2^(10^6) and 10^6",
+   "B": "2^(10^6) and 10^12",
+   "C": "2^(10^6) and 6.10^6",
+   "D": "2^(10^6) and 6.10^12"
+  },
+  "note": "Options lost exponents, duplicated"
+ },
+ "26": {
+  "question": "Let G be a directed graph whose vertex set is the set of numbers from 1 to 100. There is an edge from a vertex i to a vertex j if and only if either j=i+1 or j=3i. The minimum number of edges in a path in G from vertex 1 to vertex 100 is ____",
+  "options": {
+   "A": "23",
+   "B": "99",
+   "C": "4",
+   "D": "7"
+  },
+  "note": "Question text lost symbols, option markers"
+ },
+ "27": {
+  "question": "Consider L = L1 ∩ L2\nWhere\nL1 = {0^m 1^m 2 0^n 1^n | m,n ≥ 0}\nL2 = {0^m 1^n 2^k | m,n,k ≥ 0}\nThen, the language L is",
+  "options": {
+   "A": "Recursively enumerable but not context free",
+   "B": "Regular",
+   "C": "Context free but not regular",
+   "D": "Not recursive"
+  },
+  "note": "Language definitions lost"
+ },
+ "28": {
+  "question": "Let L1 and L2 be languages over Σ={a,b} represented by the regular expressions (a*+b)* and (a+b)* respectively. Which of the following is true with respect to the two languages?",
+  "options": {
+   "A": "L1 ⊂ L2",
+   "B": "L2 ⊂ L1",
+   "C": "L1 = L2",
+   "D": "L1 ∩ L2 = ϕ"
+  },
+  "note": "Options empty; symbols lost"
+ },
+ "34": {
+  "question": "The period of a signal is 100 ms. Then the frequency of this signal in kilohertz is ______",
+  "options": {
+   "A": "10",
+   "B": "10⁻¹",
+   "C": "10⁻²",
+   "D": "10⁻³"
+  },
+  "note": "Options B-D empty"
+ },
+ "37": {
+  "question": "If f(x)=x is my friend, and p(x)=x is perfect, then the correct logical translation of the statement \"some of my friends are not perfect\" is:",
+  "options": {
+   "A": "∀x (f(x) ∧ ¬p(x))",
+   "B": "∃x (f(x) ∧ ¬p(x))",
+   "C": "¬(f(x) ∧ ¬p(x))",
+   "D": "∃x (¬f(x) ∧ ¬p(x))"
+  },
+  "note": "Options empty"
+ },
+ "39": {
+  "question": "Consider the following properties:\nA. Reflexive\nB. Antisymmetric\nC. Symmetric\nLet A={a,b,c,d,e,f,g} and R={(a,a),(b,b),(c,d),(c,g),(d,g),(e,e),(f,f),(g,g)} be a relation on (A). Which of the following property (properties) is (are) satisfied by the relation (R) ?",
+  "options": {
+   "A": "Only A",
+   "B": "Only C",
+   "C": "Both A and B",
+   "D": "B and not A"
+  },
+  "note": "Set and relation lost in extraction"
+ },
+ "40": {
+  "question": "Consider the following argument with premise ∀x(P(x)∨Q(x)) and conclusion: (∀xP(x))∧(∀xQ(x))\n(A) ∀x(P(x)∨Q(x)) | Premise\n(B) P(c)∨Q(c) | Universal instantiation from (A)\n(C) P(c) | Simplification from (B)\n(D) ∀xP(x) | Universal generalization of (C)\n(E) Q(c) | Simplification from (B)\n(F) ∀xQ(x) | Universal generalization of (E)\n(G) (∀xP(x))∧(∀xQ(x)) | Conjunction of (D) and (F)",
+  "options": {
+   "A": "This is a valid argument.",
+   "B": "Steps (C) and (E) are not correct inferences",
+   "C": "Steps (D) and (F) are not correct inferences",
+   "D": "Step (G) is not a correct inference"
+  },
+  "note": "Option markers mixed into question"
+ },
+ "41": {
+  "question": "Which of the following are applications of symbol table?\n(A) Storage allocation\n(B) Checking type compatability\n(C) Suppressing duplicate error messages\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A) and (C) only",
+   "C": "(B) and (C) only",
+   "D": "(A), (B) and (C)"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "42": {
+  "question": "Simplified expression/s for following Boolean function F(A,B,C,D)=∑(0,1,2,3,6,12,13,14,15) is/are\n(A) A'B' + AB + A'C'D'\n(B) A'B' + AB + A'CD'\n(C) A'B' + AB + BC'D'\n(D) A'B' + AB + BCD'\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) only",
+   "B": "(B) only",
+   "C": "(A) and (B) only",
+   "D": "(B) and (D) only"
+  },
+  "note": "Expressions lost; options merged"
+ },
+ "43": {
+  "question": "Which of the following statements with respect to K-segment pipelining are true?\n(A) Maximum speedup that a pipeline can provide is k theoretically.\n(B) It is impossible to achieve maximum speedup k in k-segment pipeline.\n(C) All segments in pipeline take same time in computation.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(B) and (C) only",
+   "C": "(A) and (C) only",
+   "D": "(A), (B) and (C)"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "44": {
+  "question": "Which of the following statements with respect to multiprocessor system are true?\n(A) Multiprocessor system is controlled by one operating system.\n(B) In Multiprocessor system, multiple computers are connected by the means of communication lines.\n(C) Multiprocessor system is classified as multiple instruction stream and multiple data stream system.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) only",
+   "B": "(A) and (B) only",
+   "C": "(A) and (C) only",
+   "D": "(B) and (C) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "45": {
+  "question": "Which of the following statements regarding XML is/are True?\n(A) XML is a set of tags designed to tell browsers how to display text and images in a web page.\n(B) XML defines a syntax for representing data, but the meaning of data varies from application to application.\n(C) <Letter>, <LETTER>, and <letter> are three different tags in XML.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A) and (C) only",
+   "C": "(B) and (C) only",
+   "D": "(A), (B) and (C)"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "46": {
+  "question": "In the context of 3D Computer graphics, which of the following statements is/are correct?\n(A) Under perspective projection, each set of parallel lines in the object do not stay parallel in the image (except those that are parallel to the viewplane to start with).\n(B) Applying a perspective transformation in the graphics pipeline to a vertex involves dividing by its ' (z) ' coordinate.\n(C) Perspective transformation is a linear transformation.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A) and (C) only",
+   "C": "(B) and (C) only",
+   "D": "(A), (B) and (C)"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "47": {
+  "question": "Concerning phong shading and Gouraud shading in a 3D scene, which of the following statements are true?\n(A) Gouraud shading requires more computation than phong shading.\n(B) Gouraud shading linearly interpolates the color of an interior pixel from the color at the vertices.\n(C) Phong shading interpolates over the normal vectors specified at the vertices.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A) and (C) only",
+   "C": "(B) and (C) only",
+   "D": "(A), (B) and (C)"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "48": {
+  "question": "In the context of concurrency control, a given pair of operations in a schedule is called conflict schedule if\n(A) At least one of the operations is write operation.\n(B) Both the operations are performed on the same data item.\n(C) Both the operations are performed by different transactions.\n(D) Both the operations are performed on different data items.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A), (B) and (C) only",
+   "C": "(A), (C) and (D) only",
+   "D": "(C) and (D) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "49": {
+  "question": "Software reliability is described with respect to\n(A) Execution Time\n(B) Calendar Time\n(C) Clock Time\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(B) and (C) only",
+   "C": "(A), (B) and (C)",
+   "D": "(A) and (C) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "50": {
+  "question": "To create an object-behavioral model, the analyst performs the following steps:\n(A) Evaluates all use-cases\n(B) Builds state transition diagram for the system.\n(C) Reviews the object behaviour model to verify accuracy and consistency\n(D) Identifies events that do not derive the interaction sequence.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A), (B) and (C) only",
+   "B": "(A), (B) and (D) only",
+   "C": "(B), (C) and (D) only",
+   "D": "(A), (C) and (D) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "51": {
+  "question": "Which of the following is/are behavioral testing technique(s)?\n(A) Equivalence Partitioning\n(B) Graph-Based Teating Method\n(C) Boundery Value Analysis\n(D) Data flow Testing\n(E) Loop Testing\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(B) and (D) only",
+   "B": "(A), (B) and (C) only",
+   "C": "(D) and (E) only",
+   "D": "(A), (C) and (E) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "52": {
+  "question": "The running time of an algorithm is O(g(n)) if and only if:\n(A) its worst-case running time is O(g(n)) and its best-case running time is Ω(g(n)).\n(B) its worst-case running time is Ω(g(n)) and its best-case running time is O(g(n)).\n(C) O(g(n))=Ω(g(n)) (O= big O).\n(D) o(g(n))∩ω(g(n)) is non-empty. (o= small o)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) only",
+   "B": "(B) only",
+   "C": "(C) only",
+   "D": "(D) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "53": {
+  "question": "Consider the following statements:\n(A) Any tree is 2-colorable\n(B) A graph G has no cycles of even length if it is bipartite.\n(C) A graph G is 2-colorable if it is bipartite.\n(D) A graph G can be colored with d+1 colors if d is the maximum degree of any vertex in the graph G.\n(E) A graph G can be colored with O(log|v|) colors if it has O(|v|) edges.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(C) and (E) are incorrect",
+   "B": "(B) and (C) are incorrect",
+   "C": "(B) and (E) are incorrect",
+   "D": "(A) and (D) are incorrect"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "54": {
+  "question": "Which among the following statement(s) is (are) true?\n(A) A hash function takes a message of arbitrary length and generates a fixed length code.\n(B) A hash function takes a message of fixed length and generates a code of variable length.\n(C) A hash function may give same hash value for distinct messages.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) only",
+   "B": "(B) and (C) only",
+   "C": "(A) and (C) only",
+   "D": "(B) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "55": {
+  "question": "Let G1 and G2 be arbitrary context free languages and R an arbitrary regular language. Consider the following problems:\n(A) Is L(G1) = L(G2) ?\n(B) Is L(G2) ≤ L(G1) ?\n(C) Is L(G1) = R ?\nWhich of the problems are undecidable?\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) only",
+   "B": "(B) only",
+   "C": "(A) and (B) only",
+   "D": "(A), (B) and (C)"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "56": {
+  "question": "Consider the following languages:\nL1 = {a^(ż^z) | ż is an integer}\nL2 = {a^(zż) | Ż ≥ 0}\nL3 = {ωω | ω ∈ {a,b}*}\nWhich of the languages is (are) regular?\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "L1 and L2 only",
+   "B": "L1 and L3 only",
+   "C": "L1 only",
+   "D": "L2 only"
+  },
+  "note": "Languages and options lost symbols"
+ },
+ "57": {
+  "question": "Which of the following grammars is (are) ambiguous?\n(A) s → ss|asb|bsa|λ\n(B) s → asbs | bsas | λ\n(C) s → aAB\nA → bBb\nB → A | λ  where λ denotes empty string\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (C) only",
+   "B": "(B) only",
+   "C": "(B) and (C) only",
+   "D": "(A) and (B) only"
+  },
+  "note": "Grammars and options garbled"
+ },
+ "58": {
+  "question": "Which of the following cloud concept/s is/are related to pooling and sharing of resources?\n(A) Virtual Memory\n(B) Service\n(C) Virtualization\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(C) only",
+   "B": "(A) and (B) only",
+   "C": "(A) only",
+   "D": "(B) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "59": {
+  "question": "Post office protocol (POP) is a message access protocol which is used to extract message for client. In this regard, which of the following are true?\n(A) POP has two modes, Delete mode and keep\n(B) In Delete mode, mail is deleted from mail box after each retrival\n(C) In Delete mode, mail is deleted from mail box before each retrieval\n(D) In keep mode, mail is deleted before retrival\n(E) In keep mode, mail remains in mail box after retrival\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A), (D) and (E) only",
+   "C": "(A), (B), (C) and",
+   "D": "(A), (B) and (E) only"
+  },
+  "note": "Options garbled; (C) truncated in PDF"
+ },
+ "60": {
+  "question": "Firewall is a device that filters access to the protected network from the outside network. Firewalls can filter the packets on the basis of\n(A) Source IP Address\n(B) Destination IP Address\n(C) TCP Source Port\n(D) UDP Source Port\n(E) TCP Destination Port\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A), (B) and (C) only",
+   "B": "(B) and (E) only",
+   "C": "(C) and (D) only",
+   "D": "(A), (B), (C), (D) and (E) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "61": {
+  "question": "Consider the statement below.\nA person who is radical (R) is electable (E) if he/she is conservative (C), but otherwise is not electable.\nFew probable logical assertions of the above sentence are given below.\n(A) (R∧E) ⇔ C\n(B) R ⇒ (E ⇔ C)\n(C) R ⇒ ((C ⇒ E) ∨ ¬E)\n(D) (¬R ∨ ¬E ∨ C) ∧ (¬R ∨ ¬C ∨ E)\nWhich of the above logical assertions are true?\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(B) only",
+   "B": "(C) only",
+   "C": "(A) and (C) only",
+   "D": "(B) and (D) only"
+  },
+  "note": "Assertions lost symbols; options garbled"
+ },
+ "62": {
+  "question": "Which of the following statements are true?\n(A) A sentence α entails another sentence β if β is true in few worlds where α is true.\n(B) Forward chaining and backward chaining are very natural reasoning algorithms for knowledge bases in Horn form.\n(C) Sound inference algorithms derive all sentences that are entailed.\n(D) Propositional logic does not scale to environments of unbounded size.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(B) and (C) only",
+   "C": "(C) and (D) only",
+   "D": "(B) and (D) only"
+  },
+  "note": "Greek letters lost; options garbled"
+ },
+ "63": {
+  "question": "Which of the following statements are true?\n(A) Minimax search is breadth-first; it processes all the nodes at a level before moving to a node in next level.\n(B) The effectiveness of the alpha-beta pruning is highly dependent on the order in which the states are examined.\n(C) The alpha-beta search algorithm computes the same optimal moves as minimax algorithm.\n(D) Optimal play in games of imperfact information does not require reasoning about the current and future belief states of each player.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (C) only",
+   "B": "(A) and (D) only",
+   "C": "(B) and (C) only",
+   "D": "(C) and (D) only"
+  },
+  "note": "Options garbled/merged in extraction"
+ },
+ "64": {
+  "question": "Match List I with List II\nLet R1 = {(1,1),(2,2),(3,3)} and R2 = {(1,1),(1,2),(1,3),(1,4)}\nList I | List II\n(A) R1 ∪ R2 | (I) {(1,1),(1,2),(1,3),(1,4),(2,2),(3,3)}\n(B) R1 − R2 | (II) {(1,1)}\n(C) R1 ∩ R2 | (III) {(1,2),(1,3),(1,4)}\n(D) R2 − R1 | (IV) {(2,2),(3,3)}\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-I, B-II, C-IV, D-III",
+   "B": "A-I, B-IV, C-III, D-II",
+   "C": "A-I, B-III, C-II, D-IV",
+   "D": "A-I, B-IV, C-II, D-III"
+  },
+  "note": "Relations and List I/II lost in extraction"
+ },
+ "67": {
+  "question": "Match List I with List II.\nList I (E-R symbols) | List II (Description)\n[Figure: (A) double-lined rectangle; (B) single line attached to a plain ellipse; (C) single line attached to a double-lined ellipse; (D) rectangles E1 and E2 joined through a diamond R, with a double line between R and E2]\n(I) Key Attribute Type\n(II) Weak Entity Type\n(III) Total Participation of Entity in a relation\n(IV) Multivalue Attribute type\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-II, B-IV, C-III, D-I",
+   "B": "A-IV, B-I, C-II, D-III",
+   "C": "A-II, B-I, C-IV, D-III",
+   "D": "A-III, B-IV, C-I, D-II"
+  },
+  "note": "Figure dropped from question"
+ },
+ "70": {
+  "question": "Match List I with List II\nList I | List II\n(A) Topological sort of DAG | (I) O(V+E)\n(B) Kruskal's MST algorithm | (II) O(VE)\n(C) Bellman-Ford's single-source shortest path algorithm | (III) θ(V+E)\n(D) Floyd-Warshall's all pair shortest path algorithm | (IV) θ(V^3)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-I, B-III, C-IV, D-II",
+   "B": "A-III, B-I, C-IV, D-II",
+   "C": "A-III, B-I, C-II, D-IV",
+   "D": "A-I, B-III, C-II, D-IV"
+  },
+  "note": "List II items III, IV misplaced/lost"
+ },
+ "71": {
+  "question": "Match List I with List II:\nL_R : Regular language, L_CF : Context free language\nL_REC : Recursive language, L_RE : Recursively enumerable language.\nList I | List II\n(A) Recursively Enumerable language | (I) (L_REC)' ∪ L_RE\n(B) Recursive language | (II) (L_CF)' ∪ L_REC\n(C) Context Free language | (III) L_R* ∩ L_CF\n(X' denotes complement of X)\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-II, B-III, C-I",
+   "B": "A-III, B-I, C-II",
+   "C": "A-I, B-II, C-III",
+   "D": "A-II, B-I, C-III"
+  },
+  "note": "Option B contaminated with List II formulas"
+ },
+ "74": {
+  "question": "Find the lexicographic ordering of the bit strings given below based on the ordering 0 < 1.\n(A) 001\n(B) 010\n(C) 011\n(D) 0001\n(E) 0101\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "001 < 010 < 011 < 0001 < 0101",
+   "B": "0001 < 001 < 010 < 0101 < 011",
+   "C": "0001 < 0101 < 001 < 010 < 011",
+   "D": "001 < 010 < 0001 < 0101 < 011"
+  },
+  "note": "Options empty"
+ },
+ "77": {
+  "question": "Arrange the following types of Cohesion from best to worst type.\n(A) Logical Cohesion\n(B) Sequential Cohesion\n(C) Communication Cohesion\n(D) Temporal Cohesion\n(E) Procedural Cohesion\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A→D→E→C→B",
+   "B": "A→E→D→C→B",
+   "C": "B→E→C→D→A",
+   "D": "B→C→E→D→A"
+  },
+  "note": "Options empty"
+ },
+ "79": {
+  "question": "Consider the following regular expressions:\n(a) r = a(b+a)*\n(b) s = a(a+b)+\n(c) t = aa*b\nChoose the correct answer from the options given below based on the relation between the languages generated by the regular expressions above:",
+  "options": {
+   "A": "L(r) ⊆ L(s) ⊆ L(t)",
+   "B": "L(r) ⊇ L(s) ⊇ L(t)",
+   "C": "L(r) ⊇ L(t) ⊇ L(s)",
+   "D": "L(s) ⊇ L(t) ⊇ L(r)"
+  },
+  "note": "Expressions and options lost"
+ },
+ "83": {
+  "question": "Given below are two statements:\nIf two variables V1 and V2 are used for clustering, then consider the following statements for k means clustering with k=3\nStatement I : If V1 and V2 have correlation of 1 the cluster centroid will be in straight line.\nStatement II : If V1 and V2 have correlation of 0 the cluster centroid will be in straight line.\nIn the light of the above statements, choose the correct answer from the options given below",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is correct but Statement II is false",
+   "D": "Statement I is incorrect but Statement II is true"
+  },
+  "note": "Variables and k=3 lost in extraction"
+ },
+ "88": {
+  "question": "Given below are two statements:\nStatement I: The laws of nature put two fundamental limits on the data rate of a channel. The H.Nyquist limit restricts the number of independent samples per second to twice the bandwidth in a Noiseless channel.\nStatement II: Shannon's major result about noised channel is that the maximum data rate of a channel whose bandwidth is HHz, and whose signal-to-noise ratio is S/N is given by:\nMaximum number of bits/sec= Hlog2( 1+ S/N )\nIn the light of the above statements, choose the correct answer from the options given below",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is correct but Statement II is false",
+   "D": "Statement I is incorrect but Statement II is true"
+  },
+  "note": "Option A contaminated; S/N and log2 lost"
+ },
+ "90": {
+  "question": "Given below are two statements:\nStatement I: A genetic algorithm is a stochastic hill-climbing search in which a large population of states is maintained.\nStatement II: In nondeterministic environments, agents can apply AND-OR search to generate contingent plans that reach the goal regardless of which outcomes occur during execution.\nIn the light of the above statements, choose the correct answer from the options given below",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is correct but Statement II is false",
+   "D": "Statement I is incorrect but Statement II is true"
+  },
+  "note": "Option D contaminated with next passage"
+ },
+ "93": {
+  "question": "Disk: sector size 512 bytes, 2000 tracks per surface, 50 sectors per track, five double-sided platters, average seek time 10 milliseconds.\nGiven below are two statements:\nStatement I: The disk has a total number of 2000 cylinders.\nStatement II: 51200 bytes is not a valid block size for the disk.\nIn the light of the above statements, choose the correct answer from the options given below:",
+  "options": {
+   "A": "Both Statement I and Statement II are true",
+   "B": "Both Statement I and Statement II are false",
+   "C": "Statement I is correct but Statement II is false",
+   "D": "Statement I is incorrect but Statement II is true"
+  },
+  "note": "Options had line breaks; passage context added"
+ },
+ "95": {
+  "question": "Disk: sector size 512 bytes, 2000 tracks per surface, 50 sectors per track, five double-sided platters, average seek time 10 milliseconds.\nIf one track of data can be transferred per revolution, then what is the data transfer rate?",
+  "options": {
+   "A": "2,850 KBytes/second",
+   "B": "4,500 KBytes/second",
+   "C": "5,700 KBytes/second",
+   "D": "2,250 KBytes/second"
+  },
+  "note": "Option D contaminated with next passage"
+ },
+ "98": {
+  "question": "Table structures (university):\nEMPLOYEE(NAME VARCHAR(30) NOT NULL, EID VARCHAR(10) NOT NULL, DEPTNO INT(5) NOT NULL, HODEID VARCHAR(10), SALARY INT(10), PRIMARY KEY (EID), FOREIGN KEY (HODEID) REFRENCES EMPLOYEE(EID), FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT(DID))\nDEPARTMENT(DID INT(5) NOT NULL, DNAME VARCHAR(30) NOT NULL, HODID VARCHAR(10) NOT NULL, HODNAME VARCHAR(30), PRIMARY KEY (DID), UNIQUE (DNAME), FOREIGN KEY (HODID) REFERENCES EMPLOYEE(EID))\nPROJECT WORK(EMPID VARCHAR(10) NOT NULL, PROJNO INT(5) NOT NULL, PROJECTLOC VARCHAR(30) NOT NULL, PRIMARY KEY (EMPID, PROJNO), FOREIGN KEY (EMPID) REFERENCES EMPLOYEE(EID))\nWhich of the following query/queries return the employee ID and name of employees whose salary is greater than the salary of all employees in department number 20 of university? Order results by employee ID (refer to table structures given above).\n(A) SELECT EID, NAME\nFROM EMPLOYEE\nWHERE SALARY>(SELECT SALARY FROM EMPLOYEE WHERE DEPTNO=20)\nORDER BY EID;\n(B) SELECT EID, NAME\nFROM EMPLOYEE WHERE SALARY>(SELECT SALARY FROM EMPLOYEE WHERE DEPTNO =20 );\n(C) SELECT EID, NAME\nFROM EMPLOYEE\nWHERE SALARY>ALL(SELECT SALARY FROM EMPLOYEE WHERE DEPTNO =20)\nORDER BY EID\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A) and (C) only",
+   "C": "(B) only",
+   "D": "(C) only"
+  },
+  "note": "Option markers in question; options garbled"
+ },
+ "99": {
+  "question": "Table structures (university):\nEMPLOYEE(NAME VARCHAR(30) NOT NULL, EID VARCHAR(10) NOT NULL, DEPTNO INT(5) NOT NULL, HODEID VARCHAR(10), SALARY INT(10), PRIMARY KEY (EID), FOREIGN KEY (HODEID) REFRENCES EMPLOYEE(EID), FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT(DID))\nDEPARTMENT(DID INT(5) NOT NULL, DNAME VARCHAR(30) NOT NULL, HODID VARCHAR(10) NOT NULL, HODNAME VARCHAR(30), PRIMARY KEY (DID), UNIQUE (DNAME), FOREIGN KEY (HODID) REFERENCES EMPLOYEE(EID))\nPROJECT WORK(EMPID VARCHAR(10) NOT NULL, PROJNO INT(5) NOT NULL, PROJECTLOC VARCHAR(30) NOT NULL, PRIMARY KEY (EMPID, PROJNO), FOREIGN KEY (EMPID) REFERENCES EMPLOYEE(EID))\nIn reference to the above given table structures, which of the following query/queries will drop the 'SALARY' column from 'EMPLOYEE' table?\n(A) ALTER TABLE EMPLOYEE DROP SALARY CASCADE;\n(B) ALTER TABLE EMPLOYEE DROP SALARY RESTRICT;\n(C) ALTER EMPLOYEE DROP SALARY;\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A) and (C) only",
+   "C": "(B) and (C) only",
+   "D": "(A) only"
+  },
+  "note": "Option markers in question; options garbled"
+ },
+ "100": {
+  "question": "Table structures (university):\nEMPLOYEE(NAME VARCHAR(30) NOT NULL, EID VARCHAR(10) NOT NULL, DEPTNO INT(5) NOT NULL, HODEID VARCHAR(10), SALARY INT(10), PRIMARY KEY (EID), FOREIGN KEY (HODEID) REFRENCES EMPLOYEE(EID), FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT(DID))\nDEPARTMENT(DID INT(5) NOT NULL, DNAME VARCHAR(30) NOT NULL, HODID VARCHAR(10) NOT NULL, HODNAME VARCHAR(30), PRIMARY KEY (DID), UNIQUE (DNAME), FOREIGN KEY (HODID) REFERENCES EMPLOYEE(EID))\nPROJECT WORK(EMPID VARCHAR(10) NOT NULL, PROJNO INT(5) NOT NULL, PROJECTLOC VARCHAR(30) NOT NULL, PRIMARY KEY (EMPID, PROJNO), FOREIGN KEY (EMPID) REFERENCES EMPLOYEE(EID))\nRefer table, structures given above. The university decided to give all employees in the 'SCIENCE' department a 20% rise in salary. Which of the following query/queries will compute the above results?\n(A) UPDATE EMPLOYEE\nSET SALARY = SALARY * 1.20\nWHERE DEPT NO. IN (SELECT DID FROM DEPARTMENT WHERE DNAME='SCIENCE');\n(B) UPDATE TABLE EMPLOYEE\nSET SALARY = SALARY * 1.20\nWHERE DNAME='SCIENCE';\n(C) ALTER TABLE EMPLOYEE\nSET SALARY=SALARY * 1.20\nWHERE DEPTNO. IN (SELECT DNAME FROM DEPARTMENT WHERE DNAME = 'SCIENCE')\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "(A) and (B) only",
+   "B": "(A) only",
+   "C": "(B) and (C) only",
+   "D": "(C) only"
+  },
+  "note": "Option markers in question; options garbled"
+ }
+}

@@ -1,0 +1,412 @@
+{
+ "7": {
+  "question": "Consider the following steps used by a knowledge base designer to represent a world\nA. Selects atoms to represent propositions\nB. Ask questions about intended interpretation\nC. Choose a task domain\nD. Axiomatizing the domain\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "C→A→D→B",
+   "B": "C→A→B→D",
+   "C": "B→C→A→D",
+   "D": "A→C→B→D"
+  },
+  "note": "Options were empty"
+ },
+ "8": {
+  "question": "What will be the output of the following C\nprogramming code:\nint i, j;\nfor(i=1; i<5; i+=2)\nfor(j=1; j<i; j+=2)\n    printf(\"%d\", j);",
+  "options": {
+   "A": "1",
+   "B": "1 2",
+   "C": "1 3",
+   "D": "1 1 3"
+  },
+  "note": "Option C polluted with junk text"
+ },
+ "9": {
+  "question": "Consider the Boolean expression A(x,y,z) = x(y'z)'. Which of the following is complete sum-of-products form of the given Boolean expression.",
+  "options": {
+   "A": "xyz + x'yz' + x'y'z'",
+   "B": "xyz' + x'yz' + x'y'z'",
+   "C": "xyz' + xy'z + x'y'z'",
+   "D": "xyz + xyz' + xy'z'"
+  },
+  "note": "Expression and options were empty"
+ },
+ "14": {
+  "question": "Which of the following Grammars is/are only Context Free?\n[Figure: five grammars]\nA: S → Ab; aS → aA; A → a\nB: S → Ab; A → Sa; A → a\nC: S → AS; S → aA; A → a\nD: S → Ab; S → aA; A → a\nE: S → Sb; A → Aa; A → ε\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A, B Only",
+   "B": "C, D Only",
+   "C": "C, E Only",
+   "D": "A, B, D, E Only"
+  },
+  "note": "Grammar figure missing; option D polluted"
+ },
+ "16": {
+  "question": "Match List I with List II\nList I (GA termination criteria) | List II (description)\nA. Worst Individual | I. At least half of the individual will be better than or equal to convergence value\nB. Best Individual | II. Guarantees that virtually all individuals in the population will be within a particular fitness range\nC. Sum of Fitness | III. Guarantees that the entire population to be of a minimum standard\nD. Median Fitness | IV. Faster search Convergence, guaranteeing at least one best solution\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A→III, B→IV, C→II, D→I",
+   "B": "A→IV, B→III, C→I, D→II",
+   "C": "A→II, B→I, C→III, D→IV",
+   "D": "A→II, B→III, C→IV, D→I"
+  },
+  "note": "Options were empty"
+ },
+ "17": {
+  "question": "Consider the following three relations\nEmployee (eid, eName), Comp(cid, cName),\nOwn(eid, cid). Which of the following relational\nalgebra expression return the set of eids who\nown all brands:",
+  "options": {
+   "A": "π_eid(π_eid,cid(Own) / π_cid(Comp))",
+   "B": "π_eid(π_eid(Own) × π_cid(Comp))",
+   "C": "π_eid(π_eid,cid(Own) × π_cid(Comp))",
+   "D": "π_eid(π_eid(Own) × (π_cid,Name(Own) / π_cid(Comp)))"
+  },
+  "note": "Options empty/garbled"
+ },
+ "19": {
+  "question": "Which of the followings shows the correct\nhierarchy of a layered file system in an operating\nsystem\nA. Logical File System\nB. File Organization Module\nC. Basic File System\nD. I/O Control\nE. Application Programs\nChoose the correct answer from the options\ngiven below:",
+  "options": {
+   "A": "A→B→D→C→E",
+   "B": "D→E→C→A→B",
+   "C": "E→A→B→C→D",
+   "D": "E→C→B→A→D"
+  },
+  "note": "Options were empty"
+ },
+ "22": {
+  "question": "Consider the following infix expression Q: ((A+B)*D)↑(E−F). The equivalent postfix expression of Q is",
+  "options": {
+   "A": "AB+D*EF↑-",
+   "B": "AB+D*−↑EF",
+   "C": "AB+DE*F−↑",
+   "D": "AB+D*EF−↑"
+  },
+  "note": "Expression and options garbled"
+ },
+ "23": {
+  "question": "Which of the following trees are height balanced?\nA. Binary Search Tree\nB. AVL Tree\nC. Red-Black Tree\nD. B Tree\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A and D Only",
+   "B": "A, B and D Only",
+   "C": "C and D Only",
+   "D": "B, C and D Only"
+  },
+  "note": "Question contained junk text"
+ },
+ "29": {
+  "question": "Binary equivalent to (A0F)₁₆ is :",
+  "options": {
+   "A": "111000111",
+   "B": "101001111",
+   "C": "101000001111",
+   "D": "111100001010"
+  },
+  "note": "Hex number missing"
+ },
+ "30": {
+  "question": "Consider the following interrupt protection levels\nin Linux, and arrange them in the increasing\norder of their priorities.\nA. User-Mode Programs (Preemptible)\nB. Bottom Half Interrupt Handlers\nC. Top Half Interrupt Handlers\nD. Kernel System Service Routines (Preemptible)\nChoose the correct answer from the options\ngiven below:",
+  "options": {
+   "A": "B→A→C→D",
+   "B": "C→B→A→D",
+   "C": "C→A→B→D",
+   "D": "A→D→B→C"
+  },
+  "note": "Options were empty"
+ },
+ "32": {
+  "question": "Estimation of software development effort for\norganic software in basic COCOMO is",
+  "options": {
+   "A": "E=2.4(KLOC)^1.05 PM",
+   "B": "E=3.4(KLOC)^1.06 PM",
+   "C": "E=2.0(KLOC)^1.05 PM",
+   "D": "E=2.4(KLOC)^1.07 PM"
+  },
+  "note": "Options empty/merged"
+ },
+ "34": {
+  "question": "Let P denote \"She is intelligent\" and let Q denote\n\"She is happy.\"\nGiven below are the statements:\n(a) If She is intelligent, then She is unhappy.\n(b) She is neither intelligent nor happy.\n(c) It is necessary to be not intelligent in order to\nbe happy.\n(d) To be not intelligent is to be unhappy.\nWhich of the following is correct Propositional\nexpression for the above statements:",
+  "options": {
+   "A": "(a) P→¬Q; (b) P∧¬Q; (c) Q→¬P; (d) P→¬Q",
+   "B": "(a) P→Q; (b) ¬P∧¬Q; (c) ¬Q→P; (d) ¬P→¬Q",
+   "C": "(a) P→¬Q; (b) ¬P∧¬Q; (c) Q→¬P; (d) ¬P→¬Q",
+   "D": "(a) P→¬Q; (b) P∧¬Q; (c) Q→P; (d) ¬P→¬Q"
+  },
+  "note": "Option symbols missing"
+ },
+ "36": {
+  "question": "Consider the following table defining the sample inputs and corresponding target values for a perceptron model.\nSample No | x1 | x2 | target | w1 | w2\nS1 | 0 | 0 | 0 | 0 | 0\nS2 | 0 | 1 | 1 | |\nS3 | 1 | 0 | 1 | |\nS4 | 1 | 1 | 1 | |\nWhat shall be the value of updated weights after applying all the samples S1 to S4 (in the order S1, S2, S3, S4) to this model. Given that the initial weights w1=0, w2=0, learning rate =0.1 and no bias is involved in the perceptron. The activation function for this perceptron is given below\ny_observed = 1 if y_in > 0; 0 if y_in < 0",
+  "options": {
+   "A": "w1=0.1, w2=0.1",
+   "B": "w1=0.0, w2=0.2",
+   "C": "w1=0.0, w2=0.1",
+   "D": "w1=0.2, w2=0.2"
+  },
+  "note": "Table target values and activation function lost"
+ },
+ "40": {
+  "question": "Consider the following steps involved in the application of Genetic algorithm for a problem\nA. Select a pair of parents from the population\nB. Apply mutation at each locus with probability p_m\nC. Calculate fitness of each member of the population\nD. Apply crossover with probability p_c to form offsprings\nChoose the correct answer from the options given below describing the correct order of the above steps:",
+  "options": {
+   "A": "A→C→B→D",
+   "B": "C→A→D→B",
+   "C": "C→A→B→D",
+   "D": "A→D→B→C"
+  },
+  "note": "Options empty; probabilities missing"
+ },
+ "49": {
+  "question": "Match List I with List II\nList I | List II\nA. Circular Queue | I. Print Queue\nB. Priority Queue | II. CPU Scheduling\nC. Double Ended Queue | III. Dijkstra algorithm\nD. Simple Queue | IV. Palindrome checking\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A-II, B-III, C-I, D-IV",
+   "B": "A-II, B-III, C-IV, D-I",
+   "C": "A-III, B-II, C-I, D-IV",
+   "D": "A-IV, B-II, C-I, D-III"
+  },
+  "note": "Question contained junk option text"
+ },
+ "50": {
+  "question": "Consider the following DFA\n[Figure: DFA with start state q0; final states q2, q3, q4, q5; transitions: q0-a->q1; q1-a->q2; q1-b->q3; q1-c->q4; q2-a->q2; q2-b->q3; q2-c->q4; q3-c->q3; q3-a->q5; q4-a->q0; q5-a->q1]\nWhich of the following NFA is valid for the given DFA ?",
+  "options": {
+   "A": "[Figure: NFA with start q0; final states q2, q3 (q4 non-final); transitions: q0-a->q0; q0-a->q1; q1-b->q2; q1-a,c->q3; q2-c->q2; q2-a->q0; q2-a->q3; q2-a->q4; q3-a->q0; q4-c->q3]",
+   "B": "[Figure: NFA with start q0; final states q2, q3, q4; transitions: q0-a->q0; q0-a->q1; q1-b->q2; q1-a,c->q3; q2-c->q2; q2-a->q0; q2-a->q3; q2-a->q4; q3-a->q0; q4-c->q3]",
+   "C": "[Figure: NFA with start q0; final state q3 only; transitions: q0-a->q0; q0-a->q1; q1-b->q2; q1-a,c->q3; q2-c->q2; q2-a->q0; q2-a->q3; q3-a->q0]",
+   "D": "[Figure: NFA with start q0; final states q2, q3; transitions: q0-a->q0; q0-a->q1; q1-b->q2; q1-a,c->q3; q2-c->q2; q2-a->q0; q2-a->q3; q3-a->q0]"
+  },
+  "note": "Figures missing; options empty"
+ },
+ "52": {
+  "question": "Consider the relation T1(A,B,C,D,E) with the dependencies {EB→C, D→E, EA→B} and T2(A,B,C,D) with the dependencies {C→A, A→B, A→D}. Which of the following is TRUE?",
+  "options": {
+   "A": "T1 is in 3NF",
+   "B": "T2 is in 3NF",
+   "C": "T 1 is not in 3NF",
+   "D": "T1 is in 2NF"
+  },
+  "note": "Relations and dependencies garbled"
+ },
+ "53": {
+  "question": "Choose the correct statement for a group G :",
+  "options": {
+   "A": "If for all x,y∈G, (xy)²=x²y² then G is Commutative.",
+   "B": "If for all x∈G, x³=1, then G is Commutative. 1 is the identity element of G.",
+   "C": "If for all x∈G, x⁵=1, then G is Commutative. 1 is the identity element of G.",
+   "D": "If G is Commutative, the sub-group of G need not be Commutative."
+  },
+  "note": "Math symbols missing in options"
+ },
+ "54": {
+  "question": "Consider the following piece of C programming code:\nint x=128, y=110;\ndo\n{\n    If(x>y)\n        x=x-y;\n    else\n        y=y-x;\n} while(x!= y)\nprintf(\"%d\",x);\nWhich one will be the output?",
+  "options": {
+   "A": "18",
+   "B": "2",
+   "C": "92",
+   "D": "74"
+  },
+  "note": "Code had junk and missing braces"
+ },
+ "56": {
+  "question": "Match List I with List II\nList I | List II\nA. Clustered Page Table | I. Generally considered inappropriate for 64 bit architectures.\nB. Hierarchical Page Table | II. Has only entry for each real page (or frame) of memory.\nC. Segmentation | III. Useful for Sparse address spaces.\nD. Inverted Page Table | IV. Supports a user view of the system.\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A→III, B→IV, C→II, D→I",
+   "B": "A→III, B→I, C→IV, D→II",
+   "C": "A→II, B→III, C→I, D→IV",
+   "D": "A→IV, B→III, C→II, D→I"
+  },
+  "note": "Options were empty"
+ },
+ "60": {
+  "question": "Match List I with List II\nList I (Operations on Fuzzy Sets) | List II (Description)\nA. Intersection | I. μ_A(x) + μ_B(x) − μ_A(x)·μ_B(x)\nB. Bounded Sum | II. max(0, μ_A(x) − μ_B(x))\nC. Bounded Difference | III. min(1, μ_A(x) + μ_B(x))\nD. Algebraic Sum | IV. min(μ_A(x), μ_B(x))\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A→III, B→I, C→II, D→IV",
+   "B": "A→III, B→II, C→IV, D→I",
+   "C": "A→IV, B→III, C→II, D→I",
+   "D": "A→II, B→I, C→III, D→IV"
+  },
+  "note": "Options empty; List II formulas missing"
+ },
+ "64": {
+  "question": "Match List I with List II\nList I | List II\nA. RAID Level 2 | I. Block interleaved distribution parity\nB. RAID Level 3 | II. Also known as P+Q redundancy Scheme\nC. RAID Level 5 | III. Bit interleaved parity\nD. RAID Level 6 | IV. Also known as Memory style error correcting code organization\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A→IV, B→III, C→I, D→II",
+   "B": "A→III, B→IV, C→I, D→II",
+   "C": "A→I, B→III, C→IV, D→II",
+   "D": "A→II, B→IV, C→I, D→III"
+  },
+  "note": "Options were empty"
+ },
+ "66": {
+  "question": "Which of the following is not a requirement\nelicitation Technique",
+  "options": {
+   "A": "Interviews",
+   "B": "The use case approach",
+   "C": "Facilitated Application Specification Technique (FAST)",
+   "D": "Data Flow diagram"
+  },
+  "note": "Option D polluted with junk text"
+ },
+ "67": {
+  "question": "Consider the following table about processes, their burst time and arrival time\nProcess | Burst Time | Arrival Time\nP1 | 09 | 0\nP2 | 30 | 0\nP3 | 04 | 0\nP4 | 08 | 2\nP5 | 11 | 6\nNow which of the process shall finish second last as per the respective GANTT charts for the nonpreemptive SJF and Round Robin (time quantum =10 ) scheduling methods.",
+  "options": {
+   "A": "SJF: P4; RR: P4",
+   "B": "SJF: P5; RR: P4",
+   "C": "SJF: P4; RR: P3",
+   "D": "SJF: P5; RR: P5"
+  },
+  "note": "Options were empty"
+ },
+ "68": {
+  "question": "Only legal pointer operations:\nA. pointer + number → pointer\nB. pointer - number → number\nC. pointer + pointer → pointer\nD. pointer - pointer → pointer\nE. pointer - pointer → number\nChoose the most appropriate answer from the options given below:",
+  "options": {
+   "A": "A, B, C Only",
+   "B": "A, B, D Only",
+   "C": "A, B Only",
+   "D": "A, E Only"
+  },
+  "note": "Arrows missing in statements"
+ },
+ "74": {
+  "question": "Which of the followings is not a valid property over two fuzzy relations R~ and S~ which must be obeyed for performing λ-cut defuzzifications?",
+  "options": {
+   "A": "(R~ ∪ S~)_λ = R~_λ ∪ S~_λ",
+   "B": "(R~ ∩ S~)_λ = R~_λ ∩ S~_λ",
+   "C": "(R~')_λ ≠ R~'_λ except when λ=1 (R~' denotes complement of R~)",
+   "D": "For any λ≤β, where 0≤β≤1, it is true that R_β ⊆ R_λ"
+  },
+  "note": "Options garbled/empty"
+ },
+ "75": {
+  "question": "Consider the following DFA that generates set of strings over Σ={a,b,c}\n[Figure: DFA with start and only final state q0; transitions: q0-a->q1; q0-b,c->q0; q1-a->q1; q1-b->q2; q1-c->q0; q2-a->q1; q2-b->q0; q2-c->q3; q3-b,c->q3; q3-a->q4; q4-a->q4; q4-b->q5; q4-c->q3; q5-a->q4; q5-b->q3; q5-c->q0]\nNow identify that which of the followings is the best description of the language for the above DFA",
+  "options": {
+   "A": "L = (a* + b* + c*)+",
+   "B": "L = (a+b+c)*(abc)+(a+b+c)*",
+   "C": "L = { Set of strings, all starting with 'a, b, c' but ending with 'c' }",
+   "D": "L = { Set of strings, all having even count (including 0) of substring 'abc' }"
+  },
+  "note": "Figure missing; options empty"
+ },
+ "76": {
+  "question": "Match List I with List II\nList I | List II\nA. Type 3 Grammar | I. V → (V ∪ Σ)*\nB. Type 2 Grammar | II. λVβ → λ(V ∪ Σ)*β, where (λ,β) ε (V ∪ Σ)*\nC. Type 1 Grammar | III. (V ∪ Σ)* → (V ∪ Σ)*\nD. Type 0 Grammar | IV. V → VΣ | Σ\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "A→II, B→III, C→IV, D→I",
+   "B": "A→III, B→I, C→IV, D→II",
+   "C": "A→IV, B→I, C→II, D→III",
+   "D": "A→III, B→II, C→I, D→IV"
+  },
+  "note": "Options empty; List II symbols missing"
+ },
+ "79": {
+  "question": "Which of the following statements are true ?\nA. In the write-through policy, only the cache is\nupdated\nB. In the write-back policy, both cache and main\nmemory are updated\nC. Cache coherence problems exist in\nmultiprocessors with private caches because of\nthe need to share writable data\nD. Cache coherence problem can be solved by\nmeans of hardware-only scheme\nChoose the correct answer from the options\ngiven below:",
+  "options": {
+   "A": "A, B Only",
+   "B": "B, C Only",
+   "C": "C, D Only",
+   "D": "A, B, C Only"
+  },
+  "note": "Option D polluted with junk text"
+ },
+ "80": {
+  "question": "Given that η refers to learning rate and x_i refers to the ith input to the neuron, Which of the followings most suitably describes the weight updation rule of a Kohonen SOM? (where ' j ' refers to the jth neuron in the lattice)",
+  "options": {
+   "A": "w_ij(new) = (1−η)*w_ij(old) + η*x_i",
+   "B": "w_ii(new) = η*w_ii(old) + (1−η)*x_i",
+   "C": "w_ij(new) = (1−η)*w_ij(old) + x_i",
+   "D": "w_ij(new) = w_ij(old) + η*x_i"
+  },
+  "note": "Options were empty"
+ },
+ "82": {
+  "question": "The tight asymptotic bound for the recurrence T(n)=2T(n/4)+√n is",
+  "options": {
+   "A": "Θ(√n)",
+   "B": "Θ(n log n)",
+   "C": "Θ(√n log n)",
+   "D": "Θ(n log √n)"
+  },
+  "note": "Recurrence and options garbled"
+ },
+ "87": {
+  "question": "Let m and n are positive integers. Then\n(A) If n neq 1, then m<m n.\n(B) If k is composite, then k=m n where 1<m, n>k\n(C) If mn =1, then m =1 and n =1.\n(D) If k is composite, then k=m n where 1<m, n<k\nWhich of the following is correct:",
+  "options": {
+   "A": "(A), (C), (D)",
+   "B": "(B), (C), (D)",
+   "C": "(A),(B)",
+   "D": "(A), (B), (C)"
+  },
+  "note": "Option markers mangled"
+ },
+ "88": {
+  "question": "Arrange the following parsers in increasing order of their power of handling grammars i.e. from the least powerful parser to the most powerful parser.\nA. LR (0)\nB. LR (1)\nC. LALR(1)\nD. LL (0)\nE. SLR\nChoose the correct answer from the options given below:",
+  "options": {
+   "A": "LL(0)→LR(0)→SLR→LR(1)→LALR(1)",
+   "B": "SLR→LR(0)→LL(0)→LR(1)→LALR(1)",
+   "C": "LL(0)→LR(0)→SLR→LALR(1)→LR(1)",
+   "D": "LR(0)→LL(0)→SLR→LR(1)→LALR(1)"
+  },
+  "note": "Options empty; question split"
+ },
+ "90": {
+  "question": "The right sequence of suboperations that are\nperformed in arithmetic pipeline is-\nA. Align the mantissas\nB. Add or subtract the mantissas\nC. Normalize the result\nD. Compare the exponents\nChoose the correct answer from the options\ngiven below:",
+  "options": {
+   "A": "D, A, B, C",
+   "B": "D, B, A, C",
+   "C": "B, C, A, D",
+   "D": "B, C, D, A"
+  },
+  "note": "Option D polluted with next passage"
+ },
+ "92": {
+  "question": "Consider the following Three Address code:\n100: t1 = y+2\n101: initial = x/t1\n102: limit = 10\n103: if i > j goto 105\n104: goto 111\n105: if num > b goto 107\n106: goto 111\n107: num = limit-1\n108: b = y+2\n109: i = i - num\n110: goto 103\n111: j = i - num\n112: k = j+b\nWhich of the following is the Optimized version for the given TAC in the passage",
+  "options": {
+   "A": "100:t1 =y+2\n101 : initial = x/t1\n102: limit = 10\n103: if i >j goto 105\n104 : goto 111\n105: if num > b goto }10\n106: goto 111\n107:b=y+2\n108: i=i - limit-1\n109: goto 103\n110:k=i+b",
+   "B": "100:t1=y+2\n101 : initial = x/t1\n102: limit = 10\n103: if i >j goto 105\n104: if num < b goto }11\n105: num = limit-1\n106:b = t1\n107: i=i -num\n108: goto 103\n109:k=i+b",
+   "C": "100: t1 = y + 2\n101: limit = 10\n102: num = 9\n103: b = t1\n104: if i > j goto 106\n105: goto 110\n106: if num > b goto 108\n107: goto 110\n108: i = i - num\n109: goto 104\n110: j = i - num\n111: k = j + b",
+   "D": "100:t1=y+2\n101 : initial = x/t1\n102: limit = 10\n103: if i >j goto 105\n104 : goto 111\n105: if num < b goto 111\n106: num = limit-1\n107:b=t1\n108: i=i -num\n109 : goto 103\n110:k= i+b"
+  },
+  "note": "Option C polluted; TAC passage added"
+ },
+ "93": {
+  "question": "Consider the following Three Address code:\n100: t1 = y+2\n101: initial = x/t1\n102: limit = 10\n103: if i > j goto 105\n104: goto 111\n105: if num > b goto 107\n106: goto 111\n107: num = limit-1\n108: b = y+2\n109: i = i - num\n110: goto 103\n111: j = i - num\n112: k = j+b\nWhich of the following is the correct High level code for the given TAC in the passage",
+  "options": {
+   "A": "t1 = y+2\ninit = x/t1;\nlimit=10;\nif(i>j || num>b)\n{\n    num = limit-1;\n    b = y + 2;\n    i=i-num;\n}\nj=i - num;\nk = k+b;",
+   "B": "init = x/(y+2);\nlimit=10;\nwhile(i>j || num>b)\n{\n    num = limit-1;\n    b = y + 2;\n    i=i -num;\n}\nj = i - num;\nk = k+b;",
+   "C": "init = x/(y+2);\nlimit=10;\nif(i>j)\n{\n    While( num>b)\n        num = limit-1;\n}\nelse\n{\n    b = y + 2;\n    i=i-num;\n}\nj= i - num;\nk= k+b:",
+   "D": "init = x/(y+2);\nlimit=10;\nwhile(i>j && num>b)\n{\n    num = limit-1;\n    b=y+2;\n    i=i-num;\n}\nj = i - num;\nk = k+b;"
+  },
+  "note": "Passage TAC context added"
+ },
+ "95": {
+  "question": "Consider the following Three Address code:\n100: t1 = y+2\n101: initial = x/t1\n102: limit = 10\n103: if i > j goto 105\n104: goto 111\n105: if num > b goto 107\n106: goto 111\n107: num = limit-1\n108: b = y+2\n109: i = i - num\n110: goto 103\n111: j = i - num\n112: k = j+b\nWhich of the followings is the correct Flow graph for the TAC given in the passage?",
+  "options": {
+   "A": "[Adjacency matrix 7x7 rows: 0100000; 0011000; 0000001; 0000110; 0000001; 0100000; 0000000]",
+   "B": "[Adjacency matrix 6x6 rows: 010000; 001000; 101000; 010001; 000001; 000001]",
+   "C": "[Adjacency matrix 6x6 rows: 010000; 001000; 101000; 010001; 000001; 000001]",
+   "D": "[Adjacency matrix 7x7 rows: 0100000; 0001010; 0000001; 0010010; 0000001; 0100000; 0100000]"
+  },
+  "note": "Matrix options empty; TAC added"
+ },
+ "98": {
+  "question": "Consider the following disc Queue with requests for I/O to block on cylinders: 45, 81, 185, 33, 175, 99, 150, 77 (Consider that the head starts from location 58)\nWhat shall be the 2nd request being processed by SCAN (LEFT) disc Scheduling technique for the already given request queue?",
+  "options": {
+   "A": "81",
+   "B": "15",
+   "C": "33",
+   "D": "175"
+  },
+  "note": "Superscript 'nd' lost; passage added"
+ },
+ "100": {
+  "question": "Consider the following disc Queue with requests for I/O to block on cylinders: 45, 81, 185, 33, 175, 99, 150, 77 (Consider that the head starts from location 58)\nWhat shall be the total head movement of cylinders if the FCFS disc scheduling method is used?",
+  "options": {
+   "A": "536",
+   "B": "594",
+   "C": "647",
+   "D": "700"
+  },
+  "note": "Option D polluted; passage added"
+ },
+ "96": {
+  "question": "Consider the following disc Queue with requests for I/O to block on cylinders: 45, 81, 185, 33, 175, 99, 150, 77 (Consider that the head starts from location 58)\nWhat shall be the 2nd  request being processed\nby C-LOOK (Right) disc Scheduling technique for\nthe already given request queue?",
+  "options": {
+   "A": "81",
+   "B": "45",
+   "C": "77",
+   "D": "33"
+  },
+  "note": "Passage context added"
+ }
+}

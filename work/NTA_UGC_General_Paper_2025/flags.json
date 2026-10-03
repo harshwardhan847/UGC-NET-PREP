@@ -1,0 +1,108 @@
+{
+ "pdf": "/Users/harshwardhan/Documents/my_projects/UGC-NET-PREP/paper_1/NTA UGC General Paper 2025.pdf",
+ "key_page": 11,
+ "flagged": {
+  "6": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "8": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "9": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "10": {
+   "page": null,
+   "flags": [
+    "dirty_option"
+   ]
+  },
+  "11": {
+   "page": null,
+   "flags": [
+    "dirty_option"
+   ]
+  },
+  "12": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "19": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "21": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "26": {
+   "page": null,
+   "flags": [
+    "dirty_option"
+   ]
+  },
+  "27": {
+   "page": null,
+   "flags": [
+    "dirty_option"
+   ]
+  },
+  "31": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "32": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "33": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "38": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "39": {
+   "page": null,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "42": {
+   "page": null,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "45": {
+   "page": null,
+   "flags": [
+    "long_option"
+   ]
+  }
+ }
+}

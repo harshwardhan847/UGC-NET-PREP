@@ -1,0 +1,352 @@
+{
+ "3": {
+  "question": "A least integer n such that f(x) is O(x^n) for each of\nthe following functions. Arrange the following\naccording to the value of n in increasing order:\nA. f(x)=3 x³+(log x)⁴\nB. f(x)=(x⁵+x²+1) /(x³+1)\nC. f(x)=(x³+x²+1) /(x²+1)\nD. f(x)=(x²+5 log x) /(x²+1)\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "D, C, A, B",
+   "B": "D, C, B, A",
+   "C": "B, C, A, D",
+   "D": "B, A, C, D"
+  },
+  "note": "Lost superscripts in functions"
+ },
+ "5": {
+  "question": "Match List-I with List-II :\nList - I | List-II\nA. A → aB | a, a ∈ T, A,B ∈ V | I. Recursive Descent Parser\nB. A → BC | a, a ∈ T, A,B,C ∈ V | II. Turing Machine\nC. LL (1) grammar | III. Choamsky Normal Form\nD. Halting problem | IV. Finite Automate\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A-IV, B-III, C-I, D-II",
+   "B": "A-III, B-I, C-II, D-IV",
+   "C": "A-II, B-IV, C-III, D-I",
+   "D": "A-IV, B-III, C-II, D-I"
+  },
+  "note": "Table rows garbled; grammar rules missing"
+ },
+ "8": {
+  "question": "Match List-I with List-II :\nList-I Line coding scheme | List-II Bandwidth (average)\nA. NRZ-L | I. B= N/4\nB. 2B1Q | II. B=N/8\nC. 4.D-PAM 5 | III. B=N/3\nD. MLT-3 | IV. B= N/2\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A-II, B-I, C-IV, D-III",
+   "B": "A-IV, B-II, C-I, D-III",
+   "C": "A-IV, B-I, C-II, D-III",
+   "D": "A-III, B-IV, C-II, D-I"
+  },
+  "note": "Page-5 table text leaked into question"
+ },
+ "10": {
+  "question": "If f(n) = 5f(n/2) + 3 and f(1) = 7 is a recurrence relation where K is positive integer, then f(2^K) =",
+  "options": {
+   "A": "5^K (31/4) − 3/4",
+   "B": "5^K (29/4)",
+   "C": "2^K (31/4) − 3/4",
+   "D": "2^K (29/4)"
+  },
+  "note": "Question and options lost to math formatting"
+ },
+ "11": {
+  "question": "The instruction LD ADR (X) which is equivalent to AC ← M[ADR+XR] is in :",
+  "options": {
+   "A": "Direct Addressing Mode",
+   "B": "Indirect Addressing Mode",
+   "C": "Index Addressing Mode",
+   "D": "Immediate Addressing Mode"
+  },
+  "note": "Arrow symbol missing"
+ },
+ "12": {
+  "question": "For the following Parents in figure (1) and (2) :\n[Figure: figure (1): Parent1 = 10110 | 010, Parent2 = 10101 | 111, with a cross over point marked after the 5th bit. figure (2) (offspring): Parent1 = 10110 | 111, Parent2 = 10101 | 010.]\nWhich is correct?",
+  "options": {
+   "A": "figure (2) is the two point crossover of figure (1)",
+   "B": "figure (2) is one point crossover of figure (1)",
+   "C": "figure (2) is N point crossover of figure (1)",
+   "D": "figure (2) is uniform crossover of figure (1)"
+  },
+  "note": "Figure missing; option A split"
+ },
+ "14": {
+  "question": "Match List - I with List - II.\nf(n) = a f(n / b) + g(n) is a divide-and-conquer recurrence relation for the Listed-I algorithms, match their recurrence in Listed-II.\nList - I Divide-and-conquer based algorithms | List - II Recurrence Relation\nA. Binary Search | I. f(n) = 7f(n/2) + 15n²/4\nB. Find maximum and minimum of a sequence | II. f(n) = 2 f(n/2) + n\nC. Merge Sort | III. f(n) = 2 f(n/2) + 2\nD. Fast Matrix Multiplication | IV. f(n) = f(n/2) + 2\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A-I, B-II, C-III, D-IV",
+   "B": "A-II, B-III, C-IV, D-I",
+   "C": "A-III, B-IV, C-I, D-II",
+   "D": "A-IV, B-III, C-II, D-I"
+  },
+  "note": "Recurrence formulas missing from table"
+ },
+ "15": {
+  "question": "Which of the following control problem does not exist, when processes unaware of each other during interaction?",
+  "options": {
+   "A": "Mutual exclusion",
+   "B": "Data coherence",
+   "C": "Starvation",
+   "D": "Deadlock"
+  },
+  "note": "Formula junk appended to option A"
+ },
+ "20": {
+  "question": "Match List-I with List-II :\nList-I | List-II\nA. Back Tracking | I. Automata\nB. Infinite languages with matching numbers | II. Undecidable Problem\nC. Canonical LR Parser | III. Predictive Parser\nD. Post Correspondence Problem | IV. Large number of states\nChoose the correct answer from the options\ngiven below:",
+  "options": {
+   "A": "A-I, B-II, C-III, D-IV",
+   "B": "A-II, B-III, C-I, D-III",
+   "C": "A-IV, B-III, C-II, D-I",
+   "D": "A-III, B-I, C-IV, D-II"
+  },
+  "note": "Table flattened; option D typo D-Il"
+ },
+ "22": {
+  "question": "Which of the following have truth values if the universe of discourse consists of all integers?\nA. ∀n∃m (n² < m)\nB. ∃n∀m (n < m²)\nC. ∃n∃m (n² + m² = 5)\nD. ∃n∃m (n² + m² = 6)\nE. ∃n∃m (m+n=4 ∧ n−m=1)\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A, B, C Only",
+   "B": "B, C, E Only",
+   "C": "C, D, E Only",
+   "D": "B, D Only"
+  },
+  "note": "Quantifier statements missing; junk in option D"
+ },
+ "30": {
+  "question": "For the fuzzy set A= {(x₁, 0.3), (x₂, 0.7), (x₃, 0.4)} the complement of A would be represented as :",
+  "options": {
+   "A": "{(x₁, 0.4), (x₂, 0.3), (x₃, 0.1)}",
+   "B": "{(x₁, 0.3), (x₂, 0.7), (x₃, 0.4)}",
+   "C": "{(x₁, 0.7), (x₂, 0.3), (x₃, 0.6)}",
+   "D": "{(x₁, 0.21), (x₂, 0.28), (x₃, 0.12)}"
+  },
+  "note": "Options empty; set text garbled"
+ },
+ "31": {
+  "question": "The instructions\nADD R₁, A, B\nADD R₂, C, D\nMUL X, R₁, R₂\nevaluates the X=(A+B)*(C+D) in which of the following?",
+  "options": {
+   "A": "3 - Address instructions",
+   "B": "2 - Address instructions",
+   "C": "1 - Address instructions",
+   "D": "RISC instructions"
+  },
+  "note": "Register subscripts lost"
+ },
+ "34": {
+  "question": "The Boolean expression for the following would be :\nF(A, B, C) = Σ(0,2,6)\nd(A, B, C) = Σ(1,3,5)",
+  "options": {
+   "A": "A'C' + BC'",
+   "B": "B+AC'",
+   "C": "A+BC'",
+   "D": "A'+BC'"
+  },
+  "note": "Sigma symbols lost"
+ },
+ "37": {
+  "question": "An IPv4 packet has arrived with the first few hexadecimal digits as shown below. How many hops can this packet travel before being dropped? The data belong to what upper-layer protocol?\n( 5400001800100110040601...)₁₆",
+  "options": {
+   "A": "01 hops, TCP",
+   "B": "02 hops, UDP",
+   "C": "03 hops, ICMP",
+   "D": "4 hops, TCP"
+  },
+  "note": "Subscript 16 lost"
+ },
+ "39": {
+  "question": "Match List-I with List-II :\nList-I | List-II\nA. Channelization protocol | I. ALOHA\nB. Bit-oriented protocol | II.TDMA\nC. Random-access protocol | III.Reservation\nD.Controlled-access protocol | IV. HDLC\nChoose the correct answer from the options\ngiven below:",
+  "options": {
+   "A": "A-I, B-III, C-IV, D-II",
+   "B": "A-II, B-IV, C-I, D-III",
+   "C": "A-IV, B-III, C-II, D-I",
+   "D": "A-III, B-IV, C-I, D-II"
+  },
+  "note": "Unrelated formula junk inside question"
+ },
+ "40": {
+  "question": "What is the total delay (latency) for a frame size of 10 million bits that is being set up on a link with 20 routers, each having a queuing time of 2 μs and a processing time of 1 μs? The length of link 5000 km. The speed of light inside the link is 2 * 10⁸ m/s. The link has bandwidth of 6 Mbps.",
+  "options": {
+   "A": "0.624050 s",
+   "B": "1.691726 s",
+   "C": "2.425080 s",
+   "D": "1.714030 s"
+  },
+  "note": "Missing μ symbols and exponent 8"
+ },
+ "42": {
+  "question": "Match List - I with List - II.\nList-I (Boolean Expression) | List-II (Dual of Boolean Expression)\nA. x.y+0 | I. (x' + 0) · (y' · z)\nB. x'·1 + (y' + z) | II. x+y.1\nC. x'·(y' + 0) | III. x' + y'·1\nD. x·1 + (y + z') | IV. (x + 0) · (y · z')\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A-III, B-IV, C-II, D-I",
+   "B": "A-III, B-IV, C-I, D-II",
+   "C": "A-II, B-I, C-III, D-IV",
+   "D": "A-II, B-I, C-IV, D-III"
+  },
+  "note": "Table expressions with overlines lost"
+ },
+ "43": {
+  "question": "A bit string of length four is generated at random. What is probability that it contains at least two consecutive 0's given that first bit is 0 ?",
+  "options": {
+   "A": "1/2",
+   "B": "5/16",
+   "C": "5/8",
+   "D": "1/4"
+  },
+  "note": "Options (fractions) were empty"
+ },
+ "46": {
+  "question": "Arrange the following sets in increasing order, on the basis of their cardinality :\nA. A₁ = {{1,2},{3}}\nB. A₂ = {{1},{2},{3},{4}}\nC. A₃ = {{1,2,3,4,5,6}}\nD. A₄ = {{1,2},{2,3,4},{5}}\nE. A₅ = {{1},{2},{3},{4},{5}}\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A, B, D, E, C",
+   "B": "A, B, E, D, C",
+   "C": "A, C, D, B, E",
+   "D": "C, A, D, B, E"
+  },
+  "note": "Set definitions missing"
+ },
+ "48": {
+  "question": "Which of the following is not the goal of reverse Engineering?",
+  "options": {
+   "A": "Cope with Complexity",
+   "B": "Recover lost information",
+   "C": "Detect side effect",
+   "D": "Data flow"
+  },
+  "note": "Junk appended to option D"
+ },
+ "52": {
+  "question": "The following code :\nstmt → if expr then stmt else stmt\n| if expr then stmt\nsuffers from :",
+  "options": {
+   "A": "Ambiguity",
+   "B": "Left factoring",
+   "C": "Left Recursion",
+   "D": "λ moves"
+  },
+  "note": "Arrow missing; option D lost lambda"
+ },
+ "58": {
+  "question": "What will be the order of the following fields in a frame relay 'frame format'?\nA. Flag\nB. FCS\nC. address\nD. information\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A, C, D, B",
+   "B": "D, A, C, D",
+   "C": "C, B, A, D",
+   "D": "A, B, D, C"
+  },
+  "note": "Junk symbols in question text"
+ },
+ "66": {
+  "question": "What will be the ordering of typical steps when processing a high-level query?\nA. Query optimizer\nB. Runtime database processor\nC. Scanning, passing and validating\nD. Query code generator\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "D, A, C, B",
+   "B": "C, A, D, B",
+   "C": "C, D, B, A",
+   "D": "D, C, B, A"
+  },
+  "note": "Trailing junk characters"
+ },
+ "67": {
+  "question": "Which of the followings are tautology ?\nA. (p ∨ r) → p\nB. p → (p ∧ r)\nC. ~p → (p → r)\nD. (p ∧ r) → (p → r)\nE. ~(p → r) → p\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A, B Only",
+   "B": "A, B, C Only",
+   "C": "B, C, D Only",
+   "D": "C, D, E Only"
+  },
+  "note": "Logic formulas missing"
+ },
+ "69": {
+  "question": "The language of the following PDA would be :\nδ(q₀, a, z₀) = (q₀, aaa z₀)\nδ(q₀, a, a) = (q₀, aaaa)\nδ(q₀, b, a) = (q₁, λ)\nδ(q₁, b, a) = (q₁, λ)\nδ(q₁, ϵ, z₀) = (q_f, z₀), where q_f is the final state.",
+  "options": {
+   "A": "{aⁿbⁿ | n>0}",
+   "B": "{aⁿb²ⁿ | n>0}",
+   "C": "{aⁿb³ⁿ | n>0}",
+   "D": "{aⁿb⁴ⁿ | n>0}"
+  },
+  "note": "Transitions and options were empty/misplaced"
+ },
+ "74": {
+  "question": "The number of tokens in the following line : ' for i in range (begin; end ; step) :' is:",
+  "options": {
+   "A": "4",
+   "B": "7",
+   "C": "8",
+   "D": "12"
+  },
+  "note": "Unrelated formulas prepended to question"
+ },
+ "78": {
+  "question": "Arrange the following prefix expressions based on their values in increasing order :\nA. +-* 2 / 8432\nB. ↑-* 33 * 425\nC. +-↑32 ↑ 23 / 6-42\nD. *+3+3 ↑ 3+113\nChoose the correct answer from the options\ngiven below :",
+  "options": {
+   "A": "A, B, C, D",
+   "B": "B, A, C, D",
+   "C": "D, C, B, A",
+   "D": "C, D, A, B"
+  },
+  "note": "Exponent arrows (↑) lost in prefix expressions"
+ },
+ "81": {
+  "question": "According to the Nyquist theorem to produce the original analog signal, one necessary condition is :",
+  "options": {
+   "A": "Sampling rate must be at least 2 times the highest frequency contained in the signal",
+   "B": "Sampling rate must be at least 2 times the lowest frequency contained in the signal",
+   "C": "Sampling rate must be at least 1/2 times the highest frequency contained in the signal",
+   "D": "Sampling rate must be at least 1/2 times the lowest frequency contained in the signal"
+  },
+  "note": "Fraction 1/2 missing in options C and D"
+ },
+ "82": {
+  "question": "For the fuzzy sets A = {(x₁, 0.3), (x₂, 0.7), (x₃, 0.4)} and B = {(x₁, 0.5), (x₂, 0.2), (x₃, 0.5)}, then A ∩ B would be:",
+  "options": {
+   "A": "{(x₁, 0.3), (x₂, 0.7), (x₃, 0.4)}",
+   "B": "{(x₁, 0.5), (x₂, 0.2), (x₃, 0.5)}",
+   "C": "{(x₁, 0.5), (x₂, 0.7), (x₃, 0.5)}",
+   "D": "{(x₁, 0.3), (x₂, 0.2), (x₃, 0.4)}"
+  },
+  "note": "Sets missing; options misplaced into D"
+ },
+ "90": {
+  "question": "Which of the following genetic algorithm operations is computationally most expensive?",
+  "options": {
+   "A": "Convergence testing",
+   "B": "Initial population creation",
+   "C": "Selection of sub-population for mating",
+   "D": "Reproduction to produce next generation"
+  },
+  "note": "Next passage leaked into option D"
+ },
+ "91": {
+  "question": "Passage: A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.\nWhen we formulate the LPP from the above-given passage. Which of the following is an objective function for its dual problem?",
+  "options": {
+   "A": "Min P = 5u + 8v + 15w",
+   "B": "Min P = 8u + 10v + 15w",
+   "C": "Min P = 15u + 5v + 8w",
+   "D": "Max P = 10u + 8v + 15w"
+  },
+  "note": "Options empty; passage context added"
+ },
+ "94": {
+  "question": "Passage: A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.\nIf x unit length of type A cloths and y unit length of type B cloths, then contrains formulate for the LPP, is :",
+  "options": {
+   "A": "y ≤ 7.5, 2x+3y ≤ 8, 3y+2x ≤ 10",
+   "B": "y ≤ 7.5, 2x+3y ≤ 8, 3x+2y ≤ 10",
+   "C": "2x+3y ≤ 8, 3x+2y+2z < 15",
+   "D": "2x+3y ≤ 10, 3x+2y ≤ 10, 2y ≤ 15"
+  },
+  "note": "Options empty; passage context added"
+ },
+ "95": {
+  "question": "Passage: A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.\nOn the basis of available material, maximum total income is :",
+  "options": {
+   "A": "₹ 133.3",
+   "B": "₹ 124",
+   "C": "₹ 100",
+   "D": "₹ 153.3"
+  },
+  "note": "Next passage leaked into option D"
+ },
+ "99": {
+  "question": "Passage: A company is implementing a new database system to manage its customer information. The database contains labels for customers, orders, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representative who manages the accountable products. The database is designed to improve efficiency in tracking sales and customer interactions.\nWhich SQL query retrieves the total number of distinct customers who have placed orders?",
+  "options": {
+   "A": "Select COUNT (DISTINCT customer_id) As total_customers From orders;",
+   "B": "Select COUNT (*) As total_customers from customers;",
+   "C": "Select COUNT (DISTINCT order_id) As total_customers from orders;",
+   "D": "Select COUNT (DISTINCT customer_id) As total_customers from customers;"
+  },
+  "note": "Formula junk in option A; passage added"
+ },
+ "100": {
+  "question": "Passage: A company is implementing a new database system to manage its customer information. The database contains labels for customers, orders, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representative who manages the accountable products. The database is designed to improve efficiency in tracking sales and customer interactions.\nWhich of the following best describes the relationship between the \"orders\" table and the \"Customers\" table in the company's database system?",
+  "options": {
+   "A": "One-to-One",
+   "B": "One-to-Many",
+   "C": "Many-to-One",
+   "D": "Many-to-Many"
+  },
+  "note": "Junk in option D; passage added"
+ }
+}

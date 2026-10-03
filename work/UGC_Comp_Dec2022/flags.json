@@ -1,0 +1,306 @@
+{
+ "pdf": "/Users/harshwardhan/Documents/my_projects/UGC-NET-PREP/UGC_Comp_Dec2022.pdf",
+ "key_page": 16,
+ "flagged": {
+  "1": {
+   "page": 1,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "3": {
+   "page": 1,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "6": {
+   "page": 1,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "7": {
+   "page": 1,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "8": {
+   "page": 1,
+   "flags": [
+    "duplicate_options"
+   ]
+  },
+  "10": {
+   "page": 1,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "11": {
+   "page": 1,
+   "flags": [
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "13": {
+   "page": 2,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "14": {
+   "page": 2,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "22": {
+   "page": 2,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "25": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "28": {
+   "page": 3,
+   "flags": [
+    "garbled_math",
+    "duplicate_options"
+   ]
+  },
+  "29": {
+   "page": 3,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "32": {
+   "page": 3,
+   "flags": [
+    "duplicate_options"
+   ]
+  },
+  "34": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "35": {
+   "page": 3,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "36": {
+   "page": 4,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "37": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "40": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "41": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "42": {
+   "page": 4,
+   "flags": [
+    "option_marker_in_question",
+    "dirty_option",
+    "garbled_math"
+   ]
+  },
+  "43": {
+   "page": 4,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "44": {
+   "page": 4,
+   "flags": [
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "47": {
+   "page": 5,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "49": {
+   "page": 5,
+   "flags": [
+    "option_marker_in_question",
+    "garbled_math"
+   ]
+  },
+  "50": {
+   "page": 5,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "56": {
+   "page": 6,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "57": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "58": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "59": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "61": {
+   "page": 7,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "65": {
+   "page": 8,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "68": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "70": {
+   "page": 9,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "75": {
+   "page": 10,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "76": {
+   "page": 10,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "79": {
+   "page": 11,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "82": {
+   "page": 11,
+   "flags": [
+    "empty_option"
+   ]
+  },
+  "83": {
+   "page": 11,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "84": {
+   "page": 12,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "89": {
+   "page": 12,
+   "flags": [
+    "option_marker_in_question"
+   ]
+  },
+  "90": {
+   "page": 12,
+   "flags": [
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "93": {
+   "page": 13,
+   "flags": [
+    "empty_option",
+    "garbled_math"
+   ]
+  },
+  "95": {
+   "page": 13,
+   "flags": [
+    "long_option",
+    "garbled_math"
+   ]
+  },
+  "96": {
+   "page": 14,
+   "flags": [
+    "long_option"
+   ]
+  },
+  "98": {
+   "page": 14,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "99": {
+   "page": 14,
+   "flags": [
+    "garbled_math"
+   ]
+  },
+  "100": {
+   "page": 15,
+   "flags": [
+    "garbled_math"
+   ]
+  }
+ }
+}

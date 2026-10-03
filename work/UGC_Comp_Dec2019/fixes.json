@@ -1,0 +1,542 @@
+{
+ "1": {
+  "question": "A basic feasible solution of an m×n transportation problem is said to be non-degenerate, if basic feasible solution contains exactly------------- number of individual allocation in-------------- positions.",
+  "options": {
+   "A": "m+n+1, independent",
+   "B": "m+n−1, independent",
+   "C": "m+n−1, appropriate",
+   "D": "m−n+1, independent"
+  },
+  "note": "math symbols lost; options garbled"
+ },
+ "2": {
+  "question": "Consider the following Linear programming problem (LPP) :\nMaximize z = x1 + x2\nSubject to the constraints:\nx1 + 2x2 ≤ 2000\nx1 + x2 ≤ 1500\nx2 ≤ 600\nand x1, x2 ≥ 0\nThe solution of the above LPP is:",
+  "options": {
+   "A": "x1=750, x2=750, z=1500",
+   "B": "x1=500, x2=1000, z=1500",
+   "C": "x1=1000, x2=500, z=1500",
+   "D": "x1=900, x2=600, z=1500"
+  },
+  "note": "LPP and options missing"
+ },
+ "4": {
+  "question": "What are the greatest lower bound (GLB) and the least upper bound (LUB) of the sets A={3,9,12} and B={1,2,4,5,10} if they exist in poset (Z+, /)?",
+  "options": {
+   "A": "A(GLB-3, LUB-36); B(GLB-1, LUB-20)",
+   "B": "A(GLB-3, LUB-12); B(GLB-1, LUB-10)",
+   "C": "A(GLB-1, LUB-36); B(GLB-2, LUB-20)",
+   "D": "A(GLB-1, LUB-12); B(GLB-2, LUB-10)"
+  },
+  "note": "sets and options missing"
+ },
+ "8": {
+  "question": "How many reflexive relations are there on a set with 4 elements?",
+  "options": {
+   "A": "2^4",
+   "B": "2^12",
+   "C": "4^2",
+   "D": "2"
+  },
+  "note": "options missing"
+ },
+ "10": {
+  "question": "A computer uses a memory unit of 512 K words of 32 bits each. A binary instruction code is stored in one word of the memory. The instruction has four parts: an addressing mode field to specify one of the two-addresssing mode (direct and indirect), an operation code, a register code part to specify one of the 256 registers and an address part. How many bits are there in addressing mode part, opcode part, register code part and the address part?",
+  "options": {
+   "A": "1, 3, 9, 19",
+   "B": "1, 4, 9, 18",
+   "C": "1, 4, 8, 19",
+   "D": "1, 3, 8, 20"
+  },
+  "note": "options missing"
+ },
+ "12": {
+  "question": "(142)_b + (112)_(b−2) = (75)_8, find base b.",
+  "options": {
+   "A": "3",
+   "B": "6",
+   "C": "7",
+   "D": "5"
+  },
+  "note": "equation missing"
+ },
+ "14": {
+  "question": "What is the output of following C program?\n# include <stdio.h>\nmain()\n{\n    int i, j, x = 0;\n    for (i=0;i<5;++i)\n    for (j=0;j<i;++j)\n    {\n    x+=(i+j-1);\n    break ;\n    }\n    printf (\"%d\", x) ;",
+  "options": {
+   "A": "6",
+   "B": "5",
+   "C": "4",
+   "D": "3"
+  },
+  "note": "stray code-fence markers removed"
+ },
+ "17": {
+  "question": "A rectangle is bound by the lines x=0; y=0; x=5 and y=3. The line segment joining (−1,0) and (4,5), if clipped against this window will connect the points ---------",
+  "options": {
+   "A": "(0,1) and (3,3)",
+   "B": "(0,1) and (2,3)",
+   "C": "(0,1) and (4,5)",
+   "D": "(0,1) and (3,5)"
+  },
+  "note": "coordinates missing from options and stem"
+ },
+ "19": {
+  "question": "If we want to resize a 1024×768 pixels image to one that is 640 pixels wide with the same aspect ratio, what would be the height of the resized image?",
+  "options": {
+   "A": "420 Pixels",
+   "B": "460 Pixels",
+   "C": "480 Pixels",
+   "D": "540 Pixels"
+  },
+  "note": "1024×768 missing; junk text"
+ },
+ "28": {
+  "question": "Suppose a system has 12 magnetic tape drives and at the time t₀, three processes are allotted tape drives out of their need as given below:\n| Process | Maximum Needs | Current Needs |\n|---|---|---|\n| p0 | 10 | 5 |\n| p1 | 4 | 2 |\n| p2 | 9 | 2 |\nAt times t₀, the system is in a safe state. Which of the following is a safe sequence so that deadlock is avoided?",
+  "options": {
+   "A": "<p0, p1, p2>",
+   "B": "<p1, p0, p2>",
+   "C": "<p2, p1, p0>",
+   "D": "<p0, p2, p1>"
+  },
+  "note": "table and options missing"
+ },
+ "35": {
+  "question": "Let a^(2c) mod n = (a^c)² mod n and a^(2c+1) mod n = a·(a^c)² mod n. For a=7, b=17, and n=561 what is the value of a^b (mod n)?",
+  "options": {
+   "A": "160",
+   "B": "166",
+   "C": "157",
+   "D": "67"
+  },
+  "note": "formulas and a^b garbled"
+ },
+ "36": {
+  "question": "A clique in an undirected graph G=⟨V,E⟩ is a subset V′ ⊆ V of vertices, such that",
+  "options": {
+   "A": "If (u,v) ∈ E then u ∈ V′ and v ∈ V′",
+   "B": "If (u,v) ∈ E then u ∈ V′ or v ∈ V′",
+   "C": "Each pair of vertices in V′ is connected by an edge",
+   "D": "All pairs of vertices in V′ are not connected by an edge"
+  },
+  "note": "symbols missing in options and stem"
+ },
+ "37": {
+  "question": "What is the worst case running time of Insert and\nExtract-min, in an implementation of a priority\nqueue using an unsorted array? Assume that all\ninsertions can be accomodated.",
+  "options": {
+   "A": "θ(1), θ(n)",
+   "B": "θ(n), θ(n)",
+   "C": "θ(1), θ(1)",
+   "D": "θ(n), θ(n)"
+  },
+  "note": "option A polluted with junk text"
+ },
+ "38": {
+  "question": "In a B-Tree, each node represents a disk block.\nSuppose one block holds 8192 bytes. Each key\nuses 32 bytes. In a B-tree of order M there are M -\n1 keys. Since each branch is on another disk\nblock, we assume a branch is of 4 bytes. The total\nmemory requirement for a non-leaf node is",
+  "options": {
+   "A": "32M−32",
+   "B": "36M−32",
+   "C": "36M−36",
+   "D": "32M−36"
+  },
+  "note": "options missing"
+ },
+ "39": {
+  "question": "Give asymptotic upper and lower bound for T(n) given below. Assume T(n) is constant for n ≤ 2. T(n) = 4T(√n) + lg² n",
+  "options": {
+   "A": "T(n) = θ(lg(lg² n) lg n)",
+   "B": "T(n) = θ(lg² n lg n)",
+   "C": "T(n) = θ(lg² n lg lg n)",
+   "D": "T(n) = θ(lg(lg n) lg n)"
+  },
+  "note": "formula and options missing"
+ },
+ "42": {
+  "question": "The time complexity to multiply two polynomials\nof degree n using Fast Fourier transform method\nis :",
+  "options": {
+   "A": "θ(n lg n)",
+   "B": "θ(n²)",
+   "C": "θ(n)",
+   "D": "θ(lg n)"
+  },
+  "note": "options missing"
+ },
+ "43": {
+  "question": "Consider the following grammars :\nG1 : S → aSb|bSa|aa\nG2 : S → aSb|bSa|SS | λ\nG3 : S → aSb|bSa|SS | a\nG4 : S → aSb|bSa|SS|SSS|λ\nWhich of the following is correct w.r.t. the above grammars?",
+  "options": {
+   "A": "G1 and G3 are equivalent",
+   "B": "G2 and G3 are equivalent",
+   "C": "G2 and G4 are equivalent",
+   "D": "G3 and G4 are equivalent"
+  },
+  "note": "grammars and options missing"
+ },
+ "44": {
+  "question": "Consider the language L={a^n b^(n−3) | n>2} on Σ={a,b}. Which one of the following grammars generates the language L ?",
+  "options": {
+   "A": "S → aA|a, A → aAb|b",
+   "B": "S → aaA|λ, A → aAb|λ",
+   "C": "S → aaaA|a, A → aAb|λ",
+   "D": "S → aaaA, A → aAb | λ"
+  },
+  "note": "language and options missing"
+ },
+ "45": {
+  "question": "Consider the following grammar :\nS → 0A | 0BB\nA → 00A | λ\nB → 1B | 11C\nC → B\nWhich language does this grammar generate?",
+  "options": {
+   "A": "L((00)*0+(11)*1)",
+   "B": "L(0(11)*+1(00)*)",
+   "C": "L((00)*0)",
+   "D": "L(0(11)*1)"
+  },
+  "note": "grammar and options missing"
+ },
+ "46": {
+  "question": "Consider Σ={w,x} and T={x,y,z}.\nDefine homomorphism h by :\nh(x)=xzy\nh(w)=zxyy\nIf L is the regular language denoted by r=(w+x*)(ww)*, then the regular language h(L) is given by",
+  "options": {
+   "A": "(zxyy+xzy)(zxyy)",
+   "B": "(zxyy+(xzy)*)(zxyyzxyy)*",
+   "C": "(zxyy+xzy)(zxyy)*",
+   "D": "(zxyy+(xzy)*)(zxyyzxyy)"
+  },
+  "note": "homomorphism and options missing/merged"
+ },
+ "47": {
+  "question": "Consider the following statements with respect to the language L={a^n b^n | n≥0}\nS1 : L² is context free language\nS2 : L^k is conext-free language for any given k≥1\nS3 : L' (complement of L) and L* are context free languages\nWhich one of the following is correct?",
+  "options": {
+   "A": "only S1 and S2",
+   "B": "only S1 and S3",
+   "C": "only S2 and S3",
+   "D": "S1, S2 and S3"
+  },
+  "note": "language and S labels missing"
+ },
+ "48": {
+  "question": "Consider the following languages :\nL1={a^n b^n c^m} ∪ {a^n b^m c^m}, n,m≥0\nL2={w w^R | w ∈ {a,b}*} Where R represents reversible operation.\nWhich one of the following is (are) inherently ambiguous language(s)?",
+  "options": {
+   "A": "only L1",
+   "B": "only L2",
+   "C": "both L1 and L2",
+   "D": "neither L1 nor L2"
+  },
+  "note": "languages missing"
+ },
+ "49": {
+  "question": "Let G=(V, T, S, P) be any context-free grammar without any λ-productions or unit productions. Let K be the maximum number of symbols on the right of any production in P. The maximum number of production rules for any equivalent grammar in Chomsky normal form is given by:\nWhere |I| denotes the cardinality of the set.",
+  "options": {
+   "A": "(K−1)|P|+|T|−1",
+   "B": "(K−1)|P|+|T|",
+   "C": "K|P|+|T|−1",
+   "D": "K|P|+|T|"
+  },
+  "note": "options missing"
+ },
+ "50": {
+  "question": "Consider the following language families :\nL1 ≡ The context - free languages\nL2 ≡ The context - sensitive languages\nL3 ≡ The recursively enumerable languages\nL4 ≡ The recursive languages\nWhich one of the following options is correct?",
+  "options": {
+   "A": "L1 ⊆ L2 ⊆ L3 ⊆ L4",
+   "B": "L2 ⊆ L1 ⊆ L3 ⊆ L4",
+   "C": "L1 ⊆ L2 ⊆ L4 ⊆ L3",
+   "D": "L2 ⊆ L1 ⊆ L4 ⊆ L3"
+  },
+  "note": "options missing"
+ },
+ "51": {
+  "question": "Consider the following statements :\nS1 : These exists no algorithm for deciding if any two Turing machines M1 and M2 accept the same language.\nS2 : Let M1 and M2 be arbitrary Turing machines. The problem to determine L(M1) ⊆ L(M2) is undecidable.\nWhich of the statements is (are) correct?",
+  "options": {
+   "A": "Only S1",
+   "B": "Only S2",
+   "C": "Both S1 and S2",
+   "D": "Neither S1 nor S2"
+  },
+  "note": "S labels missing in stem and options"
+ },
+ "52": {
+  "question": "Let A={001,0011,11,101} and B={01,111,111,010}. Similarly, let C={00,001,1000} and D={0,11,011}.\nWhich of the following pairs have a post-correspondence solution?",
+  "options": {
+   "A": "Only pair (A,B)",
+   "B": "Only pair (C,D)",
+   "C": "Both (A,B) and (C,D)",
+   "D": "Neither (A,B) nor (C,D)"
+  },
+  "note": "sets and pair labels missing"
+ },
+ "56": {
+  "question": "A network with bandwidth of 10 Mbps can pass only an average of 12.000 frames per minute with each frame carrying an average of 10,000 bits. What is the throughput of this network?",
+  "options": {
+   "A": "1,000,000bps",
+   "B": "2,000,000bps",
+   "C": "12,000.000bps",
+   "D": "1,200,00,000bps"
+  },
+  "note": "options missing"
+ },
+ "58": {
+  "question": "According to Dempster-Shafer theory for uncertainty management,\nWhere Bel(A) denotes Belief of event A.",
+  "options": {
+   "A": "Bel(A)+Bel(¬A) ≤ 1",
+   "B": "Bel(A)+Bel(¬A) ≥ 1",
+   "C": "Bel(A)+Bel(¬A) = 1",
+   "D": "Bel(A)+Bel(¬A) = 0"
+  },
+  "note": "options missing"
+ },
+ "59": {
+  "question": "Consider the following statements:\nS1 : ∀xP(x) ∨ ∀xQ(x) and ∀x(P(x) ∨ Q(x)) are not logically equivalent.\nS2 : ∃xP(x) ∧ ∃xQ(x) and ∃x(P(x) ∧ Q(x)) are not logically equivalent\nWhich of the following statements is/are correct?",
+  "options": {
+   "A": "Only S1",
+   "B": "Only S2",
+   "C": "Both S1 and S2",
+   "D": "Neither S1 nor S2"
+  },
+  "note": "quantifiers and S labels missing"
+ },
+ "60": {
+  "question": "Consider the game tree given below\n[Figure: complete binary game tree with 16 leaves; levels from root: MAX (square), MIN (circle, 2 nodes), MAX (square, 4 nodes), MIN (circle, 8 nodes), MAX leaves (square). Leaf values shown, left to right: 17, 19, 16 (leaves 1-3), 111, 112 (leaves 5-6), 15 (leaf 9), 14 (leaf 11); other leaves unlabeled.]\nHere ○ and □ represent MIN and MAX nodes respectively. The value of the root node of the game tree is:",
+  "options": {
+   "A": "14",
+   "B": "17",
+   "C": "111",
+   "D": "112"
+  },
+  "note": "figure missing; node symbols lost"
+ },
+ "61": {
+  "question": "Consider the following models:\nM1: Mamdani model\nM2 : Takagi - Sugeno-Kang model\nM3: Kosko's additive model (SAM)\nWhich of the following option contains examples of additive rule model?",
+  "options": {
+   "A": "Only M1 and M2",
+   "B": "Only M2 and M3",
+   "C": "Only M1 and M3",
+   "D": "M1, M2, and M3"
+  },
+  "note": "M labels missing in options"
+ },
+ "62": {
+  "question": "A fuzzy conjunction operators, t(x,y), and a fuzzy disjunction operator, s(x,y), form a pair if they satisfy:\nt(x,y) = 1 − s(1−x, 1−y)\nIf t(x,y) = xy/(x+y−xy) then s(x,y) is given by",
+  "options": {
+   "A": "(x+y)/(1−xy)",
+   "B": "(x+y−2xy)/(1−xy)",
+   "C": "(x+y−xy)/(1−xy)",
+   "D": "(x+y−xy)/(1+xy)"
+  },
+  "note": "formulas and options missing"
+ },
+ "63": {
+  "question": "Let W_ij represents weight between node i at layer k and node j at layer (k−1) of a given multilayer perceptron. The weight updation using gradient descent method is given by",
+  "options": {
+   "A": "W_ij(t+1) = W_ij(t) + α ∂E/∂W_ij, 0 ≤ α ≤ 1",
+   "B": "W_ij(t+1) = W_ij(t) − α ∂E/∂W_ij, 0 ≤ α ≤ 1",
+   "C": "W_ij(t+1) = α ∂E/∂W_ij, 0 ≤ α ≤ 1",
+   "D": "W_ij(t+1) = −α ∂E/∂W_ij, 0 ≤ α ≤ 1"
+  },
+  "note": "formulas missing; option D polluted"
+ },
+ "65": {
+  "question": "Let the population of chromosomes in genetic algorithm is represented in terms of binary number. The strength of fitness of a chromosome in decimal form, x, is given by\nSf(x) = f(x)/Σf(x) where f(x) = x²\nThe population is given by P where:\nP={01101, 11000, 01000, 10011}\nThe strength of fitness of chromosome (11000) is -------------",
+  "options": {
+   "A": "24",
+   "B": "576",
+   "C": "14.4",
+   "D": "49.2"
+  },
+  "note": "formulas and population set garbled"
+ },
+ "66": {
+  "question": "Consider the following statements :\nS1 : If a group (G,*) is of order n, and a ∈ G is such that a^m = e for some integer m ≤ n, then m must divide n.\nS2 : If a group (G,*) is of even order, then there must be an element a ∈ G such that a ≠ e and a*a = e.\nWhich of the statements is (are) correct?",
+  "options": {
+   "A": "Only S1",
+   "B": "Only S2",
+   "C": "Both S1 and S2",
+   "D": "Neither S1 nor S2"
+  },
+  "note": "symbols and S labels missing"
+ },
+ "71": {
+  "question": "Which of the following statements are true\nregarding C ++ ?\n(a) Overloading gives the capability to an\nexisting operator to operate on other data types.\n(b) Inheritance in object oriented programming\nprovides support to reusability.\nx\nSf(x)=  where f(x)=f(x)\nΣf(x) x2\nP\nP={(01101,(11000),(01000),(10011)}\nS1 (G,*) a∈G\n=eam m≤n\nS2 (G,*)\na∈G a≠e\na*a=e\nS1\nS2\nS1 S2\nS1 S2\n(c) When object of a derived class is defined, first\nthe constructor of derived class is executed then\nconstructor of a base class is executed.\n(d) Overloading is a type of polymorphism.\nChoose the correct option from those given\nbelow :",
+  "options": {
+   "A": "(a) and (b) only",
+   "B": "(a), (b) and (c) only",
+   "C": "(a), (b) and (d) only",
+   "D": "(b), (c) and (d) only"
+  },
+  "note": "junk table markers removed from question"
+ },
+ "72": {
+  "question": "Which of the following are legal statements in C programming language?\n(a) int *P = &44;\n(b) int *P = &r;\n(c) int P = &a :\n(d) int P = a;\nChoose the correct option :",
+  "options": {
+   "A": "(a) and (b)",
+   "B": "(b) and (c)",
+   "C": "(b) and (d)",
+   "D": "(a) and (d)"
+  },
+  "note": "code in statements missing"
+ },
+ "73": {
+  "question": "Two concurrent executing transactions T1 and T2 are allowed to update same stock item say ' A ' in an uncontrolled manner. In such scenario, following problems may occur :\n(a) Dirty read problem\n(b) Lost update problem\n(c) Transaction failure\n(d) Inconsistent database state\nWhich of the following option is correct if database system has no concurrency module and allows concurrent execution of above two transactions?",
+  "options": {
+   "A": "(a), (b) and (c) only",
+   "B": "(c) and (d) only",
+   "C": "(a) and (b) only",
+   "D": "(a), (b) and (d) only"
+  },
+  "note": "T1 and T2 missing"
+ },
+ "75": {
+  "question": "The following multithreaded algorithm computes transpose of a matrix in parallel :\np Trans (X, Y, N)\nif N = 1\nthen Y[1,1] ← X[1,1]\nelse partition X into four (N/2) x (N/2) submatrices X11, X12, X21, X22\npartition Y into four (N/2) x (N/2) submatrices Y11, Y12, Y21, Y22\nspawn p Trans (X11, Y11, N/2)\nspawn p Trans (X12, Y12, N/2)\nspawn p Trans (X21, Y21, N/2)\nspawn p Trans (X22, Y22, N/2)\nWhat is the asymptotic parallelism of the algorithm?",
+  "options": {
+   "A": "T1/T∞ or θ(N²/lg N)",
+   "B": "T1/T∞ or θ(N/lg N)",
+   "C": "T1/T∞ or θ(lg N/N²)",
+   "D": "T1/T∞ or θ(lg N/N)"
+  },
+  "note": "options and symbols missing"
+ },
+ "76": {
+  "question": "Consider the following statements :\n(a) The running time of dynamic programming algorithm is alway θ(ρ) where ρ is number of subproblems.\n(b) When a recurrence relation has cyclic dependency, it is impossible to use that recurrence relation (unmodified) in a correct dynamic program.\n(c) For a dynamic programming algorithm, computing all values in a bottom-up fashion is asymptotically faster than using recursion and memorization.\n(d) If a problem X can be reduced to a known NP-hard problem, then X must be NP-hard.\nWhich of the statement(s) is (are) true?",
+  "options": {
+   "A": "Only (b) and (a)",
+   "B": "Only (b)",
+   "C": "Only (b) and (c)",
+   "D": "Only (b) and (d)"
+  },
+  "note": "option B polluted; symbols missing"
+ },
+ "82": {
+  "question": "Match List-I and List-II :\n|  | List I |  | List II |\n|---|---|---|---|\n| (a) | Physical layer | (i) | Provide token management service |\n| (b) | Transport layer | (ii) | Concerned with transmitting raw bits over a communication channel |\n| (c) | Session layer | (iii) | Concerned with the syntax and semantics of the information transmitted |\n| (d) | Presentation layer | (iv) | True end-to-end layer from source to destination |\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(ii), (b)-(iv), (c)-(iii), (d)-(i)",
+   "B": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+   "C": "(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)",
+   "D": "(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)"
+  },
+  "note": "table missing; option A polluted"
+ },
+ "83": {
+  "question": "According to the ISO-9126 Standard Quality Model, match the attributes given in List-I with their definitions in List-II :\n|  | List I |  | List II |\n|---|---|---|---|\n| (a) | Functionality | (i) | Relationship between layer of performance and amount of resources |\n| (b) | Reliability | (ii) | Characteristics related with achievement of purpose |\n| (c) | Efficiency | (iii) | Efforts needed to make for improvement |\n| (d) | Maintainability | (iv) | Capability of software to maintain performance of software |\nChoose the correct option from the ones given below :",
+  "options": {
+   "A": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+   "B": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)",
+   "C": "(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)",
+   "D": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)"
+  },
+  "note": "table missing"
+ },
+ "84": {
+  "question": "Match the Agile Process models with the task performed during the model :\n|  | List I |  | List II |\n|---|---|---|---|\n| (a) | Scrum | (i) | CRC crads |\n| (b) | Adaptive software development | (ii) | Sprint backlog |\n| (c) | Extreme programming | (iii) | the <by/for/of/to> a(n) |\n| (d) | Feature-driven development | (iv) | Time box release plan |\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)",
+   "B": "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+   "C": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)",
+   "D": "(a)-(i), (b)-(iv), (c)-(ii), (d)-(iii)"
+  },
+  "note": "table missing"
+ },
+ "85": {
+  "question": "Match List-I with List-II :\n|  | List I |  | List II |\n|---|---|---|---|\n| (a) | Frame attribute | (i) | to create link in HTML |\n| (b) | <tr> tag | (ii) | for vertical alignment of content in cell |\n| (c) | Valign attribute | (iii) | to enclose each row in table |\n| (d) | <a> tag | (iv) | to specify the side of the table frame that dispaly border |\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+   "B": "(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)",
+   "C": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+   "D": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)"
+  },
+  "note": "table missing"
+ },
+ "86": {
+  "question": "An instruction is stored at location 500 with its address field at location 501 . The address field has the value 400 . A processor register R1 contains the number 200. Match the addressing mode (List-I) given below with effective address (List-II) for the given instruction:\n|  | List I |  | List II |\n|---|---|---|---|\n| (a) | Direct | (i) | 200 |\n| (b) | Register indirect | (ii) | 902 |\n| (c) | Indec with R1 as the index register | (iii) | 400 |\n| (d) | Relative | (iv) | 600 |\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+   "B": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+   "C": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
+   "D": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)"
+  },
+  "note": "table split/missing"
+ },
+ "87": {
+  "question": "Match List-I and List-II :\n|  | List I |  | List II |\n|---|---|---|---|\n| (a) | Isolated I/O | (i) | same set of control signal for I/O and memory communication |\n| (b) | Memory mapped I/O | (ii) | separate instructions for I/O and memory communication |\n| (c) | I/O interface | (iii) | require control signals to be transmitted between the communicating units |\n| (d) | Asynchronous data transfer | (iv) | resolve the difference in central computer and peripherals |\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+   "B": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+   "C": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)",
+   "D": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)"
+  },
+  "note": "table missing"
+ },
+ "88": {
+  "question": "Match List-I with List-II :\n|  | List I |  | List II |\n|---|---|---|---|\n| (a) | Micro operation | (i) | Specify micro operations |\n| (b) | Micro programmed control unit | (ii) | Improve CPU utilization |\n| (c) | Interrupts | (iii) | Control Memory |\n| (d) | Micro instruction | (iv) | Elementary operation performed on data stored in register |\nChoose the correct option from those given below :",
+  "options": {
+   "A": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+   "B": "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)",
+   "C": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
+   "D": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)"
+  },
+  "note": "table missing"
+ },
+ "89": {
+  "question": "The sequence diagram given in Figure 1 for the Weather Information System takes place when an external system requests the summarized data from the weather station. The increasing order of lifeline for the objects in the system are:\n[Figure 1: UML sequence diagram. Actor Weather Information System; lifelines left to right: :Sat Comms, :Weather Station, :Commslink, :Weather Data. Messages in order: request (report) to Sat Comms; report weather() Sat Comms to Weather Station; get (summary) Weather Station to Commslink; Summarise() Commslink to Weather Data; then send (report) back to Sat Comms; reply (report); acknowledge.]",
+  "options": {
+   "A": "Sat comms → Weather station → Commslink → Weather data",
+   "B": "Sat comms → Comms link → Weather station → Weather data",
+   "C": "Weather data → Comms link → Weather station → Sat Comms",
+   "D": "Weather data → Weather station → Comms link → Sat Comms"
+  },
+  "note": "figure missing; option D empty/merged"
+ },
+ "90": {
+  "question": "The Data Encryption Standard (DES) has a\nfunction consists of four steps. Which of the\nfollowing is correct order of these four steps?",
+  "options": {
+   "A": "an expansion permutation, S-boxes, an XOR operation, a straight permutation",
+   "B": "an expansion permutation, an XOR operation, S-boxes, a straight permutation",
+   "C": "a straight permutation. S-boxes, an XOR operation, an expansion permutation",
+   "D": "a straight permutation, an XOR operation, S-boxes, an expansion permutation"
+  },
+  "note": "option D polluted with next passage text"
+ },
+ "95": {
+  "question": "A flow graph F with entry node (1) and exit node (11):\n[Figure: Flowgraph F. Nodes: 1, (2,3), (4,5), 6, 7, 8, 9, 10, 11. Edges: 1→(2,3); (2,3)→6; (2,3)→(4,5); 6→7; 6→8; 7→9; 8→9; 9→10; (4,5)→10; 10→1; 1→11.]\nHow many predicate nodes are there and what are their names?",
+  "options": {
+   "A": "Three : (1,(2,3),6)",
+   "B": "Three : (1,4,6)",
+   "C": "Four : ((2,3),6,10,11)",
+   "D": "Four : ((2,3),6,9,10)"
+  },
+  "note": "flowgraph and node names missing; options polluted"
+ },
+ "96": {
+  "question": "An organization needs to maintain database having five attributes A,B,C,D,E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :\nF:{A→BC, D→E, BC→D, A→D}.\nConsider a universal relation R(A,B,C,D,E) with functional dependency set F. Also all attributes are simple and take atomic values only.\nMinimal cover F′ of functional dependency set F is",
+  "options": {
+   "A": "F′={A→B, A→C, BC→D, D→E}",
+   "B": "F′={A→BC, B→D, D→E}",
+   "C": "F′={A→B, A→C, A→D, D→E}",
+   "D": "F′={A→B, A→C, B→D, C→D, D→E}"
+  },
+  "note": "options and passage missing"
+ },
+ "97": {
+  "question": "An organization needs to maintain database having five attributes A,B,C,D,E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :\nF:{A→BC, D→E, BC→D, A→D}.\nConsider a universal relation R(A,B,C,D,E) with functional dependency set F. Also all attributes are simple and take atomic values only.\nIdentify primary key of table R with functional dependency set F",
+  "options": {
+   "A": "BC",
+   "B": "AD",
+   "C": "A",
+   "D": "AB"
+  },
+  "note": "options and passage missing"
+ },
+ "99": {
+  "question": "An organization needs to maintain database having five attributes A,B,C,D,E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :\nF:{A→BC, D→E, BC→D, A→D}.\nConsider a universal relation R(A,B,C,D,E) with functional dependency set F. Also all attributes are simple and take atomic values only.\nIdentify the redundant functional dependency in F",
+  "options": {
+   "A": "BC→D",
+   "B": "D→E",
+   "C": "A→D",
+   "D": "A→BC"
+  },
+  "note": "options and passage missing"
+ },
+ "100": {
+  "question": "Assume that given table R is decomposed in two tables R1(A,B,C) with functional dependency set f1={A→B, A→C} and R2(A,D,E) with FD set F2={A→D, D→E}.\nWhich of the following option is true w.r.t. given decomposition?",
+  "options": {
+   "A": "Dependency preservation property is followed",
+   "B": "R1 and R2 are both in 2NF",
+   "C": "R2 is in 2NF and R3 is in 3NF",
+   "D": "R1 is in 3NF and R2 is in 2NF"
+  },
+  "note": "symbols missing; option D polluted"
+ }
+}
