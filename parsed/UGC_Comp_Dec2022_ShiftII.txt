@@ -1,0 +1,955 @@
+## 1
+The negation of "Some students like hockey" is:
+§A Some students dislike hockey
+§B Every student dislike hockey
+§C Every student like hockey
+§D All students like hockey
+## 2
+A relation ' R ' is defined on ordered pairs of integers as (x, y) R(u, v) if x<u and y>v. Then R is
+§A Neither a partial order nor an equivalence relation
+§B A partial order but not a total order
+§C A total order
+§D An equivalence relation
+## 3
+Suppose you are married and you and your partner attend a party with three other married couples. Several handshakes took place. No one shook hands with himself (or herself) or with their partner, and no one shook hands with the same person more than once. After all handshaking was completed, suppose you asked each person, including your partner, how many hands they had shaken. Each person gave a different answer. How many hands did your spouse shake?
+§A 1
+§B 2
+§C 3
+§D 4
+## 4
+Consider the following conditional code, which returns a Boolean values
+```
+if((x>25) && (y>100))
+    return 'false';
+else if((x<=25) && (y<=100))
+    return 'true';
+else if ((x>25) && (y<=100))
+    return 'false';
+else
+    return 'true';
+```
+Simplify it by filling in the following blank with a single Boolean expression without changing the behaviour of the conditional code.
+```
+if ( ----------- )
+    return 'true';
+else
+    return 'false';
+```
+§A x>25
+§B x <= 25
+§C y>100
+§D y<=100
+## 5
+Which one of the following types of memory is the fastest?
+§A Cache Memory
+§B Register Memory
+§C Main Memory
+§D Secondary Memory
+## 6
+The memory size for n address lines and m data lines is given by
+§A 2^m x n
+§B m x n²
+§C 2^n x m
+§D n x m²
+## 7
+Simplify the following using K-Map
+F(A, B, C, D) = Σ(0,2,5,7,8,10,13,15)
+§A BD+B'D'
+§B AC+A'C'
+§C BC+B'C'
+§D AD+A'D'
+## 8
+Consider an unpipelined machine with 10 nsec clock cycles which uses four cycles for ALU operations and branches where as five cycles for memory operation. Assume that the relative frequencies of these operations are: 40 %, 20 % and 40 %, respectively. Due to clock skew and setup pipeline let us consider that the machine adds one nsec overhead to the clock. How much speedup is observed in the instruction execution rate when a pipelined machine is considered?
+§A 2 times
+§B 4 times
+§C 6 times
+§D 8 times
+## 9
+Machine Level Language is a/an
+§A Assembly Language
+§B Low-Level language
+§C High-level Language
+§D Translating Language
+## 10
+Which of the following is wrong about the data types?
+§A The number is always positive when qualifier 'unsigned' is used.
+§B The number can be positive or negative when the qualifier 'signed' is used
+§C The range of values for signed data types is more than that of unsigned data types
+§D The left most bit in unsigned data type is used to represent the value
+## 11
+If a constructor 'Date' is declared explicitly and has to be defined outside the class, which of the following is correct?
+§A Date::Date(int dd) {/* ... */}
+§B explicit Date:: Date(int dd) {/* ... */}
+§C Such a constructor cannot be defined
+§D Constructor always has to be defined inside the class
+## 12
+Which one of the following allows the session to continue?
+§A When a user quits a browser
+§B When the user logs out and is invalidated by the servlet
+§C When the session is timed out due to inactivity
+§D When the user refreshes the browser and there is a persistent cookie
+## 13
+Overfitting is expected when we observe that?
+§A With training iterations errors on the training set as well as the test set decrease
+§B With training iterations error on the training set decreases but the test set increases
+§C With training iterations errors on the training set as well as the test set increase
+§D With training iterations training set as well as test error remain constant
+## 14
+Identify the incorrect statement(s).
+§A A candidate key is minimal set of one or more attributes that, taken collectively, allows us to uniquely identify any entity in the entity set.
+§B A candidate key for which no proper subset is also a candidate key is called a super key.
+§C A super key is a set of one or more attributes that, taken collectively, allows us to uniquely identify any entity in the entity set.
+§D A super key for which no proper subset is also a super key is called a candidate key.
+## 15
+Consider the two relations below. The primary keys are underlined. Identify all possible foreign key(s) from the options based only on the two relations.
+EMP (eid, ename, did) (primary key: eid)
+DEPT (did, dname) (primary key: did)
+§A eid
+§B did
+§C eid, did
+§D eid, did, ename
+## 16
+Which of the following statements is correct, according to the following instance of the relational schema R(X, Y, Z)?
+X | Y | Z
+1 | 1 | a
+1 | 1 | a
+2 | 1 | b
+3 | 2 | b
+§A X → Y, Z → X
+§B Y → Z, Z → X
+§C X → Y, X → Z
+§D Y → X, X → Z
+## 17
+In Linux Operating System, when __________ is invoked, it is passed a set of flags that determine how much sharing is to take place between the parent and child tasks.
+§A fork()
+§B clone()
+§C pthread()
+§D thread()
+## 18
+The main function of the microkernel is to provide a communication facility between the __________program and the various _____ that are also running in user space.
+§A Virtual, Processes
+§B System, Processes
+§C Client, Services
+§D Virtual, Services
+## 19
+Consider an operating system capable of loading and executing a single sequential user process at a time. The disk head scheduling algorithm used is first come first served (FCFS). If FCFS is replaced by shortest seek time first (SSTF) and the vendor claims 50 % better benchmark results. What is the expected improvement in the I/O performance of user programs?
+§A 50%
+§B 100%
+§C 25%
+§D 0%
+## 20
+For the following set of processes scheduled using FCFS policy, determine the average waiting time. Assume that the processes arrived in the order P1, P2, P3, P4.
+Process | Burst Time
+P1 | 8
+P2 | 15
+P3 | 10
+P4 | 7
+§A 8
+§B 16
+§C 32
+§D 48
+## 21
+Which of the following is not a Non-functional requirement?
+§A Portability.
+§B Security.
+§C Scalability
+§D User interaction
+## 22
+COCOMO stands for-
+§A Consumed cost model
+§B Constructive cost model
+§C Common control model
+§D Composition cost model
+## 23
+Modifying the software to match changes in the ever-changing environment is called as
+§A Adaptive maintenance
+§B Corrective maintenance
+§C Perfective maintenance
+§D Preventive maintenance
+## 24
+For a function of two variables, boundary value analysis yields,
+§A 4 n+3 test cases
+§B 4 n+1 test cases
+§C n+4 test cases
+§D 2 n+4 test cases
+## 25
+How many different binary trees are possible with ' n ' nodes?
+§A n-1
+§B 2ⁿ-1
+§C 2ⁿ
+§D (1/(n+1)) · C(2n, n)
+## 26
+Let ' n ' denote a positive integer. Suppose a function F is defined as
+f(n) = 0 , if n = 1
+f(n) = f(⌊n/2⌋) + 1 , if n > 1
+What is f(25)? and what does this function find?
+§A 4, ⌊log₂ n⌋
+§B 14, ⌊log₂ n⌋
+§C 4, ⌊n/2⌋
+§D 14, ⌊n/2⌋
+## 27
+Given the FFT we can have _____ time procedure for multiplying two polynomials A(x) and B(x) of degree bound n where input and output representations are in coefficient form, assuming n is a power of 2.
+§A O(n²)
+§B O(n log₂ n)
+§C O(2ⁿ)
+§D O(log₂ n)
+## 28
+Consider the Graph below:
+[Figure: undirected graph with 4 vertices. Three vertices u, v, w are in a row at the top and one vertex x is at the bottom. Edges: u-v, v-w, u-x, v-x, w-x.]
+How many spanning trees can be found?
+§A 10
+§B 5
+§C 9
+§D 8
+## 29
+The transition function ' δ ' in multi-tape Turing machine is defined as:
+§A δ : 2^Q × Γ^k → 2^Q × Γ^k × {L, R, S}^k
+§B δ : Q × Q × Γ^k → Q × Q × Q × Γ^k × {L, R, S}^k
+§C δ : Q × Γ^k → Q × Γ^k × {L, R, S}^k
+§D δ : Q × Γ^k × 2^Q → Q × Γ^k × 2^Q × {L, R, S}^k
+## 30
+In Pumping Lemma for regular languages, to say a language is satistying pumping lemma, what is the minimum length of ' y ' if you consider the string as ' x y z '?
+§A n
+§B 2
+§C 1
+§D 0
+## 31
+The item generated by the production A →∈ is :
+§A A → ·
+§B A → ∈·
+§C A → ·∈
+§D A → ∈
+## 32
+In the ∈-NFA, M=({q0, q1, q2, q3},{a}, δ, q0, {q3}) where ' δ ' is given in the transition table below, what is the minimum length of string to reach to the final state?
+ | ∈ | a
+q0 | {q1} | { }
+q1 | {q2} | { }
+q2 | { } | {q2, q3}
+q3 | { } | { }
+§A 0
+§B 1
+§C 2
+§D 3
+## 33
+Given Ethernet address
+010110100001000101010101000110001010101000001111
+in binary, what is the address in hexadecimal notation?
+§A 5A:88:AA:18:55:F0
+§B 5A: 81: BA: 81: AA: 08
+§C 5 A: 18: 5A:18: 55: 0F
+§D 5A:11:55:18:AA:0F
+## 34
+A Computer on a 10Mbps network is regulated by a token bucket. The token bucket is filled at a rate of 2 Mbps. It is initially filled to capacity with 16 megabits. What is the maximum duration for which the computer can transmit at the full 10 Mbps ?
+§A 1.6 seconds
+§B 2 seconds
+§C 5 seconds
+§D 8 seconds
+## 35
+In the standard Ethernet with transmission rate of 10 Mbps, assume that the length of the medium is 2500 m and size of a frame is 512 bytes. The propagation speed of a signal in a cable is normally 2 *10⁸ m /s. Calculate Transmission delay and propagation delay.
+§A 25.25 μs and 51.2 μs
+§B 51.2 μs and 12.5 μs
+§C 10.24 μs and 50.12 μs
+§D 12.5 μs and 51.2 μs
+## 36
+In CRC coding if the data word is 111111 , divisor is 1010 and the remainder is 110 . Which of the following code is true?
+§A 011111101
+§B 001010110
+§C 111111110
+§D 110111111
+## 37
+The A* algorithm is optimal when,
+§A It always finds the solution with the lowest total cost if the heuristic 'h' is admissible.
+§B Always finds the solution with the highest total cost if the heuristic 'h' is admissible.
+§C Finds the solution with the lowest total cost if the heuristic 'h' is not admissible.
+§D It always finds the solution with the highest total cost if the heuristic 'h' is not admissible.
+## 38
+Which Artificial intelligence technique enables computers to understand the associations and relationships between objects & Events?
+§A Heuristic Processing
+§B Cognitive Science
+§C Relative symbolism
+§D Pattern Matching
+## 39
+Where does the values of alpha-beta search get updated?
+§A Along the path of search.
+§B Initial state itself.
+§C At the end.
+§D None of these.
+## 40
+A 4-input neuron has weights 1,2,3,4. The transfer function is linear with the constant of proportionality being equal to 3. The inputs are 5,7,10,30, respectively
+Then the output will be
+§A 120
+§B 213
+§C 410
+§D 507
+## 41
+Consider the following statements:
+P: There exists no simple, undirected and connected graph with 80 vertices and 77 edges.
+Q: All vertices of Euler graph are of even degree.
+R: Every simple, undirected, connected and acyclic graph with 50 vertices has at least two vertices of degree one.
+S : There exits a bipartite graph with more than ten vertices which are 2-colorable.
+What is the number of correct statements among the above statements?
+§A 1
+§B 2
+§C 3
+§D 4
+## 42
+Consider the following statements:
+A. There exists a Boolean algebra with ' 5 ' elements.
+B. Every element of Boolean algebra has a unique complement.
+C. If a Lattice ' L ' is a Boolean algebra then ' L ' is not relatively complemented.
+D. The direct product of two Boolean Algebras is also a Boolean algebra.
+Choose the correct answer about the four statements given above.
+§A Only A and D are correct
+§B Only B and D are correct
+§C All statements are NOT correct
+§D All statements are correct
+## 43
+Which of the statement is not true in regards to virtual memory?
+§A The main objective for using virtual memory is to increase the effective capacity of the memory system
+§B Size of the program can be as large as the size of the secondary memory
+§C Program and data are stored in the secondary memory
+§D None of these
+## 44
+Which of the following is/are true for Dynamic RAM (DRAM)?
+1. It is slower than static RAM(SRAM)
+2. Packing Density is higher than Static RAM (SRAM)
+3. It is faster than static RAM(SRAM)
+4. It requires data refreshing
+Choose the correct answer from the options given below:
+§A 1, 2, and 4 Only
+§B 1, 2, and 3 Only
+§C 3 and 4 Only
+§D 2 and 4 Only
+## 45
+Which of the following statement is/are false?
+1. The processor has direct access to both primary and secondary memory
+2. Primary memory stores the active instructions and data for the program being executed on the process
+3. Secondary memory is used as a backup memory
+4. Memory system is implemented on a single-level memory
+Choose the correct answer from the options given below:
+§A 1 and 2 only
+§B 2 and 3 only
+§C 1, 2 and 3 only
+§D 1 and 4 only
+## 46
+Given a vector with cartesian components (x,y), if scaling is done with matrix [[0.5, 0], [0, 1.5]], which of the following are true.
+1. Decreases the vertical by three halves
+2. Increases the vertical by three halves
+3. Doubles the horizontal
+4. Halves the horizontal
+Choose the correct answer from the options given below:
+§A 1 and 3 only
+§B 1 and 4 only
+§C 2 and 3 only
+§D 2 and 4 only
+## 47
+Which of the following lists defined in HTML share a similar element
+1. Unordered lists
+2. Ordered lists
+3. Definition Lists
+4. Correlated lists
+5. Enumerated lists
+Choose the most appropriate answer from the options given below:
+§A 1, 2 only
+§B 1, 3, 5 only
+§C 1, 2, 3 only
+§D 1, 3, 4 only
+## 48
+What are the drawbacks of using file systems to store data?
+1. Data inconsistency
+2. Difficulty in accessing data
+3. Data isolation
+4. Atomicity of updates
+Choose the correct answer from the options given below:
+§A 1,2 only
+§B 2,3,4 only
+§C 1,2,3 only
+§D 1,2,3,4
+## 49
+Which of the following database model, we have a parent-child relationship?
+1. hierarchical databases
+2. network databases
+3. relational databases
+Choose the correct answer from the options below:
+§A 1,2
+§B 1,3
+§C 2,3
+§D 1,2,3
+## 50
+Identify the correct operation that produces the below-given output based on two relations R1 and R2.
+R1
+Name | Class
+a1 | 9
+b1 | 5
+c1 | 6
+d1 | 11
+R2
+Name | Class
+b1 | 5
+f1 | 8
+Output:
+Name | Class
+b1 | 5
+Choose the correct answer from the options below:
+§A R1∩R2
+§B R1-R2
+§C R1-(R1-R2)
+§D R1 U R2
+## 51
+Which of the following statements are true?
+1. Shortest remaining time first scheduling may cause starvation
+2. Preemptive scheduling may cause starvation
+3. Round robin is better than FCFS in terms of response time
+Choose the correct answer from the options given below:
+§A 1 only
+§B 2,3 only
+§C 1,2 only
+§D 1,2,3
+## 52
+In the design protocol of the critical section problem, each process must ask permission to enter the critical section in ______ code; it then executes in the critical section; once it finishes executing in the critical section it enters the _____ code. The process then enters the _____ code.
+§A entry section, remainder section, exit section
+§B entry section, exit section, remainder section
+§C remainder section, entry section, exit section
+§D remainder section, exit section, entry section
+## 53
+How do you create agile processes to manage unpredictability?
+1. Requirements gathering must be conducted very carefully.
+2. Risk analysis must be conducted before planning takes place.
+3. Software increments must be delivered in short time periods.
+4. Software processes must not adapt to changes incrementally.
+Choose the correct answer from the options given below:
+§A 1 only
+§B 2 only
+§C 3 only
+§D 4 only
+## 54
+Software project manager is responsible for the following tasks:
+A. Project Planning
+B. Project status tracking
+C. Resource management
+D. Risk management
+E. Project delivery within time & budget.
+Choose the correct answer from the options given below:
+§A All the statements are correct.
+§B Only B & C are correct.
+§C Only A & D are correct
+§D All the statements are not correct.
+## 55
+Mr. X designed open source software which must comply with some criteria. Choose the false statement in respect of the above.
+1. No restriction on redistribution of the software as part or whole.
+2. The integrity of the author's source code must be maintained.
+3. The software can be sold after distribution.
+Choose the correct answer from the options given below:
+§A 1 only
+§B 2 only
+§C 3 only
+§D All statements are true.
+## 56
+Circuit satisfiability problem: Given a Boolean combinatorial circuit composed of AND, OR, and NOT gates, is it satisfiable? A one-output Boolean combinatorial circuit is satisfiable means for the given inputs the output will be 1.
+1. The circuit satisfiability problem belongs to class NP
+2. The circuit satisfiability problem is at least as hard as any language in NP
+3. The circuit satisfiability is NP-Complete
+4. The size of the circuit is θ(K²+1)
+5. If P≠NP, this situation would contradict the NP-Completeness of the problem.
+Choose the correct answer from the options given below:
+§A 1, 3, 4 Only
+§B 2, 4, 5 Only
+§C 1, 2, 3 Only
+§D 2, 3, 4 Only
+## 57
+Given an expression
+(A+B *D)/(E-F)+G
+1. The prefix notation is +/+A* DB-EFG
+2. The prefix expression is the reverse of the postfix expression
+3. The order of operands in infix expression and postfix expression are the same.
+4. The order of operands in infix expression, prefix expression, and postfix expression are the same.
+Choose the most appropriate answer from the options given below:
+§A 1, 3, and 4 Only
+§B 3 and 4 Only
+§C 1 and 2 Only
+§D 1 and 4 Only
+## 58
+Which of the following is (are) correct about the regular expression?
+a a* b b* c c* d d*
+1. The language for the given expression is:
+L = {aⁿbⁿcᵐdᵐ | n ≥ 1, m ≥ 1} ∪ {aⁿbᵐcᵐdⁿ | n ≥ 1, m ≥ 1}
+2. The Context Free Language for the given expression is:
+S → AB|C
+A → aAb|ab
+B → cBd|cd
+C → aCd|aDd
+D → bDc|bc
+3. The language generated by this expression is equal number of 'a's, followed by equal number of 'b's, followed by equal number of 'c's and followed by equal number of 'd's.
+Choose the correct answer from the options given below:
+§A Only 1 is correct
+§B Only 2 is correct
+§C Both 1 and 2 are correct
+§D All the three 1, 2 and 3 are correct
+## 59
+Which of the following statements are correct?
+1. The first three-address instruction in the intermediate code is a leader.
+2. The instruction which is exactly at the middle of the given three address code is a leader.
+3. Any instruction that is the target of a conditional or unconditional jump is a leader.
+4. Any instruction that immediately follows a conditional or unconditional jump is a leader.
+Choose the correct answer from the options given below:
+§A 1, 2 and 3
+§B 2, 3 and 4
+§C 1,3,4
+§D 1,2,3,4
+## 60
+Which of the following are correct on regular expressions?
+a. φ + L = L + φ = L
+b. εL = Lε = L
+c. φL = L φ = φ
+d. φL = Lφ = L
+Choose the correct answer from the options given below:
+§A a, b and d only
+§B a, b and c only
+§C b and d only
+§D a and d only
+## 61
+Consider two hosts P and Q are connected through a router R. The maximum transfer unit (MTU) value of the link between P and R is 1500 bytes and between R and Q is 820 bytes. A TCP segment of size 1400 bytes is transferred from P to Q through R with IP identification value of 0x1234. Assume that IP header size is 20 bytes. Further, the packet is allowed to be fragmented that is Don't Fragment (DF) flag in the IP Header is not set by P. Which of the following statements is/are true
+I. Two fragments are created at R and IP datagram size carrying the second fragment is 620 bytes
+II. If the second fragment is lost then R resends the fragment with IP Identification value of 0x1234
+III. If the second fragment is lost then P is required to resend the entire TCP segment
+IV. TCP destination port can be determined by analyzing the second fragment only
+Choose the correct answer from the options given below:
+§A I, II, and III only
+§B I and III only
+§C III and IV only
+§D II and IV only
+## 62
+The Solution to Silly Window Syndrome problem is/are:
+I. Nagle's Algorithm
+II. Clark's Algorithm
+III. Jacobson's Algorithm
+IV. Piggy backing Algorithm
+Choose the correct answer from the options given below:
+§A I and II only
+§B I and III only
+§C III and IV only
+§D II and IV only
+## 63
+Which AI System mimics the evolutionary process to generate increasingly better solutions to a problem?
+I. Self organizing neural network.
+II. Back propagation neural network.
+III. Genetic algorithm.
+IV. Forward propagation neural network.
+Choose the correct answer from the options given below:
+§A I only
+§B II only
+§C III only
+§D IV only
+## 64
+Consider the following Learning algorithms.
+I. Logistic regression.
+II. Back propagation.
+III. Linear regression.
+IV. Forward propagation.
+Which of the following options represents classification algorithm?
+Choose the correct answer from the options given below:
+§A I and III only
+§B II and IV only
+§C I and II only
+§D III and IV only
+## 65
+Which Boolean operation on two variables can be represented by a single perception layer?
+I. X1 AND X2
+II. X1 OR X2
+III. X1 NOR X2
+IV. X1 XOR X2
+Choose the most appropriate answer from the options given below:
+§A I and II only
+§B II and III only
+§C I, II, and III only
+§D I,II,III, and IV only
+## 66
+Match the List-I and List-II
+List-I | List-II
+a. Planner Graph | I. Probabilistic Model
+b. Bipartite Graph | II. Deterministic Model
+c. PERT | III. 4-Colorable
+d. CPM | IV. 2-Colorable
+Choose the correct answer from the options given below:
+§A a-IV; b-III; c-I; d-II
+§B a-III; b-IV; c-II; d-I
+§C a-II; b-IV; c-I; d-III
+§D a-III; b-IV; c-I; d-II
+## 67
+Match List-I and List-II
+List-I | List-II
+a. Direct Addressing | I. MVI A, FFH
+b. indirect addressing | II. MOV A, B
+c. Register Addressing | III. STA, FFFFA
+d. Immediate addressing | IV. MOV A, M
+Choose the correct answer from the options given below:
+§A a-I, b-II, c-III, d-IV
+§B a-II, b-III, c-IV, d-I
+§C a-III, b-IV, c-II, d-I
+§D a-IV, b-III, c-I, d-II
+## 68
+Match the List-I and List-II
+List-I | List-II
+a. If the implementation of generated or derived classes differs only through a parameter we have | I. to use class hierarchy
+b. If the actual types of objects used cannot be known at compile time, then we have | II. improved run-time efficiency
+c. If inline operations are essential and templates are used then we have | III. to use templates
+d. To gain access to differing instances for derived classes through base we have | IV. to use explicit casting
+Choose the correct answer from the options given below:
+§A a-I, b-II, c-IV, d-III
+§B a-III, b-I, c-II, d-IV
+§C a-I, b-III, c-II, d-IV
+§D a-II, b-I, c-III, d-IV
+## 69
+Match List I and List II
+List-I | List-II
+a. Apache Kafka | I. Platform for constructing data flows for extract, transform, and load (ETL) processing and analysis of large datasets
+b. Pig | II. General-purpose computing model and runtime system for distributed data analytics.
+c. Apache Mahout | III. Open-source platform that was created by Linkedin
+d. Mapreduce | IV. Open-source platform used for creating scalable machine learning algorithms
+Choose the correct answer from the options given below:
+§A a-II, b-IV, c-I, d-III
+§B a-II, b-I, c-IV, d-III
+§C a-III, b-I, c-IV, d-II
+§D a-I, b-II, c-IV, d-III
+## 70
+Match List I with List-II
+List-I | List-II
+a. IPC | I. Resource Allocation
+b. Demand Paging | II. Computational speedup
+c. Banker's Algorithm | III. Task Control Block
+d. PCB | IV. Virtual Memory
+Choose the correct answer from the options given below:
+§A a-II, b-I, c-IV, d-III
+§B a-II, b-IV, c-I, d-III
+§C a-I, b-II, c-III, d-IV
+§D a-II, b-III, c-I, d-IV
+## 71
+Match List I with List II
+List-I | List-II
+a. Product Complexity | I. System Requirements Design
+b. Structured System analysis | II. Software design
+c. Coupling & Cohesion | III. Validation techniques
+d. Symbolic Execution | IV. Software cost estimation
+Choose the correct answer from the options given below:
+§A a-II, b-III, c-IV, d-I
+§B a-III, b-I, c-IV, d-II
+§C a-IV, b-I, c-II, d-III
+§D a-III, b-IV, c-I, d-II
+## 72
+Match List I with List II
+List-I | List-II
+a. Dijkstra's Algorithm | I. Calculates path matrix
+b. Prim's Algorithm | II. Stores minimum cost edge
+c. Warshall's Algorithm | III. Stores the total cost from a source node to the current node
+d. Kruskal's algorithm | IV. Finds Minimum Spanning Tree
+Choose the correct answer from the options given below:
+§A a-I, b-II, c-III, d-IV
+§B a-III, b-II, c-I, d-IV
+§C a-II, b-I, c-IV, d-III
+§D a-III, b-IV, c-II, d-I
+## 73
+Match the following based on the language accepted by using brute force method of parsing.
+List-I | List-II
+a. S → aSa|aa | I. ((2ⁿ *3)-4); n>=1
+b. S → aaSaa|aa | II. 2ⁿ ; n>=1
+c. S → aaaSaaa|aa | III. ((4*2ⁿ)-6); n>=1
+d. S → aaaaSaaaa|aa | IV. 2ⁿ - 2; n>=2
+Choose the correct answer from the options given below:
+§A a-IV, b-III , c-I, d-II
+§B a-II, b-IV, c-I, d-III
+§C a-I, b-IV, c-III, d-II
+§D a-II, b-III, c-I, d-IV
+## 74
+Match List I with List II
+List-I | List-II
+a. CDMA | I. It provides mobile internet connection with faster data transfer rates
+b. GSM | II. It allows users to connect to a network or to other devices over wireless channel
+c. UMTS | III. Accessing mechanism for multiple transmitters over a single channel
+d. WiFi | IV. It is cellular technology employs hybrid of FDMA and TDMA
+Choose the correct answer from the options given below:
+§A a-III, b-IV, c-II, d-I
+§B a-III, b-IV, c-I, d-II
+§C a-II, b-III, c-IV, d-I
+§D a-II, b-I, c-IV, d-III
+## 75
+Match List I with List II
+List-I | List-II
+a. Text planning | I. Natural language understanding
+b. Sentence planning | II. Natural language generation
+c. Sentence generation |
+d. Map the input to useful representations |
+Choose the correct answer from the options given below:
+§A a-I, b-II, c-I, d-II
+§B a-II, b-II, c-I, d-I
+§C a-I, b-II, c-II, d-I
+§D a-II, b-II, c-II, d-I
+## 76
+Consider the statements:
+I. There does not exist a polynomial time algorithm to solve integer linear programming problems.
+II. Main focus of PERT is 'minimizing time'.
+Choose the correct option about statements I and II.
+§A I is True; II is True
+§B I is True; II is False
+§C I is False; II is True
+§D I is False; II is False
+## 77
+The correct sequence in the fetch-execute cycle is _______ .
+I. Decode
+II. Fetch
+III. Execute
+Chose the correct answer from the following
+§A I-II-III
+§B II-III-I
+§C III-II-I
+§D II-I-III
+## 78
+In what sequence the initialization, testing and execution of body is done while using do-while loop?
+I. Commenting
+II. Execution of the body
+III. Initialisation
+IV. Testing the condition
+Choose the correct answer from the following
+§A IV, II, III
+§B IV, III, II
+§C III, I, II
+§D III, II, IV
+## 79
+Select the correct order of DBSCAN algorithm.
+I. Find recursively all its density-connected points and assign them to the same cluster as the core point.
+II. Find all the neighbor points with EPS and identify the core points with more than MinPts neighbors.
+III. Iterate through the remaining unvisited points in the dataset.
+IV. For each core point if it is not already assigned to a cluster, create a new cluster.
+Choose the correct answer from the following :
+§A II, IV, III, I
+§B IV, II, III, I
+§C II, IV, I, III
+§D IV, II, I, III
+## 80
+Select the correct order of events after power is initialized on a system.
+I. Bootstrap loader is loaded from the disk
+II. Kernel is loaded onto the memory
+III. Firmware ROM loads boot block
+Choose the correct answer from the options given below:
+§A II, III, and I
+§B III, I, and II
+§C I, II, and III
+§D I, III, and II
+## 81
+Given below are two statements: one is labeled as Assertion A and the other is labeled as Reason R.
+Assertion A: Cohesion is a qualitative indication of the degree to which a module can be written more compactly and is able to complete its function in a timely manner.
+Reason R: Cohesion is a qualitative indication of the degree to which a module is connected to other modules and the outside world.
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both A and R are correct and R is the correct explanation of A.
+§B Both A and R are correct but R is NOT the correct explanation of A.
+§C A is correct but R is not correct.
+§D A is not correct but R is correct.
+## 82
+Given the graph below one of the following edges cannot be added in that order to find a minimum spanning tree algorithm.
+[Figure: weighted undirected graph on vertices a, b, c, d, e, f. Edges: a-b = 1, a-c = 6, b-c = 3, b-d = 4, b-f = 2 (curved edge), c-d = 2, c-e = 4, c-f = 7 (curved edge), d-e = 3, d-f = 1, e-f = 5.]
+I. a-b
+II. d-f
+III. b-f
+IV. d-c
+V. d-e
+Choose the correct answer from the options given below:
+§A I, II , III, IV,V
+§B I, II, IV, III, V
+§C II, I, III, V, IV
+§D II, I, IV, III, V
+## 83
+What is the safest order while simplifying Context Free Grammar?
+§A Elimination of ∈-productions, Unit productions, and Useless symbols & productions.
+§B Elimination of useless symbols productions, ∈-productions, and then Unit productions.
+§C Elimination of Unit productions, ∈-productions and then Useless symbols and productions.
+§D Elimination of ∈-productions, Useless symbols and productions, and then Unit productions.
+## 84
+Rearrange the following sequence in the context of OSI Layers:
+I. Transforming the raw bits in the form of frame for transmission
+II. Transmission of raw bits over communication channel
+III. Handling user interfaces
+IV. Control and monitoring of subnet
+V. Transmission data through connection oriented or connection less using datagrams
+Choose the correct answer from the options given below:
+§A I-II-III-IV-V
+§B II-III-IV-V-I
+§C II-I-IV-V-III
+§D I-II-IV-V-III
+## 85
+Choose the correct option describing the features of Artificial neural network
+I. It is essentially machine learning algorithm.
+II. It is useful when solving the problems for which the data set is very large.
+III. They are able to extract features without input from the programmer.
+Iv. These are systems modeled on the human brain and nervous system
+Choose the correct answer from the options given below:
+§A All the statements are correct.
+§B Only II & III are correct.
+§C Only I & IV are correct.
+§D All the statements are not correct.
+## 86
+Four persons: P, Q, R and S are in police custody and one of them has committed a crime. They confess as follows:
+A. Person P: Q did it.
+B. Person Q: S did it.
+C. Person R: I did not do it.
+D. Person S: Q lied.
+If exactly one of the statements is false, which of the following is the guilty person.
+§A P
+§B Q
+§C R
+§D S
+## 87
+Assertion A:
+A Raster scan device is a CRT graphic device and can use a television monitor for display
+Reason R:
+In Raster scan display the picture is composed of a series of dots. These dots are traced out as a series of horizontal lines. Television works in a similar fashion.
+In the light of the above statements, choose the correct answer from the options given below:
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is not the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 88
+An OS follows round-robin scheduling with time quantum of 4 ms. Assuming that the CPU is free now and there are 20 processes waiting in the ready queue, the maximum amount of time that a process waits before getting into the CPU is ______.
+§A 80 ms
+§B 76 ms
+§C 84 ms
+§D None of the above
+## 89
+Statement 1:
+Given a graph G=(V, E) in which each vertex v ∈ V has an associated positive weight w(v), we can use linear programming to find the lower bound on the weight of the minimum-weight vertex cover.
+Statement 2 :
+The lower bound can be found by maximizing the following
+Σ (v∈V) w(v)x(v)
+subject to
+x(u) + x(v) ≥ 1 for each (u, v) ∈ E
+x(v) ≤ 1 for each v ∈ V
+x(v) ≥ 0 for each v ∈ V
+In the light of the above statements, choose the most appropriate answer from the options given below:
+§A Both statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect and Statement II is correct
+## 90
+A TCP Server application is programmed to listen on port P on Host S. A TCP Client is connected to the TCP Server over the network. Considered that while TCP Connection is active the server is crashed and rebooted. Assume that the client does not use TCP keepalive timer. Which of the following behaviours is/are possible?
+Statement I:
+If client is waiting to receive a packet, it may wait indefinitely
+Statement II:
+If the client sends a packet after the server reboot, it will receive the FIN segment
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 91
+Passage (Q91-Q95): An organization is granted the block 130.56.0.0 / 16. The administrator wants to create 1024 subnets.
+Find the number of addresses in each subnet
+§A 32
+§B 64
+§C 128
+§D 16
+## 92
+Passage (Q91-Q95): An organization is granted the block 130.56.0.0 / 16. The administrator wants to create 1024 subnets.
+Find the subnet prefix.
+§A 130.56
+§B 136.0
+§C 136.255
+§D 136.56 .255
+## 93
+Passage (Q91-Q95): An organization is granted the block 130.56.0.0 / 16. The administrator wants to create 1024 subnets.
+Find first and last addresses of First subnet.
+§A 130.56 .0 .0 & 130.56 .254 .254
+§B 130.56 .0 .0 & 130.56 .0 .63
+§C 130.0 .0 .0 & 130.255 .255 .255
+§D 130.56 .0 .0 & 130.56 .255 .63
+## 94
+Passage (Q91-Q95): An organization is granted the block 130.56.0.0 / 16. The administrator wants to create 1024 subnets.
+Find subnet mask.
+§A 255 .255 .255.192
+§B 130.56 .255 .255
+§C 130.56 .0 .255
+§D 130.56 .155 .192
+## 95
+Passage (Q91-Q95): An organization is granted the block 130.56.0.0 / 16. The administrator wants to create 1024 subnets.
+Find first and last addresses of last subnet.
+§A 130 .56 .0 .0 & 130.56 .254 .255
+§B 130 .56 .255 .0 & 130.56 .255 .255
+§C 130 .56 .0 .192 & 130.255 .255 .255
+§D 130 .56 .255 .192 & 130.56 .255 .255
+## 96
+Passage (Q96-Q100): A Turing Machine for the language L = aⁿbᵐcⁿdᵐ | n ≥ 1, m ≥ 1 is designed. The resultant model is M = ({q0, q1, q2, q3, q4, q5, q6, q7, qf}, {a, b, c, d}, {a, b, c, d, X1, X2, Y1, Y2}, δ, q0, B, {qf}) and part of 'δ' is given in the transition table. You need to write the following questions based on design of Turing Machine for the given language. Note that, while designing the Turing Machine X1 and X2 are used to work with 'a's and 'c's and Y1 and Y2 are used to handle 'b's and 'd's of the given string.
+ | a | b | c | d | X1 | X2 | Y1 | Y2 | B
+q0 | (q1, x1, R) | | | | M2 | | | |
+q1 | (q1, a, R) | (q1, b, R) | M1 | | | (q1, x2, R) | | |
+q2 | (q2, a, L) | (q2, b, L) | | | (q2, X1, R) | (q2, x2, L) | | |
+q3 | M3 | (q4, Y1, R) | | | | (q6, x2, R) | | |
+q4 | | (q4, b, R) | | (q5, Y2, L) | | M5 | | (q4, Y2, R) |
+q5 | | (q5, b, L) | | | | (q5, x2, L) | M4 | (q5, Y2, L) |
+q6 | | | | | | (q6, x2, R) | | (q7, Y2, R) |
+q7 | | | | | | | | (q7, Y2, R) | (qf, B, R)
+What is the Move in the cell with number 'M1' of the resultant Table?
+§A (q2,X2,R)
+§B (q2,X2,L)
+§C (q3,X2,L)
+§D Error Entry
+## 97
+Passage (Q96-Q100): A Turing Machine for the language L = aⁿbᵐcⁿdᵐ | n ≥ 1, m ≥ 1 is designed. The resultant model is M = ({q0, q1, q2, q3, q4, q5, q6, q7, qf}, {a, b, c, d}, {a, b, c, d, X1, X2, Y1, Y2}, δ, q0, B, {qf}) and part of 'δ' is given in the transition table. You need to write the following questions based on design of Turing Machine for the given language. Note that, while designing the Turing Machine X1 and X2 are used to work with 'a's and 'c's and Y1 and Y2 are used to handle 'b's and 'd's of the given string.
+ | a | b | c | d | X1 | X2 | Y1 | Y2 | B
+q0 | (q1, x1, R) | | | | M2 | | | |
+q1 | (q1, a, R) | (q1, b, R) | M1 | | | (q1, x2, R) | | |
+q2 | (q2, a, L) | (q2, b, L) | | | (q2, X1, R) | (q2, x2, L) | | |
+q3 | M3 | (q4, Y1, R) | | | | (q6, x2, R) | | |
+q4 | | (q4, b, R) | | (q5, Y2, L) | | M5 | | (q4, Y2, R) |
+q5 | | (q5, b, L) | | | | (q5, x2, L) | M4 | (q5, Y2, L) |
+q6 | | | | | | (q6, x2, R) | | (q7, Y2, R) |
+q7 | | | | | | | | (q7, Y2, R) | (qf, B, R)
+What is the Move in the cell with the number 'M2' of the resultant Table?
+§A (q1, X1, R)
+§B (q1, a, R)
+§C (q2, X1, R)
+§D Error entry
+## 98
+Passage (Q96-Q100): A Turing Machine for the language L = aⁿbᵐcⁿdᵐ | n ≥ 1, m ≥ 1 is designed. The resultant model is M = ({q0, q1, q2, q3, q4, q5, q6, q7, qf}, {a, b, c, d}, {a, b, c, d, X1, X2, Y1, Y2}, δ, q0, B, {qf}) and part of 'δ' is given in the transition table. You need to write the following questions based on design of Turing Machine for the given language. Note that, while designing the Turing Machine X1 and X2 are used to work with 'a's and 'c's and Y1 and Y2 are used to handle 'b's and 'd's of the given string.
+ | a | b | c | d | X1 | X2 | Y1 | Y2 | B
+q0 | (q1, x1, R) | | | | M2 | | | |
+q1 | (q1, a, R) | (q1, b, R) | M1 | | | (q1, x2, R) | | |
+q2 | (q2, a, L) | (q2, b, L) | | | (q2, X1, R) | (q2, x2, L) | | |
+q3 | M3 | (q4, Y1, R) | | | | (q6, x2, R) | | |
+q4 | | (q4, b, R) | | (q5, Y2, L) | | M5 | | (q4, Y2, R) |
+q5 | | (q5, b, L) | | | | (q5, x2, L) | M4 | (q5, Y2, L) |
+q6 | | | | | | (q6, x2, R) | | (q7, Y2, R) |
+q7 | | | | | | | | (q7, Y2, R) | (qf, B, R)
+What is the Move in the cell with number 'M3' of the resultant Table?
+§A (q1,x1, L)
+§B (q4, X1, R)
+§C (q1,x1, R)
+§D Error Entry
+## 99
+Passage (Q96-Q100): A Turing Machine for the language L = aⁿbᵐcⁿdᵐ | n ≥ 1, m ≥ 1 is designed. The resultant model is M = ({q0, q1, q2, q3, q4, q5, q6, q7, qf}, {a, b, c, d}, {a, b, c, d, X1, X2, Y1, Y2}, δ, q0, B, {qf}) and part of 'δ' is given in the transition table. You need to write the following questions based on design of Turing Machine for the given language. Note that, while designing the Turing Machine X1 and X2 are used to work with 'a's and 'c's and Y1 and Y2 are used to handle 'b's and 'd's of the given string.
+ | a | b | c | d | X1 | X2 | Y1 | Y2 | B
+q0 | (q1, x1, R) | | | | M2 | | | |
+q1 | (q1, a, R) | (q1, b, R) | M1 | | | (q1, x2, R) | | |
+q2 | (q2, a, L) | (q2, b, L) | | | (q2, X1, R) | (q2, x2, L) | | |
+q3 | M3 | (q4, Y1, R) | | | | (q6, x2, R) | | |
+q4 | | (q4, b, R) | | (q5, Y2, L) | | M5 | | (q4, Y2, R) |
+q5 | | (q5, b, L) | | | | (q5, x2, L) | M4 | (q5, Y2, L) |
+q6 | | | | | | (q6, x2, R) | | (q7, Y2, R) |
+q7 | | | | | | | | (q7, Y2, R) | (qf, B, R)
+What is the Move in the cell with number 'M4' of the resultant Table?
+§A (q5, Y1, L)
+§B (q3, Y1, R)
+§C (q4, Y1, L)
+§D Error entry
+## 100
+Passage (Q96-Q100): A Turing Machine for the language L = aⁿbᵐcⁿdᵐ | n ≥ 1, m ≥ 1 is designed. The resultant model is M = ({q0, q1, q2, q3, q4, q5, q6, q7, qf}, {a, b, c, d}, {a, b, c, d, X1, X2, Y1, Y2}, δ, q0, B, {qf}) and part of 'δ' is given in the transition table. You need to write the following questions based on design of Turing Machine for the given language. Note that, while designing the Turing Machine X1 and X2 are used to work with 'a's and 'c's and Y1 and Y2 are used to handle 'b's and 'd's of the given string.
+ | a | b | c | d | X1 | X2 | Y1 | Y2 | B
+q0 | (q1, x1, R) | | | | M2 | | | |
+q1 | (q1, a, R) | (q1, b, R) | M1 | | | (q1, x2, R) | | |
+q2 | (q2, a, L) | (q2, b, L) | | | (q2, X1, R) | (q2, x2, L) | | |
+q3 | M3 | (q4, Y1, R) | | | | (q6, x2, R) | | |
+q4 | | (q4, b, R) | | (q5, Y2, L) | | M5 | | (q4, Y2, R) |
+q5 | | (q5, b, L) | | | | (q5, x2, L) | M4 | (q5, Y2, L) |
+q6 | | | | | | (q6, x2, R) | | (q7, Y2, R) |
+q7 | | | | | | | | (q7, Y2, R) | (qf, B, R)
+What is the Move in the cell with number 'M5' of the resultant Table?
+§A (q4,X2, R)
+§B (q5,X2, R)
+§C (q5,X2, L)
+§D Error Entry

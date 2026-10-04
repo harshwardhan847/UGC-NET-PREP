@@ -1,0 +1,818 @@
+## 1
+Consider the poset ({ 3,5,9,15,24,45 }).
+Which of the following is correct for the given poset?
+§A There exists a greatest element and a least element
+§B There exists a greatest element but not a least element
+§C There exists a least element but not a greatest element
+§D There does not exist a greatest element and a least element
+## 2
+How many ways are there to place 8 indistinguishable balls into four distinguishable bins?
+§A 70
+§B 165
+§C ⁸C₄
+§D ⁸P₄
+## 3
+How many bit strings of length ten either start with a 1 bit or end with two bits 00 ?
+§A 320
+§B 480
+§C 640
+§D 768
+## 4
+Suppose that a connected planar graph has six vertices, each of degree four. Into how many regions is the plane divided by a planar representation of this graph?
+§A 6
+§B 8
+§C 12
+§D 20
+## 5
+For which values of m and n does the complete bipartite graph k(m,n) have a Hamilton circuit?
+§A m ≠ n, m, n ≥ 2
+§B m ≠ n, m, n ≥ 3
+§C m = n, m, n ≥ 2
+§D m = n, m, n ≥ 3
+## 6
+Which of the following is principal conjunctive normal form for [(p ∨ q) ∧ ¬p → ¬q] ?
+§A p ∨ ¬q
+§B p ∨ q
+§C ¬p ∨ q
+§D ¬p ∨ ¬q
+## 7
+How many cards must be selected from a standard deck of 52 cards to guarantee that at least three hearts are present among them?
+§A 9
+§B 13
+§C 17
+§D 42
+## 8
+Match List-I with List-II :
+List-I | List-II
+(a) p → q | (i) ¬(q → ¬p)
+(b) p ∨ q | (ii) p ∧ ¬q
+(c) p ∧ q | (iii) ¬p → q
+(d) ¬(p → q) | (iv) ¬p ∨ q
+Choose the correct option from those given below :
+§A (a)-(ii); (b)-(iii); (c)-(i); (d)-(iv)
+§B (a)-(ii); (b)-(i); (c)-(iii); (d)-(iv)
+§C (a)-(iv); (b)-(i); (c)-(iii); (d)-(ii)
+§D (a)-(iv); (b)-(iii); (c)-(i); (d)-(ii)
+## 9
+Find the zero-one matrix of the transitive closure of the relation given by the matrix A :
+A = [[1, 0, 1], [0, 1, 0], [1, 1, 0]]
+§A [[1, 1, 1], [0, 1, 0], [1, 1, 1]]
+§B [[1, 0, 1], [0, 1, 0], [1, 1, 0]]
+§C [[1, 0, 1], [0, 1, 0], [1, 0, 1]]
+§D [[1, 1, 1], [0, 1, 0], [1, 0, 1]]
+## 10
+Consider an LPP given as
+Max Z = 2x₁ − x₂ + 2x₃
+subject to the constraints
+2x₁ + x₂ ≤ 10
+x₁ + 2x₂ − 2x₃ ≤ 20
+x₁ + 2x₃ ≤ 5
+x₁, x₂, x₃ ≥ 0
+What shall be the solution of the LPP after applying first iteration of the Simplex Method?
+§A x₁ = 5/2, x₂ = 0, x₃ = 0, Z = 5
+§B x₁ = 0, x₂ = 0, x₃ = 5/2, Z = 5
+§C x₁ = 0, x₂ = 5/2, x₃ = 0, Z = −5/2
+§D x₁ = 0, x₂ = 0, x₃ = 10, Z = 20
+## 11
+Which type of addressing mode, less number of memory references are required?
+§A Immediate
+§B Implied
+§C Register
+§D Indexed
+## 12
+Suppose that the register A and the register K have the bit configuration. Only the three leftmost bits of A are compared with memory words because K has 1's in these positions. Because of its organization, this type of memory is uniquely suited to parallel searches by data association. This type of memory is known as
+§A RAM
+§B ROM
+§C content addressable memory
+§D secondary memory
+## 13
+How many different Boolean functions of degree n are there?
+§A 2^(3ⁿ)
+§B 2^(2ⁿ)
+§C 2^(2ⁿ) − 1
+§D 2^(ⁿ)
+## 14
+The fault can be easily diagnosed in the micro-program control unit using diagnostic tools by maintaining the contents of
+§A flags and counters
+§B registers and counters
+§C flags and registers
+§D flags, registers and counters
+## 15
+What will be the number of states when a MOD-2 counter is followed by a MOD- 5 counter?
+§A 5
+§B 10
+§C 15
+§D 20
+## 16
+For a magnetic disk with concentric circular tracks, the seek latency is not linearly proportional to the seek distance due to
+§A non-uniform distribution of requests
+§B arm starting or stopping inertia
+§C higher capacity of tracks on the periphery of the platter
+§D More than one of the above
+## 17
+The parallel bus arbitration technique uses an external priority encoder and a decoder. Suppose, a parallel arbiter has 5 bus arbiters. What will be the size of the priority encoder and decoder respectively?
+§A 4 × 2, 2 × 4
+§B 2 × 4, 4 × 2
+§C 3 × 8, 8 × 3
+§D 8 × 3, 3 × 8
+## 18
+Consider the equation
+(146)_b + (313)_(b−2) = (246)₈. Which of the following is the value of b ?
+§A 8
+§B 7
+§C 10
+§D 16
+## 19
+How many address lines and data lines are required to provide a memory capacity of 16 K × 16 ?
+§A 10,4
+§B 16,16
+§C 14,16
+§D 4,16
+## 20
+Suppose that a computer program takes 100 seconds of execution time on a computer with multiplication operation responsible for 80 seconds of this time. How much do you have to improve the speed of multiplication operation if you are asked to execute this program four times faster?
+§A 14 times faster
+§B 15 times faster
+§C 16 times faster
+§D 17 times faster
+## 21
+Consider the following pseudo-code fragment in which an invariant for the loop is " m ∗ x^k = p^n and k ≥ 0 " (here, p and n are integer variables that have been initialized) :
+```
+/* Pre-conditions: p ≥ 1 ∧ n ≥ 0 */
+/* Assume that overflow never occurs */
+int x = p;
+int k = n;
+int m = 1;
+while (k != 0) {
+  if (k is odd) then m = m * x;
+  x = x * x;
+  k = floor(k / 2); /* equivalent to k = k / 2 */
+}
+```
+Which of the following must be true at the end of the while loop?
+§A x = p^n
+§B m = p^n
+§C p = x^n
+§D p = m^n
+## 22
+Consider the following C-code fragment running on a 32 -bit x86 machine :
+```
+typedef struct {
+  union {
+    unsigned char a;
+    unsigned short b;
+  } U;
+  unsigned char c;
+}S;
+S B[10];
+S*p=&B[4];
+S*q=&B[5];
+p → U.b=0x1234; /* structure S takes 32-bits */
+```
+If M is the value of q − p and N is the value of (( int )&(p → c)) − (( int )p), then (M, N) is
+§A (1, 1)
+§B (3, 2)
+§C (1, 2)
+§D (4, 4)
+## 23
+What is the output of the following JAVA program?
+```
+public class Good {
+  private int m;
+  public Good (int m) {this.m = m; }
+  public Boolean equals (Good n){ return n.m == m;}
+  public static void main (string args []){
+    Good m1 = new Good (22);
+    Good m2 = new Good (22);
+    Object s1 = new Good (22);
+    Object s2 = new Good (22);
+    System.out.println (m1.equals (m2));
+    //Line1
+    System.out.println (s1.equals (s2));
+    //Line2
+    System.out.println (m1.equals (s2) );
+    //Line3
+    System.out.println (s1.equals (m2));
+    //Line4
+  }
+}
+```
+§A True, True, False, False
+§B True, False, True, False
+§C True, True, False, True
+§D True, False, False, False
+## 24
+Consider the following C++ function f( ) :
+```
+unsigned int f (unsigned int n ){
+  unsigned int b = 0;
+  while (n) {
+    b+= n&1;
+    n >>= 1;
+  }
+  return b;}
+```
+The function f ( ) returns the int that represents the _P_ in the binary representation of positive integer n, where P is
+§A number of 0 's
+§B number of bits
+§C number of consecutive 1's
+§D number of 1's
+## 25
+Which of the following statements is/are true?
+P : In a scripting language like JavaScript, types are typically associated with values, not variables.
+Q : It is not possible to show images on a web page without the <img> tag of HTML.
+Select the correct answer from the options given below :
+§A P only
+§B Q only
+§C Both P and Q
+§D Neither P nor Q
+## 26
+Which of the following statements is/are true?
+P : An XML document with correct syntax as specified by W3C is called "Well Formed".
+Q : An XML documented validated against a DTD is both "Well formed" and "Valid".
+R : <xml version="1.0" encoding="UTF-8"> is syntactly correct declaration for the version of an XML document.
+Select the correct answer from the options given below :
+§A P and Q only
+§B P and R only
+§C Q and R only
+§D All of P, Q and R
+## 27
+Consider a raster system with resolution 640 by 480 . What size is frame buffer (in bytes) for this system to store 12 bits per pixel?
+§A 450 kilobytes
+§B 500 kilobytes
+§C 350 kilobytes
+§D 400 kilobytes
+## 28
+Consider the following statements regarding 2D transforms in computer graphics:
+S1 : [[1, 0], [0, −1]] is a 2 × 2 matrix that reflects (mirrors) only 2D point about the X-axis.
+S2 : A 2 × 2 matrix which mirrors any 2D point about the X-axis, is a rotation matrix.
+What can you say about the statements S1 and S2?
+§A Both S1 and S2 are true
+§B Only S1 is true
+§C Only S2 is true
+§D Both S1 and S2 are false
+## 29
+In the context of 3D computer graphics, which of the following statements is/are true?
+P : Orthographic transformations keep parallel lines parallel.
+Q : Orthographic transformations are affine transformations.
+Select the correct answer from the options given below :
+§A Both P and Q
+§B Neither P nor Q
+§C Only P
+§D Only Q
+## 30
+Using the phong reflectance model, the strength of the specular highlight is determined by the angle between
+§A the view vector and the normal vector
+§B the light vector and the normal vector
+§C the light vector and the reflected vector
+§D the reflected vector and the view vector
+## 31
+Which of the following has same expressive power with regard to relational query language?
+(a) Relational algebra and domain relational calculus
+(b) Relational algebra and tuples relational calculus
+(c) Relational algebra and domain relational calculus restricted to safe expression
+(d) Relational algebra and tuples relational calculus restricted to safe expression
+§A (a) and (b) only
+§B (c) and (d) only
+§C (a) and (c) only
+§D (b) and (d) only
+## 32
+Which of the following features is supported in the relational database model?
+§A Complex data-types
+§B Multivalued attributes
+§C Associations with multiplicities
+§D Generalization relationships
+## 33
+With respect to relational algebra, which of the following operations are included for mathematical set theory?
+(a) Join
+(b) Intersection
+(c) Cartisian product
+(d) Project
+§A (a) and (d)
+§B (b) and (c)
+§C (c) and (d)
+§D (b) and (d)
+## 34
+In relational databases, if relation R is in BCNF, then which of the following is true about relation R ?
+§A R is in 4NF
+§B R is not in 1NF
+§C R is in 2NF and not in 3NF
+§D R is in 2NF and 3NF
+## 35
+Which of the following key constraints is required for functioning of foreign key in the context of relational databases?
+§A Unique key
+§B Primary key
+§C Candidate key
+§D Check key
+## 36
+In relational database management, which of the following is/are property/properties of candidate key?
+P : Uniqueness
+Q : Irreducibility
+§A P only
+§B Q only
+§C Both P and Q
+§D Neither P nor Q
+## 37
+Which of the following statements are DML statements?
+(a) Update [tablename]
+Set [ columnname] = VALUE
+(b) Delete [tablename]
+(c) Select * from [tablename]
+§A (a) and (b)
+§B (a) and (d)
+§C (a), (b) and (c)
+§D (b) and (c)
+## 38
+Hadoop (a big data tool) works with number of related tools. Choose from the following, the common tools included into Hadoop :
+§A MySQL, Google API and Map reduce
+§B Map reduce, Scala and Hummer
+§C Map reduce, H Base and Hive
+§D Map reduce, Hummer and Heron
+## 39
+The following table has two attributes Employee_id and Manager_id, where Employee_id is a primary key and manager_id is a foreign key referencing Employee_id with an on-delete cascade :
+Employee_id | Manager_id
+20 | 40
+25 | 40
+30 | 35
+35 | 20
+40 | 45
+45 | 25
+On deleting the table (20, 40), the set of other tuples that must be deleted to maintain the referential integrity of the table is:
+§A (30, 35) only
+§B (30, 35) and (35, 20) only
+§C (35, 20) only
+§D (40, 45) and (25, 40) only
+## 40
+K-mean clustering algorithm has clustered the given 8 observations into 3 clusters after 1st iteration as follows:
+C1 : {(3, 3), (5, 5), (7, 7)}
+C2 : {(0, 6), (6, 0), (3, 0)}
+C3 : {(8, 8), (4, 4)}
+What will be the Manhattan distance for observation (4, 4) from cluster centroid C1 in second iteration?
+§A 2
+§B √2
+§C 0
+§D 18
+## 41
+Consider a disk system with 100 cylinders. The requests to access the cylinders occur in the following sequence :
+4, 34, 10, 7, 19, 73, 2, 15, 6, 20
+Assuming that the head is currently at cylinder 50 , what is the time taken to satisfy all requests if it takes 1 ms to move from the cylinder to adjacent one and the shortest seek time first policy is used?
+§A 357 ms
+§B 238 ms
+§C 276 ms
+§D 119 ms
+## 42
+Match List-I with List-II :
+List-I | List-II
+(a) Disk | (i) Thread
+(b) CPU | (ii) Signal
+(c) Memory | (iii) File system
+(d) Interrupt | (iv) Virtual address space
+Choose the correct option from those given below :
+§A (a)-(i); (b)-(ii); (c)-(iii); (d)-(iv)
+§B (a)-(iii); (b)-(i); (c)-(iv); (d)-(ii)
+§C (a)-(ii); (b)-(i); (c)-(iv); (d)-(iii)
+§D (a)-(ii); (b)-(iv); (c)-(iii); (d)-(i)
+## 43
+Which of the following are NOT shared by the threads of the same process?
+(a) Stack
+(b) Registers
+(c) Address space
+(d) Message queue
+§A (a) and (d)
+§B (b) and (c)
+§C (a) and (b)
+§D (a), (b) and (c)
+## 44
+Consider that a process has been allocated 3 frames and has a sequence of page referencing as 1, 2, 1, 3, 7, 4, 5, 6, 3, 1.
+What shall be the difference in page faults for the above string using the algorithms of LRU and optimal page replacement for referencing the string?
+§A 2
+§B 0
+§C 1
+§D 3
+## 45
+Consider three CPU intensive processes, which require 10,20 and 30 units of time and arrive at times 0,2 and 6 respectively. How many context switches are needed if the operating system implements a shortest remaining time first scheduling algorithm? Do not count the context switches at time zero and at the end.
+§A 4
+§B 2
+§C 3
+§D 1
+## 46
+At a particular time of computation, the value of a counting semaphore is 7. Then 20 P (wait) operations and 15 V (signal) operations are completed on this semaphore. What is the resulting value of the semaphore?
+§A 28
+§B 12
+§C 2
+§D 42
+## 47
+The minimum number of page frames that must be allocated to a running process in a virtual memory environment is determined by
+§A page size
+§B physical size of memory
+§C the instruction set architecture
+§D number of processes in memory
+## 48
+A computer has six tape drives with (n) processes competing for them. Each process may need two drives. What is the maximum value of (n) for the system to be deadlock free?
+§A 5
+§B 4
+§C 3
+§D 6
+## 49
+A processor can support a maximum memory of (4 GB) where memory is word addressable and a word is 2 bytes. What will be the size of the address bus of the processor?
+§A At least 28 bits
+§B At least 2 bytes
+§C At least 31 bits
+§D Minimum 4 bytes
+## 50
+Which of the following UNIX/Linux pipes will count the number of lines in all the files having .c and .h as their extension in the current working directory?
+§A cat *.ch | wc −l
+§B cat *.[c−h] | wc −l
+§C cat *.[ch] | ls −l
+§D cat *.[ch] | wc −l
+## 51
+Which of the following statements is/are true?
+P : In software engineering, defects that are discovered earlier are more expensive to fix.
+Q : A software design is said to be a good design, if the components are strongly cohesive and weakly coupled.
+Select the correct answer from the options given below :
+§A P only
+§B Q only
+§C P and Q
+§D Neither P nor Q
+## 52
+The M components in MVC are responsible for
+§A user interface
+§B security of the system
+§C business logic and domain objects
+§D translating between user interface actions/events and operations on the domain objects
+## 53
+In the context of software testing, which of the following statements is/are NOT correct?
+P : A minimal test set that achieves 100 % path coverage will also achieve 100 % statement coverage.
+Q : A minimal test set that achieves 100 % path coverage will generally detect more faults than one that achieves 100 % statement coverage.
+R : A minimal test set that achieves 100 % statement coverage will generally detect more faults than one that achieves100 % branch coverage.
+§A R only
+§B Q only
+§C P and Q only
+§D Q and R only
+## 54
+Software reuse is
+§A the process of analysing software with the objective of recovering its design and specification
+§B the process of using existing software artifacts and knowledge to build new software
+§C concerned with reimplementing legacy system to make them more maintainable
+§D the process of analysing software to create a representation of a higher level of abstraction and breaking software down into its parts to see how it works
+## 55
+Which of the following terms best describes Git?
+§A Issue Tracking System
+§B Integrated Development Environment
+§C Distributed Version Control System
+§D Web-based Repository Hosting Service
+## 56
+A Web application and its support environment has not been fully fortified against attack. Web engineers estimate that the likelihood of repelling an attack is only 30 percent. The application does not contain sensitive or controversial information, so the threat probability is 25 percent. What is the integrity of the web application?
+§A 0.625
+§B 0.725
+§C 0.775
+§D 0.825
+## 57
+Match List-I with List-II :
+List-I (Software Process Models) | List-II (Software Systems)
+(a) Waterfall model | (i) e-business software that starts with only the basic functionalities and then moves on to advanced features
+(b) Incremental development | (ii) An inventory control system for a supermarket to be developed within three months
+(c) Prototyping | (iii) A virtual reality system for simulating vehicle navigation in a highway
+(d) RAD | (iv) Automate the manual system for student record maintenance in a school
+Choose the correct option from those given below :
+§A (a)-(ii); (b)-(iv); (c)-(i); (d)-(iii)
+§B (a)-(i); (b)-(iii); (c)-(iv); (d)-(ii)
+§C (a)-(iii); (b)-(ii); (c)-(iv); (d)-(i)
+§D (a)-(iv); (b)-(i); (c)-(iii); (d)-(ii)
+## 58
+Software products need adaptive maintenance for which of the following reasons?
+§A To rectify bugs observed while the system is in use
+§B When the customers need the product to run on new platforms
+§C To support the new features that users want it to support
+§D To overcome wear and tear caused by the repeated use of the software
+## 59
+Which of the following are the primary objectives of risk monitoring in software project tracking?
+P : To assess whether predicted risks do, in fact, occur
+Q : To ensure that risk aversion steps defined for the risk are being properly applied
+R : To collect information that can be used for future risk analysis
+§A Only P and Q
+§B Only P and R
+§C Only Q and R
+§D All of P,Q,R
+## 60
+Software validation mainly checks for inconsistencies between
+§A use cases and user requirements
+§B implementation and system design blueprints
+§C detailed specifications and user requirements
+§D functional specifications and use cases
+## 61
+Match List-I with List-II :
+List-I | List-II
+(a) Prim's algorithm | (i) O(V³ logV)
+(b) Dijkstra's algorithm | (ii) O(VE²)
+(c) Faster all-pairs shortest path | (iii) O(ElgV)
+(d) Edmonds-Karp algorithm | (iv) O(V²)
+Choose the correct option from those given below :
+§A (a)-(ii); (b)-(iv); (c)-(i); (d)-(iii)
+§B (a)-(iii); (b)-(iv); (c)-(i); (d)-(ii)
+§C (a)-(ii); (b)-(i); (c)-(iv); (d)-(iii)
+§D (a)-(iii); (b)-(i); (c)-(iv); (d)-(ii)
+## 62
+There are many sorting algorithms based on comparison. The running time of heapsort algorithm is O(n lg n). Like P, but unlike Q, heapsort sorts in place where (P, Q) is equal to
+§A Merge sort, Quick sort
+§B Quick sort, insertion sort
+§C Insertion sort, Quick sort
+§D Insertion sort, Merge sort
+## 63
+Consider the Euler's phi function given by
+φ(n) = n ∏ (1 − 1/p)
+where p runs over all the primes dividing n. What is the value of φ(45) ?
+§A 3
+§B 12
+§C 6
+§D 24
+## 64
+Which of the following is best running time to sort n integers in the range 0 to n² − 1 ?
+§A O(lg n)
+§B O(n)
+§C O(n lg n)
+§D O(n²)
+## 65
+Which of the following is application of depth-first search?
+§A Only topological sort
+§B Only strongly connected components
+§C Both topological sort and strongly connected components
+§D Neither topological sort nor strongly connected components
+## 66
+Consider double hashing of the form
+h(k, i) = (h₁(k) + i·h₂(k)) mod m
+where h₁(k) = k mod m
+h₂(k) = 1 + (k mod n)
+where n = m − 1 and m = 701
+For k = 123456, what is the difference between first and second probes in terms of slots?
+§A 255
+§B 256
+§C 257
+§D 258
+## 67
+Consider the complexity class CO−NP as the set of languages L such that L̄ ∈ NP, and the following two statements :
+S₁ : P ⊆ CO−NP
+S₂ : If NP ≠ CO−NP, then P ≠ NP
+Which of the following is/are correct?
+§A Only S₁
+§B Only S₂
+§C Both S₁ and S₂
+§D Neither S₁ nor S₂
+## 68
+Consider the following steps :
+S₁ : Characterize the structure of an optimal solution
+S₂ : Compute the value of an optimal solution in bottom-up fashion
+Which of the step(s) is/are common to both dynamic programming and greedy algorithms?
+§A Only S₁
+§B Only S₂
+§C Both S₁ and S₂
+§D Neither S₁ nor S₂
+## 69
+Consider the following properties with respect to a flow network G = (V, E) in which a flow is a real-valued function f : V × V → R :
+P₁ : For all u, v ∈ V, f(u, v) = −f(v, u)
+P₂ : Σ(v∈V) f(u, v) = 0 for all u ∈ V
+Which one of the following is/are correct?
+§A Only P₁
+§B Only P₂
+§C Both P₁ and P₂
+§D Neither P₁ nor P₂
+## 70
+Consider the following statements :
+S₁ : For any integer n > 1, a^φ(n) ≡ 1 (mod n) for all a ∈ Z*ₙ, where φ(n) is Euler's phi function.
+S₂ : If p is prime, then a^p ≡ 1 (mod p) for all a ∈ Z*ₚ.
+Which one of the following is/are correct?
+§A Only S₁
+§B Only S₂
+§C Both S₁ and S₂
+§D Neither S₁ nor S₂
+## 71
+Which data structure is used by the compiler for managing variables and their attributes?
+§A Binary tree
+§B Link list
+§C Symbol table
+§D Parse table
+## 72
+On translating the expression given below into quadruple representation, how many operations are required?
+(i*j)+(e+f)*(a*b+c)
+§A 5
+§B 6
+§C 3
+§D 7
+## 73
+Replacing the expression 4 * 2.14 by 8.56 is known as
+§A constant folding
+§B induction variable
+§C strength reduction
+§D code reduction
+## 74
+Shift-reduce parser consists of
+(a) input buffer
+(b) stack
+(c) parse table
+Choose the correct option from those give below :
+§A (a) and (b) only
+§B (a) and (c) only
+§C (c) only
+§D (a), (b) and (c)
+## 75
+How many states are there in a minimum state automata equivalent to regular expression given below?
+Regular expression is a * b(a + b)
+§A 1
+§B 2
+§C 3
+§D 4
+## 76
+Match List-I with List-II :
+where L₁ : Regular language
+L₂ : Context-free language
+L₃ : Recursive language
+L₄ : Recursively enumerable language
+List-I | List-II
+(a) complement(L₃) ∪ L₄ | (i) Context-free language
+(b) complement(L₂) ∪ L₃ | (ii) Recursively enumerable language
+(c) L₁* ∩ L₂ | (iii) Recursive language
+Choose the correct option from those given below :
+§A (a)-(ii); (b)-(i); (c)-(iii)
+§B (a)-(ii); (b)-(iii); (c)-(i)
+§C (a)-(iii); (b)-(i); (c)-(ii)
+§D (a)-(i); (b)-(ii); (c)-(iii)
+## 77
+How can the decision algorithm be constructed for deciding whether context-free language L is finite?
+(a) By constructing redundant CFG G in CNF generating language L
+(b) By constructing non-redudant CFG G in CNF generating language L
+(c) By constructing non-redudant CFG G in CNF generating language L − {Λ} (Λ stands for null)
+Which of the following is correct?
+§A (a) only
+§B (b) only
+§C (c) only
+§D None of (a), (b) and (c)
+## 78
+Consider the following grammar :
+S → XY
+X → YaY | a and Y → bbX
+Which of the following statements is/are true about the above grammar?
+(a) Strings produced by the grammar can have consecutive three a 's.
+(b) Every string produced by the grammar have alternate a and b.
+(c) Every string produced by the grammar have at least two a 's.
+(d) Every string produced by the grammar have b 's in multiple of 2.
+§A (a) only
+§B (b) and (c) only
+§C (d) only
+§D (c) and (d) only
+## 79
+Which of the following problems is/are decidable problem(s) (recursively enumerable) on turing machine M ?
+(a) G is a CFG with L(G) = φ
+(b) There exist two TMs M₁ and M₂ such that L(M) ⊆ {L(M₁) ∪ L(M₂)} = language of all TMs
+(c) M is a TM that accepts ω using at most 2^|ω| cells of tape
+§A (a) and (b) only
+§B (a) only
+§C (a), (b) and (c)
+§D (c) only
+## 80
+For a statement
+A language L ⊆ Σ* is recursive if there exists some turing machine M.
+Which of the following conditions is satisfied for any string ω ?
+§A If ω ∈ L, then M accepts ω and M will not halt
+§B If ω ∉ L, then M accepts ω and M will halt by reaching at final state
+§C If ω ∉ L, then M halts without reaching to acceptable state
+§D If ω ∈ L, then M halts without reaching to an acceptable state
+## 81
+A fully connected network topology is a topology in which there is a direct link between all pairs of nodes. Given a fully connected network with n nodes, the number of direct links as a function of n can be expressed as
+§A n(n+1)/2
+§B (n+1)/2
+§C n/2
+§D n(n−1)/2
+## 82
+What is the name of the protocol that allows a client to send a broadcast message with its MAC address and receive an IP address in reply?
+§A ARP
+§B DNS
+§C RARP
+§D ICMP
+## 83
+You are designing a link layer protocol for a link with a bandwidth of 1 Gbps (10⁹ bits/second) over a fiber link with a length of 800 km. Assume the speed of light in this medium is 200000 km/second. What is the propagation delay in this link?
+§A 1 millisecond
+§B 2 milliseconds
+§C 3 milliseconds
+§D 4 milliseconds
+## 84
+You need 500 subnets, each with about 100 usable host addresses per subnet. What network mask will you assign using a class B network address?
+§A 255.255.255.252
+§B 255.255.255.128
+§C 255.255.255.0
+§D 255.255.254.0
+## 85
+Consider the following two statements with respect to IPv4 in computer networking :
+P: The loopback (IP) address is a member of the class B network.
+Q: The loopback (IP) address is used to send a packet from the host to itself.
+What can you say about the statements P and Q?
+§A P-True; Q-False
+§B P-False; Q-True
+§C P-True; Q-True
+§D P-False; Q-False
+## 86
+In the TCP/IP model, encryption and decryption are functions of the ____ layer.
+§A Data link
+§B Network
+§C Transport
+§D Application
+## 87
+Which of the following statements is/are true with regard to various layers in the Internet stack?
+P: At the link layer, a packet of transmitted information is called a frame.
+Q: At the network layer, a packet of transmitted information is called a segment.
+§A P only
+§B Q only
+§C P and Q
+§D Neither P nor Q
+## 88
+What percentage % of the IPv4, IP address space do all class C addresses consume?
+§A 12.5%
+§B 25%
+§C 37.5%
+§D 50%
+## 89
+The ability to inject packets into the Internet with a false source address is known as
+§A Man-in-the-middle attack
+§B IP phishing
+§C IP sniffing
+§D IP spoofing
+## 90
+The RSA encryption algorithm also works in reverse, that is, you can encrypt a message with the private key and decrypt it using the public key. This property is used in
+§A intrusion detection systems
+§B digital signatures
+§C data compression
+§D certification
+## 91
+Consider the game tree given below :
+[Figure: game tree with four levels, root at the top. Level 1 (root) is a MAX node (square). Level 2 has two MIN nodes (circles). Level 3 has four MAX nodes (squares). Level 4 has eight MIN nodes (circles), each with two leaf children (squares), 16 leaves in all. Only some leaf values are printed in the source PDF; reading left to right they are: 7, 9, 6, (blank), 11, 12, (blank), (blank), 5, (blank), 4, and the remaining leaves are blank.]
+Here ○ and □ represents MIN and MAX nodes respectively. The value of the root node of the game tree is
+§A 4
+§B 7
+§C 11
+§D 12
+## 92
+Match List-I with List-II :
+List I | List II
+(a) Greedy best-first | (i) Minimal cost (p) + h(p)
+(b) Lowest cost-first | (ii) Minimal h(p)
+(c) A* Algorithm | (iii) Minimal cost (p)
+Choose the correct option from those given below :
+§A (a)-(i); (b)-(ii); (c)-(iii)
+§B (a)-(iii); (b)-(ii); (c)-(i)
+§C (a)-(i); (b)-(iii); (c)-(ii)
+§D (a)-(ii); (b)-(iii); (c)-(i)
+## 93
+The STRIPS representation is
+§A a feature-centric representation
+§B an action-centric representation
+§C a combination of feature-centric and action-centric representations
+§D a hierarchical feature-centric representation
+## 94
+A fuzzy conjunction operator denoted as t(x,y) and a fuzzy disjunction operator denoted as s(x,y) form a dual pair if they satisfy the condition :
+§A t(x,y)= 1-s(x,y)
+§B t(x,y)= s( 1-x, 1-y)
+§C t(x,y)= 1-s(1-x, 1-y)
+§D t(x,y)= s( 1+x, 1+y)
+## 95
+Let A_α₀ denotes the α-cut of a fuzzy set A at α₀. If α₁ < α₂, then
+§A A_α₁ ⊇ A_α₂
+§B A_α₁ ⊃ A_α₂
+§C A_α₁ ⊆ A_α₂
+§D A_α₁ ⊂ A_α₂
+## 96
+Consider the following methods :
+M1: Mean of maximum
+M2: Centre of area
+M3: Height method
+Which of the following is/are defuzzification method(s)?
+§A Only M2
+§B Only M1 and M2
+§C Only M2 and M3
+§D M1, M2, and M3
+## 97
+Consider the following :
+(a) Evolution
+(b) Selection
+(c) Reproduction
+(d) Mutation
+Which of the following are found in genetic algorithms?
+§A (b), (c) and (d) only
+§B (b) and (d) only
+§C (a), (b), (c) and (d)
+§D (a), (b) and (d) only
+## 98
+Which of the following is an example of unsupervised neural network?
+§A Back-propagation network
+§B Hebb network
+§C Associative memory network
+§D Self-organizing feature map
+## 99
+The value of the derivative of the Sigmoid function given by f(x) = 1/(1+e^(−2x)) at x=0 is
+§A 0
+§B 1/2
+§C 1/4
+§D ∞
+## 100
+Reinforcement learning can be formalized in terms of _____ in which the agent initially only knows the set of possible ____ and the set of possible actions.
+§A Markov decision processes, objects
+§B Hidden states, objects
+§C Markov's decision process, states
+§D objects, states

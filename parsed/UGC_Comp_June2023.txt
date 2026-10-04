@@ -1,0 +1,900 @@
+## 1
+Given below are two statements: one is labeled as Assertion A and the other is labeled as Reason R.
+Assertion A: Validity checks the real need of system users
+Reason R: Completeness checks system user-defined requirements.
+In light of the above statements, choose the correct answer from the options given below.
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 2
+Consider the following statements about the heap sort algorithm:
+A. The MAX-HEAPIFY procedure which runs in O(lg(n)) time, is the key to maintaining the max heap property
+B. The BUILD-MAX-HEAP procedure, which runs in O(lg(n)) time, produces max-heap from an unordered input array
+C. The MAX-HEAP-INSERT, which runs in O(lg n) time, implements the insertion operation
+D. The HEAP-INCREASE-KEY procedure runs in O(n lg n) time, to set the key of a new node to its correct value
+Choose the correct answer from the options given below:
+§A A, B only
+§B A, C only
+§C B, D only
+§D A, B, C, D
+## 3
+Consider universe positive integer X = {1 ≤ n ≤ 8}, proposition P =" n is an even integers", Q =" (3 ≤ n ≤ 7) ∧ (n ≠ 6) ".
+The truth set of P ↔ Q is
+§A {1, 4}
+§B {2, 6}
+§C {3, 4, 5}
+§D {1}
+## 4
+Let (Z, +) denote the group of all integers under addition. Then the number of all automorphisms of (Z, +) is
+§A 1
+§B 2
+§C 3
+§D 4
+## 5
+Match List I with List II
+LIST I | LIST II
+A. PERT | I. used for non repetitive jobs
+B. Optimistic time | II. Used for repetitive jobs
+C. CPM | III. The shortest possible time to complete the activity if all goes well
+D. Pessimistic time | IV. The longest time that an activity takes
+Choose the correct answer from the options given below:
+§A A-III B-IV C-II D-I
+§B A-IV B-I C-II D-III
+§C A-I B-III C-II D-I
+§D A-I B-III C-II D-IV
+## 6
+Which of the following is used to determine the cost performance index?
+§A Budgeted cost of work performed−budget at completion
+§B Budgeted cost of work performed ÷ budget at completion
+§C Budgeted cost of work performed ÷ Actual cost of work performed
+§D Budgeted cost of work performed−Actual cost of work performed
+## 7
+_________ is intended to show that a system both conforms to its specifications and meets the expectations of the system customer.
+§A Software specification
+§B Software design
+§C Software evaluation
+§D Software validation
+## 8
+A TCP server application is programmed to listen on port P on host S . A TCP client is connected to the TCP server over the network, Consider that while TCP connection is active the server is crashed and rebooted. Assume that the client does not use TCP keepalive timer. Which of the following behaviour/s is/are possible?
+Statement I: The TCP application server on S can listen on P after reboot.
+Statement II: If client sends a packet after the server reboot, it will receive the RST segment.
+In the light of the above statements, choose the correct answer from the options given below.
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 9
+Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.
+Assertion A: I/O protection is ensured by a hardware trap.
+Reason R: I/O interrupt caused by the condition like I/O completion and device malfunction occuring within the I/O devices
+In the light of the above statements, choose the correct answer from the options given below.
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 10
+Match List I with List II
+LIST I | LIST II
+A. Parallel FFT | I. Θ(n²)
+B. Iterative FFT | II. Θ(n)
+C. Evaluation of polynomial at n points by Horner method | III. Θ(lg n)
+D. Product of two polynomials that are represented in point value form | IV. Θ(n lg n)
+Choose the correct answer from the options given below:
+§A A-III B-I C-II D-III
+§B A-II B-I C-III D-IV
+§C A-III B-IV C-I D-II
+§D A-II B-III C-IV D-I
+## 11
+Match List I with List II
+LIST I | LIST II
+A. Bezier curves | I. 3 dim objects that have translation rotational symmetry
+B. B-Splines | II. Fractal geometry
+C. Sweep representations | III. Bias and tension
+D. Natural objects | IV. painting drawing CAD
+Choose the correct answer from the options given below:
+§A A-IV B-I C-III D-II
+§B A-II B-III C-IV D-I
+§C A-IV B-I C-II D-III
+§D A-II B-IV C-I D-III
+## 12
+Given below are two statements:
+Let f(n) and g(n) be asymptotically positive functions. The following conjectures are given
+Statement I:
+f(n) ≥ 1 and f(n) = O(g(n)) ⇒ g(n) = Ω(f(n))
+Statement II:
+f(n) = O(g(n)) ⇒ lg(f(n)) = O(lg(g(n))) where lg(g(n)) ≥ 1 for all sufficient large n .
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 13
+Consider the following statements:
+S1: LRU page replacement algorithm suffers from the belady's anomaly
+S2: Shortest remaining time first scheduling may cause starvations
+S3: Stack is shared by all threads in a process
+§A S1 S2 and S3 are true
+§B S1, S3 false and S2 is true
+§C S1, S2 are false and S3 is true
+§D S1,S2 and S3 are false
+## 14
+The total cost of retrieving records in sorted order using an unclustered B+ tree is
+(P- Average number of records per data page
+N - Data pages
+F- Ratio of the size of a data entry to the size of a data record)
+§A (F* N) + P
+§B (F + P) * N
+§C F* N*P
+§D F + P/N
+## 15
+Match List I with List II
+LIST I | LIST II
+A. Scenario testing | I. To verify the I/O behavior of text object
+B. Regression testing | II. user acceptance methodology
+C. Component testing | III. No new bugs after changes in program
+D. Beta testing | IV. The documentation of a use case
+Choose the correct answer from the options given below:
+§A A-IV B-III C-II D-I
+§B A-II B-I C-III D-IV
+§C A-IV B-III C-I D-II
+§D A-III B-I C-IV D-II
+## 16
+A. If some NP-complete problem P is in ℙ that ℙ = ℕℙ
+B. TSP is in ℕℙ
+C. SAT is in ℕℙ
+D. Hamilton circuit problem is not NP-complete
+Choose the correct answer from the options given below:
+§A A, B and C only
+§B B, C and D only
+§C C, D and A only
+§D D, A and B only
+## 17
+A B-tree used as an index for a large database table has four levels including the root node. If a new key is inserted in this index, then the maximum number of nodes that could be newly created in the process is
+§A 5
+§B 4
+§C 3
+§D 2
+## 18
+Suppose a circular queue of capacity n-1 elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array index variable respectively. Initially, REAR = FRONT =0. The conditions to detect queue empty and queue full are
+§A EMPTY: REAR == FRONT
+FULL: ( REAR +1 ) mod n == FRONT
+§B EMPTY: ( FRONT +1) mod n==REAR
+FULL: (REAR+1) mod n ==FRONT
+§C EMPTY: ( REAR+1) mod n==FRONT
+FULL: REAR == FRONT
+§D EMPTY: REAR == FRONT
+FULL: ( FRONT +1 ) mod n == REAR
+## 19
+Consider the following statements about the software product line system:
+Statement I: At the interaction level, components provide an operator display interface and an interface with the communication system used.
+Statement II: At the I/O management level, components handle operator authentication, report generator and query manager.
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 20
+Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R .
+Assertion A: A process involves a library function to create a thread.
+Reason R: The threads make system calls to convey their resource and I/O requirement to the Kernel.
+In the light of the above statements, choose the correct answer from the options given below.
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 21
+Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.
+Assertion A: The AVL trees are more balanced as compared to Red Black trees, but they may cause more rotations during insertion and deletion
+Reason R: A Red Black tree with n nodes has height that is greater than 2 log₂(n + 1) and the AVL tree with n nodes has height less than log_Φ(√5(n + 2)) − 2 ( where Φ is golden ratio)
+In the light of the above statements, choose the correct answer from the options given below.
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 22
+Match List I with List II
+List I | List II
+A. Physical layer | I. Transforming the raw bits in the form of a frame for transmission
+B. Data Link Layer | II. Control and monitoring of subnet
+C. Network Layer | III. Transmission of raw bits over communication channel
+D. Transport Layer | IV. Datagrams transmission data through connection-oriented or connectionless using datagram
+Choose the correct answer from the options given below:
+§A A-III B-II C-I D-IV
+§B A-II B-III C-I D-IV
+§C A-III B-I C-II D-IV
+§D A-II B-IV C-I D-III
+## 23
+Let R = {x, x ∈ N, x is multiple of 3 and x ≤ 100} and S = {x, x ∈ N, x is a multiple of 5 and x < 100}. What is the number of elements in (R ∩ S) × (S ∩ R) ?
+§A 36
+§B 33
+§C 20
+§D 6
+## 24
+let R(A, B, C, D) be a relational schema with following function dependencies:
+A → B, B → C
+C → D and D → B
+The decomposition of R into (A, B)(B, C)(B, D)
+§A gives a lossless join, and is dependency preserving
+§B gives lossless join, but is not dependency preserving
+§C does not give a lossless join, but is dependency preserving
+§D does not give a lossless join and is not dependency preserving
+## 25
+Consider the following finite automata F1 that accepts a language L
+[Figure: finite automaton with three states C, S and E. C is the start state; E is the accepting (double-circle) state. Transitions: C→S, S→E, C→E (upper arc), S→C, E→S, E→C (lower arc). Edges are unlabelled.]
+Let F2 be a finite automata which is obtained by reversal of F1. Then which of the following is correct?
+§A L(F1) ≠ L(F2)
+§B L(F1) = L(F2)
+§C L(F1) ≤ L(F2)
+§D L(F1) ≥ L(F2)
+## 26
+Given below are two statements:
+Which of the following statement/s is/are correct with respect to virtual memory
+Statement I: Address translation is performed for every logical address used during the execution of a program
+Statement II: A program can execute only when all of its components are loaded in the memory
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 27
+There are M points on one straight line AB and n points on another straight line AC none of them being A. How many triangles can be formed with these points as vertices?
+§A mn(m + n − 2)
+§B ½mn(m + n − 2)
+§C ½mn(m + n − 1)
+§D mn(m + n − 1)
+## 28
+Given below are two statements:
+Statement I: Fuzzifier is a part of a fuzzy system
+Statement II: Inference engine is a part of fuzzy system
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 29
+Consider the following statements:
+A. A database design is in BCNF if each member of the set of relation schemas that constitutes the design is in BCNF
+B. A BCNF schema can have transitive dependency
+C. It is always possible to obtain a 3 NF design without sacrificing a lossless join
+D. There are multivalued dependencies in 4 NF
+§A A, B and C only
+§B B, C and D only
+§C A, B and D only
+§D A, C and D only
+## 30
+Which of the following is not a property of a good system for representation of knowledge in a particular domain?
+§A Presentation adequacy
+§B inferential adequacy
+§C Inferential efficiency
+§D acquisitional efficiency
+## 31
+What will be the output of the following code?
+```
+# include < stdio. h>
+int main () {
+int a, b, c;
+a=0x10; b=010;
+c=a+b;
+printf("%d", c);
+return 0;
+}
+```
+§A 20
+§B 24
+§C Garbage
+§D error
+## 32
+What is the 4+4 fit binary fixed point equivalent of −(3.72)₁₀ ?
+§A 0011.1100
+§B 0011.1010
+§C 1100.0100
+§D 0011.1011
+## 33
+Let N denote the set of all natural numbers and R be the relation on N×N defined by
+(a, b) R (c, d), if ad(b + c) = bc(a + d). Then R is
+§A Symmetric only
+§B Reflexive only
+§C Transitive only
+§D An equivalence relation
+## 34
+The maximum yield length of the following CNF CFG is
+S → AB
+A → CD
+B → e
+C → a
+D → b
+§A 8
+§B 7
+§C 4
+§D 5
+## 35
+Let ⊕ denote XOR operation. Let 1 and 0 denote the binary constants and F is the Boolean expression over two variables P and Q (F(P, Q))
+= ((1 ⊕ P) ⊕ (P ⊕ Q)) ⊕ ((P ⊕ Q) ⊕ (Q ⊕ 0))
+Which of the following is equivalent expression to F ?
+§A P ⊕ Q
+§B P + Q
+§C (P + Q)' (complement of P + Q)
+§D (P ⊕ Q)' (complement of P ⊕ Q)
+## 36
+Which of the following scenario may lead to an irrecoverable error in a database system?
+§A A transaction writes a data item after it is read by an uncommitted transaction
+§B A transaction reads a data item after it is read by an uncommitted transaction
+§C A transaction reads a data item after it is written by a committed transactions
+§D A transaction reads a data item after it is written by an uncommitted transaction.
+## 37
+An observational technique that can be used to understand operational process and help to derive requirement for software to support operational process is known as
+§A Requirement specification
+§B Structural specification
+§C Ethnography
+§D Natural language specification
+## 38
+Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R .
+A virtual memory system uses first-in first-out page replacement policy and allocates a fixed number of frames to a process
+Assertion A: Increasing number of page frames allocated to a process sometimes increases the page fault rate.
+Reason R: Some programs do not exhibit locality of reference.
+In the light of the above statements, choose the correct answer from the options given below.
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 39
+Match List I with List II
+List-I | List-II
+A. CDMA | I. It provides mobile internet connection with faster data transfer rates
+B. GSM | II. It allows users to connect to a network or to other devices over wireless channel
+C. UMTS | III. Accessing mechanism for multiple transmitters over a single channel
+D. WiFi | IV. It is cellular technology employs hybrid of FDMA and TDMA
+Choose the correct answer from the options given below:
+§A A-III B-IV C-II D-I
+§B A-III B-IV C-I D-II
+§C A-II B-III C-IV D-I
+§D A-II B-I C-IV D-III
+## 40
+Consider the following language :
+L = {w ∈ {a, b, c}* : nₐ(w) + n_b(w) = n_c(w)}
+L is
+§A Context free but not linear
+§B Not context free
+§C Context free and linear
+§D Linear
+## 41
+Which of the following is not a mutation operator in a genetic algorithm?
+§A Random resetting
+§B Scramble
+§C Inversion
+§D Difference
+## 42
+Consider the following table of arrival time and burst time for three processes P0, P1 P2:
+Process | arrival time | Burst time
+P0 | 0 ms | 7
+P1 | 1 ms | 3
+P2 | 2 ms | 7
+The pre-emptive shortest job first scheduling algorithm is used. Scheduling is carried out only at arrival or completion of a process. What is the average waiting time for the three processes?
+§A 3 ms
+§B 3.67 ms
+§C 4.47 ms
+§D 4 ms
+## 43
+Which is not the component of the natural language understanding process?
+§A Morphological analysis
+§B Semantic analysis
+§C Pragmatic analysis
+§D Meaning analysis
+## 44
+Consider a hash table of size seven with starting index zero and a hash function (6x + 3) mod 4. Assuming the hash table is initially empty. Which of the following is the content of the table when the sequence 1, 3, 8, 10, 5, is inserted into the table using closed hashing? Here "_" denotes an empty location in the table.
+§A 1,3,8,10,5,_,_
+§B 3,8,1,_,10,_,5
+§C _,3,8,1,_,10,5
+§D _,1,3,8,10,5,_
+## 45
+A three dimensional array in C++ is declared as int A[a][b][c]. Consider that array elements are stored in row major order and indexing begin from 0 . Here the address of an item at the location A[r][s][t] computed in terms of word length w of an integer is
+§A &A[0][0][0] + w(b*c*s + c*r + t)
+§B &(A[0][0][0] + w(b*c*r + c*s + t))
+§C &A[0][0][0] + w(a*b*r*r + c + t)
+§D &A[0][0][0] + w(a*b*s + c*r + t)
+## 46
+Match List I with List II
+LIST I | LIST II
+A. RAID level 2 | I. Bit interleaved parity
+B. RAID level 4 | II. Block interleaved distributed parity
+C. RAID level 5 | III. Error correcting parity
+D. RAID level 3 | IV. Block interleaved parity
+Choose the correct answer from the options given below:
+§A A-IV B-III C-I D-II
+§B A-III B-IV C-II D-I
+§C A-III B-I C-II D-IV
+§D A-I B-III C-IV D-I
+## 47
+Match List I with List II
+LIST I | LIST II
+A. Expert system | I. Decision tree
+B. Fuzzy system | II. Scramble
+C. Operator in genetic algorithm | III. Inference engine
+D. Supervised technique | IV. Mycin
+Choose the correct answer from the options given below:
+§A A-IV B-I C-III D-II
+§B A-III B-IV C-II D-I
+§C A-IV B-III C-II D-I
+§D A-I B-II C-III D-IV
+## 48
+Consider following statements:
+A. A context free language is generated by LR(0) grammar if and only if it is accepted by a deterministic pushdown automata and has prefix property
+B. If M 1 is the single tape TM simulating multilape TMM, then time taken by M 1 to simulate n moves is (n³)
+C. Push down automata behaves like a Turing machine when it has one auxiliary memory.
+D. L = {aⁿbⁿcⁿ : n ≥ 1} is not context free but context sensitive.
+Choose the correct answer from the options given below:
+§A A, B and C only
+§B A, B only
+§C D only
+§D B, C only
+## 49
+Consider a popular sports news site. At a given moment, 20,000 concurrent users submit a request (a transaction, T) once every 2 minutes on average. Each transaction requires the webapp to download a new article that on average has 3 k bytes in length. What is the throughput?
+§A 8 megabits per second
+§B 4 megabits per second
+§C 6 megabits per second
+§D 2 megabits per second
+## 50
+How many integral solutions are there to
+x + y + z + w = 29, where
+x ≥ 1, y ≥ 2, z ≥ 3 and w ≥ 0 ?
+§A 2400
+§B 2600
+§C 2800
+§D 3000
+## 51
+Let R(A, B, C, D, F) be a relational schema with following functional dependencies:
+C → F, E → A, EC → D, A → B. Which of the following is a key for R ?
+§A CD
+§B EC
+§C AE
+§D AC
+## 52
+What is the output of following code?
+```
+main ()
+struct s1
+{ char*z;
+int i;
+struct s1 * p;
+}
+static struct s1 a [ ] = {
+{"Nagpur", 1, a+1}
+{"Raipur', 2, a+2}
+{"Kanpur', 3, a}
+};
+struct s1* ptr =a;
+printf(%s %s %s \n", a[0].z, ptr →z, a[2].p →z);
+}
+```
+§A Nagpur Raipur Kanpur
+§B Nagpur Nagpur Nagpur
+§C Kanpur Kanpur Kanpur
+§D Error
+## 53
+Which one of the following is NOT a part of ACID properties of a database transaction?
+§A Atomicity
+§B Consistency
+§C Isolation
+§D Deadlock-freedom
+## 54
+Match List I with List II
+LIST I | LIST II
+A. Critical region | I. Hoare's monitor
+B. Wait/signal | II. Mutual exclusion
+C. Working set | III. Principle of locality
+D. Deadlock | IV. Circular wait
+Choose the correct answer from the options given below:
+§A A-IV B-I C-III D-II
+§B A-II B-I C-III D-IV
+§C A-I B-II C-III D-IV
+§D A-IV B-III C-I D-II
+## 55
+Consider two hosts P and Q that are connected through a router R. The maximum transfer unit (MTU) value of the link between P and R is 1500 bytes and between R and Q is 820 bytes. A TCP segment of size 1400 bytes is transferred from P to Q through R with IP identification value of 0×1234. Assume that IP header size is 20 bytes. Further the pcaket is allowed to be fragmented that is Don't fragment (DF) flag in the IP Header is not set by P. Which of the following statement/s is/are true?
+A. Two fragments are created at R and IP datagram size carrying the second fragment is 620 bytes
+B. If the second fragment is lost, then R resends the fragment with IP identification value of 0×1234.
+C. If the second fragment lost, then P requires to resend the entire TCP segment.
+D. TCP destination port can be determined by analyzing the second fragment only.
+Choose the correct answer from the options given below:
+§A A, B and C only
+§B A and C only
+§C C and D only
+§D B and D only
+## 56
+Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.
+Assertion A: Dendral is an expert system
+Reason R: The rationality of an agent is not related to its reaction to the environment.
+In the light of the above statements, choose the correct answer from the options given below.
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 57
+In a multiuser operating system, 20 requests are made to use a particular resource per hour, on an average. The probability that no request is made in 45 minutes is
+§A e^(−15)
+§B e^(−5)
+§C 1 − e^(−5)
+§D 1 − e^(−10)
+## 58
+At a particular time of computation, the value of a counting semaphore is 7. Then 20 p operations and ' x ' V operations were completed on this semaphore. If the final value of semaphore is 5, x will be
+§A 15
+§B 22
+§C 18
+§D 13
+## 59
+Which of the following is not a solution representation in a genetic algorithm?
+§A Binary valued
+§B Real valued
+§C Permutation
+§D Combinations
+## 60
+Which phase of compiler checks the grammar of programming?
+§A Code optimization
+§B Semantic analysis
+§C Code generators
+§D Syntax analysis
+## 61
+Given the basic E R diagram and relational model, which of the the following is incorrect?
+§A An attribute of an entity can have more than one value
+§B An attribute of an entity can be composite
+§C In a row of relational table, an attribute can have more than one value
+§D In a row of a relational table, an attribute can have exactly one value or a NULL value
+## 62
+A processor chip is used for application in which 30 % of execution time is spent on floating point addition. For the new model of the processor, the design team has come up with redesign the floating point adder to make it twice as fast. What will be possible maximum speed up by this redesign?
+§A 2.0
+§B 1.06
+§C 1.18
+§D 2.5
+## 63
+Given below are two statements:
+Which of the following concurrency control protocol ensures both conflict serializability and freedom from deadlock?
+Statement I: Two phase locking
+Statement II: Timestamp ordering
+In the light of the above statements, choose the most appropriate answer from the options given below:
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 64
+Consider the following statements
+A. C-Fuzzy means clustering is a supervised method of learning
+B. PCA is used for dimension reduction
+C. Apriori is not a supervised technique
+D. When a machine learning model becomes so specially tuned to its exact input data that it fails to generalize to other similar data it is called underfitting
+Choose the correct answer from the options given below:
+§A A and B
+§B B and C
+§C C and D
+§D D and A
+## 65
+Sutherland Hodgeman method is used on
+§A Smooth curves
+§B Line segment
+§C Convex polygons
+§D Concave polygons
+## 66
+A. The set of turning machine codes for TM's that accept all inputs that are palindromes (possible along with some other inputs) is decidable
+B. The language of codes for TM's M that when started with blank tape, eventually write a 1 somewhere on the tape is undecidable
+C. The language accepted by a TMM is L_M is always recursive
+D. Post's correspondence problem is undecidable
+Choose the correct answer from the options given below:
+§A A, B and C only
+§B B, C and D only
+§C A and C only
+§D B and D only
+## 67
+Let G = R/{0} (the non-zero real numbers) and H = {−1, 1} be groups under the multiplication. Then, the map
+φ : G → H defined by φ(x) = x/|x| is
+§A Not a homomorphism
+§B A one-one homomorphism, which is not onto
+§C An onto homomorphism, which is not one to one
+§D An homomorphism
+## 68
+Which of the following parser is most powerful parser?
+§A Operator precedence
+§B SLR
+§C Canonical LR
+§D LALR
+## 69
+What is x in the following program?
+```
+# include < stdioh>
+int main ()
+{typedef (* (* arrfptr [3])()) [10];
+arrfptr x ;
+return 0;
+}
+```
+§A x is a pointer
+§B x is a array of three pointer
+§C x is an array of three function pointer
+§D Error in x declaration
+## 70
+Find the sum of all four digit numbers formed using the digits 1,2,4 and 6 .
+§A 86,658
+§B 88,8858
+§C 91,958
+§D 93,358
+## 71
+Consider the following statements:
+A. Dynamic metrics are collected by measurements made of a program in execution
+B. Static metrics are collected by measurements made of representations of the system
+C. The assessment of software quality is an objective process
+D. An important part of quality assurance in the selection of standards that should apply to the software development process.
+Choose the correct answer from the options given below:
+§A A, B, C only
+§B B, C, D only
+§C A, C, D only
+§D A, B, D only
+## 72
+The following table shows the time between failures for a software :
+Error number | 1 | 2 | 3 | 4 | 5
+time since last failure (Hours) | 6 | 4 | 8 | 5 | 6
+The reliability of the system for one hour operation assuming an exponential model is-
+§A e^(−9/29)
+§B e^(−7/29)
+§C e^(−5/29)
+§D e^(−3/29)
+## 73
+Which of the following statement is correct?
+§A Ackermann's function is primitive recursive.
+§B L = {aⁿbᵏcⁿ⁺ᵏ : n ≥ 0, k ≥ 0} is regular language.
+§C L = {aⁿbʲ : n = j²} is not context free language
+§D For every context sensitive language L not including λ, there exists some linear bounded automata M such that L ≠ L(M).
+## 74
+How will you free the memory allocated by the following program?
+```
+# include <stdio.h>
+#include < stdlib. h>
+#define MAXROW 3
+#define MAXCOL 4
+int main ()
+{
+int ** p, i, j;
+p= (int **) malloc (MAXROW * size of (int*));
+return 0;
+}
+```
+§A memfree (int p);
+§B dealloc (p);
+§C malloc ( p,0);
+§D free (p);
+## 75
+Which is not a basic approach to the problem of conflict resolution in a production system?
+§A Assigning a preference based on the rule that matched
+§B Assigning a preference based the object that matched
+§C Assigning a preference based on the action that the matched rule would perform
+§D Assigning a preference based on the action that the matched object would perform
+## 76
+Match List I with List II
+LIST I | LIST II
+A. A△B | I. (A − B) ∪ (A − C)
+B. A − (B ∪ C) | II. (A − B) ∩ (A − C)
+C. A − (B ∩ C) | III. (A − B) ∪ (B − A)
+D. A ∩ (B − C) | IV. (A ∩ B) − (A ∩ C)
+Choose the correct answer from the options given below:
+§A A-III B-II C-I D-IV
+§B A-II B-III C-IV D-I
+§C A-IV B-III C-I D-II
+§D A-IV B-I C-III D-II
+## 77
+The clipping process in computer graphics is used for
+§A Adding graphics
+§B Copying
+§C Zooming
+§D Removing objects and lines
+## 78
+Consider a disk system with cylinders. The request to access the cylinders occurs in the following sequence:
+4, 34, 10, 7, 19, 73, 2, 15, 6, 20
+Assuming that the head is currently at cylinder 50 , what is the time taken to satisfy all requests if it takes 1 ms to move from one cylinder to adjacent one and shortest seek time first policy is used?
+§A 119 ms
+§B 120 ms
+§C 142 ms
+§D 146 ms
+## 79
+Consider the rectangle with vertices (0, 0), (0, 2), (3, 0), (3, 2). There is scaling of 2 towards x -axis and 3 towards y -axis. The new cordinates of the rectangle are
+§A (0, 0), (6, 0), (0, 4), (6, 4)
+§B (0, 0), (6, 0), (0, 4), (3, 2)
+§C (0, 0), (6, 0), (0, 6), (6, 6)
+§D (0, 0), (4, 0), (0, 6), (4, 6)
+## 80
+Which of the following transforms in 2 dimension is used to resize a 2-dimensional object?
+§A Translation
+§B Rotation
+§C Scaling
+§D Shearing
+## 81
+In the standard Ethernet with transmission rate of 10 Mbps , asssume that the length of the medium is 2500 m and size of a frame is 512 bytes. The propagation speed of a signal in a cable is normally 2 × 10⁸ m/s. The transmission delay and propogation delay are
+§A 25.25 μs and 51.2 μs
+§B 51.2 μs and 12.5 μs
+§C 10.24 μs and 50.12 μs
+§D 12.5 μs and 51.2 μs
+## 82
+Consider the following statements.
+A. The identity is unique in any monoid.
+B. A monoid is a group if there exists inverse of each element of monoid.
+C. Semi group has closure, associative and identity properties.
+D. Quasi group has closure property.
+§A A, B and D only
+§B B, C and D only
+§C A, B and C only
+§D A, C and D only
+## 83
+What is the output of following code?
+```
+main ()
+{static float a[ ] = {13.24, 1.5,4.5,5.4,3.5}
+float *j, *k;
+j=a;
+k = a+4
+j =j*2;
+k =k/2
+printf ("% f% f", *j, *k);
+}
+```
+§A 13.25, 4.5
+§B 1.5, 3.5
+§C 13.24, 1.5, 4.5, 5.4, 3.5
+§D Illegal use of pointer in main function
+## 84
+If A = {4n + 2 | n is a natural number } and B = {3n | n is a natural number }. Which of the following is correct for A ∩ B ?
+§A {12n² + 6n | n is a natural number }
+§B {24n − 12 | n is a natural number }
+§C {60n + 30 | n is a natural number }
+§D {12n − 6 | n is a natural number }
+## 85
+Match List I with List II
+List I | List II
+A. The running time of a straight forward recursive method to compute nth Fibonacci number Fn | I. O(n²)
+B. The running time to compute Fn using memoization. | II. O(log n)
+C. The running time to compute Fibonacci number Fn using only integer addition and multiplication. | III. O(n)
+D. The running time to determine an optimal bitonic tour. | IV. Θ(φⁿ)
+Choose the correct answer from the options given below:
+§A A-I B-III C-IV D-II
+§B A-IV B-III C-II D-I
+§C A-I B-II C-IV D-III
+§D A-IV B-II C-III D-I
+## 86
+Given below are two statements:
+Statement I: If f and g are two functions and f = O(g) but g ≠ o(f), we say that the growth rate of g is smaller than that of f
+Statement II: The class of all decision problems decided by a TM in exponential time, that is O(2^k), k being a constant.
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 87
+256 Mb DRAM is organized as a 32M × 8 memory externally and as a 16 K × 16 K square array internally. Each row must be refreshed at least once every 50 mili second to forestall loss of data; refreshing one row takes 100 nanoseconds. What fraction of the total memory bandwidth is lost to refresh cycles?
+§A 6.6%
+§B 3.3%
+§C 9.9%
+§D 4.3%
+## 88
+Given below are two statements:
+Statement I: subsystem models show logical grouping of objects into coherent subsystem
+Statement II: State machine models show how objects change their states in response to events.
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 89
+Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.
+Assertion A: It is possible to create doubly linked list using only one pointer with every node.
+Reason R: By storing the XOR of the addresses of the previous and next nodes.
+In the light of the above statements, choose the most appropriate answer from the options given below.
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 90
+The compiler for high level language that runs on one machine and produces code for other machine is called-
+§A Cross compiler
+§B Multipass compiler
+§C Optimizing Compiler
+§D More than one of the above
+## 91
+Passage (Q91-Q95): Consider the following program fragment that deals with a table T with 17 rows and 1024 columns, computing an average for each column and printing it to screen ( i is row index and j is column index):
+for j= [ 0...1023] {
+temp =0;
+for i= [0..16]
+temp = temp + T[i][j];
+print (temp/17.0); }
+T [i] [i] and temp are 32 bit floating point values and memory is word addressable. The temporary variable temp is kept in a processor register so access to temp does not involve a memory reference. The main memory is page and holds 16 pages of size 1024 words, the page replacement policy is "least recently used ". If T is stored in the virtual address space in row major format.
+Consider again that T is stored in column-major format, what is the main memory hit ratio?
+§A 80%
+§B 95.6%
+§C 97.8%
+§D 99.9%
+## 92
+Passage (Q91-Q95): Consider the following program fragment that deals with a table T with 17 rows and 1024 columns, computing an average for each column and printing it to screen ( i is row index and j is column index):
+for j= [ 0...1023] {
+temp =0;
+for i= [0..16]
+temp = temp + T[i][j];
+print (temp/17.0); }
+T [i] [i] and temp are 32 bit floating point values and memory is word addressable. The temporary variable temp is kept in a processor register so access to temp does not involve a memory reference. The main memory is page and holds 16 pages of size 1024 words, the page replacement policy is "least recently used ". If T is stored in the virtual address space in row major format.
+Consider that T is stored in column major format, how many page faults will be encountered?
+§A 14
+§B 15
+§C 16
+§D 17
+## 93
+Passage (Q91-Q95): Consider the following program fragment that deals with a table T with 17 rows and 1024 columns, computing an average for each column and printing it to screen ( i is row index and j is column index):
+for j= [ 0...1023] {
+temp =0;
+for i= [0..16]
+temp = temp + T[i][j];
+print (temp/17.0); }
+T [i] [i] and temp are 32 bit floating point values and memory is word addressable. The temporary variable temp is kept in a processor register so access to temp does not involve a memory reference. The main memory is page and holds 16 pages of size 1024 words, the page replacement policy is "least recently used ". If T is stored in the virtual address space in row major format.
+How many page faults will be encountered?
+§A 16,402
+§B 17,408
+§C 18,208
+§D 18,608
+## 94
+Passage (Q91-Q95): Consider the following program fragment that deals with a table T with 17 rows and 1024 columns, computing an average for each column and printing it to screen ( i is row index and j is column index):
+for j= [ 0...1023] {
+temp =0;
+for i= [0..16]
+temp = temp + T[i][j];
+print (temp/17.0); }
+T [i] [i] and temp are 32 bit floating point values and memory is word addressable. The temporary variable temp is kept in a processor register so access to temp does not involve a memory reference. The main memory is page and holds 16 pages of size 1024 words, the page replacement policy is "least recently used ". If T is stored in the virtual address space in row major format.
+What is fault ratio of row major to column major arrangements ?
+§A 1024: 1
+§B 1301: 1
+§C 1240: 1
+§D 9107: 8
+## 95
+Passage (Q91-Q95): Consider the following program fragment that deals with a table T with 17 rows and 1024 columns, computing an average for each column and printing it to screen ( i is row index and j is column index):
+for j= [ 0...1023] {
+temp =0;
+for i= [0..16]
+temp = temp + T[i][j];
+print (temp/17.0); }
+T [i] [i] and temp are 32 bit floating point values and memory is word addressable. The temporary variable temp is kept in a processor register so access to temp does not involve a memory reference. The main memory is page and holds 16 pages of size 1024 words, the page replacement policy is "least recently used ". If T is stored in the virtual address space in row major format.
+What is the main memory hit ratio?
+§A 0
+§B 1
+§C 2
+§D 3
+## 96
+Passage (Q96-Q100): IP datagram has arrived with following partial information in the header (in hexadecimal )
+45000054000300002006....
+How many more routers can the packet travel to?
+§A 22
+§B 26
+§C 30
+§D 32
+## 97
+Passage (Q96-Q100): IP datagram has arrived with following partial information in the header (in hexadecimal )
+45000054000300002006....
+What is the protocol of the payload being carried by the packet?
+§A ICMP
+§B SCTP
+§C TCP protocol
+§D IGMP
+## 98
+Passage (Q96-Q100): IP datagram has arrived with following partial information in the header (in hexadecimal )
+45000054000300002006....
+What is the size of datagram?
+§A 64 bytes
+§B 74 bytes
+§C 84 bytes
+§D 104 bytes
+## 99
+Passage (Q96-Q100): IP datagram has arrived with following partial information in the header (in hexadecimal )
+45000054000300002006....
+What is the header size?
+§A 10 bytes
+§B 20 bytes
+§C 30 bytes
+§D 40 bytes
+## 100
+Passage (Q96-Q100): IP datagram has arrived with following partial information in the header (in hexadecimal )
+45000054000300002006....
+What is the efficiency of this datagram?
+§A 76.19%
+§B 80.50%
+§C 82.24%
+§D 85.45%

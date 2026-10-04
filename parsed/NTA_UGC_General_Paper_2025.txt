@@ -1,0 +1,427 @@
+## 1
+Comprehension (Q1-Q5): The following table shows the number of students enrolled in four different Colleges (A-D) during the four years from 2020 to 2023. Based on the data in the table, answer the questions that follow.
+Year-wise Enrolment of Students in Colleges (Number of Students Enrolled in College)
+Year | A | B | C | D
+2020 | 1200 | 900 | 1000 | 700
+2021 | 1100 | 800 | 1300 | 900
+2022 | 1400 | 1000 | 1200 | 1100
+2023 | 600 | 700 | 800 | 1000
+Number of students enrolled in College A in year 2020 and 2021 together is _________% more than the number of students enrolled in College C in the year 2022 and 2023 together.
+§A 12.5
+§B 8.5
+§C 10
+§D 15
+## 2
+Comprehension (Q1-Q5): The following table shows the number of students enrolled in four different Colleges (A-D) during the four years from 2020 to 2023. Based on the data in the table, answer the questions that follow.
+Year-wise Enrolment of Students in Colleges (Number of Students Enrolled in College)
+Year | A | B | C | D
+2020 | 1200 | 900 | 1000 | 700
+2021 | 1100 | 800 | 1300 | 900
+2022 | 1400 | 1000 | 1200 | 1100
+2023 | 600 | 700 | 800 | 1000
+If the ratio between number of girls and boys in College B in 2021 is 3 : 5 and the ratio between the number of girls and boys in College C in 2022 is 7 : 5, then what is the ratio between the number of girls in College B in 2021 to the number of boys of College C in 2022?
+§A 2 : 5
+§B 3 : 5
+§C 1 : 3
+§D 2 : 3
+## 3
+Comprehension (Q1-Q5): The following table shows the number of students enrolled in four different Colleges (A-D) during the four years from 2020 to 2023. Based on the data in the table, answer the questions that follow.
+Year-wise Enrolment of Students in Colleges (Number of Students Enrolled in College)
+Year | A | B | C | D
+2020 | 1200 | 900 | 1000 | 700
+2021 | 1100 | 800 | 1300 | 900
+2022 | 1400 | 1000 | 1200 | 1100
+2023 | 600 | 700 | 800 | 1000
+Taking all the Colleges together, the total number of students enrolled in the year 2020 is _______ more than the total number of students enrolled in the year 2023.
+§A 500
+§B 900
+§C 300
+§D 700
+## 4
+Comprehension (Q1-Q5): The following table shows the number of students enrolled in four different Colleges (A-D) during the four years from 2020 to 2023. Based on the data in the table, answer the questions that follow.
+Year-wise Enrolment of Students in Colleges (Number of Students Enrolled in College)
+Year | A | B | C | D
+2020 | 1200 | 900 | 1000 | 700
+2021 | 1100 | 800 | 1300 | 900
+2022 | 1400 | 1000 | 1200 | 1100
+2023 | 600 | 700 | 800 | 1000
+What is the average number of students enrolled in College B over all the four years?
+§A 850
+§B 750
+§C 840
+§D 720
+## 5
+Comprehension (Q1-Q5): The following table shows the number of students enrolled in four different Colleges (A-D) during the four years from 2020 to 2023. Based on the data in the table, answer the questions that follow.
+Year-wise Enrolment of Students in Colleges (Number of Students Enrolled in College)
+Year | A | B | C | D
+2020 | 1200 | 900 | 1000 | 700
+2021 | 1100 | 800 | 1300 | 900
+2022 | 1400 | 1000 | 1200 | 1100
+2023 | 600 | 700 | 800 | 1000
+For College B in the year 2021, if 20% of students were enrolled in B.Sc. 30% of students were enrolled in B.Com. and the remaining students were enrolled in BCA, then what is the difference between the number of students enrolled in BCA and B.Sc?
+§A 260
+§B 220
+§C 230
+§D 240
+## 6
+Identify the advantages of video conferencing.
+(A) Increased productivity
+(B) Going green
+(C) Lack of personal contact
+(D) Clarity of audio and video always
+Choose the correct answer from the options given below:
+§A A, B and D Only
+§B A and C only
+§C A, B and C Only
+§D A and B Only
+## 7
+A sum of Rs 3800 is divided among three persons A, B, and C in the ratio 1/2 : 1/3 : 3/4 what is the share of the person C?
+§A Rs. 3360
+§B Rs. 2240
+§C Rs. 2150
+§D Rs. 1800
+## 8
+Which of the following soil type supports earth worm activity?
+(A) Loam soil
+(B) Gleyed soil
+(C) Rendzina
+(D) Podzol
+Choose the correct answer from the options given below:
+§A A, B and C Only
+§B B, C and D only
+§C A, C and D Only
+§D A, B and D Only
+## 9
+Arrange the following OSI layers in correct sequence:
+(A) Data link layer
+(B) Physical layer
+(C) Network layer
+(D) Presentation layer
+(E) Application layer
+Choose the correct answer from the options given below:
+§A E, D, B, A, C
+§B E, D, A, C, B
+§C B, A, C, E, D
+§D B, A, C, D, E
+## 10
+Match the List-I with List-II.
+List-I (Proponents) | List-II (Theory)
+A. George Gerbner | I. Cognitive Dissonance Theory
+B. L.A. Festinger | II. Cultivation Theory
+C. McCombs and Donald L. Shaw | III. Uses and Gratification Theory
+D. Katz and Blumer | IV. Agenda Setting Theory
+Choose the correct answer from the options given below:
+§A (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+§B (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+§C (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+§D (A)-(III), (B)-(II), (C)-(I), (D)-(II)
+## 11
+Match the List-I with List-II.
+List-I (Institutions) | List-II (Propounders)
+A. Milind College | I. B.R. Ambedkar
+B. Rajghat Besant School | II. Sri Aurobindo
+C. Banasthali Vidyapeeth | III. Hiralal Shastri
+D. Auroville | IV. Jiddu Krishnamurti
+Choose the correct answer from the options given below:
+§A (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+§B (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+§C (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+§D (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
+## 12
+Which of the following statements are correct in the context of operating system?
+(A) Utility program is the first program loaded into the computer during booting
+(B) Multiprogramming was introduced for interleaved execution of multiple jobs by the same CPU
+(C) DOS is an example of single user operating system.
+(D) Mainframe computer uses multiuser operating system.
+Choose the correct answer from the options given below:
+§A A, B and C Only
+§B A, B and D Only
+§C B, C and D Only
+§D A, C and D Only
+## 13
+Which of the following statements could be considered as a valid scientific hypothesis?
+§A Adults should drink more water.
+§B Eating 20 almonds a day decreases the risk of contracting heart disease
+§C Cows should be given green fodder
+§D Children should eat cereals
+## 14
+The infamous minutes of 1834 can be associated with
+§A Charles Wood
+§B William Bentuick
+§C Thomas Babington Macaulay
+§D Charles Grant
+## 15
+Individual and group accountability is one of the elements of ___________.
+§A Inductive learning
+§B Cooperative learning
+§C Deductive learning
+§D Active learning
+## 16
+Which of the following statements is true for Episodic Buffer?
+§A Integrates information from phonological loop only.
+§B Integrates information from visuospatial sketch pad only.
+§C Integrates information from the phonological loop and visuospatial sketchpad.
+§D Integrates information from the phonological loop, visuospatial sketchpad and long-term Memory.
+## 17
+Which school among the following upholds perception as an unerring knowledge of the unique particular?
+§A Nyaya
+§B Buddhism
+§C Vaisesika
+§D Jaina
+## 18
+Which of the following is represented by Noise Index L₉₀?
+§A Background noise level
+§B Average noise level
+§C Peak noise level
+§D Threshold noise level
+## 19
+Arrange the following chronologically:
+(A) Secondary Education Commission
+(B) Kothari Education Commission
+(C) Establishment of UGC
+(D) Chattopadhyay Commission
+(E) University Education Commission
+Choose the correct answer from the options given below:
+§A A, E, B, D, C
+§B A, D, C, B, E
+§C E, A, C, B, D
+§D E, B, D, C, A
+## 20
+What among the following can be said about the fallacy of Savyabhicara (irregular middle)?
+§A It leads to single conclusion
+§B The hetu in it, is uniformly constant with the major term
+§C The hetu in it, is only related to the non-existence of the major term
+§D It leads to different opposite conclusions
+## 21
+Which of the following would apply to Qualitative research methodology?
+(A) Empiricism
+(B) Emphasis on description of variables
+(C) Rationalism
+(D) Structured rigid methodology
+(E) Explores experiences, meanings, perceptions and feelings
+Choose the correct answer from the options given below:
+§A B, C and D Only
+§B C, D and E Only
+§C A and E Only
+§D A, B and E Only
+## 22
+Difficulty in accessing a memory because of the presence of other information is known as ___________.
+§A Decay
+§B Interference
+§C Retroactive
+§D Proactive
+## 23
+Which of the following depicts Semantic Memory?
+§A It is dependent on the person's identity with the past.
+§B It is a student's general knowledge about the world.
+§C It is the retention of information about the where and when of life's happenings
+§D It is the knowledge in the form of skills and cognitive operations.
+## 24
+Identify the fallacy in the following:
+"Only man has an immortal soul". No woman is a man. Therefore, no woman has an immortal soul".
+§A Strawman
+§B Equivocation
+§C Red Herring
+§D Bandwagon argument
+## 25
+Which amongst the following is not a Buddhist monastic University?
+§A Nalanda
+§B Takshashila
+§C Vikramshila
+§D Odantpuri
+## 26
+Match the List-I with List-II.
+List-I (Environmental Treaty/ Convention) | List-II (Focus Area)
+A. Bonn Convention | I. Migratory Species Conservation
+B. CITES | II. Convention on Biological Diversity
+C. Earth Summit | III. Trades in Endangered Species
+D. Nagoya Protocol | IV. Sustainable Development
+Choose the correct answer from the options given below:
+§A (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+§B (A)-(I), (B)-(III), (C)-(IV), (D)-(II)
+§C (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+§D (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+## 27
+Match the List-I with List-II.
+List-I (Device) | List-II (Function)
+A. CPU | I. stores data temporarily
+B. Monitor | II. stores data permanently
+C. RAM | III. Processes Instructions
+D. Hard disk | IV. Displays visual output
+Choose the correct answer from the options given below
+§A (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+§B (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+§C (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+§D (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+## 28
+Total gain in Biomass by an animal is known as
+§A Gross Primary Productivity
+§B Gross Secondary Productivity
+§C Net Primary Productivity
+§D Net Secondary Productivity
+## 29
+The form of computing utilized by an email service is
+§A Distributed
+§B Grid
+§C P2P
+§D Cloud
+## 30
+A shopkeeper purchased 10 kg of Basmati rice at the rate of Rs. 50 per kg and 15 kg of ordinary rice at the rate of Rs. 20 per kg. He mixed the two varieties of the rice and sold it for a gain of 25%. What was his sale price (Rs/kg)?
+§A Rs 10 per kg
+§B Rs 20 per kg
+§C Rs 30 per kg
+§D Rs 40 per kg
+## 31
+Which of the following are most suitable tools for creating interactive teaching and learning material?
+(A) Genially
+(B) Learningapps. org
+(C) Interacty
+(D) H5P
+(E) Educaplay
+Choose the correct answer from the options given below:
+§A A, C and E Only
+§B B and D Only
+§C A, B, D and E Only
+§D A, B, C, D and E
+## 32
+What are the three stages of Interpersonal Communication?
+(A) The Phatic Stage
+(B) The Plato Stage
+(C) The Personal Stage
+(D) The proxemics Stage
+(E) The Intimate Stage
+Choose the correct answer from the options given below:
+§A A, B and C Only
+§B A, C and E Only
+§C C, D and E Only
+§D B, C and D Only
+## 33
+Identify the correct claims in the context of MOOD-AII in IInd figure.
+(A) The middle term appears as predicate in both the premises
+(B) It commits fallacy of undistributed middle term
+(C) Middle term is distributed in the major premise
+(D) Draws negative Conclusion from affirmative premise
+(E) Conclusion distributes neither of its terms
+Choose the correct answer from the options given below:
+§A C and D Only
+§B A, B and E Only
+§C B and C Only
+§D B, C and D Only
+## 34
+Artificial Wetland is located in
+§A Keoladeo National Park
+§B Rajaji National Park
+§C Kanha National Park
+§D Manas National Park
+## 35
+If 'PEAK' is coded as 'KVZP' and 'FOUR' is coded as 'ULFI', the code of 'THIS' will be:
+§A GRSH
+§B GSRH
+§C SHGR
+§D HGRS
+## 36
+What is Grapevine communication?
+§A Corporate Communication
+§B Agri base Communication
+§C Formal Communication
+§D Informal Communication
+## 37
+Which among the following is used for judging the significance of several statistical measures, particularly the mean?
+§A χ²-test
+§B Z-test
+§C Kruskal-Wallis test
+§D F-test
+## 38
+Arrange the following events related to mass media in the correct chronological sequence.
+(A) Publication of early news papers.
+(B) Development of Television Broadcasting.
+(C) Introduction of email.
+(D) Launch of online news websites.
+(E) Invention of Radio.
+Choose the correct answer from the options given below:
+§A A, E, B, D, C
+§B A, E, B, C, D
+§C E, A, C, D, B
+§D A, C, B, E, D
+## 39
+Choose the next term of the series 6, 18, 108, 1296, ________.
+§A 31104
+§B 15552
+§C 30104
+§D 23328
+## 40
+A train travels at a certain average speed for a distance of 63 km and then travels a distance of 72 km at an average speed of 6 km/h more than its original speed. If it takes 3 hours to complete total journey, what is the original speed?
+§A 48 km/h
+§B 40 km/h
+§C 42 km/h
+§D 32 km/h
+## 41
+Which of the following is not a security risk?
+§A Hacking
+§B Firewall
+§C Phishing
+§D Pharming
+## 42
+Pick the correct statements pertaining to NEP 2020.
+(A) It promotes multiple entry-multiple exit
+(B) It promotes English education
+(C) It promotes multi and inter-disciplinarity
+(D) It promotes privatization-philanthropic participation in Education
+Choose the correct answer from the options given below:
+§A A, C and D Only
+§B B and D Only
+§C B, C and D Only
+§D A and B Only
+## 43
+Which among following definition states that the term to be defined is correctly applied to a given case, if and only if the performance of specified operations in that case yields a specified result.
+§A Synonymous definition
+§B Operational definition
+§C Ostensive definition
+§D Quasi-ostensive definition
+## 44
+Which of the following is a variant of the Harvard style of referencing?
+§A APA
+§B Chicago
+§C IEEE
+§D MLA
+## 45
+If a researcher decides to have a control group in a 'placebo' design, he/she should have how many groups?
+§A One group
+§B Two groups
+§C Three groups
+§D Four groups
+## 46
+Comprehension (Q46-Q50): The most important literary event in the nineteenth century was the emergence of literary prose in all the modern Indian languages. It is not that prose was an invention of this period. Both Sanskrit and Persian had a vast body of prose. Persian prose in the main treated "serious and learned topics"; the purpose of the authors was "to inform and to uplift rather than to amuse", despite the fact that the fantastic adventure of the Arabian Nights cycle gave scope to the creative imagination. Sanskrit prose, which developed a simple and dignified prose-style from the time of the composition of the Upanisads, several centuries before Christ, employed in various spheres of intellectual and imaginative activities. Following the same tradition, Pali and a few Prakrit languages also developed a rich and vast body of tales and romances.
+What among the following allowed scope for creative imagination?
+§A The Ramayana
+§B The Arabian Nights
+§C The Mahabharata
+§D The Panchatantra
+## 47
+Comprehension (Q46-Q50): The most important literary event in the nineteenth century was the emergence of literary prose in all the modern Indian languages. It is not that prose was an invention of this period. Both Sanskrit and Persian had a vast body of prose. Persian prose in the main treated "serious and learned topics"; the purpose of the authors was "to inform and to uplift rather than to amuse", despite the fact that the fantastic adventure of the Arabian Nights cycle gave scope to the creative imagination. Sanskrit prose, which developed a simple and dignified prose-style from the time of the composition of the Upanisads, several centuries before Christ, employed in various spheres of intellectual and imaginative activities. Following the same tradition, Pali and a few Prakrit languages also developed a rich and vast body of tales and romances.
+How is Sanskrit prose described in the passage?
+§A Simple and dignified
+§B Complex and humorous
+§C Solely poetic and lyrical
+§D Limited to religious themes
+## 48
+Comprehension (Q46-Q50): The most important literary event in the nineteenth century was the emergence of literary prose in all the modern Indian languages. It is not that prose was an invention of this period. Both Sanskrit and Persian had a vast body of prose. Persian prose in the main treated "serious and learned topics"; the purpose of the authors was "to inform and to uplift rather than to amuse", despite the fact that the fantastic adventure of the Arabian Nights cycle gave scope to the creative imagination. Sanskrit prose, which developed a simple and dignified prose-style from the time of the composition of the Upanisads, several centuries before Christ, employed in various spheres of intellectual and imaginative activities. Following the same tradition, Pali and a few Prakrit languages also developed a rich and vast body of tales and romances.
+The most significant literary event in the nineteenth century according to the passage was:
+§A The invention of poetic forms
+§B The development of drama
+§C The emergence of literary prose in modern Indian languages
+§D The translation of foreign literature
+## 49
+Comprehension (Q46-Q50): The most important literary event in the nineteenth century was the emergence of literary prose in all the modern Indian languages. It is not that prose was an invention of this period. Both Sanskrit and Persian had a vast body of prose. Persian prose in the main treated "serious and learned topics"; the purpose of the authors was "to inform and to uplift rather than to amuse", despite the fact that the fantastic adventure of the Arabian Nights cycle gave scope to the creative imagination. Sanskrit prose, which developed a simple and dignified prose-style from the time of the composition of the Upanisads, several centuries before Christ, employed in various spheres of intellectual and imaginative activities. Following the same tradition, Pali and a few Prakrit languages also developed a rich and vast body of tales and romances.
+What was the purpose of authors writing in Persian prose, as described in the passage?
+§A To entertain the audience
+§B To inform and uplift the readers
+§C To promote religious doctrines
+§D To provide translations of Sanskrit texts
+## 50
+Comprehension (Q46-Q50): The most important literary event in the nineteenth century was the emergence of literary prose in all the modern Indian languages. It is not that prose was an invention of this period. Both Sanskrit and Persian had a vast body of prose. Persian prose in the main treated "serious and learned topics"; the purpose of the authors was "to inform and to uplift rather than to amuse", despite the fact that the fantastic adventure of the Arabian Nights cycle gave scope to the creative imagination. Sanskrit prose, which developed a simple and dignified prose-style from the time of the composition of the Upanisads, several centuries before Christ, employed in various spheres of intellectual and imaginative activities. Following the same tradition, Pali and a few Prakrit languages also developed a rich and vast body of tales and romances.
+According to the passage, Persian prose deals with
+§A Serious and learned topics
+§B Entertainment to the readers
+§C Comedy only
+§D Religious practices only

@@ -1,0 +1,925 @@
+## 1
+In mathematical logic, which of the following are statements?
+(i) There will be snow in January.
+(ii) What is the time now ?
+(iii) Today is Sunday.
+(iv) You must study Discrete Mathematics.
+Choose the correct answer from the code given below :
+§A (i) and (iii)
+§B (i) and (ii)
+§C (ii) and (iv)
+§D (iii) and (iv)
+## 2
+Match List I with List II and choose the correct answer from the code given below.
+List I | List II
+(a) Equivalence | (i) p ⇒ q
+(b) Contrapositive | (ii) p ⇒ q : q ⇒ p
+(c) Converse | (iii) p ⇒ q : ~p ⇒ ~q
+(d) Implication | (iv) p ⇔ q
+§A (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+§B (a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)
+§C (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)
+§D (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+## 3
+A box contains six red balls and four green balls. Four balls are selected at random from the box. What is the probability that two of the selected balls will be red and two will be green?
+§A 1/14
+§B 3/7
+§C 1/35
+§D 1/9
+## 4
+A survey has been conducted on methods of commuter travel. Each respondent was asked to check Bus, Train or Automobile as a major method of travelling to work. More than one answer was permitted. The results reported were as follows :
+Bus 30 people; Train 35 people; Automobile 100 people; Bus and Train 15 people; Bus and Automobile 15 people, Train and Automobile 20 people; and all the three methods 5 people. How many people completed the survey form?
+§A 120
+§B 165
+§C 160
+§D 115
+## 5
+Which of the following statements are true?
+(i) Every logic network is equivalent to one using just NAND gates or just NOR gates.
+(ii) Boolean expressions and logic networks correspond to labelled acyclic digraphs.
+(iii) No two Boolean algebras with n atoms are isomorphic.
+(iv) Non-zero elements of finite Boolean algebras are not uniquely expressible as joins of atoms.
+Choose the correct answer from the code given below :
+§A (i) and (iv) only
+§B (i), (ii) and (iii) only
+§C (i) and (ii) only
+§D (ii), (iii) and (iv) only
+## 6
+The relation ≤ and < on a boolean algebra are defined as :
+x ≤ y if and only if x ∨ y = y
+x < y means x ≤ y but x ≠ y
+x ≥ y means y ≤ x and
+x > y means y < x
+Considering the above definitions, which of the following is not true in the boolean algebra?
+(i) If x ≤ y and y ≤ z , then x ≤ z
+(ii) If x ≤ y and y ≤ x , then x = y
+(iii) If x < y and y < z , then x ≤ y
+(iv) If x < y and y < z , then x < y
+Choose the correct answer from the code given below :
+§A (iii) only
+§B (iv) only
+§C (i) and (ii) only
+§D (ii) and (iii) only
+## 7
+The boolean expression A'·B + A·B' + A·B (primes denote overline/complement) is equivalent to
+§A A'·B
+§B (A + B)'
+§C A.B
+§D A + B
+## 8
+In PERT/CPM, the merge event represents ___ of two or more events.
+§A completion
+§B beginning
+§C splitting
+§D joining
+## 9
+Use Dual Simplex Method to solve the following problem :
+Maximize z = −2x₁ − 3x₂
+subject to:
+x₁ + x₂ ≥ 2
+2x₁ + x₂ ≤ 10
+x₁ + x₂ ≤ 8
+x₁, x₂ ≥ 0
+§A x₁ = 2, x₂ = 0, and z = −4
+§B x₁ = 2, x₂ = 6 and z = −22
+§C x₁ = 0, x₂ = 2 and z = −6
+§D x₁ = 6, x₂ = 2 and z = −18
+## 10
+In computers, subtraction is generally carried out by
+§A 9's complement
+§B 1's complement
+§C 10's complement
+§D 2's complement
+## 11
+Consider the following boolean equations :
+(i) wx + w(x + y) + x(x + y) = x + wy
+(ii) (w x'(y + x z') + w' x') y = x' y   (primes denote overline/complement)
+What can you say about the above equations?
+§A (i) is true and (ii) is false
+§B (i) is false and (ii) is true
+§C Both (i) and (ii) are true
+§D Both (i) and (ii) are false
+## 12
+Consider the graph shown below :
+[Figure: weighted undirected graph in the shape of a wheel. Centre vertex O is joined by spokes to eight outer vertices V1..V8 placed clockwise starting from the top; the outer vertices also form a cycle V1-V2-...-V8-V1.
+Outer cycle edge weights: V1-V2 = 4, V2-V3 = 2, V3-V4 = 1, V4-V5 = 5, V5-V6 = 6, V6-V7 = 3, V7-V8 = 1, V8-V1 = 2.
+Spoke weights: O-V1 = 3, O-V2 = 1, O-V3 = 4, O-V4 = 5, O-V5 = 4, O-V6 = 4, O-V7 = 2, O-V8 = 2.]
+Use Kruskal's algorithm to find the minimum spanning tree of the graph. The weight of this minimum spanning tree is
+§A 17
+§B 14
+§C 16
+§D 13
+## 13
+Consider the following statements :
+(i) Auto increment addressing mode is useful in creating self-relocating code.
+(ii) If auto increment addressing mode is included in an instruction set architecture, then an additional ALU is required for effective address calculation.
+(iii) In auto increment addressing mode, the amount of increment depends on the size of the data item accessed.
+Which of the above statements is/are true?
+Choose the correct answer from the code given below :
+§A (i) and (ii) only
+§B (ii) and (iii) only
+§C (iii) only
+§D (ii) only
+## 14
+A computer uses a memory unit with 256 K words of 32 bits each. A binary instruction code is stored in one word of memory. The instruction has four parts : an indirect bit, an operation code and a register code part to specify one of 64 registers and an address part. How many bits are there in the operation code, the register code part and the address part ?
+§A 7,6,18
+§B 6,7,18
+§C 7,7,18
+§D 18,7,7
+## 15
+Consider the following x86 - assembly language instructions :
+MOV AL, 153
+NEG AL
+The contents of the destination register AL (in 8-bit binary notation), the status of Carry Flag (CF) and Sign Flag (SF) after the execution of above instructions, are
+§A AL = 01100110; CF = 0; SF = 0
+§B AL = 01100111; CF = 0; SF = 1
+§C AL = 01100110; CF = 1; SF = 1
+§D AL = 01100111; CF = 1; SF = 0
+## 16
+The decimal floating point number -40.1 represented using IEEE-754 32-bit representation and written in hexadecimal form is
+§A 0xC2206666
+§B 0xC2206000
+§C 0xC2006666
+§D 0xC2006000
+## 17
+Find the boolean expression for the logic circuit shown below :
+(1-NAND gate, 2-NOR gate, 3-NOR gate)
+[Figure: inputs A and B. Gate 1 (NAND) takes A and B directly. Gate 2 (NOR) takes NOT(A) (A passed through an inverter) and B. Gate 3 (NOR) takes the outputs of gate 1 and gate 2 and produces the output Y.]
+§A A·B'
+§B A'·B
+§C A·B
+§D A'·B'
+## 18
+Consider a disk pack with 32 surfaces, 64 tracks and 512 sectors per pack. 256 bytes of data are stored in a bit serial manner in a sector. The number of bits required to specify a particular sector in the disk is
+§A 18
+§B 19
+§C 20
+§D 22
+## 19
+Consider a system with 2 level cache. Access times of Level 1 cache, Level 2 cache and main memory are 0.5 ns, 5 ns and 100 ns respectively. The hit rates of Level 1 and Level 2 caches are 0.7 and 0.8 , respectively. What is the average access time of the system ignoring the search time within the cache?
+§A 35.20 ns
+§B 7.55 ns
+§C 20.75 ns
+§D 24.35 ns
+## 20
+If a graph (G) has no loops or parallel edges, and if the number of vertices (n) in the graph is n ≥ 3, then graph G is Hamiltonian if
+(i) deg(v) ≥ n/3 for each vertex v
+(ii) deg(v) + deg(w) ≥ n whenever v and w are not connected by an edge.
+(iii) |E(G)| ≥ (1/3)(n − 1)(n − 2) + 2
+Choose the correct answer from the code given below :
+§A (i) and (iii) only
+§B (ii) only
+§C (ii) and (iii) only
+§D (iii) only
+## 21
+The solution of recurrence relation :
+T(n) = 2T(√n) + lg(n) is
+§A O(lg(n))
+§B O(n lg(n))
+§C O(lg(n) lg(n))
+§D O(lg(n) lg(lg(n)))
+## 22
+The elements 42,25,30,40,22,35,26 are inserted one by one in the given order into a max-heap. The resultant max-heap is stored in an array implementation as
+§A <42, 40, 35, 25, 22, 26, 30>
+§B <42, 35, 40, 22, 25, 30, 26>
+§C <42, 40, 35, 25, 22,30,26>
+§D <42, 35, 40, 22, 25, 26, 30>
+## 23
+Consider two sequences X and Y :
+X = ⟨0, 1, 2, 1, 3, 0, 1⟩
+Y = ⟨1, 3, 2, 0, 1, 0⟩
+The length of longest common subsequence between X and Y is
+§A 2
+§B 3
+§C 4
+§D 5
+## 24
+Consider the following postfix expression with single-digit operands :
+6 2 3 * / 4 2 * + 6 8 * -
+The top two elements of the stack after the second * is evaluated, are:
+§A 8,2
+§B 8,1
+§C 6,2
+§D 6,3
+## 25
+A binary search tree is constructed by inserting the following numbers in order :
+60,25,72,15,30,68,101,13,18,47,70,34
+The number of nodes in the left subtree is
+§A 5
+§B 6
+§C 7
+§D 3
+## 26
+In a ternary tree, the number of internal nodes of degree 1,2 , and 3 is 4,3 , and 3 respectively. The number of leaf nodes in the ternary tree is
+§A 9
+§B 10
+§C 11
+§D 12
+## 27
+Match List I with List II and choose the correct answer from the code given below.
+List I (Graph) | List II (Time Complexity)
+(a) Dijkstra's algorithm | (i) O(E log E)
+(b) Kruskal's algorithm | (ii) O(V³)
+(c) Floyd-Warshall algorithm | (iii) O(V²)
+(d) Topological sorting | (iv) O(V+E)
+Where V and E are the number of vertices and edges in the graph respectively.
+§A (a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)
+§B (a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)
+§C (a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)
+§D (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)
+## 28
+In K-coloring of an undirected graph G = (V, E) is a function c : V → {0, 1, . . . , K − 1} such that c(u) ≠ c(v) for every edge (u, v) ∈ E. Which of the following is not correct?
+§A G is bipartite
+§B G is 2-colorable
+§C G has cycles of odd length
+§D G has no cycles of odd length
+## 29
+Consider a singly linked list. What is the worst case time complexity of the best-known algorithm to delete the node a, pointer to this node is q, from the list?
+§A O(n log n)
+§B O(n)
+§C O(log n)
+§D O(1)
+## 30
+The second smallest of n elements can be found with ___________ comparisons in the worst case.
+§A n − 1
+§B (log n)
+§C n + ceil(log n) − 2
+§D 3n/1
+## 31
+Let r = a(a + b)*, s = aa*b and t = a*b be three regular expressions. Consider the following :
+(i) L(s) ⊆ L(r) and L(s) ⊆ L(t)
+(ii) L(r) ⊆ L(s) and L(s) ⊆ L(t)
+Choose the correct answer from the code given below :
+§A Only (i) is correct.
+§B Only (ii) is correct.
+§C Both (i) and (ii) are correct.
+§D Neither (i) nor (ii) is correct.
+## 32
+Consider the language L given by
+L = {2^(nk) | k > 0, and n is non-negative integer number}
+The minimum number of states of finite automaton that accepts the language L is
+§A n
+§B n + 1
+§C n(n+1)/2
+§D 2ⁿ
+## 33
+The number of substrings that can be formed from a string given by
+a d e f b g h n m p is
+§A 10
+§B 45
+§C 55
+§D 56
+## 34
+Consider the following two languages :
+L1 = { x | for some y with |y| = 2|x|, xy ∈ L and L is regular language }
+L2 = { x | for some y such that |x| = |y|, xy ∈ L and L is regular language }
+Which one of the following is correct?
+§A Only L1 is regular language
+§B Only L2 is regular language
+§C Both L1 and L2 are regular languages
+§D Both L1 and L2 are not regular languages
+## 35
+Consider the following languages :
+L1 = {a^(n+m) b^n a^m | n, m ≥ 0}
+L2 = {a^(n+m) b^(n+m) a^(n+m) | n, m ≥ 0}
+Which one of the following is correct?
+§A Only L1 is context free language
+§B Only L2 is context free language
+§C Both L1 and L2 are context free languages
+§D Both L1 and L2 are not context free languages
+## 36
+Consider R to be any regular language and L1, L2 be any two context-free languages. Which one of the following is correct?
+§A The complement of L1 is context free
+§B (complement of (L1 ∪ L2)) − R is context free
+§C L1 ∩ L2 is context free
+§D L1 − R is context free
+## 37
+Consider the following problems :
+(i) Whether a finite state automaton halts on all inputs ?
+(ii) Whether a given context free language is regular?
+(iii) Whether a Turing machine computes the product of two numbers?
+Which one of the following is correct?
+§A Only (i) and (iii) are undecidable problems
+§B Only (ii) and (iii) are undecidable problems
+§C Only (i) and (ii) are undecidable problems
+§D (i), (ii) and (iii) are undecidable problems
+## 38
+Which of the following problems is decidable for recursive languages (L)?
+§A Is L = φ ?
+§B Is w ∈ L, where w is a string ?
+§C Is L = Σ* ?
+§D Is L = R, where R is a given regular set ?
+## 39
+Consider the following grammar G :
+S → A | B
+A → a | c
+B → b | c
+where {S, A, B} is the set of non-terminals, {a, b, c} is the set of terminals.
+Which of the following statement(s) is/are correct?
+S1 : LR(1) can parse all strings that are generated using grammar G.
+S2 : LL(1) can parse all strings that are generated using grammar G.
+Choose the correct answer from the code given below :
+§A Only S1
+§B Only S2
+§C Both S1 and S2
+§D Neither S1 nor S2
+## 40
+The grammar S → (S) | SS | ε is not suitable for predictive parsing because the grammar is
+§A Right recursive
+§B Left recursive
+§C Ambiguous
+§D An operator grammar
+## 41
+If the frame buffer has 10-bits per pixel and 8-bits are allocated for each of the R, G, and B components, then what would be the size of the color lookup table (LUT) ?
+§A (2⁸ + 2⁹) bytes
+§B (2¹⁰ + 2⁸) bytes
+§C (2¹⁰ + 2²⁴) bytes
+§D (2¹⁰ + 2¹¹) bytes
+## 42
+Which homogeneous 2D matrix transforms the figure (a) on the left side to the figure (b) on the right ?
+[Figure (a): a "house" — a unit-style square with corners (0,0), (2,0), (2,2), (0,2) and a triangular roof with apex at (1,3) over the top edge.
+Figure (b): a rectangle with corners (2,1), (6,1), (6,3), (2,3), plus a triangle on its left side with apex at (0,2) and base on the line x = 2 from y = 1 to y = 3.]
+§A [[0, 2, −6], [2, 0, 1], [0, 0, 1]]
+§B [[0, −2, 6], [1, 0, 1], [0, 0, 1]]
+§C [[1, −2, 6], [1, 0, 2], [0, 0, 1]]
+§D [[0, 2, 6], [1, 0, 1], [0, 0, 1]]
+## 43
+Consider the midpoint (or Bresenham) algorithm for rasterizing lines given below :
+(1) Input (x1, y1) and (x2, y2)
+(2) y = y1
+(3) d = f (x1 + 1, y1 + 1/2) // f is the implicit form of a line
+(4) for x = x1 to x2
+(5) do
+(6) plot(x, y)
+(7) if (d < 0)
+(8) then
+(9) y = y + 1
+(10) d = d + (y1 − y2) + (x2 − x1)
+(11) else
+(12) d = d + (y1 − y2)
+(13) end
+(14) end
+Which statements are true?
+P : For a line with slope m > 1, we should change the outer loop in line (4) to be over y.
+Q : Lines (10) and (12) update the decision variable d through an incremental evaluation of the line equation f.
+R : The algorithm fails if d is ever 0 .
+Choose the correct answer from the code given below :
+§A P only
+§B P and Q only
+§C Q and R only
+§D P , Q and R
+## 44
+In 3D Graphics, which of the following statements about perspective and parallel projection is/are true?
+P : In a perspective projection, the farthest an object is from the centre of projection, the smaller it appears.
+Q : Parallel projection is equivalent to a perspective projection where the viewer is standing infinitely far away.
+R : Perspective projections do not preserve straight lines.
+Choose the correct answer from the code given below :
+§A P and Q only
+§B P and R only
+§C Q and R only
+§D P, Q and R
+## 45
+In 3D Graphics, which of the following statements is/are true?
+P : Back-face culling is an example of an image-precision visible-surface determination procedure.
+Q : Z-buffer is a 16-bit, 32-bit, or 64-bit field associated with each pixel in a frame buffer that can be used to determine the visible surfaces at each pixel.
+Choose the correct answer from the code given below :
+§A P only
+§B Q only
+§C P and Q
+§D Neither P nor Q
+## 46
+Consider the following pseudo-code fragment, where m is a non-negative integer that has been initialized:
+```
+p = 0;
+k = 0;
+while (k < m)
+    p = p + 2^k;
+    k = k + 1;
+end while
+```
+Which of the following is a loop invariant for the while statement?
+(Note : a loop invariant for a while statement is an assertion that is true each time the guard is evaluated during the execution of the while statement).
+§A p = 2^k − 1 and 0 ≤ k < m
+§B p = 2^(k+1) − 1 and 0 ≤ k < m
+§C p = 2^k − 1 and 0 ≤ k ≤ m
+§D p = 2^(k+1) − 1 and 0 ≤ k ≤ m
+## 47
+Consider the following two C++ programs P1 and P2 and two statements S1 and S2 about these programs :
+P1:
+```
+void f(int a, int *b, int &c)
+{
+  a = 1;
+  *b = 2;
+  c = 3;
+}
+int main()
+{
+  int i = 0;
+  f(i, &i, i);
+  cout << i;
+}
+```
+P2:
+```
+double a = 1, b = 2;
+double &f(double &d)
+{
+  d = 4;
+  return b;
+}
+int main()
+{
+  f(a) = 5;
+  cout << a << "," << b;
+}
+```
+S1: P1 prints out 3
+S2 : P2 prints out 4 : 2
+What can you say about the statements S1 and S2?
+§A Only S1 is true.
+§B Only S2 is true.
+§C Both S1 and S2 are true.
+§D Neither S1 nor S2 is true.
+## 48
+Consider the following recursive Java function f that takes two long arguments and returns a float value :
+```
+public static float f(long m, long n)
+{
+  float result = (float)m/(float)n;
+  if (m<0||n<0)
+    return 0.0f;
+  else
+    result += f(m*2,n*3);
+  return result;
+}
+```
+Which of the following integers best approximates the value of f(2,3)?
+§A 0
+§B 1
+§C 2
+§D 3
+## 49
+What does the following Java function perform?
+(Assume int occupies four bytes of storage)
+```
+public static int f(int a)
+{ // Pre-conditions : a>0 and no overflow/underflow occurs
+  int b=0;
+  for (int i=0; i<32; i++)
+  {
+    b=b<<1;
+    b=b | (a & 1);
+    a=a>>>1; // This is a logical shift
+  }
+  return b;
+}
+```
+§A Returns the int that has the binary representation of integer a.
+§B Return the int that has the reversed binary representation of integer a.
+§C Return the int that represents the number of 1's in the binary representation of integer a.
+§D Return the int that represents the number of 0's in the binary representation of integer a.
+## 50
+Which of the following HTML5 codes will affect the horizontal as well as vertical alignment of the table content?
+§A <td halign="middle" valign="center"> BASH </td>
+§B <td align="middle" valign="center"> BASH </td>
+§C <td style="horizontal-align : center; vertical-align : middle;">BASH</td>
+§D <td style="text-align : center; vertical-align : middle;"> BASH </td>
+## 51
+Consider the C / C++ function f() given below :
+```
+void f(char w[])
+{
+  int x=strlen(w); //length of a string
+  char c;
+  for (int i = 0; i<x; i++)
+  {
+    c = w[i];
+    w[i] = w[x–i–1];
+    w[x–i–1] = c;
+  }
+}
+```
+Which of the following is the purpose of f()?
+§A It outputs the contents of the array in reverse order.
+§B It outputs the contents of the array in the original order.
+§C It outputs the contents of the array with the characters shifted over by one position.
+§D It outputs the contents of the array with characters rearranged so they are no longer recognized as the words in the original phrase.
+## 52
+The Software Requirement Specification (SRS) is said to be______ if and only if no subset of individual requirements described in it conflict with each other
+§A Correct
+§B Consistent
+§C Unambiguous
+§D Verifiable
+## 53
+Software products need perfective maintenance for which of the following reasons?
+§A To rectify bugs observed while the system is in use.
+§B When the customers need the product to run on new platforms.
+§C To support the new features that users want it to support.
+§D To overcome wear and tear caused by the repeated use of the software.
+## 54
+Match each UML diagram in List I to its appropriate description in List II.
+List I | List II
+(a) State Diagram | (i) Describes how the external entities (people, devices) can interact with the system.
+(b) Use-Case Diagram | (ii) Used to describe the static or structural view of a system.
+(c) Class Diagram | (iii) Used to show the flow of a business process, the steps of a use-case or the logic of an object's behaviour.
+(d) Activity Diagram | (iv) Used to describe the dynamic behaviour of objects and could also be used to describe the entire system's behaviour.
+§A (a)-(i), (b)-(iv), (c)-(ii), (d)-(iii)
+§B (a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)
+§C (a)-(i), (b)-(iv), (c)-(iii), (d)-(ii)
+§D (a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)
+## 55
+Which of the following statements is/are false?
+P: The clean-room strategy for software engineering is based on the incremental software process model.
+Q: The clean-room strategy to software engineering is one of the ways to overcome "unconscious" copying of copyrighted code.
+Choose the correct answer from the code given below :
+§A P only
+§B Q only
+§C Both P and Q
+§D Neither P nor Q
+## 56
+Consider the following method :
+```
+int f (int m, int n, boolean x, boolean y )
+{
+  int res = 0;
+  if (m < 0){ res = n − m;
+  else if (x||y){
+    res = −1;
+    if (n == m){ res = 1; }
+  }
+  else { res = n; }
+  return res;
+}/* end of f*/
+```
+If P is the minimum number of tests to achieve full statement coverage for f( ), and Q is the minimum number of tests to achieve full branch coverage for f(), then (P,Q) =
+§A (3,4)
+§B (4,3)
+§C (2,3)
+§D (3,2)
+## 57
+A legacy software system has 940 modules. The latest release required that 90 of these modules be changed. In addition, 40 new modules were added and 12 old modules were removed. Compute the software maturity index for the system.
+§A 0.849
+§B 0.524
+§C 0.725
+§D 0.923
+## 58
+Which of the following statements is/are true?
+P : Software Reengineering is preferable for software products having high failure rates, poor design, and/or poor code structure.
+Q: Software Reverse Engineering is the process of analyzing software to recover its design and requirements specification.
+Choose the correct answer from the code given below :
+§A P only
+§B Q only
+§C Both P and Q
+§D Neither P nor Q
+## 59
+Which of the following is not one of the principles of agile software development method?
+§A Customer involvement
+§B Embrace change
+§C Incremental delivery
+§D Following the plan
+## 60
+Software coupling involves dependencies among pieces of software called modules. Which of the following are correct statements concerning module coupling?
+P: Common coupling occurs when two modules share the same global data.
+Q: Control coupling occurs when modules share a composite data structure and use only parts of it.
+R: Content coupling occurs when one module modifies or relies on the internal working of another module.
+Choose the correct answer from the code given below :
+§A P and Q only
+§B P and R only
+§C Q and R only
+§D All of P, Q, and R
+## 61
+Match the following Secret Key Algorithms (List I) with the Corresponding Key Lengths (List II) and choose the correct answer from the code given below.
+List I | List II
+(a) Blowfish | (i) 128 - 256 bits
+(b) DES | (ii) 128 bits
+(c) IDEA | (iii) 1- 448 bits
+(d) RC5 | (iv) 56 bits
+§A (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+§B (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)
+§C (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)
+§D (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)
+## 62
+The four byte IP Address consists of
+§A Network Address
+§B Host Address
+§C Both Network and Host Addresses
+§D Neither Network nor Host Address
+## 63
+Consider ISO-OSI network architecture reference model. Session layer of this model offers dialog control, token management and ________ as services.
+§A Synchronization
+§B Asynchronization
+§C Flow Control
+§D Errors
+## 64
+Suppose a cloud contains software stack such as Operating systems, Application softwares, etc. This model is referred as ______ model.
+§A SaaS
+§B PaaS
+§C IaaS
+§D MaaS
+## 65
+The Third Generation mobile phones are digital and based on
+§A AMPS
+§B D-AMPS
+§C CDMA
+§D Broadband CDMA
+## 66
+Which of the following statement/s is/are true?
+(i) Firewalls can screen traffic going into or out of an organization.
+(ii) Virtual private networks can simulate an old leased network to provide certain desirable properties.
+Choose the correct answer from the code given below :
+§A (i) only
+§B (ii) only
+§C Both (i) and (ii)
+§D Neither (i) nor (ii)
+## 67
+Which of the following statement/s is/are true?
+(i) Windows XP supports both peer-peer and client-server networks.
+(ii) Windows XP implements Transport protocols as drivers that can be loaded and unloaded from the system dynamically.
+Choose the correct answer from the code given below :
+§A (i) only
+§B (ii) only
+§C Neither (i) nor (ii)
+§D Both (i) and (ii)
+## 68
+In Linux operating system environment _______ command is used to print a file.
+§A print
+§B ptr
+§C pr
+§D lpr
+## 69
+To overcome difficulties in Readers-Writers problem, which of the following statement/s is/are true?
+(i) Writers are given exclusive access to shared objects.
+(ii) Readers are given exclusive access to shared objects.
+(iii) Both Readers and Writers are given exclusive access to shared objects.
+Choose the correct answer from the code given below :
+§A (i) only
+§B (ii) only
+§C (iii) only
+§D Both (ii) and (iii)
+## 70
+Suppose a system has 12 instances of some resource with n processes competing for that resource. Each process may require 4 instances of the resource. The maximum value of n for which the system never enters into deadlock is
+§A 3
+§B 4
+§C 5
+§D 6
+## 71
+Dirty bit is used to show the
+§A wrong page
+§B page with corrupted data
+§C page with low frequency occurrence
+§D page that is modified after being loaded into cache memory
+## 72
+Suppose for a process P, reference to pages in order are (1,2,4,5,2,1,2,4). Assume that main memory can accomodate 3 pages and the main memory has already pages 1 and 2 in the order 1 - first, 2 - second. At this moment, assume FIFO Page Replacement Algorithm is used then the number of page faults that occur to complete the execution of process P is
+§A 4
+§B 3
+§C 5
+§D 6
+## 73
+Consider the following set of processes and the length of CPU burst time given in milliseconds :
+Process | CPU Burst Time(ms)
+P1 | 5
+P2 | 7
+P3 | 6
+P4 | 4
+Assume that processes being scheduled with Round-Robin Scheduling Algorithm with time quantum 4ms. Then the waiting time for P4 is _____ ms.
+§A 0
+§B 4
+§C 12
+§D 6
+## 74
+Suppose P, Q, and R are cooperating processes satisfying Mutual Exclusion conditions. Then, if the process Q is executing in its critical section then
+§A Both ' P ' and 'R ' execute in the critical section.
+§B Neither ' P ' nor ' R ' executes in their critical section.
+§C 'P' executes in the critical section.
+§D ' R ' executes in the critical section.
+## 75
+A process residing in Main Memory and Ready and Waiting for execution is kept on?
+§A Execution Queue
+§B Job Queue
+§C Ready Queue
+§D Wait Queue
+## 76
+______ system call creates new process in Unix.
+§A create
+§B create new
+§C fork
+§D fork new
+## 77
+An attribute A of datatype varchar(20) has the value 'xyz', and the attribute B of datatype char(20) has the value "lmnop", then the attribute A has ____ spaces and attribute B has ______ spaces.
+§A 3,5
+§B 20,20
+§C 3,20
+§D 20,5
+## 78
+Data warehouse contains _____ data that is never found in the operational environment.
+§A Summary
+§B Encoded
+§C Encrypted
+§D Scripted
+## 79
+_____command is used to remove a relation from an SQL database.
+§A Drop table
+§B Delete table
+§C Remove table
+§D Update table
+## 80
+Which of the following statement/s is/are true?
+(i) Facebook has the world's largest Hadoop Cluster.
+(ii) Hadoop 2.0 allows live stream processing of Real time data.
+Choose the correct answer from the code given below :
+§A (i) only
+§B (ii) only
+§C Both (i) and (ii)
+§D Neither (i) nor (ii)
+## 81
+Data scrubbing is
+§A A process to reject data from the data warehouse and to create the necessary indexes.
+§B A process to load the data in the data warehouse and to create the necessary indexes.
+§C A process to upgrade the quality of data after it is moved into a data warehouse.
+§D A process to upgrade the quality of data before it is moved into a data warehouse.
+## 82
+Consider a relation schema R = (A, B, C, D, E, F) on which the following functional dependencies hold :
+A → B
+B, C → D
+E → C
+D → A
+What are the candidate keys of R?
+§A AE and BE
+§B AE, BE, and DE
+§C AEF, BEF and BCF
+§D AEF, BEF and DEF
+## 83
+Consider the following sequence of two transactions on a bank account (A) with an initial balance of 20,000 that transfers 5,000 to another account (B) and then applies 10% interest.
+(i) T1 start
+(ii) T1 A old = 20,000 new 15,000
+(iii) T1 B old = 12,000 new = 17,000
+(iv) T1 commit
+(v) T2 start
+(vi) T2 A old = 15,000 new = 16,500
+(vii) T2 commit
+Suppose the database system crashes just before log record (vii) is written. When the system is restarted, which one statement is true of the recovery process?
+§A We must redo log record (vi) to set A to 16,500 .
+§B We must undo log record (vi) to set A to 16,500 and then redo log records (ii) and (iii).
+§C We need not redo log records (ii) and (iii) because transaction T1 has committed.
+§D We can apply redo and undo operations in arbitrary order because they are idempotent.
+## 84
+Consider the following tables (relations) :
+Students
+Roll-No | Name
+18CS101 | Ramesh
+18CS102 | Mukesh
+18CS103 | Ramesh
+Performance
+Roll-No | Course | Marks
+18CS101 | DBMS | 60
+18CS101 | Compiler Design | 65
+18CS102 | DBMS | 80
+18CS103 | DBMS | 85
+18CS102 | Compiler Design | 75
+18CS103 | Operating System | 70
+Primary keys in the tables are shown using underline (Roll-No in Students; Roll-No and Course in Performance). Now, consider the following query :
+SELECT S.Name, Sum (P.Marks)
+FROM Students S, Performance P
+WHERE S.Roll-No = P.Roll-No
+GROUP BY S.Name
+The number of rows returned by the above query is
+§A 0
+§B 1
+§C 2
+§D 3
+## 85
+A clustering index is defined on the fields which are of type
+§A non-key and ordering
+§B non-key and non-ordering
+§C key and ordering
+§D key and non-ordering
+## 86
+A host is connected to a department network which is part of a university network. The university network, in turn, is part of the Internet. The largest network, in which the Ethernet address of the host is unique, is
+§A the Internet
+§B the university network
+§C the department network
+§D the subnet to which the host belongs
+## 87
+An Internet Service Provider (ISP) has following chunk of CIDR-based IP addresses available with it : 245.248.128.0/20. The ISP wants to give half of this chunk of addresses to organization A and a quarter to organization B while retaining the remaining with itself. Which of the following is a valid allocation of addresses to A and B ?
+§A 245.248.136.0/21 and 245.248.128.0/22
+§B 245.248.128.0/21 and 245.248.128.0/22
+§C 245.248.132.0/22 and 245.248.132.0/21
+§D 245.248.136.0/24 and 245.248.132.0/21
+## 88
+Consider the following two statements :
+S1 : TCP handles both congestion and flow control
+S2 : UDP handles congestion but not flow control
+Which of the following options is correct with respect to the above statements (S1) and S2)?
+§A Neither S1 nor S2 is correct
+§B S1 is not correct but S2 is correct
+§C S1 is correct but S2 is not correct
+§D Both, S1 and S2 are correct
+## 89
+Identify the correct sequence in which the following packets are transmitted on the network by a host when a browser requests a webpage from a remote server, assuming that the host has just been restarted.
+§A HTTP GET request, DNS query, TCP SYN
+§B DNS query, HTTP GET request, TCP SYN
+§C TCP SYN, DNS query, HTTP GET request
+§D DNS query, TCP SYN, HTTP GET request
+## 90
+Suppose that everyone in a group of N people wants to communicate secretly with the N–1 others using symmetric key cryptographic system. The communication between any two persons should not be decodable by the others in the group. The number of keys required in the system as a whole to satisfy the confidentiality requirement is
+§A N(N − 1)
+§B N(N − 1)/2
+§C 2 N
+§D (N − 1)²
+## 91
+An agent can improve its performance by
+§A Perceiving
+§B Responding
+§C Learning
+§D Observing
+## 92
+Which of the following is true for semi-dynamic environment?
+§A The environment may change while the agent is deliberating.
+§B The environment itself does not change with the passage of time but the agent's performance score does.
+§C Even if the environment changes with the passage of time while deliberating, the performance score does not change.
+§D Environment and performance score, both change simultaneously.
+## 93
+Consider the following terminology and match List I with List II and choose the correct answer from the code given below.
+b= branching factor
+d= depth of the shallowest solution
+m= Maximum depth of the search tree
+l = Depth limit
+List I (Algorithm) | List II (Space Complexity)
+(a) BFS search | (i) O(bd)
+(b) DFS search | (ii) O(b^d)
+(c) Depth-limited search | (iii) O(bm)
+(d) Iterative deepening search | (iv) O(bl)
+§A (a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)
+§B (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)
+§C (a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)
+§D (a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)
+## 94
+Match List I with List II and choose the correct answer from the code given below.
+List I | List II
+(a) Greedy Best-First Search | (i) Select a node for expansion if the optimal path to that node has been found.
+(b) A* Search | (ii) Avoids substantial overhead associated with keeping the sorted queue of nodes.
+(c) Recursive Best-First Search | (iii) Suffers from excessive node generation.
+(d) Iterative-deepening A* Search | (iv) Time complexity depends on the quality of the heuristic.
+§A (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+§B (a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)
+§C (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+§D (a)-(i), (b)-(iv), (c)-(iii), (d)-(ii)
+## 95
+Consider the following statements :
+S1: A heuristic is admissible if it never overestimates the cost to reach the goal.
+S2: A heuristic is monotonous if it follows the triangle inequality property.
+Which one of the following is true referencing the above statements?
+Choose the correct answer from the code given below :
+§A Neither of the statements S1 and S2 are true.
+§B Statement S1 is false but statement S2 is true.
+§C Statement S1 is true but statement S2 is false.
+§D Both the statements S1 and S2 are true.
+## 96
+Consider the following statements related to AND-OR Search algorithm.
+S1 A solution is a subtree that has a goal node at every leaf.
+S2 OR nodes are analogous to the branching in a deterministic environment.
+S3 AND nodes are analogous to the branching in a non-deterministic environment.
+Which one of the following is true referencing the above statements ?
+Choose the correct answer from the code given below :
+§A S1 - False, S2 - True, S3 - False
+§B S1 - True, S2 - True, S3 - False
+§C S1 - True, S2 - True, S3 - True
+§D S1 - False, S2 - True, S3 - False
+## 97
+Consider the following minimax game tree search
+[Figure: game tree with root MAX (level 1) having three MIN children (level 2); each MIN node has MAX children (level 3), and each MAX node has leaf children (level 4).
+MIN node 1 has three MAX children with leaves {4}, {6, 2, 6}, {3, 9}.
+MIN node 2 has two MAX children with leaves {5, 2}, {7, 3}.
+MIN node 3 has three MAX children with leaves {1}, {7, 2}, {4, 6, 3}.]
+What will be the value propagated at the root?
+§A 3
+§B 4
+§C 5
+§D 6
+## 98
+Consider a vocabulary with only four propositions A, B, C, and D. How many models are there for the following sentence?
+¬A ∨ ¬B ∨ ¬C ∨ ¬D
+§A 7
+§B 8
+§C 15
+§D 16
+## 99
+Consider the sentence below.
+"There is a country that borders both India and Nepal."
+Which of the following represents the above sentence correctly?
+§A ∃ Country(c) ∧ Border(c, India) ∧ Border(c, Nepal)
+§B ∃ Country(c) ⇒ [Border(c, India) ∧ Border(c, Nepal)]
+§C [∃ Country(c)] ⇒ [Border(c, India) ∧ Border(c, Nepal)]
+§D ∃ Border(Country(c), India ∧ Nepal)
+## 100
+A full joint distribution for the Toothache, Cavity, and Catch is given in the table below:
+ | Toothache | Toothache | ¬Toothache | ¬Toothache
+ | Catch | ¬Catch | Catch | ¬Catch
+Cavity | 0.108 | 0.012 | 0.072 | 0.008
+¬Cavity | 0.016 | 0.064 | 0.144 | 0.576
+What is the probability of Cavity, given evidence of Toothache?
+§A <0.2,0.8>
+§B <0.4,0.8>
+§C <0.6,0.8>
+§D <0.6,0.4>

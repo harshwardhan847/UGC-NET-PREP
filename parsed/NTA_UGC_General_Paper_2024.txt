@@ -1,0 +1,446 @@
+## 1
+Directions (Q1-Q5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.
+Person-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)
+Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous
+A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0%
+B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8%
+C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9%
+D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6%
+E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3%
+F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1%
+If the monthly income of A and D are ₹ 80000 and ₹ 72000, respectively, then the amount of money spent by A on Rent is _________% more than the amount spent by D on clothes.
+§A 32.62
+§B 38.89
+§C 36.54
+§D 34.24
+## 2
+Directions (Q1-Q5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.
+Person-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)
+Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous
+A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0%
+B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8%
+C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9%
+D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6%
+E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3%
+F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1%
+If the annual income of each of the six persons is ₹ 3 lakh, then the amount of money spent on clothes is more than ₹ 41800 by exactly ________ persons.
+§A 2
+§B 3
+§C 4
+§D 5
+## 3
+Directions (Q1-Q5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.
+Person-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)
+Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous
+A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0%
+B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8%
+C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9%
+D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6%
+E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3%
+F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1%
+If the annual incomes of B and C are ₹ 432000 and ₹ 528000, respectively, then what is the difference between the amount spent by them on Transport?
+§A ₹ 18496
+§B ₹ 18828
+§C ₹ 19216
+§D ₹ 19488
+## 4
+Directions (Q1-Q5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.
+Person-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)
+Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous
+A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0%
+B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8%
+C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9%
+D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6%
+E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3%
+F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1%
+If the annual income of each of C and D is ₹ 840000, then what is the sum of the amount spent by C on Rent and that by D on Miscellaneous items?
+§A ₹ 288820
+§B ₹ 290520
+§C ₹ 293160
+§D ₹ 295700
+## 5
+Directions (Q1-Q5): The following table represents the percentage expenditure of the annual income of six persons A-F on six different items, namely, Food, Rent, Transport, Clothes, Entertainment and Miscellaneous. Based on the data in the table, answer the questions that follow.
+Person-wise Expenditure Details (Percentage (%) Expenditure from Annual Income on)
+Person | Food | Rent | Transport | Clothes | Entertainment | Miscellaneous
+A | 21.80% | 15.0% | 18.4% | 12.5% | 13.3% | 19.0%
+B | 17.20% | 18.0% | 22.6% | 15.0% | 11.4% | 15.8%
+C | 24.0% | 16.3% | 14.8% | 11.2% | 7.8% | 25.9%
+D | 18.0% | 19.5% | 15.5% | 12.0% | 16.4% | 18.6%
+E | 20.20% | 16.4% | 17.5% | 14.0% | 8.6% | 23.3%
+F | 23.60% | 18.5% | 16.0% | 13.8% | 11.0% | 17.1%
+If the amount of money spent on food by C and D is ₹ 144000 and ₹ 172800, respectively, then the annual income of C is ________% of the annual income of D.
+§A 47.5
+§B 60
+§C 62.5
+§D 120
+## 6
+Which of the following are arranged in the order of increasing connotation?
+§A Vertebrates, mammals, canine, labradors
+§B Mammals, vertebrates, canine, labradors
+§C Canine, labradors, mammals, vertebrates
+§D Labradors, canine, mammals, vertebrates
+## 7
+Two researchers obtain similar results while investigating a problem following different methodologies. Their measurements show:
+§A Interrater validity
+§B Convergent validity
+§C Construct validity
+§D Test-Retest validity
+## 8
+Amount of destruction caused by an earthquake is measured by:
+§A Richter Scale
+§B Intensity Scale
+§C Magnitude Scale
+§D Mercalli Scale
+## 9
+The contents of swayamprabha channel - 15 with the theme of 'Capacity Building and Teacher Education' is provided by:
+§A CEC, New Delhi
+§B IIT Delhi
+§C IGNOU, New Delhi
+§D IIT Kanpur
+## 10
+Which of the following statements are logically equivalent?
+(A) Some non-dogs are non-friendly animals
+(B) Some dogs are friendly animals
+(C) Some friendly animals are dogs
+(D) All dogs are friendly animals
+Choose the correct answer from the options given below:
+§A (B) and (C) Only
+§B (B) and (D) Only
+§C (A), (B) and (C) Only
+§D (A) and (D) Only
+## 11
+Which of the following are advantages of e-commerce for consumers?
+(A) They save time by visiting websites instead of stores.
+(B) They have little risk of having their credit card number intercepted.
+(C) They can choose goods from any vendor in the world.
+(D) They can shop no matter their location, time, or conditions.
+Choose the correct answer from the options given below :
+§A (A) and (D) Only
+§B (B) and (C) Only
+§C (A), (C) and (D) Only
+§D (A), (B), (C) and (D)
+## 12
+Identify the parametric tests used for statistical analysis.
+(A) t-test
+(B) H-test
+(C) F-test
+(D) U-test
+Choose the correct answer from the options given below:
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (C) and (D) Only
+§D (A) and (C) Only
+## 13
+The etic approach to communication is ________ in character.
+§A Restrictive
+§B Mechanical
+§C Universal
+§D Non-cultural
+## 14
+Match List-I with List–II.
+List-I (Authors) | List-II (Concepts)
+A. Roland Barthes | I. Doxa
+B. Pierre Bourdieu | II. Hegemony
+C. Antonio Gramsci | III. Simulation
+D. Jean Baudrillard | IV. Myth
+Choose the correct answer from the options given below:
+§A (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+§B (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+§C (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+§D (A)-(IV), (B)-(I), (C)-(II), (D)-(III)
+## 15
+Because of Biochemical Oxygen Demand (BOD), Dissolved Oxygen (DO) of a water body:
+§A Increases
+§B Decreases
+§C Remains unchanged
+§D Initially increases and then decreases
+## 16
+If the selling price of ₹ 276 results in a discount of 8% on the marked price of an item, at what price should the item be sold to offer a discount of 13%?
+§A ₹ 265
+§B ₹ 251
+§C ₹ 257
+§D ₹ 261
+## 17
+Who among the following ancient scholars was a proponent of grammarian tradition?
+§A Ishwarkrishna
+§B Bhartrhari
+§C Gautama
+§D Kanada
+## 18
+If (L)_M represents a number L in base-M number system, then identify the correct ascending order of the following numbers A-D when converted to decimal number system.
+(A) (102)₄
+(B) (10001)₂
+(C) (103)₆
+(D) (201)₃
+Choose the correct answer from the options given below:
+§A (B), (A), (C), (D)
+§B (A), (C), (D), (B)
+§C (A), (B), (D), (C)
+§D (B), (A), (D), (C)
+## 19
+The Indian Institute of Management, Indore, was set up during:
+§A Eighth five year plan
+§B Ninth five year plan
+§C Tenth five year plan
+§D Eleventh five year plan
+## 20
+An Internet standard that allows for adding media attachments to an email is called:
+§A MIME
+§B DHCP
+§C HDMI
+§D FTP
+## 21
+According to Marshal McLuhan, examples of high definition media are:
+(A) Speech
+(B) Photograph
+(C) Radio
+(D) Cinema
+(E) Cartoon
+Choose the correct answer from the options given below:
+§A (A), (B) and (C) Only
+§B (B), (C) and (D) Only
+§C (C), (D) and (E) Only
+§D (A), (D) and (E) Only
+## 22
+Which of the following are consequences of Global Warming?
+(A) Change in Hydrological Cycle
+(B) Species Migration
+(C) Change in Ocean Circulation
+(D) Ocean Acidification
+(E) Sea level rise
+Choose the correct answer from the options given below:
+§A (A), (B) and (E) Only
+§B (A), (C) and (D) Only
+§C (B), (C) and (D) Only
+§D (A), (B), (C), (D) and (E)
+## 23
+Ferdinand de Saussure's approach to the study of signs is described as:
+§A Semiology
+§B Semantics
+§C Signification
+§D Signifying system
+## 24
+7 pumps, working 10 hours a day, can empty a tank in 20 days. How many hours a day must 5 pumps operate to empty the tank in 14 days?
+§A 20 hours
+§B 18 hours
+§C 16 hours
+§D 14 hours
+## 25
+Mobile games were the first to popularize _______ which uses an image of an actual place or thing and adds digital information to it.
+§A Virtual Reality
+§B Augmented Reality
+§C Mixed Reality
+§D Computer-Aided Design (CAD)
+## 26
+An English teacher asks students to create a multimedia presentation analysing a novel's themes, characters, and literacy devices. Which assessment method is most suitable to check the real time progress of students?
+§A Authentic Assessment
+§B Summative Assessment
+§C Norm-referenced Assessment
+§D Ipsative Assessment
+## 27
+What is the mission of International Solar Alliance?
+§A Every home no matter how far will have electricity
+§B Every home will harvest solar energy
+§C Every home no matter how far away will have light at home
+§D Every home has to be carbon neutral
+## 28
+Match List-I with List-II.
+List-I (Malware) | List-II (Definition)
+A. Ransomware | I. Software that monitors and/or records the actions of targeted users.
+B. Spyware | II. A small piece of code that misleads users of its true intent by disguising itself as a legitimate program and infects your computer when you run it.
+C. Worm | III. Software that locks data files and demands a monetary payment in exchange for unlocking.
+D. Trojan Horses | IV. A piece of code that replicates itself to other devices without user interaction
+Choose the correct answer from the options given below:
+§A (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+§B (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+§C (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+§D (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+## 29
+The union government of India had in 2011 decided to establish a National Institute of Design in the states of:
+(A) Andhra Pradesh
+(B) Kerala
+(C) Assam
+(D) Goa
+(E) Haryana
+Choose the correct answer from the options given below:
+§A (A), (B) and (C) Only
+§B (B), (C) and (D) Only
+§C (A), (C) and (E) Only
+§D (D) and (E) Only
+## 30
+In a certain coding language, the word 'TRAIN' is coded as 'VPCGP', then the word 'PROUD' will be coded as:
+§A QSPVE
+§B RPQSF
+§C RQTPF
+§D RQQSE
+## 31
+Which of the following arguments is fallacious because of the middle term being too narrow?
+§A All things are non-eternal because they are knowable
+§B Sound is eternal, because it is audible
+§C Fire is cold because it is substance
+§D Wherever there is fire, there is smoke
+## 32
+A marketing instructor wants to engage students by conducting live polls during an online lecture to gather instant feedback on marketing strategies. Which of the following tools should the instructor use for creating and displaying polls?
+(A) Adobe Illustrator
+(B) Slido
+(C) Straw Poll
+(D) Camtasia
+(E) Flipgrid
+Choose the correct answer from the options given below:
+§A (A), (B) and (E) Only
+§B (A) and (D) Only
+§C (B) and (C) Only
+§D (C), (D) and (E) Only
+## 33
+Find out the correct chronological order of the following:
+(A) First binary computer by Britishers
+(B) Printing press
+(C) Plan for mechanical computer
+(D) Single-screen motion picture exhibition
+(E) First public broadcast of television
+Choose the correct answer from the options given below:
+§A (A), (C), (E), (D), (B)
+§B (B), (C), (D), (E), (A)
+§C (C), (E), (A), (B), (D)
+§D (D), (A), (B), (C), (E)
+## 34
+Which of the following statements are true regarding contrary propositions?
+(A) They cannot both be true
+(B) They cannot both be false
+(C) They can both be false
+(D) If one is true the other must be false
+Choose the correct answer from the options given below:
+§A (B) and (C) Only
+§B (A), (B) and (C) Only
+§C (A), (C) and (D) Only
+§D (D) Only
+## 35
+Which of the following is not a disease caused due to exposure of Ultra Violet (UV)-rays, one of the Environmental hazards due to ozone layer depletion?
+§A Melanoma
+§B Erythema
+§C Teratoma
+§D Carcinoma
+## 36
+Which fallacy is committed in the following argument- "Ambassador cars have almost disappeared. This is an Ambassador car. Therefore, this car has almost disappeared":
+§A Equivocation
+§B Fallacy of Division
+§C Hasty Generalization
+§D Slippery Slope
+## 37
+Identify the main preoccupations of qualitative researchers.
+(A) Emphasis on process
+(B) Emphasis on generalization
+(C) Emphasis on context
+(D) Emphasis on description
+Choose the correct answer from the options given below:
+§A (A), (B) and (C) Only
+§B (B), (C) and (D) Only
+§C (A), (B) and (D) Only
+§D (A), (C) and (D) Only
+## 38
+Find out the wrong term from the given series:
+125, 126, 124, 127, 123, 129
+§A 126
+§B 124
+§C 123
+§D 129
+## 39
+An IT giant company has its Global Education Centre at:
+§A Medak
+§B Ratnagiri
+§C Mysore
+§D Agartala
+## 40
+Match List-I with List-II.
+List-I (Abbreviations) | List-II (Meaning)
+A. ante., | I. here and there
+B. cf. | II. and others
+C. et.al., | III. compare
+D. passim: | IV. before
+Choose the correct answer from the options given below:
+§A (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+§B (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+§C (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+§D (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+## 41
+A relationship in which a less-experienced learner acquires knowledge and skills under the guidance of an expert is known as:
+§A Cloud computing
+§B Cognitive load
+§C Cognitive apprenticeship
+§D Collective monologue
+## 42
+The New Education Policy of 2020, suggested degree courses in:
+(A) Development Communication
+(B) Logic
+(C) Art and Museum Administration
+(D) Graphic Design
+(E) Web Design
+Choose the correct answer from the options given below:
+§A (A), (B) and (C) Only
+§B (B), (C) and (D) Only
+§C (C), (D) and (E) Only
+§D (B), (D) and (E) Only
+## 43
+Identify the non-probability sampling techniques:
+(A) Systematic sampling
+(B) Simple random sampling
+(C) Snowball sampling
+(D) Purposive sampling
+Choose the correct answer from the options given below:
+§A (A) and (B) Only
+§B (C) and (D) Only
+§C (A), (C) and (D) Only
+§D (A), (B) and (C) Only
+## 44
+Which of the following are the sub-types of long term memory?
+(A) Episodic memory
+(B) Semantic memory
+(C) Procedural memory
+(D) Priming
+(E) Class conditioning effects
+Choose the correct answer from the options given below:
+§A (A), (B), (C), (D) and (E)
+§B (B), (D) and (E) Only
+§C (A), (B) and (C) Only
+§D (C), (D) and (E) Only
+## 45
+A sum of money is equally divided among a number of children. Had there been 10 children less, each would have received ₹ 5 more, and had there been 10 children more each would have received ₹ 3 less. What is the sum of money that is distributed?
+§A 300
+§B 600
+§C 750
+§D 900
+## 46
+Passage (Q46-Q50): Folk traditions provide and create a public space where some broader social values could be generated and observed. The various folk genres through the creation of public space help in bringing and observed. The various folk genres through the creation of public space help in bringing into focus ideas, values and contentions into public discourse, a kind of unshackling of inhibitions in a stress-free manner. The changes that modernity brings in its wake become more socially acceptable and the conflicts that are created find a medium through which they can be resolved. This public space or sphere has many constructive and pleasurable uses. Politics and religion are notable instances in which the creation and sustenance of public space or sphere is very important to achieve some agenda(s). The dynamism ingrained in public space or sphere shows complex nuances and many trends especially when the nature of transformation is being analysed. There seems to be a shift from a simple pleasure orientation to cater to multi-level interests of the performers and patrons. Transformations are influenced by economics, politics and voices of dissent that find various mechanisms of appropriation of public space for their own objectives. They widen the base of debate and discussion transcending the involved units.
+What is the influence of modernity on folk traditions and public space according to the text?
+§A Folk traditions are disappearing.
+§B It has no effect on ancient tradition.
+§C It only leads to conflicts without resolution.
+§D It makes social changes more acceptable.
+## 47
+Passage (Q46-Q50): Folk traditions provide and create a public space where some broader social values could be generated and observed. The various folk genres through the creation of public space help in bringing and observed. The various folk genres through the creation of public space help in bringing into focus ideas, values and contentions into public discourse, a kind of unshackling of inhibitions in a stress-free manner. The changes that modernity brings in its wake become more socially acceptable and the conflicts that are created find a medium through which they can be resolved. This public space or sphere has many constructive and pleasurable uses. Politics and religion are notable instances in which the creation and sustenance of public space or sphere is very important to achieve some agenda(s). The dynamism ingrained in public space or sphere shows complex nuances and many trends especially when the nature of transformation is being analysed. There seems to be a shift from a simple pleasure orientation to cater to multi-level interests of the performers and patrons. Transformations are influenced by economics, politics and voices of dissent that find various mechanisms of appropriation of public space for their own objectives. They widen the base of debate and discussion transcending the involved units.
+What influences the transformations that can be observed in public sphere?
+§A Multi-level interests of performers and patrons
+§B A static set of rules
+§C The absence of economic and philosophical ideas
+§D Simple pleasure orientation
+## 48
+Passage (Q46-Q50): Folk traditions provide and create a public space where some broader social values could be generated and observed. The various folk genres through the creation of public space help in bringing and observed. The various folk genres through the creation of public space help in bringing into focus ideas, values and contentions into public discourse, a kind of unshackling of inhibitions in a stress-free manner. The changes that modernity brings in its wake become more socially acceptable and the conflicts that are created find a medium through which they can be resolved. This public space or sphere has many constructive and pleasurable uses. Politics and religion are notable instances in which the creation and sustenance of public space or sphere is very important to achieve some agenda(s). The dynamism ingrained in public space or sphere shows complex nuances and many trends especially when the nature of transformation is being analysed. There seems to be a shift from a simple pleasure orientation to cater to multi-level interests of the performers and patrons. Transformations are influenced by economics, politics and voices of dissent that find various mechanisms of appropriation of public space for their own objectives. They widen the base of debate and discussion transcending the involved units.
+What does folklore contribute to public discourse?
+§A It creates a public space for stress-free interaction
+§B It restricts the expression of ideas and values
+§C It promotes only traditional values
+§D It eliminates modern influences
+## 49
+Passage (Q46-Q50): Folk traditions provide and create a public space where some broader social values could be generated and observed. The various folk genres through the creation of public space help in bringing and observed. The various folk genres through the creation of public space help in bringing into focus ideas, values and contentions into public discourse, a kind of unshackling of inhibitions in a stress-free manner. The changes that modernity brings in its wake become more socially acceptable and the conflicts that are created find a medium through which they can be resolved. This public space or sphere has many constructive and pleasurable uses. Politics and religion are notable instances in which the creation and sustenance of public space or sphere is very important to achieve some agenda(s). The dynamism ingrained in public space or sphere shows complex nuances and many trends especially when the nature of transformation is being analysed. There seems to be a shift from a simple pleasure orientation to cater to multi-level interests of the performers and patrons. Transformations are influenced by economics, politics and voices of dissent that find various mechanisms of appropriation of public space for their own objectives. They widen the base of debate and discussion transcending the involved units.
+Public space:
+§A Widens the base of debate and discussion
+§B Ignores traditional knowledge system
+§C Insists more on individual growth
+§D Leads to suppression of human values
+## 50
+Passage (Q46-Q50): Folk traditions provide and create a public space where some broader social values could be generated and observed. The various folk genres through the creation of public space help in bringing and observed. The various folk genres through the creation of public space help in bringing into focus ideas, values and contentions into public discourse, a kind of unshackling of inhibitions in a stress-free manner. The changes that modernity brings in its wake become more socially acceptable and the conflicts that are created find a medium through which they can be resolved. This public space or sphere has many constructive and pleasurable uses. Politics and religion are notable instances in which the creation and sustenance of public space or sphere is very important to achieve some agenda(s). The dynamism ingrained in public space or sphere shows complex nuances and many trends especially when the nature of transformation is being analysed. There seems to be a shift from a simple pleasure orientation to cater to multi-level interests of the performers and patrons. Transformations are influenced by economics, politics and voices of dissent that find various mechanisms of appropriation of public space for their own objectives. They widen the base of debate and discussion transcending the involved units.
+Role of folklore in the society is:
+§A To provide entertainment only
+§B To generate and observe broader social value
+§C To restrict public discourse
+§D To resist social change

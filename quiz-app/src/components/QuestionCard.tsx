@@ -8,6 +8,7 @@ import { OPTION_KEYS, type AttemptSource, type OptionKey, type Question } from "
 import { getPaperFriendlyName } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 import QuestionText from "./QuestionText"
+import InlineImages from "./InlineImages"
 import { Button } from "./ui"
 
 export function BookmarkButton({ question, className, withLabel }: { question: Question; className?: string; withLabel?: boolean }) {
@@ -98,7 +99,7 @@ export function OptionButton({
       <span className={cn("rounded-full flex items-center justify-center shrink-0 font-semibold font-sans", compact ? "w-5 h-5 text-[10px]" : "w-6 h-6 text-xs mt-px", badge)}>
         {state === "correct" ? <CheckCircle2 className="w-3.5 h-3.5" /> : state === "wrong" ? <XCircle className="w-3.5 h-3.5" /> : optKey}
       </span>
-      <span className={cn("q-option whitespace-pre-wrap", compact && "text-sm")}>{text}</span>
+      <span className={cn("q-option whitespace-pre-wrap", compact && "text-sm")}><InlineImages text={text} /></span>
     </button>
   )
 }

@@ -1,0 +1,1045 @@
+## 1
+Consider the grammer :
+S → A
+A → $B$ | id
+B → B, A | A
+If I₀ = CLOSURE ({[S → .A]}) then, how many items be in the set for GOTO(I₀,$)
+§A 3
+§B 4
+§C 5
+§D 6
+## 2
+In a schema R(A, B, C, D, E, F, G, H), each field of R contains only atomic values.
+F= {CH→G, A →BC, B→CFH, E→A, F→EG} is a set of functional dependencies F⁺ is exactly the set of FDs that holds R. The relation R is :
+§A In 1NF, but not in 2 NF
+§B In 2 NF , but not in 3 NF
+§C In 3NF, but not in BCNF
+§D In BCNF
+## 3
+Which of the following statements about pointers in C are TRUE.
+(A) Pointers can be used to access array elements
+(B) Pointers can store the address of another pointer
+(C) Pointers are automatically deferenced in expression
+(D) Pointers cannot be used to access structure members
+Choose the correct answer from the options given below :
+§A (A) and (C) Only
+§B (A) and (B) Only
+§C (B) and (C) Only
+§D (C) and (D) Only
+## 4
+In a token ring network the transmission speed is 10⁷ and the propagation speed is 200 m /μs . The 1-bit delay in this network is equivalent to ________________
+§A 20 m
+§B 30 m
+§C 50 m
+§D 40 m
+## 5
+Which of the following statements are TRUE about mutual exclusion in concurrent programming ?
+(A) Mutual exclusion ensures that only one process can be in a critical section at any given time.
+(B) Mutual exclusion are designed to prevent conflicts and ensure that only one process can access shared resources at a time.
+(C) Mutual exclusion can use various algorithms to ensure that processes do not enter the critical section simultaneously.
+(D) Mutual exclusion allows multiple processes to access the critical section simultaneously to improve performance.
+Choose the correct answer from the options given below :
+§A (A), (B), (C) Only
+§B (B), (C), (D) Only
+§C (B), (D), (A) Only
+§D (A), (C), (D) Only
+## 6
+Consider the function in C code :
+```
+Cal(a, b) {
+  if( b!=1 ) {
+    if( a!=1 ) {
+      printf("*");
+      Cal(a/2,b);
+    }
+    else {
+      b=b-1;
+      Cal(10,b);
+    }
+  }
+}
+```
+How many times * is going to be printed, if the function is called with Cal(10, 10); ?
+§A 25
+§B 23
+§C 24
+§D 27
+## 7
+Consider the following relations on {1,2,3,4}.
+Which of the following relations are reflexive ?
+(A) R₁={(1,1),(1,2),(2,1),(2,2),(3,4),(4,1),(4,4)}
+(B) R₂={(1,1),(1,2),(2,1)}
+(C) R₃={(1,1),(1,2),(1,4),(2,1),(2,2),(3,3),(4,1),(4,4)}
+(D) R₄={(2,1),(3,1),(3,2),(4,1),(4,2),(4,3)}
+(E) R₅={(1,1),(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,3),(3,4),(4,4)}
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (A), (D) and (E) Only
+§C (D) and (E) Only
+§D (C) and (E) Only
+## 8
+Consider a relation schema R=(U, V, W, X, Y, Z), on which the following functional dependencies hold
+{U→V, VW→X, Y→W; X→U}
+The candidate keys of R are :
+§A UY, VY
+§B UY, VY, XY
+§C UYZ, VYZ, VWZ
+§D UYZ, VYZ, XYZ
+## 9
+Which of the following is correct way to declare a functional pointer in C ?
+§A int *func (int, int);
+§B int (*func) (int, int);
+§C int (func*) (int, int);
+§D int *func* (int, int);
+## 10
+Arrange the following steps of Feature Drive Development (FDD) process in the correct sequence :
+(A) Develop an overall model
+(B) Build by feature
+(C) Plan by feature
+(D) Design by feature
+(E) Build a feature list
+Choose the correct answer from the options given below :
+§A (A), (C), (B), (E), (D)
+§B (A), (E), (C), (D), (B)
+§C (B),(A),(D),(E),(C)
+§D (A), (B), (C), (E), (D)
+## 11
+Consider the given number (45)_y where y is the base of the number. Some of the possible values of y are given below.
+(A) 5
+(B) 6
+(C) 7
+(D) 8
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (B), (C) and (D) Only
+§C (A), (C) and (D) Only
+§D (A), (B), (C) and (D)
+## 12
+Consider the following C program :
+```
+#include<stdio.h>
+int main() {
+  int x[] = {2,4,6,8,10};
+  int a, b=0, *y=x+4;
+  for( a=0; a<5; a++) {
+    b = b +(*y-a) - *(y-a);
+  }
+  printf("%d\n",b);
+  return 0;
+}
+```
+What will be the output of the above C program ?
+§A 4
+§B 6
+§C 8
+§D 10
+## 13
+Match List - I with List - II.
+List - I | List - II
+(A) The activation function | (I) is called the delta rule.
+(B) The learning method of perceptron | (II) is one of the key components of the perceptron as in the most common neural network architecture.
+(C) Areas of application of artificial neural network include | (III) is always boolean like a switch.
+(D) The output of the perceptron | (IV) system identification and control.
+Choose the correct answer from the options given below :
+§A (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+§B (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+§C (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+§D (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+## 14
+Match List - I with List - II.
+List - I | List - II
+(A) Representation of bits | (I) Transport layer
+(B) Physical Address | (II) Physical layer
+(C) Logical Address | (III) Network layer
+(D) Segmentation and reassembly | (IV) Data link layer
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+§B (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+§C (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+§D (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
+## 15
+Which of the following are Agile Process Models ?
+(A) Extreme Programming (XP)
+(B) Waterfall
+(C) Scrum
+(D) Spiral
+(E) Incremental
+Choose the correct answer from the options given below :
+§A (A) and (C) Only
+§B (B) and (C) Only
+§C (A) and (D) Only
+§D (B) and (E) Only
+## 16
+Which of the following statements are TRUE about Privileged Instructions ?
+(A) It can only be executed by the Operating System kernel and not by user applications.
+(B) It is designed to perform operations that can directly affect the hardware or system state such as I/O operations or changing memory management setting.
+(C) User applications can execute privileged instructions if they have to correct permissions, set by the Operating System.
+(D) It usually executed in user mode to ensure the safety and security of the system.
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (A), (B) and (C) Only
+§C (B) and (C) Only
+§D (B), (C) and (D) Only
+## 17
+Consider a CSMA/CD network that transmits data at the rate of 100 Mbps over a 1 Kilometer cable with no repeater. If the minimum frame size required for this network is 1250 bytes, what is the signal speed (km/sec) in the cable.
+§A 8000
+§B 16000
+§C 12000
+§D 20000
+## 18
+Consider the Grammar:
+T → Qx
+Q → RS
+R → y | ϵ
+S → z | ϵ
+Here x, y, z are terminals and T, Q, R, S are non-terminals.
+What will be the follow set of the non-terminal R?
+§A {x,y}
+§B {y,z}
+§C {z,x}
+§D {ϵ}
+## 19
+Host A (on TCP/IPv4 Networks) send an IP Datagram D to host B (also on TCP/IPv4 network). Assume that no error occured during transmission of D, when D reaches B. Which of following header field may differ from that of original datagram D ?
+(A) TTL
+(B) Checksum
+(C) Fragment offset
+(D) Source IP
+(E) Destination IP
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (A), (B) and (C) Only
+§C (A), (B), (C) and (D) Only
+§D (A), (B), (C) and (E) Only
+## 20
+Which of the following properties correctly describe a Regular Grammar ?
+(A) All production rules are of the form A→xB or A→x, where A and B are non terminal symbols and x is a terminal symbol.
+(B) Regular grammars are more powerful than context-free grammars and can express any type of language.
+(C) There is a direct correspondence between regular grammar and finite automata.
+(D) Regular grammars can generate languages that are not recognised by any type of automata.
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (C) and (D) Only
+§D (A) and (C) Only
+## 21
+Consider a schema R(P, Q, R, S) and the following functional dependencies P → Q, Q → R, R → S, S → Q. Then decomposition of R into R₁(P, Q), R₂(Q, R) and R₃(Q, S) is :
+§A Dependency Preserving and lossless join
+§B Lossless Join but not dependency preserving
+§C Dependency preserving but not lossless Join
+§D Not dependency preserving and not lossless join
+## 22
+Arrange the following phases of the Agile process in the correct sequence :
+(A) Design
+(B) Release
+(C) Testing
+(D) Development
+(E) Planning
+Choose the correct answer from the options given below :
+§A (A), (B), (D), (E), (C)
+§B (A), (D), (E), (B), (C)
+§C (E), (A), (D), (C), (B)
+§D (E), (D), (A), (C), (B)
+## 23
+Which of the following are TRUE about constructors in C++ ?
+(A) A constructor can be overloaded.
+(B) A constructor does not have a return type.
+(C) A constructor must be declared as a friend function.
+(D) A constructor is called when an object is destroyed.
+Choose the correct answer from the options given below :
+§A (B), (C), (D) Only
+§B (B), (C) Only
+§C (A), (B), (C) Only
+§D (A), (B) Only
+## 24
+Let P be "It is hot day" and q be "The temperature is 48°C". Write in simple sentences the meaning of ¬p∧¬q.
+§A It is hot day or temperature is 48°C
+§B It is cold day or temperature is 48°C
+§C It is neither a hot day nor temperature is 48°C
+§D It is not a hot day
+## 25
+If a software project has 2000 lines of code (LOC) and the average productivity rate is 10 LOC per person-hour, how many person-hours are required to complete the project?
+§A 100
+§B 150
+§C 200
+§D 250
+## 26
+Arrange the following steps in proper sequence involved in a Genetic Algorithm :
+(A) Selection
+(B) Initialization
+(C) Crossover
+(D) Mutation
+(E) Evaluation
+Choose the correct answer from the options given below :
+§A (A), (B), (C), (D), (E)
+§B (E), (A), (B), (D), (C)
+§C (B), (E), (A), (C), (D)
+§D (A), (C), (B), (D), (E)
+## 27
+```
+#include<stdio.h>
+void f1(char *x, char *y) {
+  char *t1;
+  t1 = x;
+  x = y;
+  y = t1;
+}
+void f2(char **x, char **y) {
+  char *t1;
+  t1 = *x;
+  *x = *y;
+  *y = t1;
+}
+int main() {
+  char *a = "ONE", *b = "TWO";
+  f1(a, b);
+  printf("%s %s ", a, b);
+  f2(&a, &b);
+  printf("%s %s", a, b);
+  return 0;
+}
+```
+§A ONE TWO TWO ONE
+§B TWO ONE ONE TWO
+§C ONE TWO ONE TWO
+§D TWO ONE TWO ONE
+## 28
+What is SQL primarily used for in the context of relational databases ?
+§A To design user interfaces
+§B To create and manipulate databases
+§C To display data on web pages
+§D To format printed reports
+## 29
+Which of the following C++ statements correctly declares an abstract class ?
+§A class A { virtual void show ()=0 ; };
+§B class A { void show ()=0 ; };
+§C class A { void show() { } ; } ;
+§D class A { show ()=0; };
+## 30
+Arrange the following recurrence relations in increasing order of their time capacity:
+(A) T(n)=T(n/2)+1
+(B) T(n)=2T(n/2)+n
+(C) T(n)=3T(n/3)+n
+(D) T(n)=2T(n/2)+√n
+(E) T(n)=T(n−1)+1
+Choose the correct answer from the options given below :
+§A (E), (A), (B), (D), (C)
+§B (A), (E), (D), (B), (C)
+§C (E), (A), (D), (B), (C)
+§D (A), (B), (D), (E), (C)
+## 31
+How does a relational database ensure data integrity ?
+§A By encrypting all data stored
+§B By enforcing rules defined in the schema
+§C By compressing data for efficient storage
+§D By allowing unrestricted access to all users
+## 32
+Match List - I with List - II.
+List - I (IP Address) | List - II (Class)
+(A) 10.20 .30 .40 | (I) Class E
+(B) 210.20 .30 .3 | (II) Class B
+(C) 180.30 .100 .10 | (III) Class A
+(D) 252.5 .15 .11 | (IV) Class C
+Choose the correct answer from the options given below :
+§A (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
+§B (A)-(I), (B)-(IV), (C)-(II), (D)-(III)
+§C (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+§D (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+## 33
+Find the correct sequence of the storage devices in descending order based on their access time.
+(A) Registers
+(B) Magnetic Disk
+(C) Magnetic Tapes
+(D) Main memory
+(E) Optical Disk
+Choose the correct answer from the options given below :
+§A (B), (A), (D), (C), (E)
+§B (B), (A), (E), (D), (C)
+§C (C), (B), (A), (E), (D)
+§D (C), (E), (B), (D), (A)
+## 34
+A graph G with number of vertices greater and equal than three i.e. (n ≥ 3) is a Hamiltonian graph, if the degree of each vertex is greater and equal to ....
+§A Equal to number of vertices
+§B Double of number of vertices
+§C Half of number of vertices
+§D Four times of number of vertices
+## 35
+Fifth normal form is concerned with :
+§A Join Dependency
+§B Domain-Key
+§C Multivalued dependency
+§D Functional dependency
+## 36
+Consider the transactions T₁, T₂, T₃, and the schedules S₁ and S₂ given below.
+T₁: r₁(x); r₁(z); w₁(z)
+T₂: r₂(y); r₂(z); w₂(z)
+T₃: r₃(y); r₃(x); w₃(y)
+S₁ : r₁(x); r₃(y); r₃(x); r₂(y); r₂(z); w₃(y); w₃(z); r₁(z); w₁(x); w₁(z)
+S₂ : r₁(x); r₃(y); r₂(y); r₃(x); r₁(z); r₂(z); w₃(y); w₁(x); w₂(z); w₁(z)
+Which one of the following statements about the schedules is TRUE?
+§A Only S₁ is conflict-serializable
+§B Only S₂ is conflict-serializable
+§C Both S₁ and S₂ are conflict-serializable
+§D Neither S₁ nor S₂ is conflict-serializable
+## 37
+A CPU has a 5-stage pipeline with the following stages Fetch (F), Decode (D), Execute (E), Memory (M) and Write-back (W). Each stage takes one clock cycle to complete. Assume there are no pipeline stalls and the pipeline is initially empty. How many clock cycles are required to complete the execution of 10 instructions?
+§A 10
+§B 14
+§C 15
+§D 19
+## 38
+Match List - I with List - II.
+List - I (computing systems) | List - II (working/output)
+(A) Half Adder | (I) Has n input and 2ⁿ output
+(B) Decoder | (II) CPU Storage Unit
+(C) Register | (III) Used to store program at runtime
+(D) Main memory | (IV) 2-bit addition circuit
+Choose the correct answer from the options given below :
+§A (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+§B (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+§C (A)-(IV), (B)-(I), (C)-(II), (D)-(III)
+§D (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+## 39
+Arrange the following steps in a proper sequence for the process of training a neural network.
+(A) Weight initialization
+(B) Feed forward
+(C) Back Propagation
+(D) Loss Calculation
+(E) Weight Update
+Choose the correct answer from the options given below :
+§A (A), (B), (D), (C), (E)
+§B (D), (B), (A), (C), (E)
+§C (A), (C), (D), (B), (E)
+§D (E), (C), (B), (D), (A)
+## 40
+Consider the following statements regarding combinational and sequential circuits.
+(A) Output of combinational circuits depends on the only current input.
+(B) Output of combinational circuit depends on the both current input and previous output.
+(C) Output of sequential circuit depends on the current input.
+(D) Output of sequential circuit depends on both current input and previous output.
+Choose the correct answer from the options given below :
+§A (A) and (C) Only
+§B (A) and (D) Only
+§C (B) and (D) Only
+§D (B) and (C) Only
+## 41
+Which of the following relations can not be decomposed in to BCNF with a lossless join and dependency-preserving decomposition?
+§A R (V,W,X,Y,Z) {VW→X, WX→V, VX→W, W→Y, Y→Z}
+§B R (V,W,X,Y,Z) {VW→W, X→Y}
+§C R (V,W,X,Y,Z) {VW→X,X→VY}
+§D R (V,W,X,Y,Z) {VW→X, X→Y, Y→Z, Z→V}
+## 42
+```
+#include<iostream.h>
+using namespace std;
+void swap(int &x, int &y)
+{
+  int temp=x;
+  x=y;
+  y=temp;
+}
+int main()
+{
+  int a=5, b=10;
+  swap(a,b);
+  swap(a,b);
+  cout<<a<<" "<<b;
+  return 0;
+}
+```
+What will be the output of the above code?
+§A 5, 10
+§B 10, 5
+§C 5, 5
+§D 10, 10
+## 43
+Which of the following are typical activities in the software process lifecycle?
+(A) Requirement Analysis
+(B) System Design
+(C) Code Refactoring
+(D) Deployment
+(E) Substructure
+Choose the correct answer from the options given below :
+§A (A), (B), (C) Only
+§B (B), (C), (D) Only
+§C (A), (B), (D) Only
+§D (A), (D), (E) Only
+## 44
+Which of the following best describes the structure of a relational database ?
+§A Data organized into tables with rows and columns
+§B Data organized into files and folders
+§C Data organized into a hierarchical tree structure
+§D Data organized into a network of interconnected nodes
+## 45
+A coin is tossed successively three times. Find the Probability (P), Event (E), Sample space (S) of getting exactly one head or two heads, where n is number of occurrence.
+(A) n(S) = 8 and n(E) = 4
+(B) n(E) = 6 and n(S) = 8
+(C) P(E) = 3/4
+(D) P(E) = 1/2
+Choose the correct answer from the options given below :
+§A (A), (B), (C) and (D)
+§B (B) and (C) Only
+§C (A) and (D) Only
+§D (C) and (D) Only
+## 46
+Out of the following steps in the proper sequence for simplifying a Boolean function using a Karnaugh map (K-map).
+(A) Identify and group the largest possible cluster of 1's
+(B) Draw the K-map for the given Boolean function
+(C) Write the simplified Boolean expression from the grouped clusters
+(D) Transfer the truth table values to the K-map
+Choose the correct answer from the options given below :
+§A (B), (D), (A), (C)
+§B (B), (D), (B), (A), (C)
+§C (C), (B), (A), (D), (C)
+§D (A), (B), (C), (D)
+## 47
+Consider the following if p and q are two statements.
+(A) ~(p∧q)≡~p∨~q
+(B) ~(p∨q)≡~p∧~q
+(C) p∧~p≡T
+(D) ~(p⇒q) ≡ p∧~q
+(E) p∨q≡~p∨~q
+Choose the correct answer from the options given below :
+§A (A), (B) and (D) only
+§B (A), (C) and (D) only
+§C (C), (D) and (E) only
+§D (A), (B) and (C) only
+## 48
+What is the output of the code given below :
+```
+#include<iostream.h>
+using namespace std;
+class Base {
+public:
+  Base(){
+    cout<<"Base Const";
+  }
+  virtual ~Base() {
+    cout<<"Base dest";
+  }
+};
+class Derived : public Base {
+public:
+  Derived() {
+    cout<<"Derived Const";
+  }
+  ~Derived() {
+    cout<<"Derived dest";
+  }
+};
+int main() {
+  Base *b = new Derived();
+  delete b;
+  return 0;
+}
+```
+§A Base Const Derived Const Derived dest Base dest
+§B Base Const Derived Const Base dest Derived dest
+§C Derived Const Base Const Base dest Derived dest
+§D Base Const Derived Const Base dest
+## 49
+If L₁ and L₂ are context free languages, which one of the following is true about L₁∩L₂ ?
+§A L1∩L2 is context free.
+§B L1∩L2 is Regular
+§C L1∩L2 is Recursive Enumerable
+§D L1∩L2 is Context Sensitive
+## 50
+Consider the following C code:
+```
+#include<stdio.h>
+int temp =0;
+int fun(int x, int y)
+{
+  int z; temp++;
+  if(y==3) return (x*x*x);
+  else {
+    z=fun(x,y/3);
+    return (z*z*z);
+  }
+}
+int main() {
+  fun(4,81);
+  printf("%d",temp);
+}
+```
+what will be the output of the following code :
+§A 3
+§B 4
+§C 5
+§D 6
+## 51
+Which of the following tasks could be attained using syntax trees in compiler design ?
+(A) Type Checking
+(B) Code Generation
+(C) Code Optimization
+(D) Error Handling
+Choose the correct answer from the options given below :
+§A (A), (B), (C) Only
+§B (B), (C), (D) Only
+§C (A), (C), (D) Only
+§D (A), (B), (D) Only
+## 52
+Match List - I with List - II.
+List - I | List - II
+(A) HTML | (I) Allow for dynamic and interactive web pages.
+(B) DHTML | (II) Defines the structure of web pages.
+(C) XML | (III) Object-oriented programming language for web applications.
+(D) JAVA | (IV) Used for data storage and transport.
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+§B (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
+§C (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+§D (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+## 53
+Match List - I with List - II.
+List - I (Counter) | List - II (uses/working)
+(A) N-bit Ring Counter | (I) Uses universal clock
+(B) Synchronous Counter | (II) Counts exactly N states
+(C) Asynchronous Counter | (III) Counts 0 to 9
+(D) Decimal Counter | (IV) Main clock is applied to first flip-flop only
+Choose the correct answer from the options given below :
+§A (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+§B (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+§C (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+§D (A)-(IV), (B)-(I), (C)-(II), (D)-(III)
+## 54
+Arrange the following steps of file handling in C in the correct order :
+(A) Close the file
+(B) Read from or write to the file
+(C) Open the file
+(D) Check for error
+Choose the correct answer from the options given below :
+§A (A), (C), (D), (B)
+§B (B), (D), (C), (A)
+§C (C), (D), (B), (A)
+§D (B), (D), (A), (C)
+## 55
+Match List - I with List - II.
+List - I (Algorithms) | List - II (Characteristics)
+(A) First Come First Served (FCFS) | (I) Each process is assigned a priority.
+(B) Shortest Job First (SJF) | (II) Ensures fair allocation of CPU time by assigning time slice.
+(C) Round Robin (RR) | (III) Processes are executed in the order they arrive.
+(D) Priority Scheduling | (IV) Select the process for execution with smallest next Burst time.
+Choose the correct answer from the options given below :
+§A (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+§B (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+§C (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+§D (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+## 56
+Arrange the following steps in a proper sequence for the typical process of a DNS query :
+(A) Query authoritative DNS Server
+(B) Query local DNS Server
+(C) Local DNS Server Check Cache
+(D) Query root DNS Server
+(E) Query TLD DNS Server
+Choose the correct answer from the options given below :
+§A (A), (C), (E), (B), (D)
+§B (E), (A), (C), (B), (D)
+§C (A), (B), (C), (D), (E)
+§D (B), (C), (D), (E), (A)
+## 57
+Match List - I with List - II.
+List - I (operating system concepts) | List - II (characteristics)
+(A) Paging | (I) Evicts least recently used process
+(B) LRU (Least Recently Used) | (II) Extends physical memory
+(C) C-SCAN | (III) Logical to physical mapping
+(D) Virtual Memory | (IV) Circular disk access
+Choose the correct answer from the options given below :
+§A (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+§B (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+§C (A)-(I), (B)-(III), (C)-(IV), (D)-(II)
+§D (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
+## 58
+A class B network on the Internet has a subnet mask of 255.255.248.0, what is the maximum number of hosts per subnet?
+§A 1022
+§B 1023
+§C 2046
+§D 2047
+## 59
+Select the Sorting Algorithms that are stable.
+(A) Quick Sort
+(B) Bubble Sort
+(C) Insertion Sort
+(D) Merge Sort
+(E) Shell Sort
+Choose the correct answer from the options given below :
+§A (A), (B), (C) and (E) Only
+§B (A), (D) and (E) Only
+§C (B) and (C) Only
+§D (B), (C) and (D) Only
+## 60
+__________ is a Self Balancing binary search tree, where the path from the root to the furthest leaf is no more than twice as long as the path from the root to nearest leaf.
+§A Expression tree
+§B Game tree
+§C Red-Black tree
+§D Threaded tree
+## 61
+Let L (x , y) be the statement "x loves y" where the domain for both x and y consists of all people in the world. Use quantifiers to express "Joy is loved by everyone".
+§A ∀x L(x,Joy)
+§B ∀y L(Joy,y)
+§C ∃y∀x L(x,y)
+§D ∃x¬ L(Joy,x)
+## 62
+What will be the output of the following C code?
+```
+#include<stdio.h>
+void main()
+{
+  int arr[5] = {10,20,30,40,50};
+  int *p = (int*) (&arr +1);
+  printf("%d%d", *(arr+1), *(p-1));
+}
+```
+§A 10 50
+§B 20 50
+§C 30 40
+§D 20 40
+## 63
+Arrange the following stages of a Turing Machine (TM) operation in the correct order as they occur during computation.
+(A) Writing a symbol on the tape
+(B) Moving the tape head left to right
+(C) Reading a symbol from the tape
+(D) Transitioning to a new state based on the current state and symbol read
+(E) Halting and accepting or rejecting the input
+Choose the correct answer from the options given below :
+§A (C), (A), (B), (D), (E)
+§B (C), (B), (A), (D), (E)
+§C (C), (D), (A), (B), (E)
+§D (C), (D), (B), (A), (E)
+## 64
+Match List - I with List - II.
+List - I (software design principles) | List - II (Definition)
+(A) Cohesion | (I) Degree to which one module relies on another module.
+(B) Coupling | (II) Dividing a software system into distinct modules.
+(C) Abstration | (III) Degree to which elements of a module belong together.
+(D) Modularity | (IV) Simplifying complex reality by modeling classes appropriate to the problem.
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+§B (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+§C (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+§D (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+## 65
+Which of the following languages can be recognized by Non-Deterministic Finite Automata(NFA) but cannot be recognized by Deterministic Finite Automata(DFA)?
+(A) L₁ = {w∈{0,1}* | the length of w is even}
+(B) L₂ = {w∈{0,1}* | the length of w is odd}
+(C) L₃ = {w∈{0,1}* | all 0's come before all 1's in w}
+(D) L₄ = {w∈{0,1}* | w contains an equal number of 0's and 1's}
+(E) L₅ = {w∈{0,1}* | all 1's come before all 0's in w}
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (C) and (D) Only
+§D None of the above
+## 66
+Given a project with an estimated effort of 1500 person-hours and a team of 5 people, how many days will it take to complete the project, if each person works 8 hours a day?
+§A 30
+§B 37.5
+§C 40
+§D 45.5
+## 67
+Arrange the following phases of database design in the correct order :
+(A) Physical Design
+(B) Conceptual Design
+(C) Logical Design
+(D) Requirement Analysis
+Choose the correct answer from the options given below :
+§A (B), (D), (A), (C)
+§B (C), (A), (B), (D)
+§C (D), (B), (C), (A)
+§D (A), (D), (C), (B)
+## 68
+Consider the three way hand shaking process followed during TCP connection establishment between two hosts A and B . Let S and R be two random 32 -bit starting sequence numbers chosen by A and B, respectively. Suppose A sends a TCP segment having SYN bit =1, SEQ number = S and ACK bit =0 and B accepts the connection request.
+Which one of the following choices represents the information present in the TCP segment header that is sent by B to A ?
+§A SYN bit =1, SEQ number =S+1, ACK bit =0, ACK number =R, FiN bit =0
+§B SYN bit =0, SEQ number =R, ACK bit =1, ACK number =S+1, FiN bit =0
+§C SYN bit =1, SEQ number = R, ACK bit =1, ACK number =S+1, FiN bit =0
+§D SYN bit =1, SEQ number = R, ACK bit =1, ACK number =S, FiN bit =0
+## 69
+Two computers A and B are configured as follows : A has IP address 203.197.2.53 and subnet mask 255.255.128.0, B has IP address 203.197.75.201 and subnet mask 255.255.192.0. What one of the following statement is true?
+§A A and B both assume they are on the same network
+§B B assumes, A is on same network, A assumes B is on different network
+§C A assumes, B is on same network, but B assumes, A is on a different network
+§D A and B both assume they are on different network
+## 70
+In Software configuration management, what is the primary purpose of version control ?
+§A To control the changes made to software
+§B To document user requirements
+§C To estimate project cost
+§D To design the software architecture
+## 71
+Arrange the following stages of parsing in the correct order as they typically occur in the compilation process.
+(A) Lexical Analysis
+(B) Sematic Analysis
+(C) Syntax Analysis
+(D) Intermediate Code Generation
+(E) Code Optimization
+Choose the correct answer from the options given below :
+§A (A), (B), (C), (D), (E)
+§B (A), (C), (B), (D), (E)
+§C (A), (D), (B), (C), (E)
+§D (A), (C), (D), (B), (E)
+## 72
+Match List - I with List - II.
+List - I (Queries) | List - II (Probability)
+(A) A bag contains 6 white and 4 red balls. Two balls are drawn at random. What is the chance they will the same color? | (I) 3 / 68
+(B) In a pack of 52 cards, one card is drawn at random, What is the probability that it is either a king or queen? | (II) 14/68
+(C) A bag contains 6 red, 4 white and 8 blue balls. If three balls are drawn at random, find the probability of 1 red and 2 white balls ? | (III) 2/13
+(D) A bag contains 6 red, 4 white and 8 blue balls. If three balls are drawn at random. Find the probability of 2 blue and 1 red balls ? | (IV) 7/15
+Choose the correct answer from the options given below :
+§A (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+§B (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+§C (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+§D (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+## 73
+Match List - I with List - II.
+List - I | List - II
+(A) Natural language processing | (I) A method of training algorithm by rewarding desired behaviour and/or punishing undesired one.
+(B) Reinforcement learning | (II) System designed to emulate the decision making abilities of a human expert.
+(C) Support vector machine | (III) A branch of AI focused on understanding and generating human language.
+(D) Expert system | (IV) A machine learning technique that finds the hyper plane that best separates different class in a feature space.
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+§B (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+§C (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+§D (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+## 74
+Match List - I with List - II.
+List - I | List - II
+(A) Dijkstra's Algorithms | (I) Find the shortest path between all pairs of vertices in a graph with positive or negative edge weights.
+(B) Floyd-Warshall Algorithms | (II) Finds the shortest path in a weighted graph with non-negative edge weights.
+(C) Bellman-Ford Algorithms | (III) Ford finds single-source shortest paths with possible negative weights
+(D) Prim's Algorithms | (IV) Prim's algorithm finds the Minimum Spanning Tree (MST)
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+§B (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+§C (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+§D (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+## 75
+Which of the following statements are TRUE about Process Control Block (PCB) ?
+(A) The PCB contains information about the process state, such as whether it is running, waiting or terminated
+(B) The PCB includes the program code and data segments of the process
+(C) The PCB stores the process's memory management information, such as page tables and segment tables
+(D) The PCB is used to track process scheduling information and CPU registers for process execution
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (B), (C) and (D) Only
+§C (A), (C) and (D) Only
+§D (A) and (B) Only
+## 76
+```
+#include<stdio.h>
+void main()
+{
+int arr[ ] = {1, 2, 3, 4, 5};
+int *p = arr;
+printf("%d", *p++);
+printf("%d", *(p+1));
+}
+```
+Find the output of the above code?
+§A 1,2
+§B 1,3
+§C 2,3
+§D 1,4
+## 77
+Arrange the following Language Classes in ascending order according to their expressive power, as defined by Chomsky hierarchy:
+(A) Context-free languages
+(B) Context-sensitive languages
+(C) Regular languages
+(D) Unrestricted Grammars
+Choose the correct answer from the options given below :
+§A (C), (A), (B), (D)
+§B (C), (A), (D), (B)
+§C (A), (C), (B), (D)
+§D (A), (D), (B), (C)
+## 78
+Let G(V,E) be an undirected graph with l edges. Then the sum of degree of all vertices is equal to ________.
+§A 2l
+§B l/2
+§C l²
+§D √l
+## 79
+40 software professionals were interviewed for a job. 25 knew PYTHON 20 knew JAVA and 7 knew neither language. How many knew both languages ?
+§A 12
+§B 53
+§C 10
+§D 88
+## 80
+(A) In IPv4 addressing, a block of address can be define as x.y.z.t/ n in which x.y.z.t define one of the address and / n define the mask
+(B) The first address in the block can be found by setting the rightmost 32-n bits to 0s
+(C) Address of class C is used for multicast communication
+(D) There are five classes in IPv4 address
+(E) Supernetting combine several networks into one large network
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (A), (B), (D) and (E) Only
+§C (A), (C), (D) and (E) Only
+§D (C), (D) and (E) Only
+## 81
+Match List - I with List - II.
+List - I (Testing Type) | List - II (Description)
+(A) Unit testing | (I) Testing individual components of the software.
+(B) Integrating testing | (II) Testing the interaction between integrated components.
+(C) System testing | (III) Testing to verify the system meets business needs.
+(D) Acceptance testing | (IV) Testing the complete system to ensure it meets requirements.
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+§B (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+§C (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+§D (A)-(I), (B)-(IV), (C)-(II), (D)-(III)
+## 82
+Consider the following statement regarding special purpose registers.
+(A) Program Counter (PC) keeps the track of next instruction executed
+(B) Instruction register holds the address of first instruction to be executed
+(C) Accumulator holds the output of ALU
+(D) Program Counter ( PC ) keeps the track of only first instruction of the program
+Choose the correct answer from the options given below :
+§A (A) and (C) Only
+§B (A) and (D) Only
+§C (B) and (D) Only
+§D (A), (B) and (C) Only
+## 83
+Arrange the following steps in the correct order to solve the Knapsack problem using Dynamic Programming.
+(A) Define the base case when the capacity is zero (0) or no items are left to consider
+(B) Compute the maximum value that can be obtained using items up to the i-th item and a knapsack capacity of 0
+(C) Identify subproblems and their dependencies based on items weights and values
+(D) Initialize a table to store results of subproblems
+(E) Iterate through each item and each possible Capacity to fill the table
+Choose the correct answer from the options given below :
+§A (C), (D), (A), (E), (B)
+§B (D), (C), (A), (E), (B)
+§C (A), (C), (D), (E), (B)
+§D (D), (A), (C), (E), (B)
+## 84
+A multi processor system with 16 processors is used to execute a parallelizable task. If the serial portion of the task takes 200 clock cycles and the parallel portion take 800 clock cycles. When all 16 processor are used how many total clock cycles are required to complete the task ?
+§A 250
+§B 300
+§C 400
+§D 450
+## 85
+Arrange the given steps required for a Direct Memory Access (DMA) transfer in the correct order.
+(A) Initiate DMA transfer request
+(B) Transfer data directly between peripheral and memory
+(C) Processor grants DMA control over the system bus
+(D) DMA controller completes data transfer and signals completion
+Choose the correct answer from the options given below :
+§A (C), (A), (B), (D)
+§B (A),(C),(B),(D)
+§C (A), (B), (C), (D)
+§D (C), (B), (A), (D)
+## 86
+Match List - II with List - II
+List - I (Recurrence Relation) | List - II (Complexity)
+(A) T(n) = 2T(n/2) + n | (I) T(n) = θ(n log n) {exact solution}
+(B) T(n) = T(n/2) + 1 | (II) O(n²)
+(C) T(n) = 2T(n/2) + 1 | (III) T(n) = θ(n) {exact solution}
+(D) T(n) = T(n-1) + n | (IV) O(n)
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
+§B (A)-(IV), (B)-(II), (C)-(I), (D)-(III)
+§C (A)-(I), (B)-(III), (C)-(IV), (D)-(II)
+§D (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+## 87
+Translate ∀x ∃y(x < y) in English. Consider domain as a real number for both the variables.
+§A For all real numbers x, there exists a real number y such that x is less than y
+§B For every real numbers y, there exists a real number x such that x is less than y
+§C For some real numbers x, there exists a real number y such that x is less than y
+§D For each and every real numbers x and y, x is less than y
+## 88
+A vector processor with 16 lanes can perform an operation on 1024 elements with each operation taking 5 clock cycles. How many cycles are needed to complete the operation?
+§A 64
+§B 80
+§C 100
+§D 128
+## 89
+Given a project that uses the COCOMO model with an estimated effort of 2000 person-months and a productivity rate of 5 person-month per KLOC, what is the estimated size of the project in KLOC ?
+§A 200
+§B 400
+§C 100
+§D 50
+## 90
+Which of the following is context free language?
+(A). {wⁱ xʲ yᵏ zˡ | i + k = j + l, where i , j , k , l ≥ 0 }
+(B). {wⁱ xʲ yᵏ zˡ | i = j , k = l, where i , j , k , l ≥ 0 }
+(C). {wⁱ xʲ yᵏ zˡ | i = j = k and k ≠ l, where i , j , k , l ≥ 0 }
+(D). {wⁱ xʲ yᵏ zˡ | i = j = k + l, where i , j , k , l ≥ 0 }
+(E). {wⁱ xʲ yᵏ zˡ | i = j = l and k ≠ l where i , j , k , l ≥ 0 }
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (C) and (D) Only
+§D (D) and (E) Only
+## 91
+Passage (Q91-Q95): Artificial Neural Networks (ANNs) are computational models inspired by the human brain's neural networks. They consist of inter-connected nodes, or neurons, organized into layers : an input layers, one or more hidden layers and an output layers. Each connection between neurons has a weight that adjusts as learning progresses allowing the network to adopt and improve its performance. ANNs are particularly effective in recognizing patterns making them valuable for tasks such as image and speech recognition, Natural language processing and predictive analytics. Learning in ANNs typically involves training algorithms like back propagation, which minimize the error by adjusting the weights. As a subset of machine learning, ANNs have revolutionized the field of Artificial Intelligence by providing solutions to complex problems that traditional algorithms struggle with.
+What is the role of Back Propagation Algorithm?
+§A To reduce error
+§B To secure network
+§C To control speed of data
+§D To add different layers
+## 92
+Passage (Q91-Q95): Artificial Neural Networks (ANNs) are computational models inspired by the human brain's neural networks. They consist of inter-connected nodes, or neurons, organized into layers : an input layers, one or more hidden layers and an output layers. Each connection between neurons has a weight that adjusts as learning progresses allowing the network to adopt and improve its performance. ANNs are particularly effective in recognizing patterns making them valuable for tasks such as image and speech recognition, Natural language processing and predictive analytics. Learning in ANNs typically involves training algorithms like back propagation, which minimize the error by adjusting the weights. As a subset of machine learning, ANNs have revolutionized the field of Artificial Intelligence by providing solutions to complex problems that traditional algorithms struggle with.
+What is the role of weights in an ANN ?
+§A To store data
+§B To adjust and improve network performance
+§C To control the speed
+§D To secure the network
+## 93
+Passage (Q91-Q95): Artificial Neural Networks (ANNs) are computational models inspired by the human brain's neural networks. They consist of inter-connected nodes, or neurons, organized into layers : an input layers, one or more hidden layers and an output layers. Each connection between neurons has a weight that adjusts as learning progresses allowing the network to adopt and improve its performance. ANNs are particularly effective in recognizing patterns making them valuable for tasks such as image and speech recognition, Natural language processing and predictive analytics. Learning in ANNs typically involves training algorithms like back propagation, which minimize the error by adjusting the weights. As a subset of machine learning, ANNs have revolutionized the field of Artificial Intelligence by providing solutions to complex problems that traditional algorithms struggle with.
+Which of the following is/are the application area(s) of ANN ?
+(A) Natural Language Processing
+(B) Image Processing
+(C) Pattern Recognition
+(D) Speech Recognition
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (A), (B) and (C) Only
+§D (A), (B), (C) and (D)
+## 94
+Passage (Q91-Q95): Artificial Neural Networks (ANNs) are computational models inspired by the human brain's neural networks. They consist of inter-connected nodes, or neurons, organized into layers : an input layers, one or more hidden layers and an output layers. Each connection between neurons has a weight that adjusts as learning progresses allowing the network to adopt and improve its performance. ANNs are particularly effective in recognizing patterns making them valuable for tasks such as image and speech recognition, Natural language processing and predictive analytics. Learning in ANNs typically involves training algorithms like back propagation, which minimize the error by adjusting the weights. As a subset of machine learning, ANNs have revolutionized the field of Artificial Intelligence by providing solutions to complex problems that traditional algorithms struggle with.
+Artificial Neural Networks (ANNs) are inspired by :
+§A Quantum mechanics
+§B Human brain's neural network
+§C Computer Hardware architecture
+§D Genetic algorithm
+## 95
+Passage (Q91-Q95): Artificial Neural Networks (ANNs) are computational models inspired by the human brain's neural networks. They consist of inter-connected nodes, or neurons, organized into layers : an input layers, one or more hidden layers and an output layers. Each connection between neurons has a weight that adjusts as learning progresses allowing the network to adopt and improve its performance. ANNs are particularly effective in recognizing patterns making them valuable for tasks such as image and speech recognition, Natural language processing and predictive analytics. Learning in ANNs typically involves training algorithms like back propagation, which minimize the error by adjusting the weights. As a subset of machine learning, ANNs have revolutionized the field of Artificial Intelligence by providing solutions to complex problems that traditional algorithms struggle with.
+Which of the following layers may be more than one in number ?
+§A Input layer
+§B Hidden layer
+§C Output layer
+§D Physical layer
+## 96
+Passage (Q96-Q100): The Banker's Algorithm is a critical deadlock avoidance method in operating systems, designed to facilitate resource allocation without causing deadlock. It operates by maintaining information about the maximum resources. Each process may require, the current allocated resources and the available resources in the system. The algorithm checks each resource request to determine, if granting it would leave the system in a safe state, meaning that there is always a sequence in which all processes can complete their execution without getting stuck due to resource unavailability. Each process must specify its maximum demand for each resource type before it starts execution. When a process requests additional resources, the algorithm checks if granting the request will keep the system in a safe state. If so, the resources are allocated otherwise the process must wait until its request can be safely fulfilled.
+Which of the following is NOT a requirement for Banker's algorithm to grant a resource request ?
+§A The requested resources must be available.
+§B The system must be in a safe state after granting the request
+§C The request must not exceed the maximum resources the process can request.
+§D The process must be the only one requesting resources.
+## 97
+Passage (Q96-Q100): The Banker's Algorithm is a critical deadlock avoidance method in operating systems, designed to facilitate resource allocation without causing deadlock. It operates by maintaining information about the maximum resources. Each process may require, the current allocated resources and the available resources in the system. The algorithm checks each resource request to determine, if granting it would leave the system in a safe state, meaning that there is always a sequence in which all processes can complete their execution without getting stuck due to resource unavailability. Each process must specify its maximum demand for each resource type before it starts execution. When a process requests additional resources, the algorithm checks if granting the request will keep the system in a safe state. If so, the resources are allocated otherwise the process must wait until its request can be safely fulfilled.
+Which data structure does the Banker's Algorithm use to maintain the state of available, maximum and allocated resources ?
+§A Priority Queue
+§B Hash table
+§C Wait-for-Graph
+§D Matrices and Vectors
+## 98
+Passage (Q96-Q100): The Banker's Algorithm is a critical deadlock avoidance method in operating systems, designed to facilitate resource allocation without causing deadlock. It operates by maintaining information about the maximum resources. Each process may require, the current allocated resources and the available resources in the system. The algorithm checks each resource request to determine, if granting it would leave the system in a safe state, meaning that there is always a sequence in which all processes can complete their execution without getting stuck due to resource unavailability. Each process must specify its maximum demand for each resource type before it starts execution. When a process requests additional resources, the algorithm checks if granting the request will keep the system in a safe state. If so, the resources are allocated otherwise the process must wait until its request can be safely fulfilled.
+What is the significance of the Banker's algorithm in terms of resource management?
+§A It enures that all processes can finish their execution without deadlock.
+§B It eliminates the need for processes to request resources.
+§C It accelerates the execution of critical sections in processes.
+§D It minimizes the number of context switches between processes.
+## 99
+Passage (Q96-Q100): The Banker's Algorithm is a critical deadlock avoidance method in operating systems, designed to facilitate resource allocation without causing deadlock. It operates by maintaining information about the maximum resources. Each process may require, the current allocated resources and the available resources in the system. The algorithm checks each resource request to determine, if granting it would leave the system in a safe state, meaning that there is always a sequence in which all processes can complete their execution without getting stuck due to resource unavailability. Each process must specify its maximum demand for each resource type before it starts execution. When a process requests additional resources, the algorithm checks if granting the request will keep the system in a safe state. If so, the resources are allocated otherwise the process must wait until its request can be safely fulfilled.
+What is the primary goal of the Banker's Algorithm?
+§A To allocate resources optimally
+§B To prevent processes from requesting resources
+§C To detect and recover from deadlocks
+§D To maximise CPU utilization
+## 100
+Passage (Q96-Q100): The Banker's Algorithm is a critical deadlock avoidance method in operating systems, designed to facilitate resource allocation without causing deadlock. It operates by maintaining information about the maximum resources. Each process may require, the current allocated resources and the available resources in the system. The algorithm checks each resource request to determine, if granting it would leave the system in a safe state, meaning that there is always a sequence in which all processes can complete their execution without getting stuck due to resource unavailability. Each process must specify its maximum demand for each resource type before it starts execution. When a process requests additional resources, the algorithm checks if granting the request will keep the system in a safe state. If so, the resources are allocated otherwise the process must wait until its request can be safely fulfilled.
+What information is used to determine if a resource request can be granted ?
+§A Available resources and current allocation of each process
+§B CPU utilization of each process
+§C Number of processes waiting for resources
+§D Arrival time of each process

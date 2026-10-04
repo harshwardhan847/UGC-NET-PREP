@@ -1,0 +1,1092 @@
+## 1
+In a pack of 42 cards, 3 cards are chosen one after the other. Find the number of ways this can be done without replacement:
+§A 1722
+§B 1752
+§C 68880
+§D 6880
+## 2
+Once the process is allocated CPU and executing which of the following events could not occur?
+A. The process could issue an I/O request and then be placed in the Ready Queue
+B. The process could create new subprocesses & wait for the termination of the subprocesses
+C. The time slice of the process expires and it may join the waiting queue
+D. The process is forcibly removed from the CPU and is put in the Waiting queue due to arrival of an interrupt
+Choose the correct answer from the options given below:
+§A B Only
+§B D Only
+§C A and C Only
+§D A, C and D Only
+## 3
+Match List I with List II
+List I | List II
+A. Count to infinity problem | I. Mobile Adhoc Networks
+B. IEEE 802.16 | II. Distance vector routing
+C. IEEE 802.15 | III. WiMAX
+D. AODV protocol | IV. Bluetooth
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-I, D-IV
+§B A-II, B-III, C-IV, D-I
+§C A-II, B-IV, C-III, D-I
+§D A-IV, B-III, C-I, D-II
+## 4
+What shall be the average waiting time per process if we know that 10 processes (on average) arrive every second and there are normally 20 processes in the queue?
+§A 03 seconds
+§B 02 seconds
+§C 18 seconds
+§D 09 seconds
+## 5
+Consider the following statements regarding Agent systems
+A. Agent system comprises of an agent and an environment on which it acts
+B. The controller part of an agent receives percepts from its body and sends commands to the environment
+C. Agents act in the world through actuators which are non-noisy and always reliable.
+D. The actuators of an agent convert stimuli into percepts
+Choose the correct answer from the options given below:
+§A A, B Only
+§B B, D Only
+§C C, D Only
+§D B, C, D Only
+## 6
+The transformation of data from main memory to cache memory is referred as:
+§A Data exchange
+§B Data transformation
+§C Mapping
+§D Matching
+## 7
+Consider the following steps used by a knowledge base designer to represent a world
+A. Selects atoms to represent propositions
+B. Ask questions about intended interpretation
+C. Choose a task domain
+D. Axiomatizing the domain
+Choose the correct answer from the options given below:
+§A C → A → D → B
+§B C → A → B → D
+§C B → C → A → D
+§D A → C → B → D
+## 8
+What will be the output of the following C programming code:
+```
+int i, j;
+for(i=1; i<5; i+=2)
+for(j=1; j<i; j+=2)
+  printf("%d", j);
+```
+§A 1
+§B 1 2
+§C 1 3
+§D 1 1 3
+## 9
+Consider the Boolean expression
+A(x, y, z) = x(y'z)'. Which of the following is complete sum-of-products form of the given Boolean expression.
+§A xyz + x'yz' + x'y'z'
+§B xyz' + x'yz + x'y'z'
+§C xyz' + xy'z + x'y'z'
+§D xyz + xyz' + xy'z'
+## 10
+Match List I with List II
+List I (Software Quality Characteristic) | List II (Description)
+A. Reliability | I. Ability to transfer the software from one organization or hardware / software environment to another.
+B. Efficiency | II. Capability of software to maintain its level of performance under stated conditions for a stated period of time.
+C. Maintainability | III. Relationship between the level of performance of the software and the amount of resources used, under stated conditions.
+D. Portability | IV. Effort needed to make modifications, including corrections, improvements or adaptation of software to changes in environment, requirements and functional specifications.
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-I, D-IV
+§B A-II, B-III, C-IV, D-I
+§C A-III, B-II, C-I, D-IV
+§D A-IV, B-II, C-I, D-III
+## 11
+Match List I with List II
+List I | List II
+A. Address Space | I. Associative Mapping
+B. Memory Space | II. Logical address
+C. Cache Memory | III. physical address
+D. Segmented Program | IV. Virtual address
+Choose the correct answer from the options given below:
+§A A-IV, B-III, C-I, D-II
+§B A-I, B-II, C-IV, D-III
+§C A-III, B-IV, C-I, D-II
+§D A-II, B-IV, C-I, D-III
+## 12
+Match List I with List II
+List I | List II
+A. Digital Signature | I. Asymmetric encryption algorithm.
+B. Hash Function | II. Confirms authenticity and integrity.
+C. AES | III. Produces a fixed-size digest.
+D. RSA | IV. Symmetric encryption algorithm.
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-I, D-IV
+§B A-II, B-III, C-IV, D-I
+§C A-III, B-II, C-I, D-IV
+§D A-IV, B-II, C-I, D-III
+## 13
+What would be the equivalent pointer expression for referring the array element ar[ m ][ n ][0]
+§A * (* (* (ar) +m+n)+0 )
+§B (* (* (*ar + m) + n) + o)
+§C ( * (* (ar+m)+n)+o)
+§D *(*(*(ar+m)+n)+0)
+## 14
+Which of the following Grammars is/are only Context Free?
+[Figure: five grammars in a table.
+A: S → Ab ; aS → aA ; A → a
+B: S → Ab ; A → Sa ; A → a
+C: S → AS ; S → aA ; A → a
+D: S → Ab ; S → aA ; A → a
+E: S → Sb ; A → Aa ; A → ε]
+Choose the correct answer from the options given below:
+§A A, B Only
+§B C, D Only
+§C C, E Only
+§D A, B, D, E Only
+## 15
+CB84000D001C001C is the content of a UDP header in hexadecimal format. The source port number is
+§A 52100
+§B 13
+§C 28
+§D 52000
+## 16
+Match List I with List II
+List I (GA termination criteria) | List II (description)
+A. Worst Individual | I. At least half of the individual will be better than or equal to convergence value
+B. Best Individual | II. Guarantees that virtually all individuals in the population will be within a particular fitness range
+C. Sum of Fitness | III. Guarantees that the entire population to be of a minimum standard
+D. Median Fitness | IV. Faster search Convergence, guaranteeing at least one best solution
+Choose the correct answer from the options given below:
+§A A → III, B → IV, C → II, D → I
+§B A → IV, B → III, C → I, D → II
+§C A → II, B → I, C → III, D → IV
+§D A → II, B → III, C → IV, D → I
+## 17
+Consider the following three relations Employee (eid, eName), Comp(cid, cName), Own(eid, cid). Which of the following relational algebra expression return the set of eids who own all brands:
+§A π_eid (π_eid,cid (Own)/π_cid (Comp))
+§B π_eid (π_eid (Own) × π_cid (Comp))
+§C π_eid (π_eid,cid (Own) × π_cid (Comp))
+§D π_eid (π_eid (Own) × (π_cid,Name (Own)/π_cid (Comp)))
+## 18
+The process followed in order to find difficult, unknown and hidden information about a software system is called
+§A Software Engineering
+§B Software Re-Engineering
+§C Reverse Engineering
+§D Inverse Engineering
+## 19
+Which of the followings shows the correct hierarchy of a layered file system in an operating system
+A. Logical File System
+B. File Organization Module
+C. Basic File System
+D. I/O Control
+E. Application Programs
+Choose the correct answer from the options given below:
+§A A → B → D → C → E
+§B D → E → C → A → B
+§C E → A → B → C → D
+§D E → C → B → A → D
+## 20
+Which of the followings is NOT a software characteristic?
+§A Software does not wear out
+§B Software is flexible
+§C Software is not manufactured
+§D Software is always correct
+## 21
+Which of the following cohesions are better than the Procedural Cohesion
+A. Functional Cohesion
+B. Sequential Cohesion
+C. Temporal Cohesion
+D. Communicational Cohesion
+E. Logical Cohesion
+Choose the correct answer from the options given below:
+§A A and D Only
+§B A, B and D Only
+§C C, D and E Only
+§D A, D and E Only
+## 22
+Consider the following infix expression
+Q : ((A + B) * D) ↑ (E − F). The equivalent postfix expression of Q is
+§A AB + D * EF ↑ -
+§B AB + D* − ↑ EF
+§C AB + DE * F − ↑
+§D AB + D * EF − ↑
+## 23
+Which of the following trees are height balanced?
+A. Binary Search Tree
+B. AVL Tree
+C. Red-Black Tree
+D. B Tree
+Choose the correct answer from the options given below:
+§A A and D Only
+§B A, B and D Only
+§C C and D Only
+§D B, C and D Only
+## 24
+In a Stop-and-wait system, the bandwidth of the line is 1 Mbps , and 1 bit takes 30 milliseconds to make a round trip. The bandwidth-delay product is
+§A 15,000 bits
+§B 20,000 bits
+§C 30,000 bits
+§D 60,000 bits
+## 25
+Which of the followings belongs to MaCall's quality factors?
+A. Maintainability
+B. Usability
+C. Integrity
+D. Functionality
+Choose the correct answer from the options given below:
+§A A and D Only
+§B A, B and D Only
+§C C and D Only
+§D A, B and C Only
+## 26
+Arrange the process of virtualization in cloud environments.
+A. Hypervisor installed on physical server
+B. Virtual machines created
+C. Resources allocated to Virtual machines
+D. Virtual machines run isolated workloads
+Choose the correct answer from the options given below:
+§A B, C, A, D
+§B A, B, C, D
+§C A, C, B, D
+§D B, C, D, A
+## 27
+A positive integer selected at random from the set of positive integers not exceeding 200. Which of the followings is the probability that the selected number is divisible by either 2 or 5 ?
+§A 2 / 5
+§B 3 / 5
+§C 4 / 5
+§D 1 / 5
+## 28
+Match List I with List II
+List I | List II
+A. If the Indian team wins, then it is raining | I. Inverse
+B. If the Indian team does not win, then it is not raining | II. Converse
+C. If it is raining, then the Indian team wins | III. Contrapositive
+D. If it is not raining, then the Indian team does not win | IV. Conditional
+Choose the correct answer from the options given below:
+§A A-II, B-I, C-IV, D-III
+§B A-III, B-I, C-II, D-IV
+§C A-IV, B-I, C-II, D-III
+§D A-III, B-II, C-IV, D-I
+## 29
+Binary equivalent to (AOF)₁₆ is :
+§A 111000111
+§B 101001111
+§C 101000001111
+§D 111100001010
+## 30
+Consider the following interrupt protection levels in Linux, and arrange them in the increasing order of their priorities.
+A. User-Mode Programs (Preemptible)
+B. Bottom Half Interrupt Handlers
+C. Top Half Interrupt Handlers
+D. Kernel System Service Routines (Preemptible)
+Choose the correct answer from the options given below:
+§A B → A → C → D
+§B C → B → A → D
+§C C → A → B → D
+§D A → D → B → C
+## 31
+Which of the following technique is used for Clipping?
+§A Stack based Seed
+§B Scan Line Seed
+§C Sutherland-Cohen
+§D Inverse Scaling
+## 32
+Estimation of software development effort for organic software in basic COCOMO is
+§A E = 2.4(KLOC)^1.05 PM
+§B E = 3.4(KLOC)^1.06 PM
+§C E = 2.0(KLOC)^1.05 PM
+§D E = 2.4(KLOC)^1.07 PM
+## 33
+Consider R(A, B, C, D, E) be relation with following dependencies: C->F, E->A, EC->D, A->B. Which of the following is a key for R ?
+§A CD
+§B EC
+§C AE
+§D AC
+## 34
+Let P denote "She is intelligent" and let Q denote "She is happy."
+Given below are the statements:
+(a) If She is intelligent, then She is unhappy.
+(b) She is neither intelligent nor happy.
+(c) It is necessary to be not intelligent in order to be happy.
+(d) To be not intelligent is to be unhappy.
+Which of the following is correct Propositional expression for the above statements:
+§A (a) P → ¬Q; (b) P ∧ ¬Q; (c) Q → ¬P; (d) P → ¬Q
+§B (a) P → Q; (b) ¬P ∧ ¬Q; (c) ¬Q → P; (d) ¬P → ¬Q
+§C (a) P → ¬Q; (b) ¬P ∧ ¬Q; (c) Q → ¬P; (d) ¬P → ¬Q
+§D (a) P → ¬Q; (b) P ∧ ¬Q; (c) Q → P; (d) ¬P → ¬Q
+## 35
+In a group of 120 people: 65 eat Rice, 45 eat bread, 42 eat curd, 20 eat both Rice and bread, 25 eat both Rice and curd, 15 eat both bread and curd, and 8 eat all three items. Which of the following is the number of people who eat at least one of the three items:
+§A 56
+§B 100
+§C 92
+§D 65
+## 36
+Consider the following table defining the sample inputs and corresponding target values for a perceptron model.
+Sample No | x1 | x2 | target | w1 | w2
+S1 | 0 | 0 | 0 | 0 | 0
+S2 | 0 | 1 | 1 | |
+S3 | 1 | 0 | 1 | |
+S4 | 1 | 1 | 1 | |
+What shall be the value of updated weights after applying all the samples S1 to S4 (in the order S1, S2, S3, S4) to this model. Given that the initial weights w1=0, w2=0, learning rate =0.1 and no bias is involved in the perceptron. The activation function for this perceptron is given below
+y_observed = 1, if y_in > 0 ; 0, if y_in < 0
+§A w1=0.1, w2=0.1
+§B w1=0.0, w2=0.2
+§C w1=0.0, w2=0.1
+§D w1=0.2, w2=0.2
+## 37
+Which of the following algorithms use Greedy strategy?
+A. Dijkstra's algorithm
+B. Kruskal's algorithm
+C. Huffman coding
+D. Bellman-Ford algorithm
+Choose the correct answer from the options given below:
+§A A, B and D Only
+§B A, B and C Only
+§C C and D Only
+§D A and D Only
+## 38
+The packet sent by a node to the source to inform it of congestion is called
+§A Explicit
+§B Backpressure
+§C Choke
+§D Retransmission
+## 39
+Which of the following are controlled-access protocols
+A. Reservation
+B. Polling
+C. TDMA
+D. Token Passing
+E. CSMA/CA
+Choose the correct answer from the options given below:
+§A A and D Only
+§B A, B and D Only
+§C C, D and E Only
+§D A, D and E Only
+## 40
+Consider the following steps involved in the application of Genetic algorithm for a problem
+A. Select a pair of parents from the population
+B. Apply mutation at each locus with probability p_m
+C. Calculate fitness of each member of the population
+D. Apply crossover with probability p_c to form offsprings
+Choose the correct answer from the options given below describing the correct order of the above steps:
+§A A → C → B → D
+§B C → A → D → B
+§C C → A → B → D
+§D A → D → B → C
+## 41
+The longest common subsequence of {1,2,3,2,4,1,2} and {2,4,3,1,2,1} is
+§A 2,1,2,3
+§B 1,3,2,1
+§C 2,3,2,1
+§D 2,3,1,2,1
+## 42
+Considering the following statements:
+A. Data transformation is involved in Datamining process.
+B. Online database is used in Data warehouse.
+C. Classification is a measure of accuracy.
+D. K-means clustering algorithm is based on the concept of minimizing the within-cluster variance.
+E. Pattern evaluation is a process to identify knowledge based on interestingness measure.
+Choose the correct answer from the options given below:
+§A B, C, E Only
+§B A, D, E Only
+§C A, C, E Only
+§D A, C, D Only
+## 43
+Match List I with List II
+List I | List II
+A. Equivalence Partitioning | I. Measures independent paths in code
+B. Boundary Value Analysis | II. Divides input into valid/invalid sets
+C. Cyclomatic Complexity | III. Focuses on limits of input ranges
+D. Decision Table Testing | IV. In which a number of combinations of actions are tested under varying sets of conditions.
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-I, D-IV
+§B A-II, B-III, C-IV, D-I
+§C A-III, B-I, C-II, D-IV
+§D A-IV, B-II, C-I, D-III
+## 44
+Gray code equivalent to decimal number 8 is:
+§A 1000
+§B 1100
+§C 1010
+§D 1110
+## 45
+Match List I with List II
+List I (Hashing Collision Handling Method) | List II (Strategy)
+A. Chaining | I. Check next slot
+B. Linear Probing | II. Use the second hash function
+C. Quadratic Probing | III. Linked list at index
+D. Double Hashing | IV. Skip slots using quadratic step
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-I, D-IV
+§B A-II, B-III, C-IV, D-I
+§C A-III, B-I, C-IV, D-II
+§D A-IV, B-II, C-I, D-III
+## 46
+The write operation in I/O operation does the following-
+§A Transfer data from I/O device to memory
+§B Transfer data from memory to I/O device
+§C Transfer data from CPU register to memory
+§D Transfer data from CPU register to I/O device
+## 47
+Which of the followings is Not a parent selection technique used in genetic algorithm implementations
+§A Radial
+§B Tournament
+§C Boltzmann
+§D Rank
+## 48
+Maintaining a graph in memory by means of its adjacency matrix is known as
+§A Complete Representation
+§B Linked Representation
+§C Circular Representation
+§D Sequential Representation
+## 49
+Match List I with List II
+List I | List II
+A. Circular Queue | I. Print Queue
+B. Priority Queue | II. CPU Scheduling
+C. Double Ended Queue | III. Dijkstra algorithm
+D. Simple Queue | IV. Palindrome checking
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-I, D-IV
+§B A-II, B-III, C-IV, D-I
+§C A-III, B-I, C-II, D-IV
+§D A-IV, B-II, C-I, D-III
+## 50
+Consider the following DFA
+![](/q/jun2025_q50_dfa.png)
+Which of the following NFA is valid for the given DFA ?
+§A ![](/q/jun2025_q50_a.png)
+§B ![](/q/jun2025_q50_b.png)
+§C ![](/q/jun2025_q50_c.png)
+§D ![](/q/jun2025_q50_d.png)
+## 51
+Which of the following gates do not give output 1 when both the inputs are 0 -
+A. NAND gate
+B. NOR gate
+C. X-OR gate
+D. X-NOR gate
+Choose the correct answer from the options given below:
+§A A, B Only
+§B B, C Only
+§C C, D Only
+§D C Only
+## 52
+Consider the relation T1(A, B, C, D, E) with the dependencies {EB → C, D → E, EA → B} and T2(A, B, C, D) with the dependencies {C → A, A → B, A → D}. Which of the following is TRUE?
+§A T1 is in 3NF
+§B T2 is in 3NF
+§C T 1 is not in 3NF
+§D T1 is in 2NF
+## 53
+Choose the correct statement for a group G :
+§A If for all x, y ∈ G, (xy)² = x²y² then G is Commutative.
+§B If for all x ∈ G, x³ = 1, then G is Commutative. 1 is the identity element of G.
+§C If for all x ∈ G, x⁵ = 1, then G is Commutative. 1 is the identity element of G.
+§D If G is Commutative, the sub-group of G need not be Commutative.
+## 54
+Consider the following piece of C programming code:
+```
+int x=128, y=110;
+do
+{
+  if(x>y)
+    x=x-y;
+  else
+    y=y-x;
+} while(x!= y)
+printf("%d",x);
+```
+Which one will be the output?
+§A 18
+§B 2
+§C 92
+§D 74
+## 55
+Arrange the steps involved when a user enters a URL in a browser and accesses a website.
+A. DNS resolution
+B. HTTP request sent
+C. URL entered in the browser
+D. IP address obtained
+E. Webpage displayed
+Choose the correct answer from the options given below:
+§A B, A, C, E, D
+§B C, B, A, E, D
+§C B, C, D, A, E
+§D C, A, D, B, E
+## 56
+Match List I with List II
+List I | List II
+A. Clustered Page Table | I. Generally considered inappropriate for 64 bit architectures.
+B. Hierarchical Page Table | II. Has only entry for each real page (or frame) of memory.
+C. Segmentation | III. Useful for Sparse address spaces.
+D. Inverted Page Table | IV. Supports a user view of the system.
+Choose the correct answer from the options given below:
+§A A → III, B → IV, C → II, D → I
+§B A → III, B → I, C → IV, D → II
+§C A → II, B → I, C → III, D → IV
+§D A → IV, B → III, C → I, D → II
+## 57
+Match List I with List II
+List I | List II
+A. Overloading | I. Since function call is resolved during run time, the execution is Slow.
+B. Early binding | II. Since function call is resolved during compilation time, the execution is much faster.
+C. Overriding | III. Supports compile-time polymorphism.
+D. Late Binding | IV. Supports run-time polymorphism.
+Choose the correct answer from the options given below:
+§A A-III, B-II, C-I, D-IV
+§B A-IV, B-II, C-III, D-I
+§C A-III, B-II, C-IV, D-I
+§D A-IV, B-I, C-III, D-II
+## 58
+Identify the correct statement(s) from the followings with respect to Spinlock Semaphores
+A. The name refers to busy waiting semaphores.
+B. They are not useful when the locks are to be held for a short duration of time.
+C. It may require multiple context switches when a process waits on a lock.
+D. They are often employed on Uniprocessor systems.
+Choose the correct answer from the options given below:
+§A A Only
+§B D Only
+§C B, D Only
+§D A, C and D Only
+## 59
+Consider the following statements for XML (Extensible Markup Language) :
+A. The number of tags decreases and users can define their own tags.
+B. Its is used for Presentation.
+C. It is case sensitive.
+D. It is dynamic.
+Which of the above statements are true ?
+§A B, C, D Only
+§B A, B, D Only
+§C A, C, D Only
+§D B, D Only
+## 60
+Match List I with List II
+List I (Operations on Fuzzy Sets) | List II (Description)
+A. Intersection | I. μA(x) + μB(x) − μA(x) · μB(x)
+B. Bounded Sum | II. max(0, μA(x) − μB(x))
+C. Bounded Difference | III. min(1, μA(x) + μB(x))
+D. Algebraic Sum | IV. min(μA(x), μB(x))
+Choose the correct answer from the options given below:
+§A A → III, B → I, C → II, D → IV
+§B A → III, B → II, C → IV, D → I
+§C A → IV, B → III, C → II, D → I
+§D A → II, B → I, C → III, D → IV
+## 61
+Which of the following is not the characteristics of packet switching?
+§A Data is broken into packets
+§B Each packet may take a different rout
+§C Requires a dedicated path
+§D Supports dynamic routing
+## 62
+What is the total swap time (Swap in Swap out) in a system for a 15 MB process with a transfer rate of 30 MBps . Given that there is an average latency of 12 ms , however no head seeks involved.
+§A 1.024 sec
+§B 1.00 sec
+§C 0.512 sec
+§D 12 sec
+## 63
+Match List I with List II
+List I | List II
+A. Oblique Projection | I. When the direction of projection is so chosen that the lines perpendicular to the plane of projection are foreshortened.
+B. Cavalier Projection | II. When the direction of projection is so chosen that there is no foreshortening of lines perpendicular to the plane of projection.
+C. Cabinet Projection | III. When the direction of projection is perpendicular to the plane of projection.
+D. Orthographic Projection | IV. When the angle between the projectors and the plane of projection is not equal to 90°.
+Choose the correct answer from the options given below:
+§A A-III, B-II, C-IV, D-I
+§B A-IV, B-II, C-I, D-III
+§C A-III, B-I, C-IV, D-II
+§D A-IV, B-I, C-III, D-II
+## 64
+Match List I with List II
+List I | List II
+A. RAID Level 2 | I. Block interleaved distribution parity
+B. RAID Level 3 | II. Also known as P+Q redundancy Scheme
+C. RAID Level 5 | III. Bit interleaved parity
+D. RAID Level 6 | IV. Also known as Memory style error correcting code organization
+Choose the correct answer from the options given below:
+§A A → IV, B → III, C → I, D → II
+§B A → III, B → IV, C → I, D → II
+§C A → I, B → III, C → IV, D → II
+§D A → II, B → IV, C → I, D → III
+## 65
+What will be the output of the following C Programming code :
+```
+void main ()
+{
+  int *i,a=12,b=2,c;
+  c=(a=a+b,b=a/b,a=a*b,b=a-b);
+  i=&c;
+  printf("%d", --(*i));
+}
+```
+§A 91
+§B 90
+§C 98
+§D 92
+## 66
+Which of the following is not a requirement elicitation Technique
+§A Interviews
+§B The use case approach
+§C Facilitated Application Specification Technique (FAST)
+§D Data Flow diagram
+## 67
+Consider the following table about processes, their burst time and arrival time
+Process | Burst Time | Arrival Time
+P1 | 09 | 0
+P2 | 30 | 0
+P3 | 04 | 0
+P4 | 08 | 2
+P5 | 11 | 6
+Now which of the process shall finish second last as per the respective GANTT charts for the nonpreemptive SJF and Round Robin (time quantum =10 ) scheduling methods.
+§A SJF : P4; RR : P4
+§B SJF : P5; RR : P4
+§C SJF : P4; RR : P3
+§D SJF : P5; RR : P5
+## 68
+Only legal pointer operations:
+A. pointer + number → pointer
+B. pointer - number → number
+C. pointer + pointer → pointer
+D. pointer - pointer → pointer
+E. pointer - pointer → number
+Choose the most appropriate answer from the options given below:
+§A A, B, C Only
+§B A, B, D Only
+§C A, B Only
+§D A, E Only
+## 69
+Arrange the following in the increasing order of coupling from lowest coupling to highest coupling.
+A. Common Coupling
+B. Stamp Coupling
+C. Control Coupling
+D. External Coupling
+E. Content Coupling
+Choose the correct answer from the options given below:
+§A E, A, C, B, D
+§B D, B, A, E, C
+§C B, C, D, A, E
+§D C, A, B, D, E
+## 70
+In a relational database, which one of the following is CORRECT:
+§A A relation with only two attributes is always in BCNF.
+§B If all attributes of a relation are prime attributes then the relation in BCNF
+§C Every relation has at least one non-prime attribute.
+§D BCNF decomposition preserves functional dependencies.
+## 71
+Which of the following statement is correct for Pthreads?
+§A It refers to POSIX standard (IEEE 1002.1c)
+§B This standard defines API for thread creation only
+§C This is a specification only for thread behavior and not its implementation
+§D Operating systems like Solaris, Linux Mac OS X, except Tru64 UNIX, implement Pthreads
+## 72
+Consider the operators used in C Programming given below:
+A. &&
+B. +=
+C. >>
+D. >=
+E. ?:
+Choose among the following the correct order of precedence of the operators given above (higher to lower):
+§A C, D, E, B, A
+§B C, A, D, E, B
+§C C, D, A, E, B
+§D D, C, A, B, E
+## 73
+The computer needs to process each instruction with the following sequence of steps:
+A. Calculate the effective address
+B. Fetch the Instruction from memory
+C. Decode the instruction
+D. Fetch the operands from the memory
+E. Execute the Instruction
+Choose the correct answer from the options given below:
+§A A, B, C, D, E
+§B B, A, D, C, E
+§C B, C, A, D, E
+§D C, B, A, D, E
+## 74
+Which of the followings is not a valid property over two fuzzy relations R̃ and S̃ which must be obeyed for performing λ-cut defuzzifications?
+§A (R̃ ∪ S̃)_λ = R̃_λ ∪ S̃_λ
+§B (R̃ ∩ S̃)_λ = R̃_λ ∩ S̃_λ
+§C (R̃ᶜ)_λ ≠ (R_λ)ᶜ except when λ = 1 (ᶜ denotes complement)
+§D For any λ ≤ β, where 0 ≤ β ≤ 1, it is true that R_β ⊆ R_λ
+## 75
+Consider the following DFA that generates set of strings over Σ = {a, b, c}
+![](/q/jun2025_q75_dfa.png)
+Now identify that which of the followings is the best description of the language for the above DFA
+§A L = (a* + b* + c*)⁺
+§B L = (a + b + c)*(abc)⁺(a + b + c)*
+§C L = { Set of strings, all starting with ' a, b, c' but ending with ' c ' }
+§D L = { Set of strings, all having even count (including 0) of substring 'abc' }
+## 76
+Match List I with List II
+List I | List II
+A. Type 3 Grammar | I. V → (V ∪ Σ)*
+B. Type 2 Grammar | II. λ V β → λ(V ∪ Σ)* β, where (λ, β) ∈ (V ∪ Σ)*
+C. Type 1 Grammar | III. (V ∪ Σ)* → (V ∪ Σ)*
+D. Type 0 Grammar | IV. V → V Σ | Σ
+Choose the correct answer from the options given below:
+§A A → II, B → III, C → IV, D → I
+§B A → III, B → I, C → IV, D → II
+§C A → IV, B → I, C → II, D → III
+§D A → III, B → II, C → I, D → IV
+## 77
+Considering the following statements:
+A. A non-serial schedule is said to be conflict serializable, if it is conflict-equivalent to some serial schedule.
+B. A non-serial schedule is said to be view serializable if it is view-equivalent to some serial schedule.
+C. A schedule is said to be serial, if instructions of participating transactions are chronologically interleaved with each other.
+D. A conflict-serializable schedule will be view-serializable also but vice-versa may not be true.
+Choose the correct answer from the options given below:
+§A A, B, C, D
+§B A, B, C Only
+§C A, B, D Only
+§D B, C, D Only
+## 78
+Which of the following statements is/are TRUE about encryptions techniques?
+A. In symmetric key cryptography, the secrecy/protection of the key generating function must be of higher level than the decrypting function.
+B. The DES technique works by taking 64 bit chunk value and 56 bit key over a series of transformations.
+C. The Twofish symmetric block algorithm works on variable key length of upto 196 bits over a block of 128 bits.
+D. RC₄ is the most commonly used stream cipher that encrypts & decrypts a stream of bits/bytes instead of blocks.
+Choose the correct answer from the options given below:
+§A B, C Only
+§B A, D Only
+§C A, C Only
+§D B, D Only
+## 79
+Which of the following statements are true ?
+A. In the write-through policy, only the cache is updated
+B. In the write-back policy, both cache and main memory are updated
+C. Cache coherence problems exist in multiprocessors with private caches because of the need to share writable data
+D. Cache coherence problem can be solved by means of hardware-only scheme
+Choose the correct answer from the options given below:
+§A A, B Only
+§B B, C Only
+§C C, D Only
+§D A, B, C Only
+## 80
+Given that η refers to learning rate and xᵢ refers to the iᵗʰ input to the neuron, Which of the followings most suitably describes the weight updation rule of a Kohonen SOM? (where ' j ' refers to the jᵗʰ neuron in the lattice)
+§A wᵢⱼ(new) = (1 − η)* wᵢⱼ(old) + η*xᵢ
+§B wᵢⱼ(new) = η*wᵢⱼ(old) + (1 − η)*xᵢ
+§C wᵢⱼ(new) = (1 − η)* wᵢⱼ(old) + xᵢ
+§D wᵢⱼ(new) = wᵢⱼ(old) + η*xᵢ
+## 81
+Consider the following statements regarding STRIPS representation of a Planning problem
+A. STRIPS is a Feature-centric representation
+B. The features describing state of the world are divided into Primitive and Derived
+C. The STRIPS representation of the action comprises of Precondition and Effect
+D. STRIPS can directly define conditional effects.
+Choose the correct answer from the options given below:
+§A A, C Only
+§B B, C Only
+§C A, D Only
+§D B, C, D Only
+## 82
+The tight asymptotic bound for the recurrence T(n) = 2T(n/4) + √n is
+§A Θ(√n)
+§B Θ(n log n)
+§C Θ(√n log n)
+§D Θ(n log √n)
+## 83
+When developing a dynamic programming algorithm, the sequence of steps followed is:
+A. Construct an optimal solution from computed information.
+B. Recursively define the value of an optimal solution.
+C. Characterize the structure of an optimal solution.
+D. Compute the value of an optimal solution, typically in a bottom-up fashion.
+Choose the correct answer from the options given below:
+§A B, C, A, D
+§B B, A, C, D
+§C C, B, A, D
+§D C, B, D, A
+## 84
+Which of the following are examples of data encoding schemes?
+A. Non-Return to Zero (NRZ)
+B. Manchester Encoding
+C. Amplitude Modulation
+D. Hamming code
+E. Bipolar AMI
+Choose the correct answer from the options given below:
+§A A, C and D Only
+§B A, B and D Only
+§C C, D and E Only
+§D A, B and E Only
+## 85
+Arrange the following types of testing in the order they are usually performed in the software Development life cycle.
+A. Integration testing
+B. Unit testing
+C. System Testing
+D. Acceptance Testing
+Choose the correct answer from the options given below:
+§A B, C, A, D
+§B B, A, C, D
+§C C, B, A, D
+§D C, B, D, A
+## 86
+The correct sequence of constructing Huffman tree is
+A. Repeat until root formed
+B. Create leaf nodes
+C. Build priority queue
+D. Combine lowest frequency nodes
+Choose the correct answer from the options given below:
+§A B, C, A, D
+§B D, B, A, C
+§C B, C, D, A
+§D C, A, B, D
+## 87
+Let m and n are positive integers. Then
+(A) If n ≠ 1, then m < m n.
+(B) If k is composite, then k=m n where 1<m, n>k
+(C) If mn =1, then m =1 and n =1.
+(D) If k is composite, then k=m n where 1<m, n<k
+Which of the following is correct:
+§A (A), (C), (D)
+§B (B), (C), (D)
+§C (A),(B)
+§D (A), (B), (C)
+## 88
+Arrange the following parsers in increasing order of their power of handling grammars i.e. from the least powerful parser to the most powerful parser.
+A. LR (0)
+B. LR (1)
+C. LALR(1)
+D. LL (0)
+E. SLR
+Choose the correct answer from the options given below:
+§A LL(0) → LR(0) → SLR → LR(1) → LALR(1)
+§B SLR → LR(0) → LL(0) → LR(1) → LALR(1)
+§C LL(0) → LR(0) → SLR → LALR(1) → LR(1)
+§D LR(0) → LL(0) → SLR → LR(1) → LALR(1)
+## 89
+The right sequence of CPU program to input data will be :
+A. Read status register
+B. Check flag bit
+C. Read Data Register
+D. Transfer data to memory
+Choose the correct answer from the options given below:
+§A A, B, C, D
+§B B, A, C, D
+§C C, B, A, D
+§D A, C, B, D
+## 90
+The right sequence of suboperations that are performed in arithmetic pipeline is-
+A. Align the mantissas
+B. Add or subtract the mantissas
+C. Normalize the result
+D. Compare the exponents
+Choose the correct answer from the options given below:
+§A D, A, B, C
+§B D, B, A, C
+§C B, C, D, A
+§D B, C, D, A
+## 91
+Passage (Q91-Q95): Consider the following Three Address code sample for solving the questions :
+100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104 : goto 111
+105: if num > b goto 107
+106: goto 111
+107: num = limit-1
+108:b=y+2
+109: i = i - num
+110: goto 103
+111: j= i - num
+112:k=j+b
+What are the various LEADERS (leading statements) for the TAC given in the passage?
+§A 100,102,103,104,105,107,110
+§B 100,103,105,107,111,112
+§C 100,103,105,106,107,111
+§D 100,103,104,105,106,107,111
+## 92
+Passage (Q91-Q95): Consider the following Three Address code sample for solving the questions :
+100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104 : goto 111
+105: if num > b goto 107
+106: goto 111
+107: num = limit-1
+108:b=y+2
+109: i = i - num
+110: goto 103
+111: j= i - num
+112:k=j+b
+Which of the following is the Optimized version for the given TAC in the passage
+§A 100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104 : goto 111
+105: if num > b goto }10
+106: goto 111
+107:b=y+2
+108: i=i - limit-1
+109: goto 103
+110:k=i+b
+§B 100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104: if num < b goto }11
+105: num = limit-1
+106:b = t1
+107: i=i -num
+108: goto 103
+109:k=i+b
+§C 100: t1 = y + 2
+101: limit = 10
+102: num = 9
+103: b = t1
+104: if i > j goto 106
+105: goto 110
+106: if num > b goto 108
+107: goto 110
+108: i = i - num
+109: goto 104
+110: j = i - num
+111: k = j + b
+§D 100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104 : goto 111
+105: if num < b goto 111
+106: num = limit-1
+107:b=t1
+108: i=i -num
+109 : goto 103
+110:k= i+b
+## 93
+Passage (Q91-Q95): Consider the following Three Address code sample for solving the questions :
+100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104 : goto 111
+105: if num > b goto 107
+106: goto 111
+107: num = limit-1
+108:b=y+2
+109: i = i - num
+110: goto 103
+111: j= i - num
+112:k=j+b
+Which of the following is the correct High level code for the given TAC in the passage
+§A t1 = y+2
+init = x/t1;
+limit=10;
+if(i>j || num>b)
+{
+  num = limit-1;
+  b = y + 2;
+  i=i-num;
+}
+j=i - num;
+k = k+b;
+§B init = x/(y+2);
+limit=10;
+while(i>j || num>b)
+{
+  num = limit-1;
+  b = y + 2;
+  i=i -num;
+}
+j = i - num;
+k = k+b;
+§C init = x/(y+2);
+limit=10;
+if(i>j)
+{
+  While( num>b)
+    num = limit-1;
+}
+else
+{
+  b = y + 2;
+  i=i-num;
+}
+j= i - num;
+k= k+b:
+§D init = x/(y+2);
+limit=10;
+while(i>j && num>b)
+{
+  num = limit-1;
+  b=y+2;
+  i=i-num;
+}
+j = i - num;
+k = k+b;
+## 94
+Passage (Q91-Q95): Consider the following Three Address code sample for solving the questions :
+100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104 : goto 111
+105: if num > b goto 107
+106: goto 111
+107: num = limit-1
+108:b=y+2
+109: i = i - num
+110: goto 103
+111: j= i - num
+112:k=j+b
+What all blocks does Block 3 and Block 5 dominate in the Flow graph for the TAC given in the passage?
+§A Block 3:3 ; Block 5:5
+§B Block 3: 3,4,5,6; Block 5: 5,6
+§C Block 3: 3,7; Block 5: 5,7
+§D Block 3: 3,4,7; Block 5: 5,6,7
+## 95
+Passage (Q91-Q95): Consider the following Three Address code sample for solving the questions :
+100:t1=y+2
+101 : initial = x/t1
+102: limit = 10
+103: if i >j goto 105
+104 : goto 111
+105: if num > b goto 107
+106: goto 111
+107: num = limit-1
+108:b=y+2
+109: i = i - num
+110: goto 103
+111: j= i - num
+112:k=j+b
+Which of the followings is the correct Flow graph for the TAC given in the passage?
+§A ![](/q/jun2025_q95_a.png)
+§B ![](/q/jun2025_q95_b.png)
+§C ![](/q/jun2025_q95_c.png)
+§D ![](/q/jun2025_q95_d.png)
+## 96
+Passage (Q96-Q100): Consider the following disc Queue with requests for I/O to block on cylinders:
+45, 81, 185, 33, 175, 99, 150, 77
+(Consider that the head starts from location 58)
+What shall be the 2nd request being processed by C-LOOK (Right) disc Scheduling technique for the already given request queue?
+§A 81
+§B 45
+§C 77
+§D 33
+## 97
+Passage (Q96-Q100): Consider the following disc Queue with requests for I/O to block on cylinders:
+45, 81, 185, 33, 175, 99, 150, 77
+(Consider that the head starts from location 58)
+What shall be the total head movement of cylinders for the C-SCAN disc Scheduling technique if the head starts moving in the right direction from initial position ?
+§A 327
+§B 307
+§C 525
+§D 385
+## 98
+Passage (Q96-Q100): Consider the following disc Queue with requests for I/O to block on cylinders:
+45, 81, 185, 33, 175, 99, 150, 77
+(Consider that the head starts from location 58)
+What shall be the 2nd request being processed by SCAN (LEFT) disc Scheduling technique for the already given request queue?
+§A 81
+§B 15
+§C 33
+§D 175
+## 99
+Passage (Q96-Q100): Consider the following disc Queue with requests for I/O to block on cylinders:
+45, 81, 185, 33, 175, 99, 150, 77
+(Consider that the head starts from location 58)
+What will be the total head movement of cylinders for the SSTF disc Scheduling technique?
+§A 160
+§B 124
+§C 177
+§D 240
+## 100
+Passage (Q96-Q100): Consider the following disc Queue with requests for I/O to block on cylinders:
+45, 81, 185, 33, 175, 99, 150, 77
+(Consider that the head starts from location 58)
+What shall be the total head movement of cylinders if the FCFS disc scheduling method is used?
+§A 536
+§B 594
+§C 647
+§D 700

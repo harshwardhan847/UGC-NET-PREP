@@ -1,0 +1,905 @@
+## 1
+Which of the statements given below is/are correct?
+It is always important and useful to include an 'alt' attribute on 'img' tag in HTML because
+A. users who cannot see the image due to vision impairment can have a textual description of the image (which can be spoken aloud by a screen reader).
+B. If the image fails to load (slow connection, broken path, etc.) then alt text is displayed instead.
+C. SEO (Search Engine Optimization) benefits.
+Choose the correct answer from the options given below:
+§A A only
+§B B and C only
+§C C only
+§D A, B, and C
+## 2
+What does the following function f() in ' C ' return?
+```
+int f( unsigned int N ){
+  unsigned int counter = 0;
+  while (N > 0){
+    counter += N & 1;
+    N = N >> 1;}
+  return counter = 1;}
+```
+§A 1 if N is odd, otherwise 0
+§B 1 if N is a power of 2 , otherwise 0
+§C 1 if the binary representation of N is all 1 s 's, otherwise 0
+§D 1 if the binary representation of N has any 1 's, otherwise 0
+## 3
+Consider the following recursive function F() in Java that takes an integer value and returns a string value:
+```
+public static String F(int N){
+  if (N <= 0 ) return " - ";
+  return F(N − 3) + N + F(N − 2) + N;
+}
+```
+The value of F(5) is:
+§A −2 − 25 − 3 − 135
+§B −2 − 25 − 1 − 3 − 135
+§C −1 − 145 − 2 − 245
+§D −2 − 25 − 3 − 1 − 135
+## 4
+List I | List II
+(Programming Terms) | (Meaning)
+A. JNDI | I. Runtime support for running java program
+B. RMI | II. The API in support of naming and directory services.
+C. JDK | III. The methods provided by the Java development kit and runtime support for calling remote methods.
+D. JRE | IV. The compiler and class libraries to develop Java applications.
+Choose the correct answer from the options given below:
+§A A - II , B - III, C - IV, D - I
+§B A - II, B - IV, C - III, D - I
+§C A - I, B - III, C - IV, D - II
+§D A - III, B - II, C - IV, D - I
+## 5
+Match List I with List II
+List I (Programming Paradigms) | List II (Characteristics)
+A. Imperative | I. Declarative, clausal representation, theorem proving
+B. Object-oriented | II. Side-effect-free, declarative, expression evaluation
+C. Logic | III. Imperative, abstract data type
+D. Functional | IV. Command-based, procedural
+
+§A A - IV, B - III, C - I, D - II
+§B A - III, B - IV, C - I, D - II
+§C A - IV, B - III, C - II, D - I
+§D A - II, B - III, C - I, D - IV
+## 6
+Suppose you have eight 'black and white' images taken with a 1-megapixel camera and one '8-color' image taken by an 8-megapixel camera. How much hard disk space in total do you need to store these images on your computer?
+§A 1 GB
+§B 4 MB
+§C 3 MB
+§D 3 GB
+## 7
+Which of the statements given below are correct?
+The midpoint (or Bresenham) algorithm for rasterizing lines is optimized relative to DDA algorithm in that
+A. it avoids round-off operations.
+B. it is incremental.
+C. it uses only integer arithmetic.
+D. all straight lines can be displayed as straight (exact).
+Choose the correct answer from the options given below:
+§A A and B only
+§B A and C only
+§C A, B, C, and D
+§D A, B, and C only
+## 8
+What is the transformation matrix M that transforms a square in the xy-plane defined by (1,1)ᵀ, (−1,1)ᵀ, (−1,−1)ᵀ and (1,−1)ᵀ to a parallelogram whose corresponding vertices are (2,1)ᵀ, (0,1)ᵀ, (−2,−1)ᵀ and (0,−1)ᵀ ?
+§A M = [[1, 1, 0], [0, 1, 0], [0, 0, 1]]
+§B M = [[1, 0, 0], [1, 1, 0], [0, 0, 1]]
+§C M = [[1, 1, 1], [0, 1, 0], [0, 0, 1]]
+§D M = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
+## 9
+Suppose a Bezier curve P(t) is defined by the following four control points in the xy-plane:
+P₀ = (−2, 0); P₁ = (−2, 4); P₂ = (2, 4); and P₃ = (2, 0). Then which of the following statements are correct?
+A. Bezier curve P(t) has degree 3 .
+B. P(1/2) = (0, 3).
+C. Bezier curve P(t) may extend outside the convex hull of its control points.
+Choose the correct answer from the options given below:
+§A A and B only
+§B A and C only
+§C B and C only
+§D A, B, and C
+## 10
+Given below are two statements
+Statement I: The maximum number of sides that a triangle might have when clipped to a rectangular viewport is 6.
+Statement II: In 3D graphics, the perspective transformation is nonlinear in z.
+In light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 11
+In software testing, beta testing is the testing performed by ______________.
+§A potential customers at the developer's location
+§B potential customers at their own locations
+§C product developers at the customer's location
+§D product developers at their own locations
+## 12
+The V components in MVC are responsible for:
+§A User interface.
+§B Security of the system.
+§C Business logic and domain objects.
+§D Translating between user interface actions/events and operations on the domain objects.
+## 13
+In software engineering, what kind of notation do formal methods predominantly use?
+§A textual
+§B diagrammatic
+§C mathematical
+§D computer code
+## 14
+If every requirement stated in the Software Requirement Specification (SRS) has only one interpretation, then SRS is said to be
+§A correct
+§B consistent
+§C unambiguous
+§D verifiable
+## 15
+A system has 99.99% uptime and has a mean-time-between-failure of 1 day. How fast does the system has to repair itself in order to reach this availability goal?
+§A ~9 Seconds
+§B ~10 Seconds
+§C ~11 Seconds
+§D ~12 Seconds
+## 16
+In the context of Software Configuration Management (SCM), what kind of files should be committed to your source control repository?
+A. Code files
+B. Documentation files
+C. Output files
+D. Automatically generated files that are required for your system to be used
+Choose the correct answer from the options given below:
+§A A and B only
+§B B and C only
+§C C and D only
+§D D and A only
+## 17
+Match List I with List II
+List I (Software Process Model) | List II (Description)
+A. Waterfall Model | I. Software can be developed incrementally
+B. Evolutionary Model | II. Requirement compromises are inevitable
+C. Component-based Software Engineering | III. Explicit recognition of risk
+D. Spiral Development | IV. Inflexible partitioning of the project into stages
+
+§A A - IV, B - I, C - III, D - II
+§B A - I, B - IV, C - II, D - III
+§C A - II, B - III, C - I, D - IV
+§D A - IV, B - I, C - II, D - III
+## 18
+Identify the correct order of the following five levels of Capability Maturity Model (from lower to higher) to measure the maturity of an organisation's software process.
+A. Defined
+B. Optimizing
+C. Initial
+D. Managed
+E. Repeatable
+Choose the correct answer from the options given below:
+§A C, A, E, D, B
+§B C, E, A, B, D
+§C C, B, D, E, A
+§D C, E, A, D, B
+## 19
+Given below are two statements
+Statement I: Cleanroom software process model incorporates the statistical quality certification of code increments as they accumulate into a system.
+Statement II: Cleanroom software engineering follows the classic analysis, design, code, test, and debug cycle to software development and focussing on defect removal rather than defect prevention.
+In light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 20
+Given below are two statements, one is labelled as Assertion A and the other is labelled as Reason R
+Assertion A : Software developers donot do exhaustive software testing in practice.
+Reason R : Even for small inputs, exhaustive testing is too computationally intensive (e.g., takes too long) to run all the tests.
+In light of the above statements, choose the correct answer from the options given below
+§A Both A and R are true and R is the correct explanation of A
+§B Both A and R are true but R is NOT the correct explanation of A
+§C A is true but R is false
+§D A is false but R is true
+## 21
+Which of the following are logically equivalent?
+A. ¬p → (q → r) and q → (p ∨ r)
+B. (p → q) → r and p → (q → r)
+C. (p → q) → (r → s) and (p → r) → (q → s)
+Choose the correct answer from the options given below:
+§A A only
+§B A and B only
+§C B and C only
+§D A and C only
+## 22
+Which of these statements about the floor and ceiling functions are correct?
+Statement I: ⌊2x⌋ = ⌊x⌋ + ⌊x + (1/2)⌋ for all real number x
+Statement II: ⌈x + y⌉ = ⌈x⌉ + ⌈y⌉ for all real numbers x and y
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 23
+How many ways are there to assign 5 different jobs to 4 different employees if every employee is assigned at least 1 job
+§A 1024
+§B 625
+§C 240
+§D 20
+## 24
+A company stores products in a warehouse. Storage bins in this warehouse are specified by their aisle, location in the aisle, and self. There are 50 aisles, 85 horizontal locations in each aisle, and 5 shelves throughout the warehouse. What is the least number of products the company can have so that at least two products must be stored in the same bin?
+§A 251
+§B 426
+§C 4251
+§D 21251
+## 25
+Let us assume a person climbing the stairs can take one stair or two stairs at a time. How many ways can this person climb a flight of eight stairs?
+§A 21
+§B 24
+§C 31
+§D 34
+## 26
+For which value of n is Wheel graph Wₙ regular
+§A 2
+§B 3
+§C 4
+§D 5
+## 27
+Which of the following Graphs is(are) planar?
+![](/q/nov2021_q27.png)
+§A A and B only
+§B B and C only
+§C A only
+§D B only
+## 28
+Match List I with List II
+List I (Identity) | List II (Name)
+A. x+x=x | I. Identity Law
+B. x+0=x | II. Absorption Law
+C. x+1=1 | III. Idempotent Law
+D. x+xy=x | IV. Domination Law
+Choose the correct answer from the options given below:
+§A A - III, B -I , C - II, D - IV
+§B A - I, B -III , C - IV, D - II
+§C A - III, B -I , C - IV, D - II
+§D A - III, B -IV , C - I, D - II
+## 29
+Let (X, *) be a semigroup. Furthermore, for every a and b in X, if a ≠ b, then
+a * b ≠ b * a.
+Based on the defined semigroup, choose the correct equalities from the options given below:
+A. For every a in X, a * a = a
+B. For every a, b in X, a * b * a = a
+C. For every a, b, c in X, a * b * c = a * c
+Choose the correct answer from the options given below:
+§A A and B only
+§B A and C only
+§C B and C only
+§D A, B and C
+## 30
+Consider the following linear optimization problem:
+Maximize Z = 6x + 5y
+Subject to 2x - 3y <= 5
+x + 3y <= 11
+4x + y <= 15
+and x >= 0, y >= 0.
+The optimal solution of the problem is:
+§A 15
+§B 25
+§C 31.72
+§D 41.44
+## 31
+Which of the following languages are not regular?
+A. L={(01)ⁿ0ᵏ|n>k,k≥0}
+B. L={cⁿbᵏaⁿ⁺ᵏ|n≥0,k≥0}
+C. L = {0ⁿ1ᵏ | n ≠ k}
+Choose the correct answer from the options given below:
+§A A and B only
+§B A and C only
+§C B and C only
+§D A, B and C
+## 32
+Any string of terminals that can be generated by the following context-free grammar (where S is start nonterminal symbol)
+S→XY
+X→0X | 1X | 0
+Y→Y0 | Y1 | 0
+§A has at least one 1
+§B should end with 0
+§C has no consecutive 0's or 1's
+§D has at least two 0's
+## 33
+Let
+L₁ = {0ⁿ1ⁿ0ᵐ | n >= 1, m >= 1}
+L₂ = {0ⁿ1ᵐ0ᵐ | n >= 1, m >= 1}
+L₃ = {0ⁿ1ⁿ0ⁿ | n >= 1}
+Which of the following are correct statements?
+A. L₃ = L₁ ∩ L₂
+B. L₁ and L₂ are context free languages but L₃ is not a context free language
+C. L₁ and L₂ are not context free languages but L₃ is a context free language
+D. L₁ is a subset of L₃
+Choose the correct answer from the options given below:
+§A A and B only
+§B A and C only
+§C A and D only
+§D A only
+## 34
+Given below are two statements
+Statement I: The family of context free languages is closed under homomorphism
+Statement II: The family of context free languages is closed under reversal
+In light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 35
+What is the minimum number of states required to the finite automaton equivalent to the transition diagram given below?
+![](/q/nov2021_q35.png)
+§A 3
+§B 4
+§C 5
+§D 6
+## 36
+Find the regular expression for the language accepted by the automata given below.
+![](/q/nov2021_q36.png)
+§A (aa*(a + b)ab)*
+§B (a + b)ab(ab + bb + aa* (a + b) ab)*
+§C a* ab(ab + bb + aa* (a + b ) ab)*
+§D a*(a + b) ab(ab + bb + aa * (a + b) ab)*
+## 37
+What language is accepted by the pushdown automaton
+M = ({q₀, q₁, q2}, {a, b}, {a, b, z}, δ, q₀, z, {q₂})
+with δ(q₀, a, a) = {(q₀, aa)}; δ(q₀, b, a) = {(q₀, ba)};
+δ(q₀, a, b) = {(q₀, ab)}; δ(q₀, b, b) = {(q₀, bb)};
+δ(q₀, a, z) = {(q₀, az)}; δ(q₀, b, z) = {(q₀, bz)};
+δ(q₀, λ, b) = {(q₁, b)}; δ(q₀, λ, a) = {(q₁, a)};
+δ(q₁, a, a) = {(q₁, λ)}; δ(q₁, b, b) = {(q₁, λ)};
+δ(q₁, λ, z) = {(q₂, z)}?
+§A L = {w | nₐ(w) = n_b(w), w ∈ {a, b}⁺}
+§B L = {w | nₐ(w) <= n_b(w), w ∈ {a, b}⁺}
+§C L = {w | n_b(w) <= nₐ(w), w ∈ {a, b}⁺}
+§D L = {wwᴿ | w ∈ {a, b}⁺}
+## 38
+Match List I with List II
+List I (Production Rules) | List II (Grammar)
+A. S→ XY
+ X→0
+ Y→1 | I. Greibach Normal Form
+B. S →aS | bSS | c | II. Context sensitive Grammar
+C. S →AB
+ A→0A | 1A | 0
+ B→0A | III. Chomsky Normal Form
+D. S→aAbc
+ Ab →bA
+ Ac →Bbcc
+ bB →Bb
+ aB→aa | aaA | IV. S.Grammar
+Choose the correct answer from the options given below:
+§A A - III, B -I , C - IV, D - II
+§B A - III, B -II , C - I, D - IV
+§C A - III, B -IV, C - I, D - II
+§D A - IV, B -III , C - I, D - II
+## 39
+Which of the following concepts can be used to identify loops?
+A. Depth first ordering
+B. Dominators
+C. Reducible graphs
+Choose the correct answer from the options given below:
+§A A and B only
+§B A and C only
+§C B and C only
+§D A, B and C
+## 40
+Given below are two statements
+Statement I: LL(1) and LR are examples of Bottom-up parsers.
+Statement II: Recursive descent parser and SLR are examples of Top-down parsers
+In light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 41
+The postfix form of the expression (A + B) * (C * D - E) * F /G is _______
+§A A B + C D * E − F G / * *
+§B A B + C D * E − F * * G /
+§C A B + C D * E − * F * G /
+§D A B + C D E * − * F * G /
+## 42
+A double-ended queue (dequeue) supports adding and removing items from both the ends of the queue. The operations supported by dequeue are AddFront(adding item to front of the queue), AddRear(adding item to the rear of the queue), RemoveFront(removing item from the front of the queue), and RemoveRear(removing item from the rear of the queue). You are given only stacks to implement this data structure. You can implement only push and pop operations. What's the time complexity of performing AddFront() and AddRear() assuming m is the size of the stack and n is the number of elements?
+§A O(m) and O(n)
+§B O(1) and O(n)
+§C O(n) and O(1)
+§D O(n) and O(m)
+## 43
+Two balanced binary trees are given with m and n elements, respectively. They can be merged into a balanced binary search tree in ____ time.
+§A O(m*n)
+§B O(m + n)
+§C O(m*log n)
+§D O(m*log(m + n))
+## 44
+A data structure is required for storing a set of integers such that each of the following operations can be done in O(log n) time, where n is the number of elements in the set.
+• Deletion of the smallest element
+• Insertion of an element if it is not already present in the set
+Which of the following data structures can be used for this purpose?
+§A A heap can be used but not a balanced binary search tree.
+§B A balanced binary search tree can be used but not a heap.
+§C Both balanced binary search tree and heap can be used.
+§D Neither balanced binary search tree nor heap can be used.
+## 45
+Consider the following graph.
+![](/q/nov2021_q45.png)
+Among the following sequences
+I. a b e g h f
+II. a b f e h g
+III. a b f h g e
+IV. a f g h b e
+Which are depth first traversals of the above graph?
+§A I, II, and IV only
+§B I and IV only
+§C II, III, and IV only
+§D I, III, and IV only
+## 46
+Given below are two statements
+Statement I: In an undirected graph, number of odd degree vertices is even.
+Statement II: In an undirected graph, sum of degrees of all vertices is even.
+In light of the above statements, choose the correct answer from the options given below.
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 47
+Which of the given options provides the increasing order of asymptotic complexity of functions f1, f2, f3 and f4?
+A. f1(n) = 2ⁿ
+B. f2(n) = n^(3/2)
+C. f3(n) = n log n
+D. f4(n) = n^(log n)
+Choose the correct answer from the options given below
+§A C, B, D, A
+§B C, B, A, D
+§C B, C, A, D
+§D B, C, D, A
+## 48
+The order of a leaf node in a B+ tree is the maximum number of (value, data record pointer) pairs it can hold. Given that the block size is 1K bytes, data record pointer is 7 bytes long, the value field is 9 bytes long and a block pointer is 6 bytes long, what is the order of the leaf node?
+§A 63
+§B 64
+§C 67
+§D 68
+## 49
+A hash function h defined as
+h(key) = key mod 7, with linear probing, is used to insert the keys
+44, 45, 79, 55, 91, 18, 63 into a table indexed from 0 to 6. What will be the location of key 18?
+§A 3
+§B 4
+§C 5
+§D 6
+## 50
+In the following table, the left column contains the names of standard graph algorithms and the right column contains the time complexities of the algorithms. Here, n and m are number of vertices and edges, respectively. Match each algorithm with its time complexity.
+List I (Standard graph algorithms) | List II (Time complexities)
+A. Bellman-Ford algorithm | I. O(m*log n)
+B. Kruskal's algorithm | II. O(n³)
+C. Floyd-Warshall algorithm | III. O(n*m)
+D. Topological sorting | IV. O(n+m)
+Choose the correct answer from the options given below:
+§A A - III, B - I, C - II, D - IV
+§B A - II, B - IV, C - III, D - I
+§C A - III, B - IV, C - I, D - II
+§D A - II, B - I, C - IV, D - III
+## 51
+Which agent deals with the happy and unhappy state?
+§A Utility-based agent
+§B Model-based agent
+§C Goal-based Agent
+§D Learning Agent
+## 52
+Given below are two statements
+Statement I: Breadth-First Search is optimal when all the step costs are equal whereas uniform-cost search is optimal with any step-cost.
+Statement II: When all the step costs are same uniform-cost search expends more nodes at depth d than the Breadth-First Search.
+In light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 53
+Consider the given tree below. Calculate the value at the root of the tree using alpha-beta pruning algorithm.
+[Figure: game tree of depth 3. Root A is a Max node with two Min children B and C. B has Max children D and E; C has Max children F and G. Leaves from left to right: D has 3, 5; E has 6, 9; F has 1, 2; G has 0, −1.]
+§A 3
+§B 5
+§C 6
+§D 9
+## 54
+Which among the following statement(s) is(are) FALSE?
+A. Greedy best-first search is not optimal but is often efficient.
+B. A* is complete and optimal provided h(n) is admissible or consistent.
+C. Recursive best-first search is efficient in terms of time complexity but poor in terms of space complexity.
+D. h(n) = 0 is an admissible heuristic for the 8-puzzle.
+
+§A A only
+§B A and D only
+§C C only
+§D C and D only
+## 55
+Consider the sentence below.
+There is a country that borders both India and Pakistan.
+Which of the following logical expressions express the above sentence correctly when the predicate Country(x) represents that x is a country and Borders(x, y) represents that the countries x and y share the border?
+§A ∃c Country(c) ∧ Border (c, India) ∧ Border (c, Pakistan)
+§B ∃c Country(c) ⇒ [Border (c, India) ∧ Border (c, Pakistan)]
+§C [∃c Country(c)] ⇒ [Border (c, India) ∧ Border (c, Pakistan)]
+§D ∃c Border (Country(c), India ∧ Pakistan)
+## 56
+Passage (Q56-Q60): Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2 × 2 × 2 table as shown in the figure below.
+ | toothache | toothache | ¬toothache | ¬toothache
+ | catch | ¬catch | catch | ¬catch
+cavity | 0.108 | 0.012 | 0.072 | 0.008
+¬cavity | 0.016 | 0.064 | 0.144 | 0.576
+The marginal probability of cavity P(cavity) is __________.
+§A 0.200
+§B 0.216
+§C 0.120
+§D 0.080
+## 57
+Passage (Q56-Q60): Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2 × 2 × 2 table as shown in the figure below.
+ | toothache | toothache | ¬toothache | ¬toothache
+ | catch | ¬catch | catch | ¬catch
+cavity | 0.108 | 0.012 | 0.072 | 0.008
+¬cavity | 0.016 | 0.064 | 0.144 | 0.576
+The probability of a cavity, given evidence of a toothache, P(cavity | toothache) is __________.
+§A 0.400
+§B 0.600
+§C 0.280
+§D 0.216
+## 58
+Passage (Q56-Q60): Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2 × 2 × 2 table as shown in the figure below.
+ | toothache | toothache | ¬toothache | ¬toothache
+ | catch | ¬catch | catch | ¬catch
+cavity | 0.108 | 0.012 | 0.072 | 0.008
+¬cavity | 0.016 | 0.064 | 0.144 | 0.576
+The probability of a toothache, given evidence of a cavity, P(toothache | cavity) is __________.
+§A 0.400
+§B 0.600
+§C 0.280
+§D 0.216
+## 59
+Passage (Q56-Q60): Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2 × 2 × 2 table as shown in the figure below.
+ | toothache | toothache | ¬toothache | ¬toothache
+ | catch | ¬catch | catch | ¬catch
+cavity | 0.108 | 0.012 | 0.072 | 0.008
+¬cavity | 0.016 | 0.064 | 0.144 | 0.576
+P(cavity ∨ toothache) is __________.
+§A 0.200
+§B 0.120
+§C 0.280
+§D 0.600
+## 60
+Passage (Q56-Q60): Consider a domain consisting of three Boolean variables Toothache, Cavity, and Catch. The full joint distribution is a 2 × 2 × 2 table as shown in the figure below.
+ | toothache | toothache | ¬toothache | ¬toothache
+ | catch | ¬catch | catch | ¬catch
+cavity | 0.108 | 0.012 | 0.072 | 0.008
+¬cavity | 0.016 | 0.064 | 0.144 | 0.576
+The probability for Cavity, given that either Toothache or Catch is true, P(Cavity | toothache ∨ catch) is _______.
+§A 0.6000
+§B 0.5384
+§C 0.8000
+§D 0.4615
+## 61
+Which of the DBMS component ensures that concurrent execution of multiple operations on the database results into a consistent database state?
+§A Logs
+§B Buffer manager
+§C File manager
+§D Transaction processing system
+## 62
+Consider following two statements:
+Statement I: Relational database schema represents the logical design of the database.
+Statement II: Current snapshot of a relation only provides the degree of the relation.
+In the context of the above statements, choose the correct option from the options given below:
+§A Statement I is TRUE but Statement II is FALSE
+§B Statement I is FALSE but Statement II is TRUE
+§C Both Statement I and Statement II are FALSE
+§D Both Statement I and Statement II are TRUE
+## 63
+Given a fixed-length record file that is ordered on the key field. The file needs B disk blocks to store R number of records. Find the average access time needed to access any record of the given file using binary search.
+§A B/2
+§B B + R
+§C B
+§D log₂ B
+## 64
+Given the following STUDENT-COURSE scheme:
+STUDENT (Rollno, Name, courseno) COURSE (courseno, coursename, capacity), where Rollno is the primary key of relation STUDENT and courseno is the primary key of relation COURSE. Attribute coursename of COURSE takes unique values only. Which of the following query(ies) will find total number of students enrolled in each course, along with its coursename.
+A. SELECT coursename, count(*) 'total' from STUDENT natural join COURSE group by coursename;
+B. SELECT C.coursename, count(*) 'total' from STUDENT S, COURSE C where S.courseno=C.courseno group by coursename;
+C. SELECT coursename, count(*) 'total' from COURSE C where courseno in (SELECT courseno from STUDENT);
+
+§A A and B only
+§B C only
+§C A only
+§D B only
+## 65
+Given the following STUDENT-COURSE scheme:
+STUDENT (Rollno, Name, Courseno) COURSE (Courseno, Coursename, Capacity), where Rollno is the primary key of relation STUDENT and Courseno is the primary key of relation COURSE. Attribute Coursename of COURSE takes unique values only. The number of records in COURSE and STUDENT tables are 3 and 5 respectively. Following relational algebra query is executed:
+R=STUDENT X COURSE
+Match List I with List II in context to the above problem statement.
+List I | List II
+A. Degree of table R | I. 15
+B. Cardinality of table R | II. NIL
+C. Foreign key of relation STUDENT | III. 6
+D. Foreign key of relation COURSE | IV. Courseno
+Choose the correct answer from the options given below:
+§A A -III , B -I , C -IV , D - II
+§B A -I , B -III , C -IV , D - II
+§C A -I , B -III , C -II , D - IV
+§D A -I , B -III, C -II , D - IV
+## 66
+Suppose a B tree is used for indexing a database file. Consider the following information:
+size of the search key field = 10 bytes, block size = 1024 bytes, size of the record pointer = 9 bytes, size of the block pointer = 8 bytes.
+Let K be the order of internal node and L be the order of leaf node of B tree, then (K, L) = _____.
+§A (57, 53)
+§B (50, 52)
+§C (60, 64)
+§D (34, 31)
+## 67
+Given a relation scheme R(x, y, z, w) with functional dependencies set
+F = {x → y, z → w}. All attributes take single and atomic values only.
+A. Relation R is in First Normal FORM
+B. Relation R is in Second Normal FORM
+C. Primary key of R is xz
+Choose the correct answer from the options given below:
+§A C only
+§B B and C only
+§C A and C only
+§D B only
+## 68
+A company is consuming parts in the manufacturing of other products. Each of the part is either manufactured within the company or purchased from the external suppliers or both. For each part, partnumber, partname is maintained. Attribute batchnumber is maintained if the consumed part is manufactured in the company. If part is purchased from external supplier, then supplier name is maintained. Which of the following constraints need to be considered when modelling class/subclass concepts in ERD for the given problem.
+§A Total specialization and overlapping constraints
+§B Disjoint constraint only
+§C Partial participation
+§D Partial participation and disjoint constraints
+## 69
+A transaction may be in one of the following states during its execution life cycle in concurrent execution environment.
+A. FAILED
+B. TERMINATED
+C. PARTIALLY COMMITTED
+D. COMMITTED
+E. ACTIVE
+Given a transaction in active state during its execution, find its next transitioned state from the options given below:
+§A A only
+§B Either A or C only
+§C C only
+§D D only
+## 70
+Which of the following is used to create a database schema?
+§A DML
+§B DDL
+§C HTML
+§D XML
+## 71
+Given memory access time as p nanoseconds and additional q nanoseconds for handling the page fault. What is the effective memory access time if a page fault occurs once for every 100 instructions?
+§A p + q/100
+§B (p+q)/100
+§C p + q
+§D p/100 + q
+## 72
+In a file allocation system, the following allocation schemes are used:
+A. Contiguous
+B. Indexed
+C. Linked allocation
+Which of the allocation scheme(s) given above will not suffer from external fragmentation?
+Choose the correct answer from the options given below:
+§A A only
+§B B and C only
+§C A and B only
+§D C only
+## 73
+Given below are three statements related to interrupt handling mechanism
+A. Interrupt handler routine is not stored at a fixed address in the memory.
+B. CPU hardware has a dedicated wire called the interrupt request line used for handling interrupts
+C. Interrupt vector contains the memory addresses for speciaized interrupt handlers.
+In the context of above statements, choose the correct answer from the options given below:
+§A A is TRUE only
+§B Both B and C are TRUE only
+§C Both A and B are TRUE only
+§D Both A, C are TRUE only
+## 74
+Match List I with List II
+List-I (System Calls) | List-II (Description)
+A. fork() | I. sends a signal from one process to particular process
+B. exec() | II. Indicates termination of current process
+C. kill() | III. Loads the specified program in memory.
+D. exit() | IV. Creates a child process.
+Choose the correct answer from the options given below:
+§A A - II, B - III, C - IV, D - I
+§B A - IV, B - III, C - I, D - II
+§C A - IV, B - I, C - II, D - III
+§D A - IV, B - III, C - II, D - I
+## 75
+Consider the following 3 processes with the length of the CPU burst time given in milliseconds:
+Process | Arrival Time | Burst Time
+P1 | 0 | 8
+P2 | 1 | 4
+P3 | 2 | 9
+What is the average waiting time for these processes if they are scheduled using preemptive shortest job first scheduling algorithm?
+§A 5.5
+§B 2.66
+§C 4.66
+§D 6
+## 76
+Passage (Q76-Q80): Consider a machine with 16 GB main memory and 32-bit virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.
+The number of bits reserved for the frame offset is:
+§A 12
+§B 14
+§C 32
+§D 8
+## 77
+Passage (Q76-Q80): Consider a machine with 16 GB main memory and 32-bit virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.
+Find number of pages required for the given virtual address space
+§A 2¹⁰
+§B 2²⁰
+§C 2³⁰
+§D 2¹²
+## 78
+Passage (Q76-Q80): Consider a machine with 16 GB main memory and 32-bit virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.
+What is the minimum number of bits needed for the physical address?
+§A 28
+§B 34
+§C 24
+§D 12
+## 79
+Passage (Q76-Q80): Consider a machine with 16 GB main memory and 32-bit virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.
+What is the size of page table for handling the given virtual address space, given that each page table entry is of size 2 bytes?
+§A 2MB
+§B 2KB
+§C 32MB
+§D 12KB
+## 80
+Passage (Q76-Q80): Consider a machine with 16 GB main memory and 32-bit virtual address space, with page size as 4KB. Frame size and page size is same for the given machine.
+If a process of size 34KB is to be executed on this machine, then what will be the size of internal fragmentation for this process?
+§A 4KB
+§B Zero
+§C 1KB
+§D 2KB
+## 81
+Match List I with List II
+List-I | List-II
+A. Odd Function | I. NAND Gate
+B. Universal Gate | II. XOR Gate
+C. 2421 Code | III. Amplification
+D. Buffer | IV. Self- complementing
+Choose the correct answer from the options given below:
+§A A - I, B - II, C - III, D - IV
+§B A - II, B - I, C - IV, D - III
+§C A - I, B - III, C - II, D - IV
+§D A - IV, B - II, C - III, D - I
+## 82
+The Octal equivalent of hexadecimal (D.C)₁₆ is:
+§A (15.6)₈
+§B (61.6)₈
+§C (15.3)₈
+§D (61.3)₈
+## 83
+A digital computer has a common bus system for 8 registers 16 bits each. How many multiplexers are required to implement common bus? What size of multiplexers is required?
+§A 16, 8 × 1
+§B 8, 16 × 1
+§C 8, 8 × 1
+§D 16, 16 × 1
+## 84
+Which of the following is not an example of pseudo-instruction?
+§A ORG
+§B DEC
+§C END
+§D HLT
+## 85
+The reverse Polish notation of the following infix expression
+[A*{B+C*(D+E)}]/{F*(G+H)}
+is__________.
+§A ABCDE+*+*FGH+*/
+§B ABCDE*++*FGH+*/
+§C ABCDE+*+*FGH*+/
+§D ABCDE+**+FGH+*/
+## 86
+Arrange the following in the increasing order of complexity.
+A. I/O Module
+B. I/O processor
+C. I/O Channel
+D. DMA
+Choose the correct answer from the options given below:
+§A D, C, B, A
+§B C, D, A, B
+§C A, B, C, D
+§D A, D, C, B
+## 87
+The characteristics of the combinational circuits are:
+A. Output at any time is function of inputs at that time
+B. Contains memory elements
+C. Do not have feedback paths
+D. Clock is used to trigger the circuits to obtain outputs
+Choose the correct answer from the options given below:
+§A A and B only
+§B B and C only
+§C A and C only
+§D B and D only
+## 88
+The cache coherence problem can be solved
+A. by having multiport memory
+B. allow only nonshared data to be stored in cache
+C. using a snoopy cache controller
+D. using memory interleaving
+Choose the correct answer from the options given below:
+§A A and C only
+§B B and C only
+§C D and C only
+§D B and D only
+## 89
+Given below are two statements
+Statement I: CISC computers have a large of number of addressing modes.
+Statement II: In RISC machines memory access is limited to load and store instructions.
+In light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 90
+Which of the following statements is true?
+§A Control memory is part of the hardwired control unit.
+§B Program control instructions are used to alter the sequential flow of the program.
+§C The register indirect addressing mode for accessing memory operand is similar to displacement addressing mode.
+§D CPU utilization is not affected by the introduction of Interrupts.
+## 91
+Match List I with List II
+List I | List II
+A. Data Link Layer | I. True end-to-end layer
+B. Network Layer | II. Token Management
+C. Transport Layer | III. Produce billing information
+D. Session Layer | IV. Piggybacking
+Choose the correct answer from the options given below:
+§A A - IV, B - III, C - I, D - II
+§B A - IV, B - II, C - I, D - III
+§C A - II, B - III, C - I, D - IV
+§D A - IV, B - I, C - III, D - II
+## 92
+Given below are two statements
+Statement I: Telnet, Ftp, Http are application layer protocol
+Statement II: The Iridium project was planned to launch 66 low orbit satellites.
+In light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 93
+Which of the following statement is False?
+§A Packet switching leads to better utilization of bandwidth resources than circuit switching.
+§B Packet switching results in less variation in the delay than circuit switching.
+§C Packet switching sender and receiver can use any bit rate, format or framing method unlike circuit switching.
+§D Packet switching can lead to reordering unlike circuit switching.
+## 94
+In Ethernet when Manchester coding is used, the bit rate is__________
+§A Half the baud rate
+§B twice the baud rate
+§C Thrice the baud rate
+§D Same as the baud rate
+## 95
+The address of class B host is to be split into subnets with 6-bit subnet number. What is the maximum number of the subnets and the maximum number of hosts in each subnet?
+§A 62 subnets and 262142 hosts
+§B 64 subnets and 1024 hosts
+§C 64 subnets and hosts 262142
+§D 62 subnets and 1022 hosts
+## 96
+In electronic mail, which of the following protocols allows the transfer of multimedia?
+§A IMAP
+§B SMTP
+§C POP3
+§D MIME
+## 97
+A message is encrypted using public key cryptography to send a message from sender to receiver. Which one of the following statements is True?
+§A Sender encrypts using receiver's public key
+§B Sender encrypts using his own public key
+§C Receiver decrypts using sender's public key
+§D Receiver decrypts using his own public key
+## 98
+Which of the following statements are true?
+A. Frequency division multiplexing technique can be handled by digital circuits.
+B. Time division multiplexing technique can be handled by analog circuits
+C. Wavelength division multiplexing technique is used with optical fiber for combining two signals.
+D. Frequency division multiplexing technique can be applied when the bandwidth of a link is greater than the bandwidth of the signals to be transmitted.
+Choose the correct answer from the options given below:
+§A B and D only
+§B C and D only
+§C A and D only
+§D B and D only
+## 99
+Which of the following statements are true?
+A. X.25 is connection-oriented network
+B. X.25 doesn't support switched virtual circuits.
+C. Frame relay service provides acknowledgements.
+D. Frame relay service provides detection of transmission errors.
+Choose the correct answer from the options given below:
+§A A and D only
+§B B and D only
+§C C and D only
+§D B and C only
+## 100
+Let G(x) be the generator polynomial used for CRC checking. The condition that should be satisfied by the G(x) to catch all errors consisting of an odd number of inverted bits is:
+§A (x + 1) is factor of G(x)
+§B (x-1) is factor of G(x)
+§C (x² + 1) is factor of G(x)
+§D (1-x²) is factor of G(x)

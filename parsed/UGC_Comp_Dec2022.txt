@@ -1,0 +1,960 @@
+## 1
+Which of the following is NOT logically equivalent to P → Q?
+§A ~P ∨ Q
+§B ~Q → ~P
+§C ~(P ∧ ~Q)
+§D ~Q → P
+## 2
+Seven people enter a lift. The lift stops only at three floors (which are unspecified). At each of the three floors, no one enters the lift, but at least one person leaves the lift. After the three floor stops, the lift is empty. In how many ways this can happen?
+§A 1844
+§B 2187
+§C 1806
+§D 343
+## 3
+The coefficients of x²y³z² in the expansion of (x + y + z)⁷ is
+§A C(7,3) * C(5,2)
+§B C(7,2) * C(5,3)
+§C C(7,3) * C(7,2)
+§D C(5,3) * C(5,2)
+## 4
+What is the minimum number of students in a discrete mathematics class to be sure that at least six will receive the same grade, if there are seven possible grades: S, A, B, C, D, P and F?
+§A 7
+§B 13
+§C 36
+§D 14
+## 5
+In 16-bit 2's Complementation representation, the decimal number −28 is
+§A 1111 1111 0001 1100
+§B 1111 1111 1111 0100
+§C 1111 1111 1110 0100
+§D 1111 1111 1110 0011
+## 6
+Simplify the following using K-Map.
+F(A, B, C, D) = Σ(3, 4, 5, 6, 7, 11, 15)
+§A AB + C'D
+§B A'B + CD
+§C AC + BD
+§D A'B + B'C
+## 7
+Consider a 3-bit counter, designed using T flip flops as shown below:
+[Figure: three T flip-flops (Tp with outputs P and P', Tq with outputs Q and Q', Tr with outputs R and R') driven by a common clock Clk. Inputs: the T input of the first flip-flop is fed from R (the output of the third flip-flop); the T input of the second flip-flop is fed from P'; the T input of the third flip-flop is fed from Q'.]
+Assume the initial state of the counter given by PQR as 000 , what are the next three states?
+§A 011, 101, 000
+§B 001, 010, 111
+§C 011, 101, 111
+§D 001, 010, 000
+## 8
+Let R1 and R2 be two 4-bit registers that store numbers in 2's complement form. For the operation R1+R2, which one of the following values of R1 and R2 gives an arithmetic overflow?
+§A R1 = 1011 and R2 = 1110
+§B R1 = 1100 and R2 = 1010
+§C R1 = 0011 and R2 = 0100
+§D R1 = 1001 and R2 = 1111
+## 9
+In the context of Binding which one of the following is incorrect?
+§A Static binding is done at Compile Time
+§B Absolute addresses are known at Load Time
+§C Internal functions are known at link time
+§D Target of a function is known at runtime
+## 10
+Given
+int arr[3][4][2]
+= {{{2, 4}, {7, 8}, {3, 4}, {5, 6}},
+{{7, 6}, {3, 4}, {5, 3}, {2, 3}},
+{{8, 9}, {7, 2}, {3, 4}, {5, 1}}};
+Which one of the following can be used to refer to element 1 in the above 3-d array?
+§A arr[3][4][2]
+§B *(*(*(arr + 2) + 3) + 1)
+§C *(arr + 2) + *(arr + 3) + *(arr + 1)
+§D arr[2][3][2]
+## 11
+Allowing different derived classes to be used interchangeably through the interface provided by a common base class is called ______
+§A Derived polymorphism
+§B Compile time polymorphism
+§C Static polymorphism
+§D Run time polymorphism
+## 12
+In _____ curve the last and the first vertices of the polygon lie on the curve and all other vertices define the derivatives, order and shape of the curve.
+§A B-Spline Curve
+§B Boxline curve
+§C Bezier curve
+§D Gaussian curve
+## 13
+A _____ operation combines the rows of the two relations and outputs a new relation that has both input relations' rows in it.
+§A difference
+§B union
+§C cartesian product
+§D project
+## 14
+Consider the relation
+R(P, Q, R, S, T, U, V, W, X, Y) and FDs:
+{P, Q, S} → T
+R → Y
+{P, Q} → V
+{R, X} → X
+Q → U
+V → {W, X}
+Which of the following is a candidate key?
+§A {P, Q, R, S}
+§B {R, Q, X}
+§C {V, X}
+§D None of the above
+## 15
+Which RAID level is appropriate for storing the log file of a ticket booking system where a huge database update is required?
+§A Level 0
+§B Level 1
+§C Level 2
+§D Level 3
+## 16
+If we convert a decision tree to a set of logical rules, then:
+§A The internal nodes in a branch are connected by AND and branches by AND
+§B The internal nodes in a branch are connected by OR and branches by OR
+§C The internal nodes in a branch are connected by AND and branches by OR
+§D The internal nodes in a branch are connected by OR and branches by AND
+## 17
+Model of protection can be viewed as
+§A Owner matrix
+§B Domain matrix
+§C Access Matrix
+§D Global matrix
+## 18
+Process in memory also contain the heap section. What is the use of heap section?
+§A Contains temporary data
+§B Dynamically allocate the memory during process run time
+§C Contains Process priority and pointers to scheduling queues
+§D Contains amount of CPU and real time use
+## 19
+How many page faults occur for optimal algorithm for the following reference string, with four frames?
+1, 2, 3, 4, 5, 3, 4, 1, 6, 7, 8, 7, 8
+§A 8
+§B 7
+§C 6
+§D 5
+## 20
+Degree of concurrency in thread can be arranged in the manner.
+§A one-to-one > many-to-one > many-to-many
+§B one-to-one > many-to-many > many-to-one
+§C many-to-many > many-to-one > one-to-one
+§D None of the above
+## 21
+Which of the following is not one of the principles of good coding?
+§A Create unit tests before you begin coding.
+§B Create visual layout that aids understanding.
+§C Refractor the code after you completes the first coding pass.
+§D Write self-documenting code not program documentation.
+## 22
+If P is the risk probability, L is the loss, then Risk exposure (RE) is computed as ______
+§A RE=P / L
+§B RE=P+L
+§C RE=P * L
+§D RE = 2 + (P*L)
+## 23
+Which of the following is a technique used for component wrapping?
+§A Black-box wrapping
+§B Clear-box wrapping
+§C Gray-box wrapping
+§D White-box wrapping
+## 24
+The cyclomatic complexity metric provides the designer with information regarding the number of -____
+§A Cycles in the program
+§B Errors in the program
+§C Independent logic paths in the program
+§D Statements in the program
+## 25
+In a ______ the left and right subtrees for any given node, differ in height by more than one.
+§A Balanced Binary Tree
+§B Weight balanced binary tree
+§C Height balanced tree
+§D Unbalanced Binary Tree
+## 26
+FFTs are ______ techniques used to encode digital video and audio information and helps analyse the signal in ____ domain.
+§A Encryption, time
+§B Encryption, frequency
+§C Compression, time
+§D Compression, frequency
+## 27
+Given six weights 4,15,25,5,8,16 construct a 2-T tree. What is the minimum weighted path length?
+§A 231
+§B 172
+§C 73
+§D 77
+## 28
+Suppose we store n keys in a hash table of size m = n² using a hash function h randomly chosen from a universal class of hash functions. Then the probability is ______ that there are any collisions.
+§A greater than 1/5
+§B greater than 1/2
+§C less than 1/2
+§D less than 1/5
+## 29
+In Pumping Lemma for context-free languages, to say a language is satisfying pumping lemma, what is the minimum length of ' vx ' together, if you consider the string as 'uvwxy'?
+§A 0
+§B 1
+§C 2
+§D n
+## 30
+Which of the following is ε-free grammar?
+§A Type-0
+§B Type-1
+§C Type-2
+§D Type-3
+## 31
+While processing a string by an LR parser, the reading of the given string by the parser is-
+§A From right to left
+§B From left to right
+§C Can be either from left to right or right to left
+§D From the centre of the given string
+## 32
+What is the minimum and maximum number of initial, dead, unreachable and final states in a valid ' n ' state finite automaton, where the language accepted is not ' φ '?
+§A Minimum: 1, 1, 1, 1; Maximum: 1, (n − 1), (n − 1), n
+§B Minimum: 1, 0, 0, 0; Maximum: 1, (n − 1), (n − 1), n
+§C Minimum: 1, 0, 0, n; Maximum: 1, n, (n − 1), (n − 1)
+§D Minimum: 1, 0, 0, 1; Maximum: 1, (n − 1), (n − 1), n
+## 33
+Which protocol is used to acquire the MAC Address of a host whose IP address is known?
+§A Dynamic Host control protocol
+§B Address Resolution Protocol
+§C Reverse Address Resolution Protocol
+§D User Datagram Protocol
+## 34
+In CRC coding if the data word is 111111 , divisor is 1010 and the remainder is 110 . Which of the following code is true?
+§A 011111101
+§B 001010110
+§C 111111110
+§D 110111111
+## 35
+In Go-back-N protocol, the values of S_f (Send window, the first outstanding packet) = 3, S_n (Send window, the next packet to be send) =7, after receiving the packet with AckNo.6, the value of S_n is _____
+§A 6
+§B 7
+§C 5
+§D 4
+## 36
+What is the minimum Hamming Distance in a block code if we want to be able to detect up to (S) errors?
+§A S
+§B S + 1
+§C 1
+§D 0
+## 37
+Which search technique is complete and optimal, when h(n) is consistent?
+§A Best First Search
+§B Depth First Search
+§C A* Search
+§D Breadth First Search
+## 38
+What is the process of capturing inference process as a single inference rule?
+§A Ponens
+§B Clauses
+§C Generalized modus ponens
+§D Variables
+## 39
+Fuzzy logic is a form of ____
+§A Two valued logic
+§B Crisp set logic
+§C Binary set logic
+§D Many valued logic
+## 40
+The 4 Ws problem canvas helps in identifying the key elements related to the problem. 4 Ws problem canvas is a part of ____
+§A Problem scoping
+§B Data acquisition
+§C Data modeling
+§D Problem Evaluation
+## 41
+Consider the following statements:
+A. A group can have zero elements.
+B. A group cannot have any element which is idempotent except the identity element.
+C. An isomorphism from a group <G,*> to <G,*> is called an automorphism.
+D. If every element in a group is its own inverse, then the group must be abelian.
+Choose the correct answer about the four statements given above.
+§A B,C and D are correct
+§B Only A and C are correct
+§C Only B and C are correct
+§D All A, B, C and D are correct.
+## 42
+Consider the following statements:
+A. The number of labelled binary trees possible with 'n' nodes is (2n) ! /(n+1)!
+B. The number of binary search trees possible with 'n' nodes is (2n)! /((n+1) ! n!))
+C. The number of unlabeled binary trees possible with ' n' nodes is C(2n,n) /(n+1)!
+D. The number of simple, undirected and labelled graphs possible with ' n' vertices is (2^(n(n-1)/2))
+Choose the correct answer from the options given below:
+§A (A, B) and (C) are only correct
+§B (A, B) and (D) are only correct
+§C (B, C) and (D) are only correct
+§D (A, C) and (D) are only correct
+## 43
+The relation
+R = {(1, 3), (1, 1), (3, 1), (1, 2), (3, 3), (4, 4)}
+defined in {1, 2, 3, 4} is ____
+§A Reflexive, Symmetric but not Transitive
+§B Symmetric, anti-symmetric and transitive
+§C Asymmetric, anti-symmetric and not transitive
+§D Not reflexive, not symmetric and not transitive
+## 44
+Consider the Boolean expression given by
+F = (X + Y + Z)(X' + Y)(Y' + Z).
+Which of the following Boolean expressions is/are equivalent to F' (Complement of F)?
+A. (X' + Y' + Z')(X + Y')(Y + Z')
+B. (XY' + Z')
+C. (X + Z')(Y' + Z')
+D. (XY' + YZ' + X'Y'Z')
+Choose the correct answer from the options given below:
+§A A, B and C Only
+§B B, C and D Only
+§C A, C and D Only
+§D A, B and D Only
+## 45
+Which of the following statement is/are True?
+A. The processor has direct access to both primary and secondary memory
+B. Primary memory stores the active instructions and data for the program being executed on the process
+C. Secondary memory is used as a backup memory
+D. Memory system is implemented on a single level memory
+Choose the correct answer from the options given below:
+§A A and B only
+§B B and C only
+§C A, B and C only
+§D A and D Only
+## 46
+Inheritance provides the benefits of
+A. shared interfaces
+B. run-time polymorphism
+C. less redundant information
+D. dynamic binding
+Choose the Correct answer from the options given below:
+§A A, B, C only
+§B A, B, D only
+§C B, C, D only
+§D A, C, D only
+## 47
+Which of the following is correct using the constructor?
+A. string s1;
+B. string s2 (s1);
+C. string s3{7};
+D. string s4{'a'};
+E. string s5{7, 'a'};
+Choose the most appropriate answer from the options given below:
+§A A, B, D, E only
+§B A, B, C only
+§C A, B, D only
+§D A and B only
+## 48
+Suppose that a corporate website appearance varies according to the department that owns various documents. All the documents need to follow the corporate look and feel. The HR department does not need a separate style sheet. It needs only the sheet containing the difference from the corporate sheet.
+Which of the following statements justify the above scenario?
+A. The styles sheets cannot stack on each other
+B. The style sheets can stack on each other
+C. The style sheets can override each other
+D. The style sheets cannot override each other
+Choose the most appropriate answer from the options given below:
+§A A, C Only
+§B B, C Only
+§C B, D only
+§D A, D only
+## 49
+Let T1 be a transaction that transfer Rs. 50 from account A to account B. This transaction can be defined as follows:
+Step | Operation
+1 | Read(A)
+2 | A:=A−50
+3 | Write(A)
+4 | Read(B)
+5 | B:=B+50
+6 | Write(B)
+What will be the status of a database just after 3rd step but before 5th step of transaction execution?
+§A Always consistent
+§B May be temporarily inconsistent
+§C Must be abort
+§D Always rollback
+## 50
+Consider the relation
+Student(stuid, dept, clsroll)
+The following functional dependencies are given:
+FD1: stuid→dept
+FD2: dept→stuid
+FD3: stuid→clsroll
+FD4: clsroll→stuid
+FD5: dept→clsroll
+Which functional dependencies should be removed to obtain the canonical cover of the set?
+A. FD2 and FD3
+B. FD1 and FD5
+C. FD5
+D. FD1
+Choose the correct answer from the options given below:
+§A A, B only
+§B A, C only
+§C B, C only
+§D A, B, C only
+## 51
+Which of the following statements are true?
+A. If the time quantum is extremely small, round robin can result in a large number of context switches.
+B. The average turnaround time of a set of processes does not necessarily improve as the time-quantum size increases.
+C. The average turnaround time can be improved if most processes finish their next CPU burst in a single time quantum.
+Choose the correct answer from the options given below:
+§A A only
+§B A, B only
+§C B, C only
+§D A, B, C
+## 52
+Consider the following set of processes that need to be scheduled on a single CPU. All the times are given in milliseconds.
+Process Name | Arrival Time | Execution Time
+A | 0 | 6
+B | 3 | 2
+C | 5 | 4
+D | 7 | 6
+E | 10 | 3
+Using the shortest remaining time first scheduling algorithm, the average process turnaround (in milliseconds) is ____
+§A 7.2
+§B 8.2
+§C 6
+§D 9
+## 53
+Select the correct order of basic page replacement.
+A. Page replacement algorithm is used in case there is no free frame
+B. The process is continued by restarting the instruction caused by TRAP
+C. Location of desired frame is found from disk
+D. Desired page is brought into newly freed frame and page & frame tables are updated
+§A A, B, D, C
+§B C, D, A, B
+§C C, A, D, B
+§D A, D, B, C
+## 54
+Given below are two statements:
+Statement I: Software testing must be recognized as a significant effort, and its planning must begin at the earliest possible time.
+Statement II: The cost of software testing is an important contribution in determining overall software development costs.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true.
+§B Both Statement I and Statement II are false.
+§C Statement I is true but Statement II is false.
+§D Statement I is false but Statement II is true.
+## 55
+Which of the following need not be assessed during unit testing?
+A. Algorithmic performance.
+B. Number of lines of code.
+C. Error handling.
+D. Execution paths.
+Choose the correct answer from the options given below:
+§A A, B, C only
+§B A, B, D only
+§C A, C, D only
+§D B, C, D only
+## 56
+Which of the following rotations are correctly explained in the context of an AVL tree.
+A. LL rotation: The new node is inserted in the left sub-tree of the left sub-tree of the critical node.
+B. RR rotation: The new node is inserted in the right sub-tree of the right sub-tree of the critical node.
+C. LR rotation: The new node is inserted in the right sub-tree of the left sub-tree of the critical node.
+D. RL rotation: The new node is inserted in the left sub-tree of the right sub-tree of the critical node
+Choose the correct answer from the options given below:
+§A A, D only
+§B A, C Only
+§C A, B, C and D
+§D B, C Only
+## 57
+In the context of a Hamiltonian problem, which of the following are correct?
+A. Hamiltonian cycle problem is NP-Complete
+B. If G is an undirected Bipartite graph with an odd number of vertices, then G is Hamiltonian.
+C. Hamiltonian path problem cannot be solved in polynomial time on directed acyclic graph
+D. If G is a connected undirected graph with at least three vertices and G³ is the graph obtained by connecting all pairs of vertices that are connected by a path in G of length at most 3.
+E. If any NP complete problem is polynomial time solvable (P=NP).
+Choose the most appropriate answer from the options given below:
+§A A, B, C only
+§B B, D, E only
+§C A, D, E only
+§D A, C, E only
+## 58
+For matrix multiplication, if we use divide and conquer algorithm, then _____
+A. the running time is T(n) = Θ(n³)
+B. the running time is T(n) = Θ(n² log n)
+C. The recurrence can be defined as T(n) = 8T(n/2) + Θ(n²)
+D. the recurrence relation is T(n) = 8T(2n) + Θ(n² log n)
+E. Masters theorem, one of the cases is applicable
+Choose the most appropriate answer from the options given below:
+§A A, C, E only
+§B A, D, E only
+§C B, D, E only
+§D B, C, D only
+## 59
+Which of the following Finite Automata, recognizes the language L = {a, b}* ?
+A. M = ({q0}, {a, b}, δ, q0, {q0}) where, δ is
+ | a | b
+q0 | {q0} | {q0}
+B. M = ({q0, q1}, {a, b}, δ, q0, {q0, q1}) where, δ is
+ | a | b
+q0 | {q0,q1} | {q0,q1}
+q1 | {q1} | {q1}
+C. M = ({q0, q1}, {a, b}, δ, q0, {q0, q1}) where, δ is
+ | a | b
+q0 | {q0,q1} | {q0}
+q1 | - | {q1}
+D. M = ({q0, q1, q2}, {a, b}, δ, q0, {q0}) where, δ is
+ | a | b
+q0 | {q0} | {q0}
+q1 | {q2} | -
+q2 | {q0} | {q2}
+§A A and B
+§B A and D
+§C A, B and C
+§D A, B, C and D
+## 60
+Which of the following statement(s) are correct?
+A. Syntax Directed Translation can be applied in Type Checking.
+B. Syntax Directed Translation can be used in 3-address code generation.
+C. Syntax Directed Translation can be used in construction of syntax tree.
+D. Syntax Directed Translation can be used to recognize valid tokens.
+Choose the most appropriate answer from the options given below:
+§A A, B and C
+§B A, B, and D
+§C A, C and D
+§D B, C and D
+## 61
+Consider a computer network using the distance vector routing algorithm in its network layer. The Objective is to find the shortest cost path from router R to routers P and Q. Assume that R does not initially know the shortest routes to P and Q. Assume that R has three neighboring routers, namely: X, Y and Z. During one iteration R measures its distance as 3,2 , and 5 from its neighbors X, Y and Z, respectively. Router R getting routing vectors from its neighbors that indicates a distance of 7,6 and 5 from router X, Y and Z to router P, respectively. The routing vector also indicates that the distance to router Q from Routers X, Y and Z are 4, 6, 8 respectively. Which of the following statements is/are Ture with respect to the new routing table at router R after updation during this iteration.
+A. The distance from R to P will be stored as 10
+B. The distance from R to Q will be stored as 7
+C. The next hop router for a packet from R to P is Y
+D. The next hop router for a packet from R to Q is Z
+Choose the correct answer from the options given below:
+§A B and C only
+§B A and C only
+§C C and D only
+§D B and D only
+## 62
+Consider the routing table of an organization's router as shown in the table given below
+Subnet Number | Subnet Mask | Next Hop
+12.20.164.0 | 255.255.252.0 | R1
+12.20.170.0 | 255.255.254.0 | R2
+12.20.168.0 | 255.255.254.0 | Interface 0
+12.20.166.0 | 255.255.254.0 | Interface 1
+Default | - | R3
+Which of the following prefixes in CIDR Notation can be collectively used to correctly aggregate all of the subnets in the routing table?
+A. (12.20 .164 .0 / 20)
+B. (12.20 .164 .0 / 22)
+C. (12.20 .164 .0 / 21)
+D. (12.20 .168 .0 / 22)
+Choose the correct answer from the options given below:
+§A A and B Only
+§B A and C Only
+§C C and D Only
+§D B and D Only
+## 63
+Consider two hosts P and Q are connected through a router (R). The maximum transfer unit (MTU) value of the link between (P) and (R) is 1500 bytes and between (R) and (Q) is 820 bytes. A TCP segment of size 1400 bytes is transferred from P to Q through R with IP identification value of 0×1234. Assume that IP header size is 20 bytes. Further, the packet is allowed to be fragmented, meaning the Don't Fragment (DF) flag in the IP Header is not set by P.
+Which of the following statements is/are not true?
+A. Two fragments are created at (R) and IP datagram size carrying the second fragment is 620 bytes
+B. If the second fragment is lost then (R) resend the fragment with IP Identification value of 0×1234
+C. If the second fragment is lost then P is required to resend the entire TCP segment
+D. TCP destination port can be determined by analyzing the second fragment only
+Choose the correct answer from the options given below:
+§A A and B Only
+§B A and C Only
+§C C and D Only
+§D B and D Only
+## 64
+Consider the following features of Neural networks.
+A. It is essentially a machine learning algorithm.
+B. It is useful when solving the problems for which the data set is very large.
+C. They are able to extract features without input from the programmer.
+D. These are systems modeled on the human brain and nervous system.
+Choose the most appropriate answer from the options given below:
+§A A Only
+§B A & B Only
+§C A, B & C Only
+§D A, B, C & D
+## 65
+Consider the following draw backs is/are of Rule based approach is/are:
+A. The learning is static.
+B. Any changes made to the original data will not be considered.
+C. Once trained the model cannot improve on the basis of feedback.
+Choose the correct answer from the options given below:
+§A All the above statements are correct
+§B The statements A & B only are not correct
+§C The statements B & C only are not correct
+§D All the above statements are not correct
+## 66
+Match List I with List II
+List I | List II
+A. Linear Program | I. Prim's Algorithm
+B. Predicate Logic | II. In order
+C. Tree Traversal | III. Simplex Algorithm
+D. Minimum Spanning Tree Problem | IV. First order logic
+Choose the correct answer from the options given below:
+§A A-IV; B-III; C-I; D-II
+§B A-III; B-IV; C-II; D-I
+§C A-II; B-IV; C-I; D-III
+§D A-III; B-IV; C-I; D-II
+## 67
+Match List I with List II
+List I | List II
+A. DAA | I. Program Control Instruction
+B. LXI | II. Interrupt instruction
+C. RST | III. Data Movement Instruction
+D. JMP | IV. Arithmetic Instruction
+Choose the correct answer from the options given below:
+§A A-IV, B-II, C-I, D-III
+§B A-IV, B-III, C-II, D-I
+§C A-IV, B-II, C-III, D-I
+§D A-III, B-IV, C-II, D-I
+## 68
+Match List I with List II
+List I | List II
+A. 2-D Array Input | I. Liquid Crystal Display
+B. Transmissive device | II. Flat-bed scanner
+C. Binary image | III. Camera
+D. 1-D Array input | IV. Inkjet printer
+Choose the correct answer from the options given below:
+§A A-I, B-III, C-IV, D-II
+§B A-III, B-I, C-IV, D-II
+§C A-III, B-I, C-II, D-IV
+§D A-I, B-II, C-IV, D-III
+## 69
+Match List I with List II
+List I | List II
+A. Timestamp protocol | I. As long as the transaction is already running, it will try to obtain the required lock in first part.
+B. Strict two-phase locking protocol | II. Indicates final lock of the schedule.
+C. Two-phase locking | III. Ensures freedom from deadlock.
+D. Lock point in two-phase locking protocol | IV. Ensures cascade-less rollback.
+Choose the correct answer from the options given below:
+§A A-III, B-IV, C-II, D-I
+§B A-III, B-IV, C-I, D-II
+§C A-IV, B-III, C-II, D-I
+§D A-IV, B-II, C-I, D-III
+## 70
+Match List I with List II
+List I | List II
+A. (reference bit=0, modify bit=0) | I. Must write out before replacement.
+B. (reference bit=0, modify bit=1) | II. Probably will be used again soon and need to write out.
+C. (reference bit=1, modify bit=0) | III. Best page to replace.
+D. (reference bit=1, modify bit=1) | IV. Probably will be used again soon.
+Choose the correct answer from the options given below:
+§A A-II, B-I, C-III, D-IV
+§B A-II, B-I, C-IV, D-III
+§C A-III, B-I, C-II, D-IV
+§D A-III, B-I, C-IV, D-II
+## 71
+Match List I with List II
+List I | List II
+A. Condition coverage | I. Black box testing
+B. Equivalence class Partitioning | II. System testing
+C. Volume testing | III. White box testing
+D. Alpha testing | IV. Performance testing
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-IV, D-I
+§B A-III, B-I, C-IV, D-II
+§C A-IV, B-I, C-II, D-III
+§D A-III, B-IV, C-I, D-II
+## 72
+Match List I with List II
+List I | List II
+A. 8-Queens problems | I. Divide and conquer
+B. Closest Pair of points | II. Dynamic Programming
+C. String Edit problem | III. Greedy Method
+D. Knapsack problem | IV. Backtracking
+Choose the correct answer from the options given below:
+§A A-I, B-II, C-III, D-IV
+§B A-I, B-IV, C-II, D-III
+§C A-IV, B-I, C-II, D-III
+§D A-II, B-III, C-IV, D-I
+## 73
+Match List I with List II
+List I | List II
+A. Initial Configuration of stack and input in the LL Parsing process | I. $ w$
+B. Final Configuration of stack and input in LL Parsing process | II. $ $
+C. Initial Configuration of stack and input in the LR Parsing process | III. $S w$
+D. Final Configuration of stack and input in the LL Parsing process | IV. $S $
+Choose the correct answer from the options given below:
+§A A-III, B-IV, C-I, D-II
+§B A-III, B-II, C-I, D-IV
+§C A-II, B-III, C-IV, D-I
+§D A-II, B-IV, C-I, D-III
+## 74
+Match List I with List II
+List I | List II
+A. Physical Layer | I. Transforming the raw bits in the form of a frame for transmission
+B. Data Link Layer | II. Control and monitoring of subnet
+C. Network Layer | III. Transmission of raw bits over a communication channel
+D. Transport Layer | IV. Datagrams transmit data through connection-oriented or connection-less using datagrams.
+Choose the correct answer from the options given below:
+§A A-III, B-II, C-I, D-IV
+§B A-II, B-III, C-I, D-IV
+§C A-III, B-I, C-II, D-IV
+§D A-II, B-IV, C-I, D-III
+## 75
+Match List I with List II
+List I | List II
+A. Regression | I. Unsupervised Learning
+B. KNN | II. Supervised Learning
+C. Clustering |
+D. Decision Tree |
+Choose the correct answer from the options given below:
+§A A-I, B-II, C-I, D-II
+§B A-II, B-II, C-I, D-II
+§C A-I, B-II, C-II, D-I
+§D A-II, B-II, C-II, D-I
+## 76
+Let ' G ' be a simple, undirected graph with n (n>10) vertices and k connected components. What is the minimum possible number of edges of G?
+§A k(n − 1)
+§B n(k − 1)
+§C n + k − 2
+§D n − k
+## 77
+The sequence of events that happen during a typical fetch operation is/are:
+A. Memory
+B. MBR
+C. MAR
+D. PC
+E. IR
+Choose the correct order from the options given below:
+§A A, B, C, D, E
+§B D, C, A, B, E
+§C E, D, C, B, A
+§D D, C, A, E, B
+## 78
+Arrange the following search and sort algorithms in ascending order of their worst-case complexities.
+A. Merge sort
+B. Linear Search
+C. Bubble Sort
+D. Binary Search
+Choose the correct answer from the options given below:
+§A D, B, A, C
+§B B, D, A, C
+§C B, D, C, A
+§D B, A, D, C
+## 79
+Consider the following schedule S.
+T1 | T2 | T3 | T4 | Timestamp
+ | R(X) | R(Y) | | t1
+ | W(X) | W(Y) | | t2
+R(Y) | | | R(X) | t3
+W(Y) | | | W(X) | t4
+ | | R(X) | | t5
+ | | W(X) | | t6
+(R(X)) denotes the read operation on data item X by transaction Ti.
+W(X) denotes write operation on data item X by transaction Ti.
+Choose the correct execution order for the above schedule S.
+§A T3-T2-T1-T4
+§B T2-T3-T1-T4
+§C T2-T4-T3-T1
+§D T4-T2-T3-T1
+## 80
+A disk has 300 cylinders ( 0 to 299 ). If the initial position of the read-write head is at cylinder 101 , moving towards the higher end of the disk, calculate the total head movement following C_LOOK policy for the read request sequence:
+123, 45, 197, 87, 250, 198, 280
+§A 456
+§B 450
+§C 458
+§D 445
+## 81
+The incremental model of software development is ____
+§A A reasonable approach when requirements are well defined.
+§B A good approach when a working core product is required quickly.
+§C The best approach to use for projects with large development teams.
+§D A revolutionary model that is not used for commercial products.
+## 82
+Consider the graph given below. What is the order in which the nodes mentioned in the options are to be traversed to find the shortest path from A to Z using best first search?
+[Figure: directed weighted graph on nodes A, B, C, D, E, F, Z. Edges: A→C = 2, A→F = 7, C→B = 10, C→F = 3, B→D = 1, B→Z = 15, F→D = 1, F→E = 6, D→E = 2, D→Z = 7, E→Z = 4.]
+A. Node-A
+B. Node-B
+C. Node-C
+D. Node-D
+E. Node-E
+Choose the correct answer from the options given below
+§A A → C → F → D → E
+§B A → C → E → B
+§C A → C → F → E → B
+§D A → C → D → F
+## 83
+The precedence of regular expression operators from lowest to highest precedence is:
+§A Star, Concatenation, Union
+§B Union, Star, Concatenation
+§C Union, Concatenation, Star
+§D Star, Union, Concatenation
+## 84
+Arrange the following in the correct order which respect to key generation for RSA algorithm.
+A. Choose an integer e such that 1 < e < λ (n)
+B. Compute Key length n = p*q
+C. Find d which is equal to 1/e
+D. Choose two large prime numbers p and q
+E. Compute λ(n)
+Choose the correct answer from the options given below:
+§A A-B-C-D-E
+§B D-C-B-E-A
+§C D-B-E-A-C
+§D A-B-D-E-C
+## 85
+Which of the following is related to function of layers in a neural network?
+A. Information → Input layer → Hidden layer
+B. Bias → output layer → hidden layer.
+C. Hidden layer → algorithm → output layer.
+D. Input layer → output layer → algorithms.
+Choose the correct answer from the options given below:
+§A Only sequence ' A ' is correct.
+§B Only sequence ' B ' is correct.
+§C Only sequence ' C' is correct.
+§D Only sequence ' D ' is correct.
+## 86
+Given below are the two statements:
+Statement I: The main objective for using virtual memory is to increase the effective capacity of the memory system
+Statement II : The size of virtual memory can be larger than the main memory
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true.
+§B Both Statement I and Statement II are false.
+§C Statement I is true but Statement II is false.
+§D Statement I is false but Statement II is true.
+## 87
+Given below are the two statements:
+Statement I : Any retrieval request that is specified in the basic relational algebra can also be specified in relational calculus.
+Statement II : Any retrieval request that is specified in the relational calculus can also be specified in basic relational algebra.
+In the light of the above statements, choose the correct answer from the options given below:
+§A Both Statement I and Statement II are true.
+§B Both Statement I and Statement II are false.
+§C Statement I is true but Statement II is false.
+§D Statement I is false but Statement II is true.
+## 88
+The primary objectives of the SWE-IPT are to:
+A. Solicit stakeholder needs and expectations.
+B. Specify the software requirements for the product and post-development processes.
+C. Generate the integrated technical plans for accomplishing the software development effort.
+D. Translate stakeholder requirements into a complete, specified architectural description.
+E. Ensure that the software technical data package is sufficiently detailed to facilitate an efficient and effective software implementation.
+Choose the correct answer from the options given below:
+§A All the statements are correct.
+§B Only B & C are correct.
+§C Only A & E are correct.
+§D Only C, D & E are correct.
+## 89
+Consider the following statements:
+(A) For every regular language, we can design Turing Machine
+(B) For every context free language, we can design Turing Machine
+Which of the following is correct?
+§A Statement-A is false and Statement-B is true.
+§B Statement-A and Statement-B both are false.
+§C Statement-A is true and Statement-B is false.
+§D Statement-A and Statement-B both are true.
+## 90
+Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.
+A: Artificial Neural Networks are the backbone of deep learning algorithms.
+R: Back propagation is one of the techniques used to train an ANN.
+In the light of the above statements, choose the most appropriate answer from the options given below:
+§A Both A and R are correct and R is the correct explanation of A.
+§B Both A and R are correct but R is NOT the correct explanation of A.
+§C A is correct but R is not correct.
+§D A is not correct but R is correct.
+## 91
+Passage (Q91-Q95): For a knapsack problem, P and W are profits and weights for a set of 7 items as given below:
+P = {9, 5, 2, 7, 6, 16, 9}
+W = {2, 5, 6, 11, 1, 9, 3}
+Find the optimal solution for fractional knapsack problem when its maximum capacity is 15 .
+§A 43
+§B 40
+§C 45
+§D 44
+## 92
+Passage (Q91-Q95): For a knapsack problem, P and W are profits and weights for a set of 7 items as given below:
+P = {9, 5, 2, 7, 6, 16, 9}
+W = {2, 5, 6, 11, 1, 9, 3}
+What is the maximum value of items you can carry if maximum weight allowed is 25 with a fractional knapsack?
+§A 48.1
+§B 49
+§C 47.9
+§D 40
+## 93
+Passage (Q91-Q95): For a knapsack problem, P and W are profits and weights for a set of 7 items as given below:
+P = {9, 5, 2, 7, 6, 16, 9}
+W = {2, 5, 6, 11, 1, 9, 3}
+If new item (P = 5, W = 2) is added to the list, total items is 8 and capacity is 25 , then the best-case time of fractional knapsack for this case is _____
+§A O(8)
+§B O(64)
+§C O(24)
+§D O(56)
+## 94
+Passage (Q91-Q95): For a knapsack problem, P and W are profits and weights for a set of 7 items as given below:
+P = {9, 5, 2, 7, 6, 16, 9}
+W = {2, 5, 6, 11, 1, 9, 3}
+The most efficient solution for the fractional knapsack problem with maximum capacity 15 can be obtained by using ___
+§A Divide and Conquer
+§B Dynamic Programming
+§C Greedy Algorithm
+§D Backtracking
+## 95
+Passage (Q91-Q95): For a knapsack problem, P and W are profits and weights for a set of 7 items as given below:
+P = {9, 5, 2, 7, 6, 16, 9}
+W = {2, 5, 6, 11, 1, 9, 3}
+Which of the following statements is correct for a knapsack?
+§A 0/1 knapsack can be applied for all kinds of problems but fractional knapsack can be applied only if the problem meets certain conditions.
+§B There is no difference between the two. They give the same solution for any problem.
+§C We use the greedy algorithm for 0 / 1 knapsack and dynamic programming for fractional knapsack.
+§D In 0/1 knapsack problem, items cannot be divided into smaller portions and in fractional knapsack we can divide the item into required proportions of weight.
+## 96
+Passage (Q96-Q100): Use the following schema of the academic institution relational database:
+student (rollno, name, degree, year, sex, deptno, advisor)
+department (deptid, name, hod, phone)
+professor (empid, name, sex, startyear, deptno, phone)
+course (courseid, cname, credits, deptno)
+enrollment (rollno, courseid, sem, year, grade)
+teaching (empid, courseid, sem, year, classroom)
+prerequisite (precourseid, courseid)
+deptno is foreign key in the student, professor and course relations referring to deptid of department relation; advisor is a foreign key in the student relation referring to empid of professor relation; hod is a foreign key in the department relation referring to empid of professor relation; rollno is a foreign key in the enrollment relation referring to rollno of student relation; courseid is a foreign key in the enrollment, teaching relations referring to courseid of course relation; empid is a foreign key of the teaching relation referring to empid of professor relation; precourseid and courseid are foreign keys in the prerequisite relation referring to courseid of the course relation;
+Which of the following queries would retrieve the roll number and names of students who have enrolled for all the prerequisite courses of the course number 324 ?
+§A Select s.rollno, s.name From student s, enrollment e Where e.rollno = s.rollno and e.courseid = ANY (select precourseid from prerequisite p where p.courseid = "324")
+§B Select s.rollno, s.name From student s, enrollment e Where e.rollno =s.rollno and e.courseid = ALL (select precourseid from prerequisite p where p.courseid = "324")
+§C Select s.rollno, s.name From student s Where NOT EXISTS (select * prerequisite p where p.courseid = " 324 ") and NOT EXISTS (select * from enrollment e where e.courseid = p.precourseid and e.rollno = s.rollno))
+§D Select s.rollno, s.name From student s Where EXISTS (select * prerequisite p where p.courseid = "324") and EXISTS (select * from enrollment e where e.courseid = p.precourseid and e.rollno = s.rollno))
+## 97
+Passage (Q96-Q100): Use the following schema of the academic institution relational database:
+student (rollno, name, degree, year, sex, deptno, advisor)
+department (deptid, name, hod, phone)
+professor (empid, name, sex, startyear, deptno, phone)
+course (courseid, cname, credits, deptno)
+enrollment (rollno, courseid, sem, year, grade)
+teaching (empid, courseid, sem, year, classroom)
+prerequisite (precourseid, courseid)
+deptno is foreign key in the student, professor and course relations referring to deptid of department relation; advisor is a foreign key in the student relation referring to empid of professor relation; hod is a foreign key in the department relation referring to empid of professor relation; rollno is a foreign key in the enrollment relation referring to rollno of student relation; courseid is a foreign key in the enrollment, teaching relations referring to courseid of course relation; empid is a foreign key of the teaching relation referring to empid of professor relation; precourseid and courseid are foreign keys in the prerequisite relation referring to courseid of the course relation;
+Given query: select s.rollno from students where s.sex = ALL (select f.sex from professor f where f.empid = s.advisor).
+Consider the following statements about the given query that retrieves the set of all students whose gender is same as the gender of their advisor:
+S1. It has a correlated subquery
+S2. It has an uncorrelated subquery
+S3. If we replace ALL by ANY in the above query, its result will be different
+S4. If we replace ALL by ANY in the above query, its result will be same.
+Identify all the statement that are TRUE:
+§A S1 and S3 are true
+§B S1 and S4 are true
+§C S2 and S3 are true
+§D S2 and S4 are true
+## 98
+Passage (Q96-Q100): Use the following schema of the academic institution relational database:
+student (rollno, name, degree, year, sex, deptno, advisor)
+department (deptid, name, hod, phone)
+professor (empid, name, sex, startyear, deptno, phone)
+course (courseid, cname, credits, deptno)
+enrollment (rollno, courseid, sem, year, grade)
+teaching (empid, courseid, sem, year, classroom)
+prerequisite (precourseid, courseid)
+deptno is foreign key in the student, professor and course relations referring to deptid of department relation; advisor is a foreign key in the student relation referring to empid of professor relation; hod is a foreign key in the department relation referring to empid of professor relation; rollno is a foreign key in the enrollment relation referring to rollno of student relation; courseid is a foreign key in the enrollment, teaching relations referring to courseid of course relation; empid is a foreign key of the teaching relation referring to empid of professor relation; precourseid and courseid are foreign keys in the prerequisite relation referring to courseid of the course relation;
+Which of the following queries would compute, for each department, the total credits of all the courses offered by the department?
+§A select deptid, name, sum(credits) as totalcredits from department, course where deptid=deptno group by deptid, name;
+§B select deptid, name, count(credits) as totalcredits from department, course where deptid=deptno
+§C group by deptid, name; select deptid, name, sum(credits) as totalcredits from department, course
+§D select deptid, name, sum(credits) as totalcredits from department, course group by deptid, name having deptid=deptno;
+## 99
+Passage (Q96-Q100): Use the following schema of the academic institution relational database:
+student (rollno, name, degree, year, sex, deptno, advisor)
+department (deptid, name, hod, phone)
+professor (empid, name, sex, startyear, deptno, phone)
+course (courseid, cname, credits, deptno)
+enrollment (rollno, courseid, sem, year, grade)
+teaching (empid, courseid, sem, year, classroom)
+prerequisite (precourseid, courseid)
+deptno is foreign key in the student, professor and course relations referring to deptid of department relation; advisor is a foreign key in the student relation referring to empid of professor relation; hod is a foreign key in the department relation referring to empid of professor relation; rollno is a foreign key in the enrollment relation referring to rollno of student relation; courseid is a foreign key in the enrollment, teaching relations referring to courseid of course relation; empid is a foreign key of the teaching relation referring to empid of professor relation; precourseid and courseid are foreign keys in the prerequisite relation referring to courseid of the course relation;
+Which of the following queries would retrieve the dept id and name of all the departments that are such that the total of the credits of all the offered courses by the department is strictly greater than 40 ?
+§A select deptid, name, sum(credits) as totalcredits from department, course where totalcredits >40 group by deptid, name having deptid = deptno;
+§B select deptid, name, sum(credits) as totalcredits from department, course where deptid = deptno and totalcredits >40 group by deptid, name;
+§C select deptid, name, sum(credits) as totalcredits from department, course group by deptid, name having deptid = deptno and totalcredits >40
+§D select deptid, name, sum(credits) as totalcredits from department, course where deptid = deptno group by deptid, name having totalcredits >40
+## 100
+Passage (Q96-Q100): Use the following schema of the academic institution relational database:
+student (rollno, name, degree, year, sex, deptno, advisor)
+department (deptid, name, hod, phone)
+professor (empid, name, sex, startyear, deptno, phone)
+course (courseid, cname, credits, deptno)
+enrollment (rollno, courseid, sem, year, grade)
+teaching (empid, courseid, sem, year, classroom)
+prerequisite (precourseid, courseid)
+deptno is foreign key in the student, professor and course relations referring to deptid of department relation; advisor is a foreign key in the student relation referring to empid of professor relation; hod is a foreign key in the department relation referring to empid of professor relation; rollno is a foreign key in the enrollment relation referring to rollno of student relation; courseid is a foreign key in the enrollment, teaching relations referring to courseid of course relation; empid is a foreign key of the teaching relation referring to empid of professor relation; precourseid and courseid are foreign keys in the prerequisite relation referring to courseid of the course relation;
+Given query:
+select s.rollno, s.name
+from student s
+where EXISTS (select c.courseid from course c Where c.deptno =5 and EXISTS (select e.* from enrollment e where e.courseid = c.courseid and e.rollno = s.rollno));
+Which one of the following statements is correct with respect to the given query?
+§A It retrieves the roll number and names of students who have not enrolled for all course offered by department number 5 .
+§B It retrieves the roll number and names of students who have enrolled for all course offered by department number 5 .
+§C It retrieves the roll number and names of students who have enrolled for at least one course offered by department number 5
+§D It retrieves the roll number and names of students who are such that there exists at least one course offered by department number 5 which is not enrolled by the student.

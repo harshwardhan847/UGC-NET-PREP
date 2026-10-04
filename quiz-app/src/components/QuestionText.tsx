@@ -3,6 +3,7 @@
 import React from "react"
 import { reflowQuestion } from "@/lib/text"
 import { cn } from "@/lib/utils"
+import InlineImages from "./InlineImages"
 
 // Question text in the reader's chosen typeface. Hard-wrapped prose is reflowed;
 // ``` fenced snippets (C programs and the like) are shown as code blocks.
@@ -16,7 +17,7 @@ export default function QuestionText({ text, className, onClick }: { text: strin
             {part.replace(/\n$/, "")}
           </pre>
         ) : part.trim() ? (
-          <p key={i} className="whitespace-pre-wrap">{reflowQuestion(part.trim())}</p>
+          <p key={i} className="whitespace-pre-wrap"><InlineImages text={reflowQuestion(part.trim())} /></p>
         ) : null
       )}
     </div>

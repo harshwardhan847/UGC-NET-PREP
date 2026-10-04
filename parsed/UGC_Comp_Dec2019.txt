@@ -1,0 +1,855 @@
+## 1
+A basic feasible solution of an m × n transportation problem is said to be non-degenerate, if basic feasible solution contains exactly------------- number of individual allocation in-------------- positions.
+§A m + n + 1, independent
+§B m + n − 1, independent
+§C m + n − 1, appropriate
+§D m − n + 1, independent
+## 2
+Consider the following Linear programming problem (LPP) :
+Maximize z = x₁ + x₂
+Subject to the constraints:
+x₁ + 2x₂ ≤ 2000
+x₁ + x₂ ≤ 1500
+x₂ ≤ 600
+and x₁, x₂ ≥ 0
+The solution of the above LPP is:
+§A x₁ = 750, x₂ = 750, z = 1500
+§B x₁ = 500, x₂ = 1000, z = 1500
+§C x₁ = 1000, x₂ = 500, z = 1500
+§D x₁ = 900, x₂ = 600, z = 1500
+## 3
+The Boolean expression AB + AB' + A'C + AC (primes denote complement/overline) is unaffected by the value of the Boolean variable -----------
+§A A
+§B B
+§C C
+§D A , B and C
+## 4
+What are the greatest lower bound (GLB) and the least upper bound (LUB) of the sets A = {3, 9, 12} and B = {1, 2, 4, 5, 10} if they exist in poset (Z⁺, /)?
+§A A (GLB = 3, LUB = 36); B (GLB = 1, LUB = 20)
+§B A (GLB = 3, LUB = 12); B (GLB = 1, LUB = 10)
+§C A (GLB = 1, LUB = 36); B (GLB = 2, LUB = 20)
+§D A (GLB = 1, LUB = 12); B (GLB = 2, LUB = 10)
+## 5
+Let (P) be the set of all people. Let (R) be a binary relation on (P) such that (a, b) is in R if a is a brother of b. Is (R) symmetric transitive, an equivalence relation, a partial order relation?
+§A NO,NO,NO,NO
+§B NO,NO,YES,NO
+§C NO,YES,NO,NO
+§D NO,YES,YES,NO
+## 6
+The weight of minimum spanning tree in graph G, calculated using Kruskal's algorithm is :
+[Figure: Graph G, a "house" shaped weighted graph with 5 vertices. Let T be the top (roof) vertex, P the upper-left vertex, Q the upper-right vertex, R the lower-left vertex and S the lower-right vertex. Edges: T-P = 2, T-Q = 8, P-Q = 6, P-R = 5, P-S = 4 (diagonal), Q-S = 7, R-S = 3.]
+§A 14
+§B 15
+§C 17
+§D 18
+## 7
+A tree has 2 n vertices of degree 1,3 n vertices of degree 2, n vertices of degree 3 . Determine the number of vertices and edges in tree.
+§A 12,11
+§B 11,12
+§C 10,11
+§D 9,10
+## 8
+How many reflexive relations are there on a set with 4 elements?
+§A 2⁴
+§B 2¹²
+§C 4²
+§D 2
+## 9
+A non-pipelined system takes 30 ns to process a task. The same task can be processed in a four-segment pipeline with a clock cycle of 10 ns . Determine the speed up of the pipeline for 100 tasks.
+§A 3
+§B 4
+§C 3.91
+§D 2.91
+## 10
+A computer uses a memory unit of 512 K words of 32 bits each. A binary instruction code is stored in one word of the memory. The instruction has four parts: an addressing mode field to specify one of the two-addressing mode (direct and indirect), an operation code, a register code part to specify one of the 256 registers and an address part. How many bits are there in addressing mode part, opcode part, register code part and the address part?
+§A 1, 3, 9, 19
+§B 1, 4, 9, 18
+§C 1, 4, 8, 19
+§D 1, 3, 8, 20
+## 11
+A micro instruction format has microoperation field which is divided into 2 subfields F1 and F2, each having 15 distinct microoperations, condition field CD for four status bits, branch field B R having four options used in conjunction with address field AD. The address space is of 128 memory words. The size of micro instruction is :
+§A 19
+§B 18
+§C 17
+§D 20
+## 12
+(142)_b + (112)_(b−2) = (75)_8, find base b.
+§A 3
+§B 6
+§C 7
+§D 5
+## 13
+The following program is stored in the memory unit of the basic computer. Give the content of accumulator register in hexadecimal after the execution of the program.
+Location | Instruction
+010 | CLA
+011 | ADD 016
+012 | BUN 014
+013 | HLT
+014 | AND 017
+015 | BUN 013
+016 | C1A5
+017 | 93C6
+§A A1B4
+§B 81B4
+§C A184
+§D 8184
+## 14
+What is the output of following C program?
+```
+# include <stdio.h>
+main()
+{
+  int i, j, x = 0;
+  for (i=0;i<5;++i)
+    for (j=0;j<i;++j)
+    {
+      x+=(i+j-1);
+      break;
+    }
+  printf("%d", x);
+}
+```
+§A 6
+§B 5
+§C 4
+§D 3
+## 15
+Let A be the base class in C ++ and B be the derived class from A with protected inheritance. Which of the following statement is false for class B?
+§A Member function of class B can access protected data of class A
+§B Member function of Class B can access public data of class A
+§C Member function of class B cannot access private data of class A
+§D Object of derived class B can access public base class data
+## 16
+Which tag is used to enclose any number of javascript statements in HTML document?
+§A <code>
+§B <script>
+§C <title>
+§D <body>
+## 17
+A rectangle is bound by the lines x = 0; y = 0; x = 5 and y=3. The line segment joining (−1, 0) and (4, 5), if clipped against this window will connect the points ---------
+§A (0, 1) and (3, 3)
+§B (0, 1) and (2, 3)
+§C (0, 1) and (4, 5)
+§D (0, 1) and (3, 5)
+## 18
+Which of the following algorithms is not used for line clipping?
+§A Cohen-Sutherland algorithm
+§B Southerland-Hodgman algorithm
+§C Liang-Barsky algorithm
+§D Nicholl-Lee-Nicholl algorithm
+## 19
+If we want to resize a 1024 × 768 pixels image to one that is 640 pixels wide with the same aspect ratio, what would be the height of the resized image?
+§A 420 Pixels
+§B 460 Pixels
+§C 480 Pixels
+§D 540 Pixels
+## 20
+Which of the component module of DBMS does rearrangement and possible ordering of operations, eliminate redundancy in query and use efficient algorithms and indexes during the exceution of a query?
+§A query compiler
+§B query optimizer
+§C Stored data manager
+§D Database processor
+## 21
+Given two tables R1(x,y) and R2(y,z) with 50 and 30 numbers of tuples respectively. Find the maximum number of tuples in the output of natural join between tables R1 and R2 i.e. R1 * R2. (* - Natural Join)
+§A 30
+§B 20
+§C 50
+§D 1500
+## 22
+Given two tables EMPLOYEE (EID, ENAME, DEPTNO) and DEPARTMENT (DEPTNO, DEPTNAME); the primary keys are EID and DEPTNO respectively.
+Find the most appropriate statement of the given query :
+Select count (*) 'total'
+from EMPLOYEE
+where DEPTNO IN (D1, D2)
+group by DEPTNO
+having count (*) > 5.
+§A Total number of employees in each department D1 and D2
+§B Total number of employees of departments D1 and D2 if their total is > 5.
+§C Display total number of employees in both departments D1 and D2
+§D The output of the query must have atleast two rows
+## 23
+Find the minimum number of tables required for converting the following entity relationship diagram into a relational database.
+[Figure: ER diagram. Entity R1 has attributes A, B (multivalued, double circle) and C. Entity R2 has attributes X and Y. R1 and R2 are connected through the relationship R12: cardinality 1 on the R1 side and M on the R2 side.]
+§A 2
+§B 4
+§C 3
+§D 5
+## 24
+A counting semaphore is initialized to 8. 3 wait ( ) operations and 4 signal () operations are applied. Find the current value of the semaphore variable.
+§A 9
+§B 5
+§C 1
+§D 4
+## 25
+Which of the following is not needed by an encryption algorithm used in Cryptography?
+§A KEY
+§B Message
+§C Ciphertext
+§D User details
+## 26
+Which of the following CPU scheduling algorithms is/are supported by LINUX operating system?
+§A Non-preemptive priority scheduling
+§B Preemptive priority scheduling and time-sharing CPU scheduling
+§C Time sharing scheduling only
+§D Priority scheduling only
+## 27
+Consider a paging system where translation looks aside buffer (TLB) a special type of associative memory is used with a hit ratio of 80%.
+Assume that memory reference takes 80 nanoseconds and reference time to TLB is 20 nanoseconds. What will be the effective memory access time given an 80 % hit ratio?
+§A 110 nanoseconds
+§B 116 nanoseconds
+§C 200 nanoseconds
+§D 100 nanoseconds
+## 28
+Suppose a system has 12 magnetic tape drives and at the time t₀, three processes are allotted tape drives out of their need as given below:
+Process | Maximum Needs | Current Needs
+p₀ | 10 | 5
+p₁ | 4 | 2
+p₂ | 9 | 2
+At times t₀, the system is in a safe state. Which of the following is a safe sequence so that deadlock is avoided?
+§A <p₀, p₁, p₂>
+§B <p₁, p₀, p₂>
+§C <p₂, p₁, p₀>
+§D <p₀, p₂, p₁>
+## 29
+Which of the following interprocess communication model is used to exchange messages among co-operative processes?
+§A Shared memory model
+§B Message passing model
+§C Shared memory and message passing model
+§D Queues
+## 30
+Given a CPU time slice of 2 ms and the following list of processes.
+Process | Burst time (ms) | Arrival time
+P1 | 3 | 0
+P2 | 4 | 2
+P3 | 5 | 5
+Find average turnaround time and average waiting time using round-robin CPU scheduling.
+§A 4,0
+§B 5.66,1.66
+§C 5.66,0
+§D 7,2
+## 31
+Which of the following methods are used to pass any number of parameters to the operating system through system calls?
+§A Registers
+§B Block or table in main memory
+§C Stack
+§D Block in main memory and stack
+## 32
+Java Virtual Machine (JVM) is used to execute architectural neutral byte code. Which of the following is needed by the JVM for execution of Java Code?
+§A Class loader only
+§B Class loader and Java Interpreter
+§C Class loader, Java Interpreter and API
+§D Java Interpreter only
+## 33
+In a system for a restaurant, the main scenario for placing an order is given below :
+(a) Customer reads menu
+(b) Customer places order
+(c) Order is sent to the kitchen for preparation
+(d) Ordered items are served
+(e) Customer requests for a bill for the order
+(f) Bill is prepared for this order
+(g) Customer is given the bill
+(h) Customer pays the bill
+A sequence diagram for the scenario will have at least how many objects among whom the messages will be exchanged.
+§A 3
+§B 4
+§C 5
+§D 6
+## 34
+An --------------- chart is a project schedule representation that presents project plan as a directed graph. The critical path is--------------- the sequence of ---------------tasks and it defines project---------------
+§A Activity, Shortest, Independent, Cost
+§B Activity, Longest, Dependent, Duration
+§C Activity, Longest, Independent, Duration
+§D Activity, Shortest, Dependent, Duration
+## 35
+Let a^(2c) mod n = (a^c)² mod n and a^(2c+1) mod n = a · (a^c)² mod n. For a=7, b=17, and n=561 what is the value of a^b (mod n)?
+§A 160
+§B 166
+§C 157
+§D 67
+## 36
+A clique in an undirected graph G = ⟨V, E⟩ is a subset V' ⊆ V of vertices, such that
+§A If (u, v) ∈ E then u ∈ V' and v ∈ V'
+§B If (u, v) ∈ E then u ∈ V' or v ∈ V'
+§C Each pair of vertices in V' is connected by an edge
+§D All pairs of vertices in V' are not connected by an edge
+## 37
+What is the worst case running time of Insert and Extract-min, in an implementation of a priority queue using an unsorted array? Assume that all insertions can be accomodated.
+§A θ(1), θ(n)
+§B θ(n), θ(n)
+§C θ(1), θ(1)
+§D θ(n), θ(n)
+## 38
+In a B-Tree, each node represents a disk block. Suppose one block holds 8192 bytes. Each key uses 32 bytes. In a B-tree of order M there are M - 1 keys. Since each branch is on another disk block, we assume a branch is of 4 bytes. The total memory requirement for a non-leaf node is
+§A 32M − 32
+§B 36M − 32
+§C 36M − 36
+§D 32M − 36
+## 39
+Give asymptotic upper and lower bound for T(n) given below. Assume T(n) is constant for n ≤ 2.
+T(n) = 4T(√n) + lg² n
+§A T(n) = θ(lg(lg² n) lg n)
+§B T(n) = θ(lg² n lg n)
+§C T(n) = θ(lg² n lg lg n)
+§D T(n) = θ(lg(lg n) lg n)
+## 40
+Consider a weighted directed graph. The current shortest distance from source S to node x is represented by d[x]. Let d[v]= 29, d[u]= 15, w[u,v]=12. What is the updated value of d[v] based on current information?
+§A 29
+§B 27
+§C 25
+§D 17
+## 41
+When using Dijkstra's algorithm to find shortest path in a graph, which of the following statement is not true?
+§A It can find shortest path within the same graph data structure
+§B Every time a new node is visited, we choose the node with smallest known distance/ cost (weight) to visit first
+§C Shortest path always passes through least number of vertices
+§D The graph needs to have a non-negative weight on every edge
+## 42
+The time complexity to multiply two polynomials of degree n using Fast Fourier transform method is :
+§A θ(n lg n)
+§B θ(n²)
+§C θ(n)
+§D θ(lg n)
+## 43
+Consider the following grammars :
+G1 : S → aSb|bSa|aa
+G2 : S → aSb|bSa|SS | λ
+G3 : S → aSb|bSa|SS | a
+G4 : S → aSb|bSa|SS|SSS|λ
+Which of the following is correct w.r.t. the above grammars?
+§A G1 and G3 are equivalent
+§B G2 and G3 are equivalent
+§C G2 and G4 are equivalent
+§D G3 and G4 are equivalent
+## 44
+Consider the language L = {aⁿ bⁿ⁻³ | n > 2} on Σ = {a, b}. Which one of the following grammars generates the language L ?
+§A S → aA|a, A → aAb|b
+§B S → aaA|λ, A → aAb|λ
+§C S → aaaA|a, A → aAb|λ
+§D S → aaaA, A → aAb | λ
+## 45
+Consider the following grammar :
+S → 0A | 0BB
+A → 00A | λ
+B → 1B | 11C
+C → B
+Which language does this grammar generate?
+§A L((00)* 0 + (11)* 1)
+§B L(0(11)* + 1(00)*)
+§C L((00)* 0)
+§D L(0(11)* 1)
+## 46
+Consider Σ = {w, x} and T = {x, y, z}.
+Define homomorphism h by :
+h(x) = xzy
+h(w) = zxyy
+If L is the regular language denoted by
+r = (w + x*)(ww)*, then the regular language h(L) is given by
+§A (zxyy + xzy)(zxyy)
+§B (zxyy + (xzy)*)(zxyyzxyy)*
+§C (zxyy + xzy)(zxyy)*
+§D (zxyy + (xzy)*)(zxyyzxyy)
+## 47
+Consider the following statements with respect to the language L = {aⁿbⁿ | n ≥ 0}
+S1 : L² is context free language
+S2 : Lᵏ is conext-free language for any given k ≥ 1
+S3 : complement of L and L* are context free languages
+Which one of the following is correct?
+§A only S1 and S2
+§B only S1 and S3
+§C only S2 and S3
+§D S1, S2 and S3
+## 48
+Consider the following languages :
+L1 = {aⁿbⁿcᵐ} ∪ {aⁿbᵐcᵐ}, n, m ≥ 0
+L2 = {wwᴿ | w ∈ {a, b}*} Where R represents reversible operation.
+Which one of the following is (are) inherently ambiguous language(s)?
+§A only L1
+§B only L2
+§C both L1 and L2
+§D neither L1 nor L2
+## 49
+Let G=(V, T, S, P) be any context-free grammar without any λ-productions or unit productions. Let K be the maximum number of symbols on the right of any production in P. The maximum number of production rules for any equivalent grammar in Chomsky normal form is given by:
+Where |·| denotes the cardinality of the set.
+§A (K − 1)|P| + |T| − 1
+§B (K − 1)|P| + |T|
+§C K|P| + |T| − 1
+§D K|P| + |T|
+## 50
+Consider the following language families :
+L1 ≡ The Context - free languages
+L2 ≡ The Context - sensitive languages
+L3 ≡ The recursively enumerable languages
+L4 ≡ The recursive languages
+Which one of the following options is correct?
+§A L1 ⊆ L2 ⊆ L3 ⊆ L4
+§B L2 ⊆ L1 ⊆ L3 ⊆ L4
+§C L1 ⊆ L2 ⊆ L4 ⊆ L3
+§D L2 ⊆ L1 ⊆ L4 ⊆ L3
+## 51
+Consider the following statements :
+S1 : These exists no algorithm for deciding if any two Turing machines M1 and M2 accept the same language.
+S2 : Let M1 and M2 be arbitrary Turing machines. The problem to determine L(M1) ⊆ L(M2) is undecidable.
+Which of the statements is (are) correct?
+§A Only S1
+§B Only S2
+§C Both S1 and S2
+§D Neither S1 nor S2
+## 52
+Let A = {001, 0011, 11, 101} and B = {01, 111, 111, 010}. Similarly, let C = {00, 001, 1000} and D = {0, 11, 011}.
+Which of the following pairs have a post-correspondence solution?
+§A Only pair (A, B)
+§B Only pair (C, D)
+§C Both (A, B) and (C, D)
+§D Neither (A, B) nor (C, D)
+## 53
+Which of the following class of IP address has the last address as 223.255 .255 .255 ?
+§A Class A
+§B Class B
+§C Class C
+§D Class D
+## 54
+Consider a subnet with 720 routers. If a three-level hierarchy is chosen, with eight clusters, each containing 9 regions of 10 routers, then total number of entries in hierarchical table of each router is
+§A 25
+§B 27
+§C 53
+§D 72
+## 55
+Piconet is a basic unit of a bluetooth system consisting of------------ master node and up to ---------- active slave nodes.
+§A one, five
+§B one, seven
+§C two, eight
+§D one, eight
+## 56
+A network with bandwidth of 10 Mbps can pass only an average of 12.000 frames per minute with each frame carrying an average of 10,000 bits. What is the throughput of this network?
+§A 1,000,000bps
+§B 2,000,000bps
+§C 12,000,000bps
+§D 1,200,00,000bps
+## 57
+The full form of ICANN is
+§A Internet Corporation for Assigned Names and Numbers
+§B Internet Corporation for Assigned Numbers and Names
+§C Institute of Cooperation for Assigned Names and Numbers
+§D Internet Connection for Assigned Names and Numbers
+## 58
+According to Dempster-Shafer theory for uncertainty management,
+Where Bel(A) denotes Belief of event A.
+§A Bel(A) + Bel(¬A) ≤ 1
+§B Bel(A) + Bel(¬A) ≥ 1
+§C Bel(A) + Bel(¬A) = 1
+§D Bel(A) + Bel(¬A) = 0
+## 59
+Consider the following statements:
+S1 : ∀xP(x) ∨ ∀xQ(x) and ∀x(P(x) ∨ Q(x)) are not logically equivalent.
+S2 : ∃xP(x) ∧ ∃xQ(x) and ∃x(P(x) ∧ Q(x)) are not logically equivalent
+Which of the following statements is/are correct?
+§A Only S1
+§B Only S2
+§C Both S1 and S2
+§D Neither S1 nor S2
+## 60
+Consider the game tree given below
+[Figure: game tree with root MAX; level 2 has two MIN nodes (circles); level 3 has four MAX nodes (squares); level 4 has eight MIN nodes (circles); level 5 has 16 leaf nodes (squares), two under each MIN node of level 4. In the source PDF only some leaf values are printed, reading left to right: 17, 19, 16, (blank), 111, 112, (blank), (blank), 15, (blank), 14, and the remaining leaves are blank.]
+Here ○ and □ represent MIN and MAX nodes respectively. The value of the root node of the game tree is:
+§A 14
+§B 17
+§C 111
+§D 112
+## 61
+Consider the following models:
+M1: Mamdani model
+M2 : Takagi - Sugeno-Kang model
+M3: Kosko's additive model (SAM)
+Which of the following option contains examples of additive rule model?
+§A Only M1 and M2
+§B Only M2 and M3
+§C Only M1 and M3
+§D M1, M2, and M3
+## 62
+A fuzzy conjunction operators, t(x, y), and a fuzzy disjunction operator, s(x, y), form a pair if they satisfy:
+t(x, y) = 1 − s(1 − x, 1 − y)
+If t(x, y) = xy / (x + y − xy) then s(x, y) is given by
+§A (x + y) / (1 − xy)
+§B (x + y − 2xy) / (1 − xy)
+§C (x + y − xy) / (1 − xy)
+§D (x + y − xy) / (1 + xy)
+## 63
+Let W_ij represents weight between node i at layer k and node j at layer (k − 1) of a given multilayer perceptron. The weight updation using gradient descent method is given by
+§A W_ij(t + 1) = W_ij(t) + α ∂E/∂W_ij , 0 ≤ α ≤ 1
+§B W_ij(t + 1) = W_ij(t) − α ∂E/∂W_ij , 0 ≤ α ≤ 1
+§C W_ij(t + 1) = α ∂E/∂W_ij , 0 ≤ α ≤ 1
+§D W_ij(t + 1) = −α ∂E/∂W_ij , 0 ≤ α ≤ 1
+## 64
+The order of schema ?10?101? and ???0??1 are---------- and --------------respectively.
+§A 5,3
+§B 5,2
+§C 7,5
+§D 8,7
+## 65
+Let the population of chromosomes in genetic algorithm is represented in terms of binary number. The strength of fitness of a chromosome in decimal form, x, is given by
+Sf(x) = f(x) / Σf(x) where f(x) = x²
+The population is given by P where:
+P = {(01101), (11000), (01000), (10011)}
+The strength of fitness of chromosome (11000) is -------------
+§A 24
+§B 576
+§C 14.4
+§D 49.2
+## 66
+Consider the following statements :
+S1 : If a group (G, *) is of order n, and a ∈ G is such that aᵐ = e for some integer m ≤ n, then m must divide n.
+S2 : If a group (G, *) is of even order, then there must be an element a ∈ G such that a ≠ e and a * a = e.
+Which of the statements is (are) correct?
+§A Only S1
+§B Only S2
+§C Both S1 and S2
+§D Neither S1 nor S2
+## 67
+Consider the following statements with respect to duality in LPP :
+(a) The final simplex table giving optimal solution of the primal also contains optimal solution of its dual in itself.
+(b) If either the primal or the dual problem has a finite optimal solution, then the other problem also has a finite optimal solution.
+(c) If either problem has an unbounded optimum solution, then the other problem has no feasible solution at all.
+Which of the statements is (are) correct?
+§A only (a) and (b)
+§B only (a) and (c)
+§C only (b) and (c)
+§D (a), (b) and (c)
+## 68
+The Reduced Instruction Set Computer (RISC) characteristics are :
+(a) Single cycle instruction execution
+(b) Variable length instruction formats
+(c) Instructions that manipulates operands in memory
+(d) Efficient instruction pipeline
+Choose the correct characteristics from the options given below :
+§A (a) and (b)
+§B (b) and (c)
+§C (a) and (d)
+§D (c) and (d)
+## 69
+Which of the following binary codes for decimal digits are self complementing?
+(a) 8421 code
+(b) 2421 code
+(c) excess-3 code
+(d) excess-3 gray code
+Choose the correct option :
+§A (a) and (b)
+§B (b) and (c)
+§C (c) and (d)
+§D (d) and (a)
+## 70
+Consider the following statements with respect to approaches to fill areas on raster systems :
+P: To determine the overlap intervals for scan lines that cross the area.
+Q: To start from a given interior position and paint outward from this point until we encounter the specified boundary conditions.
+Select the correct answer from the options given below :
+§A P only
+§B Q only
+§C Both P and Q
+§D Neither P nor Q
+## 71
+Which of the following statements are true regarding C ++ ?
+(a) Overloading gives the capability to an existing operator to operate on other data types.
+(b) Inheritance in object oriented programming provides support to reusability.
+(c) When object of a derived class is defined, first the constructor of derived class is executed then constructor of a base class is executed.
+(d) Overloading is a type of polymorphism.
+Choose the correct option from those given below :
+§A (a) and (b) only
+§B (a), (b) and (c) only
+§C (a), (b) and (d) only
+§D (b), (c) and (d) only
+## 72
+Which of the following are legal statements in C programming language?
+(a) int *P = &44;
+(b) int *P = &r;
+(c) int P = &a;
+(d) int P = a;
+Choose the correct option :
+§A (a) and (b)
+§B (b) and (c)
+§C (b) and (d)
+§D (a) and (d)
+## 73
+Two concurrent executing transactions T1 and T2 are allowed to update same stock item say ' A ' in an uncontrolled manner. In such scenario, following problems may occur :
+(a) Dirty read problem
+(b) Lost update problem
+(c) Transaction failure
+(d) Inconsistent database state
+Which of the following option is correct if database system has no concurrency module and allows concurrent execution of above two transactions?
+§A (a), (b) and (c) only
+§B (c) and (d) only
+§C (a) and (b) only
+§D (a), (b) and (d) only
+## 74
+Identify the circumstances under which pre-emptive CPU scheduling is used :
+(a) A process switches from Running state to Ready state
+(b) A process switches from Waiting state to Ready state
+(c) A process completes its execution
+(d) A process switches from Ready to Waiting state
+Choose the correct option :
+§A (a) and (b) only
+§B (a) and (d) only
+§C (c) and (d) only
+§D (a), (b), (c) only
+## 75
+The following multithreaded algorithm computes transpose of a matrix in parallel :
+```
+p Trans (X, Y, N)
+if N = 1
+  then Y[1,1] ← X[1,1]
+else partition X into four (N/2) x (N/2)
+  submatrices X11, X12, X21, X22
+  partition Y into four (N/2) x (N/2) submatrices
+  Y11, Y12, Y21, Y22
+  spawn p Trans (X11, Y11, N/2)
+  spawn p Trans (X12, Y12, N/2)
+  spawn p Trans (X21, Y21, N/2)
+  spawn p Trans (X22, Y22, N/2)
+```
+What is the asymptotic parallelism of the algorithm?
+§A T1/T∞ or θ(N²/lg N)
+§B T1/T∞ or θ(N/lg N)
+§C T1/T∞ or θ(lg N/N²)
+§D T1/T∞ or θ(lg N/N)
+## 76
+Consider the following statements :
+(a) The running time of dynamic programming algorithm is alway θ(ρ) where ρ is number of subproblems.
+(b) When a recurrence relation has cyclic dependency, it is impossible to use that recurrence relation (unmodified) in a correct dynamic program.
+(c) For a dynamic programming algorithm, computing all values in a bottom-up fashion is asymptotically faster than using recursion and memorization.
+(d) If a problem X can be reduced to a known NP-hard problem, then X must be NP-hard.
+Which of the statement(s) is (are) true?
+§A Only (b) and (a)
+§B Only (b)
+§C Only (b) and (c)
+§D Only (b) and (d)
+## 77
+Consider the following statements :
+(a) Fiber optic cable is much lighter than copper cable.
+(b) Fiber optic cable is not affected by power surges or electromagnetic interference.
+(c) Optical transmission is inherently bidirectional.
+Which of the statements is (are) correct?
+§A Only (a) and (b)
+§B Only (a) and (c)
+§C Only (b) and (c)
+§D (a), (b) and (c)
+## 78
+Consider the following statements :
+(a) Windows Azure is a cloud-based operating system.
+(b) Google App Engine is an integrated set of online services for consumers to communicate and share with others.
+(c) Amazon Cloud Front is a web service for content delivery.
+Which of the statements is (are) correct?
+§A Only (a) and (b)
+§B Only (a) and (c)
+§C Only (b) and (c)
+§D (a), (b) and (c)
+## 79
+Consider the following statements with respect to network security :
+(a) Message confidentiality means that the sender and the receiver expect privacy.
+(b) Message integrity means that the data must arrive at the receiver exactly as they were sent.
+(c) Message authentication means the receiver is ensured that the message is coming from the intended sender.
+Which of the statements is (are) correct?
+§A Only (a) and (b)
+§B Only (a) and (c)
+§C Only (b) and (c)
+§D (a), (b) and (c)
+## 80
+Consider the following:
+(a) Trapping at local maxima
+(b) Reaching a plateau
+(c) Traversal along the ridge.
+Which of the following option represents shortcomings of the hill climbing algorithm?
+§A (a) and (b) only
+§B (a) and (c) only
+§C (b) and (c) only
+§D (a), (b) and (c)
+## 81
+Consider the following learning algorithms :
+(a) Logistic repression
+(b) Back propogation
+(c) Linear repression
+Which of the following option represents classification algorithms?
+§A (a) and (b) only
+§B (a) and (c) only
+§C (b) and (c) only
+§D (a), (b) and (c)
+## 82
+Match List-I and List-II :
+List I | List II
+(a) Physical layer | (i) Provide token management service
+(b) Transport layer | (ii) Concerned with transmitting raw bits over communication channel
+(c) Session layer | (iii) Concerned with the syntax and semantics of the information transmitted
+(d) Presentation layer | (iv) True end-to-end layer from source to destination
+Choose the correct option from those given below :
+§A (a)-(ii), (b)-(iv), (c)-(iii), (d)-(i)
+§B (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+§C (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)
+§D (a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)
+## 83
+According to the ISO-9126 Standard Quality Model, match the attributes given in List-I with their definitions in List-II :
+List I | List II
+(a) Functionality | (i) Relationship between layer of performance and amount of resources
+(b) Reliability | (ii) Characteristics related with achievement of purpose
+(c) Efficiency | (iii) Efforts needed to make for improvement
+(d) Maintainability | (iv) Capability of software to maintain performance of software
+Choose the correct option from the ones given below :
+§A (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+§B (a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)
+§C (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)
+§D (a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)
+## 84
+Match the Agile Process models with the task performed during the model :
+List I | List II
+(a) Scrum | (i) CRC cards
+(b) Adaptive software development | (ii) Sprint backlog
+(c) Extreme programming | (iii) the <by/for/of/to> a(n)
+(d) Feature-driven development | (iv) Time box release plan
+Choose the correct option from those given below :
+§A (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)
+§B (a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)
+§C (a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)
+§D (a)-(i), (b)-(iv), (c)-(ii), (d)-(iii)
+## 85
+Match List-I with List-II :
+List I | List II
+(a) Frame attribute | (i) to create link in HTML
+(b) <tr> tag | (ii) for vertical alignment of content in cell
+(c) Valign attribute | (iii) to enclose each row in table
+(d) <a> tag | (iv) to specify the side of the table frame that dispaly border
+Choose the correct option from those given below :
+§A (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+§B (a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)
+§C (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+§D (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)
+## 86
+An instruction is stored at location 500 with its address field at location 501. The address field has the value 400. A processor register R1 contains the number 200. Match the addressing mode (List-I) given below with effective address (List-II) for the given instruction:
+List I | List II
+(a) Direct | (i) 200
+(b) Register indirect | (ii) 902
+(c) Indec with R1 as the index register | (iii) 400
+(d) Relative | (iv) 600
+Choose the correct option from those given below :
+§A (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)
+§B (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+§C (a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)
+§D (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+## 87
+Match List-I and List-II :
+List I | List II
+(a) Isolated I/O | (i) same set of control signal for I/O and memory communication
+(b) Memory mapped I/O | (ii) separate instructions for I/O and memory communication
+(c) I/O interface | (iii) require control signals to be transmitted between the communicating units
+(d) Asynchronous data transfer | (iv) resolve the difference in central computer and peripherals
+Choose the correct option from those given below :
+§A (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)
+§B (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+§C (a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)
+§D (a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)
+## 88
+Match List-I with List-II :
+List I | List II
+(a) Micro operation | (i) Specify micro operations
+(b) Micro programmed control unit | (ii) Improve CPU utilization
+(c) Interrupts | (iii) Control Memory
+(d) Micro instruction | (iv) Elementary operation performed on data stored in register
+Choose the correct option from those given below :
+§A (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+§B (a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)
+§C (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)
+§D (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)
+## 89
+[Figure 1: UML sequence diagram of the Weather Information System. Lifelines from left to right: Weather Information System (actor), :Sats Comm., :Weather Station, :Commslink, :Weather Data. Messages in order: request (report) from the actor to Sats Comm.; report weather ( ) from Sats Comm. to Weather Station; get (summary) from Weather Station to Commslink; Summarize ( ) from Commslink to Weather Data, with a return; send (report) from Commslink back to Weather Station; reply (report) from Sats Comm. back to the actor; acknowledge from the actor to Sats Comm.]
+The sequence diagram given in Figure 1 for the Weather Information System takes place when an external system requests the summarized data from the weather station. The increasing order of lifeline for the objects in the system are:
+§A Sat comms → Weather station → Commslink → Weather data
+§B Sat comms → Comms link → Weather station → Weather data
+§C Weather data → Comms link → Weather station → Sat Comms
+§D Weather data → Weather station → Comms link → Sat Comms
+## 90
+The Data Encryption Standard (DES) has a function consists of four steps. Which of the following is correct order of these four steps?
+§A an expansion permutation, S-boxes, an XOR operation, a straight permutation
+§B an expansion permutation, an XOR operation, S-boxes, a straight permutation
+§C a straight permutation. S-boxes, an XOR operation, an expansion permutation
+§D a straight permutation, an XOR operation, S-boxes, an expansion permutation
+## 91
+Passage (Q91-Q95): A flow graph F with entry node (1) and exit node (11) is shown below :
+[Flowgraph F: nodes 1, (2,3), (4,5), 6, 7, 8, 9, 10, 11 (nodes 2,3 are merged into one node and nodes 4,5 are merged into one node). Edges: 1 → (2,3); 1 → 11; (2,3) → 6; (2,3) → (4,5); 6 → 7; 6 → 8; 7 → 9; 8 → 9; 9 → 10; (4,5) → 10; 10 → 1.]
+How many nodes are there in flowgraph F?
+§A 9
+§B 10
+§C 11
+§D 12
+## 92
+Passage (Q91-Q95): A flow graph F with entry node (1) and exit node (11) is shown below :
+[Flowgraph F: nodes 1, (2,3), (4,5), 6, 7, 8, 9, 10, 11 (nodes 2,3 are merged into one node and nodes 4,5 are merged into one node). Edges: 1 → (2,3); 1 → 11; (2,3) → 6; (2,3) → (4,5); 6 → 7; 6 → 8; 7 → 9; 8 → 9; 9 → 10; (4,5) → 10; 10 → 1.]
+What is the cyclomatic complexity of flowgraph F?
+§A 2
+§B 3
+§C 4
+§D 5
+## 93
+Passage (Q91-Q95): A flow graph F with entry node (1) and exit node (11) is shown below :
+[Flowgraph F: nodes 1, (2,3), (4,5), 6, 7, 8, 9, 10, 11 (nodes 2,3 are merged into one node and nodes 4,5 are merged into one node). Edges: 1 → (2,3); 1 → 11; (2,3) → 6; (2,3) → (4,5); 6 → 7; 6 → 8; 7 → 9; 8 → 9; 9 → 10; (4,5) → 10; 10 → 1.]
+How many regions are there in flowgraph F ?
+§A 2
+§B 3
+§C 4
+§D 5
+## 94
+Passage (Q91-Q95): A flow graph F with entry node (1) and exit node (11) is shown below :
+[Flowgraph F: nodes 1, (2,3), (4,5), 6, 7, 8, 9, 10, 11 (nodes 2,3 are merged into one node and nodes 4,5 are merged into one node). Edges: 1 → (2,3); 1 → 11; (2,3) → 6; (2,3) → (4,5); 6 → 7; 6 → 8; 7 → 9; 8 → 9; 9 → 10; (4,5) → 10; 10 → 1.]
+How many nodes are there in the longest independent path?
+§A 6
+§B 7
+§C 8
+§D 9
+## 95
+Passage (Q91-Q95): A flow graph F with entry node (1) and exit node (11) is shown below :
+[Flowgraph F: nodes 1, (2,3), (4,5), 6, 7, 8, 9, 10, 11 (nodes 2,3 are merged into one node and nodes 4,5 are merged into one node). Edges: 1 → (2,3); 1 → 11; (2,3) → 6; (2,3) → (4,5); 6 → 7; 6 → 8; 7 → 9; 8 → 9; 9 → 10; (4,5) → 10; 10 → 1.]
+How many predicate nodes are there and what are their names?
+§A Three : (1, (2, 3), 6)
+§B Three : (1, 4, 6)
+§C Four : ((2, 3), 6, 10, 11)
+§D Four : ((2, 3), 6, 9, 10)
+## 96
+Passage (Q96-Q100): An organization needs to maintain database having five attributes A, B, C, D, E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :
+F : {A → BC, D → E, BC → D, A → D}.
+Consider a universal relation R(A, B, C, D, E) with functional dependency set F. Also all attributes are simple and take atomic values only.
+Minimal cover F' of functional dependency set F is
+§A F' = {A → B, A → C, BC → D, D → E}
+§B F' = {A → BC, B → D, D → E}
+§C F' = {A → B, A → C, A → D, D → E}
+§D F' = {A → B, A → C, B → D, C → D, D → E}
+## 97
+Passage (Q96-Q100): An organization needs to maintain database having five attributes A, B, C, D, E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :
+F : {A → BC, D → E, BC → D, A → D}.
+Consider a universal relation R(A, B, C, D, E) with functional dependency set F. Also all attributes are simple and take atomic values only.
+Identify primary key of table R with functional dependency set F
+§A BC
+§B AD
+§C A
+§D AB
+## 98
+Passage (Q96-Q100): An organization needs to maintain database having five attributes A, B, C, D, E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :
+F : {A → BC, D → E, BC → D, A → D}.
+Consider a universal relation R(A, B, C, D, E) with functional dependency set F. Also all attributes are simple and take atomic values only.
+Identify the normal form in which relation R belong to
+§A 1 NF
+§B 2 NF
+§C 3 N F
+§D B C N F
+## 99
+Passage (Q96-Q100): An organization needs to maintain database having five attributes A, B, C, D, E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :
+F : {A → BC, D → E, BC → D, A → D}.
+Consider a universal relation R(A, B, C, D, E) with functional dependency set F. Also all attributes are simple and take atomic values only.
+Identify the redundant functional dependency in F
+§A BC → D
+§B D → E
+§C A → D
+§D A → BC
+## 100
+Passage (Q96-Q100): An organization needs to maintain database having five attributes A, B, C, D, E. These attributes are functionally dependent on each other for which functionally dependency set F is given as :
+F : {A → BC, D → E, BC → D, A → D}.
+Consider a universal relation R(A, B, C, D, E) with functional dependency set F. Also all attributes are simple and take atomic values only.
+Assume that given table R is decomposed in two tables R1(A, B, C) with functional dependency set f1 = {A → B, A → C} and R2(A, D, E) with FD set F2 = {A → D, D → E}.
+Which of the following option is true w.r.t. given decomposition?
+§A Dependency preservation property is followed
+§B R1 and R2 are both in 2NF
+§C R2 is in 2NF and R3 is in 3NF
+§D R1 is in 3NF and R2 is in 2NF

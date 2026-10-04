@@ -1,0 +1,1099 @@
+## 1
+The number of positive integers not exceeding 100 that are either odd or the square of an integer is ____
+§A 63
+§B 59
+§C 55
+§D 50
+## 2
+How many ways are there to pack six copies of the same book into four identical boxes, where a box contains six books?
+§A 4
+§B 6
+§C 7
+§D 9
+## 3
+Which of the following pairs of propositions are not logically equivalent?
+§A ((p → r) ∧ (q → r)) and ((p ∨ q) → r)
+§B p ↔ q and (¬p ↔ ¬q)
+§C ((p ∧ q) ∨ (¬p ∧ ¬q)) and p ↔ q
+§D ((p ∧ q) → r) and ((p → r) ∧ (q → r))
+## 4
+Consider the following linear programming (LP):
+Max. z = 2x₁ + 3x₂
+Such that 2x₁ + x₂ ≤ 4
+x₁ + 2x₂ ≤ 5
+x₁, x₂ ≥ 0
+The optimum value of the LP is
+§A 23
+§B 9.5
+§C 13
+§D 8
+## 5
+Consider a machine with a byte addressable main memory of 2¹⁶ bytes and block size of 8 bytes. Assume that a direct mapped cache consisting of 32 lines used with this machine. How many bits will be there in Tag, line and word field of format of main memory addresses?
+§A 8, 5, 3
+§B 8, 6, 2
+§C 7, 5, 4
+§D 7, 6, 3
+## 6
+The following program is stored in memory unit of the basic computer. What is the content of the accumulator after the execution of program? (All location numbers listed below are in hexadecimal).
+Location | Instruction
+210 | CLA
+211 | ADD 217
+212 | INC
+213 | STA 217
+214 | LDA 218
+215 | CMA
+216 | AND 217
+217 | 1234H
+218 | 9CE2H
+§A 1002H
+§B 2011H
+§C 2022H
+§D 0215H
+## 7
+A non-pipeline system takes 50 ns to process a task. The same task can be processed in six-segment pipeline with a clockcycle of 10ns. Determine approximately the speedup ratio of the pipeline for 500 tasks.
+§A 6
+§B 4.95
+§C 5.7
+§D 5.5
+## 8
+What is the radix of the numbers if the solution to the quadratic equation x² − 10x + 26 = 0 is x = 4 and x = 7 ?
+§A 8
+§B 9
+§C 10
+§D 11
+## 9
+Consider the following pseudo-code fragment, where a and b are integer variables that have been initialized:
+/* Pre-conditions : (a > 1 ∧ a < b) * /
+/* Assume that overflow never occurs */
+```
+int x = 0; int p = 1;
+while (p < b){
+  p = p * a;
+  x = x + 1;
+}
+```
+When the while loop terminates, what will be the value of x in terms of a and b ?
+§A aᵇ
+§B bᵃ
+§C ⌊log_a b⌋ /* ⌊⌋ means floor */
+§D ⌈log_a b⌉ /* ⌈⌉ means ceil */
+## 10
+In HTML, <map> tag is used for
+§A defining a path between two nodes in an image
+§B defining clickable region in an image
+§C highlighting an area in an image
+§D defining the site-map of a web-site
+## 11
+Suppose you are compiling on a machine with 1-byte chars, 2-byte shorts, 4 -byte ints, and 8-byte doubles, and with alignment rules that require the address of every primitive data element to be an integer multiple of the element's size. Suppose further that the compiler is not permitted to reorder fields; padding is used to ensure alignment. How much space will be consumed by the following array?
+```
+struct {
+  short s;
+  char c;
+  short t;
+  char d;
+  double r;
+  int i;
+} A[10]; /*10-element array of structs*/
+```
+§A 150 bytes
+§B 320 bytes
+§C 240 bytes
+§D 200 bytes
+## 12
+Consider the following recursive Java function f that takes two long arguments and returns a float value:
+```
+public static float f(long m, long n) {
+  float result = (float)m / (float)n;
+  if (m < 0 || n < 0) return 0.0f;
+  else result += f(m * 2, n * 3);
+  return result;
+}
+```
+Which of the following real values best approximates the value of f(1, 3) ?
+§A 0.2
+§B 0.4
+§C 0.6
+§D 0.8
+## 13
+The data node and name node in HADOOP are
+§A Both Worker Nodes
+§B Both Master Nodes
+§C Worker Node and Master Node respectively
+§D Master Node and Worker Node respectively
+## 14
+Consider a relational schema S = (U, V, W, X, Y, Z) on which the following functional dependencies hold:
+{U → V, VW → X, Y → W, X → U}
+Which are the candidate keys among following options?
+§A UY, VY
+§B UY, VY, XY
+§C UYZ, VYZ, VWZ
+§D UYZ, VYZ, XYZ
+## 15
+Consider a hypothetical machine with 3 pages of physical memory, 5 pages of virtual memory, and ⟨A, B, C, D, A, B, E, A, B, C, D, E, B, A, B⟩ as the stream of page references by an application. If P and Q are the number of page faults that the application would incur with FIFO and LRU page replacement algorithms respectively, then (P, Q) = ____. (Assuming enough space for storing 3 page frames)
+§A (11, 10)
+§B (12, 11)
+§C (10, 11)
+§D (11, 12)
+## 16
+Consider a disk system having 60 cylinders. Disk requests are received by a disk drive for cylinders 10,22,20,2,40,6 and 38, in that order. Assuming the disk head is currently at cylinder 20 , what is the time taken to satisfy all the requests if takes 2 milliseconds to move from one cylinder to adjacent one and Shortest Seek Time First (SSTF) algorithm is used?
+§A 240 milliseconds
+§B 96 milliseconds
+§C 120 milliseconds
+§D 112 milliseconds
+## 17
+Suppose you have a Linux file system where the block size is 2 K bytes, a disk address is 32 bits, and an i-node contains the disk addresses of the first 12 direct blocks of file, a single indirect block, and a double indirect block. Approximately, what is the largest file that can be represented by an i-node?
+§A 513 Kbytes
+§B 513 MBytes
+§C 537 Mbytes
+§D 537 KBytes
+## 18
+Consider a single-level page table system, with the page table stored in the memory. If the hit rate to TLB is 80%, and it takes 15 nanoseconds to search the TLB, and 150 nanoseconds to access the main memory, then what is the effective memory access time, in nanoseconds?
+§A 185
+§B 195
+§C 205
+§D 175
+## 19
+Which of the following UML diagrams has a static view?
+§A Collaboration diagram
+§B Use-Case diagram
+§C State chart diagram
+§D Activity diagram
+## 20
+Modifying the software by restructuring is called
+§A Adaptive maintenance
+§B Corrective maintenance
+§C Perfective maintenance
+§D Preventive maintenance
+## 21
+A Company has a choice of two languages L₁ and L₂ to develop a software for their client. Number of LOC required to develop an application in L₂ is thrice the LOC in language L₁. Also, software has to be maintained for next 10 years. Various parameters for two languages are given below to decide which language should be preferred for development.
+PARAMETER | L₁ | L₂
+Man-year needed for development | LOC/1000 | LOC/1000
+Development cost | Rs. 70,000 | Rs. 90,000
+Cost of Maintenance per year | Rs. 1,00,000 | Rs. 40,000
+Total cost of project include cost of development and maintenance. What is the LOC for L₁ for which cost of developing the software with both languages must be same?
+§A 2000
+§B 6000
+§C 3000
+§D 5000
+## 22
+A Software project was estimated at 864 Function Points. A six person team will be assigned to project consisting of a requirement gathering person, one designer, two programmers and two testers. The salary of the designer is ₹ 70,000 per month, requirement gatherer is ₹ 50,000 per month, programmer is ₹ 60,000 per month and a tester is ₹ 60,000 per month. Average productivity for the team is 12 FP per person month. Which of the following represents the projected cost of the project?
+§A ₹ 33,20,000
+§B ₹ 43,20,000
+§C ₹ 33,10,000
+§D ₹ 22,10,000
+## 23
+A complete n-ary tree is a tree in which each node has n children or no children. Let I be the number of internal nodes and L be the number of leaves in a complete n-ary tree. If L = 41, and I = 10, What is the value of n ?
+§A 3
+§B 4
+§C 5
+§D 6
+## 24
+In a binary max heap containing n numbers, the smallest element can be found in ___ time.
+§A O(n)
+§B O(log₂ n)
+§C O(1)
+§D O(log₂ log₂ n)
+## 25
+If algorithm A and another algorithm B take log₂(n) and √n microseconds, respectively, to solve a problem, then the largest size n of a problem these algorithms can solve, respectively, in one second are ___ and ____
+§A 2^(10⁶) and 10⁶
+§B 2^(10⁶) and 10¹²
+§C 2^(10⁶) and 6.10⁶
+§D 2^(10⁶) and 6.10¹²
+## 26
+Let G be a directed graph whose vertex set is the set of numbers from 1 to 100 . There is an edge from a vertex i to a vertex j if and only if either j = i + 1 or j = 3i. The minimum number of edges in a path in G from vertex 1 to vertex 100 is ____
+§A 23
+§B 99
+§C 4
+§D 7
+## 27
+Consider L = L₁ ∩ L₂
+Where
+L₁ = {0ᵐ1ᵐ20ⁿ1ⁿ | m, n ≥ 0}
+L₂ = {0ᵐ1ⁿ2ᵏ | m, n, k ≥ 0}
+Then, the language L is
+§A Recursively enumerable but not context free
+§B Regular
+§C Context free but not regular
+§D Not recursive
+## 28
+Let L₁ and L₂ be languages over Σ = {a, b} represented by the regular expressions (a* + b)* and (a + b)* respectively.
+Which of the following is true with respect to the two languages?
+§A L₁ ⊂ L₂
+§B L₂ ⊂ L₁
+§C L₁ = L₂
+§D L₁ ∩ L₂ = ϕ
+## 29
+Which of the following statements is true?
+§A The union of two context free languages is context free.
+§B The intersection of two context free languages is context free.
+§C The complement of a context free language is context free.
+§D If a language is context free, it can always be accepted by a deterministic pushdown automaton.
+## 30
+Which of the following is not an intermediate code form?
+§A Syntax trees
+§B Three address codes
+§C Quadruples
+§D Post fix Notation.
+## 31
+Consider a code with only four valid code words: 0000000000,0000011111,1111100000, and 1111111111. This code has distance 5. If the code word arrived is 0000000111 then the original code word must be _____
+§A 0000011111
+§B 0000000000
+§C 1111100000
+§D 1111111111
+## 32
+Using 'RSA' public key cryptosystem, if P = 3, q = 11 and d = 7, find the value of e and encrypt the number ' 19 '.
+§A 20,19
+§B 33,11
+§C 3,28
+§D 77,28
+## 33
+Protocols in which the sender sends one frame and then waits for an acknowledgement before proceeding for next frame are called as ______
+§A Simplex protocols
+§B Unrestricted simplex protocols
+§C Simplex stop and wait protocols
+§D Restricted simplex protocols.
+## 34
+The period of a signal is 100 ms. Then the frequency of this signal in kilohertz is ______
+§A 10
+§B 10⁻¹
+§C 10⁻²
+§D 10⁻³
+## 35
+The process of removing details from a given state representation is called ______
+§A Extraction
+§B Mining
+§C Selection
+§D Abstraction
+## 36
+Which of the following is NOT true in problem solving in artificial intelligence?
+§A Implements heuristic search techniques
+§B Solution steps are not explicit
+§C Knowledge is imprecise
+§D It works on or implements repetition mechanism
+## 37
+If f(x)=x is my friend, and p(x)=x is perfect, then the correct logical translation of the statement "some of my friends are not perfect" is:
+§A ∀ₓ(f(x) ∧ ¬p(x))
+§B ∃ₓ(f(x) ∧ ¬p(x))
+§C ¬(f(x) ∧ ¬p(x))
+§D ∃ₓ(¬f(x) ∧ ¬p(x))
+## 38
+What kind of clauses are available in conjunctive normal form?
+§A Disjunction of literals
+§B Disjunction of variables
+§C Conjunction of literals
+§D Conjunction of variables.
+## 39
+Consider the following properties:
+A. Reflexive
+B. Antisymmetric
+C. Symmetric
+Let A = {a, b, c, d, e, f, g} and
+R = {(a, a), (b, b), (c, d), (c, g), (d, g), (e, e), (f, f), (g, g)}
+be a relation on (A). Which of the following property (properties) is (are) satisfied by the relation (R) ?
+§A Only A
+§B Only C
+§C Both A and B
+§D B and not A
+## 40
+Consider the following argument with premise ∀x(P(x)∨Q(x)) and conclusion: (∀xP(x))∨(∀xQ(x))
+Step | Reason
+(A) ∀x(P(x)∨Q(x)) | Premise
+(B) P(c)∨Q(c) | Universal instantiation from (A)
+(C) P(c) | Simplification from (B)
+(D) ∀xP(x) | Universal generalization of (C)
+(E) Q(c) | Simplification from (B)
+(F) ∀xQ(x) | Universal generalization of (E)
+(G) (∀xP(x))∨(∀xQ(x)) | Conjunction of (D) and (F)
+§A This is a valid argument.
+§B Steps (C) and (E) are not correct inferences
+§C Steps (D) and (F) are not correct inferences
+§D Step (G) is not a correct inference
+## 41
+Which of the following are applications of symbol table?
+(A) Storage allocation
+(B) Checking type compatability
+(C) Suppressing duplicate error messages
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A) and (C) only
+§C (B) and (C) only
+§D (A), (B) and (C)
+## 42
+Simplified expression/s for following Boolean function
+F(A, B, C, D) = Σ(0, 1, 2, 3, 6, 12, 13, 14, 15)
+is/are
+(A) A'B' + AB + A'C'D'
+(B) A'B' + AB + A'CD'
+(C) A'B' + AB + BC'D'
+(D) A'B' + AB + BCD'
+Choose the correct answer from the options given below:
+§A (A) only
+§B (B) only
+§C (A) and (B) only
+§D (B) and (D) only
+## 43
+Which of the following statements with respect to K-segment pipelining are true?
+(A) Maximum speedup that a pipeline can provide is k theoretically.
+(B) It is impossible to achieve maximum speedup k in k-segment pipeline.
+(C) All segments in pipeline take same time in computation.
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (B) and (C) only
+§C (A) and (C) only
+§D (A), (B) and (C)
+## 44
+Which of the following statements with respect to multiprocessor system are true?
+(A) Multiprocessor system is controlled by one operating system.
+(B) In Multiprocessor system, multiple computers are connected by the means of communication lines.
+(C) Multiprocessor system is classified as multiple instruction stream and multiple data stream system.
+Choose the correct answer from the options given below:
+§A (A) only
+§B (A) and (B) only
+§C (A) and (C) only
+§D (B) and (C) only
+## 45
+Which of the following statements regarding XML is/are True?
+(A) XML is a set of tags designed to tell browsers how to display text and images in a web page.
+(B) XML defines a syntax for representing data, but the meaning of data varies from application to application.
+(C) <Letter>, <LETTER>, and <letter> are three different tags in XML.
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A) and (C) only
+§C (B) and (C) only
+§D (A), (B) and (C)
+## 46
+In the context of 3D Computer graphics, which of the following statements is/are correct?
+(A) Under perspective projection, each set of parallel lines in the object do not stay parallel in the image (except those that are parallel to the viewplane to start with).
+(B) Applying a perspective transformation in the graphics pipeline to a vertex involves dividing by its ' (z) ' coordinate.
+(C) Perspective transformation is a linear transformation.
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A) and (C) only
+§C (B) and (C) only
+§D (A), (B) and (C)
+## 47
+Concerning phong shading and Gouraud shading in a 3D scene, which of the following statements are true?
+(A) Gouraud shading requires more computation than phong shading.
+(B) Gouraud shading linearly interpolates the color of an interior pixel from the color at the vertices.
+(C) Phong shading interpolates over the normal vectors specified at the vertices.
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A) and (C) only
+§C (B) and (C) only
+§D (A), (B) and (C)
+## 48
+In the context of concurrency control, a given pair of operations in a schedule is called conflict schedule if
+(A) At least one of the operations is write operation.
+(B) Both the operations are performed on the same data item.
+(C) Both the operations are performed by different transactions.
+(D) Both the operations are performed on different data items.
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A), (B) and (C) only
+§C (A), (C) and (D) only
+§D (C) and (D) only
+## 49
+Software reliability is described with respect to
+(A) Execution Time
+(B) Calendar Time
+(C) Clock Time
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (B) and (C) only
+§C (A), (B) and (C)
+§D (A) and (C) only
+## 50
+To create an object-behavioral model, the analyst performs the following steps:
+(A) Evaluates all use-cases
+(B) Builds state transition diagram for the system.
+(C) Reviews the object behaviour model to verify accuracy and consistency
+(D) Identifies events that do not derive the interaction sequence.
+Choose the correct answer from the options given below:
+§A (A), (B) and (C) only
+§B (A), (B) and (D) only
+§C (B), (C) and (D) only
+§D (A), (C) and (D) only
+## 51
+Which of the following is/are behavioral testing technique(s)?
+(A) Equivalence Partitioning
+(B) Graph-Based Teating Method
+(C) Boundary Value Analysis
+(D) Data flow Testing
+(E) Loop Testing
+Choose the correct answer from the options given below:
+§A (B) and (D) only
+§B (A), (B) and (C) only
+§C (D) and (E) only
+§D (A), (C) and (E) only
+## 52
+The running time of an algorithm is O(g(n)) if and only if:
+(A) its worst-case running time is O(g(n)) and its best-case running time is Ω(g(n)).
+(B) its worst-case running time is Ω(g(n)) and its best-case running time is O(g(n)).
+(C) O(g(n))=Ω(g(n)) (O= big O).
+(D) o(g(n))∩ω(g(n)) is non-empty. (o= small o)
+Choose the correct answer from the options given below:
+§A (A) only
+§B (B) only
+§C (C) only
+§D (D) only
+## 53
+Consider the following statements:
+(A) Any tree is 2-colorable
+(B) A graph G has no cycles of even length if it is bipartite.
+(C) A graph G is 2-colorable if it is bipartite.
+(D) A graph G can be colored with d+1 colors if d is the maximum degree of any vertex in the graph G.
+(E) A graph G can be colored with O(log|v|) colors if it has O(|v|) edges.
+Choose the correct answer from the options given below:
+§A (C) and (E) are incorrect
+§B (B) and (C) are incorrect
+§C (B) and (E) are incorrect
+§D (A) and (D) are incorrect
+## 54
+Which among the following statement(s) is (are) true?
+(A) A hash function takes a message of arbitrary length and generates a fixed length code.
+(B) A hash function takes a message of fixed length and generates a code of variable length.
+(C) A hash function may give same hash value for distinct messages.
+Choose the correct answer from the options given below:
+§A (A) only
+§B (B) and (C) only
+§C (A) and (C) only
+§D (B) only
+## 55
+Let G₁ and G₂ be arbitrary context free languages and R an arbitrary regular language. Consider the following problems:
+(A) Is L(G₁) = L(G₂) ?
+(B) Is L(G₂) ≤ L(G₁) ?
+(C) Is L(G₁) = R ?
+Which of the problems are undecidable?
+Choose the correct answer from the options given below:
+§A (A) only
+§B (B) only
+§C (A) and (B) only
+§D (A), (B) and (C)
+## 56
+Consider the following languages:
+L₁ = { a^(z^z) | z is an integer }
+L₂ = { a^(zz) | Z ≥ 0 }
+L₃ = {ωω | ω ∈ {a, b}*}
+[The exponents of L₁ and L₂ are typeset indistinctly in the source PDF.]
+Which of the languages is (are) regular?
+Choose the correct answer from the options given below:
+§A L₁ and L₂ only
+§B L₁ and L₃ only
+§C L₁ only
+§D L₂ only
+## 57
+Which of the following grammars is (are) ambiguous?
+(A) s → ss|asb|bsa | λ
+(B) s → asbs | bsas |λ
+(C) s → aAB
+A → bBb
+B → A | λ where λ denotes empty string
+Choose the correct answer from the options given below:
+§A (A) and (C) only
+§B (B) only
+§C (B) and (C) only
+§D (A) and (B) only
+## 58
+Which of the following cloud concept/s is/are related to pooling and sharing of resources?
+(A) Virtual Memory
+(B) Service
+(C) Virtualization
+Choose the correct answer from the options given below:
+§A (C) only
+§B (A) and (B) only
+§C (A) only
+§D (B) only
+## 59
+Post office protocol (POP) is a message access protocol which is used to extract message for client. In this regard, which of the following are true?
+(A) POP has two modes, Delete mode and keep
+(B) In Delete mode, mail is deleted from mail box after each retrival
+(C) In Delete mode, mail is deleted from mail box before each retrieval
+(D) In keep mode, mail is deleted before retrival
+(E) In keep mode, mail remains in mail box after retrival
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A), (D) and (E) only
+§C (A), (B), (C) and
+§D (A), (B) and (E) only
+## 60
+Firewall is a device that filters access to the protected network from the outside network. Firewalls can filter the packets on the basis of
+(A) Source IP Address
+(B) Destination IP Address
+(C) TCP Source Port
+(D) UDP Source Port
+(E) TCP Destination Port
+Choose the correct answer from the options given below:
+§A (A), (B) and (C) only
+§B (B) and (E) only
+§C (C) and (D) only
+§D (A), (B), (C), (D) and (E) only
+## 61
+Consider the statement below.
+A person who is radical (R) is electable (E) if he/she is conservative (C), but otherwise is not electable.
+Few probable logical assertions of the above sentence are given below.
+(A) (R ∧ E) ⇔ C
+(B) R ⇒ (E ⇔ C)
+(C) R ⇒ ((C ⇒ E) ∨ ¬E)
+(D) (¬R ∨ ¬E ∨ C) ∧ (¬R ∨ ¬C ∨ E)
+Which of the above logical assertions are true?
+Choose the correct answer from the options given below:
+§A (B) only
+§B (C) only
+§C (A) and (C) only
+§D (B) and (D) only
+## 62
+Which of the following statements are true?
+(A) A sentence α entails another sentence β if β is true in few worlds where α is true.
+(B) Forward chaining and backward chaining are very natural reasoning algorithms for knowledge bases in Horn form.
+(C) Sound inference algorithms derive all sentences that are entailed.
+(D) Propositional logic does not scale to environments of unbounded size.
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (B) and (C) only
+§C (C) and (D) only
+§D (B) and (D) only
+## 63
+Which of the following statements are true?
+(A) Minimax search is breadth-first; it processes all the nodes at a level before moving to a node in next level.
+(B) The effectiveness of the alpha-beta pruning is highly dependent on the order in which the states are examined.
+(C) The alpha-beta search algorithm computes the same optimal moves as minimax algorithm.
+(D) Optimal play in games of imperfect information does not require reasoning about the current and future belief states of each player.
+Choose the correct answer from the options given below:
+§A (A) and (C) only
+§B (A) and (D) only
+§C (B) and (C) only
+§D (C) and (D) only
+## 64
+Match List I with List II
+Let R₁ = {(1,1), (2,2), (3,3)} and R₂ = {(1,1), (1,2), (1,3), (1,4)}
+List I | List II
+(A) R₁ ∪ R₂ | (I) {(1,1), (1,2), (1,3), (1,4), (2,2), (3,3)}
+(B) R₁ − R₂ | (II) {(1,1)}
+(C) R₁ ∩ R₂ | (III) {(1,2), (1,3), (1,4)}
+(D) R₂ − R₁ | (IV) {(2,2), (3,3)}
+Choose the correct answer from the options given below:
+§A A-I, B-II, C-IV, D-III
+§B A-I, B-IV, C-III, D-II
+§C A-I, B-III, C-II, D-IV
+§D A-I, B-IV, C-II, D-III
+## 65
+Match List I with List II
+List I | List II
+(A) Handshaking | (I) I/O interface informs the CPU that device is ready for transfer
+(B) Programmed I/O | (II) requires two control signals working in opposite directions
+(C) Interrupt-initiated I/O | (III) has local memory & control large set of I/O devices.
+(D) I/O processor | (IV) require CPU to check the I/O flag & perform transfer
+Choose the correct answer from the options given below:
+§A A-I, B-II, C-III, D-IV
+§B A-II, B-IV, C-III, D-I
+§C A-II, B-IV, C-I, D-III
+§D A-IV, B-III, C-II, D-I
+## 66
+Match List-I with List-II. List I gives 3 × 3 matrices representing 2D transformations and List-II shows the corresponding transformation diagrams.
+List I (Matrix) | List II (Transformation Diagram)
+(A) [[2, 0, 0], [0, 2, 0], [0, 0, 1]] | (I) shear − x (2).a  [a vertical vector a is sheared so that its tip moves to the right]
+(B) [[1, 0, 2], [0, 1, 2], [0, 0, 1]] | (II) scale (2, 2).a  [vector a is stretched to twice its length in the same direction]
+(C) [[0.5, −0.866, 0], [0.866, 0.5, 0], [0, 0, 1]] | (III) rotate(60°).a  [horizontal vector a is rotated by 60° counter-clockwise]
+(D) [[1, 2, 0], [0, 1, 0], [0, 0, 1]] | (IV) translate (2, 2).a  [vector a is moved by (2, 2) without changing its length or direction]
+Choose the correct answer from the options given below:
+§A A-IV, B-II, C-III, D-I
+§B A-IV, B-III, C-II, D-I
+§C A-III, B-II, C-IV, D-I
+§D A-II, B-IV, C-III, D-I
+## 67
+Match List I with List II.
+List I (E-R symbols) | List II (Description)
+(A) [Figure: rectangle drawn with a double outline] | (I) Key Attribute Type
+(B) [Figure: line joined to an ellipse with a single underline inside] | (II) Weak Entity Type
+(C) [Figure: line joined to a double-outlined ellipse] | (III) Total Participation of Entity in a relation
+(D) [Figure: entity E1 joined by a single line to diamond R, which is joined to entity E2 by a double line] | (IV) Multivalue Attribute type
+Choose the correct answer from the options given below:
+§A A-II, B-IV, C-III, D-I
+§B A-IV, B-I, C-II, D-III
+§C A-II, B-I, C-IV, D-III
+§D A-III, B-IV, C-I, D-II
+## 68
+Match List I with List II.
+With reference to CMM developed by Software Engineering Institute (SEI)
+List I | List II
+(A) INITIAL | (I) Process measurement
+(B) REPEATABLE | (II) Process definition
+(C) DEFINED | (III) Project management
+(D) MANAGED | (IV) ADHOC
+Choose the correct answer from the options given below:
+§A A-III, B-IV, C-II, D-I
+§B A-IV, B-III, C-I, D-II
+§C A-IV, B-III, C-II, D-I
+§D A-III, B-IV, C-I, D-II
+## 69
+Match List I with List II
+List I | List II
+(A) Branch-and-bound | (I) Keeps track of all partial paths which can be candidate for further exploration.
+(B) Steepest-accent hill climbing | (II) Detects difference between current state and goal state.
+(C) Constraint satisfaction | (III) Discover problem state (s) that satisfy a set of constraints.
+(D) Means-end-analysis | (IV) Consider all moves from current state and select best move.
+Choose the correct answer from the options given below:
+§A A-I, B-IV, C-III, D-II
+§B A-I, B-II, C-III, D-IV
+§C A-II, B-I, C-III, D-IV
+§D A-II, B-IV, C-III, D-I
+## 70
+Match List I with List II
+List I | List II
+(A) Topological sort of DAG | (I) O(V+E)
+(B) Kruskal's MST algorithm | (II) O(VE)
+(C) Bellman-Ford's single-source shortest path algorithm | (III) θ(V + E)
+(D) Floyd-Warshall's all pair shortest path algorithm | (IV) θ(V³)
+Choose the correct answer from the options given below:
+§A A-I, B-III, C-IV, D-II
+§B A-III, B-I, C-IV, D-II
+§C A-III, B-I, C-II, D-IV
+§D A-I, B-III, C-II, D-IV
+## 71
+Match List I with List II:
+L_R : Regular language, L_CF: Context free language
+L_REC : Recursive language, L_RE : Recursively enumerable language.
+List I | List II
+(A) Recursively Enumerable language | (I) L̄_REC ∪ L_RE
+(B) Recursive language | (II) L̄_CF ∪ L_REC
+(C) Context Free language | (III) L_R* ∩ L_CF
+Choose the correct answer from the options given below:
+§A A-II, B-III, C-I
+§B A-III, B-I, C-II
+§C A-I, B-II, C-III
+§D A-II, B-I, C-III
+## 72
+Match List I with List II
+List I | List II
+(A) Sreial Line IP (SLIP) | (I) Application layer
+(B) Border Gateway Protocol (BGP) | (II) Transport layer
+(C) User Data Protocol (UDP) | (III) Data Link layer
+(D) Simple Network Management Protocol | (IV) Network layer
+Choose the correct answer from the options given below:
+§A A-I, B-II, C-III, D-IV
+§B A-III, B-IV, C-II, D-I
+§C A-II, B-III, C-IV, D-I
+§D A-III, B-I, C-IV, D-II
+## 73
+Match List I with List II
+List I | List II
+(A) Greedy Best-First Search | (I) Space complexity is O(d) where d=depth of the deepest optimal solution.
+(B) A* | (II) Incomplete even if the search space is finite.
+(C) Recursive Best-First Search | (III) Optimal if the optimal solution is reachable; otherwise returns the best reachable optimal solution.
+(D) SMA* | (IV) Computation and space complexity are too high.
+Choose the correct answer from the options given below:
+§A A-II, B-IV, C-I, D-III
+§B A-II, B-III, C-I, D-IV
+§C A-III, B-II, C-IV, D-I
+§D A-III, B-IV, C-II, D-I
+## 74
+Find the lexicographic ordering of the bit strings given below based on the ordering 0 < 1.
+(A) 001
+(B) 010
+(C) 011
+(D) 0001
+(E) 0101
+Choose the correct answer from the options given below:
+§A 001 < 010 < 011 < 0001 < 0101
+§B 0001 < 001 < 010 < 0101 < 011
+§C 0001 < 0101 < 001 < 010 < 011
+§D 001 < 010 < 0001 < 0101 < 011
+## 75
+Arrange the following types of machine in descending order of complexity.
+(A) SISD
+(B) MIMD
+(C) SIMD
+Choose the correct answer from the options given below:
+§A A, B, C
+§B C, B, A
+§C B, C, A
+§D C, A, B
+## 76
+Given below are different properties of 3D projections from A-D. Identify the correct order on the basis of property true of (i) a perspective projection only, (ii) an orthographic projection only, (iii) both orthographic and projective transformations and (iv) neither orthographic nor projective transformation, respectively.
+(A) Straight lines are mapped to straight lines.
+(B) Distances and angles are (in general) preserved.
+(C) Far away objects appear the same size as closer ones.
+(D) Requires homogeneous coordinates in order for it to be encoded into a linear transformation.
+Choose the correct answer from the options given below:
+§A D, C, B, A
+§B B, C, D, A
+§C D, C, A, B
+§D C, D, B, A
+## 77
+Arrange the following types of Cohesion from best to worst type.
+(A) Logical Cohesion
+(B) Sequential Cohesion
+(C) Communication Cohesion
+(D) Temporal Cohesion
+(E) Procedural Cohesion
+Choose the correct answer from the options given below:
+§A A → D → E → C → B
+§B A → E → D → C → B
+§C B → E → C → D → A
+§D B → C → E → D → A
+## 78
+Consider the undirected graph below:
+[Figure: weighted undirected graph on vertices a, b, c, d, e, f, g, h, i. Edges: a-b = 4, a-h = 8, b-c = 8, b-h = 11, c-d = 7, c-i = 2, c-f = 4, d-e = 9, d-f = 14, e-f = 10, f-g = 2, g-h = 1, g-i = 6, h-i = 7.]
+Using Prim's algorithm to construct a minimum spanning tree starting with node a, which one of the following sequences of edges represents a possible order in which the edges would be added to construct the minimum spanning tree?
+§A (a,b), (a,h), (g,h), (f,g), (c,f), (c,i), (c,d), (d,e)
+§B (a,b, (b,h), (g,h), (g,i), (c,i), (c,f), (c,d), (d,e)
+§C (a,b), (b,c), (c,i), (c,f), (f,g), (g,h), (c,d), (d,e)
+§D (a,b), (g,h), (g,f), (c,f), (c,i), (f,e), (b,c), (d,e)
+## 79
+Consider the following regular expressions:
+(a) r = a(b + a)*
+(b) s = a(a + b)⁺
+(c) t = aa*b
+Choose the correct answer from the options given below based on the relation between the languages generated by the regular expressions above:
+§A L(r) ⊆ L(s) ⊆ L(t)
+§B L(r) ⊇ L(s) ⊇ L(t)
+§C L(r) ⊇ L(t) ⊇ L(s)
+§D L(s) ⊇ L(t) ⊇ L(r)
+## 80
+Given below are two statements:
+Statement I : 5 divides n⁵ − n whenever n is a nonnegative integer.
+Statement II : 6 divides n³ − n whenever n is a nonnegative integer.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 81
+Given below are two statements:
+Statement I : Hardwired control unit can be optimized to produce fast mode of operation.
+Statement II : Indirect addressing mode needs two memory reference to fetch the operand.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 82
+Given below are two statements:
+Statement I : Bezier curves are curves that interpolate all of their control points.
+Statement II : A cubic bezier curve has four control points.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 83
+Given below are two statements:
+If two variables V₁ and V₂ are used for clustering, then consider the following statements for k means clustering with k = 3
+Statement I : If V₁ and V₂ have correlation of 1 the cluster centroid will be in straight line.
+Statement II : If V₁ and V₂ have correlation of 0 the cluster centroid will be in straight line.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 84
+Assuming that the system call fork () never fails, consider the following C programs P1 and P2 executed on a UNIX / Linux system:
+/* P1 */
+```
+int main () {
+fork ();
+fork ();
+fork ();
+print("Happy\n");
+}
+```
+/* P2 */
+```
+int main () {
+fork();
+print("Happy\n");
+fork();
+print("Happy\n");
+fork();
+print("Happy\n ");
+}
+```
+Statement I: P1 displays "Happy" 8 times.
+Statement II: P2 displays "Happy" 12 times.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 85
+Given below are two statements:
+Statement I: Quality control involves the series of inspections, reviews and tests used throughout the software process, to ensure each work product meets the requirements placed upon it.
+Statement II : Quality assurance consists of auditing and reporting functions of management.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 86
+Let G be a simple undirected graph, T_D be a DFS tree on G, and T_B be the BFS tree on G. Consider the following statements.
+Statement I : No edge of G is a cross with respect to T_D
+Statement II : For every edge (u, v) of G, if u is at depth i and v is at depth j in T_B then |i − j| = 1.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 87
+Given below are two statements:
+Statement I : The problem "Is L₁ ∧ L₂ = ϕ ? " is undecidable for context sensitive languages L₁ and L₂.
+Statement II : The problem "Is W∈L?" is decidable for context sensitive language L, (where W is a string).
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 88
+Given below are two statements:
+Statement I: The laws of nature put two fundamental limits on the data rate of a channel. The H.Nyquist limit restricts the number of independent samples per second to twice the bandwidth in a Noiseless channel.
+Statement II: Shannon's major result about noised channel is that the maximum data rate of a channel whose bandwidth is HHz, and whose signal-to-noise ratio is S/N is given by:
+Maximum number of bits/sec = H log₂(1 + S/N)
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 89
+Given below are two statements:
+Statement I: In Ceasar Cipher each letter of Plain text is replaced by another letter for encryption.
+Statement II: The Diffie-Hellman algorithm is used for the exchange of secrete keys.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 90
+Given below are two statements:
+Statement I: A genetic algorithm is a stochastic hill-climbing search in which a large population of states is maintained.
+Statement II: In nondeterministic environments, agents can apply AND-OR search to generate contingent plans that reach the goal regardless of which outcomes occur during execution.
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 91
+Passage (Q91-Q95): Questions 91-95 concern a disk with a sector size of 512 bytes, 2000 tracks per surface, 50 sectors per track, five double-sided platters, and average seek time of 10 milliseconds.
+If T is the capacity of a track in bytes, and S is the capacity of each surface in bytes, then (T, S)= ____
+§A (50 K, 50000K)
+§B (25 K, 25000K)
+§C (25 K, 50000K)
+§D (40 K, 36000K)
+## 92
+Passage (Q91-Q95): Questions 91-95 concern a disk with a sector size of 512 bytes, 2000 tracks per surface, 50 sectors per track, five double-sided platters, and average seek time of 10 milliseconds.
+What is the capacity of the disk, in bytes?
+§A 25,000 K
+§B 500,000 K
+§C 250,000 K
+§D 50,000 K
+## 93
+Passage (Q91-Q95): Questions 91-95 concern a disk with a sector size of 512 bytes, 2000 tracks per surface, 50 sectors per track, five double-sided platters, and average seek time of 10 milliseconds.
+Given below are two statements:
+Statement I: The disk has a total number of 2000 cylinders.
+Statement II: 51200 bytes is not a valid block size for the disk.
+In the light of the above statements, choose the correct answer from the options given below:
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 94
+Passage (Q91-Q95): Questions 91-95 concern a disk with a sector size of 512 bytes, 2000 tracks per surface, 50 sectors per track, five double-sided platters, and average seek time of 10 milliseconds.
+If the disk platters rotate at 5400 rpm (revolutions per minute), then approximately what is the maximum rotational delay?
+§A 0.011 seconds
+§B 0.11 seconds
+§C 0.0011 seconds
+§D 1.1 seconds
+## 95
+Passage (Q91-Q95): Questions 91-95 concern a disk with a sector size of 512 bytes, 2000 tracks per surface, 50 sectors per track, five double-sided platters, and average seek time of 10 milliseconds.
+If one track of data can be transferred per revolution, then what is the data transfer rate?
+§A 2,850 KBytes/second
+§B 4,500 KBytes/second
+§C 5,700 KBytes/second
+§D 2,250 KBytes/second
+## 96
+Passage (Q96-Q100): Consider the following table structures related to a university for the below Questions-
+EMPLOYEE
+NAME | VARCHAR (30) | NOT NULL
+EID | VARCHAR (10) | NOT NULL
+DEPTNO | INT (5) | NOT NULL
+HODEID | VARCHAR (10) |
+SALARY | INT (10) |
+PRIMARY KEY (EID),
+FOREIGN KEY (HODEID) REFRENCES EMPLOYEE (EID).
+FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT (DID);
+DEPARTMENT
+DID | INT (5) | NOT NULL
+DNAME | VARCHAR (30) | NOT NULL
+HODID | VARCHAR (10) | NOT NULL
+HODNAME | VARCHAR (30) |
+PRIMARY KEY (DID),
+UNIQUE (DNAME),
+FOREIGN KEY (HODID) REFRENCES EMPLOYEE (EID);
+PROJECT WORK
+EMPID | VARCHAR (10) | NOT NULL
+PROJNO | INT (5) | NOT NULL
+PROJECTLOC | VARCHAR (30) | NOT NULL
+PRIMARY KEY (EMPID, PROJNO),
+FOREIGN KEY (EMPID) REFRENCES EMPLOYEE (EID),
+On the basis of above given table structures, retrieve the distinct employee ID (EMPID) of all employees of university who are working on project No.20, 30 and 40.
+§A SELECT EMPID
+FROM PROJECTWORK
+WHERE PROJNO(=(20,30,40);
+§B SELECT EMPID
+FROM PROJECTWORK
+WHERE PROJNO IN (20,30,40);
+§C SELECT DISTINCT EMPID
+FROM PROJECTWORK
+WHERE PROJNO IN (20,30,40);
+§D SELECT DISTINCT EMPID
+FROM PROJECTWORK
+WHERE PROJNO=20,30,40;
+## 97
+Passage (Q96-Q100): Consider the following table structures related to a university for the below Questions-
+EMPLOYEE
+NAME | VARCHAR (30) | NOT NULL
+EID | VARCHAR (10) | NOT NULL
+DEPTNO | INT (5) | NOT NULL
+HODEID | VARCHAR (10) |
+SALARY | INT (10) |
+PRIMARY KEY (EID),
+FOREIGN KEY (HODEID) REFRENCES EMPLOYEE (EID).
+FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT (DID);
+DEPARTMENT
+DID | INT (5) | NOT NULL
+DNAME | VARCHAR (30) | NOT NULL
+HODID | VARCHAR (10) | NOT NULL
+HODNAME | VARCHAR (30) |
+PRIMARY KEY (DID),
+UNIQUE (DNAME),
+FOREIGN KEY (HODID) REFRENCES EMPLOYEE (EID);
+PROJECT WORK
+EMPID | VARCHAR (10) | NOT NULL
+PROJNO | INT (5) | NOT NULL
+PROJECTLOC | VARCHAR (30) | NOT NULL
+PRIMARY KEY (EMPID, PROJNO),
+FOREIGN KEY (EMPID) REFRENCES EMPLOYEE (EID),
+Given below are two statements to find the sum of salaries of all employees of the English department as well as the maximum, minimum and average salary in English department.
+STATEMENT I : SELECT SUM (SALARY), MAX (SALARY), MIN (SALARY), AVG (SALARY) FROM EMPLOYEE, DEPARTMENT
+WHERE DEPTNO=DID
+AND DNAME='ENGLISH';
+STATEMENT II: SELECT SUM (SALARY), MAX (SALARY), MIN (SALARY), AVG (SALARY) FROM EMPLOYEE, DEPARTMENT
+WHERE DNAME='ENGLISH';
+In the light of the above statements, choose the correct answer from the options given below
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is correct but Statement II is false
+§D Statement I is incorrect but Statement II is true
+## 98
+Passage (Q96-Q100): Consider the following table structures related to a university for the below Questions-
+EMPLOYEE
+NAME | VARCHAR (30) | NOT NULL
+EID | VARCHAR (10) | NOT NULL
+DEPTNO | INT (5) | NOT NULL
+HODEID | VARCHAR (10) |
+SALARY | INT (10) |
+PRIMARY KEY (EID),
+FOREIGN KEY (HODEID) REFRENCES EMPLOYEE (EID).
+FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT (DID);
+DEPARTMENT
+DID | INT (5) | NOT NULL
+DNAME | VARCHAR (30) | NOT NULL
+HODID | VARCHAR (10) | NOT NULL
+HODNAME | VARCHAR (30) |
+PRIMARY KEY (DID),
+UNIQUE (DNAME),
+FOREIGN KEY (HODID) REFRENCES EMPLOYEE (EID);
+PROJECT WORK
+EMPID | VARCHAR (10) | NOT NULL
+PROJNO | INT (5) | NOT NULL
+PROJECTLOC | VARCHAR (30) | NOT NULL
+PRIMARY KEY (EMPID, PROJNO),
+FOREIGN KEY (EMPID) REFRENCES EMPLOYEE (EID),
+Which of the following query/queries return the employee ID and name of employees whose salary is greater than the salary of all employees in department number 20 of university? Order results by employee ID (refer to table structures given above).
+(A) SELECT EID, NAME
+FROM EMPLOYEE
+WHERE SALARY>(SELECT SALARY FROM EMPLOYEE WHERE DEPTNO=20)
+ORDER BY EID;
+(B) SELECT EID, NAME
+FROM EMPLOYEE WHERE SALARY>(SELECT SALARY FROM EMPLOYEE WHERE DEPTNO =20 );
+(C) SELECT EID, NAME
+FROM EMPLOYEE
+WHERE SALARY>ALL(SELECT SALARY FROM EMPLOYEE WHERE DEPTNO =20)
+ORDER BY EID
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A) and (C) only
+§C (B) only
+§D (C) only
+## 99
+Passage (Q96-Q100): Consider the following table structures related to a university for the below Questions-
+EMPLOYEE
+NAME | VARCHAR (30) | NOT NULL
+EID | VARCHAR (10) | NOT NULL
+DEPTNO | INT (5) | NOT NULL
+HODEID | VARCHAR (10) |
+SALARY | INT (10) |
+PRIMARY KEY (EID),
+FOREIGN KEY (HODEID) REFRENCES EMPLOYEE (EID).
+FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT (DID);
+DEPARTMENT
+DID | INT (5) | NOT NULL
+DNAME | VARCHAR (30) | NOT NULL
+HODID | VARCHAR (10) | NOT NULL
+HODNAME | VARCHAR (30) |
+PRIMARY KEY (DID),
+UNIQUE (DNAME),
+FOREIGN KEY (HODID) REFRENCES EMPLOYEE (EID);
+PROJECT WORK
+EMPID | VARCHAR (10) | NOT NULL
+PROJNO | INT (5) | NOT NULL
+PROJECTLOC | VARCHAR (30) | NOT NULL
+PRIMARY KEY (EMPID, PROJNO),
+FOREIGN KEY (EMPID) REFRENCES EMPLOYEE (EID),
+In reference to the above given table structures, which of the following query/queries will drop the 'SALARY' column from 'EMPLOYEE' table?
+(A) ALTER TABLE EMPLOYEE DROP SALARY CASCADE;
+(B) ALTER TABLE EMPLOYEE DROP SALARY RESTRICT;
+(C) ALTER EMPLOYEE DROP SALARY;
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A) and (C) only
+§C (B) and (C) only
+§D (A) only
+## 100
+Passage (Q96-Q100): Consider the following table structures related to a university for the below Questions-
+EMPLOYEE
+NAME | VARCHAR (30) | NOT NULL
+EID | VARCHAR (10) | NOT NULL
+DEPTNO | INT (5) | NOT NULL
+HODEID | VARCHAR (10) |
+SALARY | INT (10) |
+PRIMARY KEY (EID),
+FOREIGN KEY (HODEID) REFRENCES EMPLOYEE (EID).
+FOREIGN KEY (DEPTNO) REFRENCES DEPARTMENT (DID);
+DEPARTMENT
+DID | INT (5) | NOT NULL
+DNAME | VARCHAR (30) | NOT NULL
+HODID | VARCHAR (10) | NOT NULL
+HODNAME | VARCHAR (30) |
+PRIMARY KEY (DID),
+UNIQUE (DNAME),
+FOREIGN KEY (HODID) REFRENCES EMPLOYEE (EID);
+PROJECT WORK
+EMPID | VARCHAR (10) | NOT NULL
+PROJNO | INT (5) | NOT NULL
+PROJECTLOC | VARCHAR (30) | NOT NULL
+PRIMARY KEY (EMPID, PROJNO),
+FOREIGN KEY (EMPID) REFRENCES EMPLOYEE (EID),
+Refer table, structures given above. The university decided to give all employees in the 'SCIENCE' department a 20% rise in salary. Which of the following query/queries will compute the above results?
+(A) UPDATE EMPLOYEE
+SET SALARY = SALARY * 1.20
+WHERE DEPT NO. IN (SELECT DID FROM DEPARTMENT WHERE DNAME='SCIENCE');
+(B) UPDATE TABLE EMPLOYEE
+SET SALARY = SALARY * 1.20
+WHERE DNAME='SCIENCE';
+(C) ALTER TABLE EMPLOYEE
+SET SALARY=SALARY * 1.20
+WHERE DEPTNO. IN (SELECT DNAME FROM DEPARTMENT WHERE DNAME = 'SCIENCE')
+Choose the correct answer from the options given below:
+§A (A) and (B) only
+§B (A) only
+§C (B) and (C) only
+§D (C) only

@@ -13,6 +13,7 @@ import { useSettings } from "@/lib/settings"
 import { UNITS } from "@/lib/constants"
 import { secondsSince, shuffle } from "@/lib/analytics"
 import { OPTION_KEYS, type Question } from "@/lib/types"
+import InlineImages from "./InlineImages"
 
 export default function SwipeQuiz() {
   const { questions: allQuestions, loading: storeLoading, logAttempt } = useStudyData()
@@ -351,7 +352,7 @@ export default function SwipeQuiz() {
                           }`}>
                             {optKey}
                           </span>
-                          <span className="leading-snug">{optText}</span>
+                          <span className="leading-snug"><InlineImages text={optText} /></span>
                         </button>
                       )
                     })}
@@ -367,7 +368,7 @@ export default function SwipeQuiz() {
                         Correct Answer is Option {currentQ.answer}:
                       </div>
                       <p className="text-[10.5px] sm:text-[11px] text-neutral-700 dark:text-neutral-300 leading-relaxed font-semibold">
-                        {currentQ.options[currentQ.answer as keyof typeof currentQ.options]}
+                        <InlineImages text={currentQ.options[currentQ.answer as keyof typeof currentQ.options]} />
                       </p>
                     </div>
 

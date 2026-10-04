@@ -1,0 +1,456 @@
+## 1
+Passage (Q1-Q5): The following table shows the number of employees working in five different colleges A-E, alongwith the ratio of Males to Females [M : F] among them. Based on the data in the table, answer the questions that follow.
+College-wise Details of Employees
+College | Number of Employees | Ratio M : F
+A | 3040 | 13 : 6
+B | 3360 | 4 : 3
+C | 2920 | 9 : 11
+D | 2760 | 10 : 13
+E | 2840 | 13 : 7
+What is the total number of male employees taking all the Colleges together?
+§A 8120
+§B 8240
+§C 8360
+§D 8560
+## 2
+Passage (Q1-Q5): The following table shows the number of employees working in five different colleges A-E, alongwith the ratio of Males to Females [M : F] among them. Based on the data in the table, answer the questions that follow.
+College-wise Details of Employees
+College | Number of Employees | Ratio M : F
+A | 3040 | 13 : 6
+B | 3360 | 4 : 3
+C | 2920 | 9 : 11
+D | 2760 | 10 : 13
+E | 2840 | 13 : 7
+What is the average number of female employees taking all the colleges together ?
+§A 1312
+§B 1372
+§C 1336
+§D 1292
+## 3
+Passage (Q1-Q5): The following table shows the number of employees working in five different colleges A-E, alongwith the ratio of Males to Females [M : F] among them. Based on the data in the table, answer the questions that follow.
+College-wise Details of Employees
+College | Number of Employees | Ratio M : F
+A | 3040 | 13 : 6
+B | 3360 | 4 : 3
+C | 2920 | 9 : 11
+D | 2760 | 10 : 13
+E | 2840 | 13 : 7
+The number of male employees working in Colleges A and C together is approximately ________% more than the number of female employees in colleges B and D together.
+§A 9
+§B 15
+§C 11
+§D 13
+## 4
+Passage (Q1-Q5): The following table shows the number of employees working in five different colleges A-E, alongwith the ratio of Males to Females [M : F] among them. Based on the data in the table, answer the questions that follow.
+College-wise Details of Employees
+College | Number of Employees | Ratio M : F
+A | 3040 | 13 : 6
+B | 3360 | 4 : 3
+C | 2920 | 9 : 11
+D | 2760 | 10 : 13
+E | 2840 | 13 : 7
+What is the ratio of female employees working in College D to that in College E ?
+§A 7 : 4
+§B 780 : 497
+§C 390 : 491
+§D 9 : 5
+## 5
+Passage (Q1-Q5): The following table shows the number of employees working in five different colleges A-E, alongwith the ratio of Males to Females [M : F] among them. Based on the data in the table, answer the questions that follow.
+College-wise Details of Employees
+College | Number of Employees | Ratio M : F
+A | 3040 | 13 : 6
+B | 3360 | 4 : 3
+C | 2920 | 9 : 11
+D | 2760 | 10 : 13
+E | 2840 | 13 : 7
+The number of employees working in College C is approximately ________% more than that in College D.
+§A 8
+§B 6
+§C 4
+§D 10
+## 6
+An economics teacher wants to create an infographics to explain supply and demand to her students.
+Which of the following tools would be most suitable?
+§A Edpuzzle
+§B Canva
+§C Quizlet
+§D Mindmeister
+## 7
+Given below are two statements :
+Statement I : Norm referencing is used to interpret a score of an individual by comparing it with those of other individuals.
+Statement II : Criterion referencing is used to interpret a person's performance by comparing it to some specified behavioural domain.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 8
+Which of the following are the elements of observational learning ?
+A. Production
+B. Attention
+C. Identification
+D. Retention
+E. Motivation
+Choose the correct answer from the options given below :
+§A (B), (C) and (D) Only
+§B (A) and (E) Only
+§C (A), (B), (D) and (E) Only
+§D (C) Only
+## 9
+In 'VARK' model of learning styles, 'A' stands for _______.
+§A Auspicious
+§B Augmentary
+§C Authentic
+§D Aural
+## 10
+When a very bright light is incident on our eyes, we immediately close our eyelids.
+This is an example of _________.
+§A Biological instincts
+§B Reflex actions
+§C Desired instincts
+§D Intrapersonal instincts
+## 11
+Identify the disadvantages of open ended questions in survey research.
+A. The questions do not suggest certain kinds of answer to respondents.
+B. They are time consuming for interviewers to administer.
+C. They require greater effort from respondents.
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (A) and (C) Only
+§D (A), (B) and (C)
+## 12
+In a reference written in APA style, arrange the information pertaining to the reference in correct order.
+A. DOI number
+B. Volume number
+C. Name of author
+D. Title of the article
+Choose the correct answer from the options given below :
+§A (A), (B), (C), (D)
+§B (B), (A), (C), (D)
+§C (D), (C), (B), (A)
+§D (C), (D), (B), (A)
+## 13
+A research study is said to have heuristic value if :
+§A It leads to no further research
+§B It generates more research
+§C Its results lack consistency
+§D Its results lack validity
+## 14
+An entrance examination with objective type questions is conducted. For each correct answer, 1 mark is awarded and for each incorrect answer 0.25 marks are deducted. The number of marks scored by candidates who appeared in the examination, is an example of :
+§A nominal variable
+§B discrete variable
+§C ordinal variable
+§D continuous variable
+## 15
+Given below are two statements :
+Statement I: Medical research usually involves pain or distress in animals.
+Statement II: Psychological research is usually benign and may involve little, if any, discomfort for the animals.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 16
+A photograph constitutes a/an :
+§A Protective text
+§B Refined text
+§C Closed text
+§D Open text
+## 17
+The Buddhist concept of communication is marked by :
+§A Mono-causality
+§B Dyadic causality
+§C Multi-causality
+§D Skewed causality
+## 18
+At present, cyber communication is a :
+§A Fictitious reality
+§B Palpable reality
+§C Futuristic reality
+§D Conventional reality
+## 19
+The main objectives of public policy sphere communication is to involve citizens in :
+A. Idea generation
+B. Policy critique
+C. Innovative policy practices
+D. Ignoring oppositional views
+E. Promotion of stereotypes
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (B), (C) and (D) Only
+§C (C), (D) and (E) Only
+§D (A), (D) and (E) Only
+## 20
+Given below are two statements :
+Statement I: Western communication models examined the relationship among communicative elements on an individual basis.
+Statement II: The Buddhist concept of communication emphasizes the contextualisation of each of the communicative elements.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 21
+A man, a woman and a boy can do a piece of work in 6, 9 and 18 days, respectively. How many boys should assist one man and one woman to do the work in one day?
+§A 13
+§B 15
+§C 11
+§D 10
+## 22
+A family consists of 6 members namely A, B, C, D, E and F. B is the brother-in-law of C's mother. C is the father of F. D is the father of A and F is the grandson of D. There are two female members in the family. Which of the following pairs represent the female members in the family?
+§A A and D
+§B D and E
+§C A and E
+§D B and C
+## 23
+Find the number that can replace question mark (?) in the series given below.
+1.5, 5, 10.5, 18, 27.5, 39, ?, ...
+§A 48.5
+§B 52.5
+§C 62.5
+§D 72.5
+## 24
+A child is looking for his father. He goes 100 meter towards east and then turns to his right and goes 30 meters. From there the child again turns to his right and goes for 40 meters. Where he finds his father at his uncle's place. How far is his uncle's place from the starting point of the child?
+§A 30√5 meter
+§B 40 meter
+§C 40√5 meter
+§D 30√10 meter
+## 25
+In a certain coding language :
+(a) 1000 i.e. 10³ is coded as 1331
+(b) 125 i.e. 5³ is coded as 216
+How 729 will be coded in that language ?
+§A 1000
+§B 1728
+§C 1331
+§D 2197
+## 26
+Which of the following statements are contradictory to each other?
+A. All plants are fungi
+B. No plants are fungi
+C. Some plants are not fungi
+D. Some plants are fungi
+Choose the correct answer from the options given below :
+§A (B) and (D) Only
+§B (A) and (B) Only
+§C (C) and (D) Only
+§D (A) and (D) Only
+## 27
+If the statement - "All trucks are polluting vehicles" is given as false, then which of the following statements can be immediately inferred to be true?
+§A Some trucks are polluting vehicles.
+§B Some trucks are not polluting vehicles.
+§C No trucks are polluting vehicles.
+§D No polluting vehicles are trucks.
+## 28
+Which of the following statements is equivalent to the statement - "Some philosophers are not idealists."?
+§A Some philosophers are not non-idealists.
+§B No idealists are philosophers.
+§C Some non-idealists are not philosophers.
+§D Some non-idealists are not non-philosophers.
+## 29
+Which fallacy is involved in the following statement "Indian pharmaceutical companies are profitable, therefore, average Indian pharmaceutical company is profitable"?
+§A Fallacy of Division
+§B Hasty Generalisation
+§C Slippery Slope
+§D Fallacy of Accident
+## 30
+Given below are two statements :
+Statement I: The Aristotelian syllogism is only inductive and formal.
+Statement II: Nyāya syllogism is deductive - inductive and formal-material.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 31
+An advantage to a business that uses Intranet capabilities is that it allows employees to share the business's information with
+§A Customers
+§B Each other.
+§C Competitors
+§D Former employees
+## 32
+Consider the following MS-EXCEL screenshot that shows the product code, name of the state which produced the product and Quality of the product :
+ | A | B | C | D
+1 | Product Code | State | Quality |
+2 | A1 | HP | A |
+3 | A2 | MP | A |
+4 | A3 | UP | A |
+5 | A4 | UP | B |
+6 | A5 | UP | B |
+7 | | | |
+Which of the following EXCEL formulae can be typed in Cell D1 to answer the question : How many different product codes form UP are of Grade "A" quality?
+A. = COUNTIFS (B2:B6, "=UP", C2:C6," = A")
+B. = COUNTIFS (C2:C6, "=A', B2:B6," = UP")
+C. = COUNTIFS (B2:B6, "UP", C2:C6, "A")
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (A) and (C) Only
+§C (B) and (C) Only
+§D (A), (B) and (C)
+## 33
+Given below are two statements :
+Statement I: 'Disk defragmentation' makes files that are contiguous in a disk as fragmented.
+Statement II: A device controller that controls a device will deal with the operating system through device driver.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 34
+Which of the following statements regarding Artificial Intelligence (AI) is/are correct ?
+A. AI systems can be used in email spam filters.
+B. AI systems are capable of analyzing uncertain information.
+C. An AI system is a system for capturing, storing, processing and displaying data related to positions on earth's surface.
+Choose the correct answer from the options given below :
+§A (A) Only
+§B (A) and (B) Only
+§C (A) and (C) Only
+§D (B) and (C) Only
+## 35
+Which of the following features are available in word processing software such as MS-WORD ?
+A. Spell checker and Thesaurus
+B. Page Orientation
+C. Mail Merge
+D. Slide Transitions
+Choose the correct answer from the options given below :
+§A (A), (B) and (D) Only
+§B (A) and (C) Only
+§C (B) and (C) Only
+§D (A), (B) and (C) Only
+## 36
+Which one of the following is not caused by polluted water ?
+§A Cholera
+§B Dysentery
+§C Typhoid
+§D Tuberculosis
+## 37
+Given below are two statements :
+Statement I: Toxic chemicals often injure human organs and organ systems.
+Statement II: Toxicants that damage kidneys are called as Hepatotoxic.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 38
+Which of the following are related to 'source reduction' in integrated solid waste management?
+A. Reduced Toxicity
+B. Composting
+C. Less Packaging
+D. Landfill
+E. More durable products
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (A), (C) and (E) Only
+§C (B), (C) and (D) Only
+§D (C), (D) and (E) Only
+## 39
+Depletion of stratospheric ozone results into
+A. Increase in the ultraviolet radiation
+B. Increase in infra-red radiation
+C. Increase in skin cancer
+D. Significant impact on terrestrial flora and fauna
+E. Decrease in cataract cases
+Choose the correct answer from the options given below :
+§A (A), (B), (C) and (D) Only
+§B (A), (C) and (D) Only
+§C (B), (C), (D) and (E) Only
+§D (A), (B) and (C) Only
+## 40
+Nitrous Oxide (N₂O).
+A. causes acid rain
+B. is laughing gas
+C. is carcinogenic
+D. is a green house gas
+E. is a criterion air pollutant
+Choose the correct answer from the options given below :
+§A (A), (D) and (E) Only
+§B (C), (D) and (E) Only
+§C (B) and (D) Only
+§D (A) and (E) Only
+## 41
+The Michael Sadler commission was constituted to study the problems of :
+§A Bombay University
+§B Madras University
+§C Poona University
+§D Calcutta University
+## 42
+The National Education Policy, 1986 recommended the establishment of _________ in the country.
+§A Community colleges
+§B Open universities
+§C National universities of eminence
+§D Discipline-wise universities
+## 43
+Given below are two statements:
+Statement I: Curzon's university reforms reflected the official attitude towards the spread of higher education in India.
+Statement II: There was no resistance to the Indian universities Bill piloted by Curzon from any section of Indians.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are true
+§B Both Statement I and Statement II are false
+§C Statement I is true but Statement II is false
+§D Statement I is false but Statement II is true
+## 44
+Match List-I with List-II.
+List-I (Ancient thinkers) | List-II (Area of study)
+(A) Panini | (I) Astronomy
+(B) Jivaka | (II) Grammar
+(C) Bhaskara | (III) Medicine
+(D) Kanada | (IV) Physics
+Choose the correct answer from the options given below :
+§A (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+§B (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+§C (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
+§D (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+## 45
+Match List-I with List-II.
+List-I (Name of University) | List-II (Year of Establishment)
+(A) Bombay University | (I) 1916
+(B) Delhi University | (II) 1943
+(C) Utkal University | (III) 1922
+(D) S.N.D.T. Women University | (IV) 1857
+Choose the correct answer from the options given below :
+§A (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+§B (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+§C (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+§D (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+## 46
+Passage (Q46-Q50): Science and the techniques to which it has given rise have changed human life during the last hundred and fifty years more than it had been changed since men took to agriculture, and the changes that are being wrought by science continue at an increasing speed. There is no sign of any new stability to be attained on some scientific plateau. On the contrary, there is every reason to think that the revolutionary possibilities of science extend immeasurably beyond what has so far been realised. Can the human race adjust itself quickly enough to these vertiginous transformations, or will it, as innumerable former species have done, perish from lack of adaptability? The dinosaurs were, in their day, the lords of creation, and if there had been philosophers among them, not one would have foreseen that the whole race might perish. But they became extinct because they could not adapt themselves to a world without swamps. In the case of man and science there is a wholly new factor, namely that man himself is creating the changes of environment to which he will have to adjust himself with unprecedented rapidity. But, although man through his scientific skill is the cause of the changes of environment, most of these changes are not willed by human beings. Although they come about through human agencies, they have, or at any rate have had so far, something of the inexorable inevitability of natural forces. Whether Nature dried up the swamps or men deliberately drained them, makes little difference as regards the ultimate result. Whether men will be able to survive the changes of environment that their own skill has brought about is an open question. If the answer is in the affirmative, it will be known some day; if not, not. If the answer is to be in the affirmative, men will have to apply scientific ways of thinking to themselves and their institutions.
+Dinosaurs became extinct because of :
+§A A massive earthquake
+§B Incessant rainfall
+§C Extreme cold
+§D Lack of adaptability
+## 47
+Passage (Q46-Q50): Science and the techniques to which it has given rise have changed human life during the last hundred and fifty years more than it had been changed since men took to agriculture, and the changes that are being wrought by science continue at an increasing speed. There is no sign of any new stability to be attained on some scientific plateau. On the contrary, there is every reason to think that the revolutionary possibilities of science extend immeasurably beyond what has so far been realised. Can the human race adjust itself quickly enough to these vertiginous transformations, or will it, as innumerable former species have done, perish from lack of adaptability? The dinosaurs were, in their day, the lords of creation, and if there had been philosophers among them, not one would have foreseen that the whole race might perish. But they became extinct because they could not adapt themselves to a world without swamps. In the case of man and science there is a wholly new factor, namely that man himself is creating the changes of environment to which he will have to adjust himself with unprecedented rapidity. But, although man through his scientific skill is the cause of the changes of environment, most of these changes are not willed by human beings. Although they come about through human agencies, they have, or at any rate have had so far, something of the inexorable inevitability of natural forces. Whether Nature dried up the swamps or men deliberately drained them, makes little difference as regards the ultimate result. Whether men will be able to survive the changes of environment that their own skill has brought about is an open question. If the answer is in the affirmative, it will be known some day; if not, not. If the answer is to be in the affirmative, men will have to apply scientific ways of thinking to themselves and their institutions.
+In the scientific age who is responsible for the changing environment?
+§A Nature
+§B Man
+§C Natural Disasters
+§D Wars
+## 48
+Passage (Q46-Q50): Science and the techniques to which it has given rise have changed human life during the last hundred and fifty years more than it had been changed since men took to agriculture, and the changes that are being wrought by science continue at an increasing speed. There is no sign of any new stability to be attained on some scientific plateau. On the contrary, there is every reason to think that the revolutionary possibilities of science extend immeasurably beyond what has so far been realised. Can the human race adjust itself quickly enough to these vertiginous transformations, or will it, as innumerable former species have done, perish from lack of adaptability? The dinosaurs were, in their day, the lords of creation, and if there had been philosophers among them, not one would have foreseen that the whole race might perish. But they became extinct because they could not adapt themselves to a world without swamps. In the case of man and science there is a wholly new factor, namely that man himself is creating the changes of environment to which he will have to adjust himself with unprecedented rapidity. But, although man through his scientific skill is the cause of the changes of environment, most of these changes are not willed by human beings. Although they come about through human agencies, they have, or at any rate have had so far, something of the inexorable inevitability of natural forces. Whether Nature dried up the swamps or men deliberately drained them, makes little difference as regards the ultimate result. Whether men will be able to survive the changes of environment that their own skill has brought about is an open question. If the answer is in the affirmative, it will be known some day; if not, not. If the answer is to be in the affirmative, men will have to apply scientific ways of thinking to themselves and their institutions.
+The main focus of the passage is on :
+§A Extinction of Species
+§B Extinction of Dinosaurs
+§C Science and Human life
+§D Destruction of Forests
+## 49
+Passage (Q46-Q50): Science and the techniques to which it has given rise have changed human life during the last hundred and fifty years more than it had been changed since men took to agriculture, and the changes that are being wrought by science continue at an increasing speed. There is no sign of any new stability to be attained on some scientific plateau. On the contrary, there is every reason to think that the revolutionary possibilities of science extend immeasurably beyond what has so far been realised. Can the human race adjust itself quickly enough to these vertiginous transformations, or will it, as innumerable former species have done, perish from lack of adaptability? The dinosaurs were, in their day, the lords of creation, and if there had been philosophers among them, not one would have foreseen that the whole race might perish. But they became extinct because they could not adapt themselves to a world without swamps. In the case of man and science there is a wholly new factor, namely that man himself is creating the changes of environment to which he will have to adjust himself with unprecedented rapidity. But, although man through his scientific skill is the cause of the changes of environment, most of these changes are not willed by human beings. Although they come about through human agencies, they have, or at any rate have had so far, something of the inexorable inevitability of natural forces. Whether Nature dried up the swamps or men deliberately drained them, makes little difference as regards the ultimate result. Whether men will be able to survive the changes of environment that their own skill has brought about is an open question. If the answer is in the affirmative, it will be known some day; if not, not. If the answer is to be in the affirmative, men will have to apply scientific ways of thinking to themselves and their institutions.
+"If the answer is in the affirmative" ________ refers to the question related to:
+§A Changes in environment
+§B Human survival
+§C Human extinction
+§D Changes in scientific approach
+## 50
+Passage (Q46-Q50): Science and the techniques to which it has given rise have changed human life during the last hundred and fifty years more than it had been changed since men took to agriculture, and the changes that are being wrought by science continue at an increasing speed. There is no sign of any new stability to be attained on some scientific plateau. On the contrary, there is every reason to think that the revolutionary possibilities of science extend immeasurably beyond what has so far been realised. Can the human race adjust itself quickly enough to these vertiginous transformations, or will it, as innumerable former species have done, perish from lack of adaptability? The dinosaurs were, in their day, the lords of creation, and if there had been philosophers among them, not one would have foreseen that the whole race might perish. But they became extinct because they could not adapt themselves to a world without swamps. In the case of man and science there is a wholly new factor, namely that man himself is creating the changes of environment to which he will have to adjust himself with unprecedented rapidity. But, although man through his scientific skill is the cause of the changes of environment, most of these changes are not willed by human beings. Although they come about through human agencies, they have, or at any rate have had so far, something of the inexorable inevitability of natural forces. Whether Nature dried up the swamps or men deliberately drained them, makes little difference as regards the ultimate result. Whether men will be able to survive the changes of environment that their own skill has brought about is an open question. If the answer is in the affirmative, it will be known some day; if not, not. If the answer is to be in the affirmative, men will have to apply scientific ways of thinking to themselves and their institutions.
+According to the passage the following are true :
+A. Science is bringing about rapid changes.
+B. There is every likelihood that a scientific plateau will be reached.
+C. Man will definitely perish like the Dinosaurs.
+D. There are chances that mankind may become extinct due to lack of adaptability.
+E. Changes in the environment made through human agencies have so far shown almost the same inexorable inevitability as that of natural forces in the past.
+Choose the correct answer from the options given below :
+§A (A), (D) and (E) Only
+§B (A), (B) and (E) Only
+§C (A) and (E) Only
+§D (B), (C) and (E) Only

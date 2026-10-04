@@ -1,0 +1,918 @@
+## 1
+Which of the following is not an object Oriented Programming language ?
+§A Pearl
+§B Python
+§C Small talk
+§D SQL Plus
+## 2
+Shift-Reduce conflicts are resolved by :
+§A Left recursion
+§B Left factoring
+§C Ambiguity
+§D Associativity and Precedence
+## 3
+A least integer n such that f(x) is O(xⁿ) for each of the following functions. Arrange the following according to the value of n in increasing order:
+A. f(x)=3 x³+(log x)⁴
+B. f(x)=(x⁵+x²+1) /(x³+1)
+C. f(x)=(x³+x²+1) /(x²+1)
+D. f(x)=(x²+5 log x) /(x²+1)
+Choose the correct answer from the options given below :
+§A D, C, A, B
+§B D, C, B, A
+§C B, C, A, D
+§D B, A, C, D
+## 4
+Arrange the following so that they can be placed in perfect/appropriate order.
+A. Planning
+C. Modeling
+B. Construction
+E. Deployment
+D. Communication
+Choose the correct answer from the options given below :
+§A A, B, C, D, E
+§B D, A, C, B, E
+§C A, D, B, C, E
+§D B, C, D, A, E
+## 5
+Match List-I with List-II :
+List - I | List-II
+A. A → aB | a, a ∈ T, A, B ∈ V | I. Recursive Descent Parser
+B. A → BC | a, a ∈ T, A, B, C ∈ V | II. Turing Machine
+C. LL (1) grammar | III. Choamsky Normal Form
+D. Halting problem | IV. Finite Automate
+Choose the correct answer from the options given below :
+§A A-IV, B-III, C-I, D-II
+§B A-III, B-I, C-II, D-IV
+§C A-II, B-IV, C-III, D-I
+§D A-IV, B-III, C-II, D-I
+## 6
+What is a perceptron in ANN ?
+§A A double layer auto-associative neural network.
+§B A neural network that contains feedback.
+§C An auto-associative neural network.
+§D A single layer feed-forward neural network with pre-processing.
+## 7
+Arrange the following examples of Artificial Intelligence (AI) in the order of increasing complexity :
+A. Spam email detection using rule-based systems.
+B. Handwritten digit recognition using shallow neural networks.
+C. Image classification using convolutional neural networks.
+D. Autonomous driving using reinforcement learning algorithms.
+Choose the correct answer from the options given below :
+§A A, B, C, D
+§B B, A, C, D
+§C A, B, D, C
+§D B, C, A, D
+## 8
+Match List-I with List-II :
+List-I Line coding scheme | List-II Bandwidth (average)
+A. NRZ-L | I. B= N/4
+B. 2B1Q | II. B=N/8
+C. 4.D-PAM 5 | III. B=N/3
+D. MLT-3 | IV. B= N/2
+Choose the correct answer from the options given below :
+§A A-II, B-I, C-IV, D-III
+§B A-IV, B-II, C-I, D-III
+§C A-IV, B-I, C-II, D-III
+§D A-III, B-IV, C-II, D-I
+## 9
+The order of steps of Address Translation in Linux Virtual Memory Scheme will be :
+A. register
+B. offset
+C. Page directory.
+D. Page table
+E. Page Middle directory
+Choose the correct answer from the options given below :
+§A B, A, D, E, C
+§B A, C, E, D, B
+§C D, C, A, B, E
+§D C, A, D, E, B
+## 10
+If f(n) = 5f(n/2) + 3 and f(1) = 7 is a recurrence relation where K is positive integer, then f(2^K) =
+§A 5^K (31/4) − 3/4
+§B 5^K (29/4)
+§C 2^K (31/4) − 3/4
+§D 2^K (29/4)
+## 11
+The instruction LD ADR (X) which is equivalent to AC ← M[ADR+XR] is in :
+§A Direct Addressing Mode
+§B Indirect Addressing Mode
+§C Index Addressing Mode
+§D Immediate Addressing Mode
+## 12
+For the following Parents in figure (1) and (2) :
+[Figure (1): two parent bit strings with a vertical dotted crossover point after the fifth bit. Parent1 = 10110 | 010, Parent2 = 10101 | 111.
+Figure (2): the result after crossing over at that point. Parent1 = 10110 | 111, Parent2 = 10101 | 010.]
+Which is correct?
+§A figure (2) is the two point crossover of figure (1)
+§B figure (2) is one point crossover of figure (1)
+§C figure (2) is N point crossover of figure (1)
+§D figure (2) is uniform crossover of figure (1)
+## 13
+The sequence of steps for a page replacement algorithm will be :
+A. find a frame that is not currently being used
+B. change the page table
+C. use a freed frame
+D. no frame is free
+E. free a frame
+Choose the correct answer from the options given below :
+§A D, A, E, B, C
+§B E, B, A, C, D
+§C B, E, A, D, C
+§D D, E, B, A, C
+## 14
+Match List - I with List - II.
+f(n) = a f(n / b) + g(n) is a divide-and-conquer recurrence relation for the Listed-I algorithms, match their recurrence in Listed-II.
+List - I Divide-and-conquer based algorithms | List - II Recurrence Relation
+A. Binary Search | I. f(n) = 7f(n/2) + 15n²/4
+B. Find maximum and minimum of a sequence | II. f(n) = 2f(n/2) + n
+C. Merge Sort | III. f(n) = 2f(n/2) + 2
+D. Fast Matrix Multiplication | IV. f(n) = f(n/2) + 2
+Choose the correct answer from the options given below :
+§A A-I, B-II, C-III, D-IV
+§B A-II, B-III, C-IV, D-I
+§C A-III, B-IV, C-I, D-II
+§D A-IV, B-III, C-II, D-I
+## 15
+Which of the following control problem does not exist, when processes unaware of each other during interaction?
+§A Mutual exclusion
+§B Data coherence
+§C Starvation
+§D Deadlock
+## 16
+The height of a binary search tree for the words banana, peach, apple, pear, coconut, mango and papaya using alphabetical order is :
+§A 2
+§B 3
+§C 4
+§D 5
+## 17
+Match List-I with List-II :
+List - I | List - II
+A. Batch Multiprogramming | I. allows more efficient use of main memory
+B. Time sharing | II. user no longer has direct access to the processor
+C. Monitor | III. Maximize processor use
+D. Reentrant Procedures | IV. minimize response time
+Choose the correct answer from the options given below :
+§A A-III, B-II, C-IV, D-I
+§B A-III, B-IV, C-II, D-I
+§C A-I, B-III, C-IV, D-II
+§D A-II, B-I, C-IV, D-III
+## 18
+Which of the following is the function of the semantic analysis phase of the compilation process?
+§A Type conversion
+§B Tokenization
+§C Loop optimization
+§D Data flow Analysis
+## 19
+For the regular languages and context-free languages which is not correct?
+A. both are closed under union operation
+B. both are closed under concatenation operation
+C. both are closed under intersection operation
+D. both are closed under complementation operation
+E. both are closed under kleen star operation
+Choose the most appropriate answer from the options given below :
+§A A and B Only
+§B B and C Only
+§C C and D Only
+§D D and E only
+## 20
+Match List-I with List-II :
+List-I | List-II
+A. Back Tracking | I. Automata
+B. Infinite languages with matching numbers | II. Undecidable Problem
+C. Canonical LR Parser | III. Predictive Parser
+D. Post Correspondence Problem | IV. Large number of states
+Choose the correct answer from the options given below :
+§A A-I, B-II, C-III, D-IV
+§B A-II, B-III, C-I, D-IV
+§C A-IV, B-III, C-II, D-I
+§D A-III, B-I, C-IV, D-II
+## 21
+The output of the following C Program is:
+```
+#include<stdio.h>
+int main (void)
+{
+  int x, *p;
+  x=30;
+  p=x;
+  print f ("%d", *p);
+  return 0;
+}
+```
+§A 30
+§B value of x
+§C address of x
+§D Error
+## 22
+Which of the following have truth values if the universe of discourse consists of all integers?
+A. ∀n∃m (n² < m)
+B. ∃n∀m (n < m²)
+C. ∃n∃m (n² + m² = 5)
+D. ∃n∃m (n² + m² = 6)
+E. ∃n∃m(m + n = 4 ∧ n − m = 1)
+Choose the correct answer from the options given below :
+§A A, B, C Only
+§B B, C, E Only
+§C C, D, E Only
+§D B, D Only
+## 23
+Multiple Inheritance is permitted directly in.....
+A. C++
+B. Java
+C. Python
+D. VB.NET
+E. BASIC
+Choose the most appropriate answer from the options given below :
+§A A and B Only
+§B A and C Only
+§C B and D Only
+§D More than one of the above
+## 24
+The ratio of errors found before s/w delivery and to the total errors (before and after) is called :
+§A Accuracy
+§B Specificity
+§C Defect Removal efficiency
+§D Through put
+## 25
+Match List-I with List-II.
+List - I | List - II
+A. RAID level-2 | I. block-interleaved
+B. RAID level-3 | II. error-correcting-code
+C. RAID level-4 | III. reed-solomon codes
+D. RAID level-6 | IV. bit-interleaved
+Choose the correct answer from the options given below :
+§A A-I, B-III, C-IV, D-II
+§B A-II, B-IV, C-I, D-III
+§C A-IV, B-I, C-II, D-III
+§D A-II, B-III, C-IV, D-I
+## 26
+Which of the followings sequence aₙ is the solution of recurrence relation aₙ=8 aₙ₋₁−16 aₙ₋₂?
+A. aₙ=1
+B. aₙ=2ⁿ
+C. aₙ=4ⁿ
+D. aₙ=n 4ⁿ
+E. aₙ=(-4)ⁿ
+Choose the most appropriate answer from the options given below :
+§A A, B, C Only
+§B B, C, D Only
+§C C, D Only
+§D C, D, E Only
+## 27
+Match List-I with List-II :
+List - I | List - II
+A. Thread spawn | I. to convert a blocking system call into a nonblocking call.
+B. Block thread | II. to reclaim pages.
+C. Jacketing | III. processor turn to the execution of another ready thread.
+D. Flush | IV. thread is provided with its own register context.
+Choose the correct answer from the options given below :
+§A A-I, B-III, C-IV, D-II
+§B A-IV, B-III, C-II, D-I
+§C A-IV, B-III, C-I, D-II
+§D A-II, B-I, C-IV, D-III
+## 28
+Which of the following is the Markup language?
+A. HTML
+B. XML
+C. DHTML
+D. LML
+E. PML
+Choose the correct answer from the options given below :
+§A B, C, D Only
+§B A, C, D Only
+§C A, C, D, E Only
+§D A, B, C Only
+## 29
+Which of the followings are type of interface in an ATM network?
+A. user-to-user
+B. user-to-network
+C. network-to-network
+D. host-to-network
+E. user-to-host
+Choose the correct answer from the options given below :
+§A A and B Only
+§B B and C Only
+§C C and D Only
+§D D and E Only
+## 30
+For the fuzzy set A= {(x₁, 0.3), (x₂, 0.7), (x₃, 0.4)} the complement of A would be represented as :
+§A {(x₁, 0.4), (x₂, 0. 3), (x₃, 0. 1)}
+§B {(x₁, 0. 3), (x₂, 0. 7), (x₃, 0. 4)}
+§C {(x₁, 0. 7), (x₂, 0. 3), (x₃, 0. 6)}
+§D {(x₁, 0. 21), (x₂, 0. 28), (x₃, 0. 12)}
+## 31
+The instructions
+ADD R₁, A, B
+ADD R₂, C, D
+MUL X, R₁, R₂
+evaluates the X=(A+B)*(C+D) in which of the following?
+§A 3 - Address instructions
+§B 2 - Address instructions
+§C 1 - Address instructions
+§D RISC instructions
+## 32
+An ambiguous grammar is one which has :
+A. More than one derivations
+B. More than one left most derivations
+C. More than one right most derivations
+D. More than one Parse tree
+E. More than one syntax tree
+Choose the correct answer from the options given below :
+§A A and D Only
+§B B and C Only
+§C D and E Only
+§D A and E Only
+## 33
+Back propagation is a learning technique that adjusts weights in the neural network by propagating weight changes :
+§A Forward from source to hidden nodes
+§B Backward from sink to source
+§C Forward from source to sink
+§D Backward from sink to hidden nodes
+## 34
+The Boolean expression for the following would be :
+F(A, B, C)= Σ(0,2,6)
+d(A, B, C)= Σ(1,3,5)
+§A A'C' + BC'
+§B B+AC'
+§C A+BC'
+§D A'+BC'
+## 35
+Arrange the following in correct order, so that they can follow a proper run time environment.
+A. Programming statement
+B. Compilation
+C. Memory allocation
+D. Type of variable
+E. Memory deallocation
+Choose the correct answer from the options given below :
+§A A, B, C, D, E
+§B A, B, D, C, E
+§C B, A, D, C, E
+§D C, D, B, E, A
+## 36
+A computer system with a cache access time of 100 ns, a main memory access time of 1100 ns, and a hit ratio of 0.9 , then the average access time would be :
+§A 200 ns
+§B 190 ns
+§C 210 ns
+§D 120 ns
+## 37
+An IPv4 packet has arrived with the first few hexadecimal digits as shown below. How many hops can this packet travel before being dropped? The data belong to what upper-layer protocol?
+( 5400001800100110040601...)₁₆
+§A 01 hops, TCP
+§B 02 hops, UDP
+§C 03 hops, ICMP
+§D 4 hops, TCP
+## 38
+Arrange the following simple graphs based on a number of spanning trees they have :
+A. K₃ [Complete Graph with 3 nodes]
+B. K₄ [Complete Graph with 4 nodes]
+C. K₂,₂ (Complete bipartite graph of the 2 nodes in each partition)
+D. C₅ (Cycle graph of 5 nodes)
+Choose the correct answer from the options given below :
+§A A, B, C, D
+§B A, C, B, D
+§C A, C, D, B
+§D D, B, C, A
+## 39
+Match List-I with List-II :
+List-I | List-II
+A. Channelization protocol | I. ALOHA
+B. Bit-oriented protocol | II. TDMA
+C. Random-access protocol | III. Reservation
+D. Controlled-access protocol | IV. HDLC
+Choose the correct answer from the options given below :
+§A A-I, B-III, C-IV, D-II
+§B A-II, B-IV, C-I, D-III
+§C A-IV, B-III, C-II, D-I
+§D A-III, B-IV, C-I, D-II
+## 40
+What is the total delay (latency) for a frame size of 10 million bits that is being set up on a link with 20 routers, each having a queuing time of 2 μs and a processing time of 1 μs? The length of link 5000 km. The speed of light inside the link is 2 * 10⁸ m /s. The link has bandwidth of 6 Mbps.
+§A 0.624050 s
+§B 1.691726 s
+§C 2.425080 s
+§D 1.714030 s
+## 41
+How much time does an algorithm using 2⁵⁰ bit operations need if each bit operation takes 2⁻³⁸ seconds of time?
+§A 1 hour
+§B 10 minutes
+§C 30 minutes
+§D 1.5 hour
+## 42
+Match List - I with List - II.
+List-I (Boolean Expression) | List-II (Dual of Boolean Expression)
+A. x.y+0 | I. (x̄ + 0) · (ȳ · z)
+B. x̄ · 1 + (ȳ + z) | II. x+y.1
+C. x̄ · (ȳ + 0) | III. x̄ + ȳ · 1
+D. x · 1 + (y + z̄) | IV. (x + 0) · (y · z̄)
+Choose the correct answer from the options given below :
+§A A-III, B-IV, C-II, D-I
+§B A-III, B-IV, C-I, D-II
+§C A-II, B-I, C-III, D-IV
+§D A-II, B-I, C-IV, D-III
+## 43
+A bit string of length four is generated at random. What is probability that it contains at least two consecutive 0's given that first bit is 0 ?
+§A 1/2
+§B 5/16
+§C 5/8
+§D 1/4
+## 44
+Services provided by point-to-point protocol (PPP):
+A. frame format
+B. establishment of the link
+C. flow control
+D. sequence numbering
+E. authentication
+Choose the correct answer from the options given below :
+§A A, B, and E Only
+§B A, C and D Only
+§C D, E and B Only
+§D B, C and D Only
+## 45
+Which of the following is/are true in case of tree locking?
+A. It ensures shorter waiting times.
+B. It ensures freedom from deadlock.
+C. Transaction can lock data items earlier.
+D. It does not ensure greater amount of concurrency.
+Choose the correct answer from the options given below :
+§A A and B Only
+§B C and D Only
+§C B and C Only
+§D A and D Only
+## 46
+Arrange the following sets in increasing order, on the basis of their cardinality :
+A. A₁ = {{1, 2}, {3}}
+B. A₂ = {{1}, {2}, {3}, {4}}
+C. A₃ = {{1, 2, 3, 4, 5, 6}}
+D. A₄ = {{1, 2}, {2, 3, 4}, {5}}
+E. A₅ = {{1}, {2}, {3}, {4}, {5}}
+Choose the correct answer from the options given below :
+§A A, B, D, E, C
+§B A, B, E, D, C
+§C A, C, D, B, E
+§D C, A, D, B, E
+## 47
+The Cardinality of a fuzzy set is :
+§A 0
+§B finite
+§C infinite
+§D not known
+## 48
+Which of the following is not the goal of reverse Engineering?
+§A Cope with Complexity
+§B Recover lost information
+§C Detect side effect
+§D Data flow
+## 49
+The chairs of an auditorium are to be labelled with a letter followed by a positive two digits integer where labelling is starting with A01. How many maximum possible chairs could be labelled in this way?
+§A 2600
+§B 2574
+§C 2340
+§D 2366
+## 50
+Arrange in appropriate order, the construction of a finite automata :
+A. Minimum State DFA
+B. Regular Expression
+C. NFA-∈
+D. Problem Statement
+E. DFA
+Choose the correct answer from the options given below :
+§A B, C, E, A, D
+§B D, B, C, E, A
+§C C, E, B, A, D
+§D A, D, C, B, E
+## 51
+A lower-triangular sparse matrix is one :
+§A in which all the non-zero elements lie only on the leading diagonal.
+§B in which all the non-zero elements lie above leading diagonal.
+§C in which all the non-zero elements lie below leading diagonal.
+§D which is not defined for sparse matrix.
+## 52
+The following code :
+stmt → if expr then stmt else stmt
+ | if expr then stmt
+suffers from :
+§A Ambiguity
+§B Left factoring
+§C Left Recursion
+§D λ moves
+## 53
+Which of the following is not correct about the virtual memory segmentation ?
+§A It is not necessary to load all of the segments of a process.
+§B It has no internal fragmentation.
+§C It has large virtual address space.
+§D It provides lower degree of multiprogramming.
+## 54
+Match List-I with List-II :
+List - I | List - II
+A. Union | I. Virtual Reality
+B. Function | II. Shadow mask
+C. Interactive Environment | III. Subroutine
+D. Output device | IV. User-defined data type
+Choose the correct answer from the options given below :
+§A A-IV, B-III, C-I, D-II
+§B A-II, B-IV, C-I, D-III
+§C A-IV, B-II, C-III, D-I
+§D A-I, B-III, C-IV, D-II
+## 55
+Z is set of integers, <Z,*> forms group if * in :
+§A *(a, b)=a+b+2
+§B *(a, b)=2a+b
+§C *(a, b)=(a+b) / 2
+§D *(a, b)=a²+b
+## 56
+Which of the following statements is/are false?
+A. A user can assign privileges to any user on any relation.
+B. A user can assign privileges to any user on its own relations only,
+C. System error that leads to accessibility to the portion of database is an example of malicious attack.
+D. Passwords itself need to be secured from unauthorized access.
+Choose the correct answer from the options given below :
+§A A and C Only
+§B A and B Only
+§C B and D Only
+§D B and C Only
+## 57
+Which of the following is not a characteristics of a specialized embedded OS ?
+§A real time scheduling policy.
+§B responds to external interrupts
+§C provides special non-sequential files.
+§D provides fixed or variable sized partitions.
+## 58
+What will be the order of the following fields in a frame relay 'frame format'?
+A. Flag
+B. FCS
+C. address
+D. information
+Choose the correct answer from the options given below :
+§A A, C, D, B
+§B D, A, C, D
+§C C, B, A, D
+§D A, B, D, C
+## 59
+The techniques used to handle the phantom problem are
+A. Time stamping
+B. Index locking
+C. Predicate locking
+D. Execution indexing
+Choose the correct answer from the options given below :
+§A A and B Only
+§B B and C Only
+§C A and D Only
+§D C and D Only
+## 60
+The sequence of fields in an IP datagram will be :
+A. flags
+B. options
+C. Protocol
+D. Identification
+E. Service Type
+Choose the correct answer from the options given below :
+§A E, D, A, C, B
+§B D, A, B, C, E
+§C D, E, C, B, A
+§D E, C, D, A, B
+## 61
+The cyclomatic complexity of the following flow graph is :
+[Figure: flow graph with nodes 1 to 10 and directed edges: 1→2, 1→10, 2→3, 2→4, 4→5, 4→6, 5→7, 6→7, 7→9, 3→9, 9→1.]
+§A 3
+§B 4
+§C 10
+§D 2
+## 62
+IP is responsible for ________ communication while TCP is responsible for ________ communication.
+§A Node-to-node, Host-to-host
+§B Process-to-process, Host-to-host
+§C Socket-to-socket, Host-to-node
+§D Host-to-Host, Process-to-process
+## 63
+Arrange the steps of Mathematical Modeling :
+A. Solution fitting with data
+B. Formulation Mathematically
+C. Solve Mathematically
+D. Repeat formulation if it fits worst with the data
+E. Interpretation results
+Choose the correct answer from the options given below :
+§A B, C, A, D, E
+§B B, A, D, C, E
+§C D, A, B, C, E
+§D E, D, C, A, B
+## 64
+In windows scheduling, which of the following option is correct ?
+§A 4 non-real-time priorities
+§B 8 non-real-time priorities
+§C 12 non-real-time priorities
+§D 16 non-real-time priorities
+## 65
+The I/O methods in which memory addresses and I/O addresses are distinct is called
+A. Isolated I/O
+B. Memory-Mapped I/O
+C. Strobe Control
+D. Handshaking
+E. Interrupt
+Choose the most appropriate answer from the options given below :
+§A A, B Only
+§B C, D Only
+§C C, E Only
+§D B, E Only
+## 66
+What will be the ordering of typical steps when processing a high-level query?
+A. Query optimizer
+B. Runtime database processor
+C. Scanning, passing and validating
+D. Query code generator
+Choose the correct answer from the options given below :
+§A D, A, C, B
+§B C, A, D, B
+§C C, D, B, A
+§D D, C, B, A
+## 67
+Which of the followings are tautology ?
+A. (p ∨ r) → p
+B. p → (p ∧ r)
+C. ¬p → (p → r)
+D. (p ∧ r) → (p → r)
+E. ¬(p → r) → p
+Choose the correct answer from the options given below :
+§A A, B Only
+§B A, B, C Only
+§C B, C, D Only
+§D C, D, E Only
+## 68
+Arrange the following from fastest to slowest in speed.
+A. DRAM
+B. SRAM
+C. CPU Registers
+D. Magnetic tapes
+E. Hard disk
+Choose the correct answer from the options given below :
+§A A, B, C, D, E
+§B C, B, A, D, E
+§C C, D, B, A, E
+§D B, D, C, A, E
+## 69
+The language of the following PDA would be :
+δ(q₀, a, z₀) = (q₀, aaa z₀)
+δ(q₀, a, a) = (q₀, aaaa)
+δ(q₀, b, a) = (q₁, λ)
+δ(q₁, b, a) = (q₁, λ)
+δ(q₁, ϵ, z₀) = (q_f, z₀), where q_f is the final state.
+§A {aⁿbⁿ | n ≥ 0}
+§B {aⁿb²ⁿ | n > 0}
+§C {aⁿb³ⁿ | n > 0}
+§D {aⁿb⁴ⁿ | n > 0}
+## 70
+Regarding the subroutines, see the following sequence of tasks to be performed :
+A. Turn on the interrupt facility on.
+B. Service the device whose flag is set.
+C. Save the contents of processor registers.
+D. Check which flag is set.
+E. Restore the contents of processor registers.
+Choose the correct answer from the options given below :
+§A A, D, C, B, E
+§B D, A, B, C, E
+§C C, D, B, E, A
+§D B, D, A, C, E
+## 71
+Match List-I with List-II :
+List-I | List-II
+A. Verification | I. White box Testing
+B. Validation | II. Black box Testing
+C. Internal logic exercise | III. Quality Control
+D. Software requirement exercise | IV. Quality Assurance
+Choose the correct answer from the options given below :
+§A A-IV, B-III, C-I, D-II
+§B A-I, B-II, C-III, D-IV
+§C A-IV, B-III, C-II, D-I
+§D A-III, B-IV, C-I, D-II
+## 72
+The parameter Actual count is used in Genetic Algorithm (GA) for :
+§A Crossover
+§B Mutation
+§C Selecting population
+§D Encoding the Genetic Algorithm
+## 73
+For the given two machines which of the following is correct?
+[Figure: two finite automata.
+Machine 1: states A (start) and B (accepting). A has a self-loop on a; A→B on a; B has a self-loop on b; B→A on b.
+Machine 2: states A (start), B (accepting) and C (accepting). A→B on a; B has a self-loop on a; B→C on b; C has a self-loop on b; C→B on a.]
+§A both Machines are DFAs
+§B both are non-equivalent Machines
+§C both are equivalent Machines
+§D cannot be determined
+## 74
+The number of tokens in the following line : ' for i in range (begin; end ; step) :' is:
+§A 4
+§B 7
+§C 8
+§D 12
+## 75
+Which of the following structures of knowledge representation are the most purely syntactic?
+A. Conceptual dependency
+B. predicate logic
+C. slot-and-filler
+D. nonmonotonic systems
+Choose the correct answer from the options given below :
+§A A and B Only
+§B B and C Only
+§C B and D Only
+§D C and D Only
+## 76
+In Genetic Algorithm's cross over operation, mask in used in ?
+§A Three parent crossover
+§B Two parent crossover
+§C Uniform crossover
+§D N point cronsover
+## 77
+Match the List-I and List-II
+List-I | List-II
+A. Complement | I. Adder
+B. E-OR | II. Instruction decoding
+C. Accumulator | III. Negative number representation
+D. Control Unit | IV. Arithmetic and Logic operations
+Choose the correct answer from the options given below :
+§A A-I, B-II, C-III, D-IV
+§B A-III, B-II, C-I, D-IV
+§C A-III, B-I, C-IV, D-II
+§D A-IV, B-II, C-III, D-I
+## 78
+Arrange the following prefix expressions based on their values in increasing order :
+A. +-* 2 / 8432
+B. ↑-* 33 * 425
+C. +-↑32 ↑ 23 / 6-42
+D. *+3+3 ↑ 3+113
+Choose the correct answer from the options given below :
+§A A, B, C, D
+§B B, A, C, D
+§C D, C, B, A
+§D C, D, A, B
+## 79
+Which of the following is not the most common property in social network ?
+§A Degree distribution follows scale free.
+§B Average shortest path lengths are shorten in connected network.
+§C Most of them are directed network.
+§D Follows small world property.
+## 80
+For line drawing, which of the following algorithms are used ?
+A. DDA algorithm
+B. Bresenham algorithm
+C. Mid point algorithm
+D. Curve algorithm
+Choose the most appropriate answer from the options given below :
+§A B and C Only
+§B C and D Only
+§C A and B Only
+§D D and A Only
+## 81
+According to the Nyquist theorem to produce the original analog signal, one necessary condition is :
+§A Sampling rate must be at least 2 times the highest frequency contained in the signal
+§B Sampling rate must be at least 2 times the lowest frequency contained in the signal
+§C Sampling rate must be at least ½ times the highest frequency contained in the signal
+§D Sampling rate must be at least ½ times the lowest frequency contained in the signal
+## 82
+For the fuzzy sets A = {(x₁, 0.3), (x₂, 0.7), (x₃, 0.4)} and B = {(x₁, 0.5), (x₂, 0.2), (x₃, 0.5)}, then A ∩ B would be:
+§A {(x₁, 0.3), (x₂, 0.7), (x₃, 0.4)}
+§B {(x₁, 0.5), (x₂, 0.2), (x₃, 0.5)}
+§C {(x₁, 0.5), (x₂, 0.7), (x₃, 0.5)}
+§D {(x₁, 0.3), (x₂, 0.2), (x₃, 0.4)}
+## 83
+The least values of a signed and unsigned data type variables requiring 8 bits, would be…
+§A 0,128
+§B -128,127
+§C 0,0
+§D -128,0
+## 84
+Which of the following are true for a complete binary tree?
+A. It has always odd number of vertices.
+B. With i internal vertices, it has i+1 leaves.
+C. With l leaves, it has 2l-1 vertices.
+D. With 2 n-1 vertices, it has n leaves.
+Choose the correct answer from the options given below :
+§A A, B, C Only
+§B B, C Only
+§C A, D Only
+§D A, B, C, D
+## 85
+For making a memory of size 2048 x 8 bytes, by using the chips of size 128 x 4 bytes, the number of chips required is :
+§A 8
+§B 16
+§C 32
+§D 64
+## 86
+Which of the following are sequential circuits?
+A. Flip flop
+B. Multiplexer
+C. Counter
+D. Decoder
+E. Adder
+Choose the correct answer from the options given below :
+§A B, D Only
+§B A, C Only
+§C C, E Only
+§D D, A Only
+## 87
+Which of the following are White box Testing?
+A. Path Testing
+B. Loop Testing
+C. Regression Testing
+D. Non-functional Testing
+Choose the correct answer from the options given below :
+§A A and B Only
+§B B and C Only
+§C C and D Only
+§D A and D Only
+## 88
+Techniques for performing I/O :
+A. Programmed I/O
+B. Interrupt-driven I/O
+C. Rotational I/O
+D. Direct memory access
+E. Channelized I/O
+Choose the correct answer from the options given below :
+§A A and C Only
+§B A, B, and D Only
+§C A, D and E Only
+§D B and E Only
+## 89
+For the software quality assurance, which of the following is correct?
+A. Execution of code
+B. No execution of code
+C. Preventive technique
+D. A corrective technique
+Choose the correct answer from the options given below :
+§A A, B Only
+§B B, C Only
+§C C, D only
+§D D, A Only
+## 90
+Which of the following genetic algorithm operations is computationally most expensive?
+§A Convergence testing
+§B Initial population creation
+§C Selection of sub-population for mating
+§D Reproduction to produce next generation
+## 91
+Passage (Q91-Q95): A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.
+When we formulate the LPP from the above-given passage. Which of the following is an objective function for its dual problem?
+§A Min P = 5u + 8v + 15w
+§B Min P = 8u + 10v + 15w
+§C Min P = 15u + 5v + 8w
+§D Max P = 10u + 8v + 15w
+## 92
+Passage (Q91-Q95): A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.
+Which of the following will be appropriate objectives function for the given problem ?
+§A 2x+3y
+§B 3x+2y+2z
+§C 30x+50y
+§D 3x+2y
+## 93
+Passage (Q91-Q95): A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.
+How many unit length used for cloth A when income is maximized ?
+§A 0.8 unit
+§B 2.4 unit
+§C 2.8 unit
+§D 3.0 unit
+## 94
+Passage (Q91-Q95): A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.
+If x unit length of type A cloths and y unit length of type B cloths, then contrains formulate for the LPP, is :
+§A y ≤ 7.5, 2x + 3y ≤ 8, 3y + 2x ≤ 10
+§B y ≤ 7.5, 2x + 3y ≤ 8, 3x + 2y ≤ 10
+§C 2x + 3y ≤ 8, 3x + 2y + 2z < 15
+§D 2x + 3y ≤ 10, 3x + 2y ≤ 10, 2y ≤ 15
+## 95
+Passage (Q91-Q95): A firm can produce two types of cloth say A and B. Three kinds of wool are required for it, say red wool, green wool, and blue wool. One unit length of type A cloth needs 2 yards of red and 3 yards of green wool. One unit length of type B cloth needs 3 yards of red wool, 2 yards of green wool and 2 yards of blue wool. The firm has only a stock of 8 yards of red wool, 10 yards of green wool, and 15 yards of blue wool. It is assumed that the income obtained from one unit length of type A and type B clothes are ₹ 30 and ₹ 50, respectively.
+On the basis of available material, maximum total income is :
+§A ₹ 133.3
+§B ₹ 124
+§C ₹ 100
+§D ₹ 153.3
+## 96
+Passage (Q96-Q100): A company is implementing a new database system to manage its customer information. The database contains labels for customers, orders, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representative who manages the accountable products. The database is designed to improve efficiency in tracking sales and customer interactions.
+Which SQL query retrieves the total number of orders placed by a specific customer ?
+§A Select COUNT (*) As total_orders from orders where customer_id = [Customer_ID];
+§B Select COUNT (order_id) As total_orders from orders where customer_id = [Customer_ID];
+§C Select COUNT (DISTINCT order_id) As total_orders from orders Where customer_id =[ Customer_ID];
+§D Select SUM (order_Id) As total_orders from orders where customer_id = [Customer_ID];
+## 97
+Passage (Q96-Q100): A company is implementing a new database system to manage its customer information. The database contains labels for customers, orders, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representative who manages the accountable products. The database is designed to improve efficiency in tracking sales and customer interactions.
+Based on the passage, which of the following statements is true ?
+§A Each customer can place only one order.
+§B Each sales representative can manage multiple customer accounts.
+§C Each order can be associated with only one product.
+§D The database does not include a table for products.
+## 98
+Passage (Q96-Q100): A company is implementing a new database system to manage its customer information. The database contains labels for customers, orders, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representative who manages the accountable products. The database is designed to improve efficiency in tracking sales and customer interactions.
+Which of the following tables is likely to have a foreign key referencing another table in the database system implemented by the company ?
+§A Customers
+§B Orders
+§C Products
+§D Sales representatives
+## 99
+Passage (Q96-Q100): A company is implementing a new database system to manage its customer information. The database contains labels for customers, orders, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representative who manages the accountable products. The database is designed to improve efficiency in tracking sales and customer interactions.
+Which SQL query retrieves the total number of distinct customers who have placed orders?
+§A Select COUNT (DISTINCT customer_id) As total_customers From orders;
+§B Select COUNT (*) As total_customers from customers;
+§C Select COUNT (DISTINCT order_id) As total_customers from orders;
+§D Select COUNT (DISTINCT customer_id) As total_customers from customers;
+## 100
+Passage (Q96-Q100): A company is implementing a new database system to manage its customer information. The database contains labels for customers, orders, products and sales representatives. Each customer can place multiple orders and each order can contain multiple products. Each order is associated with a specific sales representative who manages the accountable products. The database is designed to improve efficiency in tracking sales and customer interactions.
+Which of the following best describes the relationship between the "orders" table and the "Customers" table in the company's database system?
+§A One-to-One
+§B One-to-Many
+§C Many-to-One
+§D Many-to-Many

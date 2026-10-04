@@ -1,0 +1,1011 @@
+## 1
+What is the probability that a positive integer selected at random from the set of positive integers not exceeding 100 is divisible by either 2 or 5?
+§A 10 / 5
+§B 3 / 5
+§C 2 / 5
+§D 1 / 5
+## 2
+Which of the following is not a palindromic subsequence of the string "ababcdabba"?
+§A abcba
+§B abba
+§C abbbba
+§D adba
+## 3
+Which of the following is TRUE?
+§A The cost of searching an AVL tree is θ(log n) but that of binary search is O(n)
+§B The cost of searching an AVL tree in θ(log n) but that of complete binary tree is θ(n log n)
+§C The cost of searching a binary tree is O(log n) but that of AVL tree is θ(n)
+§D The cost of searching an AVL tree is θ(n log n) but that of a binary search tree is O(n)
+## 4
+What is the result of evaluating the postfix expression " 43*25*+8- "?
+§A 8
+§B 14
+§C 10
+§D 5
+## 5
+Which of the following circuits is used to store one bit of data?
+§A Encoder
+§B Decoder
+§C Flip-Flop
+§D Register
+## 6
+Identify the code sequence:
+1010
+1011
+1001
+1000
+§A BCD
+§B Excess-3
+§C Gray
+§D Excess-3 Gray
+## 7
+The microoperation which divides a signed binary number by 2 is:
+§A Circular shift
+§B Logical shift
+§C Arithmetic shift right
+§D Arithmetic shift left
+## 8
+A program that is used by other routines to accomplish a particular task, is called:
+§A Micro program
+§B Micro operation
+§C Routine
+§D Subroutine
+## 9
+Consider a triangle PQR with coordinates as P(0,0), Q(2,2) and R(10,4). If this triangle is to be magnified to four times its size while keeping R(10,4) fixed, then the coordinates of the magnified triangle are :
+§A (-20,-12), Q(-20,-4) and R(10,4)
+§B (-30,12), Q(-22,-4) and R(10,4)
+§C (-25,-10), Q(22,-4) and R(10,4)
+§D (30,-12), Q(-22,4) and R(10,4)
+## 10
+Which of the following statements is TRUE?
+§A Virtual functions do not implement polymorphism
+§B Virtual functions do not permit calling of derived class functions using a base class pointer
+§C We can never build an object from a class containing a pure virtual function
+§D Pure virtual function can never have a body
+## 11
+What is the output of the following program?
+```
+#include<stdio.h>
+int main()
+{ int i=3;
+  while (i--)
+  { int i=10;
+    i--;
+    printf("%d", i );
+  }
+  printf("%d", i );
+}
+```
+§A 990
+§B 9990
+§C 999-1
+§D 99-1
+## 12
+The Hue of a color is related to its:
+§A Luminance
+§B Saturation
+§C Incandescence
+§D Wavelength
+## 13
+"CREATE TABLE T" in SQL is an example of:
+§A Normalization
+§B DML
+§C DDL
+§D Primary key
+## 14
+An Address in main memory is called:
+§A Virtual address
+§B Memory address
+§C Logical address
+§D Physical address
+## 15
+A system bus in which each data item is transferred during a time slice known in advance to both unit source and destination is called :
+§A MIMD
+§B DMA
+§C asynchronous bus
+§D synchronous bus
+## 16
+What is the output of the following program?
+```
+# include <stdio.h>
+# define SQR(x)(x* x)
+int main ( )
+{int a, b=3;
+a=SQR(b+2);
+printf("%d", a);
+return 0 ;
+}
+```
+§A 25
+§B 11
+§C Garbage value
+§D 24
+## 17
+The head of a moving head disk with 200 tracks, numbered 0 to 199, has just finished a request at track 125, and currently serving a request at track 143. The queue of requests is given in the FIFO order as 86,147,91,177,94,150,102,175,130. What will be the total number of head movements required to satisfy these requests for SCAN algorithm?
+§A 259 cylinders
+§B 169 cylinders
+§C 154 cylinders
+§D 264 cylinders
+## 18
+Given as 4GB (~approx 4.3 x10⁹ bytes) of virtual space and a typical page size of 4 KB and each page table entry is 5 bytes. How many virtual pages would this imply? What is the size of the whole page table?
+§A 1075000 and 5375 KB
+§B 215000 and 40960 bytes
+§C 10750 and 10240 bytes
+§D 43000 and 1024 bytes
+## 19
+In Linux, where is the user password stored?
+§A / etc/password
+§B / root/password
+§C /etc/passwd
+§D / root/passwd
+## 20
+Hash functions are used to produce the message digests which are then encrypted with a private key to get:
+§A Public key
+§B Digital signature
+§C Cipher text
+§D Data Encryption Standard
+## 21
+Let L= {ab, aa, baa}. Which of the following strings are not in L*?
+§A abaabaaabaa
+§B aaaabaaaa
+§C baaaaabaaaab
+§D baaaaabaa
+## 22
+Let A={a, b} and L=A*. Let X={aⁿbⁿ, n>0}. The languages L U X and X are respectively :
+§A Not regular, Regular
+§B Regular, Regular
+§C Regular, Not regular
+§D Not Regular, Not Regular
+## 23
+Which of the following symbol table implementations is best suited if access time is to be minimum?
+§A Linear list
+§B Search tree
+§C Hash Table
+§D Self organisation list
+## 24
+Consider a Grammar E→E+n |Exn|n for a sentence n+n x n the handles in the right-sentential form of the reduction are?
+§A n, E+n and E+n x n
+§B n, E+n and E+E x n
+§C n, n+n and n+n x n
+§D n, E+n and E x n
+## 25
+Which data structure is typically used to implement a hash table?
+§A Linked list
+§B Array
+§C Binary Tree
+§D Stack
+## 26
+Which collision resolution technique involves maintaining a linked list of collided keys?
+§A Linear probing
+§B Quadratic probing
+§C Chaining
+§D Double hashing
+## 27
+Consider the following functions :
+f(n)=3 n^√n
+g(n)=2^(√n log₂ n)
+h(n)=n!
+Which of the following is true?
+§A h(n) is O(f(n))
+§B h(n) is O(g(n))
+§C g(n) is not O(f(n))
+§D f(n) is O(g(n))
+## 28
+2-3-4 trees are B - trees of order 4. They are isometric of trees.
+§A AVL
+§B AA
+§C 2-3
+§D Red-Black
+## 29
+The average time required to search a storage location in memory and obtain its contents is called :
+§A Access time
+§B Latency time
+§C Response time
+§D Reading time
+## 30
+One of the purposes of using intermediate code in compilers is to :
+§A make parsing and semantic analysis simpler
+§B improve error recovery and error reporting
+§C increase the chances of reusing the machine independent code optimizer in other compilers
+§D improve the register allocation
+## 31
+The sum of minimum and maximum number of final states for a Deterministic Finite Automata (DFA) having ' P ' state is equal to :
+§A P
+§B P-1
+§C P+1
+§D P+2
+## 32
+Test suite is consist of :
+§A Set of defect cases
+§B Set of boundary cases
+§C Set of test cases
+§D Set of nest cases
+## 33
+A multiplexes combines four 100 Kbps channels using a time slot of 2 bits. What is the bit rate?
+§A 100 Kbps
+§B 200 Kbps
+§C 400 Kbps
+§D 1000 Kbps
+## 34
+Which of the following is not a field in TCP header?
+§A Sequence Number
+§B Checksum
+§C Fragmentation offset
+§D Window size
+## 35
+In "bit stuffing", each frame begins and ends with a bit pattern in hexadecimal?
+§A 0x8C
+§B 0x6F
+§C 0xFF
+§D 0x7E
+## 36
+Level - 0 DFD is also called as:
+§A Use case Diagram
+§B Sequence Diagram
+§C Context Diagram
+§D Prototype Diagram
+## 37
+What is the generic structure of a Multi-Agent System (MAS)?
+§A Single-agent with multiple objectives
+§B Multiagents with single objectives
+§C Multiagents with diverse objectives and communication abilities
+§D Multiagent with two objectives
+## 38
+A point of a fuzzy set A is a point x ∈X at which μA(x) = 0.5
+§A Core
+§B Support
+§C Crossover
+§D α − cut
+## 39
+In a genetic algorithm optimization problem, the fitness function is defined as f(x)= x²- 4x+4. Given a population of four individuals with values of x:{1.5,2.0,3.0,4.5}
+What is the fitness value of the individual that will be selected as the parent for reproduction in one generation?
+§A 2.25
+§B 6.0
+§C 0.0
+§D 6.25
+## 40
+In a feed-forward neural network with the following specifications :
+The input layer has 4 neurons, hidden layer has 3 neurons, and output layer has 2 neurons using the sigmoid activation function for given input values [0.5,0.8,0.2,0.6] as well as the initial weights for the connections.
+W1: [0.1,0.3,0.5,0.2] W2: [0.2,0.4,0.6,0.2] W3: [0.3,0.5,0.7,0.2] Input layer to hidden layer weights
+W4 : [0.4,0.1,0.3] W5 : [0.5,0.2,0.4] Hidden layer to output layer weights
+What is the output of the output layer when the given input values are passed through neural network? Round the answer to two decimal places:
+§A [0.62,0.68]
+§B [0.72,0.78]
+§C [0.82,0.88]
+§D [0.92,0.98]
+## 41
+If universe of disclosure are all real numbers, then which of the following are true?
+(A) ∃x ∀y(x+y=y)
+(B) ∀x ∀ y(((x≥ 0)∧(y<0))→(x-y>0))
+(C) ∃x ∃y(((x≤0)∧(y≤0))∧(x-y>0))
+(D) ∀x ∀y((x≠0)∧(y≠0)↔(xy≠0))
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (A), (C) and (D) Only
+§C (A), (B) and (D) Only
+§D (A), (B), (C) and (D) Only
+## 42
+If the universe of disclosure is a set of integers, then which of the followings are TRUE ?
+(A) ∀n ∃m(n²<m)
+(B) ∃n ∀m(n<m²)
+(C) ∃n ∀m(nm=m)
+(D) ∃n ∃m(n²+m²=6)
+(E) ∃n ∃m(n+m=4 ∧ n-m=1)
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (B) and (C) Only
+§C (C), (D) and (E) Only
+§D (C) and (E) Only
+## 43
+If N²=NxN, N is set of natural numbers and R is relation on N², s.t. R⊆N² X N² i.e. <x,y> R <u,v>⇔ xv=yu, then which of the following are TRUE?
+(A) Reflexive
+(B) Symmetric
+(C) Transitive
+(D) Asymmetric
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (A), (C) and (D) Only
+§D (A), (B) and (C) Only
+## 44
+The interface(s) that provide(s) I/O transfer of data directly to and from the memory unit peripheral is/are termed as:
+(A) DMA (Direct Memory Access)
+(B) IOP (Input-Output Processor)
+(C) Serial Interface
+(D) Parallel Interface
+Choose the correct answer from the options given below :
+§A (A) Only
+§B (B) Only
+§C (A) and (B) Only
+§D (C) and (D) Only
+## 45
+Which of the following(s) are main memory?
+(A) Virtual memory
+(B) Cache memory
+(C) RAM
+(D) SSD
+Choose the correct answer from the options given below :
+§A (A) and (C) Only
+§B (B) and (C) Only
+§C (C) and (D) Only
+§D (A), (B) and (C) Only
+## 46
+Which of the following are tautology?
+(A) (P→(P→Q))→(P→Q)
+(B) ((P→Q)→Q)→(P∨Q)
+(C) ((P∨¬P)→Q)→((P∨¬P)→R)
+(D) (Q→(P∧¬P))→(R→(P∧¬P))
+Choose the correct answer from the options given below :
+§A (A) Only
+§B (B) Only
+§C (A) and(B) Only
+§D (C) and (D) Only
+## 47
+Consider the three points P1(1,2,0), P2(3,6,20) and P3(2,4,6) and a view point C(0,0,-10). Choose the correct options.
+(A) P1 obscure P2, if viewed from C.
+(B) P2 obscure P1, if viewed from C.
+(C) P3 does not obscure P1 if viewed from C.
+(D) P2 does not obscure P3 if viewed from C.
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (A), (C) and (D) Only
+§C (B), (C) and (D) Only
+§D (A), (B) and (D) Only
+## 48
+Which of the statements are CORRECT?
+(A) Constructors are invoked automatically when the objects are created.
+(B) Constructors do not have return types, not even void, and therefore they cannot return values.
+(C) Constructors cannot be inherited though a derived class can call the base class constructors.
+(D) Constructors can be declared as virtual.
+Choose the correct answer from the options given below :
+§A (A), (B) and (D) Only
+§B (A), (B) and (C) Only
+§C (B), (C) and (D) Only
+§D (A), (C) and (D) Only
+## 49
+Which one of the following statements is CORRECT?
+(A) Granularity is the size of data items in a database.
+(B) Two operations in a schedule are said to be in conflict if they belong to the same transaction.
+(C) Two schedulers are said to be conflict equivalent if the order of any two conflicting operations is the same in both schedules.
+(D) Write operations that are performed without performing the write operation are known as Blind Writes.
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (A), (B) and (C) Only
+§C (A), (B) and (D) Only
+§D (B) and (C) Only
+## 50
+Which of the following is/are NOT CORRECT statements?
+(A) The first record in each block of the data file is known as the actor record.
+(B) Dense index has index entries for every search key value in the data file.
+(C) Searching is harder in the B+ tree than in the B - tree as all external nodes are linked to each other.
+(D) In extendible hashing the size of the directory is just an array of 2d-1, where d is global depth.
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (A), (C) and (D) Only
+§C (A), (B) and (D) Only
+§D (A), (B), (C) and (D) Only
+## 51
+Which of the following statements is/are NOT CORRECT about NUMA ?
+(A) LOAD and STORE instructions are used to access remote memory.
+(B) There is a single address space visible to all CPUs.
+(C) Access to local memory is slower than access to remote memory.
+(D) When the access time to remote memory is hidden, the system is called NC - NUMA.
+(E) In CC - NUMA, Coherent caches are present.
+Choose the correct answer from the options given below :
+§A (A) and (C) Only
+§B (B) and (D) Only
+§C (A) and (E) Only
+§D (C) and (D) Only
+## 52
+Indexed/grouped allocation is useful as :
+(A) It supports both sequential and direct access.
+(B) Entire block is available for data.
+(C) It does not require lots of space for keeping pointers.
+(D) No external fragmentation.
+Choose the correct answer from the options given below :
+§A (A) Only
+§B (B) and (C) Only
+§C (B) Only
+§D (A), (B) and (D) Only
+## 53
+Which of the following statements are CORRECT ?
+(A) A process always check state of currently executing process to enter critical schema.
+(B) Spin locks use busy waiting.
+(C) Periodically testing a variable until some value appears is known as busy waiting.
+(D) Critical region is a part of the program, where shared memory is kept.
+(E) Printer daemon, continuously checks to see if there are any file to be printed.
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (B) and (D) Only
+§D (B) and (E) Only
+## 54
+Three address codes can be represented in special structures known as :
+(A) Quadruples
+(B) Triples
+(C) Patterns
+(D) Indirect Triples
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (A), (B) and (D) Only
+§C (B) and (C) Only
+§D (B), (C) and (D) Only
+## 55
+Which of the statement is/are CORRECT ?
+(A) Moore and Mealy machines are finite state machines with output capabilities.
+(B) Any given Moore machine has an equivalent Mealy machine.
+(C) Any given Mealy machine has an equivalent Moore machine.
+(D) Moore machine is not a finite state machine.
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (A), (B) and (C) Only
+§C (B) and (D) Only
+§D (A), (B) and (D) Only
+## 56
+The statement P(x): " x=x² ". If the universe of disclosure consists of integers, what are the following have truth values:
+(A) P(0)
+(B) P(1)
+(C) P(2)
+(D) ∃x P(x)
+(E) ∀x P(x)
+Choose the correct answer from the options given below :
+§A (A), (B) and (E) Only
+§B (A), (B) and (C) Only
+§C (A), (B) and (D) Only
+§D (B), (C) and (D) Only
+## 57
+Which of the following statements are truth statements if universe of disclosure is set of integers:
+(A) ∀n (n² ≥ 0)
+(B) ∃n (n² = 2)
+(C) ∀n (n² ≥ n)
+(D) ∃n(n²<0)
+Choose the correct answer from the options given below :
+§A (A) and (B) Only
+§B (B) and (C) Only
+§C (C) and (D) Only
+§D (A) and (C) Only
+## 58
+Which of the following graphs are trees ?
+[Figure: four graphs (A)-(D), each on six vertices a, b, c, d, e, f.
+(A) edges: a-c, b-c, c-d, c-f, e-f.
+(B) edges: a-c, a-f, b-e, e-f, d-f.
+(C) edges: a-b, a-c, a-d, c-f, b-e, d-e.
+(D) edges: a-f, b-e, b-d, c-e.]
+Choose the correct answer from the options given below :
+§A (A) and (B) only
+§B (A), (B) and (D) only
+§C (A) and (D) only
+§D (A), (B), (C) and (D) only
+## 59
+Which of the following are examples of CSMA channel sensing methods?
+(A) 1-persistent
+(B) 2-persistent
+(C) p-persistent
+(D) o-persistent
+Choose the correct answer from the options given below :
+§A (A), (B) and (D) Only
+§B (A), (C) and (D) Only
+§C (B), (C) and (D) Only
+§D (A), (B) and (C) Only
+## 60
+The selection of Spiral Model based on characteristics of requirements :
+(A) Are requirements easily understandable and defined?
+(B) Do we change requirements quite often?
+(C) Can we define requirements early in the cycle?
+(D) Requirements are indicating a complex to be built
+Choose the correct answer from the options given below :
+§A (C) Only
+§B (B) Only
+§C (B) and (D) Only
+§D (A) and (C) Only
+## 61
+The work done by UDP is/are :
+(A) Congestion control
+(B) Flow control
+(C) Retransmission
+(D) Segment transmission
+Choose the correct answer from the options given below :
+§A (A) and (D) Only
+§B (C) Only
+§C (D) Only
+§D (B) and (C) Only
+## 62
+Which of the following statement/s is/are NOT CORRECT?
+(A) OSPF is based on distance-vector routing protocol.
+(B) Both link-state and distance-vector routing are based on the least cost goal.
+(C) BGP4 is based on the path-vector algorithm.
+(D) The three-node instability can be avoided using split horizon combined with poison reverse.
+(E) RIP is based on link state algorithm.
+Choose the correct answer from the options given below :
+§A (A), (D) and (E) Only
+§B (A) and (B) Only
+§C (B) and (C) Only
+§D (B), (C) and (E) Only
+## 63
+Which of the following statement/s are CORRECT?
+(A) NRZ is a bipolar scheme in which the positive voltage defined bit is 0 (zero).
+(B) NRZ-L and NRZ-I both have an average signal rate of N / 2.
+(C) The idea of RZ and NRZ-L are combined into the Manchester scheme.
+(D) NRZ-L and NRZ-I both have DC component problems.
+(E) The minimum bandwidth of Manchester and differential Manchester is 3 times that of NRZ.
+Choose the correct answer from the options given below :
+§A (A), (B) and (C) Only
+§B (A), (C), (D), and (E) Only
+§C (B), (C) and (D) Only
+§D (A), (B), (C), and (E) Only
+## 64
+Which of the following are commonly used parsing techniques in NLP (Natural Language Processing) for syntactic analysis?
+(A) Top-down parsing
+(B) Bottom Up parsing
+(C) Dependency parsing
+(D) Statistical machine translation
+(E) Earley parsing
+Choose the correct answer from the options given below :
+§A (A), (C), (D), (E) Only
+§B (B), (C), (D), (E) Only
+§C (A), (B), (C), (E) Only
+§D (A) and (B) Only
+## 65
+In the content of Alpha Beta pruning in game trees which of the following statements are correct regarding cut off procedures?
+(A) Alpha Beta pruning can eliminate subtrees with certainty when the value of a node exceeds both the alpha and beta bonds.
+(B) The primarily purpose of Alpha-Beta proning is to save computation time by searching fewer nodes in the same tree.
+(C) Alpha Beta pruning guarantees the optimal solution in all cases by exploring the entire game tree.
+(D) Alpha and Beta bonds are initialized to negative and positive infinity respectively at the root note.
+Choose the correct answer from the options given below :
+§A (A), (C), (D) Only
+§B (B),(C), (D) Only
+§C (A), (B), (D) Only
+§D (C), (B) Only
+## 66
+Match the List-I with List-II
+List-I | List-II
+(A) φ ∩ {φ} = | (I) φ
+(B) {φ} ∩ {φ} = | (II) {φ}
+(C) {φ, {φ}} − φ = | (III) {{φ}}
+(D) φ ∪ {{φ}} = | (IV) {φ, {φ}}
+Choose the correct answer from the options given below :
+§A (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+§B (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+§C (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+§D (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+## 67
+Match List - I with List - II.
+List - I | List - II
+(a) SZA | (I) Increment M and skip it zero
+(b) SKI | (II) Skip if AC is negative
+(c) SNA | (III) Skip if input flag is on
+(d) ISZ | (IV) Skip if AC is Zero
+Choose the correct answer from the options given below :
+§A (a)-(II), (b)-(IV), (c)-(I), (d)-(III)
+§B (a)-(IV), (b)-(III), (c)-(II), (d)-(I)
+§C (a)-(IV), (b)-(II), (c)-(I), (d)-(III)
+§D (a)-(III), (b)-(IV), (c)-(II), (d)-(I)
+## 68
+Match List - I with List - II.
+List - I | List - II
+a. Bresenham | (I) Hidden surface removal
+b. Cohen-Sutherland | (II) Line drawing algorithm
+c. Sutherland-Hodgeman | (III) Line clipping algorithm
+d. Z-Buffer | (IV) Polygon clipping algorithm
+Choose the correct answer from the options given below :
+§A (a)-(III), (b)-(II), (c)-(IV), (d)-(I)
+§B (a)-(II), (b)-(III), (c)-(I), (d)-(IV)
+§C (a)-(II), (b)-(III), (c)-(IV), (d)-(I)
+§D (a)-(II), (b)-(IV), (c)-(III), (d)-(I)
+## 69
+Match List - I with List - II.
+List - I | List - II
+a. BCNF iff | (I) every JD is implied by the candidate keys
+b. 5NF iff | (II) all underlying domains contain scalar values only
+c. 1NF iff | (III) every MVD is implied by the candidate keys
+d. 4NF iff | (IV) every FD is implied by the candidate keys
+Choose the correct answer from the options given below :
+§A (a)-(III), (b)-(II), (c)-(I), (d)-(IV)
+§B (a)-(IV), (b)-(I), (c)-(II), (d)-(III)
+§C (a)-(II), (b)-(III), (c)-(IV), (d)-(I)
+§D (a)-(IV), (b)-(I), (c)-(III), (d)-(II)
+## 70
+Match List - I with List - II.
+List-I | List-II
+a. LRU | (I) A page is written to secondary memory only when it has been selected for replacement
+b. Demand cleaning | (II) A page that has not been referenced for the longest time is replaced
+c. Long-term scheduling | (III) The decision to add to the number of processes that are partially or fully in main memory
+d. Medium term scheduling | (IV) The decision to add to the pool of processes to be executed
+Choose the correct answer from the options given below :
+§A (a)-(I), (b)-(III), (c)-(IV), (d)-(II)
+§B (a)-(II), (b)-(I), (c)-(IV), (d)-(III)
+§C (a)-(III), (b)-(II), (c)-(I), (d)-(IV)
+§D (a)-(IV), (b)-(II), (c)-(III), (d)-(I)
+## 71
+Match List - I with List - II according to input to the compiler phase that process it :
+List-I | List-II
+a. Syntax tree | (I) Code generator
+b. Intermediate representation | (II) Semantic analyzer
+c. Token stream | (III) Lexical analyze
+d. Character stream | (IV) Syntax analyzer
+Choose the correct answer from the options given below :
+§A (a)-(IV), (b)-(III), (c)-(I), (d)-(II)
+§B (a)-(II), (b)-(I), (c)-(IV), (d)-(III)
+§C (a)-(II), (b)-(IV), (c)-(I), (d)-(III)
+§D (a)-(IV), (b)-(I), (c)-(II), (d)-(III)
+## 72
+Match List - I with List - II.
+List-I | List-II
+a. P ∧ (P → Q) | I. P ∨ Q
+b. ¬(P ∨ Q) → (P ∧ Q) | II. (P ∧ ¬P) ∨ (P ∧ Q)
+c. P → Q | III. (¬P) ∨ Q
+d. P ∨ (Q ∧ R) | IV. (P ∧ P) ∨ (P ∧ Q) ∨ (P ∧ R) ∨ (Q ∧ R)
+Choose the correct answer from the options given below :
+§A (a)-(I), (b)-(II), (c)-(III), (d)-(IV)
+§B (a)-(II), (b)-(I), (c)-(III), (d)-(IV)
+§C (a)-(III), (b)-(I), (c)-(II), (d)-(IV)
+§D (a)-(IV), (b)-(III), (c)-(II), (d)-(I)
+## 73
+Match List - I with List - II.
+List-I | List-II
+a. Greedy Best first search | I. The space complexity as O(d) where d = depth of the deepest optimal solution
+b. A* | II. Incomplete even if the search space is finite
+c. Recursive best-first search | III. Optimal if optimal solution is reachable otherwise return the best reachable optimal solution
+d. SMA* | IV. Computation and space complexity is two light
+Choose the correct answer from the options given below :
+§A (a)-(II), (b)-(IV), (c)-(I), (d)-(III)
+§B (a)-(II), (b)-(III), (c)-(I), (d)-(IV)
+§C (a)-(III), (b)-(II), (c)-(IV), (d)-(I)
+§D (a)-(III), (b)-(IV), (c)-(II), (d)-(I)
+## 74
+Match List - I with List - II.
+List-I | List-II
+a. Monoalphabetic cipher | (I) Round key
+b. DES | (II) One-to-many relationship
+c. Stream Cipher | (III) One-to-one relationship
+d. Polyalphabetic cipher | (IV) Feedback mechanism
+Choose the correct answer from the options given below :
+§A (a)-(III), (b)-(I), (c)-(IV), (d)-(II)
+§B (a)-(III), (b)-(IV), (c)-(II), (d)-(I)
+§C (a)-(I), (b)-(III), (c)-(IV), (d)-(II)
+§D (a)-(II), (b)-(I), (c)-(IV), (d)-(III)
+## 75
+Match List - I with List - II.
+List - I | List - II
+a. Hill climbing | I. O(b^d)
+b. Best first search | II. O(bd)
+c. A* Search | III. O(1)
+d. Depth first search | IV. O(b^m)
+Choose the correct answer from the options given below :
+§A (a)-(III), (b)-(I), (c)-(IV), (d)-(II)
+§B (a)-(II), (b)-(I), (c)-(IV), (d)-(III)
+§C (a)-(II), (b)-(IV), (c)-(I), (d)-(III)
+§D (a)-(I), (b)-(III), (c)-(II), (d)-(I)
+## 76
+Arrange the following in ascending order :
+(a) Remainder of 49^16 when divided by 17
+(b) Remainder of 2^446 when divided by 9
+(c) Remainder of 155^17 when divided by 17
+(d) Last digits of the number 7^45
+Choose the correct answer from the options given below :
+§A (a), (b), (c), (d)
+§B (a), (b), (d), (c)
+§C (a), (c), (b), (d)
+§D (d), (c), (b), (a)
+## 77
+In most general case, the computer needs to process each instruction with the following sequence of steps:
+(A) Calculate the effective address
+(B) Execute the instruction
+(C) Fetch the instruction from memory
+(D) Fetch the operand from memory
+(E) Decode the instruction
+Choose the correct answer from the options given below :
+§A (C),(E),(D),(A),(B)
+§B (C),(E),(A),(D),(B)
+§C (A),(B),(C),(E),(D)
+§D (A),(B),(C),(D),(E)
+## 78
+Consider the following code segment :
+int arr []={0,1,2,3,4};
+int i=1, *ptr;
+ptr =arr+2 ;
+arrange the following printf statements in the increasing order of their output.
+(a) printf ("% d", ptr [i]);
+(b) printf ("%d", ptr [i+1]);
+(c) printf ("%d", ptr[-i]);
+(d) printf ("%d", ptr[-i+1]);
+Choose the correct answer from the options given below :
+§A (c), (a), (b), (d)
+§B (c), (d), (a), (b)
+§C (d), (a), (b), (c)
+§D (a), (b), (d), (c)
+## 79
+The steps for analysis and design of object oriented system.
+(a) Draw interaction diagrams
+(b) Draw state chart and object diagram
+(c) Draw use case and activity diagram
+(d) Draw component and deployment diagram
+(e) Draw class diagram
+Choose the correct answer from the options given below :
+§A (e) → (b) → (a) → (c) → (d)
+§B (b) → (a) → (e) → (d) → (c)
+§C (e) → (c) → (b) → (d) → (a)
+§D (c) → (a) → (e) → (b) → (d)
+## 80
+Arrange the following levels of interrupt protection within the Linux Kernel, in the order of increasing priority.
+(a) user mode programs
+(b) bottom half interrupt handlers
+(c) kernel system service routines
+(d) top half interrupt handlers
+Choose the correct answer from the options given below :
+§A (a),(b),(d),(c)
+§B (a),(c),(b),(d)
+§C (a),(c),(d),(b)
+§D (d), (a), (c), (b)
+## 81
+Arrange the following phases of a compiler as per their order of execution (start to end)
+(a) Target code generation
+(b) Syntax Analysis
+(c) Code optimization
+(d) Semantic Analysis
+(e) Lexical Analysis
+Choose the correct answer from the options given below :
+§A (b), (e), (d), (a), (c)
+§B (e), (d), (b), (a), (c)
+§C (e), (b), (d), (c), (a)
+§D (b),(d),(e),(a),(c)
+## 82
+The prototyping model has the sequence :
+(a) Customer Evaluation
+(b) Quick design
+(c) Requirements
+(d) Implement
+(e) Design
+Choose the correct answer from the options given below :
+§A (c) → (a) → (d) → (b) → (e)
+§B (b) → (c) → (a) → (d) → (e)
+§C (c) → (b) → (d) → (a) → (e)
+§D (e) → (b) → (c) → (d) → (a)
+## 83
+Arrange the following encoding strategies used in Genetic Algorithms (GAs) in the correct sequence starting from the initial step and ending with the final representation of solutions :
+(a) Binary Encoding
+(b) Real valued Encoding
+(c) Permutation Encoding
+(d) Gray coding
+Choose the correct answer from the options given below :
+§A (d),(b),(a),(c)
+§B (b),(d),(a),(c)
+§C (c),(d),(a),(b)
+§D (b),(c),(a),(d)
+## 84
+Arrange the following steps in the correct order for a DHCP Client to renew its IP lease with a DHCP server :
+(a) DHCP client sends a DHCPREQUEST message
+(b) DHCP server acknowledges the renewal with a DHCPACK message
+(c) DHCP client checks the local lease timer and initiates renewal
+(d) DHCP server updates its lease database
+Choose the correct answer from the options given below :
+§A (a),(b),(c),(d)
+§B (c),(d),(b),(a)
+§C (c),(b),(a),(d)
+§D (c), (a),(b),(d)
+## 85
+Arrange the following steps in the correct sequence for applying an unsupervised learning technique such as K-means clustering to a data set:
+(a) Randomly initialize cluster centroids
+(b) Assign each data point to nearest cluster centroid
+(c) Update the cluster centroids based on the mean of data points assigned to each cluster
+(d) Specify the number of clusters (K) to partition the data into
+(e) Repeat steps B and C until convergence criteria are met
+Choose the correct answer from the options given below :
+§A (d),(a),(b),(c),(e)
+§B (a),(b),(c),(d),(e)
+§C (c),(b),(a),(d),(e)
+§D (d),(c),(a),(b),(e)
+## 86
+Given below are two statements :
+Statement (I): If H is a nonempty finite subset of a group G and ab ∈ H ∀ a,b ∈ H then H is also a group
+Statement (II): There is no homomorphism existing from (Z,+) to (Q,+); where Z is a set of integers and Q is a set of rational numbers.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 87
+Given below are two statements :
+Statement (I): The friend function and the member functions of a friend class directly access the private and protected data.
+Statement (II): The friend function can access the private data through the member functions of the base class.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 88
+Given below are two statements :
+Statement (I): A thread is a dispatchable unit of work that does not executes sequentially and is not interruptible
+Statement (II): It is not possible to alter the behaviour of a thread by altering its context when thread is suspended
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 89
+Given below are two statements :
+Statement (I) : In Reuse Oriented Model, Modification of the old system parts appropriate to the new requirements.
+Statement (II) : In Reuse Oriented Model, Integration of the modified parts are not possible into the new systems.
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 90
+Given below are two statements:
+Statement (I) : In datagram networks - routers hold state information about connections
+Statement (II) : In a virtual circuit network- each virtual circuit requires router table space per connection
+In the light of the above statements, choose the most appropriate answer from the options given below :
+§A Both Statement I and Statement II are correct
+§B Both Statement I and Statement II are incorrect
+§C Statement I is correct but Statement II is incorrect
+§D Statement I is incorrect but Statement II is correct
+## 91
+Passage (Q91-Q95): Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively.
+Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.
+Answering the following question based on the above paragraph given.
+The cost function of total food is:
+§A Z=6 x+7 y
+§B Z=8 x+12 y
+§C Z=12 x+20 y
+§D Z=20 x+12 y
+## 92
+Passage (Q91-Q95): Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively.
+Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.
+Answering the following question based on the above paragraph given.
+Which of the following constraints when formulating the LPP?
+§A 6 x+7 y<= 100, 8 x+12 y <= 120, x, y >= 0
+§B 6 x+8 y <=100, 7 x+12 y <=120, x, y>= 0
+§C 6 x+7 y >= 100, 8 x+12 y >=120, x, y >= 0
+§D 6 x+8 y >= 100, 7 x+12 y >=120, x, y >= 0
+## 93
+Passage (Q91-Q95): Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively.
+Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.
+Answering the following question based on the above paragraph given.
+Which of the following are quantities (in grams) of food X and Y respectively when the cost of food is minimum:
+§A 0 and 12½
+§B 15 and 5/4
+§C 120/7 and 0
+§D 0 and 10
+## 94
+Passage (Q91-Q95): Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively.
+Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.
+Answering the following question based on the above paragraph given.
+The dual of the formulated LPP is :
+§A Max Z=100 u+120 v
+s.t.
+6 u+7 v <=12
+8 u+12 v <= 20
+u, v >= 0
+§B Max Z=12 u+20 v
+s.t.
+6 u+7 v <=100
+8 u+12 v <= 120
+u, v >= 0
+§C Max Z=100 u+120 v
+6 u+7 u <=12
+8 u+7 v <= 20
+u, v are unrestricted
+§D Max Z=100 u+120 u
+s.t.
+6 u+7 v >= 12
+8 u+12 v >=20
+u, v >= 0
+## 95
+Passage (Q91-Q95): Food X contains 6 units of Vitamin D per gram and 7 units of Vitamin E per gram and cost is Rs 12 per gram. Food Y contains 8 units of vitamin D per gram and 12 units of Vitamin E per gram and cost is Rs 20 per gram. The daily minimum requirements of vitamin D and E are 100 units and 120 units respectively.
+Suppose x is the quantity (in gram) of food X, y is quantity (in gram) of food Y.
+Answering the following question based on the above paragraph given.
+The minimum cost of food is:
+§A 205
+§B 250
+§C 330
+§D 200
+## 96
+Passage (Q96-Q100): Consider the following relations X(S, Si, C) and Y(S, P, D).
+X
+S | Si | C
+J | 1 | M
+B | 2 | N
+R | 3 | H
+T | 4 | G
+Y
+S | P | D
+J | S1 | CA
+B | P1 | AB
+R | D1 | DC
+A | H1 | MD
+Find the number of tuples by applying the operation
+X ⋈ (X.s = Y.s) Y
+§A 1
+§B 3
+§C 4
+§D 6
+## 97
+Passage (Q96-Q100): Consider the following relations X(S, Si, C) and Y(S, P, D).
+X
+S | Si | C
+J | 1 | M
+B | 2 | N
+R | 3 | H
+T | 4 | G
+Y
+S | P | D
+J | S1 | CA
+B | P1 | AB
+R | D1 | DC
+A | H1 | MD
+The result of the following operation will be
+X ⋈ (X.s = Y.s) Y
+§A S | Si | C | P | D
+J | 1 | M | S1 | CA
+B | 2 | N | P1 | AB
+R | 3 | H | D1 | DC
+T | 4 | G | NULL | NULL
+§B S | Si | C | P | D
+J | 1 | M | S1 | CA
+B | 2 | N | P1 | AB
+R | 3 | H | D1 | DC
+A | NULL | NULL | H1 | MD
+§C S | Si | C | P | D
+J | 1 | M | S1 | CA
+B | 2 | N | P1 | AB
+R | 3 | H | D1 | DC
+T | 4 | G | NULL | MD
+§D None of these
+## 98
+Passage (Q96-Q100): Consider the following relations X(S, Si, C) and Y(S, P, D).
+X
+S | Si | C
+J | 1 | M
+B | 2 | N
+R | 3 | H
+T | 4 | G
+Y
+S | P | D
+J | S1 | CA
+B | P1 | AB
+R | D1 | DC
+A | H1 | MD
+Which of the following join is used to get all the tuples of relation X and Y with Null values of corresponding missing values?
+§A Left outer join
+§B Right outer join
+§C Natural join
+§D Full outer join
+## 99
+Passage (Q96-Q100): Consider the following relations X(S, Si, C) and Y(S, P, D).
+X
+S | Si | C
+J | 1 | M
+B | 2 | N
+R | 3 | H
+T | 4 | G
+Y
+S | P | D
+J | S1 | CA
+B | P1 | AB
+R | D1 | DC
+A | H1 | MD
+Number of tuples by applying right outer join on relation X and Y is/are :
+§A 16
+§B 5
+§C 3
+§D 4
+## 100
+Passage (Q96-Q100): Consider the following relations X(S, Si, C) and Y(S, P, D).
+X
+S | Si | C
+J | 1 | M
+B | 2 | N
+R | 3 | H
+T | 4 | G
+Y
+S | P | D
+J | S1 | CA
+B | P1 | AB
+R | D1 | DC
+A | H1 | MD
+Number of tuples obtained by applying cartesian product over X and Y are :
+§A 16
+§B 12
+§C 04
+§D 32
