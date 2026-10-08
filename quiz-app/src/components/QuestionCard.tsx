@@ -9,6 +9,7 @@ import { getPaperFriendlyName } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 import QuestionText from "./QuestionText"
 import InlineImages from "./InlineImages"
+import { PdfButton, PdfSolutionLink } from "./PdfViewer"
 import { Button } from "./ui"
 
 export function BookmarkButton({ question, className, withLabel }: { question: Question; className?: string; withLabel?: boolean }) {
@@ -177,6 +178,7 @@ export default function QuestionCard({ question, source, compact, header, defaul
               <StickyNote className="w-4 h-4" />
             </button>
           )}
+          <PdfButton question={question} allowSolution={Boolean(result)} />
           <BookmarkButton question={question} />
           {defaultCollapsed !== undefined && (
             <button onClick={() => setCollapsed(c => !c)} className="p-1.5 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-400 cursor-pointer" title={collapsed ? "Expand" : "Collapse"}>
@@ -239,7 +241,10 @@ export default function QuestionCard({ question, source, compact, header, defaul
               {showSolution && result && (
                 <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
                   <div className="rounded-lg bg-neutral-50 dark:bg-neutral-950/60 border border-neutral-200 dark:border-neutral-800 p-3.5 text-sm leading-relaxed">
-                    <div className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 mb-1.5">Answer: option {question.answer}</div>
+                    <div className="flex items-center justify-between gap-3 mb-1.5">
+                      <div className="text-xs font-semibold text-emerald-700 dark:text-emerald-400">Answer: option {question.answer}</div>
+                      <PdfSolutionLink question={question} />
+                    </div>
                     <p className="whitespace-pre-wrap text-neutral-700 dark:text-neutral-300">{question.solution || "No official explanation is available for this question."}</p>
                   </div>
                 </motion.div>

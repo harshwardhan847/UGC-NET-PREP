@@ -65,6 +65,7 @@ Open your browser and navigate to **[http://localhost:3000](http://localhost:300
 * **Practice modes**: smart practice (prioritises recent mistakes, unseen questions and weak units), by unit, full mock papers (adjustable time), and a custom builder (units, papers, unanswered / mistakes / bookmarked, length, timer).
 * **Exam-style quiz**: question palette, mark for review, feedback after each question or only at the end, pause, time tracking per question, keyboard shortcuts (press `?` in a quiz), and a results screen with marks, a per-unit breakdown and "redo incorrect".
 * **Question bank**: search every question, filter by status, unit, concept and paper, bookmark questions and keep notes on them.
+* **Original paper view**: open any question in its source PDF, on the right page with the question (and any passage or table it shares) highlighted, for when the extracted text garbles a formula, figure or table. Once you've answered, the same view shows the worked solution from the paper. Press `O` in a quiz, or use the PDF icon on any question card.
 * **AI tutor** (Gemini): a chat about the current question, and an optional follow-up drill when you answer wrongly.
 * **Settings**: light/dark/system theme, accent colour, question typeface and size, quiz defaults, daily goal and exam date, plus progress export and reset. Settings are stored in the browser; progress lives in the SQLite database.
 
@@ -77,6 +78,7 @@ Open your browser and navigate to **[http://localhost:3000](http://localhost:300
 ├── UGC_Comp_*.pdf            # Raw UGC NET Computer Science PDF papers
 ├── generate_json.py          # Script to parse and extract CS questions from PDFs
 ├── generate_paper1_json.py    # Script to parse Paper 1 PDFs and merge with CS questions
+├── pdf_refs.py               # Locates every question and solution on its PDF page (for the original paper view)
 ├── paper_1/                  # Folder containing raw General Paper 1 PDFs
 ├── ugc_net_cs_pyqs.json      # Merged JSON file containing all compiled questions
 └── quiz-app/                 # Next.js web application
@@ -88,7 +90,8 @@ Open your browser and navigate to **[http://localhost:3000](http://localhost:300
     │   ├── app/              # Next.js pages and routing
     │   ├── components/       # UI elements (Dashboard, Quiz Arena, Sidebar, etc.)
     │   ├── data/
-    │   │   └── ugc_net_cs_pyqs.json # Local copy of the questions JSON
+    │   │   ├── ugc_net_cs_pyqs.json # Local copy of the questions JSON
+    │   │   └── pdf_refs.json        # Page and position of each question in its PDF (from pdf_refs.py)
     │   └── hooks/            # Custom React hooks (state management, API handling)
     └── package.json          # Node dependencies and scripts
 ```
@@ -163,6 +166,12 @@ To parse your newly added PDFs and compile them into a unified JSON file, run th
    python generate_paper1_json.py
    ```
    *(This script automatically updates `ugc_net_cs_pyqs.json` in the root and copies it to `quiz-app/src/data/ugc_net_cs_pyqs.json`)*.
+4. **Link the questions to their PDF pages** (for the original paper view). This needs [Poppler](https://poppler.freedesktop.org/) (`brew install poppler` on macOS):
+   ```bash
+   python3 pdf_refs.py           # check: reports any question or solution it can't find
+   python3 pdf_refs.py --write   # writes quiz-app/src/data/pdf_refs.json
+   ```
+   The app serves the PDFs straight from the project root and `paper_1/`, so keep them there (or set `PAPERS_DIR` in `quiz-app/.env.local` to the folder that holds them).
 
 #### 4. Seed the Database
 Now, update your local database with the new questions:

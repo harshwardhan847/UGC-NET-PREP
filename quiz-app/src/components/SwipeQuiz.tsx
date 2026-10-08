@@ -8,6 +8,7 @@ import {
 } from "lucide-react"
 import Markdown from "./Markdown"
 import { BookmarkButton } from "./QuestionCard"
+import { PdfButton } from "./PdfViewer"
 import { useStudyData } from "@/hooks/useStudyData"
 import { useSettings } from "@/lib/settings"
 import { UNITS } from "@/lib/constants"
@@ -176,7 +177,7 @@ export default function SwipeQuiz() {
   useEffect(() => {
     if (!settings.keyboardShortcuts || !currentQ || loading) return
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement).closest("input, textarea, select")) return
+      if ((e.target as HTMLElement).closest("input, textarea, select, [role=dialog]")) return
       if (e.metaKey || e.ctrlKey || e.altKey) return
       const idx = ["1", "2", "3", "4"].indexOf(e.key)
       if (idx >= 0 && !isAnswered) {
@@ -316,6 +317,7 @@ export default function SwipeQuiz() {
                   <span className="text-[10px] font-bold text-brand-600 dark:text-brand-400 uppercase bg-brand-500/10 px-2 py-0.5 rounded">
                     Unit {currentQ.unit}
                   </span>
+                  <PdfButton question={currentQ} allowSolution={isAnswered} />
                   <BookmarkButton question={currentQ} />
                 </span>
               </div>

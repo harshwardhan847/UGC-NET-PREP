@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import {
-  ArrowLeft, ArrowRight, BookOpen, Check, Clock, Eraser, Flag, Grid3x3, Keyboard, MessageSquare,
+  ArrowLeft, ArrowRight, BookOpen, Check, Clock, Eraser, FileText, Flag, Grid3x3, Keyboard, MessageSquare,
   Pause, Play, Sparkles, X
 } from "lucide-react"
 import type { QuizState } from "@/hooks/useQuizState"
@@ -15,6 +15,7 @@ import { OPTION_KEYS, type OptionKey, type Question } from "@/lib/types"
 import { cn } from "@/lib/utils"
 import QuestionText from "./QuestionText"
 import { BookmarkButton, NoteEditor, OptionButton } from "./QuestionCard"
+import PdfViewer, { type PdfView } from "./PdfViewer"
 import { Button, ConfirmDialog, Kbd, Modal } from "./ui"
 
 interface QuizArenaProps {
@@ -43,6 +44,7 @@ const SHORTCUTS: [string, string][] = [
   ["S", "Skip question"],
   ["M", "Mark for review"],
   ["B", "Bookmark"],
+  ["O", "View in the original paper"],
   ["G", "Show question palette"],
   ["T", "Open AI tutor"],
   ["P", "Pause timer"],
@@ -58,6 +60,7 @@ export default function QuizArena({ quiz, tutorOpen, setTutorOpen, onRequestQuit
   const [confirmFinish, setConfirmFinish] = useState(false)
   const [timerHidden, setTimerHidden] = useState(!settings.showTimer)
   const [noteOpen, setNoteOpen] = useState(false)
+  const [pdfView, setPdfView] = useState<PdfView | null>(null)
 
   const [noteIndex, setNoteIndex] = useState(currentIndex)
   if (noteIndex !== currentIndex) {
@@ -114,6 +117,7 @@ export default function QuizArena({ quiz, tutorOpen, setTutorOpen, onRequestQuit
       else if (key === "s" && phase === "running") quiz.skipQuestion(currentQ.id)
       else if (key === "m" && phase === "running") quiz.toggleMarked(currentQ.id)
       else if (key === "b") toggleBookmark(currentQ.id)
+      else if (key === "o" && currentQ.pdf && !quiz.paused) setPdfView("question")
       else if (key === "g") setPaletteOpen(o => !o)
       else if (key === "t") setTutorOpen(!tutorOpen)
       else if (key === "p" && canPause) quiz.setPaused(!quiz.paused)
@@ -282,6 +286,16 @@ export default function QuizArena({ quiz, tutorOpen, setTutorOpen, onRequestQuit
                   </button>
                 )}
                 <BookmarkButton question={currentQ} withLabel className="[&>span]:hidden sm:[&>span]:inline" />
+                {currentQ.pdf && (
+                  <button
+                    onClick={() => setPdfView("question")}
+                    title="View in the original paper (O)"
+                    className="inline-flex items-center gap-1.5 rounded-lg p-1.5 text-xs font-medium cursor-pointer text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                  >
+                    <FileText className="w-4 h-4" />
+                    <span className="hidden sm:inline">PDF</span>
+                  </button>
+                )}
               </div>
             </div>
 
@@ -374,8 +388,16 @@ export default function QuizArena({ quiz, tutorOpen, setTutorOpen, onRequestQuit
                       )}
                     </div>
                     <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-5">
-                      <div className="text-xs font-semibold text-neutral-500 flex items-center gap-1.5 mb-2">
-                        <BookOpen className="w-3.5 h-3.5" /> Explanation
+                      <div className="flex items-center justify-between gap-3 mb-2">
+                        <div className="text-xs font-semibold text-neutral-500 flex items-center gap-1.5">
+                          <BookOpen className="w-3.5 h-3.5" /> Explanation
+                        </div>
+                        {currentQ.pdf?.s && (
+                          <button onClick={() => setPdfView("solution")} className="inline-flex items-center gap-1 text-xs font-medium text-brand-700 dark:text-brand-300 hover:underline cursor-pointer">
+                            <FileText className="w-3.5 h-3.5" />
+                            Solution in the PDF
+                          </button>
+                        )}
                       </div>
                       <p className="text-[15px] leading-relaxed whitespace-pre-wrap text-neutral-700 dark:text-neutral-300">
                         {currentQ.solution || "No official explanation is available for this question. Ask the AI tutor to work through it."}
@@ -429,6 +451,8 @@ export default function QuizArena({ quiz, tutorOpen, setTutorOpen, onRequestQuit
           ))}
         </dl>
       </Modal>
+
+      <PdfViewer question={currentQ} view={pdfView} onViewChange={setPdfView} allowSolution={isRevealed} />
 
       <ConfirmDialog
         open={confirmFinish}

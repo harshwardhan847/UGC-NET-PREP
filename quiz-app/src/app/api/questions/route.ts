@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
+import type { PdfRef } from '@/lib/types'
+import pdfRefs from '@/data/pdf_refs.json'
+
+// Where each question sits in its source PDF, keyed by question id (see pdf_refs.py)
+const PDF_REFS = pdfRefs as unknown as Record<string, PdfRef>
 
 export async function GET(req: NextRequest) {
   try {
@@ -73,6 +78,7 @@ export async function GET(req: NextRequest) {
         unit: q.unit,
         unit_name: q.unitName,
         conceptName: q.conceptName,
+        pdf: PDF_REFS[q.id] ?? null,
         isAnswered: lastAttempt !== null,
         isCorrect: lastAttempt ? lastAttempt.isCorrect : false,
         userAnswer: lastAttempt ? lastAttempt.userAnswer : null,
