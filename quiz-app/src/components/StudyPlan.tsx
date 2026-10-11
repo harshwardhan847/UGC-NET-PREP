@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useMemo, useState } from "react"
-import { CheckCircle2, ChevronDown, Minus, Play, TrendingDown, TrendingUp } from "lucide-react"
+import { Check, CheckCircle2, ChevronDown, Copy, Minus, Play, TrendingDown, TrendingUp } from "lucide-react"
 import { useStudyData } from "@/hooks/useStudyData"
 import { useStudyMap } from "@/hooks/useStudyMap"
 import { useSettings } from "@/lib/settings"
@@ -38,6 +38,8 @@ export default function StudyPlan({ onStartQuiz }: { onStartQuiz: (config: QuizC
   const [unitId, setUnitId] = useState(1)
   const [tab, setTab] = useState<Tab>("priorities")
   const [openCluster, setOpenCluster] = useState<string | null>(null)
+  const [copied, setCopied] = useState<"compact" | "full" | null>(null)
+  const [copyError, setCopyError] = useState(false)
 
   const study = units.find(u => u.unit === unitId)
   const unit = unitById(unitId)
@@ -58,6 +60,32 @@ export default function StudyPlan({ onStartQuiz }: { onStartQuiz: (config: QuizC
   const topicClusters = (topic: string) => clusters.filter(c => c.topic === topic)
 
   const startReps = (title: string, ids: string[]) => onStartQuiz(buildRepsQuiz(title, resolve(ids), settings, unitId))
+
+  // Copies this unit's AI tutor prompt (priorities, examiner mindset, formulas, plan) for pasting into ChatGPT or similar
+  const copyPrompt = async (version: "compact" | "full") => {
+    setCopyError(false)
+    try {
+      const res = await fetch(`/api/tutor-prompt?unit=${unitId}&version=${version}`)
+      if (!res.ok) throw new Error("No prompt for this unit")
+      const text = await res.text()
+      try {
+        await navigator.clipboard.writeText(text)
+      } catch {
+        // Clipboard API blocked (e.g. insecure origin): fall back to a temporary textarea
+        const area = document.createElement("textarea")
+        area.value = text
+        document.body.appendChild(area)
+        area.select()
+        const ok = document.execCommand("copy")
+        area.remove()
+        if (!ok) throw new Error("Copy failed")
+      }
+      setCopied(version)
+      setTimeout(() => setCopied(c => (c === version ? null : c)), 2500)
+    } catch {
+      setCopyError(true)
+    }
+  }
 
   const repIds = (list: typeof clusters) => list.map(c => c.representative)
 
@@ -115,7 +143,18 @@ export default function StudyPlan({ onStartQuiz }: { onStartQuiz: (config: QuizC
                     <Play className="w-3.5 h-3.5" />
                     Practise the minimum set ({study.minimum_set.length})
                   </Button>
+                  <Button size="sm" variant="secondary" onClick={() => copyPrompt("compact")} title="Under 8,000 characters, fits a Custom GPT's instructions">
+                    {copied === "compact" ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+                    {copied === "compact" ? "Copied" : "Copy AI tutor prompt"}
+                  </Button>
+                  <Button size="sm" variant="ghost" onClick={() => copyPrompt("full")} title="Everything, about 13,000 to 19,000 characters. For a ChatGPT Project or a first chat message">
+                    {copied === "full" ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+                    {copied === "full" ? "Copied" : "Copy full version"}
+                  </Button>
                 </div>
+                <p className="text-xs text-neutral-500 mt-2" role="status">
+                  {copyError ? "Couldn't copy. Try again." : "Paste the tutor prompt into ChatGPT to study this unit by chat: it knows the priorities, examiner patterns, formulas and study order."}
+                </p>
               </Panel>
 
               <div className="overflow-x-auto">
