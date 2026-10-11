@@ -1,0 +1,1236 @@
+{
+ "unit": 9,
+ "name": "Data Communication and Computer Networks",
+ "total_questions": 167,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Network Security & Cryptography",
+   "count": 26,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "26 of 167 questions (16%) across 11 of 15 papers; 5 in the last 6 papers.",
+   "what_to_study": [
+    "RSA arithmetic (n, phi, d, C = M^e mod n)",
+    "Block/key sizes of DES, 3DES, AES, IDEA, Blowfish",
+    "Digital signature, hash, public-key usage",
+    "Classical ciphers (Caesar, transposition)",
+    "Firewalls, VPN, IP spoofing, security services"
+   ]
+  },
+  {
+   "topic": "Data Link Layer, Error Control & Flow Control",
+   "count": 23,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "23 of 167 questions (14%) across 11 of 15 papers; 6 in the last 6 papers.",
+   "what_to_study": [
+    "Sliding window formulas (W = 1+2Tp/Tt, efficiency, seq bits)",
+    "Hamming distance rules (s+1, 2t+1) and Hamming(7,4) parity",
+    "CRC codeword and generator polynomial properties",
+    "Stop-and-wait, Go-back-N, Selective repeat variables",
+    "Bit stuffing flag 01111110, PPP, frame relay, X.25"
+   ]
+  },
+  {
+   "topic": "Physical Layer, Transmission & Signals",
+   "count": 20,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "20 of 167 questions (12%) across 11 of 15 papers; 9 in the last 6 papers.",
+   "what_to_study": [
+    "Nyquist and Shannon formulas",
+    "Line coding bandwidth table and Manchester properties",
+    "Circuit vs packet switching",
+    "TDM/FDM/WDM, throughput, latency components",
+    "Frequency/period conversions"
+   ]
+  },
+  {
+   "topic": "IP Addressing, Subnetting & CIDR",
+   "count": 20,
+   "papers": 9,
+   "first_year": "July 2018",
+   "last_year": "June 2024 (Re-Exam)",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "20 of 167 questions (12%) across 9 of 15 papers; 4 in the last 6 papers.",
+   "what_to_study": [
+    "Class ranges and share of address space",
+    "Subnet mask host/subnet counting with 2^n - 2",
+    "Subnetting a /16 block: first/last address of subnets",
+    "CIDR splitting and aggregation",
+    "Loopback, ARP, RARP, DHCP basics"
+   ]
+  },
+  {
+   "topic": "MAC Protocols, Ethernet & LAN",
+   "count": 13,
+   "papers": 10,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "13 of 167 questions (8%) across 10 of 15 papers; 8 in the last 6 papers.",
+   "what_to_study": [
+    "CSMA/CD min frame = bandwidth x 2Tp",
+    "Ethernet Tt and Tp calculation",
+    "Slotted ALOHA S = G e^-G, pure ALOHA S = G e^-2G",
+    "Persistence methods and controlled access classification",
+    "MAC address structure and uniqueness"
+   ]
+  },
+  {
+   "topic": "OSI & TCP/IP Models",
+   "count": 15,
+   "papers": 12,
+   "first_year": "December 2018",
+   "last_year": "December 2024",
+   "trend": "fading",
+   "priority": "High",
+   "why": "15 of 167 questions (9%) across 12 of 15 papers; 4 in the last 6 papers.",
+   "what_to_study": [
+    "Function of each OSI layer",
+    "Protocols mapped to layers",
+    "PDU names per layer",
+    "TCP/IP vs OSI mapping, session layer services"
+   ]
+  },
+  {
+   "topic": "IP Fragmentation & Network Layer",
+   "count": 14,
+   "papers": 6,
+   "first_year": "December 2022",
+   "last_year": "June 2024 (Cancelled)",
+   "trend": "rising",
+   "priority": "High",
+   "why": "14 of 167 questions (8%) across 6 of 15 papers; 11 in the last 6 papers.",
+   "what_to_study": [
+    "Fragmentation: MTU-20 rounded to 8, offsets, MF flag",
+    "IPv4 header hex decoding (HLEN, total length, TTL, protocol)",
+    "Header fields that change in transit",
+    "Datagram vs virtual circuit state"
+   ]
+  },
+  {
+   "topic": "Wireless, Mobile & Emerging Networks",
+   "count": 13,
+   "papers": 8,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "High",
+   "why": "13 of 167 questions (8%) across 8 of 15 papers; 7 in the last 6 papers.",
+   "what_to_study": [
+    "Cloud models (SaaS/PaaS/IaaS), virtualization",
+    "Cellular generations, CDMA/GSM/UMTS",
+    "MANET features, AODV, Bluetooth piconet (1 master, 7 slaves)",
+    "IEEE 802.15/802.16, ATM interfaces"
+   ]
+  },
+  {
+   "topic": "Transport Layer (TCP/UDP, Congestion)",
+   "count": 11,
+   "papers": 7,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "High",
+   "why": "11 of 167 questions (7%) across 7 of 15 papers; 5 in the last 6 papers.",
+   "what_to_study": [
+    "TCP vs UDP features",
+    "Three-way handshake sequence/ack numbers",
+    "Token bucket and choke packets",
+    "Silly window solutions, socket primitives",
+    "UDP header decoding"
+   ]
+  },
+  {
+   "topic": "Application Layer Protocols (HTTP, DNS, SMTP)",
+   "count": 9,
+   "papers": 8,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "High",
+   "why": "9 of 167 questions (5%) across 8 of 15 papers; 5 in the last 6 papers.",
+   "what_to_study": [
+    "DHCP DORA order and lease renewal",
+    "DNS resolution hierarchy (resolver, root, TLD, authoritative)",
+    "Browser URL-to-page sequence",
+    "POP vs IMAP vs SMTP and MIME roles",
+    "ICANN and basic acronyms"
+   ]
+  },
+  {
+   "topic": "Routing Algorithms & Protocols",
+   "count": 3,
+   "papers": 3,
+   "first_year": "December 2019",
+   "last_year": "December 2023",
+   "trend": "steady",
+   "priority": "Low",
+   "why": "3 of 167 questions (2%) across 3 of 15 papers; 1 in the last 6 papers.",
+   "what_to_study": [
+    "Distance vector vs link state (RIP, OSPF, BGP)",
+    "Hierarchical routing table size",
+    "Distance vector update"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "title": "DHCP step ordering",
+   "type": "same-concept-variant",
+   "topic": "Application Layer Protocols (HTTP, DNS, SMTP)",
+   "technique": "Memorise DORA: Discover, Offer, Request, Ack (then client configures). Renewal: check lease timer, send DHCPREQUEST, server DHCPACK, update database.",
+   "what_changes": "Fresh lease vs lease renewal; same arrange-the-steps format.",
+   "representative": "dec2024_q88",
+   "members": [
+    "dec2024_q88",
+    "dec2023_q84"
+   ],
+   "skip_note": "Both are the same ordered DHCP exchange; knowing DORA plus the renewal order covers both.",
+   "id": "u9c1"
+  },
+  {
+   "title": "Order of steps in a web/DNS request",
+   "type": "same-concept-variant",
+   "topic": "Application Layer Protocols (HTTP, DNS, SMTP)",
+   "technique": "Browsing order: URL typed, local DNS cache/resolver, root, TLD, authoritative, IP obtained, TCP SYN, HTTP GET, page displayed. DNS always precedes TCP and HTTP.",
+   "what_changes": "Granularity: full browser flow, DNS-only hierarchy, or packet types seen on the wire.",
+   "representative": "june2025_q55",
+   "members": [
+    "june2025_q55",
+    "june2024_reexam_q56",
+    "dec2018_q89"
+   ],
+   "skip_note": "All three test the same DNS-then-TCP-then-HTTP ordering.",
+   "id": "u9c2"
+  },
+  {
+   "title": "Sliding-window passage and throughput calculation",
+   "type": "same-formula",
+   "topic": "Data Link Layer, Error Control & Flow Control",
+   "technique": "Tt = frame bits/rate; Tp = distance x delay per km; optimal window W = 1 + 2Tp/Tt; efficiency = min(1, W_given/W_opt); throughput = efficiency x rate; sequence bits n with 2^n - 1 >= window (go-back-N style).",
+   "what_changes": "Which quantity is asked (Tt/Tp, W, seq bits, efficiency, throughput); sep2022_q47 uses a satellite channel with window 15.",
+   "representative": "sep2022_q38",
+   "members": [
+    "sep2022_q36",
+    "sep2022_q37",
+    "sep2022_q38",
+    "sep2022_q39",
+    "sep2022_q40",
+    "sep2022_q47"
+   ],
+   "skip_note": "Once q38 is mastered the other five reuse the same Tt, Tp, W numbers.",
+   "id": "u9c3"
+  },
+  {
+   "title": "Propagation delay and bandwidth-delay product",
+   "type": "same-formula",
+   "topic": "Data Link Layer, Error Control & Flow Control",
+   "technique": "Propagation delay = length/speed; BDP = bandwidth x delay (use round-trip time when given RTT).",
+   "what_changes": "Numbers and whether delay is one-way or round trip.",
+   "representative": "june2025_q24",
+   "members": [
+    "june2025_q24",
+    "june2019_q83"
+   ],
+   "skip_note": "One-line direct substitutions; one example is enough.",
+   "id": "u9c4"
+  },
+  {
+   "title": "Hamming distance and error detection/correction capacity",
+   "type": "same-concept-variant",
+   "topic": "Data Link Layer, Error Control & Flow Control",
+   "technique": "Detect s errors: d_min = s+1; correct t errors: d_min = 2t+1; Hamming distance = number of differing bit positions; decode to nearest valid codeword.",
+   "what_changes": "Asks rule (detect vs correct) or computes a distance or nearest codeword.",
+   "representative": "nov2020_q31",
+   "members": [
+    "nov2020_q31",
+    "dec2022_q36",
+    "july2018_q49",
+    "dec2024_q17"
+   ],
+   "skip_note": "The two rules plus XOR-count method answer all four.",
+   "id": "u9c5"
+  },
+  {
+   "title": "CRC codeword formation",
+   "type": "exact-repeat",
+   "topic": "Data Link Layer, Error Control & Flow Control",
+   "technique": "Codeword = dataword followed by remainder (append, not add).",
+   "what_changes": "Identical question in both Dec 2022 shifts.",
+   "representative": "dec2022_q34",
+   "members": [
+    "dec2022_q34",
+    "dec2022_shiftii_q36"
+   ],
+   "skip_note": "Identical text; solve once.",
+   "id": "u9c6"
+  },
+  {
+   "title": "WAN link protocols (PPP, Frame Relay, X.25) facts",
+   "type": "same-concept-variant",
+   "topic": "Data Link Layer, Error Control & Flow Control",
+   "technique": "Frame relay frame: Flag, Address, Information, FCS, Flag; frame relay detects errors but gives no ack/flow control; PPP gives framing, link setup, authentication but no flow control or sequence numbering; X.25 is connection-oriented with SVCs.",
+   "what_changes": "Which protocol and which property is asked.",
+   "representative": "june2024_cancelled_q58",
+   "members": [
+    "june2024_cancelled_q58",
+    "june2024_cancelled_q44",
+    "nov2021_q99"
+   ],
+   "skip_note": "All use the same short fact sheet on three WAN protocols.",
+   "id": "u9c7"
+  },
+  {
+   "title": "Subnetting passage (130.56.0.0/16 into 1024 subnets)",
+   "type": "same-formula",
+   "topic": "IP Addressing, Subnetting & CIDR",
+   "technique": "Subnet bits = log2(subnets); new prefix = old + bits; addresses per subnet = 2^(32-prefix); first = block base, last = base + size - 1; last subnet = top of the parent block.",
+   "what_changes": "Quantity asked: addresses, prefix, mask, first/last of first or last subnet.",
+   "representative": "dec2022_shiftii_q91",
+   "members": [
+    "dec2022_shiftii_q91",
+    "dec2022_shiftii_q92",
+    "dec2022_shiftii_q93",
+    "dec2022_shiftii_q94",
+    "dec2022_shiftii_q95"
+   ],
+   "skip_note": "Single worked passage; the same numbers answer all five.",
+   "id": "u9c8"
+  },
+  {
+   "title": "IPv4 classes, ranges and special addresses",
+   "type": "same-concept-variant",
+   "topic": "IP Addressing, Subnetting & CIDR",
+   "technique": "Class first octets: A 0-127 (loopback 127), B 128-191, C 192-223, D 224-239, E 240-255. Class A is 1/2 of space, B 1/4, C 1/8 (12.5%).",
+   "what_changes": "Asks last address, share of space, class of a given address, or loopback facts.",
+   "representative": "june2024_reexam_q32",
+   "members": [
+    "june2024_reexam_q32",
+    "dec2019_q53",
+    "june2019_q88",
+    "june2019_q85",
+    "june2024_reexam_q80"
+   ],
+   "skip_note": "Memorising the class table answers all of them.",
+   "id": "u9c9"
+  },
+  {
+   "title": "Subnet mask and host/subnet counting",
+   "type": "same-formula",
+   "topic": "IP Addressing, Subnetting & CIDR",
+   "technique": "Hosts per subnet = 2^(host bits) - 2; subnets = 2^(subnet bits) (minus 2 in old classful convention as in nov2021_q95); AND address with mask to compare networks.",
+   "what_changes": "Mask value, class, required subnets or hosts.",
+   "representative": "june2024_reexam_q58",
+   "members": [
+    "june2024_reexam_q58",
+    "sep2022_q48",
+    "nov2021_q95",
+    "june2019_q84",
+    "june2024_reexam_q69"
+   ],
+   "skip_note": "Same bit-counting recipe; do one class B mask problem and one same-network check.",
+   "id": "u9c10"
+  },
+  {
+   "title": "CIDR block splitting and route aggregation",
+   "type": "same-concept-variant",
+   "topic": "IP Addressing, Subnetting & CIDR",
+   "technique": "Split a prefix by halves/quarters (add 1 bit or 2 bits); aggregate contiguous blocks by shortening the prefix.",
+   "what_changes": "Allocation vs aggregation direction.",
+   "representative": "dec2018_q87",
+   "members": [
+    "dec2018_q87",
+    "dec2022_q62"
+   ],
+   "skip_note": "Both rely on prefix-length arithmetic on contiguous blocks.",
+   "id": "u9c11"
+  },
+  {
+   "title": "IP fragmentation across a smaller MTU",
+   "type": "exact-repeat",
+   "topic": "IP Fragmentation & Network Layer",
+   "technique": "Data per fragment = MTU - 20 header, rounded to multiple of 8 (820 -> 800). 1400 data + 20 = 1420 -> fragments of 800 and 600 data; offset in 8-byte units; MF=1 except last; TCP header only in first fragment.",
+   "what_changes": "Different statement asked (fragment count, offset, flags, ports) on same MTU 1500/820 scenario.",
+   "representative": "june2023_q55",
+   "members": [
+    "june2023_q55",
+    "dec2022_q63",
+    "dec2022_shiftii_q61"
+   ],
+   "skip_note": "Identical scenario across three papers.",
+   "id": "u9c12"
+  },
+  {
+   "title": "IPv4 header hex decoding",
+   "type": "same-formula",
+   "topic": "IP Fragmentation & Network Layer",
+   "technique": "Hex 45 00 0054 ...: first nibble version, second HLEN (x4 bytes), bytes 3-4 total length, byte 9 TTL, byte 10 protocol (06 TCP, 11 UDP, 01 ICMP); efficiency = (total - header)/total.",
+   "what_changes": "Which field is asked from the same header.",
+   "representative": "june2023_q98",
+   "members": [
+    "june2023_q96",
+    "june2023_q97",
+    "june2023_q98",
+    "june2023_q99",
+    "june2023_q100",
+    "june2024_cancelled_q37"
+   ],
+   "skip_note": "Same decoding map; one worked example covers all.",
+   "id": "u9c13"
+  },
+  {
+   "title": "IP/TCP header field facts and order",
+   "type": "same-concept-variant",
+   "topic": "IP Fragmentation & Network Layer",
+   "technique": "Fields: version, HLEN, service type, total length, identification, flags, fragment offset, TTL, protocol, checksum, addresses, options. TTL, checksum and fragment fields change in transit; addresses do not. Fragment offset is IP, not TCP.",
+   "what_changes": "Ordering, which field changes, or odd one out.",
+   "representative": "june2024_reexam_q19",
+   "members": [
+    "june2024_reexam_q19",
+    "june2024_cancelled_q60",
+    "dec2023_q34"
+   ],
+   "skip_note": "All draw on the same header layout.",
+   "id": "u9c14"
+  },
+  {
+   "title": "Ethernet delay calculation (10 Mbps, 2500 m, 512 B)",
+   "type": "exact-repeat",
+   "topic": "MAC Protocols, Ethernet & LAN",
+   "technique": "Tt = frame bits / rate; Tp = distance/speed.",
+   "what_changes": "Identical question.",
+   "representative": "june2023_q81",
+   "members": [
+    "june2023_q81",
+    "dec2022_shiftii_q35"
+   ],
+   "skip_note": "Identical text; solve once.",
+   "id": "u9c15"
+  },
+  {
+   "title": "CSMA/CD minimum frame size",
+   "type": "same-formula",
+   "topic": "MAC Protocols, Ethernet & LAN",
+   "technique": "Min frame bits = bandwidth x 2Tp (round-trip); reverse to get speed/distance.",
+   "what_changes": "Forward (find frame size) vs reverse (find signal speed).",
+   "representative": "dec2024_q29",
+   "members": [
+    "dec2024_q29",
+    "june2024_reexam_q17"
+   ],
+   "skip_note": "One formula, algebraically inverted.",
+   "id": "u9c16"
+  },
+  {
+   "title": "MAC protocol classification and multiple-access facts",
+   "type": "same-concept-variant",
+   "topic": "MAC Protocols, Ethernet & LAN",
+   "technique": "Random access: ALOHA, CSMA (1-persistent, non-persistent, p-persistent), CSMA/CD wired, CSMA/CA wireless. Controlled: reservation, polling, token passing. Channelization: FDMA, TDMA, CDMA (orthogonal codes).",
+   "what_changes": "Matching, true/false statement set, or select-the-examples.",
+   "representative": "dec2024_q3",
+   "members": [
+    "dec2024_q3",
+    "june2024_cancelled_q39",
+    "june2025_q39",
+    "dec2023_q59"
+   ],
+   "skip_note": "Same taxonomy of access methods.",
+   "id": "u9c17"
+  },
+  {
+   "title": "Ethernet/MAC address facts",
+   "type": "same-concept-variant",
+   "topic": "MAC Protocols, Ethernet & LAN",
+   "technique": "48-bit address in hex; LSB of first byte 0 = unicast, 1 = multicast, all F = broadcast; MAC is globally unique.",
+   "what_changes": "Address type, binary-to-hex conversion, uniqueness scope.",
+   "representative": "sep2022_q51",
+   "members": [
+    "sep2022_q51",
+    "dec2022_shiftii_q33",
+    "dec2018_q86"
+   ],
+   "skip_note": "Short fact-based items.",
+   "id": "u9c18"
+  },
+  {
+   "title": "RSA computation",
+   "type": "same-formula",
+   "topic": "Network Security & Cryptography",
+   "technique": "n = p*q; phi = (p-1)(q-1); e*d = 1 mod phi; C = M^e mod n.",
+   "what_changes": "Given p,q and either e or d; asks other key and cipher value.",
+   "representative": "nov2020_q32",
+   "members": [
+    "nov2020_q32",
+    "sep2022_q18"
+   ],
+   "skip_note": "Same four-step arithmetic.",
+   "id": "u9c19"
+  },
+  {
+   "title": "Classical ciphers (Caesar, transposition) and key exchange",
+   "type": "same-concept-variant",
+   "topic": "Network Security & Cryptography",
+   "technique": "Caesar shifts each letter by k (decrypt = shift back k); transposition permutes positions; Diffie-Hellman exchanges secret keys.",
+   "what_changes": "Decrypt vs encrypt; cipher type.",
+   "representative": "july2018_q48",
+   "members": [
+    "july2018_q48",
+    "july2018_q50",
+    "nov2020_q89"
+   ],
+   "skip_note": "Simple mechanical substitution.",
+   "id": "u9c20"
+  },
+  {
+   "title": "Symmetric cipher block and key sizes",
+   "type": "same-concept-variant",
+   "topic": "Network Security & Cryptography",
+   "technique": "DES 64-bit block, 56-bit key; 3DES 168; IDEA 64/128; Blowfish 64/32-448; AES 128 block, keys 128/192/256; RSA key about 1024+; RC4 is stream.",
+   "what_changes": "Matching table or statement set; same size numbers.",
+   "representative": "july2018_q45",
+   "members": [
+    "july2018_q45",
+    "dec2018_q61",
+    "sep2022_q82",
+    "dec2023_q74",
+    "june2025_q78"
+   ],
+   "skip_note": "One table of block/key sizes answers all.",
+   "id": "u9c21"
+  },
+  {
+   "title": "Firewall function and filtering criteria",
+   "type": "same-concept-variant",
+   "topic": "Network Security & Cryptography",
+   "technique": "Firewall filters in/out traffic by source/destination IP, TCP/UDP ports; VPN simulates a private leased line.",
+   "what_changes": "Which criteria or what primary function.",
+   "representative": "dec2024_q52",
+   "members": [
+    "dec2024_q52",
+    "nov2020_q60",
+    "dec2018_q66"
+   ],
+   "skip_note": "Same basic definition.",
+   "id": "u9c22"
+  },
+  {
+   "title": "Public-key, hash and digital-signature concepts",
+   "type": "same-concept-variant",
+   "topic": "Network Security & Cryptography",
+   "technique": "Encrypt with receiver public key for secrecy; sign by encrypting hash/digest with sender private key; hash gives fixed-length digest; AES symmetric, RSA asymmetric.",
+   "what_changes": "Statement or matching form.",
+   "representative": "june2025_q12",
+   "members": [
+    "june2025_q12",
+    "nov2021_q97",
+    "dec2023_q20",
+    "june2019_q90",
+    "nov2020_q54"
+   ],
+   "skip_note": "Same asymmetric/hash principles.",
+   "id": "u9c23"
+  },
+  {
+   "title": "OSI layer function matching and ordering",
+   "type": "same-concept-variant",
+   "topic": "OSI & TCP/IP Models",
+   "technique": "Physical: raw bits; Data link: frames, MAC, piggybacking; Network: routing, logical address, billing; Transport: end-to-end, segmentation; Session: dialog/token mgmt; Presentation: syntax; Application: user interface.",
+   "what_changes": "Which functions/protocols are on the list (SLIP data link, BGP network, UDP transport, SNMP application).",
+   "representative": "june2023_q22",
+   "members": [
+    "june2023_q22",
+    "dec2022_q74",
+    "dec2022_shiftii_q84",
+    "dec2019_q82",
+    "nov2021_q91",
+    "june2024_reexam_q14",
+    "sep2022_q84",
+    "nov2020_q72"
+   ],
+   "skip_note": "Same layer-function matrix; june2023_q22 and dec2022_q74 are identical.",
+   "id": "u9c24"
+  },
+  {
+   "title": "Which layer does what (PDU names, encryption, segmentation)",
+   "type": "same-concept-variant",
+   "topic": "OSI & TCP/IP Models",
+   "technique": "PDUs: frame (link), packet (network), segment (transport). IP is host-to-host, TCP process-to-process. Encryption is presentation/application. Session: dialog control, token management, synchronization.",
+   "what_changes": "Single-fact direct questions.",
+   "representative": "june2024_cancelled_q62",
+   "members": [
+    "june2024_cancelled_q62",
+    "sep2022_q49",
+    "june2019_q86",
+    "june2019_q87",
+    "dec2018_q63"
+   ],
+   "skip_note": "All answered from the same layer fact sheet.",
+   "id": "u9c25"
+  },
+  {
+   "title": "Period to frequency conversion",
+   "type": "exact-repeat",
+   "topic": "Physical Layer, Transmission & Signals",
+   "technique": "f = 1/T; T = 100 ms gives 10 Hz = 10^-2 kHz.",
+   "what_changes": "Identical.",
+   "representative": "nov2020_q34",
+   "members": [
+    "nov2020_q34",
+    "july2018_q42"
+   ],
+   "skip_note": "Identical text.",
+   "id": "u9c26"
+  },
+  {
+   "title": "Throughput calculation",
+   "type": "same-formula",
+   "topic": "Physical Layer, Transmission & Signals",
+   "technique": "Throughput = bits successfully delivered per second = (rate of requests x size in bits).",
+   "what_changes": "Numbers and units.",
+   "representative": "june2023_q49",
+   "members": [
+    "june2023_q49",
+    "dec2019_q56"
+   ],
+   "skip_note": "Same one-step arithmetic.",
+   "id": "u9c27"
+  },
+  {
+   "title": "Nyquist and Shannon limits",
+   "type": "same-concept-variant",
+   "topic": "Physical Layer, Transmission & Signals",
+   "technique": "Nyquist bit rate = 2B log2(L); sampling rate >= 2 f_max; Shannon C = B log2(1 + SNR).",
+   "what_changes": "Compute vs statement.",
+   "representative": "dec2024_q16",
+   "members": [
+    "dec2024_q16",
+    "nov2020_q88",
+    "june2024_cancelled_q81"
+   ],
+   "skip_note": "Same two formulas.",
+   "id": "u9c28"
+  },
+  {
+   "title": "Circuit vs packet switching statements",
+   "type": "same-concept-variant",
+   "topic": "Physical Layer, Transmission & Signals",
+   "technique": "Circuit switching reserves resources at setup, constant delay; packet switching shares links, variable delay, no dedicated path.",
+   "what_changes": "True/false variant.",
+   "representative": "june2025_q61",
+   "members": [
+    "june2025_q61",
+    "nov2021_q93",
+    "july2018_q46"
+   ],
+   "skip_note": "Same comparison.",
+   "id": "u9c29"
+  },
+  {
+   "title": "Line coding schemes",
+   "type": "same-concept-variant",
+   "topic": "Physical Layer, Transmission & Signals",
+   "technique": "Average bandwidth: NRZ-L N/2, MLT-3 N/3, 2B1Q N/4, 4D-PAM5 N/8; Manchester is self-clocking with two signal elements per bit; NRZ, Manchester, AMI are encodings; Hamming code is not a line code.",
+   "what_changes": "Matching vs statement vs odd one out.",
+   "representative": "june2024_cancelled_q8",
+   "members": [
+    "june2024_cancelled_q8",
+    "dec2023_q63",
+    "june2025_q84",
+    "nov2021_q94"
+   ],
+   "skip_note": "One scheme table covers all.",
+   "id": "u9c30"
+  },
+  {
+   "title": "TCP behaviour after server crash",
+   "type": "exact-repeat",
+   "topic": "Transport Layer (TCP/UDP, Congestion)",
+   "technique": "After reboot the server has no connection state; client data gets RST; client waiting without keepalive may hang.",
+   "what_changes": "Same scenario.",
+   "representative": "june2023_q8",
+   "members": [
+    "june2023_q8",
+    "dec2022_shiftii_q90"
+   ],
+   "skip_note": "Identical.",
+   "id": "u9c31"
+  },
+  {
+   "title": "UDP versus TCP services",
+   "type": "same-concept-variant",
+   "topic": "Transport Layer (TCP/UDP, Congestion)",
+   "technique": "UDP is connectionless, offers no flow/congestion control or retransmission; TCP has both.",
+   "what_changes": "Statements about which protocol does what.",
+   "representative": "dec2023_q61",
+   "members": [
+    "dec2023_q61",
+    "sep2022_q46",
+    "dec2018_q88"
+   ],
+   "skip_note": "Same TCP/UDP contrast.",
+   "id": "u9c32"
+  },
+  {
+   "title": "Congestion control mechanisms",
+   "type": "same-concept-variant",
+   "topic": "Transport Layer (TCP/UDP, Congestion)",
+   "technique": "Choke packet notifies source; token bucket burst time = capacity/(output rate - fill rate).",
+   "what_changes": "Concept vs numeric.",
+   "representative": "june2025_q38",
+   "members": [
+    "june2025_q38",
+    "dec2022_shiftii_q34"
+   ],
+   "skip_note": "Two small items; token bucket formula is the only calculation.",
+   "id": "u9c33"
+  },
+  {
+   "title": "Wireless technology matching (CDMA, GSM, UMTS, WiFi)",
+   "type": "exact-repeat",
+   "topic": "Wireless, Mobile & Emerging Networks",
+   "technique": "CDMA multiple access, GSM FDMA+TDMA hybrid, UMTS faster mobile data, WiFi wireless LAN.",
+   "what_changes": "Identical.",
+   "representative": "june2023_q39",
+   "members": [
+    "june2023_q39",
+    "dec2022_shiftii_q74"
+   ],
+   "skip_note": "Identical.",
+   "id": "u9c34"
+  },
+  {
+   "title": "Cloud service models and virtualization",
+   "type": "same-concept-variant",
+   "topic": "Wireless, Mobile & Emerging Networks",
+   "technique": "SaaS software stack; PaaS development environment; IaaS infrastructure; hypervisor then VMs then resources then workloads; Azure OS-like platform, CloudFront CDN.",
+   "what_changes": "Matching, ordering, definition.",
+   "representative": "dec2024_q68",
+   "members": [
+    "dec2024_q68",
+    "june2025_q26",
+    "dec2018_q64",
+    "dec2019_q78"
+   ],
+   "skip_note": "Same cloud concept fact sheet.",
+   "id": "u9c35"
+  },
+  {
+   "title": "Cellular generations",
+   "type": "same-concept-variant",
+   "topic": "Wireless, Mobile & Emerging Networks",
+   "technique": "AMPS 1G analog; IS-95 2G CDMA/DSSS; 3G broadband CDMA.",
+   "what_changes": "Which generation.",
+   "representative": "dec2018_q65",
+   "members": [
+    "dec2018_q65",
+    "july2018_q44"
+   ],
+   "skip_note": "Same table.",
+   "id": "u9c36"
+  },
+  {
+   "title": "Sliding window mechanics (steps and Go-back-N variables)",
+   "type": "same-concept-variant",
+   "topic": "Data Link Layer, Error Control & Flow Control",
+   "technique": "Sliding window: send window, ack, slide; in Go-back-N Sn stays at window end, only Sf moves on ack.",
+   "what_changes": "Steps vs variable update.",
+   "representative": "dec2024_q32",
+   "members": [
+    "dec2024_q32",
+    "dec2022_q35"
+   ],
+   "skip_note": "Both test window mechanics.",
+   "id": "u9c37"
+  }
+ ],
+ "singletons": [
+  "nov2020_q59",
+  "nov2021_q96",
+  "dec2024_q23",
+  "dec2019_q57",
+  "sep2022_q5",
+  "nov2020_q33",
+  "dec2023_q35",
+  "nov2021_q100",
+  "july2018_q43",
+  "june2019_q82",
+  "dec2018_q62",
+  "dec2022_q33",
+  "dec2023_q90",
+  "june2024_reexam_q4",
+  "july2018_q41",
+  "dec2018_q90",
+  "dec2019_q79",
+  "july2018_q47",
+  "june2019_q89",
+  "dec2019_q25",
+  "sep2022_q45",
+  "dec2019_q90",
+  "dec2022_q84",
+  "nov2021_q92",
+  "dec2024_q70",
+  "dec2023_q33",
+  "june2024_cancelled_q40",
+  "june2019_q81",
+  "dec2019_q77",
+  "nov2021_q98",
+  "dec2022_q26",
+  "dec2019_q54",
+  "dec2022_q61",
+  "dec2023_q62",
+  "june2025_q15",
+  "june2024_reexam_q68",
+  "dec2022_shiftii_q62",
+  "sep2022_q83",
+  "june2024_cancelled_q29",
+  "dec2024_q4",
+  "june2024_cancelled_q79",
+  "june2025_q3",
+  "dec2019_q55"
+ ],
+ "examiner_mindset": [
+  "Format mix: heavy on matching (List I/List II), arrange-in-order and multi-statement combos; pure numeric questions are about 20-25 of 167 and are single-step substitutions.",
+  "Exact repeats are common: Dec 2022 Shift I and II share CRC, MTU fragmentation and Ethernet delay questions; June 2023 reuses the fragmentation and Ethernet delay problems; period-to-frequency appears in 2018 and 2020.",
+  "Passage sets (sliding window Sep 2022, subnetting Dec 2022 Shift II, IPv4 header June 2023) give 5 questions from one setup, so one worked example is worth 5 marks.",
+  "Standard numbers are reused: 10 Mbps, 512-byte frame, 2500 m, 2e8 m/s; MTU 1500/820, 1400-byte TCP segment; header 45 00 00 54; RSA p,q small (3,11; 13,5).",
+  "Security is the largest topic (26) but mostly recall: key and block sizes, hash and digital-signature roles, RSA arithmetic, firewall basics; no deep protocol analysis.",
+  "Distractors: options differ by one detail (ordering swapped, 2^n vs 2^n - 2, 1-persistent vs 2-persistent, SYN vs ACK number); some answer keys have inconsistent options (Ethernet delay, Dec 2022 Shift II q35 vs June 2023 q81), so follow the key.",
+  "Recent papers (2023-2025) emphasise IP header/fragmentation, wireless/cloud/MANET matching and ordering questions; classical ciphers and sliding-window calculations appeared mostly 2018-2022.",
+  "Cross-unit overlap: cloud, virtualization, IoT, social networks and MANET belong to the emerging-networks end of this unit; hash and RSA overlap with theory-of-computation style number arithmetic.",
+  "He never asks: routing algorithm computation beyond a single distance-vector update, OSPF/BGP internals, TCP congestion window plots, or full-length subnet design with VLSM.",
+  "Difficulty is low: about 70% of questions are difficulty 1-2 recall; the few hard ones are the sliding-window passage and the distance-vector update."
+ ],
+ "formulas": [
+  {
+   "name": "Transmission delay",
+   "formula": "Tt = frame size (bits) / bandwidth (bps)",
+   "used_in": [
+    "sep2022_q36",
+    "june2023_q81",
+    "dec2022_shiftii_q35"
+   ],
+   "note": "Convert bytes to bits first."
+  },
+  {
+   "name": "Propagation delay",
+   "formula": "Tp = distance / propagation speed",
+   "used_in": [
+    "june2019_q83",
+    "sep2022_q36",
+    "june2023_q81"
+   ],
+   "note": "Watch units: km vs m, us per km vs km/s."
+  },
+  {
+   "name": "Bandwidth-delay product",
+   "formula": "BDP = bandwidth x delay (RTT if round trip given)",
+   "used_in": [
+    "june2025_q24"
+   ],
+   "note": "Result in bits."
+  },
+  {
+   "name": "Optimal sliding-window size",
+   "formula": "W = 1 + 2Tp/Tt",
+   "used_in": [
+    "sep2022_q38",
+    "sep2022_q37"
+   ],
+   "note": "Sequence bits n: window <= 2^n - 1 (go-back-N) or 2^(n-1) (SR)."
+  },
+  {
+   "name": "Sliding-window efficiency / throughput",
+   "formula": "efficiency = W / (1 + 2Tp/Tt) capped at 1; throughput = efficiency x bandwidth",
+   "used_in": [
+    "sep2022_q39",
+    "sep2022_q40",
+    "sep2022_q47"
+   ],
+   "note": "Throughput cannot exceed link rate."
+  },
+  {
+   "name": "Error detection/correction distance",
+   "formula": "Detect s errors: d_min = s + 1; correct t errors: d_min = 2t + 1",
+   "used_in": [
+    "dec2022_q36",
+    "july2018_q49",
+    "nov2020_q31"
+   ],
+   "note": "Mixing the two is the usual trap."
+  },
+  {
+   "name": "Hamming distance",
+   "formula": "Number of bit positions where two words differ (weight of XOR)",
+   "used_in": [
+    "dec2024_q17",
+    "nov2020_q31"
+   ],
+   "note": "Decode to nearest valid codeword."
+  },
+  {
+   "name": "CRC codeword",
+   "formula": "Codeword = dataword || remainder (remainder from modulo-2 division after appending zeros)",
+   "used_in": [
+    "dec2022_q34",
+    "dec2022_shiftii_q36"
+   ],
+   "note": "(x+1) factor of G(x) catches all odd-bit errors (nov2021_q100)."
+  },
+  {
+   "name": "Bit stuffing flag",
+   "formula": "Frame flag 01111110 = 0x7E; stuff 0 after five consecutive 1s",
+   "used_in": [
+    "dec2023_q35"
+   ],
+   "note": "Flag is hex 7E."
+  },
+  {
+   "name": "Nyquist bit rate",
+   "formula": "C = 2B log2(L)",
+   "used_in": [
+    "dec2024_q16",
+    "nov2020_q88"
+   ],
+   "note": "Noiseless channel only; sampling rate >= 2 f_max."
+  },
+  {
+   "name": "Shannon capacity",
+   "formula": "C = B log2(1 + SNR)",
+   "used_in": [
+    "nov2020_q88"
+   ],
+   "note": "Noisy channel; SNR is a ratio, not dB."
+  },
+  {
+   "name": "Frequency and period",
+   "formula": "f = 1/T",
+   "used_in": [
+    "nov2020_q34",
+    "july2018_q42"
+   ],
+   "note": "100 ms = 10 Hz = 10^-2 kHz."
+  },
+  {
+   "name": "Fully connected links",
+   "formula": "n(n-1)/2",
+   "used_in": [
+    "june2019_q81"
+   ],
+   "note": "Symmetric keys for N persons also N(N-1)/2 (dec2018_q90)."
+  },
+  {
+   "name": "CSMA/CD minimum frame",
+   "formula": "L_min = bandwidth x 2Tp",
+   "used_in": [
+    "dec2024_q29",
+    "june2024_reexam_q17"
+   ],
+   "note": "Round-trip time, not one way."
+  },
+  {
+   "name": "Slotted ALOHA throughput",
+   "formula": "S = G e^(-G); pure ALOHA S = G e^(-2G)",
+   "used_in": [
+    "july2018_q41"
+   ],
+   "note": "G = frames per frame time."
+  },
+  {
+   "name": "Token bucket burst duration",
+   "formula": "T = C / (M - rho) = capacity / (output rate - token rate)",
+   "used_in": [
+    "dec2022_shiftii_q34"
+   ],
+   "note": "16/(10-2) = 2 s."
+  },
+  {
+   "name": "Token ring 1-bit delay",
+   "formula": "distance per bit = propagation speed / bit rate",
+   "used_in": [
+    "june2024_reexam_q4"
+   ],
+   "note": "200 m/us / 10 Mbps = 20 m."
+  },
+  {
+   "name": "Hosts per subnet",
+   "formula": "2^(host bits) - 2; subnets = 2^(subnet bits)",
+   "used_in": [
+    "june2024_reexam_q58",
+    "sep2022_q48",
+    "nov2021_q95",
+    "june2019_q84"
+   ],
+   "note": "Subtract 2 for network and broadcast addresses."
+  },
+  {
+   "name": "Subnetting a block",
+   "formula": "new prefix = old prefix + log2(subnets); addresses = 2^(32 - prefix)",
+   "used_in": [
+    "dec2022_shiftii_q91",
+    "dec2022_shiftii_q92",
+    "dec2022_shiftii_q94"
+   ],
+   "note": "1024 subnets from /16 gives /26 and 64 addresses."
+  },
+  {
+   "name": "IPv4 class ranges",
+   "formula": "A 0-127, B 128-191, C 192-223, D 224-239, E 240-255; A=50%, B=25%, C=12.5% of space",
+   "used_in": [
+    "dec2019_q53",
+    "june2019_q88",
+    "june2024_reexam_q32",
+    "june2019_q85"
+   ],
+   "note": "127.x.x.x loopback is class A."
+  },
+  {
+   "name": "IP fragmentation",
+   "formula": "data per fragment = floor((MTU - 20)/8)*8; offset = bytes/8",
+   "used_in": [
+    "dec2022_q63",
+    "june2023_q55",
+    "dec2022_shiftii_q61"
+   ],
+   "note": "MTU 820 gives 800 data bytes."
+  },
+  {
+   "name": "IPv4 header decode",
+   "formula": "byte0 low nibble HLEN x 4; bytes 2-3 total length; byte 8 TTL; byte 9 protocol (6 TCP, 17 UDP, 1 ICMP)",
+   "used_in": [
+    "june2023_q96",
+    "june2023_q97",
+    "june2023_q98",
+    "june2023_q99",
+    "june2024_cancelled_q37"
+   ],
+   "note": "Efficiency = (total - header)/total."
+  },
+  {
+   "name": "RSA",
+   "formula": "n = pq; phi = (p-1)(q-1); ed = 1 mod phi; C = M^e mod n; M = C^d mod n",
+   "used_in": [
+    "sep2022_q18",
+    "nov2020_q32",
+    "dec2022_q84"
+   ],
+   "note": "Private-key encryption gives digital signature."
+  },
+  {
+   "name": "Symmetric key count",
+   "formula": "N(N-1)/2 keys for N parties",
+   "used_in": [
+    "dec2018_q90"
+   ],
+   "note": "Public-key needs only N key pairs."
+  },
+  {
+   "name": "Cipher sizes",
+   "formula": "DES 64-bit block/56-bit key; 3DES 168; AES 128 block, 128/192/256 key; IDEA 64/128; Blowfish 32-448",
+   "used_in": [
+    "july2018_q45",
+    "dec2018_q61",
+    "sep2022_q82"
+   ],
+   "note": "DES has 16 rounds; function steps: expansion, XOR key, S-box, P-box."
+  },
+  {
+   "name": "Line coding average bandwidth",
+   "formula": "NRZ-L N/2; MLT-3 N/3; 2B1Q N/4; 4D-PAM5 N/8; Manchester bit rate = half baud",
+   "used_in": [
+    "june2024_cancelled_q8",
+    "dec2023_q63",
+    "nov2021_q94"
+   ],
+   "note": "Manchester needs twice the bandwidth of NRZ."
+  },
+  {
+   "name": "DHCP sequence",
+   "formula": "Discover, Offer, Request, Ack",
+   "used_in": [
+    "dec2024_q88",
+    "dec2023_q84"
+   ],
+   "note": "Renewal: timer, request, ack."
+  },
+  {
+   "name": "Hierarchical routing table size",
+   "formula": "entries = routers in own region + other regions in cluster + other clusters",
+   "used_in": [
+    "dec2019_q54"
+   ],
+   "note": "Key gives 25 for the 720-router example."
+  },
+  {
+   "name": "Piconet",
+   "formula": "1 master + up to 7 active slaves",
+   "used_in": [
+    "dec2019_q55"
+   ],
+   "note": "Scatternet joins piconets."
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Security and cryptography recall",
+   "topics": [
+    "Network Security & Cryptography"
+   ],
+   "hours": 3.0,
+   "do": "Learn the cipher size table (u9c19), RSA arithmetic (u9c18), digital signature/hash roles (u9c21); solve nov2020_q32, july2018_q45, june2025_q12."
+  },
+  {
+   "step": 2,
+   "focus": "Data link calculations",
+   "topics": [
+    "Data Link Layer, Error Control & Flow Control"
+   ],
+   "hours": 3.5,
+   "do": "Master the sliding window passage (sep2022_q38), Hamming rules (nov2020_q31), CRC (dec2022_q34), WAN protocol facts (june2024_cancelled_q58)."
+  },
+  {
+   "step": 3,
+   "focus": "IP addressing and subnetting",
+   "topics": [
+    "IP Addressing, Subnetting & CIDR"
+   ],
+   "hours": 3.0,
+   "do": "Class table (june2024_reexam_q32), mask counting (june2024_reexam_q58), subnetting passage (dec2022_shiftii_q91), CIDR (dec2018_q87)."
+  },
+  {
+   "step": 4,
+   "focus": "IP header and fragmentation",
+   "topics": [
+    "IP Fragmentation & Network Layer"
+   ],
+   "hours": 2.0,
+   "do": "Do the MTU problem (june2023_q55) and header decode (june2023_q98); read header field order."
+  },
+  {
+   "step": 5,
+   "focus": "Physical layer and signals",
+   "topics": [
+    "Physical Layer, Transmission & Signals"
+   ],
+   "hours": 2.5,
+   "do": "Line coding table (june2024_cancelled_q8), Nyquist/Shannon (dec2024_q16), switching (june2025_q61), throughput (june2023_q49), TDM (dec2023_q33)."
+  },
+  {
+   "step": 6,
+   "focus": "MAC and LAN",
+   "topics": [
+    "MAC Protocols, Ethernet & LAN"
+   ],
+   "hours": 2.0,
+   "do": "CSMA/CD frame size (dec2024_q29), Ethernet delay (june2023_q81), access-protocol classification (dec2024_q3), ALOHA formula (july2018_q41)."
+  },
+  {
+   "step": 7,
+   "focus": "OSI and TCP/IP models",
+   "topics": [
+    "OSI & TCP/IP Models"
+   ],
+   "hours": 1.5,
+   "do": "Layer functions matrix (june2023_q22) and PDU/layer facts (june2024_cancelled_q62)."
+  },
+  {
+   "step": 8,
+   "focus": "Transport and application layer",
+   "topics": [
+    "Transport Layer (TCP/UDP, Congestion)",
+    "Application Layer Protocols (HTTP, DNS, SMTP)"
+   ],
+   "hours": 2.0,
+   "do": "TCP vs UDP (dec2023_q61), handshake (june2024_reexam_q68), DHCP/DNS/URL orderings (dec2024_q88, june2025_q55), POP/IMAP facts."
+  },
+  {
+   "step": 9,
+   "focus": "Wireless, cloud and routing",
+   "topics": [
+    "Wireless, Mobile & Emerging Networks",
+    "Routing Algorithms & Protocols"
+   ],
+   "hours": 1.5,
+   "do": "Cloud models (dec2024_q68), wireless matching (june2023_q39), MANET (dec2024_q4), RIP/OSPF/BGP distinctions (dec2023_q62)."
+  }
+ ],
+ "minimum_set": [
+  "dec2024_q88",
+  "june2025_q55",
+  "sep2022_q38",
+  "june2025_q24",
+  "nov2020_q31",
+  "dec2022_q34",
+  "june2024_cancelled_q58",
+  "dec2022_shiftii_q91",
+  "june2024_reexam_q32",
+  "june2024_reexam_q58",
+  "dec2018_q87",
+  "june2023_q55",
+  "june2023_q98",
+  "june2024_reexam_q19",
+  "june2023_q81",
+  "dec2024_q29",
+  "dec2024_q3",
+  "sep2022_q51",
+  "nov2020_q32",
+  "july2018_q48",
+  "july2018_q45",
+  "dec2024_q52",
+  "june2025_q12",
+  "june2023_q22",
+  "june2024_cancelled_q62",
+  "nov2020_q34",
+  "june2023_q49",
+  "dec2024_q16",
+  "june2025_q61",
+  "june2024_cancelled_q8",
+  "june2023_q8",
+  "dec2023_q61",
+  "june2025_q38",
+  "june2023_q39",
+  "dec2024_q68",
+  "dec2018_q65",
+  "dec2024_q32",
+  "dec2022_q61",
+  "dec2019_q54",
+  "dec2023_q62",
+  "june2024_reexam_q68",
+  "june2025_q15",
+  "sep2022_q83",
+  "dec2022_shiftii_q62",
+  "dec2024_q4",
+  "june2025_q3",
+  "june2024_reexam_q4",
+  "july2018_q41",
+  "sep2022_q5",
+  "dec2023_q35",
+  "nov2021_q100",
+  "nov2020_q33",
+  "dec2019_q90",
+  "dec2022_q84",
+  "sep2022_q45",
+  "dec2018_q90",
+  "dec2019_q79",
+  "june2019_q89",
+  "dec2024_q23",
+  "nov2020_q59",
+  "dec2023_q33",
+  "june2024_cancelled_q40",
+  "dec2023_q90"
+ ]
+}

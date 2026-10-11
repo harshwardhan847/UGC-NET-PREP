@@ -1,0 +1,1023 @@
+{
+ "unit": 6,
+ "name": "Software Engineering",
+ "total_questions": 144,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "count": 33,
+   "papers": 13,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "Largest topic: 33 questions, 13 papers.",
+   "what_to_study": [
+    "Maintenance types, reengineering",
+    "CMM levels",
+    "ISO 9126/McCall",
+    "SCM/version control",
+    "Reliability and availability formulas"
+   ]
+  },
+  {
+   "topic": "Software Testing",
+   "count": 27,
+   "papers": 14,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "27 questions, 14 papers; matching and classification dominate.",
+   "what_to_study": [
+    "Test type tables",
+    "Black vs white box",
+    "Coverage, BVA",
+    "Flowgraph questions"
+   ]
+  },
+  {
+   "topic": "Software Process Models",
+   "count": 23,
+   "papers": 13,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "Frequent (23 of 144, 13 papers) with agile/cleanroom/ordering variants every few papers.",
+   "what_to_study": [
+    "Agile model list, principles, FDD order",
+    "Cleanroom facts",
+    "Prototype/spiral/incremental/RAD/evolutionary suitability",
+    "Generic framework activity order"
+   ]
+  },
+  {
+   "topic": "Requirements Engineering & UML",
+   "count": 22,
+   "papers": 11,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "22 questions in 11 papers; SRS attributes, UML and elicitation repeat.",
+   "what_to_study": [
+    "SRS attributes and definitions",
+    "Elicitation and validation techniques",
+    "UML diagram types and purpose, sequence diagrams",
+    "DFD levels, NFRs, formal methods"
+   ]
+  },
+  {
+   "topic": "Software Design, Coupling & Cohesion",
+   "count": 16,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "16 questions, 11 papers; cohesion/coupling dominate.",
+   "what_to_study": [
+    "Cohesion and coupling ranking and definitions",
+    "MVC and design patterns",
+    "Modularity glossary"
+   ]
+  },
+  {
+   "topic": "Software Metrics, Estimation & COCOMO",
+   "count": 16,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "16 questions (11%) incl. computational ones, 11 papers.",
+   "what_to_study": [
+    "LOC/productivity arithmetic",
+    "Cyclomatic complexity",
+    "COCOMO forms",
+    "FP, maturity index, software equation"
+   ]
+  },
+  {
+   "topic": "Project Management, Risk & Scheduling",
+   "count": 7,
+   "papers": 6,
+   "first_year": "June 2019",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "High",
+   "why": "7 questions but in 6 of 15 papers (40%); small but recurring.",
+   "what_to_study": [
+    "PERT/CPM",
+    "Risk categories and RE",
+    "EVM CPI",
+    "Project manager roles"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "id": "u6c1",
+   "title": "Agile: which models/principles are agile",
+   "type": "same-concept-variant",
+   "topic": "Software Process Models",
+   "technique": "Agile = XP, Scrum, FDD, ASD, Crystal, DSDM; NOT waterfall/spiral/incremental. Agile principles favour change, customer collaboration, working software, delivering increments; 'following the plan' is the anti-principle.",
+   "what_changes": "Pick-the-agile-models, odd-one-out principle, or correct handling of unpredictability",
+   "representative": "june2024_reexam_q15",
+   "members": [
+    "june2024_reexam_q15",
+    "dec2018_q59",
+    "dec2022_shiftii_q53"
+   ],
+   "skip_note": "All three test 'agile = embrace change, incremental delivery'; one pass covers all."
+  },
+  {
+   "id": "u6c2",
+   "title": "Agile/FDD sequence and artifact matching",
+   "type": "same-concept-variant",
+   "topic": "Software Process Models",
+   "technique": "Memorise FDD order: overall model, feature list, plan by feature, design by feature, build by feature. Agile flow: plan, design, develop, test, release. Scrum=sprint backlog, XP=CRC cards, ASD=speculate-collaborate-learn.",
+   "what_changes": "Ordering vs matching of agile phases/artifacts",
+   "representative": "june2024_reexam_q10",
+   "members": [
+    "june2024_reexam_q10",
+    "june2024_reexam_q22",
+    "dec2019_q84"
+   ],
+   "skip_note": "Same memorised sequences/artifacts reappear; learn the lists once."
+  },
+  {
+   "id": "u6c3",
+   "title": "Cleanroom software engineering",
+   "type": "same-concept-variant",
+   "topic": "Software Process Models",
+   "technique": "Cleanroom: incremental model, formal specification, statistical (usage-based) testing and certification, correctness verification (static); no unit testing/dynamic verification by developers.",
+   "what_changes": "Which statement is false / which is not a strategy",
+   "representative": "nov2021_q19",
+   "members": [
+    "nov2021_q19",
+    "july2018_q19",
+    "dec2018_q55"
+   ],
+   "skip_note": "Same 3-4 facts about cleanroom each time."
+  },
+  {
+   "id": "u6c4",
+   "title": "Process model suitability matching",
+   "type": "same-concept-variant",
+   "topic": "Software Process Models",
+   "technique": "Waterfall=stable requirements; incremental=core product quickly; evolutionary/prototype=unclear reqs; component-based=reuse, compromises inevitable; spiral=risk driven.",
+   "what_changes": "Match model to system type",
+   "representative": "nov2021_q17",
+   "members": [
+    "nov2021_q17",
+    "june2019_q57"
+   ],
+   "skip_note": "Both are the same model-to-situation table."
+  },
+  {
+   "id": "u6c5",
+   "title": "Spiral model characteristics",
+   "type": "same-concept-variant",
+   "topic": "Software Process Models",
+   "technique": "Spiral = risk-driven, evolutionary/cyclic, suited to changing/unclear requirements, large projects.",
+   "what_changes": "Select-correct-statements format",
+   "representative": "dec2024_q39",
+   "members": [
+    "dec2024_q39",
+    "dec2023_q60"
+   ],
+   "skip_note": "Same risk-driven/changing-requirement facts."
+  },
+  {
+   "id": "u6c6",
+   "title": "Prototype model phase order",
+   "type": "same-concept-variant",
+   "topic": "Software Process Models",
+   "technique": "Order: requirements/quick play -> quick design -> build prototype -> customer evaluation -> refine -> deliver/engineer final product.",
+   "what_changes": "Wording of steps differs, order same",
+   "representative": "dec2024_q1",
+   "members": [
+    "dec2024_q1",
+    "dec2023_q82"
+   ],
+   "skip_note": "Same sequence reworded."
+  },
+  {
+   "id": "u6c7",
+   "title": "SRS quality attribute definitions",
+   "type": "same-concept-variant",
+   "topic": "Requirements Engineering & UML",
+   "technique": "Map definition to attribute: unambiguous=one interpretation, consistent=no conflicts, verifiable=cost-effective check, complete, modifiable, traceable, ranked. Reliability is not an SRS attribute.",
+   "what_changes": "Which attribute / which is NOT an attribute",
+   "representative": "sep2022_q94",
+   "members": [
+    "sep2022_q94",
+    "sep2022_q26",
+    "nov2021_q14",
+    "dec2018_q52"
+   ],
+   "skip_note": "Same attribute list, different definition asked."
+  },
+  {
+   "id": "u6c8",
+   "title": "Elicitation and validation techniques",
+   "type": "same-concept-variant",
+   "topic": "Requirements Engineering & UML",
+   "technique": "Elicitation: interviews, questionnaires, ethnography (observation), prototyping, use cases/scenarios, JAD; DFD is analysis, not elicitation. Inspection/reviews/prototype/test-case generation validate requirements.",
+   "what_changes": "Name the technique from its description",
+   "representative": "june2025_q66",
+   "members": [
+    "june2025_q66",
+    "june2023_q37",
+    "dec2024_q48"
+   ],
+   "skip_note": "Same technique-to-description mapping."
+  },
+  {
+   "id": "u6c9",
+   "title": "UML diagram identity and purpose",
+   "type": "same-concept-variant",
+   "topic": "Requirements Engineering & UML",
+   "technique": "Static/structural: class, object, component, deployment, use-case(static view per UGC key). Behavioural: state, activity, sequence, collaboration. Use-case = external actors interacting with system.",
+   "what_changes": "Static vs dynamic, match diagram to description",
+   "representative": "dec2018_q54",
+   "members": [
+    "dec2018_q54",
+    "nov2020_q19",
+    "june2023_q88"
+   ],
+   "skip_note": "Same diagram-purpose table."
+  },
+  {
+   "id": "u6c10",
+   "title": "Sequence diagram reading",
+   "type": "same-concept-variant",
+   "topic": "Requirements Engineering & UML",
+   "technique": "Count lifelines/objects and follow messages top to bottom in time order.",
+   "what_changes": "Count objects vs message order",
+   "representative": "dec2019_q89",
+   "members": [
+    "dec2019_q89",
+    "dec2019_q33"
+   ],
+   "skip_note": "Both from Dec 2019; read diagram carefully, no theory."
+  },
+  {
+   "id": "u6c11",
+   "title": "OO analysis/behaviour modelling step order",
+   "type": "same-concept-variant",
+   "topic": "Requirements Engineering & UML",
+   "technique": "OOA order: use-case + activity -> interaction (sequence) -> class -> state chart/object -> component/deployment. Behaviour model: evaluate use-cases, identify events, build state transition diagram, review.",
+   "what_changes": "Order or which steps included",
+   "representative": "dec2023_q79",
+   "members": [
+    "dec2023_q79",
+    "nov2020_q50"
+   ],
+   "skip_note": "Both ask the ordered modelling steps."
+  },
+  {
+   "id": "u6c12",
+   "title": "Cohesion types and ranking",
+   "type": "same-concept-variant",
+   "topic": "Software Design, Coupling & Cohesion",
+   "technique": "Best to worst: functional > sequential > communicational > procedural > temporal > logical > coincidental. Communicational = same input/output data.",
+   "what_changes": "Rank, pick better-than-X, or define",
+   "representative": "june2025_q21",
+   "members": [
+    "june2025_q21",
+    "nov2020_q77",
+    "sep2022_q44",
+    "dec2022_shiftii_q81"
+   ],
+   "skip_note": "One ranking list answers all."
+  },
+  {
+   "id": "u6c13",
+   "title": "Coupling types",
+   "type": "same-concept-variant",
+   "topic": "Software Design, Coupling & Cohesion",
+   "technique": "Low to high: data < stamp < control < external < common < content. Common = shared global data; control = one module controls flow of another.",
+   "what_changes": "Statement validity or ordering",
+   "representative": "june2025_q69",
+   "members": [
+    "june2025_q69",
+    "july2018_q16",
+    "dec2018_q60"
+   ],
+   "skip_note": "One ranking plus definitions answers all."
+  },
+  {
+   "id": "u6c14",
+   "title": "Software engineering terms matching (coupling/cohesion=design)",
+   "type": "exact-repeat",
+   "topic": "Software Design, Coupling & Cohesion",
+   "technique": "Product complexity-> metrics; structured analysis -> requirements; coupling & cohesion -> design; symbolic execution -> validation.",
+   "what_changes": "Identical items, only the list-ordering differs",
+   "representative": "dec2022_shiftii_q71",
+   "members": [
+    "dec2022_shiftii_q71",
+    "july2018_q12"
+   ],
+   "skip_note": "Exact repeat across 4 years."
+  },
+  {
+   "id": "u6c15",
+   "title": "Design principle definitions matching",
+   "type": "same-concept-variant",
+   "topic": "Software Design, Coupling & Cohesion",
+   "technique": "Cohesion=intra-module strength, coupling=inter-module dependency, modularity=division, abstraction=hide details, encapsulation=packaging.",
+   "what_changes": "Different terms in the match list",
+   "representative": "june2024_reexam_q64",
+   "members": [
+    "june2024_reexam_q64",
+    "sep2022_q77"
+   ],
+   "skip_note": "Same glossary matching."
+  },
+  {
+   "id": "u6c16",
+   "title": "MVC component roles",
+   "type": "same-concept-variant",
+   "topic": "Software Design, Coupling & Cohesion",
+   "technique": "Model=business logic/domain data, View=UI presentation, Controller=handles input and updates model.",
+   "what_changes": "M asked vs V asked",
+   "representative": "nov2021_q12",
+   "members": [
+    "nov2021_q12",
+    "june2019_q52"
+   ],
+   "skip_note": "Learn M,V,C once."
+  },
+  {
+   "id": "u6c17",
+   "title": "Productivity/effort/time arithmetic",
+   "type": "same-formula",
+   "topic": "Software Metrics, Estimation & COCOMO",
+   "technique": "Effort = size/productivity; size = effort*productivity-rate; duration = effort/(team*hours per day).",
+   "what_changes": "Which variable is unknown",
+   "representative": "june2024_reexam_q66",
+   "members": [
+    "june2024_reexam_q66",
+    "june2024_reexam_q89",
+    "june2024_reexam_q25",
+    "july2018_q11"
+   ],
+   "skip_note": "Same division; three came from one paper."
+  },
+  {
+   "id": "u6c18",
+   "title": "Cyclomatic complexity and flow graphs",
+   "type": "same-formula",
+   "topic": "Software Metrics, Estimation & COCOMO",
+   "technique": "V(G)=E-N+2=P+1=number of regions; independent paths = V(G).",
+   "what_changes": "Graph given, compute V(G) or related counts",
+   "representative": "june2024_cancelled_q61",
+   "members": [
+    "june2024_cancelled_q61",
+    "dec2019_q91",
+    "dec2019_q92",
+    "dec2019_q93",
+    "dec2019_q94",
+    "dec2019_q95",
+    "dec2022_q24"
+   ],
+   "skip_note": "Single formula; the Dec 2019 passage gives five questions from one graph."
+  },
+  {
+   "id": "u6c19",
+   "title": "Availability from MTBF/downtime",
+   "type": "same-formula",
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "technique": "Availability = MTBF/(MTBF+MTTR) = uptime fraction; downtime = (1-A)*period.",
+   "what_changes": "Solve for repair time or availability",
+   "representative": "july2018_q14",
+   "members": [
+    "july2018_q14",
+    "nov2021_q15"
+   ],
+   "skip_note": "Same availability formula."
+  },
+  {
+   "id": "u6c20",
+   "title": "Software metric categories",
+   "type": "same-concept-variant",
+   "topic": "Software Metrics, Estimation & COCOMO",
+   "technique": "Size and complexity = product metrics; LOC/FP normalise by size (size-oriented); indirect measures = functionality, quality, reliability, maintainability.",
+   "what_changes": "Which category",
+   "representative": "sep2022_q41",
+   "members": [
+    "sep2022_q41",
+    "sep2022_q43",
+    "sep2022_q30"
+   ],
+   "skip_note": "All from Sep 2022; one definition set."
+  },
+  {
+   "id": "u6c21",
+   "title": "COCOMO basics",
+   "type": "same-concept-variant",
+   "topic": "Software Metrics, Estimation & COCOMO",
+   "technique": "COCOMO = Constructive Cost Model; basic organic E=2.4(KLOC)^1.05 PM, D=2.5E^0.38; semidetached 3.0/1.12; embedded 3.6/1.20.",
+   "what_changes": "Expansion vs equation",
+   "representative": "june2025_q32",
+   "members": [
+    "june2025_q32",
+    "dec2022_shiftii_q22"
+   ],
+   "skip_note": "Both from COCOMO table."
+  },
+  {
+   "id": "u6c22",
+   "title": "Types of maintenance",
+   "type": "same-concept-variant",
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "technique": "Corrective=fix bugs, adaptive=new environment/platform, perfective=new features/restructuring for improvement, preventive=future maintainability.",
+   "what_changes": "Reason to definition",
+   "representative": "dec2018_q53",
+   "members": [
+    "dec2018_q53",
+    "june2019_q58",
+    "nov2020_q20",
+    "dec2022_shiftii_q23"
+   ],
+   "skip_note": "Same four definitions."
+  },
+  {
+   "id": "u6c23",
+   "title": "Reengineering and reverse engineering",
+   "type": "same-concept-variant",
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "technique": "Reverse engineering = recover design/spec from code (analysis only, no change); reengineering = reverse + forward restructuring; reasons: adapt, new tech, maintainability.",
+   "what_changes": "True/false and goal identification",
+   "representative": "june2025_q18",
+   "members": [
+    "june2025_q18",
+    "june2024_cancelled_q48",
+    "dec2018_q58",
+    "july2018_q18"
+   ],
+   "skip_note": "Same definition set."
+  },
+  {
+   "id": "u6c24",
+   "title": "CMM maturity levels",
+   "type": "same-concept-variant",
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "technique": "1 Initial, 2 Repeatable (project mgmt), 3 Defined (process definition), 4 Managed (measurement), 5 Optimizing (continuous improvement).",
+   "what_changes": "Order vs match",
+   "representative": "dec2024_q87",
+   "members": [
+    "dec2024_q87",
+    "nov2021_q18",
+    "nov2020_q68",
+    "july2018_q15"
+   ],
+   "skip_note": "Same five-level ladder."
+  },
+  {
+   "id": "u6c25",
+   "title": "Quality model attributes (ISO 9126)",
+   "type": "same-concept-variant",
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "technique": "ISO 9126: functionality, reliability, usability, efficiency, maintainability, portability.",
+   "what_changes": "Match attribute to description",
+   "representative": "june2025_q10",
+   "members": [
+    "june2025_q10",
+    "dec2019_q83"
+   ],
+   "skip_note": "Same attribute table."
+  },
+  {
+   "id": "u6c26",
+   "title": "Configuration management and version control",
+   "type": "same-concept-variant",
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "technique": "Commit source and documentation, not generated output; SCM provides versioning, branching, diff; Git is distributed VCS.",
+   "what_changes": "Which feature/file belongs",
+   "representative": "june2024_reexam_q70",
+   "members": [
+    "june2024_reexam_q70",
+    "nov2021_q16",
+    "july2018_q13",
+    "june2019_q55"
+   ],
+   "skip_note": "Same SCM basics."
+  },
+  {
+   "id": "u6c27",
+   "title": "Quality control vs quality assurance",
+   "type": "same-concept-variant",
+   "topic": "Software Quality, Maintenance & Configuration Mgmt",
+   "technique": "QC = inspections/tests on products (detective); QA = process, preventive, no code execution.",
+   "what_changes": "Statement truth",
+   "representative": "nov2020_q85",
+   "members": [
+    "nov2020_q85",
+    "june2024_cancelled_q89"
+   ],
+   "skip_note": "Same QA/QC distinction."
+  },
+  {
+   "id": "u6c28",
+   "title": "Testing type matching",
+   "type": "same-concept-variant",
+   "topic": "Software Testing",
+   "technique": "Unit=component, integration=interfaces, system=whole, acceptance=user; regression=no new bugs; white box=condition coverage, black box=ECP/BVA.",
+   "what_changes": "Match test type to description",
+   "representative": "june2025_q43",
+   "members": [
+    "june2025_q43",
+    "dec2022_q71",
+    "june2023_q15",
+    "june2024_reexam_q81",
+    "june2024_cancelled_q71"
+   ],
+   "skip_note": "Same table of test types."
+  },
+  {
+   "id": "u6c29",
+   "title": "Alpha and beta testing",
+   "type": "same-concept-variant",
+   "topic": "Software Testing",
+   "technique": "Alpha at developer site, beta at customer site; both acceptance testing.",
+   "what_changes": "Category vs who performs",
+   "representative": "nov2021_q11",
+   "members": [
+    "nov2021_q11",
+    "sep2022_q28"
+   ],
+   "skip_note": "Same two facts."
+  },
+  {
+   "id": "u6c30",
+   "title": "Black-box vs white-box technique classification",
+   "type": "same-concept-variant",
+   "topic": "Software Testing",
+   "technique": "Black box: ECP, BVA, graph-based; white box: path, loop, data-flow, condition coverage.",
+   "what_changes": "Classify techniques",
+   "representative": "nov2020_q51",
+   "members": [
+    "nov2020_q51",
+    "june2024_cancelled_q87"
+   ],
+   "skip_note": "Same classification."
+  },
+  {
+   "id": "u6c31",
+   "title": "Coverage criteria relations",
+   "type": "same-concept-variant",
+   "topic": "Software Testing",
+   "technique": "Path coverage subsumes branch and statement coverage; branch subsumes statement.",
+   "what_changes": "Coverage test input or statement truth",
+   "representative": "june2019_q53",
+   "members": [
+    "june2019_q53",
+    "dec2018_q56"
+   ],
+   "skip_note": "Same coverage hierarchy."
+  },
+  {
+   "id": "u6c32",
+   "title": "Testing fundamentals statements",
+   "type": "same-concept-variant",
+   "topic": "Software Testing",
+   "technique": "Exhaustive testing impractical; testing effort needs early planning and is costly.",
+   "what_changes": "Assertion-reason or two statements",
+   "representative": "dec2022_q54",
+   "members": [
+    "dec2022_q54",
+    "nov2021_q20"
+   ],
+   "skip_note": "Both true; common sense."
+  },
+  {
+   "id": "u6c33",
+   "title": "Verification vs validation",
+   "type": "same-concept-variant",
+   "topic": "Software Testing",
+   "technique": "Verification = built right (QA, reviews); validation = right product (user needs).",
+   "what_changes": "Definition",
+   "representative": "june2023_q7",
+   "members": [
+    "june2023_q7",
+    "june2019_q60"
+   ],
+   "skip_note": "Same V&V definition."
+  },
+  {
+   "id": "u6c34",
+   "title": "Risk management basics",
+   "type": "same-concept-variant",
+   "topic": "Project Management, Risk & Scheduling",
+   "technique": "RE=P*L; risk categories project/technical/business; known/predictable/unpredictable; monitoring tracks if risks occur.",
+   "what_changes": "Formula or classification",
+   "representative": "dec2024_q8",
+   "members": [
+    "dec2024_q8",
+    "dec2022_q22",
+    "june2019_q59"
+   ],
+   "skip_note": "Small risk glossary."
+  },
+  {
+   "id": "u6c35",
+   "title": "PERT/CPM and activity charts",
+   "type": "same-concept-variant",
+   "topic": "Project Management, Risk & Scheduling",
+   "technique": "CPM repetitive jobs, PERT non-repetitive; critical path = longest path of dependent tasks defining duration; optimistic = shortest time.",
+   "what_changes": "Fill blanks or match",
+   "representative": "june2023_q5",
+   "members": [
+    "june2023_q5",
+    "dec2019_q34"
+   ],
+   "skip_note": "Same terminology."
+  }
+ ],
+ "singletons": [
+  "june2023_q6",
+  "dec2022_shiftii_q54",
+  "dec2023_q36",
+  "dec2024_q6",
+  "dec2022_shiftii_q21",
+  "dec2024_q57",
+  "nov2021_q13",
+  "dec2022_q88",
+  "june2023_q1",
+  "sep2022_q29",
+  "june2023_q19",
+  "july2018_q17",
+  "dec2024_q90",
+  "nov2020_q21",
+  "nov2020_q22",
+  "dec2018_q57",
+  "dec2024_q13",
+  "sep2022_q68",
+  "sep2022_q25",
+  "june2025_q20",
+  "sep2022_q42",
+  "june2024_reexam_q43",
+  "dec2022_q81",
+  "dec2023_q89",
+  "june2024_cancelled_q4",
+  "june2019_q56",
+  "june2023_q72",
+  "june2019_q54",
+  "june2023_q71",
+  "july2018_q20",
+  "june2025_q25",
+  "dec2022_q23",
+  "dec2022_shiftii_q55",
+  "june2024_cancelled_q24",
+  "dec2022_q21",
+  "nov2020_q49",
+  "sep2022_q27",
+  "dec2022_shiftii_q24",
+  "dec2022_q55",
+  "dec2018_q46",
+  "dec2024_q28",
+  "dec2023_q32",
+  "june2019_q51",
+  "june2025_q85"
+ ],
+ "examiner_mindset": [
+  "Roughly 40% of questions are pure recall of definitions/lists; the rest are matching, ordering and true/false statement formats.",
+  "Favourite formats: Match List I/II and Arrange-in-order (CMM, prototype, agile, FDD, cohesion/coupling); expect one or two per paper.",
+  "Exact repeats are common: coupling statements (2018 x2), SE terms match (2018 and Dec 2022), prototype sequence, CMM order and match.",
+  "Numerics are few but reliable: 1-3 per paper (effort/productivity, cyclomatic, availability, reliability); numbers are rarely reused but formulas are.",
+  "Dec 2019 gave a five-question passage on a single flow graph; one unit can be a passage worth five marks.",
+  "Distractors: reorderings of the same list, 'All of the above/None' options, and a non-member (reliability for SRS, data flow diagram for elicitation, dynamic verification for cleanroom).",
+  "June 2024 Re-Exam leaned on easy arithmetic and definitions; Dec 2024 and June 2025 returned to ordering and 'A, B & D only' combos.",
+  "Cross-unit overlap: reliability/availability and verification vs validation touch Unit 2-style reliability; V&V appears under requirements and quality too.",
+  "He rarely asks deep COCOMO II/function point computation, EVM calculations beyond CPI, or code-level design patterns beyond proxy/MVC.",
+  "Topic tags are fuzzy: the same theme (maintenance, reengineering, V&V) is tagged under several topics, so study by theme."
+ ],
+ "formulas": [
+  {
+   "name": "Cyclomatic complexity",
+   "formula": "V(G) = E - N + 2 = P + 1 = number of regions",
+   "used_in": [
+    "june2024_cancelled_q61",
+    "dec2019_q92",
+    "dec2019_q93",
+    "dec2019_q95",
+    "dec2022_q24"
+   ],
+   "note": "P = predicate (decision) nodes; V(G) = number of independent paths"
+  },
+  {
+   "name": "Risk exposure",
+   "formula": "RE = P x L",
+   "used_in": [
+    "dec2022_q22"
+   ],
+   "note": "Probability times loss"
+  },
+  {
+   "name": "Cost performance index",
+   "formula": "CPI = BCWP / ACWP",
+   "used_in": [
+    "june2023_q6"
+   ],
+   "note": "Earned value over actual cost; schedule index SPI = BCWP/BCWS"
+  },
+  {
+   "name": "Availability",
+   "formula": "A = MTBF / (MTBF + MTTR)",
+   "used_in": [
+    "nov2021_q15",
+    "july2018_q14"
+   ],
+   "note": "Downtime = (1-A) x period; convert minutes/seconds carefully"
+  },
+  {
+   "name": "Exponential reliability",
+   "formula": "R(t) = e^(-t/MTTF), MTTF = mean of times between failures",
+   "used_in": [
+    "june2023_q72"
+   ],
+   "note": "Sample: mean 29/5 gives R(1)=e^(-5/29)"
+  },
+  {
+   "name": "Web app integrity",
+   "formula": "integrity = 1 - threat x (1 - security)",
+   "used_in": [
+    "june2019_q56"
+   ],
+   "note": "threat=probability of attack, security=probability of repelling"
+  },
+  {
+   "name": "Software maturity index",
+   "formula": "SMI = (Mt - (Fa + Fc + Fd)) / Mt",
+   "used_in": [
+    "dec2018_q57"
+   ],
+   "note": "Mt=modules in current release; Fa added, Fc changed, Fd deleted"
+  },
+  {
+   "name": "Effort from productivity",
+   "formula": "Effort = size / productivity; size = effort x rate",
+   "used_in": [
+    "june2024_reexam_q89",
+    "june2024_reexam_q25",
+    "july2018_q11"
+   ],
+   "note": "Check units (person-month vs hour)"
+  },
+  {
+   "name": "Project duration",
+   "formula": "days = effort(person-hours) / (team size x hours per day)",
+   "used_in": [
+    "june2024_reexam_q66"
+   ],
+   "note": "1500/(5x8)=37.5"
+  },
+  {
+   "name": "Cost from effort",
+   "formula": "cost = effort (PM) x monthly salary x team; or FP x productivity",
+   "used_in": [
+    "july2018_q11",
+    "nov2020_q22"
+   ],
+   "note": "Effort in person-months divided by team gives months"
+  },
+  {
+   "name": "Basic COCOMO organic",
+   "formula": "E = 2.4 (KLOC)^1.05 PM; D = 2.5 E^0.38",
+   "used_in": [
+    "june2025_q32"
+   ],
+   "note": "Semidetached 3.0/1.12, embedded 3.6/1.20"
+  },
+  {
+   "name": "Software (Putnam) equation",
+   "formula": "E = [LOC x B^0.333 / P]^3 x (1/t^4)",
+   "used_in": [
+    "dec2024_q13"
+   ],
+   "note": "Effort rises as fourth power of compression of time"
+  },
+  {
+   "name": "Boundary value analysis count",
+   "formula": "4n + 1 test cases for n variables (robust: 6n + 1)",
+   "used_in": [
+    "dec2022_shiftii_q24"
+   ],
+   "note": "Two variables gives 9"
+  },
+  {
+   "name": "Defect removal efficiency",
+   "formula": "DRE = E / (E + D)",
+   "used_in": [
+    "june2024_cancelled_q24"
+   ],
+   "note": "E errors before delivery, D after"
+  },
+  {
+   "name": "Cohesion ranking (best to worst)",
+   "formula": "functional > sequential > communicational > procedural > temporal > logical > coincidental",
+   "used_in": [
+    "june2025_q21",
+    "nov2020_q77",
+    "sep2022_q44"
+   ],
+   "note": "Communicational = same input/output data"
+  },
+  {
+   "name": "Coupling ranking (low to high)",
+   "formula": "data < stamp < control < external < common < content",
+   "used_in": [
+    "june2025_q69",
+    "july2018_q16",
+    "dec2018_q60"
+   ],
+   "note": "Common = shared global data"
+  },
+  {
+   "name": "CMM levels",
+   "formula": "Initial, Repeatable, Defined, Managed, Optimizing",
+   "used_in": [
+    "dec2024_q87",
+    "nov2021_q18",
+    "nov2020_q68",
+    "july2018_q15"
+   ],
+   "note": "Repeatable=project management, Defined=process definition, Managed=measurement"
+  },
+  {
+   "name": "Maintenance types",
+   "formula": "corrective (bugs), adaptive (environment), perfective (features/restructure), preventive",
+   "used_in": [
+    "dec2018_q53",
+    "june2019_q58",
+    "nov2020_q20",
+    "dec2022_shiftii_q23"
+   ],
+   "note": "Restructuring appears as perfective in nov2020_q20"
+  },
+  {
+   "name": "FDD order",
+   "formula": "overall model, feature list, plan by feature, design by feature, build by feature",
+   "used_in": [
+    "june2024_reexam_q10"
+   ],
+   "note": "Memorise"
+  },
+  {
+   "name": "Generic framework activities",
+   "formula": "Communication, Planning, Modeling, Construction, Deployment",
+   "used_in": [
+    "june2024_cancelled_q4"
+   ],
+   "note": "Order D,A,C,B,E in option labels"
+  },
+  {
+   "name": "Testing sequence",
+   "formula": "Unit, Integration, System, Acceptance",
+   "used_in": [
+    "june2025_q85"
+   ],
+   "note": "Alpha/beta are acceptance"
+  },
+  {
+   "name": "Coverage hierarchy",
+   "formula": "path coverage implies branch implies statement coverage",
+   "used_in": [
+    "june2019_q53",
+    "dec2018_q56"
+   ],
+   "note": "Reverse not true"
+  },
+  {
+   "name": "ISO 9126 characteristics",
+   "formula": "functionality, reliability, usability, efficiency, maintainability, portability",
+   "used_in": [
+    "dec2019_q83",
+    "june2025_q10"
+   ],
+   "note": "Reliability not an SRS attribute"
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Quality and maintenance",
+   "topics": [
+    "Software Quality, Maintenance & Configuration Mgmt"
+   ],
+   "hours": 3.0,
+   "do": "Master CMM ladder, maintenance types, reengineering vs reverse, ISO 9126, SCM; solve reps u6c23-u6c28 and availability u6c19."
+  },
+  {
+   "step": 2,
+   "focus": "Testing",
+   "topics": [
+    "Software Testing"
+   ],
+   "hours": 2.5,
+   "do": "Test type table (u6c29), alpha/beta, black/white box, coverage; do cyclomatic passage u6c18."
+  },
+  {
+   "step": 3,
+   "focus": "Process models",
+   "topics": [
+    "Software Process Models"
+   ],
+   "hours": 2.5,
+   "do": "Agile lists, cleanroom, spiral, prototype order; solve u6c1-u6c6 reps."
+  },
+  {
+   "step": 4,
+   "focus": "Requirements and UML",
+   "topics": [
+    "Requirements Engineering & UML"
+   ],
+   "hours": 2.0,
+   "do": "SRS attributes, elicitation techniques, UML types, sequence diagram reading; reps u6c7-u6c11."
+  },
+  {
+   "step": 5,
+   "focus": "Design",
+   "topics": [
+    "Software Design, Coupling & Cohesion"
+   ],
+   "hours": 1.5,
+   "do": "Cohesion and coupling lists, MVC; reps u6c12-u6c16."
+  },
+  {
+   "step": 6,
+   "focus": "Metrics and estimation",
+   "topics": [
+    "Software Metrics, Estimation & COCOMO"
+   ],
+   "hours": 2.0,
+   "do": "Effort arithmetic, V(G), COCOMO equations, SMI, Putnam equation; reps u6c17-u6c22."
+  },
+  {
+   "step": 7,
+   "focus": "Project management and singletons",
+   "topics": [
+    "Project Management, Risk & Scheduling"
+   ],
+   "hours": 1.0,
+   "do": "PERT/CPM, risk, CPI; then skim the singletons in the minimum set."
+  }
+ ],
+ "minimum_set": [
+  "june2024_reexam_q15",
+  "june2024_reexam_q10",
+  "nov2021_q19",
+  "nov2021_q17",
+  "dec2024_q39",
+  "dec2024_q1",
+  "sep2022_q94",
+  "june2025_q66",
+  "dec2018_q54",
+  "dec2019_q89",
+  "dec2023_q79",
+  "june2025_q21",
+  "june2025_q69",
+  "dec2022_shiftii_q71",
+  "june2024_reexam_q64",
+  "nov2021_q12",
+  "june2024_reexam_q66",
+  "june2024_cancelled_q61",
+  "july2018_q14",
+  "sep2022_q41",
+  "june2025_q32",
+  "dec2018_q53",
+  "june2025_q18",
+  "dec2024_q87",
+  "june2025_q10",
+  "june2024_reexam_q70",
+  "nov2020_q85",
+  "june2025_q43",
+  "nov2021_q11",
+  "nov2020_q51",
+  "june2019_q53",
+  "dec2022_q54",
+  "june2023_q7",
+  "dec2024_q8",
+  "june2023_q5",
+  "dec2018_q57",
+  "june2023_q72",
+  "june2019_q56",
+  "dec2024_q13",
+  "dec2022_shiftii_q24",
+  "june2023_q6",
+  "nov2020_q22",
+  "nov2020_q21",
+  "dec2018_q46",
+  "june2025_q85",
+  "dec2023_q36",
+  "dec2024_q28",
+  "dec2024_q90",
+  "june2023_q19",
+  "dec2022_q23"
+ ]
+}

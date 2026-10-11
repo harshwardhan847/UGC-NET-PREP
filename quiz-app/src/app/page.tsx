@@ -15,6 +15,7 @@ import QuizResults from "@/components/QuizResults"
 import ChatSidebar from "@/components/ChatSidebar"
 import ReinforcementPanel from "@/components/ReinforcementPanel"
 import SyllabusWeightage from "@/components/SyllabusWeightage"
+import StudyPlan from "@/components/StudyPlan"
 import RepeatedQuestions from "@/components/RepeatedQuestions"
 import SwipeQuiz from "@/components/SwipeQuiz"
 import SettingsPanel from "@/components/SettingsPanel"
@@ -237,6 +238,7 @@ function StudyApp() {
       practice: <PracticeLauncher onStartQuiz={startQuiz} />,
       bank: <QuestionBank key={bankStatus} initialStatus={bankStatus} onStartQuiz={startQuiz} />,
       swipe: <SwipeQuiz />,
+      plan: <StudyPlan onStartQuiz={startQuiz} />,
       weightage: <SyllabusWeightage onStartQuiz={startQuiz} />,
       repeats: <RepeatedQuestions onStartQuiz={startQuiz} />,
       settings: <SettingsPanel />

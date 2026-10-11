@@ -1,0 +1,942 @@
+{
+ "unit": 10,
+ "name": "Artificial Intelligence (AI)",
+ "total_questions": 132,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "count": 37,
+   "papers": 15,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "37 questions (28%), largest bucket, 21 of them in 2023-25; genetic algorithms and agents dominate.",
+   "what_to_study": [
+    "Genetic algorithm: operators, encoding, selection, crossover, termination, fitness calc",
+    "Agent types and environment properties",
+    "Planning/STRIPS and expert system basics (Mycin, Dendral, certainty factors, Dempster-Shafer)",
+    "NLU/NLG components and parsing"
+   ]
+  },
+  {
+   "topic": "Neural Networks & Deep Learning",
+   "count": 23,
+   "papers": 9,
+   "first_year": "June 2019",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "23 questions (17%) with 14 in 2023-25, in 9 papers.",
+   "what_to_study": [
+    "Perceptron: rule, linear separability, XOR",
+    "Backprop and gradient descent update",
+    "Sigmoid, derivative, feed-forward calculation",
+    "SOM and unsupervised nets, ANN statements"
+   ]
+  },
+  {
+   "topic": "Knowledge Representation & Logic (Prolog, Resolution)",
+   "count": 19,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "19 questions (14%), present in 11 papers, spread evenly across eras.",
+   "what_to_study": [
+    "Entailment, models, 2^n counting",
+    "FOL translation: exists with AND, forall with implies",
+    "Sound vs unsound existential instantiation",
+    "Horn clauses, forward/backward chaining, generalized modus ponens",
+    "KB design steps, STRIPS, ontology/taxonomy/inheritance"
+   ]
+  },
+  {
+   "topic": "Search Strategies (Uninformed & Heuristic)",
+   "count": 17,
+   "papers": 9,
+   "first_year": "July 2018",
+   "last_year": "December 2023",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "17 questions (13%) but 12 came in 2018-20 and only 1 since 2023; meets the 10% Must rule though recent weight is low.",
+   "what_to_study": [
+    "BFS/DFS/UCS/IDS complexities",
+    "Greedy vs A* vs RBFS properties",
+    "Admissible vs consistent heuristics, f<C* expansion",
+    "Hill-climbing shortcomings, AND-OR search"
+   ]
+  },
+  {
+   "topic": "Machine Learning & Classification",
+   "count": 15,
+   "papers": 10,
+   "first_year": "June 2019",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "15 questions (11%), in 10 papers, steady 4-6 per era.",
+   "what_to_study": [
+    "Supervised vs unsupervised vs reinforcement lists",
+    "K-means and DBSCAN steps",
+    "Overfitting, decision tree to rules (AND within branch, OR across branches)",
+    "SVM, MDP, PCA, Apriori basics"
+   ]
+  },
+  {
+   "topic": "Fuzzy Logic & Fuzzy Sets",
+   "count": 13,
+   "papers": 7,
+   "first_year": "June 2019",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "High",
+   "why": "Present in 7 of 15 papers, 7 of 13 questions in 2023-25 (rising); 9.8% of the unit, just under the Must threshold.",
+   "what_to_study": [
+    "Fuzzy operations: complement, min, max, algebraic/bounded sum and difference",
+    "Dual t-norm/s-norm pair and derive s from t",
+    "alpha-cut nesting and properties",
+    "Defuzzification methods: mean of maximum, centre of area, height",
+    "Core, support, crossover (mu=0.5), cardinality, Mamdani/TSK/SAM"
+   ]
+  },
+  {
+   "topic": "Game Playing (Minimax, Alpha-Beta)",
+   "count": 8,
+   "papers": 8,
+   "first_year": "December 2018",
+   "last_year": "December 2023",
+   "trend": "fading",
+   "priority": "Medium",
+   "why": "8 questions in 8 papers but only one since 2022 (Dec 2023); small share (6%).",
+   "what_to_study": [
+    "Bottom-up minimax on trees",
+    "Alpha-beta facts: same value, ordering, initial bounds",
+    "Depth-first nature of minimax"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "id": "u10c1",
+   "title": "Dual pair of fuzzy t-norm and s-norm",
+   "type": "same-formula",
+   "topic": "Fuzzy Logic & Fuzzy Sets",
+   "technique": "Use t(x,y)=1-s(1-x,1-y), so s(x,y)=1-t(1-x,1-y). Substitute 1-x,1-y into t, simplify 1 - (1-x)(1-y)/((1-x)+(1-y)-(1-x)(1-y)).",
+   "what_changes": "Either recall the definition (june2019) or derive s for a given t (dec2019).",
+   "representative": "dec2019_q62",
+   "members": [
+    "dec2019_q62",
+    "june2019_q94"
+   ],
+   "skip_note": "Once you can derive s from t, the definition question is trivial."
+  },
+  {
+   "id": "u10c2",
+   "title": "Fuzzy set operations on membership values",
+   "type": "same-concept-variant",
+   "topic": "Fuzzy Logic & Fuzzy Sets",
+   "technique": "Complement=1-mu; intersection=min; union=max; algebraic sum=a+b-ab; bounded sum=min(1,a+b); bounded difference=max(0,a-b). Apply element-wise.",
+   "what_changes": "Which operation (complement, intersection) and the membership numbers; match-the-following form in 2025.",
+   "representative": "june2025_q60",
+   "members": [
+    "june2025_q60",
+    "june2024_cancelled_q30",
+    "june2024_cancelled_q82"
+   ],
+   "skip_note": "The 2025 match list covers every operator these compute."
+  },
+  {
+   "id": "u10c3",
+   "title": "Alpha-cut properties",
+   "type": "same-concept-variant",
+   "topic": "Fuzzy Logic & Fuzzy Sets",
+   "technique": "Alpha-cut = elements with mu>=alpha. Higher alpha gives smaller set (nested, decreasing). Union/intersection commute with cuts; complement does not except special cases.",
+   "what_changes": "Nesting direction question vs. which property is invalid.",
+   "representative": "june2025_q74",
+   "members": [
+    "june2025_q74",
+    "june2019_q95"
+   ],
+   "skip_note": "Both reduce to 'higher alpha means smaller set'."
+  },
+  {
+   "id": "u10c4",
+   "title": "Minimax root value of a game tree",
+   "type": "same-concept-variant",
+   "topic": "Game Playing (Minimax, Alpha-Beta)",
+   "technique": "Evaluate bottom-up: MAX nodes take max of children, MIN nodes take min. Alpha-beta gives the same root value.",
+   "what_changes": "Tree shape, leaf values; june2019_q91 and dec2019_q60 are the same tree (values 7 vs 17 style).",
+   "representative": "nov2021_q53",
+   "members": [
+    "nov2021_q53",
+    "june2019_q91",
+    "dec2019_q60",
+    "dec2018_q97"
+   ],
+   "skip_note": "Same bottom-up procedure; the rep covers it. (Figures in q91/q60 are partly blank in the source.)"
+  },
+  {
+   "id": "u10c5",
+   "title": "Alpha-beta pruning true/false statements",
+   "type": "same-concept-variant",
+   "topic": "Game Playing (Minimax, Alpha-Beta)",
+   "technique": "Facts: minimax is depth-first; alpha-beta returns the same value as minimax; pruning efficiency depends on move ordering; alpha init -inf, beta +inf; values updated along the search path; best case halves depth (O(b^(d/2))).",
+   "what_changes": "Which statements are listed as true/false.",
+   "representative": "dec2023_q65",
+   "members": [
+    "dec2023_q65",
+    "nov2020_q63",
+    "sep2022_q70",
+    "dec2022_shiftii_q39"
+   ],
+   "skip_note": "All draw on the same handful of facts listed in formulas."
+  },
+  {
+   "id": "u10c6",
+   "title": "Count models of a propositional sentence",
+   "type": "same-formula",
+   "topic": "Knowledge Representation & Logic (Prolog, Resolution)",
+   "technique": "Models over n symbols = 2^n assignments; count assignments making the sentence true. For an OR of literals, 2^n minus falsifying assignments.",
+   "what_changes": "Sentence (B v C vs. a 4-literal disjunction).",
+   "representative": "dec2018_q98",
+   "members": [
+    "dec2018_q98",
+    "july2018_q75"
+   ],
+   "skip_note": "Same method; 2^4=16 minus falsifying ones."
+  },
+  {
+   "id": "u10c7",
+   "title": "English to FOL: 'a country that borders both ...'",
+   "type": "exact-repeat",
+   "topic": "Knowledge Representation & Logic (Prolog, Resolution)",
+   "technique": "Existential quantifier pairs with conjunction (AND), never implication.",
+   "what_changes": "Only the country names (India/Nepal vs India/Pakistan).",
+   "representative": "nov2021_q55",
+   "members": [
+    "nov2021_q55",
+    "dec2018_q99"
+   ],
+   "skip_note": "Identical question; answer A both times."
+  },
+  {
+   "id": "u10c8",
+   "title": "Entailment definition and properties",
+   "type": "same-concept-variant",
+   "topic": "Knowledge Representation & Logic (Prolog, Resolution)",
+   "technique": "alpha entails beta (alpha |= beta) iff beta true in every model where alpha true; False entails everything; alpha |= (b and g) implies alpha |= b and alpha |= g; Horn KB works with forward/backward chaining.",
+   "what_changes": "Notation vs true/false statements.",
+   "representative": "nov2020_q62",
+   "members": [
+    "nov2020_q62",
+    "july2018_q76",
+    "dec2024_q45"
+   ],
+   "skip_note": "Basic definitions, covered by the rep."
+  },
+  {
+   "id": "u10c9",
+   "title": "Knowledge-base design steps order",
+   "type": "exact-repeat",
+   "topic": "Knowledge Representation & Logic (Prolog, Resolution)",
+   "technique": "Order: choose task domain, select atoms for propositions, axiomatize the domain, ask questions about the intended interpretation.",
+   "what_changes": "Wording and option order only.",
+   "representative": "june2025_q7",
+   "members": [
+    "june2025_q7",
+    "dec2024_q44"
+   ],
+   "skip_note": "Same sequence both times (answer: domain, atoms, axiomatize, ask)."
+  },
+  {
+   "id": "u10c10",
+   "title": "Supervised vs unsupervised vs classification algorithm identification",
+   "type": "same-concept-variant",
+   "topic": "Machine Learning & Classification",
+   "technique": "Supervised: regression, KNN, decision tree, logistic regression, SVM, backprop. Unsupervised: clustering, PCA, Apriori, SOM. Reinforcement: reward/punish with MDP. Regression is not classification.",
+   "what_changes": "Which algorithms are listed and which category is asked.",
+   "representative": "dec2022_q75",
+   "members": [
+    "dec2022_q75",
+    "dec2019_q81",
+    "dec2022_shiftii_q64",
+    "june2023_q64"
+   ],
+   "skip_note": "dec2019_q81 and dec2022_shiftii_q64 are the same question."
+  },
+  {
+   "id": "u10c11",
+   "title": "Clustering algorithm steps and k-means calculation",
+   "type": "same-concept-variant",
+   "topic": "Machine Learning & Classification",
+   "technique": "K-means: choose k, init centroids, assign to nearest, update centroids as mean, repeat. DBSCAN: eps neighbours, core points via MinPts, expand density-connected points. Compute distance (Manhattan = sum |dx|+|dy|) to a recomputed centroid.",
+   "what_changes": "Sequence ordering vs one-step numeric vs correlation statement.",
+   "representative": "dec2023_q85",
+   "members": [
+    "dec2023_q85",
+    "dec2022_shiftii_q79",
+    "june2019_q40",
+    "nov2020_q83"
+   ],
+   "skip_note": "Procedure-level knowledge; rep sequence plus one centroid computation."
+  },
+  {
+   "id": "u10c12",
+   "title": "Planning and STRIPS",
+   "type": "same-concept-variant",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "STRIPS is action-centric: each action has precondition and effect (add/delete lists); features are primitive or derived; no conditional effects directly. Planning graph gives heuristics; relaxation drops negative effects. Classic planning definition: init, actions, goal.",
+   "what_changes": "STRIPS statements vs planning components. (june2019_q93 is tagged Knowledge Representation.)",
+   "representative": "june2025_q81",
+   "members": [
+    "june2025_q81",
+    "june2019_q93",
+    "july2018_q78",
+    "dec2024_q73"
+   ],
+   "skip_note": "Same small fact set."
+  },
+  {
+   "id": "u10c13",
+   "title": "GA fitness and selection probability calculation",
+   "type": "same-formula",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "Fitness f(x); selection probability = f(x)/sum f; the parent chosen is the one with highest fitness. Convert binary string to decimal before f(x)=x^2.",
+   "what_changes": "Fitness function and population values.",
+   "representative": "dec2023_q39",
+   "members": [
+    "dec2023_q39",
+    "dec2019_q65"
+   ],
+   "skip_note": "Same calculation pattern; practise rep."
+  },
+  {
+   "id": "u10c14",
+   "title": "GA step sequence",
+   "type": "same-concept-variant",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "Order: initialization/evaluate fitness, selection of parents, crossover (prob pc), mutation (prob pm), repeat until termination.",
+   "what_changes": "Step labels and whether evaluation comes before selection.",
+   "representative": "june2025_q40",
+   "members": [
+    "june2025_q40",
+    "june2024_reexam_q26"
+   ],
+   "skip_note": "Same flow in both."
+  },
+  {
+   "id": "u10c15",
+   "title": "GA crossover types",
+   "type": "same-concept-variant",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "One-point: swap tails after one cut; two-point: swap middle segment; uniform: binary mask per gene decides which parent gives the gene.",
+   "what_changes": "Diagram vs 'mask is used in' question.",
+   "representative": "june2024_cancelled_q12",
+   "members": [
+    "june2024_cancelled_q12",
+    "june2024_cancelled_q76"
+   ],
+   "skip_note": "Same crossover concept."
+  },
+  {
+   "id": "u10c16",
+   "title": "GA odd-one-out: operators, encodings, selection",
+   "type": "same-concept-variant",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "Mutation: random resetting, scramble, inversion, swap, bit flip. Representations: binary, real, permutation (Gray also). Parent selection: roulette/fitness-proportional, tournament, rank, Boltzmann. 'Actual count' relates to selection.",
+   "what_changes": "Which category is asked; distractor invented term (Difference, Combinations, Radial).",
+   "representative": "june2025_q47",
+   "members": [
+    "june2025_q47",
+    "june2023_q41",
+    "june2023_q59",
+    "dec2023_q83",
+    "june2024_cancelled_q72"
+   ],
+   "skip_note": "Memorise the three lists once."
+  },
+  {
+   "id": "u10c17",
+   "title": "GA general concepts",
+   "type": "same-concept-variant",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "GA mimics evolution: selection, crossover/reproduction, mutation; stochastic hill-climbing with a population. Reproduction is the costliest step.",
+   "what_changes": "Which AI technique mimics evolution / GA components.",
+   "representative": "june2019_q97",
+   "members": [
+    "june2019_q97",
+    "dec2022_shiftii_q63"
+   ],
+   "skip_note": "Same recognition question."
+  },
+  {
+   "id": "u10c18",
+   "title": "Agent types, architecture and environments",
+   "type": "same-concept-variant",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "Simple reflex agent uses only current percept; utility-based handles happy/unhappy; learning agent improves performance; environment properties: observable, deterministic, static, semi-dynamic (environment fixed, performance score changes), uncertain = not fully observable OR not deterministic. MAS: multiple agents with diverse objectives and communication.",
+   "what_changes": "Agent type, environment property, or statement set.",
+   "representative": "june2025_q5",
+   "members": [
+    "june2025_q5",
+    "july2018_q72",
+    "july2018_q71",
+    "dec2018_q92",
+    "dec2018_q91",
+    "nov2021_q51",
+    "dec2023_q37"
+   ],
+   "skip_note": "The same agent vocabulary is reused."
+  },
+  {
+   "id": "u10c19",
+   "title": "NLP components and NLU vs NLG",
+   "type": "same-concept-variant",
+   "topic": "Natural Language Processing, Expert Systems & Misc AI",
+   "technique": "NLU: morphological, syntactic, semantic, pragmatic analysis (no 'meaning analysis'). NLG: text planning, sentence planning, realization. Parsing: top-down, bottom-up, dependency, Earley; SMT is not a parser.",
+   "what_changes": "Component-not-in-list vs match.",
+   "representative": "dec2023_q64",
+   "members": [
+    "dec2023_q64",
+    "june2023_q43",
+    "dec2022_shiftii_q75"
+   ],
+   "skip_note": "Same vocabulary."
+  },
+  {
+   "id": "u10c20",
+   "title": "ANN features and layer statements",
+   "type": "same-concept-variant",
+   "topic": "Neural Networks & Deep Learning",
+   "technique": "ANN: machine learning algorithm, handles large data, extracts features automatically, modelled on brain; training time grows with size; can be simulated on conventional computer; can include feedback. Information flows input, hidden, output.",
+   "what_changes": "Statement combos; dec2022_q64 and dec2022_shiftii_q85 are the same question.",
+   "representative": "dec2024_q42",
+   "members": [
+    "dec2024_q42",
+    "dec2022_q64",
+    "dec2022_shiftii_q85",
+    "dec2022_q85"
+   ],
+   "skip_note": "Statements are the same each time."
+  },
+  {
+   "id": "u10c21",
+   "title": "Backpropagation and weight update",
+   "type": "same-concept-variant",
+   "topic": "Neural Networks & Deep Learning",
+   "technique": "Backprop propagates error backward from output to input; gradient descent: W(t+1)=W(t)-alpha dE/dW. Training order: initialize weights, feed forward, loss, backprop, update.",
+   "what_changes": "Formula vs sequence vs A/R statement.",
+   "representative": "dec2019_q63",
+   "members": [
+    "dec2019_q63",
+    "june2024_cancelled_q33",
+    "dec2022_q90",
+    "june2024_reexam_q39",
+    "dec2024_q85"
+   ],
+   "skip_note": "All based on the gradient-descent idea."
+  },
+  {
+   "id": "u10c22",
+   "title": "NN numerical computation",
+   "type": "same-formula",
+   "topic": "Neural Networks & Deep Learning",
+   "technique": "Neuron output = f(sum w_i x_i + bias); linear transfer multiplies by constant; sigmoid 1/(1+e^-x), derivative f(1-f); perceptron update w += eta (t - y) x.",
+   "what_changes": "Weights/inputs and which activation.",
+   "representative": "june2025_q36",
+   "members": [
+    "june2025_q36",
+    "dec2023_q40",
+    "dec2022_shiftii_q40",
+    "june2019_q99"
+   ],
+   "skip_note": "Same weighted-sum pattern; practise rep and dec2023_q40 once."
+  },
+  {
+   "id": "u10c23",
+   "title": "Perceptron capability",
+   "type": "same-concept-variant",
+   "topic": "Neural Networks & Deep Learning",
+   "technique": "Single-layer perceptron solves linearly separable functions (AND, OR, NOR) but not XOR; single layer feed-forward network.",
+   "what_changes": "Definition vs Boolean functions.",
+   "representative": "dec2022_shiftii_q65",
+   "members": [
+    "dec2022_shiftii_q65",
+    "june2024_cancelled_q6"
+   ],
+   "skip_note": "Rep covers it."
+  },
+  {
+   "id": "u10c24",
+   "title": "Unsupervised neural nets / Kohonen SOM",
+   "type": "same-concept-variant",
+   "topic": "Neural Networks & Deep Learning",
+   "technique": "SOM is unsupervised, competitive learning; weight update w_new=(1-eta)w_old+eta x for winner and neighbours.",
+   "what_changes": "Which network is unsupervised vs update rule.",
+   "representative": "june2025_q80",
+   "members": [
+    "june2025_q80",
+    "june2019_q98"
+   ],
+   "skip_note": "Rep covers it."
+  },
+  {
+   "id": "u10c25",
+   "title": "ANN passage questions (June 2024 re-exam)",
+   "type": "same-concept-variant",
+   "topic": "Neural Networks & Deep Learning",
+   "technique": "Read the passage: ANNs are inspired by the brain; input/hidden/output layers; weights adjusted to reduce error.",
+   "what_changes": "Different question on the same passage.",
+   "representative": "june2024_reexam_q91",
+   "members": [
+    "june2024_reexam_q91",
+    "june2024_reexam_q92",
+    "june2024_reexam_q93",
+    "june2024_reexam_q94",
+    "june2024_reexam_q95"
+   ],
+   "skip_note": "Passage-based, answerable from text."
+  },
+  {
+   "id": "u10c26",
+   "title": "Match search algorithms to properties",
+   "type": "exact-repeat",
+   "topic": "Search Strategies (Uninformed & Heuristic)",
+   "technique": "Greedy best-first: incomplete even in finite spaces; A*: optimal if heuristic admissible; RBFS: O(bd) linear space; know the 4th option too.",
+   "what_changes": "Order of options only.",
+   "representative": "dec2023_q73",
+   "members": [
+    "dec2023_q73",
+    "nov2020_q73"
+   ],
+   "skip_note": "Identical question."
+  },
+  {
+   "id": "u10c27",
+   "title": "Match search algorithms to evaluation function / space complexity",
+   "type": "same-concept-variant",
+   "topic": "Search Strategies (Uninformed & Heuristic)",
+   "technique": "Greedy: h(n); UCS/lowest-cost: g(n); A*: g+h. Space: BFS O(b^d), DFS O(bm), DLS O(bl), IDS O(bd).",
+   "what_changes": "Which property is paired with which algorithm.",
+   "representative": "june2019_q92",
+   "members": [
+    "june2019_q92",
+    "dec2018_q94",
+    "dec2018_q93"
+   ],
+   "skip_note": "Same table of properties."
+  },
+  {
+   "id": "u10c28",
+   "title": "A* optimality and heuristic admissibility",
+   "type": "same-concept-variant",
+   "topic": "Search Strategies (Uninformed & Heuristic)",
+   "technique": "A* optimal with admissible h (tree) / consistent h (graph); admissible = never overestimates; consistent = triangle inequality; A* expands all nodes with f<C* and none with f>C*; max of admissible heuristics dominates.",
+   "what_changes": "Which statements about A*/heuristics are true.",
+   "representative": "nov2021_q54",
+   "members": [
+    "nov2021_q54",
+    "dec2022_q37",
+    "dec2022_shiftii_q37",
+    "dec2018_q95",
+    "july2018_q74",
+    "july2018_q73"
+   ],
+   "skip_note": "All pivot on admissible/consistent definitions."
+  },
+  {
+   "id": "u10c29",
+   "title": "AND-OR search",
+   "type": "same-concept-variant",
+   "topic": "Search Strategies (Uninformed & Heuristic)",
+   "technique": "AND-OR search for nondeterministic environments; OR nodes are agent choices, AND nodes are environment outcomes; a solution is a subtree with a goal at each leaf (contingent plan).",
+   "what_changes": "Statement versions.",
+   "representative": "nov2020_q90",
+   "members": [
+    "nov2020_q90",
+    "dec2018_q96"
+   ],
+   "skip_note": "Same concept."
+  }
+ ],
+ "singletons": [
+  "dec2019_q61",
+  "june2024_cancelled_q47",
+  "june2023_q28",
+  "june2019_q96",
+  "dec2022_q39",
+  "dec2023_q38",
+  "july2018_q77",
+  "july2018_q79",
+  "sep2022_q99",
+  "dec2024_q49",
+  "june2023_q75",
+  "dec2022_q38",
+  "june2024_cancelled_q75",
+  "june2023_q30",
+  "sep2022_q79",
+  "dec2022_q16",
+  "june2019_q100",
+  "dec2022_q65",
+  "dec2022_shiftii_q13",
+  "june2024_reexam_q73",
+  "dec2024_q15",
+  "june2024_cancelled_q7",
+  "sep2022_q1",
+  "dec2019_q64",
+  "june2023_q56",
+  "dec2022_shiftii_q38",
+  "nov2020_q36",
+  "dec2024_q75",
+  "june2024_cancelled_q90",
+  "dec2022_q40",
+  "june2023_q47",
+  "june2025_q16",
+  "dec2019_q58",
+  "june2024_reexam_q13",
+  "nov2021_q52",
+  "dec2019_q80",
+  "nov2020_q35",
+  "nov2020_q69"
+ ],
+ "examiner_mindset": [
+  "Favourite format is statement-based (Statement I/II, A/B/C/D combos) and match-the-list; pure calculations are rare.",
+  "Sequence-ordering questions (GA steps, KB design steps, k-means/DBSCAN steps, NN training steps) are a recent favourite in 2022-25.",
+  "Exact repeats are common: KB design steps (2024, 2025), country-borders FOL (2018, 2021), greedy/A*/RBFS match (2020, 2023), crossovers, ANN features (2022).",
+  "Numeric items are simple and recycle structure: fitness f(x)=x^2, fuzzy complement/min, weighted sum, perceptron update with eta=0.1.",
+  "Distractors invent plausible-sounding terms ('Difference' mutation, 'Radial' selection, 'Combinations' representation, 'meaning analysis').",
+  "Search questions were heavy in 2018-20 and almost disappeared from 2023; GA, agents and neural nets took over.",
+  "Trick traps: existential with implication, alpha-cut direction (higher alpha, smaller set), semi-dynamic environment, perceptron cannot do XOR.",
+  "Cross-unit overlap: planning/STRIPS and logic overlap with KR; clustering/k-means overlap with data-mining topics.",
+  "Never asks deep derivations, proofs, Prolog code tracing, or resolution refutation steps despite taxonomy mention; game-tree figures are described only partly."
+ ],
+ "formulas": [
+  {
+   "name": "Fuzzy complement",
+   "formula": "mu_A'(x)=1-mu_A(x)",
+   "used_in": [
+    "june2024_cancelled_q30",
+    "june2025_q60"
+   ],
+   "note": "Apply per element."
+  },
+  {
+   "name": "Fuzzy intersection / union",
+   "formula": "min(muA,muB) / max(muA,muB)",
+   "used_in": [
+    "june2024_cancelled_q82",
+    "june2025_q60"
+   ],
+   "note": "Standard Zadeh operators."
+  },
+  {
+   "name": "Algebraic sum / bounded sum / bounded difference",
+   "formula": "a+b-ab ; min(1,a+b) ; max(0,a-b)",
+   "used_in": [
+    "june2025_q60"
+   ],
+   "note": "Bounded sum uses min with 1."
+  },
+  {
+   "name": "Dual t-norm and s-norm",
+   "formula": "t(x,y)=1-s(1-x,1-y)",
+   "used_in": [
+    "dec2019_q62",
+    "june2019_q94"
+   ],
+   "note": "Substitute then simplify."
+  },
+  {
+   "name": "alpha-cut nesting",
+   "formula": "alpha1<alpha2 => A_alpha1 contains A_alpha2",
+   "used_in": [
+    "june2019_q95",
+    "june2025_q74"
+   ],
+   "note": "Higher cut gives smaller set."
+  },
+  {
+   "name": "Crossover point",
+   "formula": "mu_A(x)=0.5",
+   "used_in": [
+    "dec2023_q38"
+   ],
+   "note": "Core is mu=1, support is mu>0."
+  },
+  {
+   "name": "Number of models",
+   "formula": "2^n assignments over n symbols; models of OR = 2^n - falsifying",
+   "used_in": [
+    "july2018_q75",
+    "dec2018_q98"
+   ],
+   "note": "B v C over 4 symbols gives 12; 4-literal clause gives 15."
+  },
+  {
+   "name": "Entailment",
+   "formula": "alpha |= beta iff M(alpha) subset of M(beta)",
+   "used_in": [
+    "july2018_q76",
+    "dec2024_q45",
+    "nov2020_q62"
+   ],
+   "note": "False |= anything."
+  },
+  {
+   "name": "Existential translation",
+   "formula": "exists x (P(x) AND Q(x))",
+   "used_in": [
+    "dec2018_q99",
+    "nov2021_q55"
+   ],
+   "note": "Never use implication with exists."
+  },
+  {
+   "name": "Minimax / alpha-beta",
+   "formula": "MAX takes max, MIN takes min; alpha=-inf, beta=+inf initially; best case O(b^(d/2))",
+   "used_in": [
+    "nov2021_q53",
+    "dec2023_q65",
+    "dec2018_q97"
+   ],
+   "note": "Alpha-beta gives same value as minimax."
+  },
+  {
+   "name": "A* evaluation",
+   "formula": "f(n)=g(n)+h(n); admissible: h<=h*",
+   "used_in": [
+    "june2019_q92",
+    "july2018_q74"
+   ],
+   "note": "Consistent: h(n)<=c(n,n')+h(n')."
+  },
+  {
+   "name": "Search complexities",
+   "formula": "BFS O(b^d); DFS O(bm); DLS O(bl); IDS O(bd)",
+   "used_in": [
+    "dec2018_q93"
+   ],
+   "note": "Space complexity; RBFS is O(bd) space."
+  },
+  {
+   "name": "GA selection probability",
+   "formula": "p(x)=f(x)/sum f(x)",
+   "used_in": [
+    "dec2019_q65",
+    "dec2023_q39"
+   ],
+   "note": "Convert binary chromosome first."
+  },
+  {
+   "name": "Schema order",
+   "formula": "order = number of fixed (non-*) positions",
+   "used_in": [
+    "dec2019_q64"
+   ],
+   "note": "Wildcard positions do not count."
+  },
+  {
+   "name": "Certainty factors",
+   "formula": "AND: min; OR: max; CF(conclusion)=CF(premise)*CF(rule)",
+   "used_in": [
+    "sep2022_q1"
+   ],
+   "note": "Example: min(0.5,0.8)=0.5 times 0.8 = 0.40."
+  },
+  {
+   "name": "Dempster-Shafer",
+   "formula": "Bel(A)+Bel(not A) <= 1",
+   "used_in": [
+    "dec2019_q58"
+   ],
+   "note": "Not equal 1 unlike probability."
+  },
+  {
+   "name": "Sigmoid",
+   "formula": "f(x)=1/(1+e^-x); f'=f(1-f); for 1/(1+e^-2x), f'(0)=2*0.25=0.5",
+   "used_in": [
+    "june2019_q99",
+    "dec2023_q40"
+   ],
+   "note": "Scaling factor 2 doubles derivative."
+  },
+  {
+   "name": "Neuron weighted sum",
+   "formula": "y=k*sum w_i x_i",
+   "used_in": [
+    "dec2022_shiftii_q40"
+   ],
+   "note": "1*5+2*7+3*10+4*30=169, times 3 = 507."
+  },
+  {
+   "name": "Perceptron rule",
+   "formula": "w_new=w+eta*(t-y)*x",
+   "used_in": [
+    "june2025_q36"
+   ],
+   "note": "Single layer separates AND, OR, NOR but not XOR."
+  },
+  {
+   "name": "Gradient descent update",
+   "formula": "W(t+1)=W(t)-alpha*dE/dW",
+   "used_in": [
+    "dec2019_q63"
+   ],
+   "note": "Minus sign."
+  },
+  {
+   "name": "Kohonen SOM update",
+   "formula": "w_new=(1-eta)*w_old+eta*x",
+   "used_in": [
+    "june2025_q80"
+   ],
+   "note": "Winner and neighbours."
+  },
+  {
+   "name": "K-means / Manhattan distance",
+   "formula": "centroid=mean of cluster points; d=|x1-x2|+|y1-y2|",
+   "used_in": [
+    "june2019_q40"
+   ],
+   "note": "Recompute centroid after assignment."
+  },
+  {
+   "name": "Decision tree to rules",
+   "formula": "AND along a branch, OR across branches",
+   "used_in": [
+    "dec2022_q16"
+   ],
+   "note": "Disjunctive normal form."
+  },
+  {
+   "name": "Environment property",
+   "formula": "uncertain = not fully observable OR not deterministic; semi-dynamic: environment static but score changes",
+   "used_in": [
+    "july2018_q71",
+    "dec2018_q92"
+   ],
+   "note": "Common trap."
+  },
+  {
+   "name": "Hill-climbing shortcomings",
+   "formula": "local maxima, plateau, ridge",
+   "used_in": [
+    "dec2019_q80"
+   ],
+   "note": "All three are listed."
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Genetic algorithms and agents (largest bucket)",
+   "topics": [
+    "Natural Language Processing, Expert Systems & Misc AI"
+   ],
+   "hours": 3.0,
+   "do": "Do clusters u10c12-u10c18; memorise operator/selection/encoding lists and agent environment properties."
+  },
+  {
+   "step": 2,
+   "focus": "Neural networks",
+   "topics": [
+    "Neural Networks & Deep Learning"
+   ],
+   "hours": 2.5,
+   "do": "Solve june2025_q36, dec2023_q40, dec2019_q63; read ANN statements rep dec2024_q42."
+  },
+  {
+   "step": 3,
+   "focus": "Logic and knowledge representation",
+   "topics": [
+    "Knowledge Representation & Logic (Prolog, Resolution)"
+   ],
+   "hours": 2.0,
+   "do": "Do reps nov2021_q55, dec2018_q98, nov2020_q62, june2025_q7."
+  },
+  {
+   "step": 4,
+   "focus": "Machine learning",
+   "topics": [
+    "Machine Learning & Classification"
+   ],
+   "hours": 1.5,
+   "do": "Learn algorithm categories; sequence reps dec2023_q85."
+  },
+  {
+   "step": 5,
+   "focus": "Fuzzy logic",
+   "topics": [
+    "Fuzzy Logic & Fuzzy Sets"
+   ],
+   "hours": 1.5,
+   "do": "Do june2025_q60, dec2019_q62, june2025_q74; learn defuzzification and membership terms."
+  },
+  {
+   "step": 6,
+   "focus": "Search strategies",
+   "topics": [
+    "Search Strategies (Uninformed & Heuristic)"
+   ],
+   "hours": 1.5,
+   "do": "Do nov2021_q54, dec2023_q73, june2019_q92; learn complexity table."
+  },
+  {
+   "step": 7,
+   "focus": "Game playing",
+   "topics": [
+    "Game Playing (Minimax, Alpha-Beta)"
+   ],
+   "hours": 1.0,
+   "do": "Solve nov2021_q53 and dec2023_q65."
+  }
+ ],
+ "minimum_set": [
+  "dec2018_q98",
+  "dec2019_q62",
+  "dec2019_q63",
+  "dec2022_q75",
+  "dec2022_shiftii_q65",
+  "dec2023_q39",
+  "dec2023_q64",
+  "dec2023_q65",
+  "dec2023_q73",
+  "dec2023_q85",
+  "dec2024_q42",
+  "june2019_q92",
+  "june2019_q97",
+  "june2024_cancelled_q12",
+  "june2024_reexam_q91",
+  "june2025_q36",
+  "june2025_q40",
+  "june2025_q47",
+  "june2025_q5",
+  "june2025_q60",
+  "june2025_q7",
+  "june2025_q74",
+  "june2025_q80",
+  "june2025_q81",
+  "nov2020_q62",
+  "nov2020_q90",
+  "nov2021_q53",
+  "nov2021_q54",
+  "nov2021_q55",
+  "dec2023_q40",
+  "dec2019_q64",
+  "sep2022_q1",
+  "dec2019_q58",
+  "dec2022_q16",
+  "june2019_q40",
+  "dec2019_q80",
+  "nov2021_q52",
+  "june2023_q28",
+  "june2019_q96",
+  "dec2023_q38",
+  "dec2022_q38",
+  "sep2022_q99",
+  "june2023_q47"
+ ]
+}

@@ -1,0 +1,211 @@
+<title>UGC NET Study Playbook</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<style>
+/* Layout: sticky unit rail + one unit at a time; overview first. Ink-on-paper with a teal accent. */
+:root {
+  --bg: #f3f5f2; --surface: #ffffff; --fg: #15262a; --muted: #5a6b6f; --line: #d9e0dc; --accent: #0d6a6a; --accent-soft: #dcefec;
+  --must: #a1262f; --must-bg: #f8e3e4; --high: #8a5a00; --high-bg: #f8ecd0; --med: #1d5a8e; --med-bg: #dcebf7; --low: #5a6b6f; --low-bg: #e6eae8;
+  --code-bg: #eaf0ed;
+  --serif: "Source Serif 4", Georgia, serif; --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1a1c; --surface: #162326; --fg: #e3ecea; --muted: #94a8aa; --line: #26393c; --accent: #5cc4bd; --accent-soft: #17383a;
+  --must: #f0868d; --must-bg: #3a1e22; --high: #e9bd62; --high-bg: #36290f; --med: #7fb8ec; --med-bg: #16293b; --low: #94a8aa; --low-bg: #213034; --code-bg: #1b2d30; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f1a1c; --surface: #162326; --fg: #e3ecea; --muted: #94a8aa; --line: #26393c; --accent: #5cc4bd; --accent-soft: #17383a;
+  --must: #f0868d; --must-bg: #3a1e22; --high: #e9bd62; --high-bg: #36290f; --med: #7fb8ec; --med-bg: #16293b; --low: #94a8aa; --low-bg: #213034; --code-bg: #1b2d30; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--sans); padding-inline: 16px; padding-block: 24px 56px; }
+.wrap { max-width: 1180px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--serif); line-height: 1.2; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.3rem); }
+h2 { font-size: 1.45rem; margin-bottom: 12px; }
+h3 { font-size: 1.1rem; }
+p { margin: 0; max-width: 68ch; }
+.sub { color: var(--muted); margin-top: 6px; }
+.layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 28px; margin-top: 24px; align-items: start; }
+nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); display: flex; flex-direction: column; gap: 2px; padding-top: 4px; }
+nav.rail a { display: flex; gap: 8px; padding: 7px 10px; border-radius: 6px; color: var(--fg); text-decoration: none; font-size: 14px; }
+nav.rail a b { color: var(--muted); font-weight: 500; min-width: 1.4em; font-variant-numeric: tabular-nums; }
+nav.rail a:hover { background: var(--low-bg); }
+nav.rail a[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+nav.rail a[aria-current="page"] b { color: inherit; }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 16px; }
+.stat dt { font-size: 12px; color: var(--muted); }
+.stat dd { margin: 0; font: 600 1.5rem/1.2 var(--serif); font-variant-numeric: tabular-nums; }
+.section { margin-top: 30px; }
+.section > p.lead { color: var(--muted); margin: -4px 0 12px; }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.link { cursor: pointer; } tr.link:hover td { background: var(--low-bg); }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.p-Must { background: var(--must-bg); color: var(--must); } .p-High { background: var(--high-bg); color: var(--high); }
+.p-Medium { background: var(--med-bg); color: var(--med); } .p-Low { background: var(--low-bg); color: var(--low); }
+.tag { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 12px; background: var(--low-bg); color: var(--muted); }
+ul.plain { margin: 0; padding-left: 20px; display: grid; gap: 6px; } ul.plain li { max-width: 80ch; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+.formula { font: 13px/1.5 var(--mono); background: var(--code-bg); padding: 8px 10px; border-radius: 6px; margin: 8px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.small { font-size: 13px; color: var(--muted); }
+.steps { counter-reset: s; display: grid; gap: 10px; padding: 0; list-style: none; margin: 0; }
+.steps li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; }
+.steps li::before { counter-increment: s; content: counter(s); width: 30px; height: 30px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 600; }
+details.cl { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+details.cl + details.cl { margin-top: 8px; }
+details.cl > summary { cursor: pointer; padding: 11px 14px; list-style: none; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+details.cl > summary::-webkit-details-marker { display: none; }
+details.cl > summary::before { content: "▸"; color: var(--muted); }
+details.cl[open] > summary::before { content: "▾"; }
+details.cl .body { padding: 2px 14px 14px; display: grid; gap: 10px; border-top: 1px solid var(--line); padding-top: 12px; }
+.qbox { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--accent-soft); border-radius: 0 6px 6px 0; font-size: 14px; }
+.qbox .opts { margin-top: 6px; display: grid; gap: 2px; color: var(--muted); font-size: 13px; }
+.qbox .ans { color: var(--fg); font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chips span { font: 12px var(--mono); padding: 1px 6px; border-radius: 4px; background: var(--low-bg); color: var(--muted); }
+.bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; background: var(--low-bg); }
+.bar i { display: block; background: var(--accent); }
+.notes li { color: var(--muted); }
+.themebtn { float: right; border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 6px; padding: 5px 10px; font: inherit; font-size: 13px; cursor: pointer; }
+@media (max-width: 820px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  nav.rail { position: static; flex-direction: row; overflow-x: auto; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  nav.rail a { white-space: nowrap; }
+}
+@media (prefers-reduced-motion: no-preference) { details.cl .body { animation: fade .15s ease-out; } @keyframes fade { from { opacity: 0; } } }
+</style>
+
+<div class="wrap">
+  <button class="themebtn" id="themebtn" type="button">Theme</button>
+  <h1>UGC NET Study Playbook</h1>
+  <p class="sub" id="tagline"></p>
+  <div class="layout">
+    <nav class="rail" id="rail" aria-label="Units"></nav>
+    <main id="main"></main>
+  </div>
+</div>
+
+<script>
+/*DATA*/
+const U = DATA.units, Q = DATA.q, M = DATA.meta;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const TYPE = { 'exact-repeat': 'Exact repeat', 'same-concept-variant': 'Same concept', 'same-formula': 'Same formula' };
+const SHORT = { 1: 'Discrete Structures', 2: 'Architecture', 3: 'Programming & Graphics', 4: 'DBMS', 5: 'Operating Systems', 6: 'Software Engineering', 7: 'Data Structures & Algorithms', 8: 'TOC & Compilers', 9: 'Networks', 10: 'Artificial Intelligence', 11: 'Paper 1 (General)' };
+const label = id => { const q = Q[id]; return q ? `${q.y} Q${q.n}` : id; };
+const skippable = u => u.clusters.reduce((n, c) => n + c.members.length - 1, 0);
+const pct = (a, b) => Math.round(100 * a / b);
+
+document.getElementById('tagline').textContent =
+  `Built from ${M.total.toLocaleString()} past questions across ${M.papers} Paper 2 sets and 3 Paper 1 sets. Questions that test the same idea are grouped, so you solve one and skip the rest.`;
+
+document.getElementById('rail').innerHTML =
+  `<a href="#overview" data-v="overview"><b>★</b>Overview</a>` + U.map(u => `<a href="#u${u.unit}" data-v="u${u.unit}"><b>${u.unit}</b>${esc(SHORT[u.unit])}</a>`).join('');
+
+function overview() {
+  const f = M.fmt, tot = M.total, order = ['recall', 'numerical', 'multi-statement-combo', 'match-list', 'passage', 'sequence-order', 'statement-true-false', 'code-output', 'assertion-reason'];
+  const fl = { recall: 'Direct recall', numerical: 'Numerical / worked', 'multi-statement-combo': 'Statements with a combination code', 'match-list': 'Match the list', passage: 'Passage based', 'sequence-order': 'Put in order', 'statement-true-false': 'Statement I / II', 'code-output': 'Code output', 'assertion-reason': 'Assertion and reason' };
+  const rows = U.map(u => {
+    const must = u.topics.filter(t => t.priority === 'Must').slice(0, 3).map(t => esc(t.topic)).join('; ');
+    return `<tr class="link" data-go="u${u.unit}"><td><b>${u.unit}</b> ${esc(SHORT[u.unit])}</td><td class="num">${u.total}</td><td class="num">${u.clusters.length + u.singletons}</td><td class="num">${skippable(u)}</td><td class="num">${u.minset}</td><td>${must}</td></tr>`;
+  }).join('');
+  return `
+  <div class="card">
+    <h2>How to use this</h2>
+    <ul class="plain">
+      <li><b>Start with the minimum set.</b> It is one representative per group of similar questions plus the one-off questions worth doing: ${M.minset} of ${tot.toLocaleString()} questions.</li>
+      <li><b>Skip the rest.</b> ${M.skippable} questions are repeats of an idea already in the minimum set (same concept, same formula, or the same question with new numbers).</li>
+      <li><b>Order by priority.</b> Each unit page ranks its topics Must, High, Medium or Low from how many past questions, in how many papers, and whether the topic is rising or fading.</li>
+      <li><b>Memorise the formulas, then practise.</b> Every unit lists the formulas and facts that came back, and the learning plan says what to do in what order.</li>
+    </ul>
+    <p class="small" style="margin-top:10px">The quiz app has the same plan with progress tracking: open <b>Study plan</b> in the sidebar.</p>
+  </div>
+
+  <div class="section"><h2>Units at a glance</h2>
+    <p class="lead">Click a unit to open it. “Distinct ideas” counts each group of similar questions once.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Unit</th><th class="num">Questions</th><th class="num">Distinct ideas</th><th class="num">Skippable</th><th class="num">Minimum set</th><th>Must-do topics</th></tr></thead>
+      <tbody>${rows}</tbody></table></div></div>
+
+  <div class="section"><h2>How the examiner builds a paper</h2>
+    <p class="lead">Patterns across all ${tot.toLocaleString()} questions.</p>
+    <div class="grid2">
+      <div class="card"><h3>Question formats</h3><div style="display:grid;gap:7px;margin-top:10px">
+        ${order.filter(k => f[k]).map(k => `<div><div style="display:flex;justify-content:space-between;font-size:13px"><span>${fl[k]}</span><span class="small">${pct(f[k], tot)}%</span></div><div class="bar"><i style="width:${pct(f[k], tot)}%"></i></div></div>`).join('')}
+      </div></div>
+      <div class="card"><h3>Difficulty</h3><p class="small" style="margin-top:8px">Rated by how many steps the question needs.</p>
+        <div style="display:grid;gap:7px;margin-top:10px">
+        ${[[1, 'Easy: one fact or one step'], [2, 'Medium: a short calculation or a few steps'], [3, 'Hard: long working or several concepts']].map(([k, t]) => `<div><div style="display:flex;justify-content:space-between;font-size:13px"><span>${t}</span><span class="small">${pct(M.diff[k], tot)}%</span></div><div class="bar"><i style="width:${pct(M.diff[k], tot)}%"></i></div></div>`).join('')}
+        </div></div>
+      <div class="card"><h3>What repeats</h3><ul class="plain" style="margin-top:8px">
+        <li>${M.skippable} of ${tot.toLocaleString()} questions (${pct(M.skippable, tot)}%) repeat an idea that appears elsewhere in the papers.</li>
+        <li>Most repeats keep the concept and change the numbers, options or wording. Few are word-for-word copies.</li>
+        <li>Each unit page shows what changes between versions, so you can see how the examiner varies a question.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="section"><h2>Data notes</h2>
+    <ul class="plain notes">
+      <li>Units, topics and groupings were assigned by reading each question, not by keyword matching. Some groupings are loose; each says whether it is an exact repeat, same concept, or same formula.</li>
+      <li>Priorities use the question count, the share of papers, and recent trend. Paper 1 has only 3 papers, so its trends are rough.</li>
+      <li>A few answer keys in the source papers look inconsistent with the question, so check these against a textbook: june2023_q81 and dec2022_shiftii_q35 (Ethernet delay options), nov2021_q95 (subnet count convention), sep2022_q50 (µs vs ms), june2024_reexam_q88 (vector processor), nov2021_q2 (C function returns 1), nov2021_q26 (wheel graph), dec2023_q9 (sign typo).</li>
+      <li>Figures were not visible to the analysis for a few questions (game trees, some graphs and circuits), so those rely on the stored answer.</li>
+    </ul>
+  </div>`;
+}
+
+function unitView(u) {
+  const topics = u.topics.map(t => `<tr><td><b>${esc(t.topic)}</b><div class="small" style="margin-top:3px">${esc(t.why)}</div>${t.what_to_study && t.what_to_study.length ? `<ul class="plain small" style="margin-top:6px;padding-left:18px;gap:2px">${t.what_to_study.map(s => `<li>${esc(s)}</li>`).join('')}</ul>` : ''}</td>
+      <td><span class="pill p-${esc(t.priority)}">${esc(t.priority)}</span></td><td class="num">${t.count}</td><td class="num">${t.papers}/${u.papers}</td><td>${esc(t.trend)}</td></tr>`).join('');
+  const clusters = u.clusters.map(c => {
+    const rep = Q[c.representative] || {};
+    const skip = c.members.filter(id => id !== c.representative);
+    return `<details class="cl"><summary><b>${esc(c.title)}</b><span class="tag">${TYPE[c.type] || ''}</span><span class="small">${esc(c.topic)} · do 1, skip ${skip.length}</span></summary>
+      <div class="body">
+        <p><b>How to solve:</b> ${esc(c.technique)}</p>
+        <p><b>What changes between versions:</b> ${esc(c.what_changes)}</p>
+        <div class="qbox"><div class="small">Do this one: ${esc(label(c.representative))}</div>
+          <div style="margin-top:4px;white-space:pre-wrap">${esc(rep.q)}</div>
+          <div class="opts">${rep.o ? Object.entries(rep.o).map(([k, v]) => `<div class="${k === rep.a ? 'ans' : ''}">${k}. ${esc(v)}${k === rep.a ? ' ✓' : ''}</div>`).join('') : ''}</div></div>
+        <div><div class="small" style="margin-bottom:4px">${esc(c.skip_note)} Safe to skip:</div><div class="chips">${skip.map(id => `<span>${esc(label(id))}</span>`).join('')}</div></div>
+      </div></details>`;
+  }).join('');
+  return `
+  <h2 style="font-size:1.7rem">${esc(u.name)}</h2>
+  <dl class="stats">
+    <div class="stat card"><dt>Past questions</dt><dd>${u.total}</dd></div>
+    <div class="stat card"><dt>Distinct ideas</dt><dd>${u.clusters.length + u.singletons}</dd></div>
+    <div class="stat card"><dt>Safe to skip</dt><dd>${skippable(u)}</dd></div>
+    <div class="stat card"><dt>Minimum set</dt><dd>${u.minset}</dd></div>
+  </dl>
+  <div class="section"><h2>Topic priorities</h2><p class="lead">Ranked by how often and how consistently each topic is asked.</p>
+    <div class="tablewrap"><table><thead><tr><th>Topic</th><th>Priority</th><th class="num">Qs</th><th class="num">Papers</th><th>Trend</th></tr></thead><tbody>${topics}</tbody></table></div></div>
+  <div class="section"><h2>Examiner mindset</h2><div class="card"><ul class="plain">${u.mindset.map(m => `<li>${esc(m)}</li>`).join('')}</ul></div></div>
+  <div class="section"><h2>Formulas and facts to memorise</h2><div class="grid2">${u.formulas.map(f => `<div class="card"><b>${esc(f.name)}</b><div class="formula">${esc(f.formula)}</div>${f.note ? `<p class="small">${esc(f.note)}</p>` : ''}</div>`).join('')}</div></div>
+  <div class="section"><h2>Similar questions</h2><p class="lead">${u.clusters.length} groups. Open one to see the question to solve and the ones you can skip.</p>${clusters}</div>
+  <div class="section"><h2>Learning plan</h2><ol class="steps">${u.plan.map(s => `<li><div><b>${esc(s.focus)}</b> <span class="small">about ${esc(s.hours)} h</span><p style="margin-top:3px">${esc(s.do)}</p><p class="small" style="margin-top:2px">${esc((s.topics || []).join(', '))}</p></div></li>`).join('')}</ol></div>`;
+}
+
+function route() {
+  const v = (location.hash || '#overview').slice(1);
+  const u = /^u(\d+)$/.test(v) ? U.find(x => x.unit === +v.slice(1)) : null;
+  document.getElementById('main').innerHTML = u ? unitView(u) : overview();
+  document.querySelectorAll('#rail a').forEach(a => {
+    if (a.dataset.v === (u ? v : 'overview')) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
+  document.querySelectorAll('tr[data-go]').forEach(r => r.addEventListener('click', () => { location.hash = r.dataset.go; }));
+  window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', route);
+route();
+
+document.getElementById('themebtn').addEventListener('click', () => {
+  const r = document.documentElement, dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  r.dataset.theme = dark ? 'light' : 'dark';
+});
+</script>

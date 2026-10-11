@@ -5,6 +5,10 @@ const path = require('path');
 const prisma = new PrismaClient();
 
 const JSON_PATH = path.join(__dirname, '../src/data/ugc_net_cs_pyqs.json');
+const STUDY_MAP_PATH = path.join(__dirname, '../src/data/study_map.json');
+
+// Unit and topic per question from the PYQ analysis (analysis/build_study_map.py); the keyword rules below are only a fallback
+const STUDY_TAGS = fs.existsSync(STUDY_MAP_PATH) ? JSON.parse(fs.readFileSync(STUDY_MAP_PATH, 'utf-8')).tags : {};
 
 // Definitions of Units
 const UNITS = {
@@ -448,7 +452,9 @@ async function main() {
       unitId = 11; // Default to general paper 1
     }
 
-    const conceptName = classifyQuestion(q, unitId);
+    const tag = STUDY_TAGS[q.id];
+    if (tag) unitId = tag.unit;
+    const conceptName = tag ? tag.topic : classifyQuestion(q, unitId);
 
     questionsToCreate.push({
       id: q.id,

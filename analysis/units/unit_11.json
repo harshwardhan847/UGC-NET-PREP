@@ -1,0 +1,1096 @@
+{
+ "unit": 11,
+ "name": "General Paper 1",
+ "total_questions": 150,
+ "papers_covered": 3,
+ "topics": [
+  {
+   "topic": "Logical Reasoning (series, syllogism, Venn, coding)",
+   "count": 18,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "18 of 150 questions (12.0%); per paper 2023/2024/2025 = 7/6/5; appears in all 3 papers.",
+   "what_to_study": [
+    "Square of opposition table (A,E,I,O)",
+    "Informal fallacies list with examples",
+    "Nyaya hetvabhasa (5 types) and 5-member syllogism",
+    "Coding rules: mirror, +/-shifts, cube/next-power"
+   ]
+  },
+  {
+   "topic": "Teaching Aptitude",
+   "count": 16,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "16 of 150 questions (10.7%); per paper 2023/2024/2025 = 5/6/5; appears in all 3 papers.",
+   "what_to_study": [
+    "Memory models and types",
+    "Learning theories and styles (VARK, Bandura)",
+    "Assessment types",
+    "Ed-tech tools and SWAYAM Prabha"
+   ]
+  },
+  {
+   "topic": "ICT",
+   "count": 16,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "16 of 150 questions (10.7%); per paper 2023/2024/2025 = 5/5/6; appears in all 3 papers.",
+   "what_to_study": [
+    "OSI layers, MIME, cloud",
+    "Malware matching",
+    "MS Word/Excel features",
+    "AI/AR/e-commerce basics"
+   ]
+  },
+  {
+   "topic": "Research Aptitude",
+   "count": 15,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "15 of 150 questions (10.0%); per paper 2023/2024/2025 = 5/5/5; appears in all 3 papers.",
+   "what_to_study": [
+    "Referencing styles and abbreviations",
+    "Qualitative vs quantitative traits",
+    "Parametric vs non-parametric tests, sampling",
+    "Hypothesis and ethics"
+   ]
+  },
+  {
+   "topic": "Reading Comprehension",
+   "count": 15,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "15 of 150 questions (10.0%); per paper 2023/2024/2025 = 5/5/5; appears in all 3 papers.",
+   "what_to_study": [
+    "Practise 2 passages timed",
+    "Read questions first, then passage",
+    "Eliminate extreme options"
+   ]
+  },
+  {
+   "topic": "Data Interpretation",
+   "count": 15,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "15 of 150 questions (10.0%); per paper 2023/2024/2025 = 5/5/5; appears in all 3 papers.",
+   "what_to_study": [
+    "Convert ratios/percent to absolute values",
+    "Percent change base rule",
+    "Average and ratio shortcuts"
+   ]
+  },
+  {
+   "topic": "People, Development & Environment",
+   "count": 15,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "15 of 150 questions (10.0%); per paper 2023/2024/2025 = 5/5/5; appears in all 3 papers.",
+   "what_to_study": [
+    "Ozone and greenhouse gas facts",
+    "Pollution terms and diseases",
+    "Treaties, conservation sites",
+    "Disasters (Mercalli intensity vs Richter magnitude)"
+   ]
+  },
+  {
+   "topic": "Higher Education System",
+   "count": 15,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "15 of 150 questions (10.0%); per paper 2023/2024/2025 = 5/4/6; appears in all 3 papers.",
+   "what_to_study": [
+    "Education commissions timeline",
+    "NEP 2020 and NPE 1986 provisions",
+    "Ancient Indian thinkers and universities",
+    "Institution founders and dates"
+   ]
+  },
+  {
+   "topic": "Communication",
+   "count": 13,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "fading",
+   "priority": "High",
+   "why": "13 of 150 questions (8.7%); per paper 2023/2024/2025 = 5/4/4; appears in all 3 papers.",
+   "what_to_study": [
+    "Theorist-theory pairs",
+    "Buddhist communication",
+    "Semiotics",
+    "Types of communication, McLuhan"
+   ]
+  },
+  {
+   "topic": "Mathematical Reasoning & Aptitude",
+   "count": 12,
+   "papers": 3,
+   "first_year": "2023",
+   "last_year": "2025",
+   "trend": "steady",
+   "priority": "High",
+   "why": "12 of 150 questions (8.0%); per paper 2023/2024/2025 = 3/5/4; appears in all 3 papers.",
+   "what_to_study": [
+    "Number series patterns",
+    "Work-time and ratio",
+    "Profit, discount, mixtures",
+    "Direction, base conversion"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "id": "u11c1",
+   "title": "Table DI: totals, sums, averages and combined values",
+   "type": "same-formula",
+   "topic": "Data Interpretation",
+   "technique": "Read the needed cells, convert ratio or percent to absolute numbers (M = M/(M+F) x total; expense = % x income), then sum or divide by count.",
+   "what_changes": "Table (employees by college with M:F ratio / percent expenditure of six persons / enrolment by year), the cell(s) asked, and whether the answer is a total or an average.",
+   "representative": "gp2025_q4",
+   "members": [
+    "gp2023_q1",
+    "gp2023_q2",
+    "gp2024_q3",
+    "gp2024_q4",
+    "gp2025_q4",
+    "gp2025_q5"
+   ],
+   "skip_note": "Same sum-or-average-of-selected-cells routine in every paper; one clean table drill covers all."
+  },
+  {
+   "id": "u11c2",
+   "title": "Table DI: percent increase or percent more/less",
+   "type": "same-formula",
+   "topic": "Data Interpretation",
+   "technique": "Percent change = (new - old)/old x 100; \"A is x% more than B\" divides by B (the base named after \"than\").",
+   "what_changes": "Which two quantities are compared and which is the base; decimals are rounded to given options.",
+   "representative": "gp2025_q1",
+   "members": [
+    "gp2023_q3",
+    "gp2023_q5",
+    "gp2024_q1",
+    "gp2025_q1"
+   ],
+   "skip_note": "Identical base-selection trap and formula; master the base rule once."
+  },
+  {
+   "id": "u11c3",
+   "title": "Table DI: ratios, differences and condition counting",
+   "type": "same-concept-variant",
+   "topic": "Data Interpretation",
+   "technique": "Compute each needed absolute value from the table, then take ratio (reduce to lowest terms), difference, or count rows satisfying the condition.",
+   "what_changes": "Entities compared, ratio vs difference vs count, and which year or item.",
+   "representative": "gp2025_q2",
+   "members": [
+    "gp2023_q4",
+    "gp2024_q2",
+    "gp2024_q5",
+    "gp2025_q2",
+    "gp2025_q3"
+   ],
+   "skip_note": "All are one or two lookups plus simple arithmetic."
+  },
+  {
+   "id": "u11c4",
+   "title": "Match communication theorists with theories/concepts",
+   "type": "same-concept-variant",
+   "topic": "Communication",
+   "technique": "Memorise author-theory pairs: Gerbner-Cultivation, Festinger-Cognitive Dissonance, McCombs & Shaw-Agenda Setting, Katz-Uses & Gratification; Barthes-Myth, Bourdieu-Doxa, Gramsci-Hegemony, Baudrillard-Simulation.",
+   "what_changes": "Which theorists/concepts are listed; option permutations.",
+   "representative": "gp2025_q10",
+   "members": [
+    "gp2024_q14",
+    "gp2025_q10"
+   ],
+   "skip_note": "Both are 4-item matches from the same pool of media theorists; learn the table once."
+  },
+  {
+   "id": "u11c5",
+   "title": "Buddhist concept of communication",
+   "type": "same-concept-variant",
+   "topic": "Communication",
+   "technique": "Buddhist model: multi-causality, contextualised interdependence of every communicative element (contrasted with Western models that analyse elements individually).",
+   "what_changes": "Direct recall vs two-statement format.",
+   "representative": "gp2023_q20",
+   "members": [
+    "gp2023_q17",
+    "gp2023_q20"
+   ],
+   "skip_note": "Same fact (multi-causality/contextualisation) tested twice in one paper."
+  },
+  {
+   "id": "u11c6",
+   "title": "Semiotics: signs, texts and Saussure",
+   "type": "same-concept-variant",
+   "topic": "Communication",
+   "technique": "Saussure: study of signs = semiology (signifier/signified); a photograph is an open text (many readings) in semiotics.",
+   "what_changes": "Which semiotic term is asked.",
+   "representative": "gp2024_q23",
+   "members": [
+    "gp2023_q16",
+    "gp2024_q23"
+   ],
+   "skip_note": "Small semiotics vocabulary; one revision pass covers both."
+  },
+  {
+   "id": "u11c7",
+   "title": "Types and stages of communication",
+   "type": "same-concept-variant",
+   "topic": "Communication",
+   "technique": "Interpersonal stages: Phatic, Personal, Intimate. Grapevine = informal communication.",
+   "what_changes": "Classification of a communication form.",
+   "representative": "gp2025_q32",
+   "members": [
+    "gp2025_q32",
+    "gp2025_q36"
+   ],
+   "skip_note": "Basic classification recall from the same paper."
+  },
+  {
+   "id": "u11c8",
+   "title": "Colonial and post-independence education commissions and policies",
+   "type": "same-concept-variant",
+   "topic": "Higher Education System",
+   "technique": "Memorise timeline: Charles Grant, Wood Despatch 1854, Macaulay Minute 1835 (dated 1834 in some sources/question), Curzon 1904 Universities Act, Sadler (Calcutta University) 1917, University Education Commission 1948, Secondary Education Commission 1952, UGC 1956, Kothari 1964-66.",
+   "what_changes": "Commission/person named, asked as who, what or chronological order.",
+   "representative": "gp2025_q19",
+   "members": [
+    "gp2023_q41",
+    "gp2023_q43",
+    "gp2025_q14",
+    "gp2025_q19"
+   ],
+   "skip_note": "All draw on one standard education-history timeline."
+  },
+  {
+   "id": "u11c9",
+   "title": "NEP 2020 and NPE 1986 provisions",
+   "type": "same-concept-variant",
+   "topic": "Higher Education System",
+   "technique": "NEP 2020: multiple entry-exit, multi/inter-disciplinary, philanthropic participation, courses in art, design, museum admin, web design; NPE 1986: open university, rural university, navodaya.",
+   "what_changes": "Which policy and which provisions are listed as correct.",
+   "representative": "gp2025_q42",
+   "members": [
+    "gp2023_q42",
+    "gp2024_q42",
+    "gp2025_q42"
+   ],
+   "skip_note": "Same policy-content recall; learn the key provisions list."
+  },
+  {
+   "id": "u11c10",
+   "title": "Ancient Indian education, thinkers and philosophy",
+   "type": "same-concept-variant",
+   "topic": "Higher Education System",
+   "technique": "Panini-grammar, Jivaka-medicine, Bhaskara-astronomy, Kanada-physics (Vaisesika), Bhartrhari-grammarian tradition; Buddhist universities Nalanda, Vikramshila, Odantpuri (Takshashila is not Buddhist monastic); Buddhism holds perception as knowledge of unique particular.",
+   "what_changes": "Thinker-field matching vs odd-one-out vs school of philosophy.",
+   "representative": "gp2025_q25",
+   "members": [
+    "gp2023_q44",
+    "gp2024_q17",
+    "gp2025_q17",
+    "gp2025_q25"
+   ],
+   "skip_note": "One ancient-India fact sheet covers all."
+  },
+  {
+   "id": "u11c11",
+   "title": "Institutions: founders, establishment dates and plans",
+   "type": "same-concept-variant",
+   "topic": "Higher Education System",
+   "technique": "Know founders (Milind College-Ambedkar, Rajghat Besant-Krishnamurti, Banasthali-Hiralal Shastri, Auroville-Aurobindo), university years (Bombay 1857, Delhi 1922, Utkal 1943, SNDT 1916), IIM Indore (Ninth Plan), NID states.",
+   "what_changes": "Institution list; year, founder or plan period.",
+   "representative": "gp2025_q11",
+   "members": [
+    "gp2023_q45",
+    "gp2024_q19",
+    "gp2024_q29",
+    "gp2025_q11"
+   ],
+   "skip_note": "Pure factual recall; rep gives the format, facts must be learned from a list."
+  },
+  {
+   "id": "u11c12",
+   "title": "Malware and security risks",
+   "type": "same-concept-variant",
+   "topic": "ICT",
+   "technique": "Ransomware (locks data for ransom), spyware (monitors), Trojan (disguised), worm/virus; phishing/pharming/hacking are risks, firewall is protection.",
+   "what_changes": "Match definitions vs odd-one-out.",
+   "representative": "gp2024_q28",
+   "members": [
+    "gp2024_q28",
+    "gp2025_q41"
+   ],
+   "skip_note": "Same security vocabulary."
+  },
+  {
+   "id": "u11c13",
+   "title": "MS Office: Word and Excel features",
+   "type": "same-concept-variant",
+   "topic": "ICT",
+   "technique": "Word: spell check, thesaurus, page orientation, mail merge (slide transitions are PowerPoint). Excel: IF/COUNTIF/VLOOKUP style formulas on a sheet.",
+   "what_changes": "Statement set or screenshot-based formula.",
+   "representative": "gp2023_q35",
+   "members": [
+    "gp2023_q32",
+    "gp2023_q35"
+   ],
+   "skip_note": "Routine office-software knowledge."
+  },
+  {
+   "id": "u11c14",
+   "title": "Operating system, hardware and device basics",
+   "type": "same-concept-variant",
+   "topic": "ICT",
+   "technique": "OS: booting loads OS, multiprogramming, device driver, defragmentation makes files contiguous; CPU processes, RAM temporary, hard disk permanent, monitor displays.",
+   "what_changes": "Statement validity or matching.",
+   "representative": "gp2025_q12",
+   "members": [
+    "gp2023_q33",
+    "gp2025_q12",
+    "gp2025_q27"
+   ],
+   "skip_note": "Basic computer-fundamentals statements."
+  },
+  {
+   "id": "u11c15",
+   "title": "Networking, internet and email services",
+   "type": "same-concept-variant",
+   "topic": "ICT",
+   "technique": "OSI 7 layers top-down: Application, Presentation, Session, Transport, Network, Data link, Physical; MIME for email attachments; email is cloud computing; intranet shares info internally.",
+   "what_changes": "Which protocol/layer/service.",
+   "representative": "gp2025_q9",
+   "members": [
+    "gp2023_q31",
+    "gp2024_q20",
+    "gp2025_q9",
+    "gp2025_q29"
+   ],
+   "skip_note": "Short factual items on networks."
+  },
+  {
+   "id": "u11c16",
+   "title": "ICT applications and emerging technology",
+   "type": "same-concept-variant",
+   "topic": "ICT",
+   "technique": "AR overlays digital information on a real place; AI used in spam filters, handles uncertain data; e-commerce and video conferencing advantages.",
+   "what_changes": "Select correct statements.",
+   "representative": "gp2025_q6",
+   "members": [
+    "gp2023_q34",
+    "gp2024_q11",
+    "gp2024_q25",
+    "gp2025_q6"
+   ],
+   "skip_note": "Common-sense benefits and definitions; options often include one extreme \"always\" statement."
+  },
+  {
+   "id": "u11c17",
+   "title": "Letter and number coding-decoding",
+   "type": "same-concept-variant",
+   "topic": "Logical Reasoning (series, syllogism, Venn, coding)",
+   "technique": "Write letter positions, find the rule (mirror A=Z, alternating +2/-2, next integer cube) from the examples and apply to the new word/number.",
+   "what_changes": "Rule type (reverse alphabet, shifts, cube of n+1).",
+   "representative": "gp2025_q35",
+   "members": [
+    "gp2023_q25",
+    "gp2024_q30",
+    "gp2025_q35"
+   ],
+   "skip_note": "Same derive-the-rule method; practise one of each type."
+  },
+  {
+   "id": "u11c18",
+   "title": "Categorical propositions: opposition, equivalence, contradiction",
+   "type": "same-concept-variant",
+   "topic": "Logical Reasoning (series, syllogism, Venn, coding)",
+   "technique": "Square of opposition: A-O and E-I contradictory; A-E contrary (not both true); I-O subcontrary; falsity of A gives O true. Obverse/conversion give equivalents.",
+   "what_changes": "Which relation is asked and the proposition used.",
+   "representative": "gp2024_q34",
+   "members": [
+    "gp2023_q26",
+    "gp2023_q27",
+    "gp2023_q28",
+    "gp2024_q10",
+    "gp2024_q34"
+   ],
+   "skip_note": "One square-of-opposition table answers all."
+  },
+  {
+   "id": "u11c19",
+   "title": "Informal fallacies",
+   "type": "same-concept-variant",
+   "topic": "Logical Reasoning (series, syllogism, Venn, coding)",
+   "technique": "Division (whole to part), composition/accident, equivocation (term used in two senses), hasty generalisation: identify via the argument pattern.",
+   "what_changes": "Argument text and the option list of fallacies.",
+   "representative": "gp2024_q36",
+   "members": [
+    "gp2023_q29",
+    "gp2024_q36",
+    "gp2025_q24"
+   ],
+   "skip_note": "Same fallacy-spotting skill; learn 6-8 fallacy definitions."
+  },
+  {
+   "id": "u11c20",
+   "title": "Indian logic and Hetvabhasa",
+   "type": "same-concept-variant",
+   "topic": "Logical Reasoning (series, syllogism, Venn, coding)",
+   "technique": "Nyaya syllogism has 5 members, is deductive-inductive and formal-material; Savyabhicara (erratic hetu) yields opposite conclusions; Asadharana (hetu too narrow, e.g. sound is eternal because audible).",
+   "what_changes": "Which hetvabhasa or syllogism property.",
+   "representative": "gp2025_q20",
+   "members": [
+    "gp2023_q30",
+    "gp2024_q31",
+    "gp2025_q20"
+   ],
+   "skip_note": "Same Nyaya chapter with the five hetvabhasa types."
+  },
+  {
+   "id": "u11c21",
+   "title": "Definition and terms",
+   "type": "same-concept-variant",
+   "topic": "Logical Reasoning (series, syllogism, Venn, coding)",
+   "technique": "Connotation increases as denotation decreases (species before genus); operational definition applies term if specified operations yield specified result.",
+   "what_changes": "Type of definition or ordering.",
+   "representative": "gp2025_q43",
+   "members": [
+    "gp2024_q6",
+    "gp2025_q43"
+   ],
+   "skip_note": "Short vocabulary of the terms/definition chapter."
+  },
+  {
+   "id": "u11c22",
+   "title": "Number series",
+   "type": "same-concept-variant",
+   "topic": "Mathematical Reasoning & Aptitude",
+   "technique": "Check differences, then ratios, then second differences; for odd-term find the dominant pattern.",
+   "what_changes": "Additive increasing differences, multiplicative factors doubling, or odd term.",
+   "representative": "gp2025_q39",
+   "members": [
+    "gp2023_q23",
+    "gp2024_q38",
+    "gp2025_q39"
+   ],
+   "skip_note": "Same method of testing difference/ratio patterns."
+  },
+  {
+   "id": "u11c23",
+   "title": "Work, time and rate problems",
+   "type": "same-formula",
+   "topic": "Mathematical Reasoning & Aptitude",
+   "technique": "Work = rate x time; add rates (1/6 + 1/9 + n/18 = 1); man-hour product M1 D1 H1 = M2 D2 H2.",
+   "what_changes": "Workers or machines and what is unknown.",
+   "representative": "gp2024_q24",
+   "members": [
+    "gp2023_q21",
+    "gp2024_q24"
+   ],
+   "skip_note": "Same proportion idea."
+  },
+  {
+   "id": "u11c24",
+   "title": "Money, ratio, discount and profit arithmetic",
+   "type": "same-concept-variant",
+   "topic": "Mathematical Reasoning & Aptitude",
+   "technique": "Ratios from fractions via LCM; discount from marked price; mixture cost per kg = total cost / total weight, then SP = cost x (1+gain%).",
+   "what_changes": "Ratio split, discount, mixture gain, or equation of equal shares.",
+   "representative": "gp2025_q30",
+   "members": [
+    "gp2024_q16",
+    "gp2024_q45",
+    "gp2025_q7",
+    "gp2025_q30"
+   ],
+   "skip_note": "Standard commercial arithmetic; one worked example for each suffices."
+  },
+  {
+   "id": "u11c25",
+   "title": "Memory: types, buffer and forgetting",
+   "type": "same-concept-variant",
+   "topic": "Teaching Aptitude",
+   "technique": "LTM = episodic, semantic, procedural, priming; working memory episodic buffer integrates phonological loop, visuospatial sketchpad and LTM; interference causes retrieval difficulty.",
+   "what_changes": "Which memory term or statement.",
+   "representative": "gp2024_q44",
+   "members": [
+    "gp2024_q44",
+    "gp2025_q16",
+    "gp2025_q22",
+    "gp2025_q23"
+   ],
+   "skip_note": "Same memory-model vocabulary."
+  },
+  {
+   "id": "u11c26",
+   "title": "Learning theories, styles and methods",
+   "type": "same-concept-variant",
+   "topic": "Teaching Aptitude",
+   "technique": "VARK = Visual, Aural, Read/write, Kinaesthetic; Bandura observational learning: attention, retention, production, motivation; cooperative learning has individual and group accountability; cognitive apprenticeship.",
+   "what_changes": "Term identification or elements.",
+   "representative": "gp2023_q8",
+   "members": [
+    "gp2023_q8",
+    "gp2023_q9",
+    "gp2023_q10",
+    "gp2024_q41",
+    "gp2025_q15"
+   ],
+   "skip_note": "Definition recall from the learning-theory chapter."
+  },
+  {
+   "id": "u11c27",
+   "title": "Educational technology and digital tools",
+   "type": "same-concept-variant",
+   "topic": "Teaching Aptitude",
+   "technique": "Canva-infographics; Genially/H5P/LearningApps/Educaplay for interactive content; Mentimeter/Slido/Poll Everywhere for live polls; SWAYAM Prabha DTH channels by provider.",
+   "what_changes": "Tool-to-purpose choice.",
+   "representative": "gp2025_q31",
+   "members": [
+    "gp2023_q6",
+    "gp2024_q9",
+    "gp2024_q32",
+    "gp2025_q31"
+   ],
+   "skip_note": "Application-style tool questions; learn the tool list once."
+  },
+  {
+   "id": "u11c28",
+   "title": "Assessment: norm, criterion and authentic",
+   "type": "same-concept-variant",
+   "topic": "Teaching Aptitude",
+   "technique": "Norm referencing compares to peers; criterion to a standard; authentic assessment for real-task projects; formative for ongoing progress.",
+   "what_changes": "Choose assessment type for a scenario.",
+   "representative": "gp2024_q26",
+   "members": [
+    "gp2023_q7",
+    "gp2024_q26"
+   ],
+   "skip_note": "Same assessment-type taxonomy."
+  },
+  {
+   "id": "u11c29",
+   "title": "Qualitative research characteristics",
+   "type": "exact-repeat",
+   "topic": "Research Aptitude",
+   "technique": "Qualitative: process, context, description, meanings and experiences; not generalisation or rigid structure.",
+   "what_changes": "Wording only; option sets reshuffled.",
+   "representative": "gp2025_q21",
+   "members": [
+    "gp2024_q37",
+    "gp2025_q21"
+   ],
+   "skip_note": "Near-identical question in successive years."
+  },
+  {
+   "id": "u11c30",
+   "title": "Referencing styles and abbreviations",
+   "type": "same-concept-variant",
+   "topic": "Research Aptitude",
+   "technique": "APA is a Harvard variant; APA order: author, year, title, journal, volume, DOI; ante=before, cf=compare, et al=and others, passim=here and there.",
+   "what_changes": "Style identification or ordering.",
+   "representative": "gp2025_q44",
+   "members": [
+    "gp2023_q12",
+    "gp2024_q40",
+    "gp2025_q44"
+   ],
+   "skip_note": "Same referencing conventions."
+  },
+  {
+   "id": "u11c31",
+   "title": "Statistical tests, sampling and variable types",
+   "type": "same-concept-variant",
+   "topic": "Research Aptitude",
+   "technique": "Parametric: t, F, Z; nonparametric: H (Kruskal-Wallis), U; non-probability: snowball, purposive; scores with negative marking are discrete.",
+   "what_changes": "Classify test/sampling/variable.",
+   "representative": "gp2024_q12",
+   "members": [
+    "gp2023_q14",
+    "gp2024_q12",
+    "gp2024_q43",
+    "gp2025_q37"
+   ],
+   "skip_note": "Same classification lists."
+  },
+  {
+   "id": "u11c32",
+   "title": "Hypothesis characteristics and value",
+   "type": "same-concept-variant",
+   "topic": "Research Aptitude",
+   "technique": "A valid scientific hypothesis is testable, predictive and falsifiable; heuristic value means it generates further research.",
+   "what_changes": "Valid vs invalid statement.",
+   "representative": "gp2025_q13",
+   "members": [
+    "gp2023_q13",
+    "gp2025_q13"
+   ],
+   "skip_note": "Same hypothesis concept."
+  },
+  {
+   "id": "u11c33",
+   "title": "Comprehension: science and human life (2023)",
+   "type": "same-concept-variant",
+   "topic": "Reading Comprehension",
+   "technique": "Skim question stems first, then locate lines; main idea is the opening and closing sentences.",
+   "what_changes": "Passage-based.",
+   "representative": "gp2023_q48",
+   "members": [
+    "gp2023_q46",
+    "gp2023_q47",
+    "gp2023_q48",
+    "gp2023_q49",
+    "gp2023_q50"
+   ],
+   "skip_note": "Passage specific; one drill for method."
+  },
+  {
+   "id": "u11c34",
+   "title": "Comprehension: folk traditions and public space (2024)",
+   "type": "same-concept-variant",
+   "topic": "Reading Comprehension",
+   "technique": "Answer by the author claim; reject extreme options.",
+   "what_changes": "Passage-based.",
+   "representative": "gp2024_q50",
+   "members": [
+    "gp2024_q46",
+    "gp2024_q47",
+    "gp2024_q48",
+    "gp2024_q49",
+    "gp2024_q50"
+   ],
+   "skip_note": "Passage specific; same method."
+  },
+  {
+   "id": "u11c35",
+   "title": "Comprehension: rise of literary prose (2025)",
+   "type": "same-concept-variant",
+   "topic": "Reading Comprehension",
+   "technique": "Main idea and purpose questions are explicit in text.",
+   "what_changes": "Passage-based.",
+   "representative": "gp2025_q48",
+   "members": [
+    "gp2025_q46",
+    "gp2025_q47",
+    "gp2025_q48",
+    "gp2025_q49",
+    "gp2025_q50"
+   ],
+   "skip_note": "Passage specific; same method."
+  },
+  {
+   "id": "u11c36",
+   "title": "Ozone depletion, greenhouse gases and global warming",
+   "type": "same-concept-variant",
+   "topic": "People, Development & Environment",
+   "technique": "Ozone depletion raises UV, skin cancer (melanoma, carcinoma, erythema), not teratoma; N2O is laughing gas and a greenhouse gas; warming affects hydrology, ocean circulation, acidification, sea level.",
+   "what_changes": "Select true effects.",
+   "representative": "gp2024_q22",
+   "members": [
+    "gp2023_q39",
+    "gp2023_q40",
+    "gp2024_q22",
+    "gp2024_q35"
+   ],
+   "skip_note": "Same atmospheric-pollution facts."
+  },
+  {
+   "id": "u11c37",
+   "title": "Water, noise and toxic pollution",
+   "type": "same-concept-variant",
+   "topic": "People, Development & Environment",
+   "technique": "BOD reduces DO; cholera/typhoid/dysentery are waterborne (TB is not); nephrotoxic = kidney and hepatotoxic = liver; L90 = background noise.",
+   "what_changes": "Identify the correct statement or odd one out.",
+   "representative": "gp2024_q15",
+   "members": [
+    "gp2023_q36",
+    "gp2023_q37",
+    "gp2024_q15",
+    "gp2025_q18"
+   ],
+   "skip_note": "Pollution terminology recall."
+  },
+  {
+   "id": "u11c38",
+   "title": "Ecology, productivity, soil and wetlands",
+   "type": "same-concept-variant",
+   "topic": "People, Development & Environment",
+   "technique": "Gross secondary productivity is total biomass gain by consumers; loam, gleyed and rendzina support earthworms; Keoladeo is an artificial wetland.",
+   "what_changes": "Fact recall.",
+   "representative": "gp2025_q28",
+   "members": [
+    "gp2025_q8",
+    "gp2025_q28",
+    "gp2025_q34"
+   ],
+   "skip_note": "Basic ecology facts."
+  }
+ ],
+ "singletons": [
+  "gp2023_q18",
+  "gp2024_q13",
+  "gp2024_q21",
+  "gp2023_q19",
+  "gp2025_q38",
+  "gp2024_q33",
+  "gp2025_q33",
+  "gp2023_q22",
+  "gp2023_q24",
+  "gp2024_q18",
+  "gp2025_q40",
+  "gp2024_q8",
+  "gp2023_q38",
+  "gp2025_q26",
+  "gp2024_q27",
+  "gp2023_q11",
+  "gp2024_q7",
+  "gp2023_q15",
+  "gp2025_q45",
+  "gp2024_q39"
+ ],
+ "examiner_mindset": [
+  "Fixed blueprint: 5 questions from each of 10 sections per paper (50 total), with small drift (Logic 7/6/5, Math 3/5/4).",
+  "Statement-selection format (A,B,C,D,E - choose correct combination) dominates theory sections.",
+  "Data Interpretation is always one table with five questions; ratio, percent and average only.",
+  "Reading comprehension is always one passage with five questions, answerable from text.",
+  "Chronology (arrange events) appears in several sections: communication, education, ICT.",
+  "Matching lists recur in HE, ICT, Communication, Environment.",
+  "Indian knowledge system flavour grows: Nyaya, Buddhist communication, ancient universities.",
+  "Qualitative research traits repeated almost verbatim in 2024 and 2025.",
+  "Never asks hard calculations; maths is single-step at class 10 level."
+ ],
+ "formulas": [
+  {
+   "name": "Percent change",
+   "formula": "(New - Old)/Old x 100",
+   "used_in": [
+    "gp2025_q1",
+    "gp2023_q3",
+    "gp2023_q5",
+    "gp2024_q1"
+   ],
+   "note": "Base is the \"than\" quantity"
+  },
+  {
+   "name": "A is x% more than B",
+   "formula": "(A - B)/B x 100",
+   "used_in": [
+    "gp2023_q3",
+    "gp2023_q5"
+   ],
+   "note": "Dividing by A is the typical wrong option"
+  },
+  {
+   "name": "Average",
+   "formula": "Sum of values / number of values",
+   "used_in": [
+    "gp2023_q2",
+    "gp2025_q4"
+   ],
+   "note": "Convert ratio to actual numbers first"
+  },
+  {
+   "name": "Share from ratio",
+   "formula": "Share = ratio part/sum of parts x total; fractions first multiplied by LCM (1/2:1/3:3/4 = 6:4:9)",
+   "used_in": [
+    "gp2025_q7"
+   ],
+   "note": "Convert fractional ratio to integers"
+  },
+  {
+   "name": "Work rates",
+   "formula": "Sum of 1/time = 1/total time",
+   "used_in": [
+    "gp2023_q21"
+   ],
+   "note": "Unknown helpers contribute n/their days"
+  },
+  {
+   "name": "Man-hours",
+   "formula": "M1 D1 H1 / W1 = M2 D2 H2 / W2",
+   "used_in": [
+    "gp2024_q24"
+   ],
+   "note": "Same work so equate products"
+  },
+  {
+   "name": "Speed-time-distance",
+   "formula": "Time = distance/speed; sum of segment times = total time",
+   "used_in": [
+    "gp2025_q40"
+   ],
+   "note": "Quadratic; test the options"
+  },
+  {
+   "name": "Discount",
+   "formula": "SP = MP x (100 - d)/100",
+   "used_in": [
+    "gp2024_q16"
+   ],
+   "note": "Find MP first"
+  },
+  {
+   "name": "Mixture cost and gain",
+   "formula": "SP = (total cost/total quantity) x (100 + gain%)/100",
+   "used_in": [
+    "gp2025_q30"
+   ],
+   "note": "Weighted-average cost"
+  },
+  {
+   "name": "Direction distance",
+   "formula": "Net displacement = sqrt(dx^2 + dy^2)",
+   "used_in": [
+    "gp2023_q24"
+   ],
+   "note": "Resolve opposite moves before Pythagoras"
+  },
+  {
+   "name": "Base conversion",
+   "formula": "(abc)_n = a n^2 + b n + c",
+   "used_in": [
+    "gp2024_q18"
+   ],
+   "note": "Convert each to decimal then order"
+  },
+  {
+   "name": "Mirror coding",
+   "formula": "A=Z, B=Y ...: letter + mirror letter = 27",
+   "used_in": [
+    "gp2025_q35"
+   ],
+   "note": "Reverse alphabet mapping"
+  },
+  {
+   "name": "Alternating shift coding",
+   "formula": "+2, -2, +2 ... on successive letters",
+   "used_in": [
+    "gp2024_q30"
+   ],
+   "note": "Check position pattern"
+  },
+  {
+   "name": "Number series",
+   "formula": "Differences, ratios, second differences",
+   "used_in": [
+    "gp2023_q23",
+    "gp2025_q39"
+   ],
+   "note": "Doubling multipliers x3,x6,x12,x24"
+  },
+  {
+   "name": "Square of opposition",
+   "formula": "A-O and E-I contradictory; A-E contrary (both false allowed); I-O subcontrary",
+   "used_in": [
+    "gp2023_q26",
+    "gp2023_q27",
+    "gp2024_q34"
+   ],
+   "note": "If A false then O true"
+  },
+  {
+   "name": "Denotation vs connotation",
+   "formula": "Greater connotation implies lesser denotation",
+   "used_in": [
+    "gp2024_q6"
+   ],
+   "note": "Species have more connotation"
+  },
+  {
+   "name": "Syllogism AII-2",
+   "formula": "Middle term predicate in both premises gives undistributed middle fallacy",
+   "used_in": [
+    "gp2025_q33"
+   ],
+   "note": "Figure 2 needs a negative premise"
+  },
+  {
+   "name": "OSI layers",
+   "formula": "Physical, Data link, Network, Transport, Session, Presentation, Application",
+   "used_in": [
+    "gp2025_q9"
+   ],
+   "note": "Sequence questions give bottom-up or top-down"
+  },
+  {
+   "name": "Memory taxonomy",
+   "formula": "LTM = explicit (episodic, semantic) + implicit (procedural, priming)",
+   "used_in": [
+    "gp2024_q44",
+    "gp2025_q23"
+   ],
+   "note": "Semantic = general world knowledge"
+  },
+  {
+   "name": "Bandura observational learning",
+   "formula": "Attention, retention, reproduction (production), motivation",
+   "used_in": [
+    "gp2023_q8"
+   ],
+   "note": "Identification is not an element"
+  },
+  {
+   "name": "Mercalli vs Richter",
+   "formula": "Mercalli = intensity/damage; Richter = magnitude/energy",
+   "used_in": [
+    "gp2024_q8"
+   ],
+   "note": "Common trap"
+  },
+  {
+   "name": "Education timeline",
+   "formula": "Wood 1854, Curzon 1904, Sadler 1917, UEC 1948, SEC 1952, UGC 1956, Kothari 1964",
+   "used_in": [
+    "gp2025_q19",
+    "gp2023_q41",
+    "gp2023_q43"
+   ],
+   "note": "Chronology questions"
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "High-yield logic",
+   "topics": [
+    "Logical Reasoning (series, syllogism, Venn, coding)"
+   ],
+   "hours": 4.0,
+   "do": "Do reps u11c17-u11c21: square of opposition, fallacies, Nyaya, coding."
+  },
+  {
+   "step": 2,
+   "focus": "Table DI",
+   "topics": [
+    "Data Interpretation"
+   ],
+   "hours": 3.0,
+   "do": "Solve gp2025_q4, gp2025_q1, gp2025_q2."
+  },
+  {
+   "step": 3,
+   "focus": "Teaching and Research",
+   "topics": [
+    "Teaching Aptitude",
+    "Research Aptitude"
+   ],
+   "hours": 5.0,
+   "do": "Learn memory, assessment, tools, referencing, tests via reps."
+  },
+  {
+   "step": 4,
+   "focus": "ICT and environment",
+   "topics": [
+    "ICT",
+    "People, Development & Environment"
+   ],
+   "hours": 5.0,
+   "do": "Fact sheets: OSI, malware, ozone, pollution terms."
+  },
+  {
+   "step": 5,
+   "focus": "Higher education and communication",
+   "topics": [
+    "Higher Education System",
+    "Communication"
+   ],
+   "hours": 4.0,
+   "do": "Memorise timelines, thinker-field pairs, theorist-theory table."
+  },
+  {
+   "step": 6,
+   "focus": "Maths and reading comprehension",
+   "topics": [
+    "Mathematical Reasoning & Aptitude",
+    "Reading Comprehension"
+   ],
+   "hours": 4.0,
+   "do": "Series, work, ratio drills; two timed passages."
+  }
+ ],
+ "minimum_set": [
+  "gp2023_q11",
+  "gp2023_q15",
+  "gp2023_q18",
+  "gp2023_q19",
+  "gp2023_q20",
+  "gp2023_q22",
+  "gp2023_q24",
+  "gp2023_q35",
+  "gp2023_q38",
+  "gp2023_q48",
+  "gp2023_q8",
+  "gp2024_q12",
+  "gp2024_q13",
+  "gp2024_q15",
+  "gp2024_q18",
+  "gp2024_q21",
+  "gp2024_q22",
+  "gp2024_q23",
+  "gp2024_q24",
+  "gp2024_q26",
+  "gp2024_q27",
+  "gp2024_q28",
+  "gp2024_q33",
+  "gp2024_q34",
+  "gp2024_q36",
+  "gp2024_q39",
+  "gp2024_q44",
+  "gp2024_q50",
+  "gp2024_q7",
+  "gp2024_q8",
+  "gp2025_q1",
+  "gp2025_q10",
+  "gp2025_q11",
+  "gp2025_q12",
+  "gp2025_q13",
+  "gp2025_q19",
+  "gp2025_q2",
+  "gp2025_q20",
+  "gp2025_q21",
+  "gp2025_q25",
+  "gp2025_q26",
+  "gp2025_q28",
+  "gp2025_q30",
+  "gp2025_q31",
+  "gp2025_q32",
+  "gp2025_q33",
+  "gp2025_q35",
+  "gp2025_q38",
+  "gp2025_q39",
+  "gp2025_q4",
+  "gp2025_q40",
+  "gp2025_q42",
+  "gp2025_q43",
+  "gp2025_q44",
+  "gp2025_q45",
+  "gp2025_q48",
+  "gp2025_q6",
+  "gp2025_q9"
+ ]
+}

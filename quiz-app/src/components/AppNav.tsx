@@ -1,21 +1,22 @@
 "use client"
 
 import React from "react"
-import { BarChart3, GitCompare, GraduationCap, Layers, LayoutDashboard, Library, Moon, PlayCircle, Settings, Sun } from "lucide-react"
+import { BarChart3, Compass, GitCompare, GraduationCap, Layers, LayoutDashboard, Library, Moon, PlayCircle, Settings, Sun } from "lucide-react"
 import { useSettings } from "@/lib/settings"
 import { useStudyData } from "@/hooks/useStudyData"
 import { computeStreaks } from "@/lib/analytics"
 import { cn } from "@/lib/utils"
 
-export type View = "overview" | "practice" | "bank" | "swipe" | "weightage" | "repeats" | "settings"
+export type View = "overview" | "practice" | "bank" | "swipe" | "plan" | "weightage" | "repeats" | "settings"
 
-export const VIEWS: View[] = ["overview", "practice", "bank", "swipe", "weightage", "repeats", "settings"]
+export const VIEWS: View[] = ["overview", "practice", "bank", "swipe", "plan", "weightage", "repeats", "settings"]
 
 const NAV: { view: View; label: string; short: string; icon: React.ElementType; group: "study" | "explore" }[] = [
   { view: "overview", label: "Overview", short: "Home", icon: LayoutDashboard, group: "study" },
   { view: "practice", label: "Practice", short: "Practice", icon: PlayCircle, group: "study" },
   { view: "bank", label: "Question bank", short: "Bank", icon: Library, group: "study" },
   { view: "swipe", label: "Swipe cards", short: "Swipe", icon: Layers, group: "study" },
+  { view: "plan", label: "Study plan", short: "Plan", icon: Compass, group: "explore" },
   { view: "weightage", label: "Topic weightage", short: "Topics", icon: BarChart3, group: "explore" },
   { view: "repeats", label: "Repeated questions", short: "Repeats", icon: GitCompare, group: "explore" }
 ]
@@ -110,7 +111,7 @@ export function MobileHeader({ onNavigate }: { onNavigate: (v: View) => void }) 
 
 export function MobileTabBar({ active, onNavigate }: { active: View; onNavigate: (v: View) => void }) {
   return (
-    <nav className="md:hidden grid grid-cols-6 border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shrink-0 pb-[env(safe-area-inset-bottom)]" aria-label="Main">
+    <nav className="md:hidden grid grid-cols-7 border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shrink-0 pb-[env(safe-area-inset-bottom)]" aria-label="Main">
       {NAV.map(n => {
         const Icon = n.icon
         const isActive = active === n.view

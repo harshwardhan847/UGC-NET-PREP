@@ -1,0 +1,1376 @@
+{
+ "unit": 1,
+ "name": "Discrete Structures and Optimization",
+ "total_questions": 181,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Propositional & Predicate Logic",
+   "count": 34,
+   "papers": 15,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "Largest topic: 34 of 181 (19%), in all 15 papers; Dec 2023 alone has 6.",
+   "what_to_study": [
+    "Equivalence laws, converse/inverse/contrapositive",
+    "Quantifier truth, negation, translation",
+    "Tautology and equivalence identification",
+    "Normal forms (CNF), simple inference"
+   ]
+  },
+  {
+   "topic": "Linear Programming & Optimization",
+   "count": 26,
+   "papers": 12,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "26 of 181 (14%); 12 of 15 papers; two passages (Dec 2023, June 2024) contribute 5 each, so it can appear as a block.",
+   "what_to_study": [
+    "Formulate LP from word problem and write dual",
+    "Graphical corner-point method",
+    "Simplex and dual simplex first iteration",
+    "Duality theorems; transportation m+n-1; PERT/CPM basics"
+   ]
+  },
+  {
+   "topic": "Sets, Relations & Functions",
+   "count": 26,
+   "papers": 15,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "26 of 181 (14%); present in every one of 15 papers.",
+   "what_to_study": [
+    "Properties of relations (reflexive/symmetric/transitive)",
+    "Equivalence relations, closure",
+    "Inclusion-exclusion with 2-3 sets",
+    "Set identities, empty-set membership, floor/ceiling, function types"
+   ]
+  },
+  {
+   "topic": "Graph Theory",
+   "count": 21,
+   "papers": 11,
+   "first_year": "December 2018",
+   "last_year": "December 2024",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "21 of 181 (12%); 11 of 15 papers; counts dropped in the last 6 papers (6 vs 15), but the fundamentals remain scoring.",
+   "what_to_study": [
+    "Handshake lemma, tree and forest edge counts",
+    "Euler formula and planarity",
+    "Colouring and bipartite",
+    "Hamiltonian/Euler conditions",
+    "Spanning-tree counts and standard graph families"
+   ]
+  },
+  {
+   "topic": "Combinatorics & Recurrences",
+   "count": 20,
+   "papers": 8,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "20 of 181 (11%); 8 of 15 papers; arrives in blocks (3-4 per paper) when it appears.",
+   "what_to_study": [
+    "Pigeonhole N=k(r-1)+1",
+    "Stars and bars",
+    "Inclusion-exclusion and onto functions",
+    "Recurrences",
+    "Multinomial coefficients, Catalan numbers"
+   ]
+  },
+  {
+   "topic": "Probability & Statistics",
+   "count": 18,
+   "papers": 10,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "18 of 181 (10%); 10 of 15 papers (67%) with steady rate; Nov 2021 had a 5-question passage.",
+   "what_to_study": [
+    "Joint distribution table",
+    "Poisson P(0)=e^-lt",
+    "Conditional/union probability",
+    "Classical counting probability",
+    "Bayes theorem"
+   ]
+  },
+  {
+   "topic": "Boolean Algebra, Lattices & Posets",
+   "count": 12,
+   "papers": 9,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "fading",
+   "priority": "High",
+   "why": "12 of 181 (7%); 9 of 15 papers; only 3 in the last 6 papers.",
+   "what_to_study": [
+    "Poset GLB/LUB, greatest/least",
+    "Boolean algebra facts and laws, duals",
+    "Counting Boolean functions 2^(2^n)",
+    "Sum of products form"
+   ]
+  },
+  {
+   "topic": "Algebraic Structures (Groups, Rings)",
+   "count": 11,
+   "papers": 9,
+   "first_year": "December 2019",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "High",
+   "why": "11 of 181 (6%); first appears Dec 2019 and 7 of 11 are in the last 6 papers.",
+   "what_to_study": [
+    "Group axioms and standard properties",
+    "Lagrange and order of elements",
+    "Homomorphism/automorphism",
+    "Semigroup and monoid facts"
+   ]
+  },
+  {
+   "topic": "Number Theory & Number Systems",
+   "count": 11,
+   "papers": 6,
+   "first_year": "June 2019",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Medium",
+   "why": "11 of 181 (6%) but only 6 of 15 papers, bursty (June 2019 had 3).",
+   "what_to_study": [
+    "Euler phi, Fermat/Euler theorem",
+    "Modular exponentiation",
+    "Base conversion and unknown base equations"
+   ]
+  },
+  {
+   "topic": "Numerical Methods & Misc Maths",
+   "count": 2,
+   "papers": 1,
+   "first_year": "June 2024 (Cancelled)",
+   "last_year": "June 2024 (Cancelled)",
+   "trend": "steady",
+   "priority": "Low",
+   "why": "2 of 181, both in one paper (June 2024 Cancelled).",
+   "what_to_study": [
+    "Bit-operation time estimate",
+    "Mathematical modelling steps order"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "title": "Truth value of quantified statements over integers/reals",
+   "type": "same-concept-variant",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "For each statement find a witness (for exists) or a counterexample (for forall) in the given universe. Quick tests: n=0, n=1, n=-1, n^2 vs n for 0<n<1 (not integers), and remember n+m=4 with n-m=1 needs n=2.5 (no integer solution).",
+   "what_changes": "The list of 4-5 statements A-E (n^2<m, n<m^2, nm=m, n^2+m^2=5 or 6, n+m=4 & n-m=1) and the universe (integers vs reals); the same statements reappear shuffled.",
+   "representative": "dec2023_q42",
+   "members": [
+    "dec2023_q42",
+    "june2024_cancelled_q22",
+    "dec2023_q56",
+    "dec2023_q57",
+    "dec2023_q41"
+   ],
+   "skip_note": "Dec 2023 q42 and June 2024 q22 share almost identical statements; master the n^2/m pattern table and the rest follow.",
+   "id": "u1c1"
+  },
+  {
+   "title": "Match propositional equivalences (implication, biconditional, negation, De Morgan)",
+   "type": "same-concept-variant",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "Convert everything to the standard forms: p->q = ~p v q, p<->q = (p^q) v (~p^~q), ~(p->q)= p^~q, ~(p v q)=~p^~q, ~(p<->q)= ~p<->q. Match by elimination using one or two unambiguous pairs.",
+   "what_changes": "Which 4 equivalences are listed and the arrangement of the match options.",
+   "representative": "dec2024_q14",
+   "members": [
+    "dec2024_q14",
+    "june2019_q8",
+    "dec2023_q72"
+   ],
+   "skip_note": "Same fixed set of identities each time; the rep covers every pair seen.",
+   "id": "u1c2"
+  },
+  {
+   "title": "Converse, inverse, contrapositive, implication terminology match",
+   "type": "same-concept-variant",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "p->q: converse q->p, inverse ~p->~q, contrapositive ~q->~p (equivalent to original). Equivalence is p<->q.",
+   "what_changes": "Sentences instead of symbols, or symbol forms; order of list items.",
+   "representative": "june2025_q28",
+   "members": [
+    "june2025_q28",
+    "dec2018_q2"
+   ],
+   "skip_note": "Only four terms exist; the rep drills the word-form of the same mapping.",
+   "id": "u1c3"
+  },
+  {
+   "title": "Which pairs are (not) logically equivalent / identify valid equivalence statements",
+   "type": "same-concept-variant",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "Use contrapositive, De Morgan, distribution of implication: (p->r)^(q->r) = (p v q)->r while (p^q)->r = (p->r) v (q->r). Test suspicious options with a 2-3 row truth table.",
+   "what_changes": "Particular formulas; the trap is distributing implication over wrong connective; 'NOT equivalent' vs 'equivalent' stem.",
+   "representative": "nov2020_q3",
+   "members": [
+    "nov2020_q3",
+    "dec2022_q1",
+    "nov2021_q21",
+    "sep2022_q71",
+    "june2024_reexam_q47"
+   ],
+   "skip_note": "Same traps (wrong distribution, converse vs contrapositive) recur; nov2020_q3 + nov2021_q21 cover them.",
+   "id": "u1c4"
+  },
+  {
+   "title": "Identify tautologies among given formulas",
+   "type": "same-concept-variant",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "Assume the formula is false and try to force a contradiction (false conclusion, true premise); or check the single falsifying assignment for each.",
+   "what_changes": "Formulas in 3 variables, 4-5 per question, multi-select options.",
+   "representative": "june2024_cancelled_q67",
+   "members": [
+    "june2024_cancelled_q67",
+    "dec2023_q46"
+   ],
+   "skip_note": "Both use the make-it-false method; one rep suffices.",
+   "id": "u1c5"
+  },
+  {
+   "title": "Translate English sentences to propositional logic",
+   "type": "same-concept-variant",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "Map: 'neither P nor Q' = ~P ^ ~Q; 'if P then Q' = P->Q; 'necessary for P is Q' = P->Q (P implies Q); 'sufficient' = antecedent; 'only if' = consequent.",
+   "what_changes": "Sentences and the P/Q meanings; necessary/sufficient/neither phrasing.",
+   "representative": "june2025_q34",
+   "members": [
+    "june2025_q34",
+    "nov2020_q61",
+    "june2024_reexam_q24"
+   ],
+   "skip_note": "Same phrase-to-connective table; rep includes necessary/sufficient wording.",
+   "id": "u1c6"
+  },
+  {
+   "title": "Quantifier translation (English <-> predicate logic)",
+   "type": "same-concept-variant",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "'Some A are not B' = exists x (A ^ ~B); 'all A are B' = forall x (A -> B); 'X is loved by everyone' = forall x L(x,X). For forall x exists y (x<y): for every x there is a larger y.",
+   "what_changes": "Direction of translation (to symbols or to English) and predicate names.",
+   "representative": "june2024_reexam_q61",
+   "members": [
+    "june2024_reexam_q61",
+    "june2024_reexam_q87",
+    "nov2020_q37"
+   ],
+   "skip_note": "Argument order and exists-with-AND / forall-with-implies are the only traps; one rep is enough.",
+   "id": "u1c7"
+  },
+  {
+   "title": "Negation of quantified statements",
+   "type": "exact-repeat",
+   "topic": "Propositional & Predicate Logic",
+   "technique": "~exists x Q = forall x ~Q; ~forall x Q = exists x ~Q. 'Some students like hockey' negates to 'every student dislikes hockey'.",
+   "what_changes": "Predicate and sentence wording only.",
+   "representative": "dec2022_shiftii_q1",
+   "members": [
+    "dec2022_shiftii_q1",
+    "july2018_q85"
+   ],
+   "skip_note": "Single rule, asked twice with different wording.",
+   "id": "u1c8"
+  },
+  {
+   "title": "Check reflexive/symmetric/antisymmetric/transitive properties of a given relation",
+   "type": "same-concept-variant",
+   "topic": "Sets, Relations & Functions",
+   "technique": "Test reflexive (all (a,a) present), symmetric (every (a,b) has (b,a)), antisymmetric (no a!=b both ways), transitive (check chains). Eliminate options with one failing property. For infinite relations find a counterexample.",
+   "what_changes": "The relation (pair list, formula like xv=yu, x<u & y>v, |x-y|<eps, brother-of) and which properties are asked.",
+   "representative": "dec2023_q43",
+   "members": [
+    "dec2023_q43",
+    "dec2022_q43",
+    "dec2022_shiftii_q2",
+    "dec2019_q5",
+    "nov2020_q39",
+    "sep2022_q74",
+    "june2024_reexam_q7"
+   ],
+   "skip_note": "All use the same four definitions; do dec2023_q43 + dec2022_q43 and watch for |x-y|<eps (not transitive) and brother-of (not symmetric).",
+   "id": "u1c9"
+  },
+  {
+   "title": "Identify/prove an equivalence relation",
+   "type": "same-concept-variant",
+   "topic": "Sets, Relations & Functions",
+   "technique": "Check reflexive, symmetric, transitive. Equal-mod-k or 'same value of a function' type relations are equivalences; 'f(0)=g(0) or f(1)=g(1)' fails transitivity.",
+   "what_changes": "Domain (finite set, functions Z->Z, N x N) and the defining rule.",
+   "representative": "june2023_q33",
+   "members": [
+    "june2023_q33",
+    "july2018_q88",
+    "july2018_q89"
+   ],
+   "skip_note": "Same three-property test; the rep is the hardest algebraic version.",
+   "id": "u1c10"
+  },
+  {
+   "title": "Inclusion-exclusion counting with 2 or 3 sets",
+   "type": "same-formula",
+   "topic": "Sets, Relations & Functions",
+   "technique": "|AuB|=|A|+|B|-|AnB|; |AuBuC|=sum singles - sum pairs + triple. Neither = total - union.",
+   "what_changes": "Story (languages, survey, food) and numbers.",
+   "representative": "june2025_q35",
+   "members": [
+    "june2025_q35",
+    "dec2018_q4",
+    "june2024_reexam_q79"
+   ],
+   "skip_note": "Same formula with new numbers.",
+   "id": "u1c11"
+  },
+  {
+   "title": "Empty-set and nested-set membership/subset",
+   "type": "same-concept-variant",
+   "topic": "Sets, Relations & Functions",
+   "technique": "Distinguish phi (no elements) from {phi} (one element). x in S needs x listed as an element; x subset S needs all elements of x in S.",
+   "what_changes": "Which of A-E statements are asked or the match items.",
+   "representative": "dec2024_q89",
+   "members": [
+    "dec2024_q89",
+    "dec2023_q66"
+   ],
+   "skip_note": "Same phi vs {phi} trap.",
+   "id": "u1c12"
+  },
+  {
+   "title": "Set algebra identity / operation matching",
+   "type": "same-concept-variant",
+   "topic": "Sets, Relations & Functions",
+   "technique": "A-B = A n B^c; symmetric difference = (A-B)u(B-A); A-(BuC)=(A-B)n(A-C); A-(BnC)=(A-B)u(A-C); A n (B-C)=(AnB)-(AnC). Verify with a Venn or small example.",
+   "what_changes": "Which identities are listed.",
+   "representative": "june2023_q76",
+   "members": [
+    "june2023_q76",
+    "nov2020_q64"
+   ],
+   "skip_note": "Same identity table; the rep has all of them.",
+   "id": "u1c13"
+  },
+  {
+   "title": "Poset GLB/LUB and greatest/least element under divisibility",
+   "type": "same-concept-variant",
+   "topic": "Boolean Algebra, Lattices & Posets",
+   "technique": "In (Z+, |): GLB = gcd, LUB = lcm of the set. Greatest element exists only if one element is divisible by all others (and least if one divides all).",
+   "what_changes": "The sets and whether asked for bounds or greatest/least elements.",
+   "representative": "dec2019_q4",
+   "members": [
+    "dec2019_q4",
+    "june2019_q1"
+   ],
+   "skip_note": "Both reduce to gcd/lcm and divisibility check.",
+   "id": "u1c14"
+  },
+  {
+   "title": "Boolean algebra statement-check (atoms, complement, direct product, NAND/NOR)",
+   "type": "same-concept-variant",
+   "topic": "Boolean Algebra, Lattices & Posets",
+   "technique": "A finite Boolean algebra has 2^n elements (no 5-element one); complements are unique; direct product of Boolean algebras is a Boolean algebra; any network can be built from NAND or NOR alone; two Boolean algebras with the same number of atoms are isomorphic.",
+   "what_changes": "The 4 statements chosen.",
+   "representative": "dec2022_shiftii_q42",
+   "members": [
+    "dec2022_shiftii_q42",
+    "dec2018_q5"
+   ],
+   "skip_note": "Same fact bank; learn the facts once.",
+   "id": "u1c15"
+  },
+  {
+   "title": "Boolean laws and dual expressions matching",
+   "type": "same-concept-variant",
+   "topic": "Boolean Algebra, Lattices & Posets",
+   "technique": "Dual: swap + with ., 0 with 1 (leave literals). Laws: absorption a+ab=a, bound a+1=1, identity a+0=a, distributive.",
+   "what_changes": "Expressions in the list.",
+   "representative": "dec2024_q79",
+   "members": [
+    "dec2024_q79",
+    "june2024_cancelled_q42"
+   ],
+   "skip_note": "Pure recall of the law names and dual rule.",
+   "id": "u1c16"
+  },
+  {
+   "title": "Pigeonhole principle (minimum number to guarantee)",
+   "type": "same-formula",
+   "topic": "Combinatorics & Recurrences",
+   "technique": "Worst case: fill every box to r-1, then add one: N = k(r-1)+1. For 'at least three hearts' count all non-hearts (39) + 2 hearts, plus 1 = 42.",
+   "what_changes": "Context (grades, bins, cards) and r.",
+   "representative": "dec2022_q4",
+   "members": [
+    "dec2022_q4",
+    "nov2021_q24",
+    "june2019_q7"
+   ],
+   "skip_note": "Same worst-case-plus-one formula; the card version is the only twist.",
+   "id": "u1c17"
+  },
+  {
+   "title": "Stars and bars: integral solutions / balls into bins",
+   "type": "same-formula",
+   "topic": "Combinatorics & Recurrences",
+   "technique": "Non-negative solutions of x1+..+xk = n: C(n+k-1, k-1). With lower bounds subtract them from n first (29-1-2-3=23, C(26,3)=2600).",
+   "what_changes": "n, k, lower bounds, or balls in distinguishable bins.",
+   "representative": "june2023_q50",
+   "members": [
+    "june2023_q50",
+    "june2019_q2"
+   ],
+   "skip_note": "Same formula.",
+   "id": "u1c18"
+  },
+  {
+   "title": "Onto functions / distributing distinct objects with every box non-empty",
+   "type": "same-formula",
+   "topic": "Combinatorics & Recurrences",
+   "technique": "Onto count = sum_{i=0}^{k} (-1)^i C(k,i)(k-i)^n (= k! S(n,k)). 5 jobs on 4 people = 240; 7 people on 3 floors = 3^7-3*2^7+3 = 1806.",
+   "what_changes": "Numbers n and k and the story.",
+   "representative": "dec2022_q2",
+   "members": [
+    "dec2022_q2",
+    "nov2021_q23"
+   ],
+   "skip_note": "Same inclusion-exclusion formula.",
+   "id": "u1c19"
+  },
+  {
+   "title": "Inclusion-exclusion in counting (bit strings, integers up to N)",
+   "type": "same-concept-variant",
+   "topic": "Combinatorics & Recurrences",
+   "technique": "|A u B| = |A|+|B|-|A n B|. Bit strings starting with 1 (2^9), ending 00 (2^8), both (2^7): 640. Odd or perfect square up to 100: 50 odd + 5 even squares (4,16,36,64,100) = 55.",
+   "what_changes": "Condition pair and range.",
+   "representative": "june2019_q3",
+   "members": [
+    "june2019_q3",
+    "nov2020_q1"
+   ],
+   "skip_note": "Same overlap-subtraction method.",
+   "id": "u1c20"
+  },
+  {
+   "title": "Recurrence relations: set up and solve",
+   "type": "same-concept-variant",
+   "topic": "Combinatorics & Recurrences",
+   "technique": "Linear homogeneous: characteristic equation; repeated root r gives (a+bn)r^n (r^2-8r+16 => 4^n and n4^n). Divide and conquer f(n)=a f(n/2)+c: unroll with n=2^K. Stairs: f(n)=f(n-1)+f(n-2), Fibonacci.",
+   "what_changes": "Recurrence coefficients and base case.",
+   "representative": "june2024_cancelled_q26",
+   "members": [
+    "june2024_cancelled_q26",
+    "june2024_cancelled_q10",
+    "nov2021_q25"
+   ],
+   "skip_note": "Three recurrence types; do all three once because they differ in method.",
+   "id": "u1c21"
+  },
+  {
+   "title": "Multiplication rule counting (labels, ordered selections)",
+   "type": "same-concept-variant",
+   "topic": "Combinatorics & Recurrences",
+   "technique": "Product rule; ordered selection without replacement is nPr: 42*41*40 = 68880. Labels: 26 letters x 99 positive two-digit numbers = 2574.",
+   "what_changes": "Counts and replacement condition.",
+   "representative": "june2025_q1",
+   "members": [
+    "june2025_q1",
+    "june2024_cancelled_q49"
+   ],
+   "skip_note": "Basic rule application.",
+   "id": "u1c22"
+  },
+  {
+   "title": "Handshaking lemma",
+   "type": "same-formula",
+   "topic": "Graph Theory",
+   "technique": "Sum of degrees = 2|E|; number of odd-degree vertices is even.",
+   "what_changes": "Asked as statements or as 'sum of degrees equals?'",
+   "representative": "nov2021_q46",
+   "members": [
+    "nov2021_q46",
+    "june2024_reexam_q78"
+   ],
+   "skip_note": "One fact.",
+   "id": "u1c23"
+  },
+  {
+   "title": "Planarity of drawn graphs",
+   "type": "same-concept-variant",
+   "topic": "Graph Theory",
+   "technique": "Look for a K5 or K3,3 subdivision (Kuratowski); otherwise redraw without crossings. Check E<=3V-6 as a quick necessary test.",
+   "what_changes": "The figures; format is identical image-based.",
+   "representative": "dec2024_q69",
+   "members": [
+    "dec2024_q69",
+    "nov2021_q27"
+   ],
+   "skip_note": "Figure-based; solve dec2024 to learn the method.",
+   "id": "u1c24"
+  },
+  {
+   "title": "Graph colouring and bipartite equivalence",
+   "type": "same-concept-variant",
+   "topic": "Graph Theory",
+   "technique": "Bipartite = 2-colourable = no odd cycles; trees are 2-colourable; max degree d needs at most d+1 colours; planar graphs are 4-colourable.",
+   "what_changes": "Which statements are listed as correct/incorrect.",
+   "representative": "nov2020_q53",
+   "members": [
+    "nov2020_q53",
+    "dec2018_q28"
+   ],
+   "skip_note": "Same equivalence set.",
+   "id": "u1c25"
+  },
+  {
+   "title": "Hamiltonian sufficient conditions (Dirac/Ore)",
+   "type": "same-concept-variant",
+   "topic": "Graph Theory",
+   "technique": "Dirac: n>=3 and deg(v)>=n/2 for all v => Hamiltonian. Ore: deg(v)+deg(w)>=n for each non-adjacent pair. Ore's condition is the sum, not the n/3 trap.",
+   "what_changes": "Statement form vs fill-in-the-blank.",
+   "representative": "june2024_reexam_q34",
+   "members": [
+    "june2024_reexam_q34",
+    "dec2018_q20"
+   ],
+   "skip_note": "Same theorem.",
+   "id": "u1c26"
+  },
+  {
+   "title": "Number of spanning trees of small graphs",
+   "type": "same-concept-variant",
+   "topic": "Graph Theory",
+   "technique": "Cayley: K_n has n^(n-2); cycle C_n has n; K2,2=C4 has 4; otherwise Kirchhoff or deletion-contraction (tau(G)=tau(G-e)+tau(G/e)).",
+   "what_changes": "The graphs compared or counted.",
+   "representative": "june2024_cancelled_q38",
+   "members": [
+    "june2024_cancelled_q38",
+    "dec2022_shiftii_q28"
+   ],
+   "skip_note": "Same counting tools.",
+   "id": "u1c27"
+  },
+  {
+   "title": "Trees and forests: vertex/edge counts",
+   "type": "same-formula",
+   "topic": "Graph Theory",
+   "technique": "Tree: E=V-1. Forest with k components: E=V-k, so minimum edges of a graph with k components is n-k. Use sum of degrees = 2E to find unknown n.",
+   "what_changes": "Degree sequence or number of vertices/edges.",
+   "representative": "dec2019_q7",
+   "members": [
+    "dec2019_q7",
+    "dec2022_q76",
+    "dec2022_shiftii_q41"
+   ],
+   "skip_note": "Edge-count identities only.",
+   "id": "u1c28"
+  },
+  {
+   "title": "Standard graph family properties (edges, regularity)",
+   "type": "same-concept-variant",
+   "topic": "Graph Theory",
+   "technique": "K_n: n(n-1)/2 edges; C_n: n; W_n (n vertices): 2(n-1), regular only for W4=K4; K_{n,n}: n^2; Q_n: n*2^(n-1).",
+   "what_changes": "Which families are compared.",
+   "representative": "dec2024_q58",
+   "members": [
+    "dec2024_q58",
+    "nov2021_q26"
+   ],
+   "skip_note": "Same table.",
+   "id": "u1c29"
+  },
+  {
+   "title": "Formulate the LP from the passage: objective",
+   "type": "same-concept-variant",
+   "topic": "Linear Programming & Optimization",
+   "technique": "Objective coefficient = cost/profit per unit of each product times variable (12x+20y for diet; 30x+50y for cloth).",
+   "what_changes": "Passage numbers.",
+   "representative": "june2024_cancelled_q92",
+   "members": [
+    "june2024_cancelled_q92",
+    "dec2023_q91"
+   ],
+   "skip_note": "Same step across two passages.",
+   "id": "u1c30"
+  },
+  {
+   "title": "Formulate the LP from the passage: constraints",
+   "type": "same-concept-variant",
+   "topic": "Linear Programming & Optimization",
+   "technique": "One constraint per resource/nutrient; coefficient matrix columns are products. Diet = '>=' constraints, production = '<=' constraints.",
+   "what_changes": "Passage values and direction of inequalities.",
+   "representative": "june2024_cancelled_q94",
+   "members": [
+    "june2024_cancelled_q94",
+    "dec2023_q92"
+   ],
+   "skip_note": "Same step.",
+   "id": "u1c31"
+  },
+  {
+   "title": "Write the dual of the passage LP",
+   "type": "same-concept-variant",
+   "topic": "Linear Programming & Optimization",
+   "technique": "Primal min with >= constraints => dual max with <= constraints, RHS of dual = primal costs, dual objective uses primal RHS, A is transposed.",
+   "what_changes": "Primal data.",
+   "representative": "june2024_cancelled_q91",
+   "members": [
+    "june2024_cancelled_q91",
+    "dec2023_q94"
+   ],
+   "skip_note": "Same transposition recipe.",
+   "id": "u1c32"
+  },
+  {
+   "title": "Evaluate the passage LP at corner points (optimum value/solution)",
+   "type": "same-concept-variant",
+   "topic": "Linear Programming & Optimization",
+   "technique": "Compute intersection points of constraints, evaluate objective at feasible vertices, choose max/min.",
+   "what_changes": "Which corner/value is asked.",
+   "representative": "june2024_cancelled_q95",
+   "members": [
+    "june2024_cancelled_q95",
+    "june2024_cancelled_q93",
+    "dec2023_q93",
+    "dec2023_q95"
+   ],
+   "skip_note": "Same corner point routine.",
+   "id": "u1c33"
+  },
+  {
+   "title": "Graphical LP solution",
+   "type": "same-concept-variant",
+   "topic": "Linear Programming & Optimization",
+   "technique": "Plot constraints, list feasible vertices and evaluate objective. For feasibility questions substitute each point into all constraints.",
+   "what_changes": "Objective and constraint data.",
+   "representative": "nov2021_q30",
+   "members": [
+    "nov2021_q30",
+    "nov2020_q4",
+    "dec2019_q2",
+    "dec2024_q62"
+   ],
+   "skip_note": "Same corner-point evaluation.",
+   "id": "u1c34"
+  },
+  {
+   "title": "Simplex / dual simplex iterations",
+   "type": "same-concept-variant",
+   "topic": "Linear Programming & Optimization",
+   "technique": "Entering variable: largest positive Cj-Zj (max). Leaving: min ratio. Dual simplex: leaving row = most negative RHS.",
+   "what_changes": "Problem data.",
+   "representative": "june2019_q10",
+   "members": [
+    "june2019_q10",
+    "dec2018_q9"
+   ],
+   "skip_note": "Both reduce to one tableau pivot.",
+   "id": "u1c35"
+  },
+  {
+   "title": "LP duality theorems and rules",
+   "type": "same-concept-variant",
+   "topic": "Linear Programming & Optimization",
+   "technique": "Equality constraint in max primal => unrestricted dual variable; weak/strong duality; optimal tableau gives dual solution.",
+   "what_changes": "Statement set.",
+   "representative": "dec2019_q67",
+   "members": [
+    "dec2019_q67",
+    "sep2022_q10"
+   ],
+   "skip_note": "Same duality rules.",
+   "id": "u1c36"
+  },
+  {
+   "title": "Group theory statement-check",
+   "type": "same-concept-variant",
+   "topic": "Algebraic Structures (Groups, Rings)",
+   "technique": "Facts: identity and inverse unique; element order divides |G|; even-order group has element of order 2; (xy)^2=x^2y^2 for all x,y implies abelian but x^3=1 does not; finite closed subset is a subgroup; group has at least one element.",
+   "what_changes": "Which of A-D statements are listed.",
+   "representative": "dec2022_q41",
+   "members": [
+    "dec2022_q41",
+    "dec2023_q86",
+    "dec2019_q66",
+    "june2025_q53",
+    "june2023_q82"
+   ],
+   "skip_note": "Same fact bank across papers.",
+   "id": "u1c37"
+  },
+  {
+   "title": "Semigroup property reasoning",
+   "type": "same-concept-variant",
+   "topic": "Algebraic Structures (Groups, Rings)",
+   "technique": "Use the given hypothesis to force identities; two-element semigroup with a*a=b: b*b=b.",
+   "what_changes": "Hypothesis.",
+   "representative": "sep2022_q72",
+   "members": [
+    "sep2022_q72",
+    "nov2021_q29"
+   ],
+   "skip_note": "Same style.",
+   "id": "u1c38"
+  },
+  {
+   "title": "Homomorphism and automorphism of integer/real groups",
+   "type": "same-concept-variant",
+   "topic": "Algebraic Structures (Groups, Rings)",
+   "technique": "Kernel decides injectivity; image decides surjectivity; Aut(Z,+)={x->x, x->-x}.",
+   "what_changes": "Map and groups.",
+   "representative": "june2023_q4",
+   "members": [
+    "june2023_q4",
+    "june2023_q67"
+   ],
+   "skip_note": "Both use kernel/image.",
+   "id": "u1c39"
+  },
+  {
+   "title": "Unknown-base arithmetic equation",
+   "type": "same-concept-variant",
+   "topic": "Number Theory & Number Systems",
+   "technique": "Expand each number in its base as polynomial in b, set equal, solve and check digit validity.",
+   "what_changes": "Numbers in equation.",
+   "representative": "dec2019_q12",
+   "members": [
+    "dec2019_q12",
+    "june2019_q18"
+   ],
+   "skip_note": "Same method.",
+   "id": "u1c40"
+  },
+  {
+   "title": "Radix and valid digit questions",
+   "type": "same-concept-variant",
+   "topic": "Number Theory & Number Systems",
+   "technique": "Digits must be smaller than base; for a quadratic with roots in base b, use sum/product of roots.",
+   "what_changes": "Given polynomial or digits.",
+   "representative": "nov2020_q8",
+   "members": [
+    "nov2020_q8",
+    "june2024_reexam_q11"
+   ],
+   "skip_note": "Same digit rules.",
+   "id": "u1c41"
+  },
+  {
+   "title": "Euler/Fermat/modular computation",
+   "type": "same-concept-variant",
+   "topic": "Number Theory & Number Systems",
+   "technique": "phi(n)=n*prod(1-1/p); a^phi(n) = 1 mod n; Fermat a^(p-1)=1 mod p (not a^p=1); repeated squaring.",
+   "what_changes": "Modulus and base.",
+   "representative": "dec2023_q76",
+   "members": [
+    "dec2023_q76",
+    "june2019_q70",
+    "dec2019_q35",
+    "june2019_q63",
+    "nov2020_q80"
+   ],
+   "skip_note": "Same toolbox.",
+   "id": "u1c42"
+  },
+  {
+   "title": "Poisson probability of zero arrivals",
+   "type": "same-formula",
+   "topic": "Probability & Statistics",
+   "technique": "P(0)=e^(-lambda t); convert rate to the time window (30/hr for 40 min => 20).",
+   "what_changes": "Rate and window.",
+   "representative": "june2023_q57",
+   "members": [
+    "june2023_q57",
+    "july2018_q53"
+   ],
+   "skip_note": "Identical question with new numbers.",
+   "id": "u1c43"
+  },
+  {
+   "title": "Full joint distribution table: marginal/conditional/union",
+   "type": "same-concept-variant",
+   "topic": "Probability & Statistics",
+   "technique": "Add matching cells for marginals; P(A|B)=P(A and B)/P(B); P(A or B)=P(A)+P(B)-P(A and B).",
+   "what_changes": "Event asked from the same 8-cell table.",
+   "representative": "nov2021_q60",
+   "members": [
+    "nov2021_q60",
+    "nov2021_q56",
+    "nov2021_q57",
+    "nov2021_q58",
+    "nov2021_q59",
+    "dec2018_q100"
+   ],
+   "skip_note": "Same table method; nov2021_q60 includes all steps.",
+   "id": "u1c44"
+  },
+  {
+   "title": "Probability of numbers divisible by 2 or 5",
+   "type": "exact-repeat",
+   "topic": "Probability & Statistics",
+   "technique": "Inclusion-exclusion: 1/2+1/5-1/10 = 3/5.",
+   "what_changes": "Range only.",
+   "representative": "june2025_q27",
+   "members": [
+    "june2025_q27",
+    "dec2023_q1"
+   ],
+   "skip_note": "Same answer for any range multiple of 10.",
+   "id": "u1c45"
+  },
+  {
+   "title": "Elementary probability with balls/coins",
+   "type": "same-concept-variant",
+   "topic": "Probability & Statistics",
+   "technique": "Favourable/total with combinations: C(6,2)C(4,2)/C(10,4)=3/7.",
+   "what_changes": "Context.",
+   "representative": "dec2018_q3",
+   "members": [
+    "dec2018_q3",
+    "june2024_reexam_q45",
+    "june2024_reexam_q72"
+   ],
+   "skip_note": "Same combinations approach.",
+   "id": "u1c46"
+  }
+ ],
+ "singletons": [
+  "dec2024_q40",
+  "june2024_cancelled_q55",
+  "dec2018_q8",
+  "sep2022_q93",
+  "june2019_q13",
+  "june2025_q9",
+  "july2018_q90",
+  "dec2022_shiftii_q4",
+  "dec2018_q6",
+  "june2023_q70",
+  "nov2020_q2",
+  "dec2018_q33",
+  "june2023_q27",
+  "dec2022_q42",
+  "dec2022_q3",
+  "dec2023_q58",
+  "june2019_q4",
+  "june2019_q5",
+  "dec2022_shiftii_q3",
+  "dec2019_q36",
+  "dec2022_shiftii_q66",
+  "july2018_q83",
+  "dec2022_shiftii_q89",
+  "dec2022_shiftii_q76",
+  "july2018_q82",
+  "dec2024_q7",
+  "dec2022_q66",
+  "dec2019_q1",
+  "june2025_q29",
+  "june2025_q87",
+  "june2024_cancelled_q41",
+  "june2024_cancelled_q63",
+  "sep2022_q2",
+  "june2024_cancelled_q43",
+  "july2018_q84",
+  "dec2024_q22",
+  "july2018_q80",
+  "dec2019_q59",
+  "june2023_q3",
+  "nov2020_q40",
+  "june2019_q6",
+  "nov2020_q38",
+  "dec2022_shiftii_q86",
+  "dec2018_q1",
+  "sep2022_q11",
+  "sep2022_q95",
+  "june2023_q23",
+  "june2019_q9",
+  "dec2019_q8",
+  "nov2021_q22",
+  "july2018_q86",
+  "june2023_q84",
+  "july2018_q87",
+  "nov2020_q74",
+  "june2024_cancelled_q46"
+ ],
+ "examiner_mindset": [
+  "Favourite format is the multi-select 'which of A-E are true' or Match-the-list: about a third of the unit uses these, so you must know every statement of a fact bank, not just one.",
+  "Recent papers re-use statement sets almost verbatim: Dec 2023 q42 and June 2024 (Cancelled) q22 share the same quantifier statements; Nov 2021 q27 and Dec 2024 q69 are the same planarity task; Dec 2023 q1 and June 2025 q27 differ only in the range (100 vs 200).",
+  "Passage blocks of five questions recur: Nov 2021 q56-60 (joint probability), Dec 2023 q91-95 (diet LP) and June 2024 Cancelled q91-95 (cloth LP). Each LP passage follows the same sequence: objective, constraints, dual, corner points, optimum.",
+  "Logic is the biggest topic (34 of 181) and almost always from the same toolbox: equivalences, quantifier truth in integers, negation, translation. Truth tables are not asked directly.",
+  "Typical distractors: converse vs contrapositive, distributing implication over AND/OR wrongly, Fermat's a^p=1 instead of a^(p-1)=1, Dirac's n/2 replaced by n/3, empty set vs {empty set}, an equivalence relation missing one property.",
+  "Difficulty is mostly easy-to-moderate recall; heavy computations (simplex tableaux, dual simplex) are rare and mostly in 2018-2019. After 2022 the examiner prefers conceptual statement checking and ordering/matching items.",
+  "Number reuse: Poisson with 20-30 requests per hour, 2-or-5 divisibility, unknown base with (b-2), and the regular wheel graph show up repeatedly with changed numbers.",
+  "Cross-unit overlap: PERT/CPM, Poisson and Bayes overlap with OR and probability topics; Boolean algebra overlaps with digital logic; trees overlap with data structures; recurrences overlap with algorithm analysis.",
+  "He never asks lengthy proofs, rings/fields in depth, calculus or matrices here; numerical methods appear only twice (June 2024 Cancelled) and the algebra part is limited to groups and semigroups.",
+  "Graph theory frequency has dropped since 2023 (6 questions in the last 6 papers vs 15 in the first 9) while LP and algebraic structures are rising."
+ ],
+ "formulas": [
+  {
+   "name": "Conditional equivalences",
+   "formula": "p->q = ~p v q = ~q->~p; ~(p->q) = p ^ ~q",
+   "used_in": [
+    "dec2022_q1",
+    "june2019_q8",
+    "dec2024_q14",
+    "nov2021_q21"
+   ],
+   "note": "Converse and inverse are NOT equivalent to p->q."
+  },
+  {
+   "name": "Biconditional",
+   "formula": "p<->q = (p->q)^(q->p) = (p^q) v (~p^~q); ~(p<->q) = ~p<->q",
+   "used_in": [
+    "dec2024_q14",
+    "nov2020_q3"
+   ],
+   "note": "Negation moves to one side only."
+  },
+  {
+   "name": "De Morgan / quantifier negation",
+   "formula": "~(p^q)=~p v ~q; ~exists x P = forall x ~P; ~forall x P = exists x ~P",
+   "used_in": [
+    "july2018_q85",
+    "dec2022_shiftii_q1",
+    "june2024_reexam_q47"
+   ],
+   "note": "Quantifier flips when negating."
+  },
+  {
+   "name": "Implication distribution",
+   "formula": "(p->r)^(q->r) = (p v q)->r ; (p^q)->r = (p->r) v (q->r)",
+   "used_in": [
+    "nov2020_q3"
+   ],
+   "note": "(p^q)->r is not equal to (p->r)^(q->r)."
+  },
+  {
+   "name": "Quantifier non-equivalences",
+   "formula": "forall x(P v Q) != forall x P v forall x Q ; exists x(P^Q) != exists x P ^ exists x Q",
+   "used_in": [
+    "dec2019_q59",
+    "nov2020_q40"
+   ],
+   "note": "Forall distributes over AND, exists over OR only."
+  },
+  {
+   "name": "Reflexive relations count",
+   "formula": "2^(n^2-n) on n elements (4 elements: 2^12)",
+   "used_in": [
+    "dec2019_q8"
+   ],
+   "note": "Symmetric relations: 2^(n(n+1)/2)."
+  },
+  {
+   "name": "Inclusion-exclusion",
+   "formula": "|AuBuC| = |A|+|B|+|C|-|AnB|-|AnC|-|BnC|+|AnBnC|",
+   "used_in": [
+    "june2025_q35",
+    "dec2018_q4",
+    "june2024_reexam_q79",
+    "june2019_q3"
+   ],
+   "note": "'Neither' = total - union."
+  },
+  {
+   "name": "Pigeonhole",
+   "formula": "min objects to guarantee r in one box with k boxes: k(r-1)+1",
+   "used_in": [
+    "dec2022_q4",
+    "nov2021_q24",
+    "june2019_q7"
+   ],
+   "note": "For cards use the worst case of all other suits."
+  },
+  {
+   "name": "Stars and bars",
+   "formula": "non-negative solutions of x1+..+xk=n : C(n+k-1,k-1)",
+   "used_in": [
+    "june2019_q2",
+    "june2023_q50"
+   ],
+   "note": "Subtract lower bounds first."
+  },
+  {
+   "name": "Onto functions",
+   "formula": "onto(n->k) = sum_i (-1)^i C(k,i)(k-i)^n",
+   "used_in": [
+    "nov2021_q23",
+    "dec2022_q2"
+   ],
+   "note": "5 to 4 = 240; 7 to 3 = 1806."
+  },
+  {
+   "name": "Multinomial coefficient",
+   "formula": "coefficient of x^a y^b z^c in (x+y+z)^n = n!/(a!b!c!)",
+   "used_in": [
+    "dec2022_q3"
+   ],
+   "note": "7!/(2!3!2!) = C(7,2)C(5,3)."
+  },
+  {
+   "name": "Linear recurrence solution",
+   "formula": "repeated root r: a_n=(A+Bn)r^n; f(n)=a f(n/2)+c solved with n=2^K",
+   "used_in": [
+    "june2024_cancelled_q26",
+    "june2024_cancelled_q10",
+    "nov2021_q25"
+   ],
+   "note": "Stairs: Fibonacci f(1)=1, f(2)=2."
+  },
+  {
+   "name": "Catalan numbers",
+   "formula": "binary trees / BSTs with n nodes = (2n)!/((n+1)!n!)",
+   "used_in": [
+    "dec2022_q42"
+   ],
+   "note": "Labelled binary trees multiply by n!."
+  },
+  {
+   "name": "Handshake lemma",
+   "formula": "sum of degrees = 2|E|; number of odd-degree vertices is even",
+   "used_in": [
+    "nov2021_q46",
+    "june2024_reexam_q78",
+    "dec2019_q7"
+   ],
+   "note": "Used to find unknown vertex count."
+  },
+  {
+   "name": "Tree and forest edges",
+   "formula": "tree: E=V-1; forest with k components: E=V-k",
+   "used_in": [
+    "dec2019_q7",
+    "dec2022_q76",
+    "dec2022_shiftii_q41"
+   ],
+   "note": "Min edges with k components = n-k."
+  },
+  {
+   "name": "Euler's planar formula",
+   "formula": "V-E+F=2 (connected planar); E<=3V-6",
+   "used_in": [
+    "june2019_q4",
+    "nov2021_q27",
+    "dec2024_q69"
+   ],
+   "note": "6 vertices of degree 4: E=12, F=8."
+  },
+  {
+   "name": "Cayley spanning trees",
+   "formula": "tau(K_n)=n^(n-2); tau(C_n)=n",
+   "used_in": [
+    "june2024_cancelled_q38",
+    "dec2022_shiftii_q28"
+   ],
+   "note": "K2,2=C4 has 4."
+  },
+  {
+   "name": "Hamiltonian conditions",
+   "formula": "Dirac: deg(v)>=n/2; Ore: deg(u)+deg(v)>=n for non-adjacent u,v; K(m,n) Hamiltonian iff m=n>=2",
+   "used_in": [
+    "dec2018_q20",
+    "june2024_reexam_q34",
+    "june2019_q5"
+   ],
+   "note": "Conditions are sufficient, not necessary."
+  },
+  {
+   "name": "Colouring facts",
+   "formula": "bipartite iff 2-colourable iff no odd cycle; planar => 4-colourable; chi<=Delta+1",
+   "used_in": [
+    "nov2020_q53",
+    "dec2018_q28",
+    "dec2022_shiftii_q66"
+   ],
+   "note": "Bipartite has no ODD cycles."
+  },
+  {
+   "name": "Edge counts of graph families",
+   "formula": "K_n: n(n-1)/2; C_n: n; W_n (n vertices): 2(n-1); K_{n,n}: n^2; Q_n: n*2^(n-1)",
+   "used_in": [
+    "dec2024_q58",
+    "nov2021_q26"
+   ],
+   "note": "W4 = K4 is the regular wheel."
+  },
+  {
+   "name": "Boolean algebra counts",
+   "formula": "Boolean functions of n variables: 2^(2^n); finite Boolean algebra has 2^n elements",
+   "used_in": [
+    "june2019_q13",
+    "dec2022_shiftii_q42"
+   ],
+   "note": "No Boolean algebra with 5 elements."
+  },
+  {
+   "name": "Poset under divisibility",
+   "formula": "GLB = gcd, LUB = lcm",
+   "used_in": [
+    "dec2019_q4",
+    "june2019_q1"
+   ],
+   "note": "Greatest element requires everything dividing it."
+  },
+  {
+   "name": "Dual of Boolean expression",
+   "formula": "swap + and ., swap 0 and 1; absorption a+ab=a",
+   "used_in": [
+    "june2024_cancelled_q42",
+    "dec2024_q79"
+   ],
+   "note": "Do not complement literals."
+  },
+  {
+   "name": "Poisson",
+   "formula": "P(X=0)=e^(-lambda t); P(X=k)=e^(-lt)(lt)^k/k!",
+   "used_in": [
+    "july2018_q53",
+    "june2023_q57"
+   ],
+   "note": "Convert the rate to the same time unit."
+  },
+  {
+   "name": "Conditional and union probability",
+   "formula": "P(A|B)=P(AnB)/P(B); P(AuB)=P(A)+P(B)-P(AnB); independent: 1-(1-a)(1-b)",
+   "used_in": [
+    "nov2021_q56",
+    "nov2021_q60",
+    "dec2024_q22",
+    "dec2018_q100"
+   ],
+   "note": "Divisible by 2 or 5: 1/2+1/5-1/10=3/5."
+  },
+  {
+   "name": "Total 5-card hands",
+   "formula": "C(52,5)=2,598,960",
+   "used_in": [
+    "july2018_q80"
+   ],
+   "note": "Atomic events in the joint distribution."
+  },
+  {
+   "name": "Euler phi and theorems",
+   "formula": "phi(n)=n prod(1-1/p); a^phi(n)=1 mod n (gcd=1); a^(p-1)=1 mod p; phi(45)=24",
+   "used_in": [
+    "june2019_q63",
+    "june2019_q70",
+    "dec2023_q76",
+    "nov2020_q80"
+   ],
+   "note": "a^p = a mod p, not 1."
+  },
+  {
+   "name": "Group facts",
+   "formula": "order of a divides |G|; even order => element of order 2; (xy)^-1=y^-1x^-1; Aut(Z,+) has 2 elements; x^2=e for all x => abelian",
+   "used_in": [
+    "dec2019_q66",
+    "june2025_q53",
+    "dec2024_q40",
+    "june2023_q4"
+   ],
+   "note": "x^3=1 for all x does not force commutativity."
+  },
+  {
+   "name": "LP duality rules",
+   "formula": "max primal <= constraints => dual min >= with y>=0; equality constraint => unrestricted dual variable; BFS in transportation has m+n-1 allocations",
+   "used_in": [
+    "sep2022_q10",
+    "dec2019_q1",
+    "dec2023_q94",
+    "june2024_cancelled_q91"
+   ],
+   "note": "Dual objective uses primal RHS."
+  },
+  {
+   "name": "Place-value/base",
+   "formula": "(d_k...d_0)_b = sum d_i b^i ; digits < b ; roots 4 and 7 of x^2-10x+26 means 4+7=11=10 in base b, so b=11",
+   "used_in": [
+    "june2019_q18",
+    "dec2019_q12",
+    "nov2020_q8",
+    "june2024_reexam_q11"
+   ],
+   "note": "Check that digits fit the base."
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Logic fact banks",
+   "topics": [
+    "Propositional & Predicate Logic"
+   ],
+   "hours": 3.0,
+   "do": "Memorise equivalence table; solve cluster reps dec2023_q42, dec2024_q14, nov2020_q3, june2025_q34, june2024_reexam_q61, dec2022_shiftii_q1 and singletons nov2020_q40, june2019_q6, dec2022_shiftii_q86."
+  },
+  {
+   "step": 2,
+   "focus": "Sets and relations",
+   "topics": [
+    "Sets, Relations & Functions"
+   ],
+   "hours": 2.5,
+   "do": "Solve reps dec2023_q43, june2023_q33, june2025_q35 and singletons june2019_q9, dec2019_q8, nov2021_q22, july2018_q87."
+  },
+  {
+   "step": 3,
+   "focus": "LP passages and graphical",
+   "topics": [
+    "Linear Programming & Optimization"
+   ],
+   "hours": 3.0,
+   "do": "Solve the passage reps (june2024_cancelled_q91/92/94/95) and nov2021_q30; read duality rules; do dec2024_q7 and dec2019_q1."
+  },
+  {
+   "step": 4,
+   "focus": "Graph theory basics",
+   "topics": [
+    "Graph Theory"
+   ],
+   "hours": 2.5,
+   "do": "Learn formulas; solve reps dec2019_q7, dec2024_q69, june2024_cancelled_q38, june2024_reexam_q34 and singletons june2019_q4, june2019_q5, dec2022_shiftii_q3."
+  },
+  {
+   "step": 5,
+   "focus": "Counting and recurrences",
+   "topics": [
+    "Combinatorics & Recurrences"
+   ],
+   "hours": 2.5,
+   "do": "Solve reps for pigeonhole, stars and bars, onto functions, recurrences, plus dec2022_q3 and dec2022_q42."
+  },
+  {
+   "step": 6,
+   "focus": "Probability",
+   "topics": [
+    "Probability & Statistics"
+   ],
+   "hours": 2.0,
+   "do": "Solve nov2021_q60, june2023_q57, june2025_q27, dec2018_q3 and sep2022_q2."
+  },
+  {
+   "step": 7,
+   "focus": "Boolean algebra and posets",
+   "topics": [
+    "Boolean Algebra, Lattices & Posets"
+   ],
+   "hours": 1.5,
+   "do": "Solve dec2019_q4, dec2022_shiftii_q42, dec2024_q79 and singletons june2019_q13, june2025_q9, dec2022_shiftii_q4."
+  },
+  {
+   "step": 8,
+   "focus": "Algebraic structures",
+   "topics": [
+    "Algebraic Structures (Groups, Rings)"
+   ],
+   "hours": 1.5,
+   "do": "Solve dec2022_q41, june2023_q4, sep2022_q72, dec2024_q40."
+  },
+  {
+   "step": 9,
+   "focus": "Number theory and bases",
+   "topics": [
+    "Number Theory & Number Systems",
+    "Numerical Methods & Misc Maths"
+   ],
+   "hours": 1.5,
+   "do": "Solve dec2019_q12, nov2020_q8, dec2023_q76, june2025_q29; skim numerical methods."
+  },
+  {
+   "step": 10,
+   "focus": "Revision with mixed timed set",
+   "topics": [
+    "Propositional & Predicate Logic",
+    "Sets, Relations & Functions",
+    "Linear Programming & Optimization",
+    "Graph Theory",
+    "Combinatorics & Recurrences",
+    "Probability & Statistics"
+   ],
+   "hours": 2.0,
+   "do": "Re-solve the minimum_set questions under time (about 45 seconds each)."
+  }
+ ],
+ "minimum_set": [
+  "dec2023_q42",
+  "dec2024_q14",
+  "june2025_q28",
+  "nov2020_q3",
+  "june2024_cancelled_q67",
+  "june2025_q34",
+  "june2024_reexam_q61",
+  "dec2022_shiftii_q1",
+  "dec2023_q43",
+  "june2023_q33",
+  "june2025_q35",
+  "dec2024_q89",
+  "june2023_q76",
+  "dec2019_q4",
+  "dec2022_shiftii_q42",
+  "dec2024_q79",
+  "dec2022_q4",
+  "june2023_q50",
+  "dec2022_q2",
+  "june2019_q3",
+  "june2024_cancelled_q26",
+  "june2025_q1",
+  "nov2021_q46",
+  "dec2024_q69",
+  "nov2020_q53",
+  "june2024_reexam_q34",
+  "june2024_cancelled_q38",
+  "dec2019_q7",
+  "dec2024_q58",
+  "june2024_cancelled_q92",
+  "june2024_cancelled_q94",
+  "june2024_cancelled_q91",
+  "june2024_cancelled_q95",
+  "nov2021_q30",
+  "june2019_q10",
+  "dec2019_q67",
+  "dec2022_q41",
+  "sep2022_q72",
+  "june2023_q4",
+  "dec2019_q12",
+  "nov2020_q8",
+  "dec2023_q76",
+  "june2023_q57",
+  "nov2021_q60",
+  "june2025_q27",
+  "dec2018_q3",
+  "nov2020_q40",
+  "june2019_q6",
+  "dec2022_shiftii_q86",
+  "sep2022_q11",
+  "june2019_q9",
+  "dec2019_q8",
+  "nov2021_q22",
+  "july2018_q87",
+  "june2019_q13",
+  "june2025_q9",
+  "dec2022_shiftii_q4",
+  "dec2022_q3",
+  "dec2022_q42",
+  "june2023_q70",
+  "june2019_q4",
+  "june2019_q5",
+  "dec2022_shiftii_q3",
+  "dec2024_q7",
+  "dec2019_q1",
+  "july2018_q83",
+  "sep2022_q2",
+  "july2018_q80",
+  "june2025_q29",
+  "dec2024_q40"
+ ]
+}

@@ -2,9 +2,14 @@ import { NextRequest, NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
 import type { PdfRef } from '@/lib/types'
 import pdfRefs from '@/data/pdf_refs.json'
+import studyMap from '@/data/study_map.json'
 
 // Where each question sits in its source PDF, keyed by question id (see pdf_refs.py)
 const PDF_REFS = pdfRefs as unknown as Record<string, PdfRef>
+
+// Subtopic, archetype and similar-question cluster for each question (see analysis/build_study_map.py)
+interface StudyTag { subtopic: string; archetype: string; format: string; clusterId: string | null; isRep: boolean }
+const STUDY_TAGS = (studyMap as unknown as { tags: Record<string, StudyTag> }).tags
 
 export async function GET(req: NextRequest) {
   try {
@@ -78,6 +83,11 @@ export async function GET(req: NextRequest) {
         unit: q.unit,
         unit_name: q.unitName,
         conceptName: q.conceptName,
+        subtopic: STUDY_TAGS[q.id]?.subtopic ?? '',
+        archetype: STUDY_TAGS[q.id]?.archetype ?? '',
+        format: STUDY_TAGS[q.id]?.format ?? '',
+        clusterId: STUDY_TAGS[q.id]?.clusterId ?? null,
+        isRep: STUDY_TAGS[q.id]?.isRep ?? false,
         pdf: PDF_REFS[q.id] ?? null,
         isAnswered: lastAttempt !== null,
         isCorrect: lastAttempt ? lastAttempt.isCorrect : false,

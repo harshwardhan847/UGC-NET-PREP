@@ -26,6 +26,7 @@ export interface Settings {
   feedbackMode: FeedbackMode // practice, smart, custom and review quizzes
   mockFeedbackMode: FeedbackMode // full paper mocks
   autoAdvance: boolean
+  skipSimilar: boolean // practice picks one question per similar-question cluster
   aiReinforcement: boolean
   tutorOpenByDefault: boolean
   showTimer: boolean
@@ -46,6 +47,7 @@ export const DEFAULT_SETTINGS: Settings = {
   feedbackMode: "instant",
   mockFeedbackMode: "exam",
   autoAdvance: false,
+  skipSimilar: true,
   aiReinforcement: true,
   tutorOpenByDefault: true,
   showTimer: true,

@@ -1,0 +1,1113 @@
+{
+ "unit": 7,
+ "name": "Data Structures and Algorithms",
+ "total_questions": 140,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "count": 32,
+   "papers": 14,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "32 questions (23%) present in 14 of 15 papers at about 2 per paper, steady across the period. The largest block: heaps, BST/AVL/B-tree, tree counting formulas, traversals.",
+   "what_to_study": [
+    "Tree counting identities (m-ary: L=(m-1)I+1; strict binary: 2L-1 nodes; Catalan for count of binary trees)",
+    "Build/insert heaps by hand; build-heap O(n); min in max heap O(n)",
+    "AVL rotation types LL RR LR RL and counting rotations; AVL vs red-black trade-offs",
+    "B-tree: height bound, node size, insertion splits",
+    "Traversals and reconstruction from pre+in",
+    "BST construction, height, subtree size",
+    "Heap vs balanced BST for the right operations"
+   ]
+  },
+  {
+   "topic": "Complexity Analysis & Recurrences",
+   "count": 25,
+   "papers": 14,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "25 questions (18%), present in 14 of 15 papers, 12 of them in the last 6 papers. The single biggest recurring block: master theorem, substitution, asymptotic ordering, complexity matching.",
+   "what_to_study": [
+    "Master theorem all 3 cases with log/sqrt f(n); non-standard shapes T(3n/4)+1, T(2n/3)+1",
+    "Substitution n -> 2^m for T(sqrt n) recurrences",
+    "Order functions by growth (compare logs; n^log n vs 2^n vs n^1.5)",
+    "Asymptotic notation properties: O,Omega,o,omega transitivity and the worst/best-case definition",
+    "Memorise complexity tables: sorts, searches, graph algorithms, FFT, Fibonacci methods, A*/DFS/hill climbing space/time",
+    "Order recurrences/algorithms by running time"
+   ]
+  },
+  {
+   "topic": "Algorithm Design Paradigms (DP, Greedy, D&C)",
+   "count": 21,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "21 questions (15%) in 11 of 15 papers; Dec 2022 passage (5 Qs) and June 2025 (4 Qs) show it is alive. Mix of conceptual matching and small numerical DP/greedy problems.",
+   "what_to_study": [
+    "Greedy vs DP vs D&C vs backtracking: classify standard problems (Dijkstra, Kruskal, Huffman, fractional knapsack = greedy; Bellman-Ford, LCS, edit distance, OBST, 0/1 knapsack = DP; merge/quick/binary search, Strassen, closest pair, FFT = D&C; 8-queens = backtracking)",
+    "Fractional knapsack: sort by profit/weight, fill, take fraction of last item; O(n log n)",
+    "LCS table computation and subsequence reading",
+    "Huffman construction (merge two smallest repeatedly), average code length, weighted path length",
+    "DP development steps in order: characterize, define recursively, compute bottom-up, construct solution",
+    "FFT: polynomial multiplication in O(n lg n)"
+   ]
+  },
+  {
+   "topic": "Graph Algorithms (BFS, DFS, MST, Shortest Path)",
+   "count": 22,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "fading",
+   "priority": "High",
+   "why": "22 questions (16%) in 11 papers, but only 2 came in the last 6 papers (2023-2025) versus 20 in the first 9, so it is fading; kept High (not Must) because of the large historical share and two direct hits in Dec 2024 and June 2024 Re-Exam.",
+   "what_to_study": [
+    "Run Prim and Kruskal by hand; MST weight; valid edge orders",
+    "DFS/BFS validity of traversal sequences (each next vertex must be a neighbour of the stack top / queue frontier)",
+    "Match algorithm to purpose and complexity (Dijkstra, Bellman-Ford, Floyd-Warshall, Prim, Kruskal, toposort, Edmonds-Karp)",
+    "DFS: no cross edges in undirected graph; applications are toposort and SCC",
+    "Flow network skew symmetry/conservation, Ford-Fulkerson O(E*f)",
+    "Edge relaxation: d[v]=min(d[v], d[u]+w)"
+   ]
+  },
+  {
+   "topic": "Hashing",
+   "count": 10,
+   "papers": 8,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "High",
+   "why": "10 questions (7%) in 8 of 15 papers (53%), steady 1-2 per paper. Two near-identical linear probing questions appear in different years.",
+   "what_to_study": [
+    "Simulate linear probing and closed hashing tables step by step",
+    "Chaining / linear / quadratic / double hashing definitions",
+    "Double hashing: probe difference = h2(k)",
+    "Universal hashing: table size n^2 gives collision probability < 1/2",
+    "Hash table is array-based"
+   ]
+  },
+  {
+   "topic": "Arrays, Stacks, Queues & Linked Lists",
+   "count": 9,
+   "papers": 6,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "High",
+   "why": "9 questions (6%) in 6 papers, but 7 of the 9 came in the last 6 papers (2023-2025), so it is rising. All are conceptual/definition level.",
+   "what_to_study": [
+    "Queue variants and applications (circular, priority, deque, simple) and BFS-queue / DFS-stack",
+    "Circular queue empty/full conditions (one slot sacrificed)",
+    "XOR linked list, deque via two stacks, deleting a node when only a pointer to it is given",
+    "Sparse matrix types (lower triangular) and adjacency-matrix = sequential representation"
+   ]
+  },
+  {
+   "topic": "NP-Completeness & Complexity Classes",
+   "count": 8,
+   "papers": 7,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "Medium",
+   "why": "8 questions (6%) in 7 papers; statement-type, mostly one per paper and concept-only.",
+   "what_to_study": [
+    "If any NP-complete problem is in P then P=NP; NP-complete = NP and NP-hard",
+    "SAT, CIRCUIT-SAT, TSP decision, Hamiltonian cycle are NP-complete",
+    "co-NP: P subset of co-NP; NP != co-NP implies P != NP",
+    "Approximation: vertex cover 2-approx; TSP with triangle inequality 2-approx",
+    "EXP class is 2^(n^k)"
+   ]
+  },
+  {
+   "topic": "Expression Conversion & Evaluation",
+   "count": 7,
+   "papers": 6,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Medium",
+   "why": "7 questions (5%) in 6 papers, almost one per paper, and always mechanical. Cheap marks once the stack procedure is drilled.",
+   "what_to_study": [
+    "Infix to postfix with precedence (^ right-assoc, then * /, then + -) and parentheses",
+    "Postfix and prefix evaluation with a stack (prefix: scan right to left)",
+    "Properties: operand order identical in infix/prefix/postfix; prefix is NOT reverse of postfix in general"
+   ]
+  },
+  {
+   "topic": "Sorting",
+   "count": 4,
+   "papers": 3,
+   "first_year": "July 2018",
+   "last_year": "June 2024 (Re-Exam)",
+   "trend": "fading",
+   "priority": "Low",
+   "why": "4 questions (3%) in 3 papers, only one in the last six papers; pure property facts.",
+   "what_to_study": [
+    "Stable: bubble, insertion, merge (quick, heap, shell, selection are not)",
+    "In place: insertion, heap, quick (merge is not)",
+    "Radix/counting: linear time for range n^c; radix cost = digits x n x radix"
+   ]
+  },
+  {
+   "topic": "Searching",
+   "count": 2,
+   "papers": 2,
+   "first_year": "December 2018",
+   "last_year": "November 2021",
+   "trend": "fading",
+   "priority": "Low",
+   "why": "Only 2 questions (1.4%), none since 2021. Covered by the comparison/complexity facts elsewhere.",
+   "what_to_study": [
+    "Second smallest of n: n + ceil(lg n) - 2 comparisons",
+    "Binary search on B blocks: log2 B block accesses"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "id": "u7c1",
+   "title": "Fractional knapsack passage (Dec 2022)",
+   "type": "same-concept-variant",
+   "topic": "Algorithm Design Paradigms (DP, Greedy, D&C)",
+   "technique": "Compute p/w ratios, sort descending, fill greedily, take a fraction of the last item that does not fit. Greedy is optimal for fractional, not for 0/1.",
+   "what_changes": "Capacity (15 vs 25), time complexity O(n log n) with n items, technique name, 0/1 vs fractional statement",
+   "representative": "dec2022_q92",
+   "members": [
+    "dec2022_q91",
+    "dec2022_q92",
+    "dec2022_q93",
+    "dec2022_q94",
+    "dec2022_q95"
+   ],
+   "skip_note": "All five share one item table; solving cap 25 fully (48.1) also gives cap 15 (40) and the greedy/O(n log n) facts."
+  },
+  {
+   "id": "u7c2",
+   "title": "Longest common subsequence",
+   "type": "same-formula",
+   "topic": "Algorithm Design Paradigms (DP, Greedy, D&C)",
+   "technique": "Fill LCS table: match -> diag+1 else max(up,left); read the sequence by backtracking.",
+   "what_changes": "Sequences and whether length or the actual subsequence is asked",
+   "representative": "june2025_q41",
+   "members": [
+    "dec2018_q23",
+    "june2025_q41"
+   ],
+   "skip_note": "Same LCS recurrence; length 4 both times."
+  },
+  {
+   "id": "u7c3",
+   "title": "Huffman coding computations and steps",
+   "type": "same-concept-variant",
+   "topic": "Algorithm Design Paradigms (DP, Greedy, D&C)",
+   "technique": "Repeatedly merge the two smallest weights; average length = sum(p*depth); weighted path length = sum of internal merge costs. Steps: leaves, priority queue, combine lowest, repeat.",
+   "what_changes": "Probabilities vs integer weights vs step ordering",
+   "representative": "july2018_q25",
+   "members": [
+    "july2018_q25",
+    "dec2022_q27",
+    "june2025_q86"
+   ],
+   "skip_note": "One Huffman run + the step order covers all three."
+  },
+  {
+   "id": "u7c4",
+   "title": "DP development steps and properties",
+   "type": "same-concept-variant",
+   "topic": "Algorithm Design Paradigms (DP, Greedy, D&C)",
+   "technique": "Order: characterize optimal structure, recursive definition, compute bottom-up, construct solution. Only optimal-substructure is shared with greedy. Cyclic dependency breaks DP.",
+   "what_changes": "Asked as ordering, common-steps, or true/false statements",
+   "representative": "june2025_q83",
+   "members": [
+    "june2019_q68",
+    "dec2019_q76",
+    "june2024_reexam_q83",
+    "june2025_q83"
+   ],
+   "skip_note": "Same four-step template; know the order once."
+  },
+  {
+   "id": "u7c5",
+   "title": "Classify problems by design paradigm",
+   "type": "same-concept-variant",
+   "topic": "Algorithm Design Paradigms (DP, Greedy, D&C)",
+   "technique": "Memorise the paradigm table: greedy (Dijkstra, Kruskal, Prim, Huffman, fractional knapsack), DP (Bellman-Ford, LCS, edit distance, OBST, 0/1 knapsack, Floyd), D&C (merge, quick, binary search, Strassen, closest pair), backtracking (8-queens).",
+   "what_changes": "Matching vs which-is-not vs which-uses-greedy",
+   "representative": "dec2022_q72",
+   "members": [
+    "july2018_q27",
+    "dec2022_q72",
+    "sep2022_q56",
+    "dec2024_q63",
+    "june2025_q37"
+   ],
+   "skip_note": "Same table in every question; the matching rep covers all."
+  },
+  {
+   "id": "u7c6",
+   "title": "FFT polynomial multiplication / FFT complexities",
+   "type": "same-concept-variant",
+   "topic": "Algorithm Design Paradigms (DP, Greedy, D&C)",
+   "technique": "FFT evaluates and interpolates in O(n lg n); pointwise product O(n); so multiplying degree-n polynomials is theta(n lg n).",
+   "what_changes": "Wording; June 2023 asks a match of FFT-related times",
+   "representative": "dec2022_shiftii_q27",
+   "members": [
+    "dec2019_q42",
+    "dec2022_shiftii_q27",
+    "june2023_q10"
+   ],
+   "skip_note": "Dec 2019 and Dec 2022 are exact repeats (n lg n)."
+  },
+  {
+   "id": "u7c7",
+   "title": "Queue/stack variants and applications",
+   "type": "same-concept-variant",
+   "topic": "Arrays, Stacks, Queues & Linked Lists",
+   "technique": "Know applications: circular queue-CPU scheduling, priority queue-Dijkstra, deque-palindrome check, queue-print, BFS-queue, DFS-stack, prefix-LISP, infix-syntax tree.",
+   "what_changes": "Matching form vs single-answer deque property",
+   "representative": "june2025_q49",
+   "members": [
+    "dec2024_q33",
+    "dec2024_q46",
+    "june2025_q49"
+   ],
+   "skip_note": "Same fact set re-asked as matching."
+  },
+  {
+   "id": "u7c8",
+   "title": "Asymptotic growth ordering",
+   "type": "same-concept-variant",
+   "topic": "Complexity Analysis & Recurrences",
+   "technique": "Take logs or substitute big n; known chain: log n < sqrt n < n < n log n < n^1.5 < n^2 < n^log n < 2^n < n!.",
+   "what_changes": "Functions, polynomial degrees, recurrences or search/sort names being ordered",
+   "representative": "nov2021_q47",
+   "members": [
+    "dec2023_q27",
+    "nov2021_q47",
+    "june2024_cancelled_q3",
+    "june2024_reexam_q30",
+    "dec2022_q78"
+   ],
+   "skip_note": "Same skill; one fully worked ordering plus the chain covers all."
+  },
+  {
+   "id": "u7c9",
+   "title": "Asymptotic notation properties",
+   "type": "same-concept-variant",
+   "topic": "Complexity Analysis & Recurrences",
+   "technique": "Check definitions: O,Omega transitive; o,omega transitive; algorithm O(g) iff worst O(g); f=O(g) implies g=Omega(f).",
+   "what_changes": "Which relation/conjecture is stated",
+   "representative": "sep2022_q52",
+   "members": [
+    "nov2020_q52",
+    "sep2022_q52",
+    "june2023_q12"
+   ],
+   "skip_note": "Definitions-only; same rule set."
+  },
+  {
+   "id": "u7c10",
+   "title": "Match algorithms to running times (sort/search/DP/AI)",
+   "type": "same-concept-variant",
+   "topic": "Complexity Analysis & Recurrences",
+   "technique": "Recall table: insertion best O(n), binary search O(lg n), quick avg n lg n worst n^2, heap n lg n, Rabin-Karp theta((n-m+1)m), Fibonacci naive exponential, memoised O(n), matrix-power O(lg n), hill climbing O(1), DFS O(bm), A*/BFS O(b^d), D&C recurrences.",
+   "what_changes": "Algorithm set differs each year",
+   "representative": "dec2024_q86",
+   "members": [
+    "sep2022_q85",
+    "june2023_q85",
+    "dec2023_q75",
+    "dec2024_q86",
+    "june2024_cancelled_q14"
+   ],
+   "skip_note": "Each is a table lookup; learn the table once."
+  },
+  {
+   "id": "u7c11",
+   "title": "Master theorem and simple recurrences",
+   "type": "same-concept-variant",
+   "topic": "Complexity Analysis & Recurrences",
+   "technique": "Compare f(n) with n^(log_b a): smaller -> n^log_b a; equal -> times log n; larger -> f(n). For T(n)=T(cn)+1 get log n.",
+   "what_changes": "Constants a,b and f(n)",
+   "representative": "june2025_q82",
+   "members": [
+    "july2018_q21",
+    "sep2022_q53",
+    "dec2022_q58",
+    "dec2024_q72",
+    "june2024_reexam_q86",
+    "june2025_q82"
+   ],
+   "skip_note": "All use the same three-case check."
+  },
+  {
+   "id": "u7c12",
+   "title": "Recurrences with sqrt(n) (substitution n=2^m)",
+   "type": "same-formula",
+   "topic": "Complexity Analysis & Recurrences",
+   "technique": "Set m = lg n, S(m)=T(2^m); T(n)=aT(sqrt n)+f becomes S(m)=aS(m/2)+f(m), then master theorem.",
+   "what_changes": "a and f(lg n)",
+   "representative": "dec2019_q39",
+   "members": [
+    "dec2018_q21",
+    "dec2019_q39"
+   ],
+   "skip_note": "Same substitution trick; one worked case suffices."
+  },
+  {
+   "id": "u7c13",
+   "title": "Infix to postfix conversion",
+   "type": "same-concept-variant",
+   "topic": "Expression Conversion & Evaluation",
+   "technique": "Stack of operators: pop while top has >= precedence (not for right-assoc ^); parentheses group; operands emitted immediately.",
+   "what_changes": "Expression and whether options reorder operators; Dec 2022 Shift II asks properties",
+   "representative": "nov2021_q85",
+   "members": [
+    "nov2021_q41",
+    "nov2021_q85",
+    "june2025_q22",
+    "dec2022_shiftii_q57"
+   ],
+   "skip_note": "Same stack algorithm each time."
+  },
+  {
+   "id": "u7c14",
+   "title": "Postfix/prefix evaluation",
+   "type": "same-concept-variant",
+   "topic": "Expression Conversion & Evaluation",
+   "technique": "Postfix: left to right, push operands, apply on two pops (second pop is left operand). Prefix: right to left.",
+   "what_changes": "Expression; final value, stack state, or ordering several values",
+   "representative": "dec2023_q4",
+   "members": [
+    "dec2018_q24",
+    "dec2023_q4",
+    "june2024_cancelled_q78"
+   ],
+   "skip_note": "Same stack evaluation."
+  },
+  {
+   "id": "u7c15",
+   "title": "Is this sequence a valid DFS?",
+   "type": "same-concept-variant",
+   "topic": "Graph Algorithms (BFS, DFS, MST, Shortest Path)",
+   "technique": "Walk the sequence: each next vertex must be adjacent to a vertex still on the DFS stack path (go back only when stuck).",
+   "what_changes": "Graph and sequences",
+   "representative": "sep2022_q73",
+   "members": [
+    "nov2021_q45",
+    "sep2022_q73"
+   ],
+   "skip_note": "Same checking method."
+  },
+  {
+   "id": "u7c16",
+   "title": "MST by hand (Prim/Kruskal)",
+   "type": "same-concept-variant",
+   "topic": "Graph Algorithms (BFS, DFS, MST, Shortest Path)",
+   "technique": "Kruskal: sort edges, add if no cycle. Prim: grow from start picking min edge to new vertex. MST weight is same.",
+   "what_changes": "Graph; asks weight, order, or invalid order",
+   "representative": "dec2019_q6",
+   "members": [
+    "dec2018_q12",
+    "dec2019_q6",
+    "nov2020_q78",
+    "dec2022_shiftii_q82"
+   ],
+   "skip_note": "Same hand simulation; do one Kruskal and one Prim."
+  },
+  {
+   "id": "u7c17",
+   "title": "Match graph algorithms to time complexities",
+   "type": "same-concept-variant",
+   "topic": "Graph Algorithms (BFS, DFS, MST, Shortest Path)",
+   "technique": "Dijkstra O(V^2) (array) / O(E lg V) (heap); Prim O(E lg V); Kruskal O(E lg E); Bellman-Ford O(VE); Floyd-Warshall theta(V^3); toposort theta(V+E); Edmonds-Karp O(VE^2).",
+   "what_changes": "Which subset of algorithms; notation O vs theta",
+   "representative": "nov2021_q50",
+   "members": [
+    "july2018_q24",
+    "dec2018_q27",
+    "june2019_q61",
+    "nov2020_q70",
+    "nov2021_q50"
+   ],
+   "skip_note": "Same table; July 2018 asks the SSSP identity only."
+  },
+  {
+   "id": "u7c18",
+   "title": "Graph algorithm purpose and properties",
+   "type": "same-concept-variant",
+   "topic": "Graph Algorithms (BFS, DFS, MST, Shortest Path)",
+   "technique": "Dijkstra: non-negative weights, single-source; Bellman-Ford: negative edges; Floyd/Warshall: all pairs/path matrix; Prim/Kruskal: MST. Shortest path need not have fewest edges.",
+   "what_changes": "Statements phrased differently",
+   "representative": "june2024_reexam_q74",
+   "members": [
+    "dec2019_q41",
+    "dec2022_shiftii_q72",
+    "june2024_reexam_q74"
+   ],
+   "skip_note": "Same purpose table."
+  },
+  {
+   "id": "u7c19",
+   "title": "BFS/DFS properties and applications",
+   "type": "same-concept-variant",
+   "topic": "Graph Algorithms (BFS, DFS, MST, Shortest Path)",
+   "technique": "DFS: toposort, SCC; no cross edges in undirected DFS tree; BFS tree edges can join same level. Prim/Dijkstra are best-first, not BFS.",
+   "what_changes": "Statement framing",
+   "representative": "nov2020_q86",
+   "members": [
+    "june2019_q65",
+    "nov2020_q86",
+    "dec2024_q71"
+   ],
+   "skip_note": "Concept-level; same facts."
+  },
+  {
+   "id": "u7c20",
+   "title": "Max-flow facts",
+   "type": "same-concept-variant",
+   "topic": "Graph Algorithms (BFS, DFS, MST, Shortest Path)",
+   "technique": "Flow: skew symmetry f(u,v)=-f(v,u) and conservation sum_v f(u,v)=0; Ford-Fulkerson O(E*f) for integer capacities.",
+   "what_changes": "Property vs complexity",
+   "representative": "july2018_q81",
+   "members": [
+    "june2019_q69",
+    "july2018_q81"
+   ],
+   "skip_note": "Two facts, memorise both."
+  },
+  {
+   "id": "u7c21",
+   "title": "Linear probing: location of key 18 (exact repeat)",
+   "type": "exact-repeat",
+   "topic": "Hashing",
+   "technique": "Insert in order with h=key mod 7, move to next free slot on collision; 18 lands at index 5.",
+   "what_changes": "Nothing - identical question",
+   "representative": "nov2021_q49",
+   "members": [
+    "july2018_q23",
+    "nov2021_q49"
+   ],
+   "skip_note": "Exact repeat; answer 5."
+  },
+  {
+   "id": "u7c22",
+   "title": "Hash insertion simulation",
+   "type": "same-concept-variant",
+   "topic": "Hashing",
+   "technique": "Compute h(x) for each key and probe forward to the next empty slot.",
+   "what_changes": "Hash function and keys; asks table state or index",
+   "representative": "sep2022_q57",
+   "members": [
+    "july2018_q70",
+    "sep2022_q57",
+    "june2023_q44"
+   ],
+   "skip_note": "Same simulation; july2018_q70 and june2023_q44 differ only in the hash function."
+  },
+  {
+   "id": "u7c23",
+   "title": "Collision resolution definitions",
+   "type": "same-concept-variant",
+   "topic": "Hashing",
+   "technique": "Chaining=linked list; linear=next slot; quadratic=skip by squares; double=second hash; hash table backed by array.",
+   "what_changes": "Matching vs one-liners",
+   "representative": "june2025_q45",
+   "members": [
+    "dec2023_q25",
+    "dec2023_q26",
+    "june2025_q45"
+   ],
+   "skip_note": "Same definitions."
+  },
+  {
+   "id": "u7c24",
+   "title": "NP-class statements",
+   "type": "same-concept-variant",
+   "topic": "NP-Completeness & Complexity Classes",
+   "technique": "Use: NPC subset of NP and NP-hard; one NPC in P implies P=NP; SAT/CIRCUIT-SAT/Hamiltonian/TSP-decision are NPC; P subset of co-NP.",
+   "what_changes": "Which statements are true",
+   "representative": "dec2024_q26",
+   "members": [
+    "june2019_q67",
+    "dec2022_q57",
+    "dec2022_shiftii_q56",
+    "june2023_q16",
+    "dec2024_q26"
+   ],
+   "skip_note": "Same fact set."
+  },
+  {
+   "id": "u7c25",
+   "title": "Stability and in-place properties of sorts",
+   "type": "same-concept-variant",
+   "topic": "Sorting",
+   "technique": "Stable: bubble, insertion, merge. In-place: insertion, heap, quick.",
+   "what_changes": "Property asked",
+   "representative": "june2024_reexam_q59",
+   "members": [
+    "june2019_q62",
+    "june2024_reexam_q59"
+   ],
+   "skip_note": "One table."
+  },
+  {
+   "id": "u7c26",
+   "title": "Linear-time and radix sorting",
+   "type": "same-concept-variant",
+   "topic": "Sorting",
+   "technique": "Radix sort on d-digit numbers: O(d(n+k)); range n^2 -> two passes base n -> O(n). Count-based answer: items x digits x radix.",
+   "what_changes": "Numbers",
+   "representative": "june2019_q64",
+   "members": [
+    "july2018_q28",
+    "june2019_q64"
+   ],
+   "skip_note": "Both radix sort; same reasoning."
+  },
+  {
+   "id": "u7c27",
+   "title": "Build heap / insert into heap by hand",
+   "type": "same-concept-variant",
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "technique": "Max-heapify from n/2 down (build) or sift-up on each insertion; write array.",
+   "what_changes": "Array and build vs insert",
+   "representative": "dec2018_q22",
+   "members": [
+    "july2018_q22",
+    "dec2018_q22"
+   ],
+   "skip_note": "Same hand simulation."
+  },
+  {
+   "id": "u7c28",
+   "title": "Heap and priority-queue operation costs",
+   "type": "same-concept-variant",
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "technique": "Build-heap O(n); heapify/insert/extract O(lg n); min in max-heap O(n); unsorted-array PQ insert O(1), extract-min O(n); heap cannot do dedup in O(lg n).",
+   "what_changes": "Operation asked",
+   "representative": "june2023_q2",
+   "members": [
+    "dec2019_q37",
+    "nov2020_q24",
+    "nov2021_q44",
+    "june2023_q2"
+   ],
+   "skip_note": "Same cost table."
+  },
+  {
+   "id": "u7c29",
+   "title": "Tree counting identities",
+   "type": "same-formula",
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "technique": "m-ary full: L=(m-1)I+1; strict binary: n=2L-1; degree sum: L=1+sum (d-1)*n_d; leaves of complete binary tree = i+1.",
+   "what_changes": "Arity, counts",
+   "representative": "nov2020_q23",
+   "members": [
+    "july2018_q26",
+    "july2018_q29",
+    "dec2018_q26",
+    "nov2020_q23",
+    "june2024_cancelled_q84"
+   ],
+   "skip_note": "Same identity; substitute numbers."
+  },
+  {
+   "id": "u7c30",
+   "title": "Balanced tree concepts (AVL, RB, B, 2-3-4)",
+   "type": "same-concept-variant",
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "technique": "AVL: strict balance, more rotations; RB: longest path <= 2x shortest, O(lg n); 2-3-4 tree equivalent to red-black; B-tree for disk; AVL rotations LL RR LR RL.",
+   "what_changes": "Assertion/reason or statement forms",
+   "representative": "dec2024_q81",
+   "members": [
+    "dec2022_q25",
+    "dec2022_q56",
+    "dec2023_q3",
+    "dec2023_q28",
+    "june2023_q21",
+    "june2024_reexam_q60",
+    "june2025_q23",
+    "dec2024_q81"
+   ],
+   "skip_note": "Mostly definitions; dec2024_q81 reviews all properties."
+  },
+  {
+   "id": "u7c31",
+   "title": "B-tree computations",
+   "type": "same-concept-variant",
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "technique": "Height h <= log_t((n+1)/2); node size = keys*key size + pointers*size; insertion worst case splits every level (+1 new root).",
+   "what_changes": "Parameters",
+   "representative": "june2023_q17",
+   "members": [
+    "dec2019_q38",
+    "sep2022_q55",
+    "june2023_q17"
+   ],
+   "skip_note": "Three small derivations."
+  },
+  {
+   "id": "u7c32",
+   "title": "Tree traversals",
+   "type": "same-concept-variant",
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "technique": "Inorder L-Root-R; reconstruct from preorder+inorder (root first from preorder, split inorder).",
+   "what_changes": "Figure vs reconstruction vs ordering steps",
+   "representative": "dec2024_q30",
+   "members": [
+    "sep2022_q58",
+    "dec2024_q30",
+    "dec2024_q67"
+   ],
+   "skip_note": "Same procedure."
+  },
+  {
+   "id": "u7c33",
+   "title": "BST build and measure",
+   "type": "same-concept-variant",
+   "topic": "Trees, BST, AVL, B-Trees & Heaps",
+   "technique": "Insert keys in order, then count left-subtree nodes or measure height (edges).",
+   "what_changes": "Keys and measure",
+   "representative": "dec2018_q25",
+   "members": [
+    "dec2018_q25",
+    "june2024_cancelled_q16"
+   ],
+   "skip_note": "Same simulation."
+  }
+ ],
+ "singletons": [
+  "dec2019_q75",
+  "nov2021_q42",
+  "june2023_q89",
+  "june2023_q18",
+  "june2024_cancelled_q51",
+  "june2025_q48",
+  "dec2018_q29",
+  "nov2020_q25",
+  "dec2023_q2",
+  "dec2022_shiftii_q26",
+  "dec2019_q40",
+  "nov2020_q26",
+  "dec2022_q82",
+  "dec2022_q28",
+  "june2019_q66",
+  "july2018_q30",
+  "sep2022_q87",
+  "june2023_q86",
+  "dec2018_q30",
+  "nov2021_q63",
+  "sep2022_q54",
+  "dec2022_shiftii_q25",
+  "sep2022_q59",
+  "nov2021_q43"
+ ],
+ "examiner_mindset": [
+  "Dominant format is \"match List I with List II\" and \"arrange in order\": same fact tables (complexities, paradigms, applications) re-asked with shuffled options.",
+  "Easy conceptual definitions are ~half the unit; hand-simulations (probing, heap build, Kruskal/Prim, postfix) form the numerical half and are always small.",
+  "Reuse is heavy: the Dec 2018 / Nov 2021 / July 2018 linear-probing \"key 18\" question appears twice verbatim; the Dec 2019 and Dec 2022 FFT n lg n question repeats; infix-to-postfix appears nearly every year.",
+  "Complexity block rising: master theorem variants (2T(n/4)+sqrt n, 3T(n/4)+n lg n, T(3m/4)+1, T(2n/3)+1) and sqrt(n) substitutions are favourite non-trivial items.",
+  "Graph questions faded sharply after 2022 (2 in last six papers vs 20 earlier) while arrays/queues concept questions rose (7 vs 2).",
+  "Distractors: swapping Omega/O, theta vs O, n lg n vs n^2 for sorts, n^lg n vs 2^n, rotating match options by one position, \"prefix is reverse of postfix\".",
+  "Multi-question passages appear (Dec 2022 knapsack, 5 Qs): one table gives 5 marks.",
+  "Trap statements: Bellman-Ford labelled greedy (it is DP), heap sort labelled D&C (it is not), TSP-tour called 3-approx (it is 2), EXP written 2^k.",
+  "Cross-unit overlap: DFS/BFS stack-queue (Unit 3-style programming), AI search complexities (hill climbing, A*), Dijkstra/Prim in networks-style matching.",
+  "He never asks long proofs, amortised analysis, red-black insertion step traces, Johnson/KMP algorithm traces or NP-reduction construction; all questions are 1-2 minute solvable."
+ ],
+ "formulas": [
+  {
+   "name": "Master theorem",
+   "formula": "T(n)=aT(n/b)+f(n): f<n^log_b a -> theta(n^log_b a); f=n^log_b a -> theta(f lg n); f>n^log_b a (regularity) -> theta(f)",
+   "used_in": [
+    "june2025_q82",
+    "sep2022_q53",
+    "dec2022_q58",
+    "june2024_reexam_q86"
+   ],
+   "note": "2T(n/4)+sqrt n -> sqrt n lg n (equal case); 3T(n/4)+n lg n -> n lg n (case 3)."
+  },
+  {
+   "name": "Constant-work shrink",
+   "formula": "T(n)=T(cn)+1 -> theta(lg n) for 0<c<1",
+   "used_in": [
+    "july2018_q21",
+    "dec2024_q72"
+   ],
+   "note": "T(3m/4)+1 and T(2n/3)+1 are both lg."
+  },
+  {
+   "name": "sqrt recurrence",
+   "formula": "T(n)=aT(sqrt n)+f(lg n): let m=lg n -> S(m)=aS(m/2)+f(m)",
+   "used_in": [
+    "dec2018_q21",
+    "dec2019_q39"
+   ],
+   "note": "2T(sqrt n)+lg n -> O(lg n lg lg n); 4T(sqrt n)+lg^2 n -> theta(lg^2 n lg lg n)."
+  },
+  {
+   "name": "Growth chain",
+   "formula": "lg n < sqrt n < n < n lg n < n^1.5 < n^2 < n^lg n < 2^n < n!",
+   "used_in": [
+    "nov2021_q47",
+    "dec2023_q27",
+    "june2024_reexam_q30",
+    "dec2022_q78"
+   ],
+   "note": "n^lg n is superpolynomial but below 2^n."
+  },
+  {
+   "name": "Worst/best-case O",
+   "formula": "Algorithm is O(g) iff worst case O(g); f=O(g) <=> g=Omega(f); little-o and little-omega transitive",
+   "used_in": [
+    "nov2020_q52",
+    "sep2022_q52",
+    "june2023_q12"
+   ],
+   "note": "O and o are not interchangeable; f=O(g) does not give omega."
+  },
+  {
+   "name": "Sort/search complexities",
+   "formula": "binary search lg n; insertion best n worst n^2; merge n lg n; quick avg n lg n worst n^2; heap n lg n; selection n^2",
+   "used_in": [
+    "dec2024_q86",
+    "dec2022_q78",
+    "sep2022_q85"
+   ],
+   "note": "Insertion sort best case linear."
+  },
+  {
+   "name": "Graph algorithm complexities",
+   "formula": "Dijkstra V^2 (heap E lg V); Prim E lg V; Kruskal E lg E; Bellman-Ford VE; Floyd-Warshall V^3; toposort/BFS/DFS V+E; Edmonds-Karp VE^2; Ford-Fulkerson E*f",
+   "used_in": [
+    "dec2018_q27",
+    "nov2020_q70",
+    "nov2021_q50",
+    "june2019_q61",
+    "july2018_q81"
+   ],
+   "note": "Kruskal sometimes written O(E lg V) - same."
+  },
+  {
+   "name": "Edge relaxation",
+   "formula": "d[v] = min(d[v], d[u]+w(u,v))",
+   "used_in": [
+    "dec2019_q40"
+   ],
+   "note": "Updated value 27 from 29 vs 15+12."
+  },
+  {
+   "name": "Fractional knapsack",
+   "formula": "Sort by p/w descending; take whole items then fraction of next; time O(n lg n)",
+   "used_in": [
+    "dec2022_q91",
+    "dec2022_q92",
+    "dec2022_q93",
+    "dec2022_q94"
+   ],
+   "note": "0/1 knapsack needs DP; fractional is greedy."
+  },
+  {
+   "name": "LCS recurrence",
+   "formula": "c[i,j]=c[i-1,j-1]+1 if x_i=y_j else max(c[i-1,j],c[i,j-1])",
+   "used_in": [
+    "dec2018_q23",
+    "june2025_q41"
+   ],
+   "note": "Subsequence need not be contiguous."
+  },
+  {
+   "name": "Huffman",
+   "formula": "Merge two least weights repeatedly; average length = sum p_i*len_i; weighted path length = sum of all merged internal node weights",
+   "used_in": [
+    "july2018_q25",
+    "dec2022_q27",
+    "june2025_q86"
+   ],
+   "note": "Probabilities 0.08,.40,.25,.15,.12 give 2.15."
+  },
+  {
+   "name": "DP steps",
+   "formula": "Characterize structure -> define recursively -> compute bottom-up -> construct solution",
+   "used_in": [
+    "june2025_q83",
+    "june2019_q68",
+    "june2024_reexam_q83"
+   ],
+   "note": "Only step 1 is shared with greedy."
+  },
+  {
+   "name": "FFT",
+   "formula": "Multiply degree-n polynomials in theta(n lg n); point-value product theta(n); Horner evaluation at n points theta(n^2)",
+   "used_in": [
+    "dec2019_q42",
+    "dec2022_shiftii_q27",
+    "june2023_q10"
+   ],
+   "note": "Parallel FFT span theta(lg n)."
+  },
+  {
+   "name": "Full m-ary tree",
+   "formula": "L=(m-1)*I+1; total nodes = m*I+1",
+   "used_in": [
+    "july2018_q29",
+    "nov2020_q23"
+   ],
+   "note": "41 leaves, 10 internal -> m=5."
+  },
+  {
+   "name": "Strict binary tree",
+   "formula": "n = 2L-1 nodes; internal = L-1",
+   "used_in": [
+    "july2018_q26",
+    "june2024_cancelled_q84"
+   ],
+   "note": "19 leaves -> 37 nodes exactly."
+  },
+  {
+   "name": "Degree-sum leaves",
+   "formula": "L = 1 + sum over internal nodes (degree-1)",
+   "used_in": [
+    "dec2018_q26"
+   ],
+   "note": "Ternary: 4*0+3*1+3*2+1=10."
+  },
+  {
+   "name": "Catalan number",
+   "formula": "Binary trees with n nodes = C(2n,n)/(n+1)",
+   "used_in": [
+    "dec2022_shiftii_q25"
+   ],
+   "note": "Not 2^n-1."
+  },
+  {
+   "name": "Heap facts",
+   "formula": "Build-heap theta(n); heapify O(lg n); nodes of height h <= ceil(n/2^(h+1)); min of max-heap lies in leaves O(n)",
+   "used_in": [
+    "june2023_q2",
+    "sep2022_q54",
+    "nov2020_q24"
+   ],
+   "note": "Insert = sift up."
+  },
+  {
+   "name": "B-tree",
+   "formula": "height h <= log_t((n+1)/2); order M node: M-1 keys, M pointers; worst-case insert creates h+1 new nodes",
+   "used_in": [
+    "sep2022_q55",
+    "dec2019_q38",
+    "june2023_q17"
+   ],
+   "note": "4 levels -> 5 new nodes."
+  },
+  {
+   "name": "Red-black / AVL",
+   "formula": "RB: longest path <= 2x shortest, height <= 2 lg(n+1); AVL: |balance|<=1; 2-3-4 tree <-> red-black",
+   "used_in": [
+    "june2024_reexam_q60",
+    "dec2023_q28",
+    "june2023_q21"
+   ],
+   "note": "AVL more rotations, tighter balance."
+  },
+  {
+   "name": "Traversals",
+   "formula": "Inorder L,Root,R; unique tree from preorder+inorder or postorder+inorder",
+   "used_in": [
+    "sep2022_q58",
+    "dec2024_q30",
+    "dec2024_q67"
+   ],
+   "note": "Preorder first element is root."
+  },
+  {
+   "name": "Postfix/prefix",
+   "formula": "Postfix: scan left-right, pop 2 (second popped is left operand). Prefix: scan right-left. Operand order same in infix/postfix",
+   "used_in": [
+    "dec2023_q4",
+    "nov2021_q41",
+    "dec2022_shiftii_q57"
+   ],
+   "note": "Prefix is not simply reverse of postfix."
+  },
+  {
+   "name": "Circular queue",
+   "formula": "Capacity n-1 in array n; empty: front==rear; full: (rear+1) mod n == front",
+   "used_in": [
+    "june2023_q18"
+   ],
+   "note": "One slot sacrificed."
+  },
+  {
+   "name": "Double hashing",
+   "formula": "h(k,i) = (h1(k) + i*h2(k)) mod m; probe difference = h2(k)",
+   "used_in": [
+    "june2019_q66"
+   ],
+   "note": "123456 -> 257."
+  },
+  {
+   "name": "Universal hashing",
+   "formula": "m=n^2 slots, n keys: P(any collision) < 1/2",
+   "used_in": [
+    "dec2022_q28"
+   ],
+   "note": "Expected collisions < C(n,2)/m."
+  },
+  {
+   "name": "Radix sort cost",
+   "formula": "d digits, radix k: theta(d(n+k)); integers in 0..n^2-1 sort in O(n)",
+   "used_in": [
+    "july2018_q28",
+    "june2019_q64"
+   ],
+   "note": "9*5*8=360."
+  },
+  {
+   "name": "Second smallest",
+   "formula": "n + ceil(lg n) - 2 comparisons (tournament)",
+   "used_in": [
+    "dec2018_q30"
+   ],
+   "note": "Worst case."
+  },
+  {
+   "name": "NP facts",
+   "formula": "NPC in P => P=NP; NPC = NP intersect NP-hard; P subset of co-NP; NP != co-NP => P != NP; vertex cover 2-approx; TSP triangle-inequality 2-approx",
+   "used_in": [
+    "june2023_q16",
+    "dec2024_q26",
+    "june2019_q67",
+    "sep2022_q87"
+   ],
+   "note": "EXP = 2^(n^k), not 2^k."
+  },
+  {
+   "name": "Fibonacci methods",
+   "formula": "naive recursion exponential; memoised O(n); matrix/doubling O(lg n)",
+   "used_in": [
+    "june2023_q85"
+   ],
+   "note": "Matching question."
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Complexity & recurrences (largest, rising)",
+   "topics": [
+    "Complexity Analysis & Recurrences"
+   ],
+   "hours": 3.0,
+   "do": "Master theorem (solve june2025_q82, sep2022_q53), sqrt substitution (dec2019_q39), growth ordering (nov2021_q47), notation properties (sep2022_q52), complexity matching tables (dec2024_q86, nov2021_q50)."
+  },
+  {
+   "step": 2,
+   "focus": "Trees, heaps, BST, AVL, B-trees",
+   "topics": [
+    "Trees, BST, AVL, B-Trees & Heaps"
+   ],
+   "hours": 3.5,
+   "do": "Tree counting identities (nov2020_q23), balanced-tree concepts (dec2024_q81), heap build (dec2018_q22) and cost table (june2023_q2), B-tree derivations (june2023_q17), traversals (dec2024_q30), BST build (dec2018_q25), AVL rotations (sep2022_q59)."
+  },
+  {
+   "step": 3,
+   "focus": "Algorithm design paradigms",
+   "topics": [
+    "Algorithm Design Paradigms (DP, Greedy, D&C)"
+   ],
+   "hours": 2.5,
+   "do": "Paradigm table (dec2022_q72), knapsack passage (dec2022_q92), LCS (june2025_q41), Huffman (july2018_q25), DP steps (june2025_q83), FFT (dec2022_shiftii_q27)."
+  },
+  {
+   "step": 4,
+   "focus": "Graph algorithms",
+   "topics": [
+    "Graph Algorithms (BFS, DFS, MST, Shortest Path)"
+   ],
+   "hours": 2.5,
+   "do": "Kruskal and Prim by hand (dec2019_q6, nov2020_q78), DFS validity (sep2022_q73), complexity table (nov2021_q50), purpose table (june2024_reexam_q74), BFS/DFS facts (nov2020_q86), flow facts."
+  },
+  {
+   "step": 5,
+   "focus": "Hashing and arrays/queues/linked lists",
+   "topics": [
+    "Hashing",
+    "Arrays, Stacks, Queues & Linked Lists"
+   ],
+   "hours": 2.0,
+   "do": "Linear probing simulation (nov2021_q49, sep2022_q57), definitions (june2025_q45), queue applications (june2025_q49), circular queue (june2023_q18), XOR list (june2023_q89)."
+  },
+  {
+   "step": 6,
+   "focus": "Expression conversion and evaluation",
+   "topics": [
+    "Expression Conversion & Evaluation"
+   ],
+   "hours": 1.0,
+   "do": "Convert nov2021_q85, june2025_q22; evaluate dec2023_q4, dec2018_q24."
+  },
+  {
+   "step": 7,
+   "focus": "NP, sorting, searching quick facts",
+   "topics": [
+    "NP-Completeness & Complexity Classes",
+    "Sorting",
+    "Searching"
+   ],
+   "hours": 1.5,
+   "do": "NP statements (dec2024_q26), approximation facts (sep2022_q87), stability table (june2024_reexam_q59), radix (july2018_q28), second smallest (dec2018_q30)."
+  }
+ ],
+ "minimum_set": [
+  "dec2022_q92",
+  "june2025_q41",
+  "july2018_q25",
+  "june2025_q83",
+  "dec2022_q72",
+  "dec2022_shiftii_q27",
+  "june2025_q49",
+  "nov2021_q47",
+  "sep2022_q52",
+  "dec2024_q86",
+  "june2025_q82",
+  "dec2019_q39",
+  "nov2021_q85",
+  "dec2023_q4",
+  "sep2022_q73",
+  "dec2019_q6",
+  "nov2021_q50",
+  "june2024_reexam_q74",
+  "nov2020_q86",
+  "july2018_q81",
+  "nov2021_q49",
+  "sep2022_q57",
+  "june2025_q45",
+  "dec2024_q26",
+  "june2024_reexam_q59",
+  "june2019_q64",
+  "dec2018_q22",
+  "june2023_q2",
+  "nov2020_q23",
+  "dec2024_q81",
+  "june2023_q17",
+  "dec2024_q30",
+  "dec2018_q25",
+  "sep2022_q59",
+  "dec2022_shiftii_q26",
+  "nov2020_q25",
+  "sep2022_q87",
+  "june2023_q89",
+  "june2023_q18",
+  "dec2018_q30"
+ ]
+}

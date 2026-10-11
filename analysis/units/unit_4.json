@@ -1,0 +1,1139 @@
+{
+ "unit": 4,
+ "name": "Database Management Systems (DBMS)",
+ "total_questions": 138,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "count": 29,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "29 questions (21%) in 11 of 15 papers; recurring passage sets (X/Y joins Dec 2023, sailors Sep 2022).",
+   "what_to_study": [
+    "Terminology: degree=attributes, cardinality=tuples, candidate/alternate/super/foreign key definitions",
+    "Join tuple counts: cross product n1*n2, natural join max n1*n2, outer joins keep unmatched tuples",
+    "Set operations (union, intersection, difference) and reading output to name the operator",
+    "Relational division for 'all' queries (pi(eid,cid)/pi(cid))",
+    "Writing/validating RA expressions on sailors-reserves-boats (difference for 'not', intersection for 'and')",
+    "Referential integrity: which insert/delete violates FK; RA and safe TRC/DRC equal power"
+   ]
+  },
+  {
+   "topic": "Normalization & Functional Dependencies",
+   "count": 28,
+   "papers": 14,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "28 questions (20% of unit), in 14 of 15 papers, and denser in 2023-25 than before. The single biggest scoring block.",
+   "what_to_study": [
+    "Attribute closure X+ and finding all candidate keys (attributes never on any RHS must be in every key)",
+    "Minimal/canonical cover: split RHS, remove extraneous LHS attributes, remove redundant FDs",
+    "Highest normal form: partial dependency (2NF), transitive/non-prime RHS (3NF), non-superkey determinant (BCNF)",
+    "Lossless-join test (R1 intersect R2 determines R1 or R2) and dependency preservation of a decomposition",
+    "Property statements: BCNF => 3NF => 2NF; BCNF may lose dependency preservation; 3NF decomposition always lossless + dependency preserving",
+    "Match lists: 1NF atomic, 2NF partial, 3NF transitive, BCNF superkey, 4NF MVD, 5NF join dependency"
+   ]
+  },
+  {
+   "topic": "SQL",
+   "count": 24,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "24 questions (17%) in 11 of 15 papers; fewer in 2023-25 but steady Must by volume.",
+   "what_to_study": [
+    "DDL (CREATE, ALTER, DROP) vs DML (SELECT, INSERT, UPDATE, DELETE) classification",
+    "GROUP BY / HAVING / aggregate query result reading (row counts, WHERE vs HAVING)",
+    "Nested subqueries: ALL, IN, EXISTS, correlated count for top-k",
+    "COUNT(*) vs COUNT(col) vs COUNT(DISTINCT col)",
+    "UPDATE with subquery, ALTER TABLE DROP COLUMN CASCADE/RESTRICT, DROP TABLE",
+    "varchar vs char storage"
+   ]
+  },
+  {
+   "topic": "Transactions, Serializability & Concurrency",
+   "count": 17,
+   "papers": 12,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "17 questions (12%) in 12 of 15 papers and clearly rising: 1.5 per recent paper vs 0.9 earlier.",
+   "what_to_study": [
+    "Conflict operation definition, conflict vs view serializability, precedence graph cycle test",
+    "Protocol properties: 2PL (may deadlock), strict 2PL (cascadeless), conservative 2PL (deadlock-free), timestamp ordering (deadlock-free), Thomas write rule (view only), tree protocol (deadlock-free)",
+    "Phantom problem: caused by inserts; handled by index/predicate locking",
+    "ACID properties, atomicity and temporary inconsistency, transaction states",
+    "Concurrency anomalies: dirty read, lost update, unrepeatable read; recoverable vs irrecoverable schedules"
+   ]
+  },
+  {
+   "topic": "ER Model & Database Design",
+   "count": 13,
+   "papers": 10,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "13 questions in 10 of 15 papers (67%) and appearing every recent year; easy marks.",
+   "what_to_study": [
+    "Design phase order: requirements, conceptual, logical, physical",
+    "ER attribute kinds (composite, multivalued, derived, complex) and ER vs relational difference",
+    "ER-to-relational mapping and minimum tables count (multivalued attribute and M:N get own tables)",
+    "Cardinality reading from scenario text; many-to-one as FD Pk(r1)->Pk(r2)",
+    "Specialization constraints (total/partial, disjoint/overlapping); ER symbols"
+   ]
+  },
+  {
+   "topic": "Database Architecture, Recovery & Misc",
+   "count": 11,
+   "papers": 9,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "11 questions in 9 of 15 papers (60%); mostly one-line concept recall.",
+   "what_to_study": [
+    "DBMS components: query optimizer, transaction processing, buffer/file manager, query processing step order",
+    "Authorization/privileges: grant only on own relations, system error is not malicious",
+    "Triggers execute automatically; DBMS vs file-system drawbacks; hierarchical/network models have parent-child links",
+    "Log-based recovery: undo uncommitted, redo committed",
+    "Integrity enforced by schema constraints"
+   ]
+  },
+  {
+   "topic": "Data Warehousing, Data Mining & NoSQL",
+   "count": 10,
+   "papers": 7,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "fading",
+   "priority": "Medium",
+   "why": "10 questions in 7 of 15 papers; all single-fact recall, fewer in recent papers.",
+   "what_to_study": [
+    "Hadoop: NameNode master, DataNode worker; HDFS, MapReduce, HBase, Hive, Pig (Yahoo), Hive (Facebook), Kafka (LinkedIn), Mahout",
+    "Fact table holds measures; dimension tables hold descriptors",
+    "Data scrubbing/cleaning improves quality; warehouse stores summary data",
+    "NoSQL stores: Memcached, CouchDB, graph DBs; k-means minimises within-cluster variance"
+   ]
+  },
+  {
+   "topic": "Indexing, B-Trees & File Organization",
+   "count": 6,
+   "papers": 5,
+   "first_year": "July 2018",
+   "last_year": "December 2023",
+   "trend": "fading",
+   "priority": "Low",
+   "why": "Only 6 questions in 5 papers, and 1 per recent paper pace is low; the order-calculation questions are the only real pattern.",
+   "what_to_study": [
+    "B+ tree leaf order: floor((B - block ptr)/(key + record ptr))",
+    "B-tree internal/leaf order with 1024-byte block (57,53 answer convention)",
+    "Clustering index on non-key ordering field; dense index entry per search key",
+    "Unclustered B+ sorted retrieval cost is about one I/O per record"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "title": "Candidate keys of U,V,W,X,Y,Z schema",
+   "type": "exact-repeat",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "Z and Y never appear on any RHS so are in every key; add one of U/V/X (they determine each other cyclically) and verify closure.",
+   "what_changes": "Nothing; same schema and options.",
+   "representative": "june2024_reexam_q8",
+   "members": [
+    "june2024_reexam_q8",
+    "nov2020_q14"
+   ],
+   "skip_note": "Identical question; solve once.",
+   "id": "u4c1"
+  },
+  {
+   "title": "Key of R(A,B,C,D,F) with C->F, E->A, EC->D, A->B",
+   "type": "exact-repeat",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "E and C never on RHS, so EC is in every key; EC+ = ABCDEF.",
+   "what_changes": "Only attribute name E/F vs typo; options identical.",
+   "representative": "june2025_q33",
+   "members": [
+    "june2025_q33",
+    "june2023_q51"
+   ],
+   "skip_note": "Identical question.",
+   "id": "u4c2"
+  },
+  {
+   "title": "Candidate keys via attribute closure",
+   "type": "same-formula",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "Find attributes not on any RHS, start from them, compute closure, then try minimal additions.",
+   "what_changes": "Schema and FD set.",
+   "representative": "dec2018_q82",
+   "members": [
+    "dec2018_q82",
+    "dec2019_q97",
+    "dec2022_q14"
+   ],
+   "skip_note": "Same closure procedure; one worked example gives the method.",
+   "id": "u4c3"
+  },
+  {
+   "title": "Minimal cover / redundant FD",
+   "type": "same-formula",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "Split RHS to single attributes, remove extraneous LHS attributes, drop FDs derivable from the rest (A->D from A->BC, BC->D).",
+   "what_changes": "FD set; ask for cover or for the redundant FD.",
+   "representative": "sep2022_q61",
+   "members": [
+    "sep2022_q61",
+    "dec2019_q96",
+    "dec2019_q99",
+    "dec2022_q50"
+   ],
+   "skip_note": "Same three-step algorithm.",
+   "id": "u4c4"
+  },
+  {
+   "title": "Highest normal form of relation from FDs",
+   "type": "same-formula",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "Find keys, flag partial dependencies (not 2NF), then non-prime transitive or non-superkey determinants (not 3NF/BCNF).",
+   "what_changes": "Schema and FD set.",
+   "representative": "june2024_reexam_q2",
+   "members": [
+    "june2024_reexam_q2",
+    "nov2021_q67",
+    "dec2019_q98",
+    "july2018_q66",
+    "june2025_q52"
+   ],
+   "skip_note": "Same decision procedure.",
+   "id": "u4c5"
+  },
+  {
+   "title": "Lossless join and dependency preservation of decomposition",
+   "type": "same-concept-variant",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "Chase/common-attribute test for lossless; project FDs and check each FD is derivable in union of fragments.",
+   "what_changes": "FD chain and fragments.",
+   "representative": "june2024_reexam_q21",
+   "members": [
+    "june2024_reexam_q21",
+    "june2023_q24"
+   ],
+   "skip_note": "Same chain-of-FDs template; do one.",
+   "id": "u4c6"
+  },
+  {
+   "title": "Normal form property statements (BCNF/3NF/4NF)",
+   "type": "same-concept-variant",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "Remember BCNF stronger than 3NF; BCNF may not preserve dependencies; 3NF always lossless+dependency preserving; two-attribute relation is BCNF.",
+   "what_changes": "Which of the true/false statements is picked.",
+   "representative": "june2025_q70",
+   "members": [
+    "june2025_q70",
+    "june2023_q29",
+    "dec2024_q34",
+    "june2019_q34"
+   ],
+   "skip_note": "Same fact set re-sampled.",
+   "id": "u4c7"
+  },
+  {
+   "title": "Match normal forms with properties",
+   "type": "same-concept-variant",
+   "topic": "Normalization & Functional Dependencies",
+   "technique": "1NF scalar, 2NF partial, 3NF transitive, BCNF all determinants keys (not always dep preserving), 4NF MVD, 5NF JD.",
+   "what_changes": "Pairing list and ordering.",
+   "representative": "dec2023_q69",
+   "members": [
+    "dec2023_q69",
+    "sep2022_q76"
+   ],
+   "skip_note": "Same match table.",
+   "id": "u4c8"
+  },
+  {
+   "title": "RA vs relational calculus expressive power",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Basic RA, safe TRC and safe DRC are equivalent in power.",
+   "what_changes": "Statement form vs options form.",
+   "representative": "dec2022_q87",
+   "members": [
+    "dec2022_q87",
+    "june2019_q31"
+   ],
+   "skip_note": "Single fact.",
+   "id": "u4c9"
+  },
+  {
+   "title": "Dec 2023 passage on relations X and Y joins",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Compute matching on S column; natural join and equi-join counts matched tuples, cross product 4x4, right outer keeps all Y, full outer keeps all of both.",
+   "what_changes": "Which join/operation is asked.",
+   "representative": "dec2023_q96",
+   "members": [
+    "dec2023_q96",
+    "dec2023_q97",
+    "dec2023_q98",
+    "dec2023_q99",
+    "dec2023_q100"
+   ],
+   "skip_note": "Same data; understanding one table solves all.",
+   "id": "u4c10"
+  },
+  {
+   "title": "Sailors-Reserves-Boats relational algebra queries",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Join through Reserves; difference for \"not\", intersection of sid sets for \"and\".",
+   "what_changes": "Colour, age filters, which query is valid.",
+   "representative": "sep2022_q35",
+   "members": [
+    "sep2022_q31",
+    "sep2022_q32",
+    "sep2022_q33",
+    "sep2022_q35"
+   ],
+   "skip_note": "Same passage and idioms.",
+   "id": "u4c11"
+  },
+  {
+   "title": "Relational division for \"all\"",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "pi(x,y)(R) / pi(y)(S) gives x related to every y.",
+   "what_changes": "Schema names.",
+   "representative": "june2025_q17",
+   "members": [
+    "june2025_q17",
+    "sep2022_q34"
+   ],
+   "skip_note": "Same pattern.",
+   "id": "u4c12"
+  },
+  {
+   "title": "Candidate/alternate key definitions",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Candidate key = minimal super key (unique and irreducible); alternate = candidate not chosen as primary.",
+   "what_changes": "Wording of definition.",
+   "representative": "dec2024_q11",
+   "members": [
+    "dec2024_q11",
+    "dec2022_shiftii_q14",
+    "june2019_q36"
+   ],
+   "skip_note": "Same definitions.",
+   "id": "u4c13"
+  },
+  {
+   "title": "Foreign key and referential integrity",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Foreign key refers to primary key; insert into referencing or delete from referenced violates.",
+   "what_changes": "Schema or operation list.",
+   "representative": "july2018_q69",
+   "members": [
+    "july2018_q69",
+    "dec2022_shiftii_q15",
+    "june2019_q35"
+   ],
+   "skip_note": "Same concept.",
+   "id": "u4c14"
+  },
+  {
+   "title": "Set operations in relational algebra",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Union, intersection, difference, Cartesian product are set operations; intersection is common tuples.",
+   "what_changes": "Operator asked.",
+   "representative": "dec2022_shiftii_q50",
+   "members": [
+    "dec2022_shiftii_q50",
+    "dec2022_q13",
+    "june2019_q33"
+   ],
+   "skip_note": "Trivial recall.",
+   "id": "u4c15"
+  },
+  {
+   "title": "Degree and cardinality terminology",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Degree = number of attributes; cardinality = number of tuples; cross product degree adds, tuples multiply.",
+   "what_changes": "Schema.",
+   "representative": "nov2021_q65",
+   "members": [
+    "nov2021_q65",
+    "dec2024_q65",
+    "nov2021_q62"
+   ],
+   "skip_note": "Same terms.",
+   "id": "u4c16"
+  },
+  {
+   "title": "Relational model structure features",
+   "type": "same-concept-variant",
+   "topic": "Relational Model & Relational Algebra/Calculus",
+   "technique": "Data in tables of rows and columns; atomic values, supports associations, no complex types.",
+   "what_changes": "Option wording.",
+   "representative": "june2024_reexam_q44",
+   "members": [
+    "june2024_reexam_q44",
+    "june2019_q32"
+   ],
+   "skip_note": "Basic recall.",
+   "id": "u4c17"
+  },
+  {
+   "title": "Nested subquery ALL / EXISTS / correlated",
+   "type": "same-concept-variant",
+   "topic": "SQL",
+   "technique": "Translate ALL as every, EXISTS as at least one; correlated count(higher price) < k gives top k.",
+   "what_changes": "Schema and nested query.",
+   "representative": "dec2022_q96",
+   "members": [
+    "dec2022_q96",
+    "dec2022_q97",
+    "dec2022_q100",
+    "july2018_q62"
+   ],
+   "skip_note": "Same reading skill.",
+   "id": "u4c18"
+  },
+  {
+   "title": "GROUP BY / HAVING / aggregate result",
+   "type": "same-concept-variant",
+   "topic": "SQL",
+   "technique": "Join first, group, then HAVING filters groups; WHERE filters rows.",
+   "what_changes": "Tables, query, row count asked.",
+   "representative": "dec2022_q98",
+   "members": [
+    "dec2022_q98",
+    "dec2022_q99",
+    "dec2019_q22",
+    "nov2021_q64",
+    "dec2018_q84"
+   ],
+   "skip_note": "Same method.",
+   "id": "u4c19"
+  },
+  {
+   "title": "Nov 2020 EMPLOYEE passage",
+   "type": "same-concept-variant",
+   "topic": "SQL",
+   "technique": "Read the schema, DISTINCT with IN, missing join condition gives Cartesian product, ALTER DROP, UPDATE with subquery.",
+   "what_changes": "Statement asked.",
+   "representative": "nov2020_q98",
+   "members": [
+    "nov2020_q96",
+    "nov2020_q97",
+    "nov2020_q98",
+    "nov2020_q99",
+    "nov2020_q100"
+   ],
+   "skip_note": "Same passage.",
+   "id": "u4c20"
+  },
+  {
+   "title": "COUNT queries over orders",
+   "type": "same-concept-variant",
+   "topic": "SQL",
+   "technique": "COUNT(DISTINCT customer_id) for distinct customers; COUNT(order_id) for orders of one customer.",
+   "what_changes": "Column counted.",
+   "representative": "june2024_cancelled_q99",
+   "members": [
+    "june2024_cancelled_q96",
+    "june2024_cancelled_q99"
+   ],
+   "skip_note": "Same passage.",
+   "id": "u4c21"
+  },
+  {
+   "title": "DDL vs DML classification",
+   "type": "same-concept-variant",
+   "topic": "SQL",
+   "technique": "CREATE/ALTER/DROP are DDL; SELECT/INSERT/UPDATE/DELETE are DML.",
+   "what_changes": "Statement picked.",
+   "representative": "dec2023_q13",
+   "members": [
+    "dec2023_q13",
+    "nov2021_q70",
+    "june2019_q37",
+    "june2024_reexam_q28"
+   ],
+   "skip_note": "Trivial recall.",
+   "id": "u4c22"
+  },
+  {
+   "title": "SQL command capabilities (INSERT, DROP, modify)",
+   "type": "same-concept-variant",
+   "topic": "SQL",
+   "technique": "INSERT adds one or many tuples, UPDATE/DELETE/INSERT modify data, SELECT does not, DROP TABLE removes a relation.",
+   "what_changes": "Which commands.",
+   "representative": "dec2024_q55",
+   "members": [
+    "dec2024_q55",
+    "dec2024_q35",
+    "dec2018_q79"
+   ],
+   "skip_note": "Same facts.",
+   "id": "u4c23"
+  },
+  {
+   "title": "Precedence graph conflict serializability",
+   "type": "same-concept-variant",
+   "topic": "Transactions, Serializability & Concurrency",
+   "technique": "Draw edge Ti->Tj for earlier conflicting op; cycle means not conflict serializable; timestamp order gives the serial order.",
+   "what_changes": "Schedules.",
+   "representative": "june2024_reexam_q36",
+   "members": [
+    "june2024_reexam_q36",
+    "july2018_q65",
+    "dec2022_q79"
+   ],
+   "skip_note": "Same drawing method.",
+   "id": "u4c24"
+  },
+  {
+   "title": "Concurrency protocol properties",
+   "type": "same-concept-variant",
+   "topic": "Transactions, Serializability & Concurrency",
+   "technique": "2PL may deadlock; strict 2PL cascadeless; conservative 2PL and timestamp deadlock-free; Thomas write view-only; tree protocol deadlock-free.",
+   "what_changes": "Protocol and property pairing.",
+   "representative": "june2023_q63",
+   "members": [
+    "june2023_q63",
+    "sep2022_q88",
+    "dec2022_q69",
+    "june2024_cancelled_q45"
+   ],
+   "skip_note": "Same table of protocol facts.",
+   "id": "u4c25"
+  },
+  {
+   "title": "Conflict and view serializability definitions",
+   "type": "same-concept-variant",
+   "topic": "Transactions, Serializability & Concurrency",
+   "technique": "Conflict: different transactions, same item, at least one write; conflict serializable implies view serializable.",
+   "what_changes": "Statements.",
+   "representative": "june2025_q77",
+   "members": [
+    "june2025_q77",
+    "nov2020_q48",
+    "dec2023_q49"
+   ],
+   "skip_note": "Same definitions.",
+   "id": "u4c26"
+  },
+  {
+   "title": "Phantom problem",
+   "type": "same-concept-variant",
+   "topic": "Transactions, Serializability & Concurrency",
+   "technique": "Caused by inserts; handled by index locking and predicate locking.",
+   "what_changes": "Cause vs remedy.",
+   "representative": "dec2024_q25",
+   "members": [
+    "dec2024_q25",
+    "june2024_cancelled_q59"
+   ],
+   "skip_note": "Same fact.",
+   "id": "u4c27"
+  },
+  {
+   "title": "ACID and concurrency anomalies",
+   "type": "same-concept-variant",
+   "topic": "Transactions, Serializability & Concurrency",
+   "technique": "ACID: atomicity, consistency, isolation, durability; uncontrolled concurrency causes dirty read, lost update, incorrect summary.",
+   "what_changes": "Which property or anomaly.",
+   "representative": "june2023_q53",
+   "members": [
+    "june2023_q53",
+    "dec2022_q49",
+    "dec2019_q73"
+   ],
+   "skip_note": "Same facts.",
+   "id": "u4c28"
+  },
+  {
+   "title": "Database design phase order",
+   "type": "exact-repeat",
+   "topic": "ER Model & Database Design",
+   "technique": "Requirements, conceptual, logical, physical.",
+   "what_changes": "Nothing except option order.",
+   "representative": "dec2024_q10",
+   "members": [
+    "dec2024_q10",
+    "june2024_reexam_q67"
+   ],
+   "skip_note": "Identical question.",
+   "id": "u4c29"
+  },
+  {
+   "title": "ER attribute types and ER vs relational",
+   "type": "same-concept-variant",
+   "topic": "ER Model & Database Design",
+   "technique": "Composite divisible, multivalued only in ER, relational attributes atomic.",
+   "what_changes": "Statement set.",
+   "representative": "june2023_q61",
+   "members": [
+    "june2023_q61",
+    "sep2022_q89"
+   ],
+   "skip_note": "Same facts.",
+   "id": "u4c30"
+  },
+  {
+   "title": "June 2024 customer-orders ER passage",
+   "type": "same-concept-variant",
+   "topic": "ER Model & Database Design",
+   "technique": "Customer 1:N orders, orders hold foreign keys, order-product M:N, rep manages many.",
+   "what_changes": "Sub-question.",
+   "representative": "june2024_cancelled_q97",
+   "members": [
+    "june2024_cancelled_q97",
+    "june2024_cancelled_q98",
+    "june2024_cancelled_q100"
+   ],
+   "skip_note": "Same passage.",
+   "id": "u4c31"
+  },
+  {
+   "title": "B-tree / B+ tree order from block size",
+   "type": "same-formula",
+   "topic": "Indexing, B-Trees & File Organization",
+   "technique": "Solve p*ptr + key sizes <= block size.",
+   "what_changes": "Sizes.",
+   "representative": "nov2021_q48",
+   "members": [
+    "nov2021_q48",
+    "nov2021_q66"
+   ],
+   "skip_note": "Same formula.",
+   "id": "u4c32"
+  },
+  {
+   "title": "DBMS components and query processing",
+   "type": "same-concept-variant",
+   "topic": "Database Architecture, Recovery & Misc",
+   "technique": "Optimizer reorders operations; transaction manager ensures consistent concurrent execution; scan-parse-validate, optimize, generate code, run.",
+   "what_changes": "Component asked.",
+   "representative": "nov2021_q61",
+   "members": [
+    "nov2021_q61",
+    "dec2019_q20",
+    "june2024_cancelled_q66"
+   ],
+   "skip_note": "Same concepts.",
+   "id": "u4c33"
+  },
+  {
+   "title": "Authorization and privileges",
+   "type": "same-concept-variant",
+   "topic": "Database Architecture, Recovery & Misc",
+   "technique": "Privileges can be granted only on own relations; OS authorization has drawbacks.",
+   "what_changes": "Statements.",
+   "representative": "june2024_cancelled_q56",
+   "members": [
+    "june2024_cancelled_q56",
+    "july2018_q68"
+   ],
+   "skip_note": "Same theme.",
+   "id": "u4c34"
+  },
+  {
+   "title": "File system drawbacks and DB models",
+   "type": "same-concept-variant",
+   "topic": "Database Architecture, Recovery & Misc",
+   "technique": "Redundancy, inconsistency, isolation, atomicity issues; hierarchical/network have parent-child.",
+   "what_changes": "Option set.",
+   "representative": "dec2022_shiftii_q48",
+   "members": [
+    "dec2022_shiftii_q48",
+    "dec2022_shiftii_q49"
+   ],
+   "skip_note": "Same paper, basic recall.",
+   "id": "u4c35"
+  },
+  {
+   "title": "Hadoop and big data ecosystem facts",
+   "type": "same-concept-variant",
+   "topic": "Data Warehousing, Data Mining & NoSQL",
+   "technique": "NameNode master; HBase, Hive, MapReduce, Pig, Kafka; NoSQL stores.",
+   "what_changes": "Tool pairing.",
+   "representative": "dec2024_q61",
+   "members": [
+    "dec2024_q61",
+    "dec2022_shiftii_q69",
+    "nov2020_q13",
+    "june2019_q38",
+    "dec2018_q80",
+    "sep2022_q75"
+   ],
+   "skip_note": "Same ecosystem facts.",
+   "id": "u4c36"
+  },
+  {
+   "title": "Data warehouse terminology",
+   "type": "same-concept-variant",
+   "topic": "Data Warehousing, Data Mining & NoSQL",
+   "technique": "Fact table holds measures; scrubbing cleans data; summary data.",
+   "what_changes": "Term.",
+   "representative": "dec2024_q54",
+   "members": [
+    "dec2024_q54",
+    "dec2018_q81",
+    "dec2018_q78"
+   ],
+   "skip_note": "Same terminology.",
+   "id": "u4c37"
+  }
+ ],
+ "singletons": [
+  "june2025_q42",
+  "dec2018_q83",
+  "sep2022_q62",
+  "june2024_reexam_q31",
+  "dec2024_q78",
+  "nov2021_q68",
+  "dec2019_q23",
+  "june2019_q39",
+  "july2018_q64",
+  "july2018_q67",
+  "nov2020_q67",
+  "june2023_q14",
+  "july2018_q63",
+  "dec2023_q50",
+  "dec2018_q85",
+  "dec2019_q100",
+  "june2024_reexam_q41",
+  "june2024_reexam_q35",
+  "dec2022_shiftii_q16",
+  "dec2019_q21",
+  "july2018_q61",
+  "dec2018_q77",
+  "june2023_q36",
+  "nov2021_q69"
+ ],
+ "examiner_mindset": [
+  "Normalization is the biggest bloc and rising; he reuses the same FD schemas verbatim (U,V,W,X,Y,Z keys in 2020 and 2024; R(A,B,C,D,F) in 2023 and 2025).",
+  "Passage sets (Q96-Q100 or Q31-Q35) recycle one schema for several questions: X/Y joins, sailors, university schema, customer-orders.",
+  "Questions are mostly computational reading (closure, keys, joins, group by) or one-line definition recall; hardly any hard design problems.",
+  "Statement-combination and match-the-following options dominate theory topics; distractors swap a true pair (e.g. BCNF vs 3NF dependency preservation).",
+  "He reuses definitions in different words: design phases, phantom problem, Hadoop tools, candidate key all recur.",
+  "Trap: dependency preservation is guaranteed for 3NF, not BCNF; conflict serializable implies view serializable but not the reverse.",
+  "Trap: SELECT is DML but not data modification; COUNT(*) vs COUNT(col); WHERE vs HAVING.",
+  "Transactions rising: precedence graph schedules and protocol property matching appear nearly every year.",
+  "Indexing and data mining are rarely asked; B+ order calculations appear only occasionally and use simplified arithmetic.",
+  "Overlaps with Unit 3/OS-style concurrency and Unit 10 big data only at the keyword level."
+ ],
+ "formulas": [
+  {
+   "name": "Attribute closure",
+   "formula": "X+ = X plus attributes derived by repeatedly applying FDs; X is a superkey iff X+ = all attributes",
+   "used_in": [
+    "dec2018_q82",
+    "dec2022_q14",
+    "june2023_q51",
+    "june2025_q33",
+    "nov2020_q14"
+   ],
+   "note": "Attributes never on any RHS must be in every key"
+  },
+  {
+   "name": "Candidate key",
+   "formula": "Minimal superkey; alternate key = candidate not chosen as primary",
+   "used_in": [
+    "dec2024_q11",
+    "june2019_q36",
+    "dec2022_shiftii_q14"
+   ],
+   "note": "Candidate key = unique and irreducible"
+  },
+  {
+   "name": "Minimal cover",
+   "formula": "Single-attribute RHS; no extraneous LHS attribute; no redundant FD",
+   "used_in": [
+    "sep2022_q61",
+    "dec2019_q96",
+    "dec2019_q99",
+    "dec2022_q50"
+   ],
+   "note": "Redundant FD = derivable from the rest"
+  },
+  {
+   "name": "2NF",
+   "formula": "No non-prime attribute depends on a proper subset of a candidate key",
+   "used_in": [
+    "nov2021_q67",
+    "july2018_q66",
+    "dec2019_q98"
+   ],
+   "note": "Partial dependency means not 2NF"
+  },
+  {
+   "name": "3NF",
+   "formula": "For each X->A: X is a superkey or A is prime",
+   "used_in": [
+    "june2025_q52",
+    "june2024_reexam_q2"
+   ],
+   "note": "Transitive dependency on non-prime breaks 3NF"
+  },
+  {
+   "name": "BCNF",
+   "formula": "For each nontrivial X->A: X is a superkey",
+   "used_in": [
+    "june2023_q29",
+    "june2025_q70",
+    "dec2024_q34",
+    "june2019_q34"
+   ],
+   "note": "BCNF => 3NF => 2NF => 1NF; may lose dependency preservation; any 2-attribute relation is in BCNF"
+  },
+  {
+   "name": "4NF / 5NF",
+   "formula": "4NF: every nontrivial MVD has a superkey LHS; 5NF: every join dependency is implied by candidate keys",
+   "used_in": [
+    "dec2023_q69",
+    "june2024_reexam_q35"
+   ],
+   "note": "5NF = project-join normal form"
+  },
+  {
+   "name": "Lossless binary decomposition",
+   "formula": "R1 intersect R2 -> R1 or R1 intersect R2 -> R2",
+   "used_in": [
+    "june2024_reexam_q21",
+    "june2023_q24"
+   ],
+   "note": "Also check each original FD is preserved in some fragment"
+  },
+  {
+   "name": "3NF guarantee",
+   "formula": "3NF synthesis is always lossless and dependency preserving; BCNF is lossless but may not preserve",
+   "used_in": [
+    "june2023_q29",
+    "june2024_reexam_q41"
+   ],
+   "note": "Classic distractor"
+  },
+  {
+   "name": "Cross product and join size",
+   "formula": "Cross product: degree d1+d2, tuples n1*n2; natural join max tuples n1*n2, min 0",
+   "used_in": [
+    "nov2021_q65",
+    "dec2019_q21",
+    "dec2023_q100",
+    "dec2023_q96"
+   ],
+   "note": "Outer joins add unmatched tuples (right outer >= |right relation|)"
+  },
+  {
+   "name": "Relational division",
+   "formula": "pi(x,y)(R) / pi(y)(S) gives x paired with every y",
+   "used_in": [
+    "june2025_q17",
+    "sep2022_q34"
+   ],
+   "note": "Use for 'all' queries"
+  },
+  {
+   "name": "Degree and cardinality",
+   "formula": "Degree = number of attributes; cardinality = number of tuples",
+   "used_in": [
+    "dec2024_q65",
+    "nov2021_q62"
+   ],
+   "note": "Snapshot gives both"
+  },
+  {
+   "name": "Referential integrity",
+   "formula": "Insert into referencing and delete from referenced relation can violate; ON DELETE CASCADE deletes referencing tuples",
+   "used_in": [
+    "july2018_q69",
+    "june2019_q39"
+   ],
+   "note": "Cascade chains transitively"
+  },
+  {
+   "name": "B+ tree leaf order",
+   "formula": "p*(key + record ptr) + block ptr <= B so p = floor((B - Pb)/(K+Pr))",
+   "used_in": [
+    "nov2021_q48",
+    "nov2021_q66"
+   ],
+   "note": "B=1024,K=9,Pr=7,Pb=6 gives 63; key for B-tree item was (57,53)"
+  },
+  {
+   "name": "Conflicting operations",
+   "formula": "Different transactions, same item, at least one write",
+   "used_in": [
+    "nov2020_q48",
+    "dec2023_q49",
+    "june2025_q77"
+   ],
+   "note": "Cycle in precedence graph => not conflict serializable"
+  },
+  {
+   "name": "Serializability hierarchy",
+   "formula": "Conflict serializable => view serializable; Thomas write rule only view serializable",
+   "used_in": [
+    "june2025_q77",
+    "sep2022_q88"
+   ],
+   "note": "Converse false"
+  },
+  {
+   "name": "Concurrency protocols",
+   "formula": "2PL may deadlock; strict 2PL cascadeless; conservative 2PL and timestamp ordering deadlock-free; tree protocol deadlock-free",
+   "used_in": [
+    "june2023_q63",
+    "dec2022_q69",
+    "june2024_cancelled_q45",
+    "sep2022_q88"
+   ],
+   "note": "Timestamp ordering is conflict serializable"
+  },
+  {
+   "name": "Phantom problem",
+   "formula": "Caused by insertions; prevented by index locking or predicate locking",
+   "used_in": [
+    "dec2024_q25",
+    "june2024_cancelled_q59"
+   ],
+   "note": "Not time stamping"
+  },
+  {
+   "name": "ACID",
+   "formula": "Atomicity, Consistency, Isolation, Durability",
+   "used_in": [
+    "june2023_q53",
+    "dec2022_q49"
+   ],
+   "note": "Deadlock-freedom is not part of ACID"
+  },
+  {
+   "name": "Transaction states",
+   "formula": "Active -> partially committed -> committed; active/partially committed -> failed -> aborted",
+   "used_in": [
+    "nov2021_q69"
+   ],
+   "note": "From active: partially committed or failed"
+  },
+  {
+   "name": "Irrecoverable schedule",
+   "formula": "Tj reads data written by Ti and commits before Ti commits",
+   "used_in": [
+    "june2023_q36"
+   ],
+   "note": "Cascadeless needs reads only of committed data"
+  },
+  {
+   "name": "DDL vs DML",
+   "formula": "DDL: CREATE, ALTER, DROP; DML: SELECT, INSERT, UPDATE, DELETE",
+   "used_in": [
+    "dec2023_q13",
+    "nov2021_q70",
+    "june2019_q37",
+    "dec2024_q35",
+    "dec2024_q55"
+   ],
+   "note": "SELECT does not modify data"
+  },
+  {
+   "name": "WHERE vs HAVING",
+   "formula": "WHERE filters rows before grouping; HAVING filters groups after aggregation",
+   "used_in": [
+    "dec2022_q99",
+    "dec2019_q22",
+    "dec2018_q84"
+   ],
+   "note": "Aggregate conditions go in HAVING"
+  },
+  {
+   "name": "COUNT variants",
+   "formula": "COUNT(*) counts rows; COUNT(col) ignores NULL; COUNT(DISTINCT col) counts distinct values",
+   "used_in": [
+    "june2024_cancelled_q96",
+    "june2024_cancelled_q99"
+   ],
+   "note": "Missing join condition gives Cartesian product (nov2020_q97)"
+  },
+  {
+   "name": "Top-k correlated query",
+   "formula": "where (select count(*) from book where price > B.price) < k lists the k most expensive",
+   "used_in": [
+    "july2018_q62"
+   ],
+   "note": "< 7 gives seven titles"
+  },
+  {
+   "name": "varchar vs char",
+   "formula": "varchar uses actual length; char(n) is padded to n",
+   "used_in": [
+    "dec2018_q77"
+   ],
+   "note": "3 and 20"
+  },
+  {
+   "name": "Hadoop roles",
+   "formula": "NameNode = master, DataNode = worker",
+   "used_in": [
+    "nov2020_q13",
+    "dec2024_q61"
+   ],
+   "note": "Pig-Yahoo, Hive-Facebook, Kafka-LinkedIn"
+  },
+  {
+   "name": "Design phases",
+   "formula": "Requirements, conceptual, logical, physical",
+   "used_in": [
+    "dec2024_q10",
+    "june2024_reexam_q67"
+   ],
+   "note": "Fixed order"
+  },
+  {
+   "name": "ER-to-relational",
+   "formula": "Entity -> table; multivalued attribute -> separate table; M:N -> own table; many-to-one r1 to r2: Pk(r1) -> Pk(r2)",
+   "used_in": [
+    "dec2019_q23",
+    "july2018_q67"
+   ],
+   "note": "ER-derived relations are at least 1NF"
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Normalization and FDs",
+   "topics": [
+    "Normalization & Functional Dependencies"
+   ],
+   "hours": 4.0,
+   "do": "Solve reps u4c1, u4c2, u4c3, u4c4, u4c5, u4c6, u4c7, u4c8; learn the NF hierarchy statements."
+  },
+  {
+   "step": 2,
+   "focus": "Relational algebra and joins",
+   "topics": [
+    "Relational Model & Relational Algebra/Calculus"
+   ],
+   "hours": 3.0,
+   "do": "Solve u4c10, u4c11, u4c12, u4c9 reps; memorise key and set-operation definitions."
+  },
+  {
+   "step": 3,
+   "focus": "SQL query reading",
+   "topics": [
+    "SQL"
+   ],
+   "hours": 2.5,
+   "do": "Solve u4c18, u4c19, u4c20, u4c22; learn DDL/DML, GROUP BY/HAVING and COUNT variants."
+  },
+  {
+   "step": 4,
+   "focus": "Transactions",
+   "topics": [
+    "Transactions, Serializability & Concurrency"
+   ],
+   "hours": 2.5,
+   "do": "Do a precedence graph (u4c24), protocol table (u4c25), phantom (u4c27) and ACID."
+  },
+  {
+   "step": 5,
+   "focus": "ER and design",
+   "topics": [
+    "ER Model & Database Design"
+   ],
+   "hours": 1.0,
+   "do": "Design phase order, attribute types, ER-to-table counting."
+  },
+  {
+   "step": 6,
+   "focus": "Architecture and recovery",
+   "topics": [
+    "Database Architecture, Recovery & Misc"
+   ],
+   "hours": 1.0,
+   "do": "Skim components, authorization, log recovery."
+  },
+  {
+   "step": 7,
+   "focus": "Hadoop / warehouse and indexing",
+   "topics": [
+    "Data Warehousing, Data Mining & NoSQL"
+   ],
+   "hours": 1.0,
+   "do": "Memorise Hadoop tool facts, fact table, B+ order formula."
+  }
+ ],
+ "minimum_set": [
+  "june2024_reexam_q8",
+  "june2025_q33",
+  "dec2018_q82",
+  "sep2022_q61",
+  "june2024_reexam_q2",
+  "june2024_reexam_q21",
+  "june2025_q70",
+  "dec2023_q69",
+  "dec2022_q87",
+  "dec2023_q96",
+  "sep2022_q35",
+  "june2025_q17",
+  "dec2024_q11",
+  "july2018_q69",
+  "dec2022_shiftii_q50",
+  "nov2021_q65",
+  "june2024_reexam_q44",
+  "dec2022_q96",
+  "dec2022_q98",
+  "nov2020_q98",
+  "june2024_cancelled_q99",
+  "dec2023_q13",
+  "dec2024_q55",
+  "june2024_reexam_q36",
+  "june2023_q63",
+  "june2025_q77",
+  "dec2024_q25",
+  "june2023_q53",
+  "dec2024_q10",
+  "june2023_q61",
+  "june2024_cancelled_q97",
+  "nov2021_q48",
+  "nov2021_q61",
+  "june2024_cancelled_q56",
+  "dec2022_shiftii_q48",
+  "dec2024_q61",
+  "dec2024_q54",
+  "dec2018_q83",
+  "sep2022_q62",
+  "june2024_reexam_q41",
+  "june2024_reexam_q35",
+  "dec2022_shiftii_q16",
+  "dec2019_q21",
+  "nov2021_q68",
+  "dec2019_q23",
+  "june2019_q39",
+  "nov2020_q67",
+  "june2024_reexam_q31",
+  "dec2019_q100",
+  "june2025_q42",
+  "june2023_q36",
+  "nov2021_q69"
+ ]
+}

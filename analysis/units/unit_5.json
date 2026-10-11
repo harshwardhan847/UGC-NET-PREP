@@ -1,0 +1,1181 @@
+{
+ "unit": 5,
+ "name": "System Software and Operating System",
+ "total_questions": 164,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Process Management & CPU Scheduling",
+   "count": 35,
+   "papers": 15,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "35 of 164 questions (21%), in all 15 papers, and rising (9 in first 5 papers, 26 in last 10). Scheduling numericals appear almost every paper.",
+   "what_to_study": [
+    "Gantt-chart method for FCFS, SJF, SRTF, priority, RR, HRRN",
+    "TAT/WT/RT/weighted TAT definitions",
+    "Starvation, aging, preemption conditions",
+    "Thread vs process, models, PCB",
+    "Little law, fork counting, Linux/Windows scheduling facts"
+   ]
+  },
+  {
+   "topic": "File Systems & Disk Scheduling",
+   "count": 31,
+   "papers": 12,
+   "first_year": "December 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "31 questions (19%) in 12 papers; disk scheduling numericals and RAID matching recur and rising.",
+   "what_to_study": [
+    "SSTF, SCAN, C-SCAN, LOOK, C-LOOK tracing",
+    "Disk capacity, rotational delay, transfer rate",
+    "RAID levels table",
+    "File allocation methods, inode file size",
+    "Layered file system order, journaling"
+   ]
+  },
+  {
+   "topic": "OS Concepts, Unix/Linux & Shell",
+   "count": 27,
+   "papers": 15,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "27 questions (16%), in all 15 papers; mostly one-fact recall and match-the-following.",
+   "what_to_study": [
+    "Unix/Linux commands and syscalls",
+    "Interrupts, privileged instructions, I/O protection",
+    "Linux interrupt priority levels, boot sequence",
+    "Matching-type OS terminology",
+    "Kernel types, IPC, system call parameter passing"
+   ]
+  },
+  {
+   "topic": "Page Replacement & Virtual Memory",
+   "count": 23,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2024 (Cancelled)",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "23 questions (14%) in 11 papers; page-fault counting is a staple.",
+   "what_to_study": [
+    "FIFO, LRU, Optimal simulation",
+    "Belady anomaly (FIFO only)",
+    "Effective access time with faults",
+    "Virtual memory statements and replacement steps",
+    "Reference/modify bit page classes"
+   ]
+  },
+  {
+   "topic": "Memory Management & Paging/Segmentation",
+   "count": 18,
+   "papers": 9,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "18 questions (11%) in 9 papers (4 early, 14 recent); address arithmetic repeated.",
+   "what_to_study": [
+    "Page/frame/offset bit calculations",
+    "Page table size, TLB EMAT",
+    "Internal vs external fragmentation, segmentation",
+    "Page table structures (hierarchical, inverted, clustered)",
+    "Swap time"
+   ]
+  },
+  {
+   "topic": "Process Synchronization & Semaphores",
+   "count": 13,
+   "papers": 10,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "13 questions (8%) but in 10 of 15 papers (67%) with steady trend; semaphore arithmetic recurs.",
+   "what_to_study": [
+    "Counting semaphore arithmetic",
+    "Critical section structure, mutual exclusion",
+    "Spin lock/busy waiting",
+    "Readers-writers"
+   ]
+  },
+  {
+   "topic": "Deadlocks",
+   "count": 8,
+   "papers": 4,
+   "first_year": "December 2018",
+   "last_year": "June 2024 (Re-Exam)",
+   "trend": "steady",
+   "priority": "Medium",
+   "why": "8 questions (5%) in 4 papers; 5 are one Banker passage and 2 are the same formula.",
+   "what_to_study": [
+    "n(m-1)+1 rule",
+    "Safe sequence and Banker data structures"
+   ]
+  },
+  {
+   "topic": "Compilers Phases (system software view)",
+   "count": 5,
+   "papers": 4,
+   "first_year": "November 2020",
+   "last_year": "June 2024 (Re-Exam)",
+   "trend": "rising",
+   "priority": "Medium",
+   "why": "5 questions (3%) in 4 papers, mostly recent.",
+   "what_to_study": [
+    "Phases of compiler and order",
+    "Symbol table uses and best data structure",
+    "Cross compiler"
+   ]
+  },
+  {
+   "topic": "Assemblers, Loaders, Linkers & Macros",
+   "count": 4,
+   "papers": 3,
+   "first_year": "November 2021",
+   "last_year": "December 2022 (Shift II)",
+   "trend": "fading",
+   "priority": "Low",
+   "why": "4 questions (2%) in 3 papers, none after Dec 2022.",
+   "what_to_study": [
+    "Pseudo-instructions (ORG, END, DEC)",
+    "Load-and-go assembler",
+    "Machine/assembly language classification",
+    "Location counter, activation record matching"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "id": "u5c1",
+   "title": "SSTF seek-time/head-movement on a request queue",
+   "type": "same-concept-variant",
+   "topic": "File Systems & Disk Scheduling",
+   "technique": "Sort out nearest-first order: from the head repeatedly pick the pending request with smallest |difference|; add the gaps (multiply by ms per cylinder if asked). Draw the visiting order on one line.",
+   "what_changes": "Request list, head start, cylinder count and ms/cylinder. june2019_q41 and june2023_q78 are the same queue (4,34,10,7,19,73,2,15,6,20 from 50 = 119).",
+   "representative": "june2023_q78",
+   "members": [
+    "june2023_q78",
+    "june2019_q41",
+    "nov2020_q16",
+    "june2025_q99"
+   ],
+   "skip_note": "If you can run SSTF once on june2023_q78 the other three are only different numbers."
+  },
+  {
+   "id": "u5c2",
+   "title": "Total head movement for FCFS / SCAN / C-SCAN / C-LOOK",
+   "type": "same-concept-variant",
+   "topic": "File Systems & Disk Scheduling",
+   "technique": "FCFS = sum of consecutive gaps. SCAN goes to the disk end then reverses; C-SCAN goes to the end then jumps to 0 (jump counted in the usual textbook answer) and continues; LOOK/C-LOOK turn at the last request, not the disk end.",
+   "what_changes": "Algorithm, direction, start head, queue, disk size.",
+   "representative": "june2025_q97",
+   "members": [
+    "june2025_q97",
+    "june2025_q100",
+    "dec2023_q17",
+    "dec2022_q80"
+   ],
+   "skip_note": "Same single skill of tracing one policy; after solving the June 2025 queue under two policies the rest follow."
+  },
+  {
+   "id": "u5c3",
+   "title": "Identify the 2nd request served / the policy from a head graph",
+   "type": "same-concept-variant",
+   "topic": "File Systems & Disk Scheduling",
+   "technique": "Trace the policy order on the same queue: C-LOOK(right) serves increasing requests then jumps to the lowest; SCAN(left) serves decreasing requests first. For a graph, look for a jump back without touching the disk end = C-LOOK.",
+   "what_changes": "Which policy and direction; asks order rather than total.",
+   "representative": "june2025_q96",
+   "members": [
+    "june2025_q96",
+    "june2025_q98",
+    "dec2024_q27"
+   ],
+   "skip_note": "Pure order-of-service tracing already trained by the head-movement cluster."
+  },
+  {
+   "id": "u5c4",
+   "title": "Disk capacity / geometry arithmetic",
+   "type": "same-formula",
+   "topic": "File Systems & Disk Scheduling",
+   "technique": "capacity = surfaces x tracks x sectors/track x bytes/sector; cylinders = tracks per surface; sector-address bits = log2(total sectors).",
+   "what_changes": "Which quantity is asked (capacity, track size, bits, sectors per track).",
+   "representative": "nov2020_q92",
+   "members": [
+    "nov2020_q92",
+    "nov2020_q91",
+    "nov2020_q93",
+    "sep2022_q8",
+    "dec2018_q18"
+   ],
+   "skip_note": "All are multiplications of the same four parameters; do nov2020_q92 and the rest are the same product."
+  },
+  {
+   "id": "u5c5",
+   "title": "Rotational delay and data-transfer rate",
+   "type": "same-formula",
+   "topic": "File Systems & Disk Scheduling",
+   "technique": "max rotational delay = 60/rpm s (avg = half); transfer rate = bytes per track x revolutions per second.",
+   "what_changes": "rpm and which of the two is asked.",
+   "representative": "nov2020_q95",
+   "members": [
+    "nov2020_q94",
+    "nov2020_q95"
+   ],
+   "skip_note": "Both come from the nov2020 passage disk; one rep suffices."
+  },
+  {
+   "id": "u5c6",
+   "title": "RAID level matching",
+   "type": "same-concept-variant",
+   "topic": "File Systems & Disk Scheduling",
+   "technique": "Memorise: 0 striping, 1 mirroring, 2 bit-level ECC (memory-style), 3 bit-interleaved parity, 4 block-interleaved parity, 5 block-interleaved distributed parity, 6 P+Q / Reed-Solomon.",
+   "what_changes": "Pairing of levels with descriptions; wording of descriptions varies.",
+   "representative": "june2025_q64",
+   "members": [
+    "june2025_q64",
+    "dec2024_q41",
+    "june2023_q46",
+    "june2024_cancelled_q25"
+   ],
+   "skip_note": "Same table of RAID facts every time; learn it once."
+  },
+  {
+   "id": "u5c7",
+   "title": "File allocation methods and fragmentation",
+   "type": "same-concept-variant",
+   "topic": "File Systems & Disk Scheduling",
+   "technique": "Contiguous: external fragmentation, fast direct access. Linked: no external fragmentation, no direct access, pointer space. Indexed: direct + sequential, no external fragmentation, index-block overhead.",
+   "what_changes": "Direction of question (which suffers / which advantages).",
+   "representative": "dec2023_q52",
+   "members": [
+    "dec2023_q52",
+    "nov2021_q72"
+   ],
+   "skip_note": "Same three-method comparison."
+  },
+  {
+   "id": "u5c8",
+   "title": "Paging address arithmetic (pages, frames, offset, page table size, internal fragmentation)",
+   "type": "same-formula",
+   "topic": "Memory Management & Paging/Segmentation",
+   "technique": "pages = VA size/page size; offset bits = log2(page size); frames = PM size/page size; PT size = pages x entry size; internal fragmentation = unused part of last page.",
+   "what_changes": "Memory sizes, page size, PTE size, which quantity asked.",
+   "representative": "nov2021_q79",
+   "members": [
+    "dec2024_q47",
+    "nov2021_q80",
+    "dec2023_q18",
+    "nov2021_q77",
+    "nov2021_q76",
+    "nov2021_q78",
+    "nov2021_q79"
+   ],
+   "skip_note": "Nov 2021 passage gives all subparts; rest are variants of the same computation."
+  },
+  {
+   "id": "u5c9",
+   "title": "Effective access time with TLB",
+   "type": "same-formula",
+   "topic": "Memory Management & Paging/Segmentation",
+   "technique": "EMAT = h(t+m) + (1-h)(t+2m) for single-level paging (t = TLB time, m = memory time).",
+   "what_changes": "h, t and m values.",
+   "representative": "nov2020_q18",
+   "members": [
+    "nov2020_q18",
+    "dec2019_q27"
+   ],
+   "skip_note": "Identical formula, only numbers change."
+  },
+  {
+   "id": "u5c10",
+   "title": "Logical / virtual / physical address terminology",
+   "type": "same-concept-variant",
+   "topic": "Memory Management & Paging/Segmentation",
+   "technique": "Address in main memory = physical address; CPU-generated = logical (virtual); address space = logical/virtual set, memory space = physical set.",
+   "what_changes": "Matching vs direct question.",
+   "representative": "june2025_q11",
+   "members": [
+    "dec2023_q14",
+    "june2025_q11"
+   ],
+   "skip_note": "Same vocabulary pair."
+  },
+  {
+   "id": "u5c11",
+   "title": "Count page faults on a reference string (FIFO / LRU / Optimal)",
+   "type": "same-concept-variant",
+   "topic": "Page Replacement & Virtual Memory",
+   "technique": "Simulate frames in a table; FIFO evicts oldest loaded, LRU least recently used, Optimal the page used farthest in future. Count misses.",
+   "what_changes": "Algorithm, frame count and reference string (and sometimes a difference between two algorithms).",
+   "representative": "nov2020_q15",
+   "members": [
+    "june2019_q44",
+    "nov2020_q15",
+    "dec2018_q72",
+    "july2018_q58",
+    "sep2022_q63",
+    "dec2022_q19"
+   ],
+   "skip_note": "Mechanical simulation; practise on nov2020_q15 (FIFO and LRU) and the others are the same drill."
+  },
+  {
+   "id": "u5c12",
+   "title": "June 2023 passage: column-major vs row-major array traversal under LRU",
+   "type": "same-concept-variant",
+   "topic": "Page Replacement & Virtual Memory",
+   "technique": "Pages hold rows of 1024 entries per page; column-wise traversal of 17 rows with 17 or fewer frames: count faults per column vs row-wise: 17 faults once, then hits.",
+   "what_changes": "Subquestion (faults, hit ratio, ratio of faults).",
+   "representative": "june2023_q93",
+   "members": [
+    "june2023_q91",
+    "june2023_q95",
+    "june2023_q94",
+    "june2023_q92",
+    "june2023_q93"
+   ],
+   "skip_note": "One passage; solving one sub-question gives all."
+  },
+  {
+   "id": "u5c13",
+   "title": "Effective access time with page faults / hit ratio",
+   "type": "same-formula",
+   "topic": "Page Replacement & Virtual Memory",
+   "technique": "EAT = (1-p)*m + p*(fault service time); with hit ratio h: h*t_primary + (1-h)*t_secondary.",
+   "what_changes": "Symbolic vs numeric.",
+   "representative": "july2018_q52",
+   "members": [
+    "nov2021_q71",
+    "july2018_q52"
+   ],
+   "skip_note": "Weighted average of two times."
+  },
+  {
+   "id": "u5c14",
+   "title": "Virtual memory conceptual statements",
+   "type": "same-concept-variant",
+   "topic": "Page Replacement & Virtual Memory",
+   "technique": "Virtual memory increases effective capacity; program can be larger than RAM; not all pages need to be loaded; address translation for every logical address.",
+   "what_changes": "Which statement is true / false.",
+   "representative": "dec2022_q86",
+   "members": [
+    "dec2022_q86",
+    "june2023_q26",
+    "dec2022_shiftii_q43"
+   ],
+   "skip_note": "Same facts about virtual memory."
+  },
+  {
+   "id": "u5c15",
+   "title": "Order of page-replacement steps",
+   "type": "same-concept-variant",
+   "topic": "Page Replacement & Virtual Memory",
+   "technique": "Find page on disk; if no free frame use algorithm to pick victim, write it back if dirty, update tables; read in desired page; restart instruction.",
+   "what_changes": "Option ordering only.",
+   "representative": "dec2022_q53",
+   "members": [
+    "june2024_cancelled_q13",
+    "dec2022_q53"
+   ],
+   "skip_note": "Same step sequence."
+  },
+  {
+   "id": "u5c16",
+   "title": "Linux interrupt protection level ordering",
+   "type": "exact-repeat",
+   "topic": "OS Concepts, Unix/Linux & Shell",
+   "technique": "Increasing priority: user mode < kernel system service routines < bottom half handlers < top half handlers.",
+   "what_changes": "Only the lettering of the options.",
+   "representative": "june2025_q30",
+   "members": [
+    "june2025_q30",
+    "dec2023_q80"
+   ],
+   "skip_note": "Identical question in Dec 2023 and June 2025."
+  },
+  {
+   "id": "u5c17",
+   "title": "I/O protection and interrupts",
+   "type": "same-concept-variant",
+   "topic": "OS Concepts, Unix/Linux & Shell",
+   "technique": "I/O instructions are privileged; with memory-mapped I/O protection is by the OS (memory protection); I/O completion interrupts are different from a trap for protection.",
+   "what_changes": "Assertion-reason vs direct form.",
+   "representative": "june2023_q9",
+   "members": [
+    "june2023_q9",
+    "july2018_q54"
+   ],
+   "skip_note": "Same protection concept."
+  },
+  {
+   "id": "u5c18",
+   "title": "Unix/Linux command facts",
+   "type": "same-concept-variant",
+   "topic": "OS Concepts, Unix/Linux & Shell",
+   "technique": "wc -l counts lines; chmod -R a+x; lpr prints; user passwords/accounts in /etc/passwd; glob *.[ch].",
+   "what_changes": "Which command.",
+   "representative": "june2019_q50",
+   "members": [
+    "june2019_q50",
+    "dec2023_q19",
+    "july2018_q55",
+    "dec2018_q68"
+   ],
+   "skip_note": "Single-fact recall; memorise the list."
+  },
+  {
+   "id": "u5c19",
+   "title": "Process-creation system calls (fork, exec, clone, kill, exit)",
+   "type": "same-concept-variant",
+   "topic": "OS Concepts, Unix/Linux & Shell",
+   "technique": "fork creates child; exec loads new program; kill sends signal; exit terminates; clone gives selective sharing flags (Linux).",
+   "what_changes": "Matching vs fill-in.",
+   "representative": "nov2021_q74",
+   "members": [
+    "dec2022_shiftii_q17",
+    "nov2021_q74",
+    "dec2018_q76"
+   ],
+   "skip_note": "Same syscalls."
+  },
+  {
+   "id": "u5c20",
+   "title": "Match-the-following of OS terms",
+   "type": "same-concept-variant",
+   "topic": "OS Concepts, Unix/Linux & Shell",
+   "technique": "Link each term to its area: Banker = resource allocation, demand paging = virtual memory, LFU = cache replacement, critical section = mutual exclusion, firmware = ROM, PCB = TCB, IPC = computational speedup.",
+   "what_changes": "Mixed term pairs.",
+   "representative": "dec2022_shiftii_q70",
+   "members": [
+    "june2024_cancelled_q17",
+    "dec2022_shiftii_q70",
+    "sep2022_q80",
+    "sep2022_q81"
+   ],
+   "skip_note": "Examiner reuses the same standard pairings."
+  },
+  {
+   "id": "u5c21",
+   "title": "Preemptive SJF / SRTF waiting or turnaround time",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "Draw the Gantt chart; at every arrival compare remaining times. TAT = CT - AT; WT = TAT - BT.",
+   "what_changes": "Arrival and burst values; nov2021_q75 and july2018_q59 are near-identical sets.",
+   "representative": "june2023_q42",
+   "members": [
+    "nov2021_q75",
+    "june2023_q42",
+    "july2018_q59",
+    "dec2022_q52",
+    "june2019_q45"
+   ],
+   "skip_note": "Gantt-chart method same each time."
+  },
+  {
+   "id": "u5c22",
+   "title": "Non-preemptive FCFS / SJF / HRRN metrics on one process set",
+   "type": "same-formula",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "FCFS by arrival; SJF picks the smallest burst among arrived processes; HRRN ratio = (W+S)/S. Weighted turnaround = TAT/burst.",
+   "what_changes": "Metric asked.",
+   "representative": "dec2024_q98",
+   "members": [
+    "dec2024_q98",
+    "dec2024_q99",
+    "dec2024_q97",
+    "dec2022_shiftii_q20"
+   ],
+   "skip_note": "Dec 2024 passage shares one table across sub-questions."
+  },
+  {
+   "id": "u5c23",
+   "title": "Priority scheduling average waiting / response time (non-preemptive)",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "Order by priority (lower number first), then cumulative start times give waiting times.",
+   "what_changes": "Burst and priority values.",
+   "representative": "dec2024_q77",
+   "members": [
+    "dec2024_q96",
+    "dec2024_q77"
+   ],
+   "skip_note": "Same procedure."
+  },
+  {
+   "id": "u5c24",
+   "title": "Round-robin waiting/turnaround and maximum wait",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "Simulate the queue with quantum q; waiting = completion - arrival - burst; worst-case wait for n processes = (n-1)q.",
+   "what_changes": "Quantum and processes.",
+   "representative": "dec2019_q30",
+   "members": [
+    "dec2019_q30",
+    "dec2022_shiftii_q88",
+    "dec2018_q73"
+   ],
+   "skip_note": "One simulation skill."
+  },
+  {
+   "id": "u5c25",
+   "title": "Scheduling theory statements (starvation, response time, quantum)",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "SRTF and priority may starve; HRRN/aging fixes starvation; RR gives better response than FCFS; tiny quantum means many context switches.",
+   "what_changes": "Statement combinations.",
+   "representative": "dec2022_shiftii_q51",
+   "members": [
+    "june2023_q13",
+    "dec2022_shiftii_q51",
+    "dec2022_q51",
+    "dec2024_q100"
+   ],
+   "skip_note": "Same facts recombined."
+  },
+  {
+   "id": "u5c26",
+   "title": "Preemptive vs non-preemptive circumstances",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "Preemption happens when running->ready or waiting->ready; non-preemptive SJF never context-switches mid-burst.",
+   "what_changes": "Option format.",
+   "representative": "dec2019_q74",
+   "members": [
+    "july2018_q60",
+    "dec2019_q74"
+   ],
+   "skip_note": "Same distinction."
+  },
+  {
+   "id": "u5c27",
+   "title": "Thread concepts and models",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "Threads share code, data and files but have own stack and registers; user library creates threads; concurrency one-to-one > many-to-many > many-to-one.",
+   "what_changes": "Assertion, statement or ordering.",
+   "representative": "dec2022_q20",
+   "members": [
+    "june2025_q71",
+    "june2023_q20",
+    "dec2023_q88",
+    "dec2022_q20"
+   ],
+   "skip_note": "Related facts about threads."
+  },
+  {
+   "id": "u5c28",
+   "title": "Process model basics (states, queue, PCB, heap, cascading termination)",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "Running can go to ready (timer), waiting (I/O); ready queue holds ready processes in memory; PCB holds state, registers, scheduling info (not code); heap = dynamic memory; cascading termination.",
+   "what_changes": "Definition recall.",
+   "representative": "june2024_reexam_q75",
+   "members": [
+    "june2025_q2",
+    "sep2022_q22",
+    "dec2022_q18",
+    "dec2018_q75",
+    "june2024_reexam_q75"
+   ],
+   "skip_note": "All are definition recall."
+  },
+  {
+   "id": "u5c29",
+   "title": "OS-specific scheduling (Windows, Linux)",
+   "type": "same-concept-variant",
+   "topic": "Process Management & CPU Scheduling",
+   "technique": "Windows 16 non-real-time priorities (and 16 real-time); Linux supports preemptive priority and time-sharing.",
+   "what_changes": "Which OS.",
+   "representative": "dec2019_q26",
+   "members": [
+    "june2024_cancelled_q64",
+    "dec2019_q26"
+   ],
+   "skip_note": "Pure recall."
+  },
+  {
+   "id": "u5c30",
+   "title": "Counting semaphore value after P and V operations",
+   "type": "same-formula",
+   "topic": "Process Synchronization & Semaphores",
+   "technique": "final = initial - (#P) + (#V).",
+   "what_changes": "Which of the three quantities is unknown.",
+   "representative": "june2023_q58",
+   "members": [
+    "july2018_q51",
+    "june2023_q58",
+    "dec2019_q24",
+    "june2019_q46"
+   ],
+   "skip_note": "Same arithmetic; numbers change."
+  },
+  {
+   "id": "u5c31",
+   "title": "Mutual exclusion and critical-section statements",
+   "type": "same-concept-variant",
+   "topic": "Process Synchronization & Semaphores",
+   "technique": "Only one process in critical section; structure entry/critical/exit/remainder; spin lock = busy waiting; unaware processes still have mutual exclusion, starvation, deadlock problems but not coherence.",
+   "what_changes": "Option combinations.",
+   "representative": "june2024_reexam_q5",
+   "members": [
+    "june2024_cancelled_q15",
+    "dec2023_q53",
+    "june2024_reexam_q5",
+    "dec2022_shiftii_q52",
+    "dec2018_q74"
+   ],
+   "skip_note": "Same facts."
+  },
+  {
+   "id": "u5c32",
+   "title": "Maximum processes for deadlock freedom",
+   "type": "same-formula",
+   "topic": "Deadlocks",
+   "technique": "Deadlock-free if R >= n(m-1)+1, so n_max = floor((R-1)/(m-1)).",
+   "what_changes": "R and m values.",
+   "representative": "dec2018_q70",
+   "members": [
+    "dec2018_q70",
+    "june2019_q48"
+   ],
+   "skip_note": "Same formula, numbers only."
+  },
+  {
+   "id": "u5c33",
+   "title": "Banker's algorithm passage",
+   "type": "same-concept-variant",
+   "topic": "Deadlocks",
+   "technique": "Banker avoids deadlock; needs Max, Allocation, Available matrices/vectors; grants only if the system stays in a safe state.",
+   "what_changes": "Which sub-question.",
+   "representative": "june2024_reexam_q100",
+   "members": [
+    "june2024_reexam_q98",
+    "june2024_reexam_q96",
+    "june2024_reexam_q97",
+    "june2024_reexam_q99",
+    "june2024_reexam_q100"
+   ],
+   "skip_note": "One passage, five sub-questions."
+  },
+  {
+   "id": "u5c34",
+   "title": "Symbol table",
+   "type": "same-concept-variant",
+   "topic": "Compilers Phases (system software view)",
+   "technique": "Symbol table used for storage allocation, type checking, duplicate-error suppression; hash table gives fastest access.",
+   "what_changes": "Question form.",
+   "representative": "nov2020_q41",
+   "members": [
+    "dec2023_q23",
+    "nov2020_q41"
+   ],
+   "skip_note": "Same two facts."
+  },
+  {
+   "id": "u5c35",
+   "title": "Compiler phases order and roles",
+   "type": "same-concept-variant",
+   "topic": "Compilers Phases (system software view)",
+   "technique": "Lexical -> syntax -> semantic -> intermediate code -> optimization -> code generation; syntax analysis checks grammar.",
+   "what_changes": "Order vs identification.",
+   "representative": "june2024_reexam_q71",
+   "members": [
+    "june2023_q60",
+    "june2024_reexam_q71"
+   ],
+   "skip_note": "Same phase list."
+  }
+ ],
+ "singletons": [
+  "sep2022_q97",
+  "dec2022_shiftii_q9",
+  "nov2021_q84",
+  "sep2022_q67",
+  "june2023_q90",
+  "dec2019_q28",
+  "nov2020_q17",
+  "sep2022_q64",
+  "sep2022_q23",
+  "dec2022_shiftii_q19",
+  "june2025_q19",
+  "june2019_q16",
+  "dec2022_q15",
+  "june2025_q62",
+  "july2018_q56",
+  "july2018_q57",
+  "june2024_cancelled_q53",
+  "june2024_reexam_q57",
+  "june2025_q56",
+  "june2024_cancelled_q9",
+  "dec2022_shiftii_q18",
+  "dec2019_q29",
+  "nov2020_q58",
+  "june2024_cancelled_q57",
+  "june2019_q43",
+  "dec2022_q17",
+  "dec2019_q31",
+  "june2024_reexam_q16",
+  "dec2024_q76",
+  "dec2018_q67",
+  "june2024_cancelled_q27",
+  "dec2022_shiftii_q80",
+  "june2019_q47",
+  "june2023_q38",
+  "dec2022_q70",
+  "sep2022_q86",
+  "dec2023_q70",
+  "june2025_q4",
+  "june2025_q67",
+  "nov2020_q84",
+  "june2024_reexam_q55",
+  "june2025_q58",
+  "dec2018_q69",
+  "june2019_q42",
+  "june2023_q54"
+ ],
+ "examiner_mindset": [
+  "Numerical questions (scheduling, disk scheduling, page-fault counting, paging arithmetic, semaphore arithmetic) form roughly a third of the unit; small data sets, always solvable by hand.",
+  "Same data is reused: june2019_q41 and june2023_q78 share one SSTF queue, nov2021_q75 and july2018_q59 share a preemptive SJF set, dec2023_q80 and june2025_q30 are the same question.",
+  "Passage-based multi-question sets (nov2020 disk, nov2021 paging, june2023 LRU array, june2024 Banker, dec2024 scheduling, june2025 disk queue) give 5 questions each and are the main source of repetition.",
+  "Match-the-following questions mix terms across OS areas; the same standard pairings recur (RAID levels, Banker = resource allocation).",
+  "Trap options: C-SCAN/SCAN differences (jump counted or not), the difference between FIFO and LRU for Belady, 'current needs' column in Banker.",
+  "Distractors are near-values from off-by-one or unit mistakes (KB vs bytes, ms vs seconds).",
+  "Difficulty is mostly easy to moderate; heavy theory such as formal proofs or code is never asked, but fork-counting appears occasionally.",
+  "Cross-unit overlap: Unit 5 questions on OS appear in matching with data structures and networking cloud terms; compiler and assembler items are minor.",
+  "Process management and file systems/disk scheduling alone take over 40% of the unit.",
+  "Never asked: kernel source code, detailed Windows internals beyond priority counts, deep distributed OS theory."
+ ],
+ "formulas": [
+  {
+   "name": "Deadlock-free process bound",
+   "formula": "R >= n(m-1)+1, so n_max = floor((R-1)/(m-1))",
+   "used_in": [
+    "dec2018_q70",
+    "june2019_q48"
+   ],
+   "note": "R resources, each process needs m; e.g. R=12,m=4 gives 3"
+  },
+  {
+   "name": "Banker: Need",
+   "formula": "Need = Max - Allocation; safe if some order lets every process finish with Available",
+   "used_in": [
+    "dec2019_q28",
+    "june2024_reexam_q98",
+    "june2024_reexam_q96",
+    "june2024_reexam_q100"
+   ],
+   "note": "In dec2019_q28 'Current needs' column is actually the allocation"
+  },
+  {
+   "name": "Disk capacity",
+   "formula": "surfaces x tracks per surface x sectors per track x bytes per sector",
+   "used_in": [
+    "nov2020_q92",
+    "nov2020_q91",
+    "nov2020_q93",
+    "sep2022_q8"
+   ],
+   "note": "Double-sided platters have 2 surfaces each"
+  },
+  {
+   "name": "Sector-address bits",
+   "formula": "log2(surfaces x tracks x sectors)",
+   "used_in": [
+    "dec2018_q18"
+   ],
+   "note": "Count total sectors, then bits"
+  },
+  {
+   "name": "Rotational delay",
+   "formula": "max = 60/rpm seconds; average = half of that",
+   "used_in": [
+    "nov2020_q94"
+   ],
+   "note": "5400 rpm gives 11.1 ms"
+  },
+  {
+   "name": "Data transfer rate",
+   "formula": "bytes per track x revolutions per second",
+   "used_in": [
+    "nov2020_q95"
+   ],
+   "note": "One track per revolution"
+  },
+  {
+   "name": "Seek time",
+   "formula": "total head movement x time per cylinder",
+   "used_in": [
+    "nov2020_q16",
+    "june2023_q78",
+    "june2019_q41"
+   ],
+   "note": "SSTF picks nearest pending request each time"
+  },
+  {
+   "name": "Disk policies",
+   "formula": "SCAN goes to end then reverses; C-SCAN goes to end then jumps to start; LOOK/C-LOOK turn at the last request",
+   "used_in": [
+    "june2025_q97",
+    "june2025_q100",
+    "dec2023_q17",
+    "june2025_q99",
+    "dec2022_q80",
+    "june2025_q96",
+    "june2025_q98",
+    "dec2024_q27"
+   ],
+   "note": "C-SCAN return jump counted in textbook answers"
+  },
+  {
+   "name": "Inode maximum file size",
+   "formula": "(direct + p + p^2) x block size, p = block size/address size",
+   "used_in": [
+    "nov2020_q17"
+   ],
+   "note": "2KB blocks,4B addresses: p=512, about 513 MB"
+  },
+  {
+   "name": "Tape write time",
+   "formula": "(data / recording density) / speed (+ inter-block gaps)",
+   "used_in": [
+    "sep2022_q64"
+   ],
+   "note": "600000/1600/200 = 1.875 s"
+  },
+  {
+   "name": "Paging sizes",
+   "formula": "pages = VA/page size; offset bits = log2(page); frames = PM/page; page table size = pages x entry size",
+   "used_in": [
+    "dec2024_q47",
+    "dec2023_q18",
+    "nov2021_q77",
+    "nov2021_q76",
+    "nov2021_q78",
+    "nov2021_q79"
+   ],
+   "note": "Physical address bits = log2(PM size)"
+  },
+  {
+   "name": "Internal fragmentation",
+   "formula": "unused space in last page = pages x page size - process size",
+   "used_in": [
+    "nov2021_q80"
+   ],
+   "note": "34 KB with 4 KB pages gives 2 KB"
+  },
+  {
+   "name": "EMAT with TLB",
+   "formula": "h(t+m) + (1-h)(t+2m)",
+   "used_in": [
+    "nov2020_q18",
+    "dec2019_q27"
+   ],
+   "note": "Single level page table; two-level adds extra m"
+  },
+  {
+   "name": "EAT with page faults",
+   "formula": "(1-p)m + p x fault time; or p + q/100 if one fault per 100",
+   "used_in": [
+    "nov2021_q71",
+    "july2018_q52"
+   ],
+   "note": "Hit ratio form h*t1 + (1-h)*t2"
+  },
+  {
+   "name": "Swap time",
+   "formula": "2 x (size/transfer rate) + latencies",
+   "used_in": [
+    "june2025_q62"
+   ],
+   "note": "15MB/30MBps=0.5s each way"
+  },
+  {
+   "name": "Belady's anomaly",
+   "formula": "Occurs for FIFO; LRU and optimal are stack algorithms and have no anomaly",
+   "used_in": [
+    "june2023_q38",
+    "june2023_q13"
+   ],
+   "note": "Common trap in statement questions"
+  },
+  {
+   "name": "Little's law",
+   "formula": "n = lambda x W",
+   "used_in": [
+    "june2025_q4"
+   ],
+   "note": "20 = 10 x W gives 2 s"
+  },
+  {
+   "name": "Scheduling times",
+   "formula": "TAT = CT - AT; WT = TAT - BT; RT = first run - AT; HRRN ratio = (W+S)/S",
+   "used_in": [
+    "dec2024_q98",
+    "dec2022_q52",
+    "dec2019_q30",
+    "dec2024_q99",
+    "nov2021_q75",
+    "june2023_q42",
+    "dec2024_q97",
+    "dec2018_q73"
+   ],
+   "note": "Weighted TAT = TAT/burst"
+  },
+  {
+   "name": "RR worst-case wait",
+   "formula": "(n-1) x q",
+   "used_in": [
+    "dec2022_shiftii_q88"
+   ],
+   "note": "20 processes, q=4 gives 76 ms"
+  },
+  {
+   "name": "Counting semaphore",
+   "formula": "final = initial - #P + #V",
+   "used_in": [
+    "july2018_q51",
+    "june2023_q58",
+    "dec2019_q24",
+    "june2019_q46"
+   ],
+   "note": "Solve for unknown #V"
+  },
+  {
+   "name": "fork count",
+   "formula": "k sequential forks create 2^k processes",
+   "used_in": [
+    "nov2020_q84"
+   ],
+   "note": "Count prints by tracing each fork"
+  },
+  {
+   "name": "RAID levels",
+   "formula": "0 striping,1 mirror,2 bit ECC,3 bit parity,4 block parity,5 distributed block parity,6 P+Q",
+   "used_in": [
+    "june2025_q64",
+    "dec2024_q41",
+    "june2023_q46",
+    "june2024_cancelled_q25",
+    "dec2022_q15"
+   ],
+   "note": "Level 1 for write-heavy logs"
+  },
+  {
+   "name": "Linux interrupt priority",
+   "formula": "user < kernel system service < bottom half < top half",
+   "used_in": [
+    "june2025_q30",
+    "dec2023_q80"
+   ],
+   "note": "Exact repeat"
+  },
+  {
+   "name": "Thread sharing",
+   "formula": "Shared: code,data,files,address space. Private: stack,registers,PC",
+   "used_in": [
+    "june2019_q43",
+    "dec2023_q88"
+   ],
+   "note": "Threads of same process share address space"
+  },
+  {
+   "name": "Thread model concurrency",
+   "formula": "one-to-one > many-to-many > many-to-one",
+   "used_in": [
+    "dec2022_q20"
+   ],
+   "note": "Many-to-one blocks entirely on a blocking call"
+  },
+  {
+   "name": "Boot order",
+   "formula": "ROM firmware -> boot block -> bootstrap loader -> kernel",
+   "used_in": [
+    "dec2022_shiftii_q80"
+   ],
+   "note": "Ordering trap"
+  },
+  {
+   "name": "Layered file system",
+   "formula": "Application -> logical FS -> file organization module -> basic FS -> I/O control",
+   "used_in": [
+    "june2025_q19"
+   ],
+   "note": "Top to bottom"
+  },
+  {
+   "name": "File allocation",
+   "formula": "Contiguous has external fragmentation; linked and indexed do not",
+   "used_in": [
+    "dec2023_q52",
+    "nov2021_q72"
+   ],
+   "note": "Indexed supports direct+sequential access"
+  },
+  {
+   "name": "Compiler phase order",
+   "formula": "lexical, syntax, semantic, intermediate code, optimization, code generation",
+   "used_in": [
+    "june2023_q60",
+    "june2024_reexam_q71"
+   ],
+   "note": "Hash table best for symbol table"
+  },
+  {
+   "name": "Unix facts",
+   "formula": "fork creates child; exec loads program; kill signals; clone selective sharing; wc -l; lpr; /etc/passwd; chmod -R a+x",
+   "used_in": [
+    "june2019_q50",
+    "dec2022_shiftii_q17",
+    "dec2023_q19",
+    "july2018_q55",
+    "nov2021_q74",
+    "dec2018_q68",
+    "dec2018_q76"
+   ],
+   "note": "Single-fact recall"
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Scheduling numericals",
+   "topics": [
+    "Process Management & CPU Scheduling"
+   ],
+   "hours": 3.0,
+   "do": "Solve reps u5c21 june2023_q42, u5c22 dec2024_q98, u5c23 dec2024_q77, u5c24 dec2019_q30 with Gantt charts; memorise formulas."
+  },
+  {
+   "step": 2,
+   "focus": "Process/thread theory",
+   "topics": [
+    "Process Management & CPU Scheduling"
+   ],
+   "hours": 1.5,
+   "do": "Read clusters u5c25 to u5c29 and singletons on fork, Little's law."
+  },
+  {
+   "step": 3,
+   "focus": "Disk scheduling and geometry",
+   "topics": [
+    "File Systems & Disk Scheduling"
+   ],
+   "hours": 3.0,
+   "do": "Trace reps u5c1 to u5c5 (june2023_q78, june2025_q97, june2025_q96, nov2020_q92, nov2020_q95)."
+  },
+  {
+   "step": 4,
+   "focus": "RAID, allocation, inode",
+   "topics": [
+    "File Systems & Disk Scheduling"
+   ],
+   "hours": 1.5,
+   "do": "Memorise RAID table; do u5c6, u5c7 and inode/tape singletons."
+  },
+  {
+   "step": 5,
+   "focus": "Paging arithmetic",
+   "topics": [
+    "Memory Management & Paging/Segmentation"
+   ],
+   "hours": 2.0,
+   "do": "Solve nov2021_q79 set, TLB rep nov2020_q18 and the singletons on swap time and page table structures."
+  },
+  {
+   "step": 6,
+   "focus": "Page replacement",
+   "topics": [
+    "Page Replacement & Virtual Memory"
+   ],
+   "hours": 2.5,
+   "do": "Simulate nov2020_q15 style strings (FIFO, LRU, Optimal), June 2023 passage rep june2023_q93, EAT rep july2018_q52."
+  },
+  {
+   "step": 7,
+   "focus": "OS concepts recall",
+   "topics": [
+    "OS Concepts, Unix/Linux & Shell"
+   ],
+   "hours": 2.0,
+   "do": "Learn u5c16 to u5c20 reps; scan singletons on boot, kernel, privileged instructions."
+  },
+  {
+   "step": 8,
+   "focus": "Synchronization and deadlocks",
+   "topics": [
+    "Process Synchronization & Semaphores",
+    "Deadlocks"
+   ],
+   "hours": 1.5,
+   "do": "Semaphore formula (june2023_q58), mutual exclusion statements, deadlock rule dec2018_q70, Banker passage."
+  },
+  {
+   "step": 9,
+   "focus": "Compilers and assemblers quick pass",
+   "topics": [
+    "Compilers Phases (system software view)",
+    "Assemblers, Loaders, Linkers & Macros"
+   ],
+   "hours": 0.5,
+   "do": "Memorise phase order, symbol table facts and pseudo-instructions."
+  }
+ ],
+ "minimum_set": [
+  "june2023_q78",
+  "june2025_q97",
+  "june2025_q96",
+  "nov2020_q92",
+  "nov2020_q95",
+  "june2025_q64",
+  "dec2023_q52",
+  "nov2021_q79",
+  "nov2020_q18",
+  "june2025_q11",
+  "nov2020_q15",
+  "june2023_q93",
+  "july2018_q52",
+  "dec2022_q86",
+  "dec2022_q53",
+  "june2025_q30",
+  "june2023_q9",
+  "june2019_q50",
+  "nov2021_q74",
+  "dec2022_shiftii_q70",
+  "june2023_q42",
+  "dec2024_q98",
+  "dec2024_q77",
+  "dec2019_q30",
+  "dec2022_shiftii_q51",
+  "dec2019_q74",
+  "dec2022_q20",
+  "june2024_reexam_q75",
+  "dec2019_q26",
+  "june2023_q58",
+  "june2024_reexam_q5",
+  "dec2018_q70",
+  "june2024_reexam_q100",
+  "nov2020_q41",
+  "june2024_reexam_q71",
+  "dec2019_q28",
+  "nov2020_q17",
+  "sep2022_q64",
+  "june2025_q62",
+  "june2025_q56",
+  "june2024_cancelled_q9",
+  "june2023_q38",
+  "dec2022_q70",
+  "june2025_q67",
+  "nov2020_q84",
+  "june2025_q4",
+  "dec2022_shiftii_q80",
+  "june2024_reexam_q16",
+  "sep2022_q23",
+  "june2025_q58"
+ ]
+}

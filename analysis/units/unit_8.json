@@ -1,0 +1,1070 @@
+{
+ "unit": 8,
+ "name": "Theory of Computation and Compilers",
+ "total_questions": 151,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "Context-Free Grammars & PDA",
+   "count": 33,
+   "papers": 13,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "Largest share of the unit (33 of 151, 22%) and present in 13 of 15 papers with ambiguity, grammar generation and PDA tracing every cycle.",
+   "what_to_study": [
+    "Ambiguity: two parse trees test, SbS/SS grammars, dangling else",
+    "CNF/GNF definitions, 2n-1 derivation, CNF count bound",
+    "Language of a grammar and grammar for a language (short-string test)",
+    "PDA transition tracing (push/pop ratio, n>0 vs n>=0)",
+    "CFL vs non-CFL (one-stack rule), inherently ambiguous languages",
+    "Simplification order and reduced grammar"
+   ]
+  },
+  {
+   "topic": "Language Hierarchy & Closure Properties",
+   "count": 24,
+   "papers": 14,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "24 questions (16%) in 14 of 15 papers; closure tables and Chomsky hierarchy appear almost every paper.",
+   "what_to_study": [
+    "CFL closure table and a^n b^n c^n counterexample",
+    "Regular closure (homomorphism, reversal, quotient)",
+    "Chomsky hierarchy: types, automata, production forms, containment chain",
+    "Class closure matching (REC/RE/CF/regular)",
+    "Counting-constraint language classification"
+   ]
+  },
+  {
+   "topic": "Finite Automata & Regular Languages",
+   "count": 23,
+   "papers": 13,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "23 questions (15%) in 13 of 15 papers; recent Dec 2023, Dec 2024, June 2025 each have 2-3 and Dec 2024 is a whole passage.",
+   "what_to_study": [
+    "Read a DFA: language, regex, state elimination",
+    "Minimal DFA state counting and table filling",
+    "L* membership",
+    "NFA/DFA/epsilon-NFA conversion and facts",
+    "Moore vs Mealy",
+    "Build DFA for substring patterns (abb)"
+   ]
+  },
+  {
+   "topic": "Turing Machines, Decidability & Reducibility",
+   "count": 21,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "21 questions (14%) in 11 of 15 papers (73%); decidability and Rice theorem recur and Dec 2022 Shift II had a full TM passage.",
+   "what_to_study": [
+    "Rice theorem and undecidable TM problems",
+    "Decidability table by language class",
+    "PCP instances",
+    "TM definitions and transition function",
+    "TM trace for a^n b^n and marking machines"
+   ]
+  },
+  {
+   "topic": "Syntax-Directed Translation, Intermediate Code & Optimization",
+   "count": 20,
+   "papers": 10,
+   "first_year": "June 2019",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "20 questions (13%) in 10 of 15 papers (67%); June 2025 had a 5-question TAC passage and Dec 2023 had 4.",
+   "what_to_study": [
+    "Phases of compiler and order",
+    "TAC forms: quadruple, triple, indirect triple; count operations",
+    "Leaders, basic blocks, flow graph, dominators",
+    "Optimisation terminology and loop detection",
+    "SDT applications"
+   ]
+  },
+  {
+   "topic": "Parsing (LL, LR, Operator Precedence)",
+   "count": 17,
+   "papers": 13,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "steady",
+   "priority": "Must",
+   "why": "17 questions (11%) in 13 of 15 papers; parser-power ordering is a near-annual item.",
+   "what_to_study": [
+    "CLR > LALR > SLR > LR(0); LL(1) conditions",
+    "Shift-reduce conflicts and resolution",
+    "FOLLOW/FIRST computation",
+    "LR(0) item closure and GOTO",
+    "Handles and bottom-up reductions"
+   ]
+  },
+  {
+   "topic": "Regular Expressions & Pumping Lemma",
+   "count": 12,
+   "papers": 7,
+   "first_year": "December 2018",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "High",
+   "why": "12 questions (8%) in 7 of 15 papers; recurs steadily, last in Dec 2024.",
+   "what_to_study": [
+    "Pumping lemma conditions for regular and CFL",
+    "Regex identities and operator precedence",
+    "Regex containment/equivalence",
+    "Writing regexes for bounded languages"
+   ]
+  },
+  {
+   "topic": "Lexical Analysis",
+   "count": 1,
+   "papers": 1,
+   "first_year": "June 2024 (Cancelled)",
+   "last_year": "June 2024 (Cancelled)",
+   "trend": "steady",
+   "priority": "Low",
+   "why": "Single question (0.7%) in 15 papers; only June 2024 Cancelled.",
+   "what_to_study": [
+    "Token counting in a code line: count identifiers, keywords, operators, punctuation separately",
+    "Lexical analyser role, input buffering, DFA-based scanning"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "id": "u8c1",
+   "title": "CFL closure properties (union yes, intersection/complement no)",
+   "type": "same-concept-variant",
+   "topic": "Language Hierarchy & Closure Properties",
+   "technique": "Memorise the table: CFL closed under union, concatenation, star, reversal, homomorphism, intersection with regular; NOT under intersection, complement, difference. Counterexample is a^n b^n c^n = (a^n b^n c^m) ∩ (a^m b^n c^n).",
+   "what_changes": "Which operations are asked; wording as true/false statements, two-statement format, or a concrete L1 ∩ L2 computation.",
+   "representative": "dec2018_q36",
+   "members": [
+    "dec2018_q36",
+    "sep2022_q92",
+    "nov2021_q34",
+    "june2024_reexam_q49",
+    "june2024_cancelled_q19",
+    "nov2020_q29",
+    "dec2019_q47",
+    "nov2021_q33",
+    "nov2020_q27"
+   ],
+   "skip_note": "All nine just test the same closure table; one pass of the table plus the a^n b^n c^n counterexample covers them."
+  },
+  {
+   "id": "u8c2",
+   "title": "Closure/regularity of regular-language operations (quotient, homomorphism, reversal, union with L*)",
+   "type": "same-concept-variant",
+   "topic": "Language Hierarchy & Closure Properties",
+   "technique": "Regular languages are closed under every standard operation; apply the operation to the DFA/regex (substitute symbols for homomorphism, reverse arrows for reversal). L ∪ A* = A* is regular.",
+   "what_changes": "The operation (prefix-half quotient, homomorphism, reversal, union with Σ*).",
+   "representative": "dec2023_q22",
+   "members": [
+    "dec2018_q34",
+    "dec2023_q22",
+    "dec2019_q46",
+    "june2023_q25"
+   ],
+   "skip_note": "Answer is always \"still regular\"; the only skill is applying h to each symbol of the regex."
+  },
+  {
+   "id": "u8c3",
+   "title": "Language-class closure matching (complement/union/intersection of REC, RE, CF, regular)",
+   "type": "same-concept-variant",
+   "topic": "Language Hierarchy & Closure Properties",
+   "technique": "Use: REC closed under complement and union; RE closed under union but not complement; complement of CFL is only recursive (CSL); regular* ∩ CFL is CFL. Compose upward.",
+   "what_changes": "Which combination of classes is matched; same three-row structure.",
+   "representative": "nov2020_q71",
+   "members": [
+    "june2019_q76",
+    "nov2020_q71"
+   ],
+   "skip_note": "Same three row pattern, only the pairing order changes."
+  },
+  {
+   "id": "u8c4",
+   "title": "Chomsky hierarchy: types, automata, production forms, containment",
+   "type": "same-concept-variant",
+   "topic": "Language Hierarchy & Closure Properties",
+   "technique": "Type3=regular=FA, Type2=CFG=PDA, Type1=CSG=LBA, Type0=RE=TM. Regular ⊂ CFL ⊂ CSL ⊂ Recursive ⊂ RE. Type-3 is the only epsilon-free type by form.",
+   "what_changes": "Matching tables (grammar-automaton, grammar-production form), ordering by power, containment chain.",
+   "representative": "june2025_q76",
+   "members": [
+    "sep2022_q78",
+    "dec2024_q56",
+    "june2025_q76",
+    "june2024_reexam_q77",
+    "dec2019_q50",
+    "july2018_q37",
+    "dec2022_q30"
+   ],
+   "skip_note": "Same hierarchy table rephrased every time."
+  },
+  {
+   "id": "u8c5",
+   "title": "Classify a language with counting constraints (CF vs not CF vs CSL)",
+   "type": "same-concept-variant",
+   "topic": "Language Hierarchy & Closure Properties",
+   "technique": "One counter (a^n b^n, n_a+n_b=n_c, a^(n+m) b^n a^m) is CF; two independent equalities across three or more blocks (a^n b^n c^n, i=j=k) are not CF but CSL. Check by whether one stack can match all dependencies.",
+   "what_changes": "The exact exponent relation among blocks.",
+   "representative": "june2024_reexam_q90",
+   "members": [
+    "dec2018_q35",
+    "june2024_reexam_q90",
+    "june2023_q40",
+    "july2018_q38"
+   ],
+   "skip_note": "All ask \"can a single stack do it\"; learn the rule, not the instances."
+  },
+  {
+   "id": "u8c6",
+   "title": "CNF/GNF form and derivation-length facts",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "CNF rules: A→BC or A→a. Derivation of a string of length n in CNF takes 2n-1 steps. Conversion bound (K-1)|P|+|T|. GNF: A→aα.",
+   "what_changes": "Recall a formula vs identify which grammar is in CNF/GNF.",
+   "representative": "dec2024_q66",
+   "members": [
+    "dec2019_q49",
+    "july2018_q35",
+    "june2023_q34",
+    "dec2024_q66",
+    "nov2021_q38"
+   ],
+   "skip_note": "CNF definition plus 2n-1 covers the family."
+  },
+  {
+   "id": "u8c7",
+   "title": "Ambiguity: identify ambiguous grammars, definition, dangling else",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "Ambiguous iff some string has two parse trees (equivalently two leftmost or two rightmost derivations). Test the grammar with SS, SbS, or asbs patterns; if/else with unmatched else is ambiguous. Palindrome-like wwR is not inherently ambiguous; aⁿbⁿcᵐ ∪ aⁿbᵐcᵐ is.",
+   "what_changes": "Which grammars are given; definition options.",
+   "representative": "sep2022_q69",
+   "members": [
+    "july2018_q36",
+    "sep2022_q69",
+    "nov2020_q57",
+    "dec2018_q40",
+    "dec2019_q48",
+    "june2024_cancelled_q32",
+    "june2024_cancelled_q52"
+   ],
+   "skip_note": "Find two trees for S→SS or SbS style grammars once and you can do every variant."
+  },
+  {
+   "id": "u8c8",
+   "title": "What language does this grammar generate / string property",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "Expand productions symbolically, find the invariant (parity, ordering, lengths) and test short strings against options.",
+   "what_changes": "Grammar and options; includes length-pattern matching for S→a^kSa^k|aa.",
+   "representative": "sep2022_q13",
+   "members": [
+    "dec2019_q45",
+    "june2019_q78",
+    "nov2021_q32",
+    "sep2022_q13",
+    "dec2022_shiftii_q73"
+   ],
+   "skip_note": "All reduce to deriving a few short strings; do the recent one for the method."
+  },
+  {
+   "id": "u8c9",
+   "title": "Construct or compare grammars for a given language",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "Test each option grammar on the shortest strings of the language (and a string that must be excluded). For equivalence, compare the sets generated by recursion (SS and λ closure).",
+   "what_changes": "Target language: a^n b^(n-3), strings containing abb, concatenation of regex branches, equivalence of aSb|bSa|SS variants.",
+   "representative": "dec2022_shiftii_q58",
+   "members": [
+    "dec2019_q44",
+    "dec2022_shiftii_q58",
+    "dec2019_q43"
+   ],
+   "skip_note": "Eliminate-by-counterexample; the same short-string test works for all."
+  },
+  {
+   "id": "u8c10",
+   "title": "PDA language from transitions",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "Trace stack effect: pushes per a, pops per b gives ratio language (push 3 pop 1 gives a^n b^3n; 11 per a gives a^2n b^n). Start-state epsilon move to final adds the empty string (n≥0 vs n>0).",
+   "what_changes": "Push amount and pop count; n≥0 vs n>0.",
+   "representative": "sep2022_q16",
+   "members": [
+    "sep2022_q16",
+    "june2024_cancelled_q69",
+    "nov2021_q37"
+   ],
+   "skip_note": "Same trace; ratios and the n≥0/n>0 boundary are the only changes."
+  },
+  {
+   "id": "u8c11",
+   "title": "Automata power facts (PDA, multi-stack, grammar types recognised)",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "PDA recognises CFL (and regular); two stacks = TM; DPDA with prefix property corresponds to LR(0).",
+   "what_changes": "Statement wording.",
+   "representative": "june2023_q48",
+   "members": [
+    "july2018_q33",
+    "july2018_q34",
+    "june2023_q48"
+   ],
+   "skip_note": "One-liner facts."
+  },
+  {
+   "id": "u8c12",
+   "title": "CFG simplification and decision on CFL (reduced grammar, order, finiteness)",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "Order: remove epsilon, then unit, then useless (non-generating before unreachable). Finiteness of CFL decided on non-redundant CNF grammar of L-{Λ} by looking for a cycle.",
+   "what_changes": "Compute reduced grammar vs recall order vs decision algorithm.",
+   "representative": "sep2022_q12",
+   "members": [
+    "dec2022_shiftii_q83",
+    "sep2022_q12",
+    "june2019_q77"
+   ],
+   "skip_note": "Do the reduced grammar example once."
+  },
+  {
+   "id": "u8c13",
+   "title": "Identify grammar type / form of productions",
+   "type": "same-concept-variant",
+   "topic": "Context-Free Grammars & PDA",
+   "technique": "Classify by LHS and RHS shape: single non-terminal LHS = CF; right-linear = regular; A→BC|a = CNF; LL(1) grammars parsable by recursive descent.",
+   "what_changes": "Which grammars are tested.",
+   "representative": "june2025_q14",
+   "members": [
+    "june2025_q14",
+    "june2024_cancelled_q5",
+    "june2024_reexam_q20"
+   ],
+   "skip_note": "Shape-reading drill, same each time."
+  },
+  {
+   "id": "u8c14",
+   "title": "Dec 2024 passage: automata for strings containing abb",
+   "type": "same-concept-variant",
+   "topic": "Finite Automata & Regular Languages",
+   "technique": "Strings over {a,b} containing abb: DFA with 4 states, final state absorbing; regex (a+b)*abb(a+b)*; grammar S→AabbA, A→aA|bA|ε. Check option by testing abb, ab, aabb.",
+   "what_changes": "Question asks for DFA, language form, regex, grammar or minimum-state identification.",
+   "representative": "dec2024_q91",
+   "members": [
+    "dec2024_q91",
+    "dec2024_q93",
+    "dec2024_q94",
+    "dec2024_q92",
+    "dec2024_q95"
+   ],
+   "skip_note": "Whole passage is one machine seen five ways; build it once."
+  },
+  {
+   "id": "u8c15",
+   "title": "Membership of strings in L* for L={ab,aa,baa}",
+   "type": "exact-repeat",
+   "topic": "Finite Automata & Regular Languages",
+   "technique": "Greedily parse into blocks ab, aa, baa; a string fails if some a-run leaves a dangling single a or b start that cannot be matched.",
+   "what_changes": "Option strings.",
+   "representative": "dec2023_q21",
+   "members": [
+    "dec2023_q21",
+    "sep2022_q15"
+   ],
+   "skip_note": "Identical language, only options change."
+  },
+  {
+   "id": "u8c16",
+   "title": "Count states/final states in (minimal) DFA",
+   "type": "same-concept-variant",
+   "topic": "Finite Automata & Regular Languages",
+   "technique": "Unary multiples of n: n states (the answer key shows n+1 for a particular form). Minimal DFA via table filling; merge states with equal outputs. Counts for n-state automata: initial 1, final 0..n.",
+   "what_changes": "Language, regex or diagram.",
+   "representative": "nov2021_q35",
+   "members": [
+    "june2019_q75",
+    "nov2021_q35",
+    "dec2018_q32",
+    "dec2023_q31",
+    "dec2022_q32"
+   ],
+   "skip_note": "Count/minimisation drill; do table-filling once."
+  },
+  {
+   "id": "u8c17",
+   "title": "Read an automaton: language, regex, equivalence",
+   "type": "same-concept-variant",
+   "topic": "Finite Automata & Regular Languages",
+   "technique": "Track parity/pattern state; for regex use state elimination or Arden R=Q+RP gives Q P*. Equivalence: minimise both and compare.",
+   "what_changes": "Diagram and options.",
+   "representative": "june2025_q75",
+   "members": [
+    "july2018_q32",
+    "june2025_q75",
+    "nov2021_q36",
+    "june2024_cancelled_q73",
+    "dec2022_q59"
+   ],
+   "skip_note": "All require describing what each state remembers."
+  },
+  {
+   "id": "u8c18",
+   "title": "NFA/DFA/epsilon-NFA conceptual facts and conversion",
+   "type": "same-concept-variant",
+   "topic": "Finite Automata & Regular Languages",
+   "technique": "NFA and DFA recognise the same class; epsilon-closure for shortest string; equivalent machines accept the same language; construction order: problem, regex, NFA-ε, DFA, min DFA.",
+   "what_changes": "Statement-based.",
+   "representative": "june2025_q50",
+   "members": [
+    "dec2022_shiftii_q32",
+    "june2025_q50",
+    "june2024_reexam_q65",
+    "july2018_q31",
+    "june2024_cancelled_q50"
+   ],
+   "skip_note": "Concept recall."
+  },
+  {
+   "id": "u8c19",
+   "title": "Regex containment and equivalence",
+   "type": "same-concept-variant",
+   "topic": "Regular Expressions & Pumping Lemma",
+   "technique": "Rewrite each regex as a description set; (a*+b)*=(a+b)*; s=aa*b ⊂ a*b; a(a+b)+ ⊂ a(a+b)*. Check inclusion by sample strings.",
+   "what_changes": "Regex trio changes.",
+   "representative": "nov2020_q79",
+   "members": [
+    "nov2020_q79",
+    "dec2018_q31",
+    "nov2020_q28"
+   ],
+   "skip_note": "Regexes repeat; learn sample test."
+  },
+  {
+   "id": "u8c20",
+   "title": "Regex algebra and writing a regex for a language",
+   "type": "same-concept-variant",
+   "topic": "Regular Expressions & Pumping Lemma",
+   "technique": "φ+L=L, εL=L, φL=φ; precedence star > concatenation > union. For a^n b^m with bounds, write a^4 a* (λ+b+bb+bbb).",
+   "what_changes": "Identity list or bound values.",
+   "representative": "sep2022_q14",
+   "members": [
+    "dec2022_shiftii_q60",
+    "dec2022_q83",
+    "sep2022_q14"
+   ],
+   "skip_note": "Short rule recalls."
+  },
+  {
+   "id": "u8c21",
+   "title": "Pumping lemma statements and non-regular languages",
+   "type": "same-concept-variant",
+   "topic": "Regular Expressions & Pumping Lemma",
+   "technique": "Regular PL: |xy|≤p, |y|≥1. CFL PL: |vx|≥1, |vwx|≤p. Languages needing unbounded comparison (n≠k, a^(n+k) with ordering, square lengths, ww) are not regular; a^(n^2) is not regular too.",
+   "what_changes": "Which language or which PL parameter.",
+   "representative": "dec2024_q19",
+   "members": [
+    "dec2024_q19",
+    "dec2022_q29",
+    "dec2022_shiftii_q30",
+    "nov2021_q31",
+    "nov2020_q56"
+   ],
+   "skip_note": "One PL statement plus unbounded-count rule."
+  },
+  {
+   "id": "u8c22",
+   "title": "Parser power ordering and parser types",
+   "type": "same-concept-variant",
+   "topic": "Parsing (LL, LR, Operator Precedence)",
+   "technique": "LR(0) < SLR < LALR < CLR(1); LL(1) and recursive descent are top-down; LR family bottom-up; Yacc generates LALR(1); operator precedence is weakest bottom-up.",
+   "what_changes": "Pairwise statements, ordering, naming.",
+   "representative": "june2025_q88",
+   "members": [
+    "sep2022_q91",
+    "june2023_q68",
+    "june2025_q88",
+    "nov2021_q40",
+    "dec2024_q74"
+   ],
+   "skip_note": "One ordering; memorise it."
+  },
+  {
+   "id": "u8c23",
+   "title": "Shift-reduce parser basics (derivation, scan order, conflicts, stack configuration)",
+   "type": "same-concept-variant",
+   "topic": "Parsing (LL, LR, Operator Precedence)",
+   "technique": "Bottom-up = rightmost derivation in reverse, scans left to right, uses stack, input buffer, table; conflicts resolved by precedence/associativity.",
+   "what_changes": "Fact asked.",
+   "representative": "dec2022_q73",
+   "members": [
+    "july2018_q39",
+    "june2019_q74",
+    "dec2022_q31",
+    "dec2022_q73",
+    "june2024_cancelled_q2"
+   ],
+   "skip_note": "Memory facts."
+  },
+  {
+   "id": "u8c24",
+   "title": "LR items, handles and GOTO",
+   "type": "same-concept-variant",
+   "topic": "Parsing (LL, LR, Operator Precedence)",
+   "technique": "A→ε yields item A→·; GOTO(I,X) moves dot over X then closure; handle is the leftmost simple phrase reduced at each step.",
+   "what_changes": "Grammar.",
+   "representative": "june2024_reexam_q1",
+   "members": [
+    "dec2023_q24",
+    "dec2022_shiftii_q31",
+    "june2024_reexam_q1"
+   ],
+   "skip_note": "Do the GOTO closure once."
+  },
+  {
+   "id": "u8c25",
+   "title": "LL(1)/FOLLOW computation",
+   "type": "same-concept-variant",
+   "topic": "Parsing (LL, LR, Operator Precedence)",
+   "technique": "FOLLOW(X) = FIRST of what comes after X; if nullable add FOLLOW of the parent. LL(1) requires unambiguous grammar with no left recursion and disjoint FIRST.",
+   "what_changes": "Grammar.",
+   "representative": "june2024_reexam_q18",
+   "members": [
+    "june2024_reexam_q18",
+    "dec2018_q39"
+   ],
+   "skip_note": "Both revolve around LL(1) conditions."
+  },
+  {
+   "id": "u8c26",
+   "title": "Compiler phases and their roles",
+   "type": "same-concept-variant",
+   "topic": "Syntax-Directed Translation, Intermediate Code & Optimization",
+   "technique": "Order: lexical, syntax, semantic, intermediate code, optimisation, code generation. Semantic analysis does type checking/conversion; symbol table holds identifiers and attributes.",
+   "what_changes": "Ordering vs input matching.",
+   "representative": "dec2023_q81",
+   "members": [
+    "dec2023_q81",
+    "dec2023_q71",
+    "june2024_cancelled_q18",
+    "june2019_q71"
+   ],
+   "skip_note": "Phase pipeline knowledge."
+  },
+  {
+   "id": "u8c27",
+   "title": "Intermediate code, SDT and syntax-tree uses",
+   "type": "same-concept-variant",
+   "topic": "Syntax-Directed Translation, Intermediate Code & Optimization",
+   "technique": "Forms: syntax tree, DAG, postfix, three-address code (quadruples, triples, indirect triples). SDT used for type checking, syntax tree, TAC; quads count = operators.",
+   "what_changes": "Statement-based and one quadruple count.",
+   "representative": "dec2023_q54",
+   "members": [
+    "nov2020_q30",
+    "dec2023_q30",
+    "dec2023_q54",
+    "june2019_q72",
+    "dec2022_q60",
+    "june2024_reexam_q51",
+    "dec2024_q43"
+   ],
+   "skip_note": "Concept recall plus one operator count."
+  },
+  {
+   "id": "u8c28",
+   "title": "Code optimisation concepts",
+   "type": "same-concept-variant",
+   "topic": "Syntax-Directed Translation, Intermediate Code & Optimization",
+   "technique": "Constant folding = compile-time evaluation; loops identified by dominators, depth-first order, reducible graphs.",
+   "what_changes": "Term vs list.",
+   "representative": "nov2021_q39",
+   "members": [
+    "june2019_q73",
+    "dec2024_q31",
+    "nov2021_q39"
+   ],
+   "skip_note": "Terminology."
+  },
+  {
+   "id": "u8c29",
+   "title": "June 2025 TAC passage: leaders, flow graph, dominators, optimisation",
+   "type": "same-concept-variant",
+   "topic": "Syntax-Directed Translation, Intermediate Code & Optimization",
+   "technique": "Leaders: first instruction, targets of jumps, instruction after a jump. Build blocks leader to leader, draw edges, derive dominators.",
+   "what_changes": "Which sub-question.",
+   "representative": "june2025_q91",
+   "members": [
+    "june2025_q91",
+    "june2025_q92",
+    "june2025_q93",
+    "june2025_q94",
+    "june2025_q95",
+    "dec2022_shiftii_q59"
+   ],
+   "skip_note": "One TAC listing used five times."
+  },
+  {
+   "id": "u8c30",
+   "title": "Decidability: Rice theorem and TM undecidable problems",
+   "type": "same-concept-variant",
+   "topic": "Turing Machines, Decidability & Reducibility",
+   "technique": "Any non-trivial property of L(M) is undecidable (equivalence, emptiness, finiteness, regularity). Halting is undecidable. Properties of the machine code itself or bounded simulation are decidable.",
+   "what_changes": "Statement set.",
+   "representative": "sep2022_q66",
+   "members": [
+    "july2018_q40",
+    "dec2019_q51",
+    "june2023_q66",
+    "sep2022_q66"
+   ],
+   "skip_note": "Rice theorem covers."
+  },
+  {
+   "id": "u8c31",
+   "title": "Decidability per language class",
+   "type": "same-concept-variant",
+   "topic": "Turing Machines, Decidability & Reducibility",
+   "technique": "Regular: all decidable. CFL: membership/emptiness/finiteness decidable, equivalence/universality undecidable. CSL: membership decidable, emptiness undecidable. Recursive: membership decidable, emptiness undecidable.",
+   "what_changes": "Class and problem.",
+   "representative": "nov2020_q55",
+   "members": [
+    "nov2020_q55",
+    "nov2020_q87",
+    "dec2018_q37",
+    "dec2018_q38",
+    "june2019_q79"
+   ],
+   "skip_note": "One table."
+  },
+  {
+   "id": "u8c32",
+   "title": "Post correspondence problem instances",
+   "type": "same-concept-variant",
+   "topic": "Turing Machines, Decidability & Reducibility",
+   "technique": "Look for a sequence where concatenations from both lists match; check length balance and first/last symbols. PCP in general is undecidable.",
+   "what_changes": "Lists.",
+   "representative": "sep2022_q65",
+   "members": [
+    "dec2019_q52",
+    "sep2022_q65"
+   ],
+   "skip_note": "Two instances; solve one."
+  },
+  {
+   "id": "u8c33",
+   "title": "TM design passage a^n b^m c^n d^m transitions",
+   "type": "same-concept-variant",
+   "topic": "Turing Machines, Decidability & Reducibility",
+   "technique": "Mark one a with X1 then move right to matching c, mark with X2; error entries are transitions that move into a wrong symbol class. Track which mark each state seeks.",
+   "what_changes": "Each question picks a different state/symbol cell.",
+   "representative": "dec2022_shiftii_q96",
+   "members": [
+    "dec2022_shiftii_q96",
+    "dec2022_shiftii_q97",
+    "dec2022_shiftii_q98",
+    "dec2022_shiftii_q99",
+    "dec2022_shiftii_q100"
+   ],
+   "skip_note": "Understand one machine once."
+  },
+  {
+   "id": "u8c34",
+   "title": "TM basics: definition, transition function, language from δ",
+   "type": "same-concept-variant",
+   "topic": "Turing Machines, Decidability & Reducibility",
+   "technique": "Single-tape δ: Q×Γ→Q×Γ×{L,R}; multi-tape adds k tapes and S. Recursive = halts on all inputs. TM exists for every regular and CF language. aⁿbⁿ marking machine includes n≥1.",
+   "what_changes": "Fact vs trace.",
+   "representative": "dec2024_q37",
+   "members": [
+    "dec2024_q37",
+    "june2024_reexam_q63",
+    "dec2022_shiftii_q29",
+    "june2019_q80",
+    "dec2022_q89"
+   ],
+   "skip_note": "Basic definitions."
+  }
+ ],
+ "singletons": [
+  "dec2023_q55",
+  "june2023_q73",
+  "june2024_cancelled_q74",
+  "june2024_cancelled_q20"
+ ],
+ "examiner_mindset": [
+  "Fact-recall dominates: closure tables, Chomsky hierarchy, parser power ordering, decidability tables are re-asked in new wording nearly every paper.",
+  "Two-statement (Statement I/II) and \"which are correct\" multi-select formats are used for closure, parser and decidability facts; one wrong item in the list is the trap.",
+  "Passage sets (Dec 2022 Shift II TM, Dec 2024 abb machine, June 2025 TAC) deliver 5 questions on one object, so one build-the-object skill pays five times.",
+  "Distractors swap CFL closure (union/intersection/complement), LALR vs SLR power order, and recursive vs RE, so memorise directions exactly.",
+  "Numbers get reused: L={ab,aa,baa} L* asked in 2022 and 2023; CNF 2n-1; aⁿbⁿcⁿ counterexample recurs.",
+  "Difficulty is mostly easy-medium; tracing a PDA/TM or computing FOLLOW/GOTO is the hardest tier.",
+  "Cross-unit overlap: compiler topics (TAC, optimisation, parsing) overlap with the system software/programming unit.",
+  "Almost never asked: LALR table construction, Rice-theorem proofs, formal proofs of the pumping lemma, lexer generation, register allocation numerics."
+ ],
+ "formulas": [
+  {
+   "name": "Chomsky hierarchy",
+   "formula": "Regular ⊂ DCFL ⊂ CFL ⊂ CSL ⊂ Recursive ⊂ RE; Type3=FA, Type2=PDA, Type1=LBA, Type0=TM",
+   "used_in": [
+    "sep2022_q78",
+    "dec2024_q56",
+    "june2025_q76",
+    "dec2019_q50",
+    "july2018_q37"
+   ],
+   "note": "Recursive sits between CSL and RE."
+  },
+  {
+   "name": "CFL closure",
+   "formula": "Closed: ∪, ·, *, reversal, homomorphism, ∩ regular. Not closed: ∩, complement, difference",
+   "used_in": [
+    "dec2018_q36",
+    "sep2022_q92",
+    "nov2021_q34",
+    "june2024_reexam_q49",
+    "nov2020_q29"
+   ],
+   "note": "CFL − regular is CF; CFL ∩ CFL is not."
+  },
+  {
+   "name": "Regular closure",
+   "formula": "Closed under all of union, concat, star, complement, intersection, reversal, homomorphism, quotient",
+   "used_in": [
+    "dec2018_q34",
+    "dec2019_q46",
+    "june2023_q25",
+    "dec2023_q22"
+   ],
+   "note": "L ∪ Σ* = Σ* regular."
+  },
+  {
+   "name": "Class closure",
+   "formula": "REC closed under complement; RE not closed under complement; regular* ∩ CFL is CFL",
+   "used_in": [
+    "june2019_q76",
+    "nov2020_q71"
+   ],
+   "note": "Compose upward in the hierarchy."
+  },
+  {
+   "name": "CNF form",
+   "formula": "A → BC or A → a; derivation of length-n string takes 2n-1 steps",
+   "used_in": [
+    "july2018_q35",
+    "dec2024_q66",
+    "nov2021_q38"
+   ],
+   "note": "Count n-1 binary + n terminal rules."
+  },
+  {
+   "name": "CNF conversion bound",
+   "formula": "(K-1)|P| + |T|",
+   "used_in": [
+    "dec2019_q49"
+   ],
+   "note": "Per answer key of this question."
+  },
+  {
+   "name": "GNF",
+   "formula": "A → a α (terminal first then variables)",
+   "used_in": [
+    "nov2021_q38"
+   ],
+   "note": "Do not confuse with CNF."
+  },
+  {
+   "name": "Ambiguity",
+   "formula": "Ambiguous iff some string has ≥2 parse trees ⇔ ≥2 leftmost derivations ⇔ ≥2 rightmost",
+   "used_in": [
+    "sep2022_q69",
+    "june2024_cancelled_q32",
+    "nov2020_q57",
+    "july2018_q36"
+   ],
+   "note": "More than one derivation alone is not ambiguity."
+  },
+  {
+   "name": "Pumping lemma (regular)",
+   "formula": "w=xyz, |xy|≤p, |y|≥1, xy^i z ∈ L for all i≥0",
+   "used_in": [
+    "dec2022_shiftii_q30",
+    "dec2024_q19"
+   ],
+   "note": "Only proves non-regularity."
+  },
+  {
+   "name": "Pumping lemma (CFL)",
+   "formula": "w=uvwxy, |vwx|≤p, |vx|≥1, uv^i wx^i y ∈ L",
+   "used_in": [
+    "dec2022_q29"
+   ],
+   "note": "Minimum |vx|=1."
+  },
+  {
+   "name": "Regex identities",
+   "formula": "φ+L=L; εL=L; φL=φ; (a*+b)*=(a+b)*; precedence star > concat > union",
+   "used_in": [
+    "dec2022_shiftii_q60",
+    "dec2022_q83",
+    "nov2020_q28"
+   ],
+   "note": "φL is φ, not L."
+  },
+  {
+   "name": "Arden theorem",
+   "formula": "R = Q + RP ⇒ R = QP*",
+   "used_in": [
+    "nov2021_q36"
+   ],
+   "note": "P must not contain ε."
+  },
+  {
+   "name": "Moore/Mealy",
+   "formula": "Every Moore machine has an equivalent Mealy machine and vice versa",
+   "used_in": [
+    "dec2023_q55"
+   ],
+   "note": "Both are FSMs with output."
+  },
+  {
+   "name": "PDA power",
+   "formula": "PDA = CFL; two stacks = TM; DPDA+prefix property ↔ LR(0)",
+   "used_in": [
+    "july2018_q33",
+    "july2018_q34",
+    "june2023_q48"
+   ],
+   "note": "One stack is not enough for a^n b^n c^n."
+  },
+  {
+   "name": "Decidability table",
+   "formula": "Regular: all decidable. CFL: membership, emptiness, finiteness decidable; equivalence, universality undecidable. CSL: membership decidable, emptiness undecidable. Recursive: membership decidable, emptiness undecidable",
+   "used_in": [
+    "nov2020_q55",
+    "nov2020_q87",
+    "dec2018_q37",
+    "dec2018_q38",
+    "june2019_q79"
+   ],
+   "note": "Common trap: CSL membership is decidable."
+  },
+  {
+   "name": "Rice theorem",
+   "formula": "Every non-trivial semantic property of L(M) is undecidable",
+   "used_in": [
+    "sep2022_q66",
+    "june2023_q66",
+    "july2018_q40",
+    "dec2019_q51"
+   ],
+   "note": "Properties of M itself (e.g., bounded cells) can be decidable."
+  },
+  {
+   "name": "PCP",
+   "formula": "Undecidable in general; solve instances by matching strings",
+   "used_in": [
+    "dec2019_q52",
+    "sep2022_q65"
+   ],
+   "note": "Check first/last symbols."
+  },
+  {
+   "name": "TM definitions",
+   "formula": "δ: Q×Γ→Q×Γ×{L,R}; multi-tape δ: Q×Γ^k→Q×Γ^k×{L,R,S}^k; recursive language = TM halts on all inputs",
+   "used_in": [
+    "dec2022_shiftii_q29",
+    "june2019_q80",
+    "dec2022_q89"
+   ],
+   "note": "Recursive requires halting on rejected strings too."
+  },
+  {
+   "name": "Parser power",
+   "formula": "LR(0) < SLR < LALR(1) < CLR(1); LL(1) ⊂ LR(1); Yacc = LALR",
+   "used_in": [
+    "sep2022_q91",
+    "june2023_q68",
+    "june2025_q88",
+    "dec2024_q74"
+   ],
+   "note": "LALR is weaker than CLR, stronger than SLR."
+  },
+  {
+   "name": "Bottom-up parsing",
+   "formula": "Reverse of rightmost derivation; scans left to right; stack+buffer+table",
+   "used_in": [
+    "july2018_q39",
+    "june2019_q74",
+    "dec2022_q31"
+   ],
+   "note": "LL gives leftmost derivation."
+  },
+  {
+   "name": "FOLLOW",
+   "formula": "FOLLOW(X) ⊇ FIRST(β) for A→αXβ; if β nullable add FOLLOW(A)",
+   "used_in": [
+    "june2024_reexam_q18"
+   ],
+   "note": "ε never in FOLLOW; $ for start symbol."
+  },
+  {
+   "name": "LR item",
+   "formula": "A → ε yields item A → ·",
+   "used_in": [
+    "dec2022_shiftii_q31"
+   ],
+   "note": "GOTO moves dot then closes."
+  },
+  {
+   "name": "Quadruple count",
+   "formula": "One quadruple per operator",
+   "used_in": [
+    "june2019_q72"
+   ],
+   "note": "Expression (i*j)+(e+f)*(a*b+c) has 6."
+  },
+  {
+   "name": "Basic block leaders",
+   "formula": "First instruction; target of any jump; instruction immediately after a jump",
+   "used_in": [
+    "dec2022_shiftii_q59",
+    "june2025_q91"
+   ],
+   "note": "Middle instruction is not a leader."
+  },
+  {
+   "name": "Compiler phases order",
+   "formula": "Lexical → syntax → semantic → intermediate code → optimisation → code generation",
+   "used_in": [
+    "dec2023_q81",
+    "dec2023_q71"
+   ],
+   "note": "Semantic analysis does type checking."
+  },
+  {
+   "name": "Constant folding",
+   "formula": "Compile-time evaluation of constant expressions",
+   "used_in": [
+    "june2019_q73"
+   ],
+   "note": "Not strength reduction."
+  },
+  {
+   "name": "L* membership",
+   "formula": "Parse into {ab,aa,baa} blocks greedily",
+   "used_in": [
+    "dec2023_q21",
+    "sep2022_q15"
+   ],
+   "note": "Check a-run parity."
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "Chomsky hierarchy and closure tables",
+   "topics": [
+    "Language Hierarchy & Closure Properties"
+   ],
+   "hours": 3.0,
+   "do": "Memorise hierarchy and closure tables; solve reps u8c1, u8c4, u8c5."
+  },
+  {
+   "step": 2,
+   "focus": "CFG, ambiguity, CNF, PDA",
+   "topics": [
+    "Context-Free Grammars & PDA"
+   ],
+   "hours": 4.0,
+   "do": "Solve reps of u8c6-u8c13; practise PDA tracing."
+  },
+  {
+   "step": 3,
+   "focus": "Finite automata and regex",
+   "topics": [
+    "Finite Automata & Regular Languages",
+    "Regular Expressions & Pumping Lemma"
+   ],
+   "hours": 3.5,
+   "do": "Solve u8c14-u8c21; table-filling and Arden once."
+  },
+  {
+   "step": 4,
+   "focus": "Turing machines and decidability",
+   "topics": [
+    "Turing Machines, Decidability & Reducibility"
+   ],
+   "hours": 3.0,
+   "do": "Memorise decidability table, Rice; solve u8c30-u8c34."
+  },
+  {
+   "step": 5,
+   "focus": "Parsing",
+   "topics": [
+    "Parsing (LL, LR, Operator Precedence)"
+   ],
+   "hours": 2.5,
+   "do": "Power ordering, FOLLOW, GOTO; solve u8c22-u8c25."
+  },
+  {
+   "step": 6,
+   "focus": "Compiler back-end topics and lexical",
+   "topics": [
+    "Syntax-Directed Translation, Intermediate Code & Optimization",
+    "Lexical Analysis"
+   ],
+   "hours": 2.5,
+   "do": "Phases, TAC, leaders, optimisation; do u8c26-u8c29 and the token-count singleton."
+  }
+ ],
+ "minimum_set": [
+  "dec2018_q36",
+  "dec2023_q22",
+  "nov2020_q71",
+  "june2025_q76",
+  "june2024_reexam_q90",
+  "dec2024_q66",
+  "sep2022_q69",
+  "sep2022_q13",
+  "dec2022_shiftii_q58",
+  "sep2022_q16",
+  "june2023_q48",
+  "sep2022_q12",
+  "june2025_q14",
+  "dec2024_q91",
+  "dec2023_q21",
+  "nov2021_q35",
+  "june2025_q75",
+  "june2025_q50",
+  "nov2020_q79",
+  "sep2022_q14",
+  "dec2024_q19",
+  "june2025_q88",
+  "dec2022_q73",
+  "june2024_reexam_q1",
+  "june2024_reexam_q18",
+  "dec2023_q81",
+  "dec2023_q54",
+  "nov2021_q39",
+  "june2025_q91",
+  "sep2022_q66",
+  "nov2020_q55",
+  "sep2022_q65",
+  "dec2022_shiftii_q96",
+  "dec2024_q37",
+  "june2024_cancelled_q74",
+  "dec2023_q55",
+  "june2023_q73"
+ ]
+}

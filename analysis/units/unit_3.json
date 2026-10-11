@@ -1,0 +1,1111 @@
+{
+ "unit": 3,
+ "name": "Programming Languages & Computer Graphics",
+ "total_questions": 146,
+ "papers_covered": 15,
+ "topics": [
+  {
+   "topic": "C Programming (output, pointers, operators)",
+   "count": 39,
+   "papers": 15,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "39 of 146 questions (27%) in all 15 papers and sharply rising: 2024-25 papers carry 8+6+3 C items.",
+   "what_to_study": [
+    "Pointer arithmetic: *(p+k), p++, &arr+1, ptr[-i]",
+    "Legal vs illegal pointer operations",
+    "Hand-tracing loops, recursion call counts, nested loops with break",
+    "Operator precedence and expression gotchas (macro, comma, ternary, hex/octal)",
+    "Struct/union padding and little-endian layout",
+    "Multi-dim array to pointer expression; declaration decoding",
+    "File handling functions and step order"
+   ]
+  },
+  {
+   "topic": "C++ & OOP Concepts",
+   "count": 19,
+   "papers": 10,
+   "first_year": "June 2019",
+   "last_year": "June 2025",
+   "trend": "rising",
+   "priority": "Must",
+   "why": "19 questions (13%), 10 of 15 papers, mostly fact-statement items and rising lately.",
+   "what_to_study": [
+    "Constructor properties and syntax",
+    "Virtual, pure virtual, abstract class, runtime vs compile-time polymorphism",
+    "Inheritance benefits, protected inheritance access, friend functions",
+    "Constructor/destructor order with virtual destructor",
+    "Pass by reference swap"
+   ]
+  },
+  {
+   "topic": "Graphics: 2D/3D Transformations & Projections",
+   "count": 17,
+   "papers": 12,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "17 questions (12%) in 12 papers; numeric matrix items repeat the same scaling/shear formulas.",
+   "what_to_study": [
+    "Scaling, shear, reflection, rotation matrices (2x2 and 3x3 homogeneous)",
+    "Composition order of matrices (right to left)",
+    "Scaling about a fixed point",
+    "Perspective vs orthographic vs oblique (cavalier, cabinet) properties",
+    "Homography/4x4 matrix terminology"
+   ]
+  },
+  {
+   "topic": "Graphics: Clipping, Curves, Surfaces & Shading",
+   "count": 17,
+   "papers": 11,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "17 questions (12%) in 11 papers, mostly fact classification that is cheap to master.",
+   "what_to_study": [
+    "Line vs polygon clipping algorithms (Cohen-Sutherland, Liang-Barsky, NLN, Sutherland-Hodgman)",
+    "Bezier properties and cubic control points",
+    "Painter, z-buffer, back-face culling; object vs image space",
+    "Phong vs Gouraud shading and Phong specular term",
+    "Scan-line fill, triangle clipping up to 7 sides"
+   ]
+  },
+  {
+   "topic": "Web Technologies (HTML, XML, JS)",
+   "count": 16,
+   "papers": 12,
+   "first_year": "July 2018",
+   "last_year": "June 2025",
+   "trend": "fading",
+   "priority": "Must",
+   "why": "16 questions (11%) in 12 papers but fading in 2023-25 (1 per paper or fewer); easy factual marks.",
+   "what_to_study": [
+    "XML: well-formed vs valid, case sensitivity, namespaces, DTD",
+    "HTML tags: script, map, alt, table alignment, lists",
+    "CSS overriding order",
+    "JavaScript this, scope, dynamic typing",
+    "Match HTML/DHTML/XML roles"
+   ]
+  },
+  {
+   "topic": "Parameter Passing, Scope & Language Concepts",
+   "count": 13,
+   "papers": 8,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "rising",
+   "priority": "High",
+   "why": "13 questions (9%) in 8 papers, steady; mix of tracing and definitions.",
+   "what_to_study": [
+    "Call by value vs reference vs pointer; swapping char*",
+    "Static vs dynamic binding times",
+    "Global variable drawbacks, stack frame",
+    "Weak/strong, static typing of C and Java",
+    "Loop invariants, top-down design, logical vs syntax errors"
+   ]
+  },
+  {
+   "topic": "Java / Python / Other Languages",
+   "count": 12,
+   "papers": 7,
+   "first_year": "July 2018",
+   "last_year": "June 2024 (Cancelled)",
+   "trend": "fading",
+   "priority": "High",
+   "why": "12 questions (8%) in 7 papers but essentially absent after 2021 (1 item since); fading.",
+   "what_to_study": [
+    "Java final/inheritance rules, JVM components, acronyms",
+    "Java recursion and aliasing tracing",
+    "Programming paradigm characteristics",
+    "Which languages are OOP / allow multiple inheritance"
+   ]
+  },
+  {
+   "topic": "Display Devices & Graphics Hardware",
+   "count": 8,
+   "papers": 8,
+   "first_year": "July 2018",
+   "last_year": "December 2024",
+   "trend": "fading",
+   "priority": "High",
+   "why": "8 questions (5%), one in 8 papers, mostly one-line frame-buffer arithmetic that is free marks.",
+   "what_to_study": [
+    "Frame buffer size = X*Y*bpp/8",
+    "LUT size and refresh-rate formula",
+    "Raster vs vector, CRT phosphor terms, hue/wavelength",
+    "Input/output device classification"
+   ]
+  },
+  {
+   "topic": "Graphics: Line/Circle Algorithms",
+   "count": 5,
+   "papers": 5,
+   "first_year": "December 2018",
+   "last_year": "December 2024",
+   "trend": "steady",
+   "priority": "Medium",
+   "why": "5 questions (3%), 5 papers, steady low frequency; no circle question seen.",
+   "what_to_study": [
+    "DDA vs Bresenham/midpoint differences",
+    "Midpoint decision variable",
+    "Scan conversion aliasing effects"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "title": "Bit-loop functions (popcount / power-of-2 / bit reversal)",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Trace n&1 and n>>=1 on a small number; popcount counts 1-bits; a stray \"counter = 1\" in the return makes the answer a constant test. For reversal, build b = 2b + (a&1).",
+   "what_changes": "Language (C, C++, Java), return expression, and which property (count of 1s, power of 2, reversed bits) is asked.",
+   "representative": "nov2021_q2",
+   "members": [
+    "nov2021_q2",
+    "june2019_q24",
+    "dec2018_q49"
+   ],
+   "skip_note": "Same shift-and-mask loop; once you can trace one with a 4-bit input the other two take 30 seconds.",
+   "id": "u3c1",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Recursive Java f(m,n) geometric series",
+   "topic": "Java / Python / Other Languages",
+   "technique": "Unroll the recursion: result = m/n added to the recursive term; terms form a geometric series a/(1-r); plug values.",
+   "what_changes": "Only the arguments/base-condition numbers change.",
+   "representative": "nov2020_q12",
+   "members": [
+    "nov2020_q12",
+    "dec2018_q48"
+   ],
+   "skip_note": "Identical function skeleton, only constants change; solve the Nov 2020 one and the series idea transfers.",
+   "id": "u3c2",
+   "type": "exact-repeat"
+  },
+  {
+   "title": "Recursion call-counting in C",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Write the argument chain per call (81->27->9->3 for fun; a halving chain per outer b for Cal) and count calls/prints.",
+   "what_changes": "Function body and starting arguments.",
+   "representative": "june2024_reexam_q50",
+   "members": [
+    "june2024_reexam_q50",
+    "june2024_reexam_q6"
+   ],
+   "skip_note": "Both from the same paper and same skill: tabulate the call chain.",
+   "id": "u3c3",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Pointer arithmetic and indexing output",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Rewrite everything as *(base+offset); p++ post-increments after use; &arr+1 jumps the whole array; ptr[i]=*(ptr+i) and negative indices are legal.",
+   "what_changes": "Array contents, offset expressions, whether &arr, p++ or p[-i] is used.",
+   "representative": "june2024_reexam_q62",
+   "members": [
+    "june2024_reexam_q62",
+    "june2024_reexam_q76",
+    "june2024_reexam_q12",
+    "dec2023_q78"
+   ],
+   "skip_note": "All four are *(p+k) bookkeeping; master the &arr+1 and *p++ rules and the rest are mechanical.",
+   "id": "u3c4",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Legal and illegal pointer operations",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Allowed: ptr+-int, ptr-ptr (gives int), assigning &var. Illegal: ptr+ptr, ptr*int, ptr/int, assigning int to pointer without cast, &constant.",
+   "what_changes": "Which operation or statement is offered as the trap.",
+   "representative": "june2025_q68",
+   "members": [
+    "june2025_q68",
+    "june2023_q83",
+    "dec2019_q72",
+    "june2024_cancelled_q21"
+   ],
+   "skip_note": "One rule table (pointer legality) answers all four.",
+   "id": "u3c5",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Pointer concept statements (what pointers can/cannot do)",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Pointers store addresses, can point to pointers, access arrays, simulate call by reference, build dynamic structures; they are not auto-dereferenced.",
+   "what_changes": "Wording of which capability is true/false.",
+   "representative": "june2024_reexam_q3",
+   "members": [
+    "june2024_reexam_q3",
+    "sep2022_q20"
+   ],
+   "skip_note": "Pure fact-recall of the same list.",
+   "id": "u3c6",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Multi-dimensional array to pointer expression",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "a[i][j][k] = *(*(*(a+i)+j)+k); count dereference levels equal to dimensions.",
+   "what_changes": "Dimensions and the index names.",
+   "representative": "june2025_q13",
+   "members": [
+    "june2025_q13",
+    "dec2022_q10"
+   ],
+   "skip_note": "Same identity; distractors only mis-place parentheses.",
+   "id": "u3c7",
+   "type": "same-formula"
+  },
+  {
+   "title": "Decoding C declarations (function pointer / typedef)",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Read declarations inside-out: int (*f)(int,int) is a pointer to function; typedef (*(*arrfptr[3])())[10] is array of 3 pointers to functions returning pointer to array of 10.",
+   "what_changes": "Declarator complexity.",
+   "representative": "june2024_reexam_q9",
+   "members": [
+    "june2024_reexam_q9",
+    "june2023_q69"
+   ],
+   "skip_note": "Same inside-out reading rule.",
+   "id": "u3c8",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Struct/union memory layout, padding and endianness",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Align each member to a multiple of its size, pad struct to multiple of max alignment, union size = largest member; little endian value = b1*256+b0.",
+   "what_changes": "Member list, machine word size, or byte values.",
+   "representative": "nov2020_q11",
+   "members": [
+    "nov2020_q11",
+    "june2019_q22",
+    "july2018_q4"
+   ],
+   "skip_note": "All three are byte-layout arithmetic; do the padding one and the union one.",
+   "id": "u3c9",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Operator precedence ordering",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Order: shift > relational (<,>,>=) > equality (==) > && > || > ?: > assignment (+=); arithmetic binds tightest here.",
+   "what_changes": "Operator set.",
+   "representative": "june2025_q72",
+   "members": [
+    "june2025_q72",
+    "dec2024_q2"
+   ],
+   "skip_note": "Same precedence table.",
+   "id": "u3c10",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Loop tracing with small counters",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Write variable table per iteration; watch break, step sizes and the loop test; Euclid-by-subtraction ends at gcd.",
+   "what_changes": "Loop bounds, break placement, shadowed variable, or log-count form.",
+   "representative": "june2025_q8",
+   "members": [
+    "june2025_q8",
+    "dec2019_q14",
+    "june2025_q54",
+    "dec2023_q11",
+    "nov2020_q9"
+   ],
+   "skip_note": "All five are hand-trace of 3-8 iterations; do the shadowing and the break ones.",
+   "id": "u3c11",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "One-line expression gotchas (ternary, comma, macro, literals)",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Evaluate exactly as the compiler: ternary picks branch, comma yields last value, macro expands textually (b+2*b+2), 0x is hex and leading 0 is octal.",
+   "what_changes": "Which gotcha is used.",
+   "representative": "dec2023_q16",
+   "members": [
+    "dec2023_q16",
+    "june2025_q65",
+    "dec2024_q50",
+    "june2023_q31"
+   ],
+   "skip_note": "Each tests one language rule; learn the four rules once.",
+   "id": "u3c12",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Ordering process steps",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "Know the canonical sequence: do-while is init -> body -> test; viewing pipeline is world scene -> viewing coords -> normalized -> device; runtime is statement -> compile -> type -> allocate -> deallocate.",
+   "what_changes": "Which process is sequenced.",
+   "representative": "dec2024_q21",
+   "members": [
+    "dec2024_q21",
+    "dec2022_shiftii_q78",
+    "june2024_cancelled_q35"
+   ],
+   "skip_note": "Sequence questions are common-sense rank ordering from the option patterns.",
+   "id": "u3c13",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "C file-handling functions and steps",
+   "topic": "C Programming (output, pointers, operators)",
+   "technique": "fopen -> check error -> read/write -> fclose; fseek sets position, ftell gives position, rewind goes to start, feof tests end.",
+   "what_changes": "Match vs order format.",
+   "representative": "dec2024_q53",
+   "members": [
+    "dec2024_q53",
+    "june2024_reexam_q54"
+   ],
+   "skip_note": "Same small fact set.",
+   "id": "u3c14",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Constructor facts in C++",
+   "topic": "C++ & OOP Concepts",
+   "technique": "Constructors: auto-invoked, no return type, can be overloaded, not inherited, need not be friend, defined outside as Class::Class(...) without explicit.",
+   "what_changes": "Which statements are offered.",
+   "representative": "dec2023_q48",
+   "members": [
+    "dec2023_q48",
+    "june2024_reexam_q23",
+    "dec2022_shiftii_q11",
+    "dec2022_q47"
+   ],
+   "skip_note": "The same property list repeated.",
+   "id": "u3c15",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Polymorphism, virtual functions and inheritance benefits",
+   "topic": "C++ & OOP Concepts",
+   "technique": "Run-time polymorphism = virtual functions + base-class interface; pure virtual (=0) makes a class abstract; overriding is late binding, overloading is early binding.",
+   "what_changes": "Direct definition vs match vs T/F.",
+   "representative": "june2025_q57",
+   "members": [
+    "june2025_q57",
+    "dec2022_q46",
+    "dec2022_q11",
+    "dec2023_q10",
+    "june2024_reexam_q29"
+   ],
+   "skip_note": "Same definition set tested five ways.",
+   "id": "u3c16",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Access control: protected inheritance, friend, scope resolution",
+   "topic": "C++ & OOP Concepts",
+   "technique": "Protected inheritance makes public/protected base members protected in derived; objects outside cannot access them; friend breaks encapsulation without being a member.",
+   "what_changes": "Which access or friend statement.",
+   "representative": "dec2023_q87",
+   "members": [
+    "dec2023_q87",
+    "dec2019_q15",
+    "dec2024_q64",
+    "dec2019_q71"
+   ],
+   "skip_note": "Same access-rule table.",
+   "id": "u3c17",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Call by value vs reference tracing",
+   "topic": "Parameter Passing, Scope & Language Concepts",
+   "technique": "Value copies: swap on copies does nothing; reference/pointer swaps change originals; swapping char* locally vs via char** differ.",
+   "what_changes": "Language syntax and type being swapped.",
+   "representative": "june2024_reexam_q42",
+   "members": [
+    "june2024_reexam_q42",
+    "july2018_q5",
+    "dec2018_q47",
+    "june2024_reexam_q27",
+    "sep2022_q98"
+   ],
+   "skip_note": "One parameter-passing model solves all five.",
+   "id": "u3c18",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Language-concept true/false statements",
+   "topic": "Parameter Passing, Scope & Language Concepts",
+   "technique": "Recall: static binding at compile time, globals reduce function independence, C is weak-static, Java strong-static, logical vs syntax errors.",
+   "what_changes": "Concept probed.",
+   "representative": "dec2024_q5",
+   "members": [
+    "dec2024_q5",
+    "dec2022_q9",
+    "sep2022_q96",
+    "july2018_q7"
+   ],
+   "skip_note": "Straight fact recall; skip beyond one pass of the fact list.",
+   "id": "u3c19",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Java facts and execution model",
+   "topic": "Java / Python / Other Languages",
+   "technique": "final class cannot be extended; Java single-inheritance of classes; JVM needs class loader + interpreter; JDK/JRE/JNDI/RMI meanings.",
+   "what_changes": "Fact asked.",
+   "representative": "nov2021_q4",
+   "members": [
+    "nov2021_q4",
+    "july2018_q6",
+    "dec2019_q32"
+   ],
+   "skip_note": "Same Java-fact bank.",
+   "id": "u3c20",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Java output tracing (references, equals, recursion)",
+   "topic": "Java / Python / Other Languages",
+   "technique": "Arrays are references so aliases share changes; equals(Good) overloads rather than overrides Object.equals; unroll recursion left-to-right.",
+   "what_changes": "Program body.",
+   "representative": "july2018_q3",
+   "members": [
+    "july2018_q3",
+    "june2019_q23",
+    "nov2021_q3"
+   ],
+   "skip_note": "Each tests one Java semantic; learn aliasing and overload-vs-override.",
+   "id": "u3c21",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "JavaScript semantics",
+   "topic": "Web Technologies (HTML, XML, JS)",
+   "technique": "Variables have no type, values do; global this.y vs closure local y.",
+   "what_changes": "Scope vs typing facts.",
+   "representative": "july2018_q2",
+   "members": [
+    "july2018_q2",
+    "june2019_q25"
+   ],
+   "skip_note": "Two JS-only items, do the scope one.",
+   "id": "u3c22",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "XML properties, validity and namespaces",
+   "topic": "Web Technologies (HTML, XML, JS)",
+   "technique": "XML is case sensitive, user-defined tags, describes data not presentation; well-formed = syntax correct, valid = conforms to DTD/schema; namespaces give unique names.",
+   "what_changes": "Statement mix.",
+   "representative": "june2025_q59",
+   "members": [
+    "june2025_q59",
+    "nov2020_q45",
+    "july2018_q1",
+    "sep2022_q21",
+    "june2019_q26"
+   ],
+   "skip_note": "Same XML fact sheet.",
+   "id": "u3c23",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "HTML tags and attributes",
+   "topic": "Web Technologies (HTML, XML, JS)",
+   "technique": "script encloses JS; map defines clickable image regions; alt text aids accessibility; valign/align for cells; list types.",
+   "what_changes": "Tag asked.",
+   "representative": "dec2018_q50",
+   "members": [
+    "dec2018_q50",
+    "dec2019_q16",
+    "nov2020_q10",
+    "nov2021_q1",
+    "dec2019_q85",
+    "dec2022_shiftii_q47"
+   ],
+   "skip_note": "Each is a one-tag fact; one revision pass.",
+   "id": "u3c24",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Markup and web-term identification",
+   "topic": "Web Technologies (HTML, XML, JS)",
+   "technique": "HTML, XML, DHTML are markup languages; HTML structure, DHTML dynamic, XML data.",
+   "what_changes": "Match vs identification.",
+   "representative": "june2024_reexam_q52",
+   "members": [
+    "june2024_reexam_q52",
+    "june2024_cancelled_q28"
+   ],
+   "skip_note": "Same terminology.",
+   "id": "u3c25",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Frame buffer, LUT and image-size arithmetic",
+   "topic": "Display Devices & Graphics Hardware",
+   "technique": "Bytes = X*Y*bpp/8; LUT = 2^bits entries * 3 bytes; refresh = 1/(pixels*access time); resize keeps aspect ratio.",
+   "what_changes": "Resolution, bit depth, access time.",
+   "representative": "june2019_q27",
+   "members": [
+    "june2019_q27",
+    "dec2018_q41",
+    "july2018_q8",
+    "nov2021_q6",
+    "dec2019_q19"
+   ],
+   "skip_note": "One formula family; solve the frame-buffer and refresh ones.",
+   "id": "u3c26",
+   "type": "same-formula"
+  },
+  {
+   "title": "Display and colour terminology",
+   "topic": "Display Devices & Graphics Hardware",
+   "technique": "Raster scan = lines of dots; fluorescence is light during beam, phosphorescence after; hue is wavelength; input/output classification.",
+   "what_changes": "Terminology asked.",
+   "representative": "dec2024_q80",
+   "members": [
+    "dec2024_q80",
+    "dec2022_shiftii_q87",
+    "dec2023_q12",
+    "dec2022_q68"
+   ],
+   "skip_note": "Single-line definitions.",
+   "id": "u3c27",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "2D scaling arithmetic",
+   "topic": "Graphics: 2D/3D Transformations & Projections",
+   "technique": "x'=sx*x, y'=sy*y; scaling about a fixed point F: P'=F+s(P-F).",
+   "what_changes": "Scale factors and whether origin or fixed point.",
+   "representative": "june2023_q79",
+   "members": [
+    "june2023_q79",
+    "dec2023_q9",
+    "dec2022_shiftii_q46",
+    "june2023_q80"
+   ],
+   "skip_note": "Same scaling formula.",
+   "id": "u3c28",
+   "type": "same-formula"
+  },
+  {
+   "title": "Homogeneous 3x3 transformation matrices",
+   "topic": "Graphics: 2D/3D Transformations & Projections",
+   "technique": "Read the matrix: translation in last column, scale on diagonal, shear off-diagonal; compose right-to-left; reflection about x-axis is diag(1,-1).",
+   "what_changes": "Specific matrix or figure.",
+   "representative": "nov2021_q8",
+   "members": [
+    "nov2021_q8",
+    "july2018_q10",
+    "dec2018_q42",
+    "nov2020_q66",
+    "june2019_q28"
+   ],
+   "skip_note": "Same matrix reading skill; do the shear one.",
+   "id": "u3c29",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Projection properties (perspective, parallel, oblique)",
+   "topic": "Graphics: 2D/3D Transformations & Projections",
+   "technique": "Perspective: farther is smaller, parallel lines converge, divide by z, needs homogeneous coords; orthographic is affine and keeps parallels; cavalier no foreshortening, cabinet half.",
+   "what_changes": "Statement mix.",
+   "representative": "nov2020_q46",
+   "members": [
+    "nov2020_q46",
+    "june2019_q29",
+    "dec2018_q44",
+    "nov2020_q76",
+    "june2025_q63"
+   ],
+   "skip_note": "Same property table.",
+   "id": "u3c30",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Clipping algorithms identification",
+   "topic": "Graphics: Clipping, Curves, Surfaces & Shading",
+   "technique": "Line clipping: Cohen-Sutherland, Liang-Barsky, Nicholl-Lee-Nicholl; polygon clipping: Sutherland-Hodgman (convex window); clipping removes outside parts.",
+   "what_changes": "Identification vs match.",
+   "representative": "june2025_q31",
+   "members": [
+    "june2025_q31",
+    "dec2019_q18",
+    "june2023_q65",
+    "june2023_q77",
+    "dec2023_q68"
+   ],
+   "skip_note": "Same classification list.",
+   "id": "u3c31",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Hidden-surface and visibility",
+   "topic": "Graphics: Clipping, Curves, Surfaces & Shading",
+   "technique": "Painter sorts by depth, z-buffer is image-space, back-face culling is object-space; collinear with viewpoint means nearer point obscures.",
+   "what_changes": "Statement set.",
+   "representative": "dec2018_q45",
+   "members": [
+    "dec2018_q45",
+    "july2018_q9",
+    "sep2022_q17",
+    "dec2023_q47"
+   ],
+   "skip_note": "Same visibility taxonomy.",
+   "id": "u3c32",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Line-drawing algorithm facts",
+   "topic": "Graphics: Line/Circle Algorithms",
+   "technique": "DDA and Bresenham/midpoint draw lines; Bresenham is integer-only, no rounding; scan conversion causes staircase, unequal brightness, picket fence.",
+   "what_changes": "Statement set.",
+   "representative": "nov2021_q7",
+   "members": [
+    "nov2021_q7",
+    "dec2018_q43",
+    "june2024_cancelled_q80",
+    "dec2024_q51"
+   ],
+   "skip_note": "Same line-drawing fact set.",
+   "id": "u3c33",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Bezier and curve facts",
+   "topic": "Graphics: Clipping, Curves, Surfaces & Shading",
+   "technique": "Cubic Bezier has 4 control points, passes through first and last only, stays in convex hull, tangent at ends; B-splines give local control.",
+   "what_changes": "Statement set.",
+   "representative": "nov2021_q9",
+   "members": [
+    "nov2021_q9",
+    "nov2020_q82",
+    "dec2022_q12",
+    "june2023_q11"
+   ],
+   "skip_note": "Same Bezier property list.",
+   "id": "u3c34",
+   "type": "same-concept-variant"
+  },
+  {
+   "title": "Shading models",
+   "topic": "Graphics: Clipping, Curves, Surfaces & Shading",
+   "technique": "Phong specular uses (R.V)^n; Phong shading interpolates normals, Gouraud interpolates colour and is cheaper.",
+   "what_changes": "Which model.",
+   "representative": "nov2020_q47",
+   "members": [
+    "nov2020_q47",
+    "june2019_q30"
+   ],
+   "skip_note": "Same model facts.",
+   "id": "u3c35",
+   "type": "same-concept-variant"
+  }
+ ],
+ "singletons": [
+  "dec2022_shiftii_q10",
+  "june2023_q74",
+  "sep2022_q19",
+  "dec2018_q51",
+  "june2023_q52",
+  "june2023_q45",
+  "june2024_cancelled_q23",
+  "dec2022_shiftii_q68",
+  "june2024_reexam_q48",
+  "sep2022_q24",
+  "dec2019_q17",
+  "nov2021_q10",
+  "dec2019_q70",
+  "june2024_cancelled_q1",
+  "nov2021_q5",
+  "june2019_q21",
+  "sep2022_q90",
+  "dec2024_q36",
+  "june2024_cancelled_q54",
+  "dec2022_q48",
+  "dec2022_shiftii_q12"
+ ],
+ "examiner_mindset": [
+  "Recent papers (2023-25) are about 36% C: pointer/array output tracing dominates; every June 2024 Re-Exam C item is a mechanical trace.",
+  "Favourite format is a 4-statement T/F set with codes like (A) and (B) only; most are decided by two facts, so eliminate options by one certain statement.",
+  "Matching and arranging items appear about 3 times per paper, usually common-sense terminology; answer from one confident pair.",
+  "Numbers are reused across years: the 640x480 frame buffer, 1024x768 resize, and recursive Java f() reappear with different constants.",
+  "Distractors exploit syntax slips: p=x without &, ptr+ptr, SQR without parentheses, counter = 1 in the return, 0x/octal literals.",
+  "Graphics items are almost never full derivations: the Bresenham error terms, clipping outcodes and Bezier blending are asked as statements.",
+  "Java/Python/web items have faded since 2022; C and C++ conceptual items have grown, so spend time accordingly.",
+  "Never asked: circle algorithms, Python code, pointer-to-pointer function arguments beyond one swap, 3D rotation matrices numerically, template syntax in depth.",
+  "Cross-unit overlap: loop/recursion tracing mirrors Unit 1 algorithms; Language and OOP basics overlap with Unit 1 programming questions."
+ ],
+ "formulas": [
+  {
+   "name": "Frame buffer size",
+   "formula": "bytes = X * Y * bits_per_pixel / 8 (640*480*12/8 = 460800 B = 450 KB)",
+   "used_in": [
+    "june2019_q27",
+    "nov2021_q6"
+   ],
+   "note": "Divide by 8 for bytes, then 1024 for KB; 1 MP is ~1e6 pixels and 1-bit images need 1/8 byte."
+  },
+  {
+   "name": "Colour lookup table size",
+   "formula": "LUT = 2^bits_per_pixel entries * (3*8 bits) = 2^bits * 3 bytes",
+   "used_in": [
+    "dec2018_q41"
+   ],
+   "note": "Frame buffer 10 bpp: LUT 1024 entries * 3 bytes = 2^10 + 2^11 bytes."
+  },
+  {
+   "name": "Refresh rate",
+   "formula": "rate = 1 / (pixels * access time) (640*480*200 ns = 61.4 ms, about 16 fps)",
+   "used_in": [
+    "july2018_q8"
+   ],
+   "note": "Pixels count first; 1 bit depth does not change per-pixel time."
+  },
+  {
+   "name": "Aspect-ratio resize",
+   "formula": "h2 = h1 * w2 / w1 (768*640/1024 = 480)",
+   "used_in": [
+    "dec2019_q19"
+   ],
+   "note": "Keep ratio, scale both sides by the same factor."
+  },
+  {
+   "name": "2D scaling",
+   "formula": "x' = sx*x, y' = sy*y; matrix diag(sx, sy)",
+   "used_in": [
+    "june2023_q79",
+    "dec2022_shiftii_q46",
+    "june2023_q80"
+   ],
+   "note": "Factor > 1 enlarges, < 1 shrinks; applied about origin."
+  },
+  {
+   "name": "Scaling about fixed point F",
+   "formula": "P' = F + s(P - F)",
+   "used_in": [
+    "dec2023_q9"
+   ],
+   "note": "F stays unchanged; compute each vertex difference from F."
+  },
+  {
+   "name": "Homogeneous 2D matrices",
+   "formula": "Translate [[1,0,tx],[0,1,ty],[0,0,1]]; Scale diag(sx,sy,1); Shear-x [[1,h,0],[0,1,0],[0,0,1]]; Rotate [[c,-s,0],[s,c,0],[0,0,1]]",
+   "used_in": [
+    "nov2021_q8",
+    "july2018_q10",
+    "dec2018_q42",
+    "nov2020_q66"
+   ],
+   "note": "Composite M = M_last ... M_first; the rightmost matrix acts first."
+  },
+  {
+   "name": "Reflection about X axis",
+   "formula": "diag(1,-1); determinant -1, so not a rotation",
+   "used_in": [
+    "june2019_q28"
+   ],
+   "note": "Reflection is not a rotation matrix; y-axis reflection is diag(-1,1)."
+  },
+  {
+   "name": "Perspective division",
+   "formula": "x' = x/z, y' = y/z via homogeneous w; non-linear in Cartesian, linear only in homogeneous coordinates",
+   "used_in": [
+    "nov2020_q46",
+    "nov2020_q76",
+    "dec2018_q44"
+   ],
+   "note": "Parallel lines converge except those parallel to the view plane; parallel projection = viewer at infinity."
+  },
+  {
+   "name": "Orthographic projection",
+   "formula": "Affine: preserves parallel lines, no size change with depth",
+   "used_in": [
+    "june2019_q29",
+    "nov2020_q76"
+   ],
+   "note": "Cavalier: no foreshortening; cabinet: half-scale depth; both oblique."
+  },
+  {
+   "name": "Cubic Bezier",
+   "formula": "P(t)=sum B_i P_i, with P(0)=P0, P(1)=P3, P(1/2)=(P0+3P1+3P2+P3)/8; 4 control points, inside convex hull",
+   "used_in": [
+    "nov2021_q9",
+    "nov2020_q82",
+    "dec2022_q12"
+   ],
+   "note": "Interpolates only end points; tangent at ends along P1-P0 and P3-P2."
+  },
+  {
+   "name": "Phong specular term",
+   "formula": "I_s = k_s (R . V)^n  (reflected vector and view vector)",
+   "used_in": [
+    "june2019_q30"
+   ],
+   "note": "Not the normal and light vector; that is the diffuse term."
+  },
+  {
+   "name": "Clipping facts",
+   "formula": "Cohen-Sutherland: accept if both outcodes 0000, reject if AND != 0; Sutherland-Hodgman clips polygons against convex window; a triangle clipped by a rectangle gives at most 7 sides",
+   "used_in": [
+    "dec2019_q17",
+    "dec2019_q18",
+    "june2023_q65",
+    "nov2021_q10"
+   ],
+   "note": "Sutherland-Hodgman is polygon clipping, not line clipping."
+  },
+  {
+   "name": "Row-major 3D address",
+   "formula": "addr(A[r][s][t]) = base + w*(b*c*r + c*s + t) for int A[a][b][c]",
+   "used_in": [
+    "june2023_q45"
+   ],
+   "note": "First index multiplies b*c; the leading dimension a never appears."
+  },
+  {
+   "name": "Array/pointer identity",
+   "formula": "a[i] = *(a+i); a[i][j][k] = *(*(*(a+i)+j)+k); ptr[-1] legal; &arr+1 moves past whole array",
+   "used_in": [
+    "dec2022_q10",
+    "june2025_q13",
+    "june2024_reexam_q62",
+    "dec2023_q78"
+   ],
+   "note": "Pointer arithmetic scales by element size."
+  },
+  {
+   "name": "Pointer operation legality",
+   "formula": "ptr +/- int -> ptr; ptr - ptr -> int; ptr + ptr, ptr*int, ptr/int illegal; int to pointer needs a cast",
+   "used_in": [
+    "june2025_q68",
+    "june2023_q83",
+    "june2024_cancelled_q21",
+    "dec2019_q72"
+   ],
+   "note": "Option \"pointer - pointer -> pointer\" is the usual trap."
+  },
+  {
+   "name": "Struct alignment",
+   "formula": "member offset multiple of its size; struct size multiple of largest member alignment; union size = largest member",
+   "used_in": [
+    "nov2020_q11",
+    "june2019_q22"
+   ],
+   "note": "Add padding after members as well as before."
+  },
+  {
+   "name": "Little-endian value",
+   "formula": "two-byte value = byte1*256 + byte0 (5, 2 gives 517)",
+   "used_in": [
+    "july2018_q4"
+   ],
+   "note": "LSB stored at lowest address."
+  },
+  {
+   "name": "C operator precedence",
+   "formula": "arithmetic > shift > relational (<,>,>=) > equality (==) > && > || > ?: > assignment (=,+=) > comma",
+   "used_in": [
+    "june2025_q72",
+    "dec2024_q2"
+   ],
+   "note": "Relational binds tighter than equality."
+  },
+  {
+   "name": "Macro expansion",
+   "formula": "SQR(x) = (x*x) with x = b+2 expands to b+2*b+2 = 11 for b=3",
+   "used_in": [
+    "dec2023_q16"
+   ],
+   "note": "No parentheses means textual substitution."
+  },
+  {
+   "name": "Number literals",
+   "formula": "0x10 = 16, leading 0 means octal: 010 = 8",
+   "used_in": [
+    "june2023_q31"
+   ],
+   "note": "Sum 24, not 26."
+  },
+  {
+   "name": "Bit loop",
+   "formula": "while(n){c+=n&1; n>>=1;} counts set bits; N&(N-1)==0 tests power of 2",
+   "used_in": [
+    "june2019_q24",
+    "nov2021_q2",
+    "dec2018_q49"
+   ],
+   "note": "Check the return statement for assignment typos."
+  },
+  {
+   "name": "Loop iteration count",
+   "formula": "while(p<b){p*=a;x++;} gives x = ceil(log_a b)",
+   "used_in": [
+    "nov2020_q9"
+   ],
+   "note": "Ceil not floor because exit needs p >= b."
+  },
+  {
+   "name": "Geometric series sum",
+   "formula": "S = a/(1-r), |r|<1 (recursive Java f sums to 0.2)",
+   "used_in": [
+    "nov2020_q12",
+    "dec2018_q48"
+   ],
+   "note": "Check the base case before summing."
+  },
+  {
+   "name": "Constructor/destructor order",
+   "formula": "Constructors run base -> derived; destructors derived -> base; virtual destructor needed for delete through base pointer",
+   "used_in": [
+    "june2024_reexam_q48"
+   ],
+   "note": "Without virtual, only the base destructor runs."
+  },
+  {
+   "name": "Parameter passing",
+   "formula": "By value: copy, caller unchanged; by reference / pointer: original changed; swapping char* needs char**",
+   "used_in": [
+    "june2024_reexam_q42",
+    "june2024_reexam_q27",
+    "july2018_q5",
+    "dec2018_q47"
+   ],
+   "note": "f1(char*,char*) swap has no caller effect."
+  },
+  {
+   "name": "XML validity",
+   "formula": "valid XML => also well-formed (not the reverse); XML is case sensitive; namespaces provide globally unique names",
+   "used_in": [
+    "july2018_q1",
+    "june2019_q26",
+    "sep2022_q21",
+    "june2025_q59"
+   ],
+   "note": "Valid means conforms to DTD/schema."
+  },
+  {
+   "name": "Visibility",
+   "formula": "Back-face culling: object space; Painter and z-buffer: image/depth-order; collinear with viewpoint means nearer obscures farther",
+   "used_in": [
+    "dec2018_q45",
+    "july2018_q9",
+    "dec2023_q47"
+   ],
+   "note": "Z-buffer depth is typically 16/32 bits."
+  }
+ ],
+ "study_plan": [
+  {
+   "step": 1,
+   "focus": "C pointers and arrays",
+   "topics": [
+    "C Programming (output, pointers, operators)"
+   ],
+   "hours": 4.0,
+   "do": "Solve u3c4, u3c5, u3c7 reps by hand; memorise pointer legality table."
+  },
+  {
+   "step": 2,
+   "focus": "C tracing: loops, recursion, expressions, structs",
+   "topics": [
+    "C Programming (output, pointers, operators)"
+   ],
+   "hours": 4.0,
+   "do": "Solve reps of u3c3, u3c9, u3c11, u3c12, u3c1; write loop variable tables."
+  },
+  {
+   "step": 3,
+   "focus": "C++ OOP facts",
+   "topics": [
+    "C++ & OOP Concepts"
+   ],
+   "hours": 2.5,
+   "do": "Revise constructor, virtual, access tables; do u3c15, u3c16, u3c17 reps."
+  },
+  {
+   "step": 4,
+   "focus": "Graphics transformations and projections",
+   "topics": [
+    "Graphics: 2D/3D Transformations & Projections",
+    "Display Devices & Graphics Hardware"
+   ],
+   "hours": 3.0,
+   "do": "Do reps of u3c28, u3c29, u3c30, u3c26 with the formula sheet."
+  },
+  {
+   "step": 5,
+   "focus": "Clipping, curves, visibility, line drawing",
+   "topics": [
+    "Graphics: Clipping, Curves, Surfaces & Shading",
+    "Graphics: Line/Circle Algorithms"
+   ],
+   "hours": 2.5,
+   "do": "Memorise algorithm classification; do reps of u3c31-u3c35."
+  },
+  {
+   "step": 6,
+   "focus": "Web technologies and language concepts",
+   "topics": [
+    "Web Technologies (HTML, XML, JS)",
+    "Parameter Passing, Scope & Language Concepts",
+    "Java / Python / Other Languages"
+   ],
+   "hours": 3.0,
+   "do": "One pass of XML/HTML fact sheets; reps of u3c23, u3c24, u3c18, u3c19, u3c20, u3c21."
+  },
+  {
+   "step": 7,
+   "focus": "Revision and singletons",
+   "topics": [],
+   "hours": 1.5,
+   "do": "Re-solve the minimum_set singletons and one random rep per cluster."
+  }
+ ],
+ "minimum_set": [
+  "nov2021_q2",
+  "nov2020_q12",
+  "june2024_reexam_q50",
+  "june2024_reexam_q62",
+  "june2025_q68",
+  "june2024_reexam_q3",
+  "june2025_q13",
+  "june2024_reexam_q9",
+  "nov2020_q11",
+  "june2025_q72",
+  "june2025_q8",
+  "dec2023_q16",
+  "dec2024_q21",
+  "dec2024_q53",
+  "dec2023_q48",
+  "june2025_q57",
+  "dec2023_q87",
+  "june2024_reexam_q42",
+  "dec2024_q5",
+  "nov2021_q4",
+  "july2018_q3",
+  "july2018_q2",
+  "june2025_q59",
+  "dec2018_q50",
+  "june2024_reexam_q52",
+  "june2019_q27",
+  "dec2024_q80",
+  "june2023_q79",
+  "nov2021_q8",
+  "nov2020_q46",
+  "june2025_q31",
+  "dec2018_q45",
+  "nov2021_q7",
+  "nov2021_q9",
+  "nov2020_q47",
+  "june2023_q45",
+  "dec2019_q17",
+  "nov2021_q10",
+  "june2024_reexam_q48",
+  "dec2018_q51",
+  "june2023_q52",
+  "dec2022_shiftii_q10",
+  "sep2022_q24"
+ ]
+}

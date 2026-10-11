@@ -23,6 +23,12 @@ export interface Question {
   unit: number
   unit_name: string
   conceptName: string
+  // From the study map (analysis/): what the question tests and which similar-question cluster it is in
+  subtopic: string
+  archetype: string
+  format: string
+  clusterId: string | null
+  isRep: boolean
   pdf: PdfRef | null
   // Progress, from the latest attempt
   isAnswered: boolean
@@ -91,4 +97,58 @@ export interface Stats {
   units: Record<number, UnitStats>
   concepts: ConceptStats[]
   history: SessionSummary[]
+}
+
+// quiz-app/src/data/study_map.json, built by analysis/build_study_map.py
+export interface StudyTopic {
+  topic: string
+  count: number
+  papers: number
+  first_year: string
+  last_year: string
+  trend: "rising" | "steady" | "fading"
+  priority: "Must" | "High" | "Medium" | "Low"
+  why: string
+  what_to_study: string[]
+}
+
+export interface StudyCluster {
+  id: string
+  title: string
+  type: "exact-repeat" | "same-concept-variant" | "same-formula"
+  topic: string
+  technique: string
+  what_changes: string
+  representative: string
+  members: string[]
+  skip_note: string
+}
+
+export interface StudyFormula {
+  name: string
+  formula: string
+  used_in: string[]
+  note: string
+}
+
+export interface StudyStep {
+  step: number
+  focus: string
+  topics: string[]
+  hours: number
+  do: string
+}
+
+export interface StudyUnit {
+  unit: number
+  name: string
+  total_questions: number
+  papers_covered: number
+  topics: StudyTopic[]
+  clusters: StudyCluster[]
+  singletons: string[]
+  examiner_mindset: string[]
+  formulas: StudyFormula[]
+  study_plan: StudyStep[]
+  minimum_set: string[]
 }

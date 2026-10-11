@@ -192,6 +192,7 @@ export default function SettingsPanel() {
             </Row>
           </div>
           <div className="divide-y divide-neutral-100 dark:divide-neutral-800 border-t border-neutral-100 dark:border-neutral-800">
+            <Switch id="skip-similar" checked={settings.skipSimilar} onChange={skipSimilar => update({ skipSimilar })} label="Skip similar questions" description="Smart, unit and topic practice show one question per group of questions testing the same idea, and skip groups you already got right. Mistakes always come back." />
             <Switch id="auto-advance" checked={settings.autoAdvance} onChange={autoAdvance => update({ autoAdvance })} label="Move on after a correct answer" description="Goes to the next question automatically when you get one right." />
             <Switch id="ai-reinforce" checked={settings.aiReinforcement} onChange={aiReinforcement => update({ aiReinforcement })} label="AI drill on wrong answers" description="When you get a question wrong, the tutor explains the gap and gives you a simpler follow-up question. Needs a Gemini API key." />
             <Switch id="tutor-open" checked={settings.tutorOpenByDefault} onChange={tutorOpenByDefault => update({ tutorOpenByDefault })} label="Open the AI tutor panel when a quiz starts" description="On small screens the tutor always starts closed." />
